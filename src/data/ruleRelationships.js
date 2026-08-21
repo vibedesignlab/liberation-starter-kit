@@ -58,7 +58,7 @@ export const ruleNodes = [
     "name": "analyze-site-design-with-aside (Claude Skill)",
     "priority": "Skill",
     "path": ".claude/skills/analyze-site-design-with-aside/SKILL.md",
-    "description": "Use this skill whenever the user explicitly asks Claude Code to use Aside, the Aside browser, or /analyze-site-design-with-aside to inspect a live public, authenticated, staging, or local website and analyze its visual system, layout, components, responsiveness, or interaction behavior. Do not activate for ordinary code review, static-file-only analysis, or browser work the user did not explicitly authorize."
+    "description": "Use this skill whenever the user explicitly asks Claude Code to use Aside, the Aside browser, or /analyze-site-design-with-aside to inspect a live public, authenticated, staging, or local website. Default to a rapid bounded pass that pairs minimal captures with site-structure inspection during the same sampled-page visits, then synthesize one design analysis. Expand only when the user requests deeper coverage. Do not activate for ordinary code review, static-file-only analysis, or unauthorized browser work."
   },
   {
     "id": "analyze-site-design-with-aside--aside-setup-spec",
@@ -73,6 +73,97 @@ export const ruleNodes = [
     "priority": "Skill Resource",
     "path": ".claude/skills/analyze-site-design-with-aside/resources/design-analysis-contract.md",
     "description": "Use this contract to turn a user's analysis request into one bounded Aside task and a reviewable report. Analyze only dimensions relevant to the requested page or flow."
+  },
+  {
+    "id": "build-brand-from-anatomy",
+    "name": "build-brand-from-anatomy (Claude Skill)",
+    "priority": "Skill",
+    "path": ".claude/skills/build-brand-from-anatomy/SKILL.md",
+    "description": "Stage 2 of the local brand pipeline. Use this skill whenever Claude must turn an accepted source-brand Storybook+JSON anatomy and a short target-brand brief into an extended target-brand anatomy, explicit product family and lineup, verbal and visual systems, key visual, at least two brand-mood directions, landing-page design tokens, generation-ready commercial-photo prompts, a pending external-asset registry, and an approval checkpoint. Claude must not call an image model; it prepares prompts and registers externally generated files later."
+  },
+  {
+    "id": "build-brand-from-anatomy--image-prompt-handoff-contract",
+    "name": "image-prompt-handoff-contract.md",
+    "priority": "Skill Resource",
+    "path": ".claude/skills/build-brand-from-anatomy/resources/image-prompt-handoff-contract.md",
+    "description": "Claude는 이 Stage에서 bitmap을 생성하지 않는다. 대신 외부 생성자가 바로 실행할 수 있는 prompt/spec과 검증 가능한 pending registry를 만든다."
+  },
+  {
+    "id": "build-brand-from-anatomy--parallel-execution-contract",
+    "name": "parallel-execution-contract.md",
+    "priority": "Skill Resource",
+    "path": ".claude/skills/build-brand-from-anatomy/resources/parallel-execution-contract.md",
+    "description": "Use this contract only for a full routed pipeline. Standalone stage skills keep their normal execution behavior."
+  },
+  {
+    "id": "build-brand-from-anatomy--storybook-report-contract",
+    "name": "storybook-report-contract.md",
+    "priority": "Skill Resource",
+    "path": ".claude/skills/build-brand-from-anatomy/resources/storybook-report-contract.md",
+    "description": "Brand reports are authored from their stage package and read in this repository's Storybook. The stage JSON remains the canonical content model; Storybook is the reader and component-composition layer."
+  },
+  {
+    "id": "build-brand-from-anatomy--transfer-direction-contract",
+    "name": "transfer-direction-contract.md",
+    "priority": "Skill Resource",
+    "path": ".claude/skills/build-brand-from-anatomy/resources/transfer-direction-contract.md",
+    "description": "등록된 Storybook 문서와 `outputs/extended-brand-anatomy.json`을 한 쌍으로 전달한다. JSON은 Stage 3의 explicit input이며 Storybook은 사람이 읽고 승인하는 Stage 2 anatomy다. `outputs/extended-brand-anatomy.html`은 마이그레이션 호환 산출물로만 유지한다."
+  },
+  {
+    "id": "build-brand-from-anatomy--transfer-input-contract",
+    "name": "transfer-input-contract.md",
+    "priority": "Skill Resource",
+    "path": ".claude/skills/build-brand-from-anatomy/resources/transfer-input-contract.md",
+    "description": "The intake exists only to obtain enough information to write a useful direction report. It is not a workshop or a second report."
+  },
+  {
+    "id": "build-brand-from-anatomy--tuning-framework",
+    "name": "tuning-framework.md",
+    "priority": "Skill Resource",
+    "path": ".claude/skills/build-brand-from-anatomy/resources/tuning-framework.md",
+    "description": "Apply the source anatomy as an operating model, not as a collection of recognizable surfaces."
+  },
+  {
+    "id": "build-landing-materials",
+    "name": "build-landing-materials (Claude Skill)",
+    "priority": "Skill",
+    "path": ".claude/skills/build-landing-materials/SKILL.md",
+    "description": "Stage 3 of the local brand pipeline. Use this skill whenever an accepted extended-brand anatomy must become a modular Storybook+JSON landing-material package with UX copy hierarchy, brand value, brand story, full product-lineup copy, inherited mood and product constraints, and generation-ready product-image prompt handoffs. Claude does not generate or edit images in this skill; it records prompt specs and pending assets, then stops at the user approval gate. Do not build the landing page."
+  },
+  {
+    "id": "build-landing-materials--landing-materials-contract",
+    "name": "landing-materials-contract.md",
+    "priority": "Skill Resource",
+    "path": ".claude/skills/build-landing-materials/resources/landing-materials-contract.md",
+    "description": "- accepted Stage 2 `outputs/extended-brand-anatomy.json` and registered Storybook document"
+  },
+  {
+    "id": "commercial-photo-prompting",
+    "name": "commercial-photo-prompting (Claude Skill)",
+    "priority": "Skill",
+    "path": ".claude/skills/commercial-photo-prompting/SKILL.md",
+    "description": "ALWAYS use this skill when Claude must plan, compile, diagnose, or refine realistic commercial or cinematic photography prompts, especially for web hero, PDP, feature, detail, grid, scale, gallery, or product-series imagery. It returns generation-ready prompt packs, negative constraints, continuity locks, and observable QA checklists only. It never calls an image model, image API, generation tool, or editing tool and never claims that an image was generated."
+  },
+  {
+    "id": "commercial-photo-prompting--commercial-photographic-taxonomy",
+    "name": "commercial-photographic-taxonomy.md",
+    "priority": "Skill Resource",
+    "path": ".claude/skills/commercial-photo-prompting/resources/commercial-photographic-taxonomy.md",
+    "description": "> 상업·시네마틱 실사 이미지의 촬영 어휘. 장르에서 스펙으로 내려가는 결정 순서로 프롬프트 조각을 조합합니다."
+  },
+  {
+    "id": "commercial-photo-prompting--prompt-output-contract",
+    "name": "prompt-output-contract.md",
+    "priority": "Skill Resource",
+    "path": ".claude/skills/commercial-photo-prompting/resources/prompt-output-contract.md",
+    "description": "Claude의 commercial-photo-prompting 산출물을 이미지 실행 주체가 바로 사용할 수 있는 self-contained handoff로 만든다. 이 계약은 이미지 생성이나 편집 실행을 허용하지 않는다."
+  },
+  {
+    "id": "commercial-photo-prompting--web-editorial-composition",
+    "name": "web-editorial-composition.md",
+    "priority": "Skill Resource",
+    "path": ".claude/skills/commercial-photo-prompting/resources/web-editorial-composition.md",
+    "description": "Use web placement as the first composition classifier for commercial photography. Most requested commercial images will be placed in a website or product interface, so do not wait for the user to say `web` before routing the shot."
   },
   {
     "id": "component-work",
@@ -166,11 +257,81 @@ export const ruleNodes = [
     "description": "이 계약은 사용자가 Phase 3 Visual Direction을 승인한 직후 사용한다. 승인은 제한된 디자인 토큰 패치를 활성화하며, 제품 전체를 시각적으로 변환할 권한은 주지 않는다."
   },
   {
+    "id": "reconstruct-brand-system",
+    "name": "reconstruct-brand-system (Claude Skill)",
+    "priority": "Skill",
+    "path": ".claude/skills/reconstruct-brand-system/SKILL.md",
+    "description": "Use this skill whenever Claude must route a full brand-reconstruction project through three reviewed Storybook+JSON stages: source-brand research, extended target-brand anatomy, and landing materials. It preserves explicit approval gates and parallelizes safe work inside only the active stage. Because Claude has no built-in image model in this workflow, visual stages deliver generation-ready prompt packs and pending asset handoffs instead of generating or editing images."
+  },
+  {
+    "id": "reconstruct-brand-system--chaining-contract",
+    "name": "chaining-contract.md",
+    "priority": "Skill Resource",
+    "path": ".claude/skills/reconstruct-brand-system/resources/chaining-contract.md",
+    "description": "The pipeline uses one shared `pipeline-state.json`. Each stage keeps its own existing `stage-review.json`; no second approval format is introduced."
+  },
+  {
+    "id": "reconstruct-brand-system--parallel-execution-contract",
+    "name": "parallel-execution-contract.md",
+    "priority": "Skill Resource",
+    "path": ".claude/skills/reconstruct-brand-system/resources/parallel-execution-contract.md",
+    "description": "Use this contract only for a full routed pipeline. Standalone stage skills keep their normal execution behavior."
+  },
+  {
+    "id": "reconstruct-brand-system--storybook-report-contract",
+    "name": "storybook-report-contract.md",
+    "priority": "Skill Resource",
+    "path": ".claude/skills/reconstruct-brand-system/resources/storybook-report-contract.md",
+    "description": "Brand reports are authored from their stage package and read in this repository's Storybook. The stage JSON remains the canonical content model; Storybook is the reader and component-composition layer."
+  },
+  {
+    "id": "research-brand-anatomy",
+    "name": "research-brand-anatomy (Claude Skill)",
+    "priority": "Skill",
+    "path": ".claude/skills/research-brand-anatomy/SKILL.md",
+    "description": "Research and model one existing reference brand without inventing, mapping, or planning a target brand. Always use this skill when the user asks Claude to research, reverse-engineer, reconstruct, audit, or document an existing brand's anatomy as the source stage of the local brand pipeline. Deliver an evidence-backed Storybook document and structured JSON handoff covering strategy, verbal systems, identity, key visuals, brand mood, photography, product representation, physical or digital product-native language, behavior, and a portable global framework for color, typography, spacing, and layout. Keep deterministic HTML only as a migration-compatibility artifact, and stop before any transfer or fictional-brand work."
+  },
+  {
+    "id": "research-brand-anatomy--brand-model-json-contract",
+    "name": "brand-model-json-contract.md",
+    "priority": "Skill Resource",
+    "path": ".claude/skills/research-brand-anatomy/resources/brand-model-json-contract.md",
+    "description": "Create `outputs/source-brand-analysis.json` as the canonical handoff and register it in the reader-facing Storybook document. Storybook explains the analysis; this JSON is the explicit input used to draft a later transfer plan. It is not an implementation token file. Keep the adjacent HTML only as a migration-compatibility artifact."
+  },
+  {
+    "id": "research-brand-anatomy--evidence-and-layer-model",
+    "name": "evidence-and-layer-model.md",
+    "priority": "Skill Resource",
+    "path": ".claude/skills/research-brand-anatomy/resources/evidence-and-layer-model.md",
+    "description": "- `primary`: official site, product, packaging, interface, press kit, campaign, store, social account, report, manual, or first-party interview."
+  },
+  {
+    "id": "research-brand-anatomy--global-brand-system-framework",
+    "name": "global-brand-system-framework.md",
+    "priority": "Skill Resource",
+    "path": ".claude/skills/research-brand-anatomy/resources/global-brand-system-framework.md",
+    "description": "Use this framework after the source anatomy and grammar are complete. It turns source observations into portable brand operating guidance without creating a target design system."
+  },
+  {
+    "id": "research-brand-anatomy--report-language-style",
+    "name": "report-language-style.md",
+    "priority": "Skill Resource",
+    "path": ".claude/skills/research-brand-anatomy/resources/report-language-style.md",
+    "description": "Use this reference only when turning the approved source anatomy into the reader-facing Storybook document and its compatibility HTML. Do not rewrite the evidence register, Core Claim rows, or grammar source fields merely to make them sound simpler."
+  },
+  {
+    "id": "research-brand-anatomy--source-anatomy-schema",
+    "name": "source-anatomy-schema.md",
+    "priority": "Skill Resource",
+    "path": ".claude/skills/research-brand-anatomy/resources/source-anatomy-schema.md",
+    "description": "Every material statement uses `Observed` or `Inferred`, confidence, evidence IDs, scope, alternative explanation, and exception where relevant."
+  },
+  {
     "id": "codex--analyze-site-design-with-aside",
     "name": "analyze-site-design-with-aside (Codex Skill)",
     "priority": "Skill",
     "path": ".agents/skills/analyze-site-design-with-aside/SKILL.md",
-    "description": "Inspect a live public, authenticated, staging, or local website through the user's project-local Aside CLI setup and turn browser evidence into a structured design analysis. Use when the user explicitly asks to use Aside, the Aside browser, or this skill to analyze a site's visual system, layout, components, responsiveness, or interaction behavior. Do not activate for ordinary code review, static-file-only analysis, or browser work that the user did not explicitly authorize."
+    "description": "Inspect a live public, authenticated, staging, or local website through the user's project-local Aside CLI setup and turn browser evidence into a structured design analysis. Default to a rapid bounded pass that pairs minimal captures with site-structure inspection during the same sampled-page visits; expand only when the user requests deeper coverage. Use when the user explicitly asks to use Aside, the Aside browser, or this skill to analyze a site's design. Do not activate for ordinary code review, static-file-only analysis, or unauthorized browser work."
   },
   {
     "id": "codex--analyze-site-design-with-aside--aside-setup-spec",
@@ -187,70 +348,70 @@ export const ruleNodes = [
     "description": "Use this contract to turn a user's analysis request into one bounded Aside task and a reviewable report. Analyze only dimensions relevant to the requested page or flow."
   },
   {
-    "id": "build-brand-from-anatomy",
+    "id": "codex--build-brand-from-anatomy",
     "name": "build-brand-from-anatomy (Codex Skill)",
     "priority": "Skill",
     "path": ".agents/skills/build-brand-from-anatomy/SKILL.md",
     "description": "Stage 2 of the brand pipeline. Turn an accepted source-brand Storybook+JSON anatomy and a short user brief into an extended target-brand anatomy with explicit product family and lineup, product detail, verbal and visual systems, key visual, brand mood, product-native visual language, landing-page design tokens, one generated representative-product image, and one generated brand-mood image. Keep deterministic HTML only as a migration-compatibility artifact. Stop for user adjustment before landing-material production."
   },
   {
-    "id": "build-brand-from-anatomy--transfer-direction-contract",
+    "id": "codex--build-brand-from-anatomy--transfer-direction-contract",
     "name": "transfer-direction-contract.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/build-brand-from-anatomy/references/transfer-direction-contract.md",
     "description": "Deliver the registered Storybook document and `outputs/extended-brand-anatomy.json` as a pair. Storybook is the readable Stage 2 anatomy and must show the two registered anchor images. The JSON is the explicit input for Stage 3 landing copy and product-image production. Keep `outputs/extended-brand-anatomy.html` only as a migration-compatibility artifact."
   },
   {
-    "id": "build-brand-from-anatomy--transfer-input-contract",
+    "id": "codex--build-brand-from-anatomy--transfer-input-contract",
     "name": "transfer-input-contract.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/build-brand-from-anatomy/references/transfer-input-contract.md",
     "description": "The intake exists only to obtain enough information to write a useful direction report. It is not a workshop or a second report."
   },
   {
-    "id": "build-brand-from-anatomy--tuning-framework",
+    "id": "codex--build-brand-from-anatomy--tuning-framework",
     "name": "tuning-framework.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/build-brand-from-anatomy/references/tuning-framework.md",
     "description": "Apply the source anatomy as an operating model, not as a collection of recognizable surfaces."
   },
   {
-    "id": "build-landing-materials",
+    "id": "codex--build-landing-materials",
     "name": "build-landing-materials (Codex Skill)",
     "priority": "Skill",
     "path": ".agents/skills/build-landing-materials/SKILL.md",
     "description": "Stage 3 of the brand pipeline. Turn an accepted extended-brand anatomy into a modular Storybook+JSON landing-material report: UX copy hierarchy, brand value, brand story, product introduction, explicit product-lineup copy, and registered product-image renders. Use commercial-photo-prompting to preserve the approved product and image system, then stop for user adjustment. Keep deterministic HTML only as a migration-compatibility artifact; do not build or code the final landing page."
   },
   {
-    "id": "build-landing-materials--landing-materials-contract",
+    "id": "codex--build-landing-materials--landing-materials-contract",
     "name": "landing-materials-contract.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/build-landing-materials/references/landing-materials-contract.md",
     "description": "- accepted `extended-brand-anatomy.json` and registered Storybook document;"
   },
   {
-    "id": "commercial-photo-prompting",
+    "id": "codex--commercial-photo-prompting",
     "name": "commercial-photo-prompting (Codex Skill)",
     "priority": "Skill",
     "path": ".agents/skills/commercial-photo-prompting/SKILL.md",
     "description": "Plan, compile, diagnose, and refine realistic commercial or cinematic photo prompts, with web-first routing for hero, PDP, feature, detail, grid, scale, and gallery imagery. Use when Codex needs to choose a web UI image role, angle, distance, copy-safe composition, or technical photographic behavior; build a coherent series; repair a CGI-looking result; or prepare a prompt for GPT Image or another image model."
   },
   {
-    "id": "commercial-photo-prompting--codex-image-profile",
+    "id": "codex--commercial-photo-prompting--codex-image-profile",
     "name": "codex-image-profile.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/commercial-photo-prompting/references/codex-image-profile.md",
     "description": "Use this reference only when preparing for or executing with the Codex image tool or GPT Image. Treat it as mutable model guidance and recheck official documentation when model behavior or tool arguments may have changed."
   },
   {
-    "id": "commercial-photo-prompting--commercial-photographic-taxonomy",
+    "id": "codex--commercial-photo-prompting--commercial-photographic-taxonomy",
     "name": "commercial-photographic-taxonomy.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/commercial-photo-prompting/references/commercial-photographic-taxonomy.md",
     "description": "> 상업·시네마틱 실사 이미지의 촬영 어휘. 장르에서 스펙으로 내려가는 결정 순서로 프롬프트 조각을 조합합니다."
   },
   {
-    "id": "commercial-photo-prompting--web-editorial-composition",
+    "id": "codex--commercial-photo-prompting--web-editorial-composition",
     "name": "web-editorial-composition.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/commercial-photo-prompting/references/web-editorial-composition.md",
@@ -341,119 +502,119 @@ export const ruleNodes = [
     "description": "Use this contract after the user approves Phase 3, Visual Direction. Approval activates a bounded design-token patch; it does not authorize a general visual conversion of the product."
   },
   {
-    "id": "reconstruct-brand-system",
+    "id": "codex--reconstruct-brand-system",
     "name": "reconstruct-brand-system (Codex Skill)",
     "priority": "Skill",
     "path": ".agents/skills/reconstruct-brand-system/SKILL.md",
     "description": "Route one brand-reconstruction project through three reviewed Storybook+JSON stages while parallelizing safe work inside the active stage: source-brand research, extended target-brand anatomy with two anchor images, then landing UX copy and product-render materials."
   },
   {
-    "id": "reconstruct-brand-system--brand-anatomy-schema",
+    "id": "codex--reconstruct-brand-system--brand-anatomy-schema",
     "name": "brand-anatomy-schema.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/reconstruct-brand-system/references/brand-anatomy-schema.md",
     "description": "Use this schema to convert evidence into a coherent model. Complete every applicable field, cite evidence IDs, and mark each entry `Observed` or `Inferred` with confidence."
   },
   {
-    "id": "reconstruct-brand-system--chaining-contract",
+    "id": "codex--reconstruct-brand-system--chaining-contract",
     "name": "chaining-contract.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/reconstruct-brand-system/references/chaining-contract.md",
     "description": "The pipeline uses one shared `pipeline-state.json`. Each stage keeps its own existing `stage-review.json`; no second approval format is introduced."
   },
   {
-    "id": "reconstruct-brand-system--evidence-protocol",
+    "id": "codex--reconstruct-brand-system--evidence-protocol",
     "name": "evidence-protocol.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/reconstruct-brand-system/references/evidence-protocol.md",
     "description": "Use this protocol to build a representative, provenance-rich corpus before interpreting a brand."
   },
   {
-    "id": "reconstruct-brand-system--output-schema",
+    "id": "codex--reconstruct-brand-system--output-schema",
     "name": "output-schema.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/reconstruct-brand-system/references/output-schema.md",
     "description": "Use `assets/brand-dossier.md` as the drafting skeleton. Preserve the order below so later reviewers and scripts can find required sections."
   },
   {
-    "id": "reconstruct-brand-system--parallel-execution-contract",
+    "id": "codex--reconstruct-brand-system--parallel-execution-contract",
     "name": "parallel-execution-contract.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/reconstruct-brand-system/references/parallel-execution-contract.md",
     "description": "Use this contract only for a full routed pipeline. Standalone stage skills keep their normal execution behavior."
   },
   {
-    "id": "reconstruct-brand-system--phase-gates",
+    "id": "codex--reconstruct-brand-system--phase-gates",
     "name": "phase-gates.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/reconstruct-brand-system/references/phase-gates.md",
     "description": "Use these gates as a state machine. Never skip, merge, rename, or retroactively waive a gate because a comparative or time-boxed artifact already exists."
   },
   {
-    "id": "reconstruct-brand-system--quality-rubric",
+    "id": "codex--reconstruct-brand-system--quality-rubric",
     "name": "quality-rubric.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/reconstruct-brand-system/references/quality-rubric.md",
     "description": "Audit the completed case independently. Score each criterion, cite concrete locations, and fail critical violations regardless of total score."
   },
   {
-    "id": "reconstruct-brand-system--storybook-report-contract",
+    "id": "codex--reconstruct-brand-system--storybook-report-contract",
     "name": "storybook-report-contract.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/reconstruct-brand-system/references/storybook-report-contract.md",
     "description": "Brand reports are authored from their stage package and read in this repository's Storybook. The stage JSON remains the canonical content model; Storybook is the reader and component-composition layer."
   },
   {
-    "id": "reconstruct-brand-system--transfer-rules",
+    "id": "codex--reconstruct-brand-system--transfer-rules",
     "name": "transfer-rules.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/reconstruct-brand-system/references/transfer-rules.md",
     "description": "Translate the source brand's causal logic into a new product system without reproducing source-owned signatures."
   },
   {
-    "id": "reconstruct-brand-system--verbal-visual-taxonomy",
+    "id": "codex--reconstruct-brand-system--verbal-visual-taxonomy",
     "name": "verbal-visual-taxonomy.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/reconstruct-brand-system/references/verbal-visual-taxonomy.md",
     "description": "Use the relevant sections while extracting executable rules. Treat the dimensions as prompts, not a checklist that forces nonexistent traits."
   },
   {
-    "id": "research-brand-anatomy",
+    "id": "codex--research-brand-anatomy",
     "name": "research-brand-anatomy (Codex Skill)",
     "priority": "Skill",
     "path": ".agents/skills/research-brand-anatomy/SKILL.md",
     "description": "Research and model one existing reference brand without inventing, mapping, or planning a target brand. Deliver an evidence-backed Storybook document and structured JSON handoff covering strategy, verbal systems, identity, key visuals, brand mood, photography, product representation, physical or digital product-native language, behavior, and a portable global framework for color, typography, spacing, and layout. Keep deterministic HTML only as a migration-compatibility artifact. Stop before any transfer or fictional-brand work."
   },
   {
-    "id": "research-brand-anatomy--brand-model-json-contract",
+    "id": "codex--research-brand-anatomy--brand-model-json-contract",
     "name": "brand-model-json-contract.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/research-brand-anatomy/references/brand-model-json-contract.md",
     "description": "Create `outputs/source-brand-analysis.json` as the canonical handoff and register it in the reader-facing Storybook document. Storybook explains the analysis; this JSON is the explicit input used to draft a later transfer plan. It is not an implementation token file. Keep the adjacent HTML only as a migration-compatibility artifact."
   },
   {
-    "id": "research-brand-anatomy--evidence-and-layer-model",
+    "id": "codex--research-brand-anatomy--evidence-and-layer-model",
     "name": "evidence-and-layer-model.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/research-brand-anatomy/references/evidence-and-layer-model.md",
     "description": "- `primary`: official site, product, packaging, interface, press kit, campaign, store, social account, report, manual, or first-party interview."
   },
   {
-    "id": "research-brand-anatomy--global-brand-system-framework",
+    "id": "codex--research-brand-anatomy--global-brand-system-framework",
     "name": "global-brand-system-framework.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/research-brand-anatomy/references/global-brand-system-framework.md",
     "description": "Use this framework after the source anatomy and grammar are complete. It turns source observations into portable brand operating guidance without creating a target design system."
   },
   {
-    "id": "research-brand-anatomy--report-language-style",
+    "id": "codex--research-brand-anatomy--report-language-style",
     "name": "report-language-style.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/research-brand-anatomy/references/report-language-style.md",
     "description": "Use this reference only when turning the approved source anatomy into the reader-facing Storybook document and its compatibility HTML. Do not rewrite the evidence register, Core Claim rows, or grammar source fields merely to make them sound simpler."
   },
   {
-    "id": "research-brand-anatomy--source-anatomy-schema",
+    "id": "codex--research-brand-anatomy--source-anatomy-schema",
     "name": "source-anatomy-schema.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/research-brand-anatomy/references/source-anatomy-schema.md",
@@ -512,6 +673,84 @@ export const ruleEdges = [
   {
     "from": "analyze-site-design-with-aside",
     "to": "analyze-site-design-with-aside--design-analysis-contract",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "claude-md",
+    "to": "build-brand-from-anatomy",
+    "type": "activates",
+    "note": "Claude"
+  },
+  {
+    "from": "build-brand-from-anatomy",
+    "to": "build-brand-from-anatomy--image-prompt-handoff-contract",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "build-brand-from-anatomy",
+    "to": "build-brand-from-anatomy--parallel-execution-contract",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "build-brand-from-anatomy",
+    "to": "build-brand-from-anatomy--storybook-report-contract",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "build-brand-from-anatomy",
+    "to": "build-brand-from-anatomy--transfer-direction-contract",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "build-brand-from-anatomy",
+    "to": "build-brand-from-anatomy--transfer-input-contract",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "build-brand-from-anatomy",
+    "to": "build-brand-from-anatomy--tuning-framework",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "claude-md",
+    "to": "build-landing-materials",
+    "type": "activates",
+    "note": "Claude"
+  },
+  {
+    "from": "build-landing-materials",
+    "to": "build-landing-materials--landing-materials-contract",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "claude-md",
+    "to": "commercial-photo-prompting",
+    "type": "activates",
+    "note": "Claude"
+  },
+  {
+    "from": "commercial-photo-prompting",
+    "to": "commercial-photo-prompting--commercial-photographic-taxonomy",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "commercial-photo-prompting",
+    "to": "commercial-photo-prompting--prompt-output-contract",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "commercial-photo-prompting",
+    "to": "commercial-photo-prompting--web-editorial-composition",
     "type": "resources",
     "note": ""
   },
@@ -595,6 +834,66 @@ export const ruleEdges = [
   },
   {
     "from": "claude-md",
+    "to": "reconstruct-brand-system",
+    "type": "activates",
+    "note": "Claude"
+  },
+  {
+    "from": "reconstruct-brand-system",
+    "to": "reconstruct-brand-system--chaining-contract",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "reconstruct-brand-system",
+    "to": "reconstruct-brand-system--parallel-execution-contract",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "reconstruct-brand-system",
+    "to": "reconstruct-brand-system--storybook-report-contract",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "claude-md",
+    "to": "research-brand-anatomy",
+    "type": "activates",
+    "note": "Claude"
+  },
+  {
+    "from": "research-brand-anatomy",
+    "to": "research-brand-anatomy--brand-model-json-contract",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "research-brand-anatomy",
+    "to": "research-brand-anatomy--evidence-and-layer-model",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "research-brand-anatomy",
+    "to": "research-brand-anatomy--global-brand-system-framework",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "research-brand-anatomy",
+    "to": "research-brand-anatomy--report-language-style",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "research-brand-anatomy",
+    "to": "research-brand-anatomy--source-anatomy-schema",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "claude-md",
     "to": "codex--analyze-site-design-with-aside",
     "type": "activates",
     "note": "Codex"
@@ -613,61 +912,61 @@ export const ruleEdges = [
   },
   {
     "from": "claude-md",
-    "to": "build-brand-from-anatomy",
+    "to": "codex--build-brand-from-anatomy",
     "type": "activates",
     "note": "Codex"
   },
   {
-    "from": "build-brand-from-anatomy",
-    "to": "build-brand-from-anatomy--transfer-direction-contract",
+    "from": "codex--build-brand-from-anatomy",
+    "to": "codex--build-brand-from-anatomy--transfer-direction-contract",
     "type": "resources",
     "note": ""
   },
   {
-    "from": "build-brand-from-anatomy",
-    "to": "build-brand-from-anatomy--transfer-input-contract",
+    "from": "codex--build-brand-from-anatomy",
+    "to": "codex--build-brand-from-anatomy--transfer-input-contract",
     "type": "resources",
     "note": ""
   },
   {
-    "from": "build-brand-from-anatomy",
-    "to": "build-brand-from-anatomy--tuning-framework",
+    "from": "codex--build-brand-from-anatomy",
+    "to": "codex--build-brand-from-anatomy--tuning-framework",
     "type": "resources",
     "note": ""
   },
   {
     "from": "claude-md",
-    "to": "build-landing-materials",
+    "to": "codex--build-landing-materials",
     "type": "activates",
     "note": "Codex"
   },
   {
-    "from": "build-landing-materials",
-    "to": "build-landing-materials--landing-materials-contract",
+    "from": "codex--build-landing-materials",
+    "to": "codex--build-landing-materials--landing-materials-contract",
     "type": "resources",
     "note": ""
   },
   {
     "from": "claude-md",
-    "to": "commercial-photo-prompting",
+    "to": "codex--commercial-photo-prompting",
     "type": "activates",
     "note": "Codex"
   },
   {
-    "from": "commercial-photo-prompting",
-    "to": "commercial-photo-prompting--codex-image-profile",
+    "from": "codex--commercial-photo-prompting",
+    "to": "codex--commercial-photo-prompting--codex-image-profile",
     "type": "resources",
     "note": ""
   },
   {
-    "from": "commercial-photo-prompting",
-    "to": "commercial-photo-prompting--commercial-photographic-taxonomy",
+    "from": "codex--commercial-photo-prompting",
+    "to": "codex--commercial-photo-prompting--commercial-photographic-taxonomy",
     "type": "resources",
     "note": ""
   },
   {
-    "from": "commercial-photo-prompting",
-    "to": "commercial-photo-prompting--web-editorial-composition",
+    "from": "codex--commercial-photo-prompting",
+    "to": "codex--commercial-photo-prompting--web-editorial-composition",
     "type": "resources",
     "note": ""
   },
@@ -745,103 +1044,103 @@ export const ruleEdges = [
   },
   {
     "from": "claude-md",
-    "to": "reconstruct-brand-system",
+    "to": "codex--reconstruct-brand-system",
     "type": "activates",
     "note": "Codex"
   },
   {
-    "from": "reconstruct-brand-system",
-    "to": "reconstruct-brand-system--brand-anatomy-schema",
+    "from": "codex--reconstruct-brand-system",
+    "to": "codex--reconstruct-brand-system--brand-anatomy-schema",
     "type": "resources",
     "note": ""
   },
   {
-    "from": "reconstruct-brand-system",
-    "to": "reconstruct-brand-system--chaining-contract",
+    "from": "codex--reconstruct-brand-system",
+    "to": "codex--reconstruct-brand-system--chaining-contract",
     "type": "resources",
     "note": ""
   },
   {
-    "from": "reconstruct-brand-system",
-    "to": "reconstruct-brand-system--evidence-protocol",
+    "from": "codex--reconstruct-brand-system",
+    "to": "codex--reconstruct-brand-system--evidence-protocol",
     "type": "resources",
     "note": ""
   },
   {
-    "from": "reconstruct-brand-system",
-    "to": "reconstruct-brand-system--output-schema",
+    "from": "codex--reconstruct-brand-system",
+    "to": "codex--reconstruct-brand-system--output-schema",
     "type": "resources",
     "note": ""
   },
   {
-    "from": "reconstruct-brand-system",
-    "to": "reconstruct-brand-system--parallel-execution-contract",
+    "from": "codex--reconstruct-brand-system",
+    "to": "codex--reconstruct-brand-system--parallel-execution-contract",
     "type": "resources",
     "note": ""
   },
   {
-    "from": "reconstruct-brand-system",
-    "to": "reconstruct-brand-system--phase-gates",
+    "from": "codex--reconstruct-brand-system",
+    "to": "codex--reconstruct-brand-system--phase-gates",
     "type": "resources",
     "note": ""
   },
   {
-    "from": "reconstruct-brand-system",
-    "to": "reconstruct-brand-system--quality-rubric",
+    "from": "codex--reconstruct-brand-system",
+    "to": "codex--reconstruct-brand-system--quality-rubric",
     "type": "resources",
     "note": ""
   },
   {
-    "from": "reconstruct-brand-system",
-    "to": "reconstruct-brand-system--storybook-report-contract",
+    "from": "codex--reconstruct-brand-system",
+    "to": "codex--reconstruct-brand-system--storybook-report-contract",
     "type": "resources",
     "note": ""
   },
   {
-    "from": "reconstruct-brand-system",
-    "to": "reconstruct-brand-system--transfer-rules",
+    "from": "codex--reconstruct-brand-system",
+    "to": "codex--reconstruct-brand-system--transfer-rules",
     "type": "resources",
     "note": ""
   },
   {
-    "from": "reconstruct-brand-system",
-    "to": "reconstruct-brand-system--verbal-visual-taxonomy",
+    "from": "codex--reconstruct-brand-system",
+    "to": "codex--reconstruct-brand-system--verbal-visual-taxonomy",
     "type": "resources",
     "note": ""
   },
   {
     "from": "claude-md",
-    "to": "research-brand-anatomy",
+    "to": "codex--research-brand-anatomy",
     "type": "activates",
     "note": "Codex"
   },
   {
-    "from": "research-brand-anatomy",
-    "to": "research-brand-anatomy--brand-model-json-contract",
+    "from": "codex--research-brand-anatomy",
+    "to": "codex--research-brand-anatomy--brand-model-json-contract",
     "type": "resources",
     "note": ""
   },
   {
-    "from": "research-brand-anatomy",
-    "to": "research-brand-anatomy--evidence-and-layer-model",
+    "from": "codex--research-brand-anatomy",
+    "to": "codex--research-brand-anatomy--evidence-and-layer-model",
     "type": "resources",
     "note": ""
   },
   {
-    "from": "research-brand-anatomy",
-    "to": "research-brand-anatomy--global-brand-system-framework",
+    "from": "codex--research-brand-anatomy",
+    "to": "codex--research-brand-anatomy--global-brand-system-framework",
     "type": "resources",
     "note": ""
   },
   {
-    "from": "research-brand-anatomy",
-    "to": "research-brand-anatomy--report-language-style",
+    "from": "codex--research-brand-anatomy",
+    "to": "codex--research-brand-anatomy--report-language-style",
     "type": "resources",
     "note": ""
   },
   {
-    "from": "research-brand-anatomy",
-    "to": "research-brand-anatomy--source-anatomy-schema",
+    "from": "codex--research-brand-anatomy",
+    "to": "codex--research-brand-anatomy--source-anatomy-schema",
     "type": "resources",
     "note": ""
   },

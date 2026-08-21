@@ -16,6 +16,19 @@ Capture:
 
 Do not widen one page into a full-site crawl without consent. Do not cross from a public site into signed-in areas unless the user included them.
 
+## Default rapid mode
+
+Unless the user explicitly asks for deep coverage, use one bounded sample and collect structure and visual evidence together.
+
+- Inspect the primary page plus at most two representative secondary pages chosen from distinct page families.
+- Capture no more than three screenshots total. Prefer the primary desktop view, primary mobile view when responsiveness matters, and one representative secondary page or material state.
+- Inspect one interaction state only when it changes hierarchy, navigation, or component behavior.
+- Collect navigation, landmarks, section order, repeated modules, and primary actions while each sampled page is already open.
+- Measure only representative heading/body type, the principal container, one recurring surface/component, and the palette or spacing values needed for material claims.
+- Stop when the main page families and recurring visual grammar are represented or a new page adds no material pattern.
+
+Use `focused` mode for a named flow or dimension. Use `deep` mode only when the user requests broad, exhaustive, or full-site analysis. Never silently turn rapid mode into a crawl.
+
 ## Aside task template
 
 Adapt this template rather than copying it mechanically:
@@ -26,11 +39,14 @@ Inspect [URL/ORIGINS] for a read-only design analysis of [PAGES/FLOW].
 Goal: [ANALYSIS GOAL]
 States and viewports: [STATES/VIEWPORTS]
 Collect: [OBSERVATIONS/MEASUREMENTS/SCREENSHOTS/INTERACTION EVIDENCE]
+Evidence budget: [RAPID DEFAULT OR USER-APPROVED EXPANSION]
 Save artifacts to: [OUTPUT PATH, IF ANY]
 
 For every material claim, record the page URL, viewport or state, and supporting artifact or observed value. Separate direct observations from interpretation. Do not submit forms, post, purchase, message, change account or site settings, accept consent, or download executables. Stop and ask the user for login, MFA, CAPTCHA, permission, or any action outside this scope. Do not expose credentials or unrelated personal data.
 
-Return a concise evidence index plus structured findings for the requested design dimensions.
+During each sampled-page visit, run two coordinated lanes: (A) structure — navigation, page family, landmarks, section order, repeated components and actions; (B) visual — one necessary capture plus representative computed values. Do not complete a full structure crawl before visual collection and do not revisit every page for a second pass.
+
+Return a concise evidence index plus one synthesized set of findings for the requested design dimensions.
 ```
 
 For private or personalized pages, instruct Aside to omit names, email addresses, account identifiers, financial information, and unrelated content from screenshots and written output whenever possible.
@@ -50,17 +66,18 @@ Do not treat minified source, generated class names, or private implementation d
 
 Do not use general knowledge of the site as evidence. An accessibility snapshot establishes structure, roles, names, and visible text; it does not by itself establish font family, exact color, centering, width, spacing, shadows, gradients, or breakpoint behavior.
 
-## Visual proof floor
+## Rapid paired proof floor
 
-For a visual-system analysis, collect at least:
+For the default visual-system analysis, collect structure and visual proof from the same page visits:
 
-- viewport dimensions
-- bounding boxes for the main page regions and representative components
+- viewport dimensions for each captured state
+- one structural outline for each sampled page
+- bounding boxes for the main container and representative recurring component
 - computed font family, size, weight, line height, and color for representative heading and body text
-- computed background, border, radius, shadow, and spacing values where those features are discussed
-- the inspected interaction or responsive state for state-dependent claims
+- computed background, border, radius, shadow, or spacing only where those features support a material finding
+- the single inspected interaction or responsive state when a state-dependent claim is included
 
-Use `aside repl` for these deterministic values. A screenshot can supplement them when the user authorized capture, but it does not replace measurements for exact-value claims. If a value cannot be collected, mark it `not inspected`; do not reconstruct it from memory or browser defaults.
+Use values gathered during the paired visit first. Use targeted `aside repl` only when an important exact-value claim remains unresolved; do not measure every component. A screenshot supplements structure and measurements but does not replace them for exact-value claims. If a value cannot be collected inside the evidence budget, mark it `not inspected`; do not reconstruct it from memory or browser defaults.
 
 ## Analysis dimensions
 

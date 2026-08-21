@@ -1,6 +1,6 @@
 ---
 name: analyze-site-design-with-aside
-description: Inspect a live public, authenticated, staging, or local website through the user's project-local Aside CLI setup and turn browser evidence into a structured design analysis. Use when the user explicitly asks to use Aside, the Aside browser, or this skill to analyze a site's visual system, layout, components, responsiveness, or interaction behavior. Do not activate for ordinary code review, static-file-only analysis, or browser work that the user did not explicitly authorize.
+description: Inspect a live public, authenticated, staging, or local website through the user's project-local Aside CLI setup and turn browser evidence into a structured design analysis. Default to a rapid bounded pass that pairs minimal captures with site-structure inspection during the same sampled-page visits; expand only when the user requests deeper coverage. Use when the user explicitly asks to use Aside, the Aside browser, or this skill to analyze a site's design. Do not activate for ordinary code review, static-file-only analysis, or unauthorized browser work.
 ---
 
 # Analyze Site Design with Aside
@@ -46,7 +46,7 @@ If an Aside run prints an update-available banner, report the installed and offe
 
 ## Prepare the analysis
 
-Require a target URL. Infer ordinary analysis depth from the request; ask only when a missing choice would materially change coverage, such as which authenticated account, a destructive flow, or several unrelated page families.
+Require a target URL. Use `rapid` depth by default. Use `focused` when the user names a specific flow or design dimension, and `deep` only when the user explicitly requests broad or exhaustive coverage. Ask only when a missing choice would materially change coverage, such as which authenticated account, a destructive flow, or several unrelated page families.
 
 Before launching Aside, state:
 
@@ -57,6 +57,14 @@ Before launching Aside, state:
 - evidence expected: observations, screenshots, measurements, interaction states, or all applicable evidence
 - output destination if the user requested files
 - read-only and privacy constraints
+
+For the default rapid pass, disclose this evidence budget:
+
+- one primary page and up to two representative secondary pages;
+- no more than three screenshots total;
+- desktop plus mobile only on the primary page when responsive behavior matters, otherwise one viewport;
+- one material interaction state only when it changes the design reading;
+- representative structure and computed-style samples, not an exhaustive component inventory.
 
 Read [references/design-analysis-contract.md](references/design-analysis-contract.md) before composing the Aside task or report.
 
@@ -70,7 +78,14 @@ Use the smallest Aside interface that fits:
 
 Build one self-contained Aside task from the analysis contract. Name the allowed site, requested states and viewports, evidence destination, and read-only constraints. Require Aside to stop for login, MFA, CAPTCHA, consent, or an action outside scope.
 
-For visual claims about typography, color, spacing, size, alignment, or responsive behavior, use a two-pass evidence floor: first collect structure and visible states, then use the REPL for computed styles, bounding boxes, and viewport-specific values. An accessibility snapshot alone is not sufficient evidence for those claims. Never substitute prior knowledge of a well-known site for a browser observation.
+Run two bounded evidence lanes together inside the same Aside task and browser session:
+
+1. **Structure lane** — map global navigation, page families, landmarks, section order, repeated component patterns, and primary actions.
+2. **Visual lane** — take only the budgeted captures and collect representative typography, color, container, spacing, and surface measurements from the pages already being inspected.
+
+Do not finish a site-wide structure crawl before starting screenshots, and do not revisit every page for a separate visual pass. At each sampled page, collect its structural snapshot, minimal visual capture, and representative measurements in the same visit. Use a targeted `aside repl` follow-up only for a material exact-value claim that remains unresolved. Do not launch duplicate browser sessions solely to create concurrency.
+
+Stop sampling when the main page families and recurring visual grammar are represented, when a new sample adds no material pattern, or when the rapid evidence budget is reached. An accessibility snapshot alone is not sufficient proof for exact typography, color, geometry, or responsive claims. Never substitute prior knowledge of a well-known site for a browser observation.
 
 Use a reusable terminal session for a long-running command and relay meaningful progress. Do not silently retry failed account, permission, or site-auth checks. If Aside requests user input, report the exact visible action the user must complete and resume only after they do it.
 
