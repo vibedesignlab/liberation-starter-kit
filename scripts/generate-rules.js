@@ -168,6 +168,54 @@ const conditionMatrix = [
     rules: ruleIds.filter((id) => ['mui-grid-usage'].includes(id)),
   },
   {
+    task: 'Codex · 컴포넌트 생성·수정·삭제',
+    rules: ruleIds.filter((id) => ['design-system', 'code-convention'].includes(id)),
+    skill: 'codex--component-work',
+    skillResources: [
+      'codex--component-work--taxonomy-index',
+      'codex--component-work--storybook-writing',
+    ].filter((id) => nodes.some((n) => n.id === id)),
+  },
+  {
+    task: 'Codex · 인터랙티브 컴포넌트',
+    rules: ruleIds.filter((id) => ['design-system', 'code-convention'].includes(id)),
+    skill: 'codex--component-work',
+    skillResources: [
+      'codex--component-work--interactive-principles',
+      'codex--component-work--storybook-writing',
+    ].filter((id) => nodes.some((n) => n.id === id)),
+  },
+  {
+    task: 'Codex · Storybook 스토리',
+    rules: [],
+    skill: 'codex--component-work',
+    skillResources: ['codex--component-work--storybook-writing'].filter((id) => nodes.some((n) => n.id === id)),
+  },
+  {
+    task: 'Codex · 컴포넌트 리팩토링',
+    rules: ruleIds.filter((id) => ['code-convention'].includes(id)),
+    skill: 'codex--component-work',
+    skillResources: ['codex--component-work--refactoring-guide'].filter((id) => nodes.some((n) => n.id === id)),
+  },
+  {
+    task: 'Codex · 테마/스타일 수정',
+    rules: ruleIds.filter((id) => ['design-system'].includes(id)),
+    skill: 'codex--component-work',
+    skillResources: ['codex--component-work--mui-theme'].filter((id) => nodes.some((n) => n.id === id)),
+  },
+  {
+    task: 'Claude · 프로젝트 기획 문서',
+    rules: [],
+    skill: 'project-planning',
+    skillResources: ['project-planning--doc-templates'].filter((id) => nodes.some((n) => n.id === id)),
+  },
+  {
+    task: 'Codex · 프로젝트 기획 문서',
+    rules: [],
+    skill: 'codex--project-planning',
+    skillResources: ['codex--project-planning--doc-templates'].filter((id) => nodes.some((n) => n.id === id)),
+  },
+  {
     task: '브랜드 재구성 전체 체인',
     rules: [],
     skill: 'reconstruct-brand-system',
@@ -199,6 +247,12 @@ const conditionMatrix = [
       'commercial-photo-prompting--web-editorial-composition',
       'commercial-photo-prompting--commercial-photographic-taxonomy',
     ].filter((id) => nodes.some((n) => n.id === id)),
+  },
+  {
+    task: 'Claude 스킬을 Codex로 포팅',
+    rules: [],
+    skill: 'port-claude-skill-to-codex',
+    skillResources: ['port-claude-skill-to-codex--codex-porting-contract'].filter((id) => nodes.some((n) => n.id === id)),
   },
 ];
 

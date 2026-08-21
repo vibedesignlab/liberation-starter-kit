@@ -39,13 +39,17 @@ Claude Code와 Codex가 이 프로젝트의 규칙과 작업 스킬을 찾도록
 |------|------|
 | `.claude/rules/` (4파일) | 코드 컨벤션, 디자인 시스템, Grid 규칙, 디렉토리 구조 — 매 세션 자동 로드 |
 | `.claude/skills/component-work/` | 컴포넌트 생성/수정/삭제 워크플로우 + 택소노미 참조 |
+| `.claude/skills/project-planning/` | 승인 게이트 기반 프로젝트 요약·UX 플로우·비주얼 방향 작성 |
 | `.claude/agents/` (3개) | `ai-slop-fixer` · `stable-layout-auditor` · `typography-auditor` — 디자인/레이아웃/타이포 감사 |
+| `.agents/skills/component-work/` | (Codex) MUI 컴포넌트와 Storybook 스토리 생성·수정·리팩토링 |
+| `.agents/skills/project-planning/` | (Codex) 명시 호출형 3단계 프로젝트 기획 문서 작성 |
 | `.agents/skills/vdl-visual-asset-prompt/` | (Codex) 비주얼 에셋 생성 프롬프트 설계 스킬 |
 | `.agents/skills/reconstruct-brand-system/` | (Codex) 브랜드 분석 → 전환 → 랜딩페이지 재료 준비를 연결하는 3단계 라우터 |
 | `.agents/skills/research-brand-anatomy/` | (Codex) 기존 브랜드의 근거 기반 아나토미 리서치와 Storybook+JSON 산출 |
 | `.agents/skills/build-brand-from-anatomy/` | (Codex) 승인된 분석을 신규 브랜드·제품 라인업·비주얼 시스템으로 전환 |
 | `.agents/skills/build-landing-materials/` | (Codex) UX 카피와 제품별 이미지 렌더링 재료 작성 |
 | `.agents/skills/commercial-photo-prompting/` | (Codex) 웹 UI 역할별 상업 사진 구도·앵글·프롬프트 설계 |
+| `.agents/skills/port-claude-skill-to-codex/` | (Codex) 프로젝트 Claude 스킬을 Codex 네이티브 패키지로 포팅·동기화·감사 |
 | `.claude/settings.json` | 권한 설정 (Read/Write/pnpm/git 허용, .env 차단) |
 
 ### 브랜드 재구성 체인
@@ -112,6 +116,8 @@ pnpm dev
 ### 4. Skills 확장
 
 프로젝트 고유 워크플로우가 있다면 Claude용 스킬은 `.claude/skills/`, Codex용 스킬은 `.agents/skills/`에 추가합니다. 추가 후 `pnpm generate-rules`로 시각화를 갱신합니다.
+
+기존 Claude 스킬을 Codex에서도 사용하려면 `$port-claude-skill-to-codex`를 호출합니다. 원본을 그대로 복사하지 않고 Codex용 트리거, 호출 메타데이터, 도구 가정, 리소스 경로와 프로젝트 관계를 변환하고 검증합니다.
 
 ### 5. Hooks 도입 (선택)
 

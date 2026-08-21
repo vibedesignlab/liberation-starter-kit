@@ -1,0 +1,6 @@
+interface:
+  display_name: "Project Planning"
+  short_description: "Create gated project, UX flow, and visual plans"
+  default_prompt: "Use $project-planning to create the requested project planning document and stop at each approval gate."
+policy:
+  allow_implicit_invocation: false

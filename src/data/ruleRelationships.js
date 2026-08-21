@@ -208,6 +208,83 @@ export const ruleNodes = [
     "description": "Use web placement as the first composition classifier for commercial photography. Most requested commercial images will be placed in a website or product interface, so do not wait for the user to say `web` before routing the shot."
   },
   {
+    "id": "codex--component-work",
+    "name": "component-work (Codex Skill)",
+    "priority": "Skill",
+    "path": ".agents/skills/component-work/SKILL.md",
+    "description": "Create, modify, delete, refactor, or document React UI components and Storybook stories in the Liberation Starter Kit. Use whenever work touches `src/components`, `src/stories`, or `*.stories.jsx`, including component reuse, MUI `sx` styling, interaction behavior, Storybook controls, and component documentation. Do not use for report data or planning changes that leave component and story files untouched."
+  },
+  {
+    "id": "codex--component-work--interactive-principles",
+    "name": "interactive-principles.md",
+    "priority": "Skill Resource",
+    "path": ".agents/skills/component-work/references/interactive-principles.md",
+    "description": "Use this reference only for interaction beyond ordinary hover, focus, and disclosure states."
+  },
+  {
+    "id": "codex--component-work--mui-theme",
+    "name": "mui-theme.md",
+    "priority": "Skill Resource",
+    "path": ".agents/skills/component-work/references/mui-theme.md",
+    "description": "MUI 커스텀 테마 설정 규칙"
+  },
+  {
+    "id": "codex--component-work--refactoring-guide",
+    "name": "refactoring-guide.md",
+    "priority": "Skill Resource",
+    "path": ".agents/skills/component-work/references/refactoring-guide.md",
+    "description": "> 리팩토링 작업 시 준수해야 할 가이드."
+  },
+  {
+    "id": "codex--component-work--storybook-writing",
+    "name": "storybook-writing.md",
+    "priority": "Skill Resource",
+    "path": ".agents/skills/component-work/references/storybook-writing.md",
+    "description": "Use this reference for changes under `src/stories` or to `*.stories.jsx`."
+  },
+  {
+    "id": "codex--component-work--taxonomy-index",
+    "name": "taxonomy-index.md",
+    "priority": "Skill Resource",
+    "path": ".agents/skills/component-work/references/taxonomy-index.md",
+    "description": "> 전체 분류체계 빠른 참조용 인덱스"
+  },
+  {
+    "id": "codex--component-work--typography-criteria",
+    "name": "typography-criteria.md",
+    "priority": "Skill Resource",
+    "path": ".agents/skills/component-work/references/typography-criteria.md",
+    "description": "> 이 파일은 `scripts/extract-design-criteria.mjs` 가 `src/data/typographyTaxonomyData.js` 에서 추출한 파생 뷰입니다."
+  },
+  {
+    "id": "port-claude-skill-to-codex",
+    "name": "port-claude-skill-to-codex (Codex Skill)",
+    "priority": "Skill",
+    "path": ".agents/skills/port-claude-skill-to-codex/SKILL.md",
+    "description": "Port or synchronize a project-local Claude skill from `.claude/skills` into a Codex-native `.agents/skills` package while preserving its intent, safety gates, and useful resources and translating invocation metadata, tool assumptions, paths, and project integration. Use when asked to make a Claude skill available to Codex, migrate or sync a Claude skill, create a Codex counterpart, or audit a Claude/Codex skill pair. Do not use for ordinary skill authoring without a Claude source."
+  },
+  {
+    "id": "port-claude-skill-to-codex--codex-porting-contract",
+    "name": "codex-porting-contract.md",
+    "priority": "Skill Resource",
+    "path": ".agents/skills/port-claude-skill-to-codex/references/codex-porting-contract.md",
+    "description": "Use this contract to decide what to preserve, translate, share, or omit. The goal is behavioral equivalence in the current repository, not textual parity."
+  },
+  {
+    "id": "codex--project-planning",
+    "name": "project-planning (Codex Skill)",
+    "priority": "Skill",
+    "path": ".agents/skills/project-planning/SKILL.md",
+    "description": "Create structured project planning documents in three approval-gated phases: project summary, UX flow, and visual direction. Use only when the user explicitly invokes `$project-planning` or directly asks to run this named planning workflow. Do not activate for ordinary implementation plans, status updates, or ad hoc technical explanations."
+  },
+  {
+    "id": "codex--project-planning--doc-templates",
+    "name": "doc-templates.md",
+    "priority": "Skill Resource",
+    "path": ".agents/skills/project-planning/references/doc-templates.md",
+    "description": "> 각 Phase에서 문서 작성 시 이 템플릿의 구조를 따른다."
+  },
+  {
     "id": "reconstruct-brand-system",
     "name": "reconstruct-brand-system (Codex Skill)",
     "priority": "Skill",
@@ -498,6 +575,72 @@ export const ruleEdges = [
   },
   {
     "from": "claude-md",
+    "to": "codex--component-work",
+    "type": "activates",
+    "note": "Codex"
+  },
+  {
+    "from": "codex--component-work",
+    "to": "codex--component-work--interactive-principles",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "codex--component-work",
+    "to": "codex--component-work--mui-theme",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "codex--component-work",
+    "to": "codex--component-work--refactoring-guide",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "codex--component-work",
+    "to": "codex--component-work--storybook-writing",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "codex--component-work",
+    "to": "codex--component-work--taxonomy-index",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "codex--component-work",
+    "to": "codex--component-work--typography-criteria",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "claude-md",
+    "to": "port-claude-skill-to-codex",
+    "type": "activates",
+    "note": "Codex"
+  },
+  {
+    "from": "port-claude-skill-to-codex",
+    "to": "port-claude-skill-to-codex--codex-porting-contract",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "claude-md",
+    "to": "codex--project-planning",
+    "type": "activates",
+    "note": "Codex"
+  },
+  {
+    "from": "codex--project-planning",
+    "to": "codex--project-planning--doc-templates",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "claude-md",
     "to": "reconstruct-brand-system",
     "type": "activates",
     "note": "Codex"
@@ -691,6 +834,74 @@ export const conditionMatrix = [
     ]
   },
   {
+    "task": "Codex · 컴포넌트 생성·수정·삭제",
+    "rules": [
+      "code-convention",
+      "design-system"
+    ],
+    "skill": "codex--component-work",
+    "skillResources": [
+      "codex--component-work--taxonomy-index",
+      "codex--component-work--storybook-writing"
+    ]
+  },
+  {
+    "task": "Codex · 인터랙티브 컴포넌트",
+    "rules": [
+      "code-convention",
+      "design-system"
+    ],
+    "skill": "codex--component-work",
+    "skillResources": [
+      "codex--component-work--interactive-principles",
+      "codex--component-work--storybook-writing"
+    ]
+  },
+  {
+    "task": "Codex · Storybook 스토리",
+    "rules": [],
+    "skill": "codex--component-work",
+    "skillResources": [
+      "codex--component-work--storybook-writing"
+    ]
+  },
+  {
+    "task": "Codex · 컴포넌트 리팩토링",
+    "rules": [
+      "code-convention"
+    ],
+    "skill": "codex--component-work",
+    "skillResources": [
+      "codex--component-work--refactoring-guide"
+    ]
+  },
+  {
+    "task": "Codex · 테마/스타일 수정",
+    "rules": [
+      "design-system"
+    ],
+    "skill": "codex--component-work",
+    "skillResources": [
+      "codex--component-work--mui-theme"
+    ]
+  },
+  {
+    "task": "Claude · 프로젝트 기획 문서",
+    "rules": [],
+    "skill": "project-planning",
+    "skillResources": [
+      "project-planning--doc-templates"
+    ]
+  },
+  {
+    "task": "Codex · 프로젝트 기획 문서",
+    "rules": [],
+    "skill": "codex--project-planning",
+    "skillResources": [
+      "codex--project-planning--doc-templates"
+    ]
+  },
+  {
     "task": "브랜드 재구성 전체 체인",
     "rules": [],
     "skill": "reconstruct-brand-system",
@@ -732,6 +943,14 @@ export const conditionMatrix = [
     "skillResources": [
       "commercial-photo-prompting--web-editorial-composition",
       "commercial-photo-prompting--commercial-photographic-taxonomy"
+    ]
+  },
+  {
+    "task": "Claude 스킬을 Codex로 포팅",
+    "rules": [],
+    "skill": "port-claude-skill-to-codex",
+    "skillResources": [
+      "port-claude-skill-to-codex--codex-porting-contract"
     ]
   }
 ];

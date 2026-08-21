@@ -1,0 +1,4 @@
+interface:
+  display_name: "Port Claude Skill to Codex"
+  short_description: "Port project Claude skills into Codex-native packages"
+  default_prompt: "Use $port-claude-skill-to-codex to port this project-local Claude skill into a Codex-native skill while preserving intent and validating the result."

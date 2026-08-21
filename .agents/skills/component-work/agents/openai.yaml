@@ -1,0 +1,4 @@
+interface:
+  display_name: "Component Work"
+  short_description: "Build and document MUI React components in Storybook"
+  default_prompt: "Use $component-work to create or update this MUI React component and keep its Storybook story synchronized."

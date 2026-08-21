@@ -2,7 +2,9 @@
  * 설계 기준 경량 뷰 추출기 (생성 시점용)
  *
  * 단일 원천: src/data/typographyTaxonomyData.js
- * 산출물: .claude/skills/component-work/resources/typography-criteria.md
+ * 산출물:
+ *   - .claude/skills/component-work/resources/typography-criteria.md
+ *   - .agents/skills/component-work/references/typography-criteria.md
  *
  * 목적: 점검 에이전트(typography-auditor)와 동일한 SSOT 에서, 생성 시점에
  *       component-work 가 조건부로 참조할 압축 do-pattern 뷰를 파생한다.
@@ -17,9 +19,13 @@ import { TYPOGRAPHY_TAXONOMY } from "../src/data/typographyTaxonomyData.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
-const OUT = resolve(
+const CLAUDE_OUT = resolve(
   ROOT,
   ".claude/skills/component-work/resources/typography-criteria.md"
+);
+const CODEX_OUT = resolve(
+  ROOT,
+  ".agents/skills/component-work/references/typography-criteria.md"
 );
 
 // 첫 문장만 (장문 방지)
@@ -65,6 +71,13 @@ for (const part of TYPOGRAPHY_TAXONOMY) {
 
 md += `\n---\n_생성: scripts/extract-design-criteria.mjs · 원천: src/data/typographyTaxonomyData.js_\n`;
 
-writeFileSync(OUT, md, "utf8");
-console.log(`wrote ${OUT}`);
-console.log(`bytes: ${Buffer.byteLength(md, "utf8")}`);
+const codexMd = md.replace(
+  "점검 에이전트 `typography-auditor` 와 동일한 단일 원천을 공유합니다.",
+  "Claude와 Codex 컴포넌트 스킬이 동일한 프로젝트 단일 원천을 공유합니다."
+);
+
+writeFileSync(CLAUDE_OUT, md, "utf8");
+writeFileSync(CODEX_OUT, codexMd, "utf8");
+console.log(`wrote ${CLAUDE_OUT}`);
+console.log(`wrote ${CODEX_OUT}`);
+console.log(`bytes: ${Buffer.byteLength(md, "utf8")} / ${Buffer.byteLength(codexMd, "utf8")}`);
