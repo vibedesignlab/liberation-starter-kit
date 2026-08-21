@@ -149,7 +149,7 @@ export const ruleNodes = [
     "name": "project-planning (Claude Skill)",
     "priority": "Skill",
     "path": ".claude/skills/project-planning/SKILL.md",
-    "description": "Creates structured planning documents (project-summary, ux-flow, visual-direction) in docs/ for new feature or project initiatives."
+    "description": "Creates approval-gated planning documents for project-summary, ux-flow, and visual-direction phases, then immediately applies only design-token rows explicitly approved in visual-direction. Does not perform broad UI or component conversion."
   },
   {
     "id": "project-planning--doc-templates",
@@ -157,6 +157,13 @@ export const ruleNodes = [
     "priority": "Skill Resource",
     "path": ".claude/skills/project-planning/resources/doc-templates.md",
     "description": "> 각 Phase에서 문서 작성 시 이 템플릿의 구조를 따른다."
+  },
+  {
+    "id": "project-planning--token-application-contract",
+    "name": "token-application-contract.md",
+    "priority": "Skill Resource",
+    "path": ".claude/skills/project-planning/resources/token-application-contract.md",
+    "description": "이 계약은 사용자가 Phase 3 Visual Direction을 승인한 직후 사용한다. 승인은 제한된 디자인 토큰 패치를 활성화하며, 제품 전체를 시각적으로 변환할 권한은 주지 않는다."
   },
   {
     "id": "codex--analyze-site-design-with-aside",
@@ -317,7 +324,7 @@ export const ruleNodes = [
     "name": "project-planning (Codex Skill)",
     "priority": "Skill",
     "path": ".agents/skills/project-planning/SKILL.md",
-    "description": "Create structured project planning documents in three approval-gated phases: project summary, UX flow, and visual direction. Use only when the user explicitly invokes `$project-planning` or directly asks to run this named planning workflow. Do not activate for ordinary implementation plans, status updates, or ad hoc technical explanations."
+    "description": "Create structured project planning documents in three approval-gated phases: project summary, UX flow, and visual direction, then apply only explicitly approved design-token changes immediately after visual-direction approval. Use only when the user explicitly invokes `$project-planning` or directly asks to run this named planning workflow. Do not activate for ordinary implementation plans, status updates, or broad UI conversion."
   },
   {
     "id": "codex--project-planning--doc-templates",
@@ -325,6 +332,13 @@ export const ruleNodes = [
     "priority": "Skill Resource",
     "path": ".agents/skills/project-planning/references/doc-templates.md",
     "description": "> 각 Phase에서 문서 작성 시 이 템플릿의 구조를 따른다."
+  },
+  {
+    "id": "codex--project-planning--token-application-contract",
+    "name": "token-application-contract.md",
+    "priority": "Skill Resource",
+    "path": ".agents/skills/project-planning/references/token-application-contract.md",
+    "description": "Use this contract after the user approves Phase 3, Visual Direction. Approval activates a bounded design-token patch; it does not authorize a general visual conversion of the product."
   },
   {
     "id": "reconstruct-brand-system",
@@ -574,6 +588,12 @@ export const ruleEdges = [
     "note": ""
   },
   {
+    "from": "project-planning",
+    "to": "project-planning--token-application-contract",
+    "type": "resources",
+    "note": ""
+  },
+  {
     "from": "claude-md",
     "to": "codex--analyze-site-design-with-aside",
     "type": "activates",
@@ -714,6 +734,12 @@ export const ruleEdges = [
   {
     "from": "codex--project-planning",
     "to": "codex--project-planning--doc-templates",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "codex--project-planning",
+    "to": "codex--project-planning--token-application-contract",
     "type": "resources",
     "note": ""
   },
