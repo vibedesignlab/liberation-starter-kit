@@ -254,6 +254,24 @@ const conditionMatrix = [
     skill: 'port-claude-skill-to-codex',
     skillResources: ['port-claude-skill-to-codex--codex-porting-contract'].filter((id) => nodes.some((n) => n.id === id)),
   },
+  {
+    task: 'Claude · Aside로 사이트 디자인 분석',
+    rules: [],
+    skill: 'analyze-site-design-with-aside',
+    skillResources: [
+      'analyze-site-design-with-aside--aside-setup-spec',
+      'analyze-site-design-with-aside--design-analysis-contract',
+    ].filter((id) => nodes.some((n) => n.id === id)),
+  },
+  {
+    task: 'Codex · Aside로 사이트 디자인 분석',
+    rules: [],
+    skill: 'codex--analyze-site-design-with-aside',
+    skillResources: [
+      'codex--analyze-site-design-with-aside--aside-setup-spec',
+      'codex--analyze-site-design-with-aside--design-analysis-contract',
+    ].filter((id) => nodes.some((n) => n.id === id)),
+  },
 ];
 
 // ── 출력 ──

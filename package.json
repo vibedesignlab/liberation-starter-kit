@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "aside:check": "node .agents/skills/analyze-site-design-with-aside/scripts/check-aside.mjs",
     "register-brand-report": "node scripts/brand-reports/register-brand-report.mjs",
     "generate-rules": "node scripts/generate-rules.js"
   },

@@ -54,6 +54,27 @@ export const ruleNodes = [
     "description": "```jsx"
   },
   {
+    "id": "analyze-site-design-with-aside",
+    "name": "analyze-site-design-with-aside (Claude Skill)",
+    "priority": "Skill",
+    "path": ".claude/skills/analyze-site-design-with-aside/SKILL.md",
+    "description": "Use this skill whenever the user explicitly asks Claude Code to use Aside, the Aside browser, or /analyze-site-design-with-aside to inspect a live public, authenticated, staging, or local website and analyze its visual system, layout, components, responsiveness, or interaction behavior. Do not activate for ordinary code review, static-file-only analysis, or browser work the user did not explicitly authorize."
+  },
+  {
+    "id": "analyze-site-design-with-aside--aside-setup-spec",
+    "name": "aside-setup-spec.md",
+    "priority": "Skill Resource",
+    "path": ".claude/skills/analyze-site-design-with-aside/resources/aside-setup-spec.md",
+    "description": "이 문서는 저장소를 clone한 사용자가 자신의 Aside 환경만 연결해 `/analyze-site-design-with-aside`를 실행할 수 있도록 하는 온보딩 계약이다. 안내 문구는 사용자의 언어에 맞추되, 아래 판정과 권한 경계는 유지한다."
+  },
+  {
+    "id": "analyze-site-design-with-aside--design-analysis-contract",
+    "name": "design-analysis-contract.md",
+    "priority": "Skill Resource",
+    "path": ".claude/skills/analyze-site-design-with-aside/resources/design-analysis-contract.md",
+    "description": "Use this contract to turn a user's analysis request into one bounded Aside task and a reviewable report. Analyze only dimensions relevant to the requested page or flow."
+  },
+  {
     "id": "component-work",
     "name": "component-work (Claude Skill)",
     "priority": "Skill",
@@ -136,6 +157,27 @@ export const ruleNodes = [
     "priority": "Skill Resource",
     "path": ".claude/skills/project-planning/resources/doc-templates.md",
     "description": "> 각 Phase에서 문서 작성 시 이 템플릿의 구조를 따른다."
+  },
+  {
+    "id": "codex--analyze-site-design-with-aside",
+    "name": "analyze-site-design-with-aside (Codex Skill)",
+    "priority": "Skill",
+    "path": ".agents/skills/analyze-site-design-with-aside/SKILL.md",
+    "description": "Inspect a live public, authenticated, staging, or local website through the user's project-local Aside CLI setup and turn browser evidence into a structured design analysis. Use when the user explicitly asks to use Aside, the Aside browser, or this skill to analyze a site's visual system, layout, components, responsiveness, or interaction behavior. Do not activate for ordinary code review, static-file-only analysis, or browser work that the user did not explicitly authorize."
+  },
+  {
+    "id": "codex--analyze-site-design-with-aside--aside-setup-spec",
+    "name": "aside-setup-spec.md",
+    "priority": "Skill Resource",
+    "path": ".agents/skills/analyze-site-design-with-aside/references/aside-setup-spec.md",
+    "description": "이 문서는 저장소를 clone한 사용자가 자신의 Aside 환경만 연결해 `$analyze-site-design-with-aside`를 실행할 수 있도록 하는 온보딩 계약이다. 안내 문구는 사용자의 언어에 맞추되, 아래 판정과 권한 경계는 유지한다."
+  },
+  {
+    "id": "codex--analyze-site-design-with-aside--design-analysis-contract",
+    "name": "design-analysis-contract.md",
+    "priority": "Skill Resource",
+    "path": ".agents/skills/analyze-site-design-with-aside/references/design-analysis-contract.md",
+    "description": "Use this contract to turn a user's analysis request into one bounded Aside task and a reviewable report. Analyze only dimensions relevant to the requested page or flow."
   },
   {
     "id": "build-brand-from-anatomy",
@@ -443,6 +485,24 @@ export const ruleEdges = [
   },
   {
     "from": "claude-md",
+    "to": "analyze-site-design-with-aside",
+    "type": "activates",
+    "note": "Claude"
+  },
+  {
+    "from": "analyze-site-design-with-aside",
+    "to": "analyze-site-design-with-aside--aside-setup-spec",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "analyze-site-design-with-aside",
+    "to": "analyze-site-design-with-aside--design-analysis-contract",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "claude-md",
     "to": "component-work",
     "type": "activates",
     "note": "Claude"
@@ -510,6 +570,24 @@ export const ruleEdges = [
   {
     "from": "project-planning",
     "to": "project-planning--doc-templates",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "claude-md",
+    "to": "codex--analyze-site-design-with-aside",
+    "type": "activates",
+    "note": "Codex"
+  },
+  {
+    "from": "codex--analyze-site-design-with-aside",
+    "to": "codex--analyze-site-design-with-aside--aside-setup-spec",
+    "type": "resources",
+    "note": ""
+  },
+  {
+    "from": "codex--analyze-site-design-with-aside",
+    "to": "codex--analyze-site-design-with-aside--design-analysis-contract",
     "type": "resources",
     "note": ""
   },
@@ -951,6 +1029,24 @@ export const conditionMatrix = [
     "skill": "port-claude-skill-to-codex",
     "skillResources": [
       "port-claude-skill-to-codex--codex-porting-contract"
+    ]
+  },
+  {
+    "task": "Claude · Aside로 사이트 디자인 분석",
+    "rules": [],
+    "skill": "analyze-site-design-with-aside",
+    "skillResources": [
+      "analyze-site-design-with-aside--aside-setup-spec",
+      "analyze-site-design-with-aside--design-analysis-contract"
+    ]
+  },
+  {
+    "task": "Codex · Aside로 사이트 디자인 분석",
+    "rules": [],
+    "skill": "codex--analyze-site-design-with-aside",
+    "skillResources": [
+      "codex--analyze-site-design-with-aside--aside-setup-spec",
+      "codex--analyze-site-design-with-aside--design-analysis-contract"
     ]
   }
 ];

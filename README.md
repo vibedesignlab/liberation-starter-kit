@@ -40,6 +40,7 @@ Claude Code와 Codex가 이 프로젝트의 규칙과 작업 스킬을 찾도록
 | `.claude/rules/` (4파일) | 코드 컨벤션, 디자인 시스템, Grid 규칙, 디렉토리 구조 — 매 세션 자동 로드 |
 | `.claude/skills/component-work/` | 컴포넌트 생성/수정/삭제 워크플로우 + 택소노미 참조 |
 | `.claude/skills/project-planning/` | 승인 게이트 기반 프로젝트 요약·UX 플로우·비주얼 방향 작성 |
+| `.claude/skills/analyze-site-design-with-aside/` | (Claude) 사용자 로컬 Aside CLI 온보딩·검증과 근거 기반 사이트 디자인 분석 |
 | `.claude/agents/` (3개) | `ai-slop-fixer` · `stable-layout-auditor` · `typography-auditor` — 디자인/레이아웃/타이포 감사 |
 | `.agents/skills/component-work/` | (Codex) MUI 컴포넌트와 Storybook 스토리 생성·수정·리팩토링 |
 | `.agents/skills/project-planning/` | (Codex) 명시 호출형 3단계 프로젝트 기획 문서 작성 |
@@ -50,6 +51,7 @@ Claude Code와 Codex가 이 프로젝트의 규칙과 작업 스킬을 찾도록
 | `.agents/skills/build-landing-materials/` | (Codex) UX 카피와 제품별 이미지 렌더링 재료 작성 |
 | `.agents/skills/commercial-photo-prompting/` | (Codex) 웹 UI 역할별 상업 사진 구도·앵글·프롬프트 설계 |
 | `.agents/skills/port-claude-skill-to-codex/` | (Codex) 프로젝트 Claude 스킬을 Codex 네이티브 패키지로 포팅·동기화·감사 |
+| `.agents/skills/analyze-site-design-with-aside/` | (Codex) 사용자 로컬 Aside CLI 온보딩·검증과 근거 기반 사이트 디자인 분석 |
 | `.claude/settings.json` | 권한 설정 (Read/Write/pnpm/git 허용, .env 차단) |
 
 ### 브랜드 재구성 체인
@@ -118,6 +120,14 @@ pnpm dev
 프로젝트 고유 워크플로우가 있다면 Claude용 스킬은 `.claude/skills/`, Codex용 스킬은 `.agents/skills/`에 추가합니다. 추가 후 `pnpm generate-rules`로 시각화를 갱신합니다.
 
 기존 Claude 스킬을 Codex에서도 사용하려면 `$port-claude-skill-to-codex`를 호출합니다. 원본을 그대로 복사하지 않고 Codex용 트리거, 호출 메타데이터, 도구 가정, 리소스 경로와 프로젝트 관계를 변환하고 검증합니다.
+
+웹사이트를 사용자의 Aside Browser에서 직접 분석하려면 Claude Code에서는 `/analyze-site-design-with-aside`, Codex에서는 `$analyze-site-design-with-aside`를 호출합니다. 두 프로젝트 로컬 스킬은 같은 `pnpm aside:check` 진단을 사용합니다. 스킬은 프로젝트에 포함되지만 Aside 앱·계정·인증정보는 포함하지 않습니다. 사용자가 Aside Browser 계정을 준비하면 스킬이 CLI 설치 안내와 승인, 환경 검증, 읽기 전용 분석 실행, 증거 기반 리포트 작성을 담당합니다. 현재 공식 요구사항은 macOS 15.0 이상이며 자세한 상태별 가이드는 각 스킬의 `resources/` 또는 `references/`에 있습니다.
+
+이 스킬은 clone한 프로젝트를 연 Claude Code 또는 Codex에서 호출하고 해당 에이전트가 로컬 `aside` 명령을 실행하는 구조입니다. `aside` 명령 자체가 `.claude/skills`나 `.agents/skills`를 자동 탐색한다고 가정하지 않습니다.
+
+```bash
+pnpm aside:check
+```
 
 ### 5. Hooks 도입 (선택)
 

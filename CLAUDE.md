@@ -9,12 +9,13 @@ MUI 기본 컴포넌트와 디자인 토큰만 담은 라이트 구조를 유지
 - 컴포넌트 작업 → `/component-work` Skill이 워크플로우 담당
 - 기존 브랜드 분석 → `research-brand-anatomy` Skill
 - 분석부터 랜딩페이지 재료까지 전체 브랜드 체인 → `reconstruct-brand-system` Skill
+- Aside 기반 사이트 디자인 분석 → Claude `/analyze-site-design-with-aside` · Codex `$analyze-site-design-with-aside`
 - 리팩토링 → `refactoring-guide.md` 참조, 기존 스토리 통과 확인
 - 룰 수정 시 → `pnpm generate-rules` 실행하여 Storybook 시각화 동기화
 
 ## 구성
 
-- **Claude Skills**: `component-work`, `project-planning`
-- **Codex Skills**: `component-work`, `project-planning`, `reconstruct-brand-system`, `research-brand-anatomy`, `build-brand-from-anatomy`, `build-landing-materials`, `commercial-photo-prompting`, `vdl-visual-asset-prompt`, `port-claude-skill-to-codex`
+- **Claude Skills**: `component-work`, `project-planning`, `analyze-site-design-with-aside`
+- **Codex Skills**: `component-work`, `project-planning`, `reconstruct-brand-system`, `research-brand-anatomy`, `build-brand-from-anatomy`, `build-landing-materials`, `commercial-photo-prompting`, `vdl-visual-asset-prompt`, `port-claude-skill-to-codex`, `analyze-site-design-with-aside`
 - **Agents**: `ai-slop-fixer`, `stable-layout-auditor`, `typography-auditor`
 - **Storybook**: Overview · Brand Reports(Stage 1–3 모듈 문서) · Style(디자인 토큰) · Components(MUI 대표 컴포넌트 데모)

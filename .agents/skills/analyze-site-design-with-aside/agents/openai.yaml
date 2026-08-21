@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Site Design with Aside"
+  short_description: "Inspect live sites through a local Aside browser"
+  default_prompt: "Use $analyze-site-design-with-aside to inspect this site through my configured Aside browser and return an evidence-backed design analysis."
