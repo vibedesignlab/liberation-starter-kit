@@ -1,0 +1,4 @@
+interface:
+  display_name: "Commercial Photo Prompting"
+  short_description: "Plan, compile, and repair credible photo prompts"
+  default_prompt: "Use $commercial-photo-prompting to turn this visual intent into a coherent commercial photo plan or generation-ready prompt without inventing brand strategy."

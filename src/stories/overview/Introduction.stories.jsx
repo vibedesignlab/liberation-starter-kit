@@ -15,7 +15,7 @@ export default {
     docs: {
       description: {
         component: `
-## Starter Kit Basic
+## Liberation Starter Kit
 
 디자이너가 React + MUI + Storybook을 디자인 도구로 사용할 수 있는 개발 환경입니다.
 
@@ -38,12 +38,12 @@ export const Doc = {
         status="Available"
         note="프로젝트 개요 및 핵심 개념"
         brandName="Design System"
-        systemName="Starter Kit"
+        systemName="Liberation"
         version="1.0"
       />
       <PageContainer>
         <Typography variant="h4" sx={{ fontWeight: 700, mb: 1 }}>
-          Starter Kit Basic
+          Liberation Starter Kit
         </Typography>
         <Typography variant="body1" color="text.secondary" sx={{ mb: 4 }}>
           React + MUI + Storybook을 활용하는 디자이너를 위한 개발 환경

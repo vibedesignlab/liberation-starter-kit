@@ -1,8 +1,8 @@
-# Sunshine Starter Kit 🌞
+# Liberation Starter Kit · 광복 스타터 키트
 
-Vibe Design Starter Kit의 **라이트 버전**.
+**당신의 창의력을 해방한다**는 목적과 **8월 15일**의 상징을 함께 담은 Vibe Design Starter Kit의 라이트 버전입니다.
 커스텀 컴포넌트 라이브러리를 걷어내고 **MUI 기본 컴포넌트 + 디자인 토큰 + 핵심 Claude/Codex 도구**만 담았습니다.
-가볍게 시작해 필요한 컴포넌트만 직접 쌓아가는 방식의 스타터킷입니다.
+가볍게 시작해 필요한 컴포넌트와 브랜드 시스템을 직접 쌓아가는 방식의 스타터킷입니다.
 
 ## 구성 요소
 
@@ -30,7 +30,7 @@ pnpm storybook
 
 ### Claude Code / Codex 설정
 
-Claude Code가 이 프로젝트의 규칙을 자동으로 따르도록 설정되어 있습니다.
+Claude Code와 Codex가 이 프로젝트의 규칙과 작업 스킬을 찾도록 설정되어 있습니다.
 
 | 구성 | 역할 |
 |------|------|
@@ -38,7 +38,22 @@ Claude Code가 이 프로젝트의 규칙을 자동으로 따르도록 설정되
 | `.claude/skills/component-work/` | 컴포넌트 생성/수정/삭제 워크플로우 + 택소노미 참조 |
 | `.claude/agents/` (3개) | `ai-slop-fixer` · `stable-layout-auditor` · `typography-auditor` — 디자인/레이아웃/타이포 감사 |
 | `.agents/skills/vdl-visual-asset-prompt/` | (Codex) 비주얼 에셋 생성 프롬프트 설계 스킬 |
+| `.agents/skills/reconstruct-brand-system/` | (Codex) 브랜드 분석 → 전환 → 랜딩페이지 재료 준비를 연결하는 3단계 라우터 |
+| `.agents/skills/research-brand-anatomy/` | (Codex) 기존 브랜드의 근거 기반 아나토미 리서치와 HTML+JSON 산출 |
+| `.agents/skills/build-brand-from-anatomy/` | (Codex) 승인된 분석을 신규 브랜드·제품 라인업·비주얼 시스템으로 전환 |
+| `.agents/skills/build-landing-materials/` | (Codex) UX 카피와 제품별 이미지 렌더링 재료 작성 |
+| `.agents/skills/commercial-photo-prompting/` | (Codex) 브랜드·제품 상업 사진 프롬프트 설계 |
 | `.claude/settings.json` | 권한 설정 (Read/Write/pnpm/git 허용, .env 차단) |
+
+### 브랜드 재구성 체인
+
+`reconstruct-brand-system`을 시작점으로 사용하면 아래 순서가 연결됩니다.
+
+1. `research-brand-anatomy` — 오리지널 브랜드 아나토미 분석
+2. `build-brand-from-anatomy` — 사용자 입력을 반영한 확장 브랜드와 제품 방향 설계
+3. `build-landing-materials` — 랜딩페이지용 카피, 제품 정보, 이미지 재료 준비
+
+2·3단계의 상업 이미지 방향에는 `commercial-photo-prompting`을 사용합니다. 각 단계의 결과를 확인한 뒤 다음 단계로 넘어가는 구조이며, 한 브랜드 안에서 안전한 조사·작성 작업은 병렬 처리할 수 있습니다.
 
 ### 커스텀 테마
 
@@ -84,7 +99,7 @@ pnpm dev
 
 ### 4. Skills 확장
 
-프로젝트 고유 워크플로우가 있다면 `.claude/skills/`에 새 스킬을 추가합니다. 추가 후 `pnpm generate-rules`로 시각화를 갱신합니다.
+프로젝트 고유 워크플로우가 있다면 Claude용 스킬은 `.claude/skills/`, Codex용 스킬은 `.agents/skills/`에 추가합니다. 추가 후 `pnpm generate-rules`로 시각화를 갱신합니다.
 
 ### 5. Hooks 도입 (선택)
 
@@ -119,4 +134,4 @@ pnpm add -D prettier
 | `pnpm build` | 프로덕션 빌드 |
 | `pnpm build-storybook` | Storybook 정적 빌드 |
 | `pnpm lint` | ESLint 실행 |
-| `pnpm generate-rules` | `.claude/` 구조를 스캔하여 룰 시각화 데이터 재생성 |
+| `pnpm generate-rules` | `.claude/` 규칙·스킬과 `.agents/skills/`를 스캔하여 룰 시각화 데이터 재생성 |

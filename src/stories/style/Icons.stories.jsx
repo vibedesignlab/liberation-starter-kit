@@ -166,7 +166,7 @@ export const FillUsage = {
 					status="Available"
 					note="Fill property usage patterns"
 					brandName="Design System"
-					systemName="Starter Kit"
+					systemName="Liberation"
 					version="1.0"
 				/>
 				<PageContainer>

@@ -249,7 +249,7 @@ export const Doc = {
         status="Available"
         note="Project rule structure and relationships"
         brandName="Design System"
-        systemName="Starter Kit"
+        systemName="Liberation"
         version="1.0"
       />
       <PageContainer>

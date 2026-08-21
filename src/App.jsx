@@ -19,9 +19,9 @@ function HomePage() {
       }}
     >
       <Typography variant="h3" gutterBottom>
-        Starter Kit
+        Liberation Starter Kit
       </Typography>
-      <Typography color="text.secondary">Your design system foundation</Typography>
+      <Typography color="text.secondary">Liberate your creativity · 8.15</Typography>
     </Box>
   );
 }

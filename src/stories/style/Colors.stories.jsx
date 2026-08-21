@@ -213,7 +213,7 @@ export const Docs = {
           status="Available"
           note="Color palette and semantic color tokens"
           brandName="Design System"
-          systemName="Starter Kit"
+          systemName="Liberation"
           version="1.0"
         />
         <PageContainer>
@@ -352,7 +352,7 @@ export const Palette = {
         status="Available"
         note="MUI default color palette"
         brandName="Design System"
-        systemName="Starter Kit"
+        systemName="Liberation"
         version="1.0"
       />
       <PageContainer>
@@ -418,7 +418,7 @@ export const SemanticTokens = {
           status="Available"
           note="Role-based semantic colors"
           brandName="Design System"
-          systemName="Starter Kit"
+          systemName="Liberation"
           version="1.0"
         />
         <PageContainer>
@@ -504,7 +504,7 @@ export const Usage = {
         status="Available"
         note="Color application in components"
         brandName="Design System"
-        systemName="Starter Kit"
+        systemName="Liberation"
         version="1.0"
       />
       <PageContainer>

@@ -43,7 +43,7 @@ function DocContent() {
         status="Available"
         note="Figma to React + Storybook concept guide"
         brandName="Design System"
-        systemName="Starter Kit"
+        systemName="Liberation"
         version="1.0"
       />
       <PageContainer>

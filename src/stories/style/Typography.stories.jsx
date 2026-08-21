@@ -83,7 +83,7 @@ export const Docs = {
           status="Available"
           note="Font and text style system"
           brandName="Design System"
-          systemName="Starter Kit"
+          systemName="Liberation"
           version="1.0"
         />
         <PageContainer>

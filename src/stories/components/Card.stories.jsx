@@ -26,7 +26,7 @@ export const Basic = {
     <Card sx={{ width: 320 }}>
       <CardContent>
         <Typography variant='h6' gutterBottom>
-          Sunshine Starter Kit
+          Liberation Starter Kit
         </Typography>
         <Typography variant='body2' color='text.secondary'>
           MUI 기본 컴포넌트만 담은 라이트 스타터킷입니다. 디자인 토큰과 Storybook 설정을 그대로 제공합니다.

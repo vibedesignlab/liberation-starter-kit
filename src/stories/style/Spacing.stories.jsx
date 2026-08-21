@@ -78,7 +78,7 @@ export const Docs = {
           status="Available"
           note="8px grid spacing system"
           brandName="Design System"
-          systemName="Starter Kit"
+          systemName="Liberation"
           version="1.0"
         />
         <PageContainer>

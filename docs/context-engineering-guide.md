@@ -1,4 +1,4 @@
-# Vibe Design Starter Kit의 컨텍스트 엔지니어링
+# Liberation Starter Kit의 컨텍스트 엔지니어링
 
 Claude Code가 프로젝트의 규칙을 이해하고 일관된 결과물을 내도록 설계한 구조를 설명합니다.
 

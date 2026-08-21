@@ -65,7 +65,7 @@ export const Default = {
           status="Available"
           note="Theme token usage by component"
           brandName="Design System"
-          systemName="Starter Kit"
+          systemName="Liberation"
           version="1.0"
         />
         <PageContainer>

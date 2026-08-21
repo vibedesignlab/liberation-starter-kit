@@ -95,7 +95,7 @@ export const Default = {
           status="Available"
           note="Complete theme structure explorer"
           brandName="Design System"
-          systemName="Starter Kit"
+          systemName="Liberation"
           version="1.0"
         />
         <PageContainer>
@@ -219,7 +219,7 @@ export const TableView = {
           status="Available"
           note="Summary tables of key tokens"
           brandName="Design System"
-          systemName="Starter Kit"
+          systemName="Liberation"
           version="1.0"
         />
         <PageContainer>

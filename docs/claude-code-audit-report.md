@@ -1,4 +1,4 @@
-# Vibe Design Starter Kit — Claude Code 설정 종합 분석 보고서
+# Liberation Starter Kit — Claude Code 설정 종합 분석 보고서
 
 > 분석 기준: Anthropic Academy 공식 코스 (Stephen Grider) + 2025.12~2026.03 프로덕션 케이스 연구
 > 분석 일자: 2026-04-14

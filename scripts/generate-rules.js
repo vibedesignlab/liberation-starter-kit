@@ -1,7 +1,7 @@
 /**
  * generate-rules.js
  *
- * .claude/rules/ 와 .claude/skills/ 를 스캔하여
+ * .claude/rules/, .claude/skills/, .agents/skills/ 를 스캔하여
  * src/data/ruleRelationships.js 를 자동 생성한다.
  *
  * 사용: pnpm generate-rules
@@ -13,7 +13,10 @@ import { join, basename, relative } from 'node:path';
 
 const ROOT = new URL('..', import.meta.url).pathname.replace(/\/$/, '');
 const RULES_DIR = join(ROOT, '.claude', 'rules');
-const SKILLS_DIR = join(ROOT, '.claude', 'skills');
+const SKILL_SOURCES = [
+  { dir: join(ROOT, '.claude', 'skills'), pathPrefix: '.claude/skills', platform: 'Claude' },
+  { dir: join(ROOT, '.agents', 'skills'), pathPrefix: '.agents/skills', platform: 'Codex' },
+];
 const OUT = join(ROOT, 'src', 'data', 'ruleRelationships.js');
 
 /** 첫 번째 heading에서 우선순위 키워드를 추출한다 */
@@ -33,7 +36,7 @@ function toId(filename) {
 /** SKILL.md frontmatter에서 description 첫 문장을 추출한다 */
 function parseSkillDescription(content) {
   const match = content.match(/^---\n[\s\S]*?description:\s*(.+)\n[\s\S]*?---/);
-  if (match) return match[1].trim();
+  if (match) return match[1].trim().replace(/^(["'])(.*)\1$/, '$2');
   const line = content.split('\n').find((l) => l.startsWith('>'));
   return line ? line.replace(/^>\s*/, '') : '';
 }
@@ -68,38 +71,43 @@ if (existsSync(RULES_DIR)) {
   }
 }
 
-// Skills + Resources
-if (existsSync(SKILLS_DIR)) {
-  for (const dir of readdirSync(SKILLS_DIR, { withFileTypes: true }).filter((d) => d.isDirectory()).sort((a, b) => a.name.localeCompare(b.name))) {
-    const skillPath = join(SKILLS_DIR, dir.name, 'SKILL.md');
+// Claude + Codex Skills and their on-demand references
+for (const source of SKILL_SOURCES) {
+  if (!existsSync(source.dir)) continue;
+
+  for (const dir of readdirSync(source.dir, { withFileTypes: true }).filter((d) => d.isDirectory()).sort((a, b) => a.name.localeCompare(b.name))) {
+    const skillPath = join(source.dir, dir.name, 'SKILL.md');
     if (!existsSync(skillPath)) continue;
 
     const skillContent = readFileSync(skillPath, 'utf-8');
-    const skillId = dir.name;
+    const skillId = nodes.some((node) => node.id === dir.name)
+      ? `${source.platform.toLowerCase()}--${dir.name}`
+      : dir.name;
 
     nodes.push({
       id: skillId,
-      name: `${dir.name} (Skill)`,
+      name: `${dir.name} (${source.platform} Skill)`,
       priority: 'Skill',
-      path: `.claude/skills/${dir.name}/SKILL.md`,
+      path: `${source.pathPrefix}/${dir.name}/SKILL.md`,
       description: parseSkillDescription(skillContent),
     });
-    edges.push({ from: 'claude-md', to: skillId, type: 'activates', note: '' });
+    edges.push({ from: 'claude-md', to: skillId, type: 'activates', note: source.platform });
 
-    // Resources
-    const resDir = join(SKILLS_DIR, dir.name, 'resources');
-    if (existsSync(resDir)) {
-      for (const resFile of readdirSync(resDir).filter((f) => f.endsWith('.md')).sort()) {
-        const resId = `${skillId}--${toId(resFile)}`;
-        const resContent = readFileSync(join(resDir, resFile), 'utf-8');
+    for (const referenceFolder of ['resources', 'references']) {
+      const referenceDir = join(source.dir, dir.name, referenceFolder);
+      if (!existsSync(referenceDir)) continue;
+
+      for (const referenceFile of readdirSync(referenceDir).filter((f) => f.endsWith('.md')).sort()) {
+        const referenceId = `${skillId}--${toId(referenceFile)}`;
+        const referenceContent = readFileSync(join(referenceDir, referenceFile), 'utf-8');
         nodes.push({
-          id: resId,
-          name: resFile,
+          id: referenceId,
+          name: referenceFile,
           priority: 'Skill Resource',
-          path: `.claude/skills/${dir.name}/resources/${resFile}`,
-          description: resContent.split('\n').find((l) => l && !l.startsWith('#'))?.trim() || '',
+          path: `${source.pathPrefix}/${dir.name}/${referenceFolder}/${referenceFile}`,
+          description: referenceContent.split('\n').find((l) => l && !l.startsWith('#'))?.trim() || '',
         });
-        edges.push({ from: skillId, to: resId, type: 'resources', note: '' });
+        edges.push({ from: skillId, to: referenceId, type: 'resources', note: '' });
       }
     }
   }
@@ -160,6 +168,36 @@ const conditionMatrix = [
   {
     task: 'Grid 사용',
     rules: ruleIds.filter((id) => ['mui-grid-usage'].includes(id)),
+  },
+  {
+    task: '브랜드 재구성 전체 체인',
+    rules: [],
+    skill: 'reconstruct-brand-system',
+    skillResources: ['reconstruct-brand-system--chaining-contract', 'reconstruct-brand-system--parallel-execution-contract'].filter((id) => nodes.some((n) => n.id === id)),
+  },
+  {
+    task: '기존 브랜드 아나토미 분석',
+    rules: [],
+    skill: 'research-brand-anatomy',
+    skillResources: ['research-brand-anatomy--source-anatomy-schema', 'research-brand-anatomy--brand-model-json-contract'].filter((id) => nodes.some((n) => n.id === id)),
+  },
+  {
+    task: '분석 브랜드를 신규 브랜드로 전환',
+    rules: [],
+    skill: 'build-brand-from-anatomy',
+    skillResources: ['build-brand-from-anatomy--transfer-direction-contract', 'build-brand-from-anatomy--tuning-framework'].filter((id) => nodes.some((n) => n.id === id)),
+  },
+  {
+    task: '랜딩페이지 카피·제품 이미지 재료 준비',
+    rules: [],
+    skill: 'build-landing-materials',
+    skillResources: ['build-landing-materials--landing-materials-contract'].filter((id) => nodes.some((n) => n.id === id)),
+  },
+  {
+    task: '상업용 브랜드·제품 사진 프롬프트',
+    rules: [],
+    skill: 'commercial-photo-prompting',
+    skillResources: ['commercial-photo-prompting--commercial-photographic-taxonomy'].filter((id) => nodes.some((n) => n.id === id)),
   },
 ];
 

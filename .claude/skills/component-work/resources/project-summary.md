@@ -2,7 +2,7 @@
 
 ## 프로젝트 개요
 
-**Starter Kit Basic**은 React + MUI + Storybook 환경을 디자이너에게 마치 디자인 툴처럼 사용할 수 있도록 도와주는 개발 환경입니다.
+**Liberation Starter Kit**은 React + MUI + Storybook 환경을 디자이너에게 마치 디자인 툴처럼 사용할 수 있도록 도와주는 개발 환경입니다.
 
 ## 핵심 목적
 
