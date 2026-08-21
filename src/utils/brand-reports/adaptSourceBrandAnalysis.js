@@ -11,6 +11,7 @@ import {
 import {
   asArray,
   asRecord,
+  firstInsight,
   firstText,
   hasContent,
   isRecord,
@@ -111,6 +112,30 @@ function sectionEvidence(layer, evidence, layerKey) {
   return evidence.filter((item) => ids.has(toText(item.evidence_id)));
 }
 
+function layerInsight(layer, decisionIndex, layerKey) {
+  const source = asRecord(layer);
+  const topicNote = asArray(source.topics)
+    .flatMap((topic) => {
+      const notes = asRecord(topic).notes;
+      return Array.isArray(notes) ? notes : [notes];
+    })
+    .map(toText)
+    .find(Boolean);
+  const claimDomain = CLAIM_DOMAIN_BY_LAYER[layerKey];
+  const firstClaim = asRecord(asArray(decisionIndex[claimDomain])[0]);
+
+  return firstInsight(
+    source.key_insight,
+    source.keyInsight,
+    source.insight,
+    source.summary,
+    topicNote,
+    firstClaim.claim,
+    firstClaim.statement,
+    firstClaim.summary,
+  );
+}
+
 function reportIdentity(model, publicBasePath) {
   const identity = asRecord(model.report_identity);
   if (!hasContent(identity)) return undefined;
@@ -200,6 +225,7 @@ export function adaptSourceBrandAnalysis(input, context = {}) {
       index,
       label: 'Stage 01',
       title: firstText(layer.title, fallbackTitle),
+      insight: layerInsight(layer, decisionIndex, layerKey),
       blocks,
     });
   });
@@ -223,6 +249,12 @@ export function adaptSourceBrandAnalysis(input, context = {}) {
     index: sections.length + 1,
     label: 'Stage 01',
     title: 'Handoff, evidence gaps, and evidence index',
+    insight: firstInsight(
+      handoff.key_insight,
+      handoff.summary,
+      asArray(handoff.unresolved_gaps)[0],
+      'The handoff preserves approved grammar and makes unresolved gaps explicit for the next stage.',
+    ),
     blocks: handoffBlocks,
   }));
 

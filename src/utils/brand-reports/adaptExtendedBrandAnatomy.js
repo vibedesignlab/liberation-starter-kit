@@ -2,6 +2,7 @@ import { evidenceGridBlock, recordToBlocks } from './blocks.js';
 import {
   asArray,
   asRecord,
+  firstInsight,
   firstText,
   isRecord,
   makeSection,
@@ -46,6 +47,67 @@ function assetsForSection(sectionKey, assets) {
   return [];
 }
 
+function sectionInsight(section) {
+  const source = asRecord(section);
+  const firstStringValue = Object.entries(source)
+    .filter(([key, value]) => (
+      typeof value === 'string'
+      && !/(^|_)(id|url|path|status|version|evidence|reference)(_|$)/iu.test(key)
+    ))
+    .map(([, value]) => value)
+    .find(Boolean);
+
+  function nestedNarrativeValue(value) {
+    if (typeof value === 'string') return value;
+    if (Array.isArray(value)) {
+      return value.map(nestedNarrativeValue).find(Boolean) || '';
+    }
+    if (!isRecord(value)) return '';
+
+    const preferredKeys = [
+      'key_insight',
+      'summary',
+      'positioning_statement',
+      'promise',
+      'one_line_definition',
+      'brand_message',
+      'family_usp',
+      'communication_job',
+      'target_direction',
+      'premise',
+      'description',
+      'statement',
+    ];
+    const preferred = preferredKeys
+      .map((key) => value[key])
+      .map(nestedNarrativeValue)
+      .find(Boolean);
+    if (preferred) return preferred;
+
+    return Object.entries(value)
+      .filter(([key]) => !/(^|_)(id|url|path|status|version|evidence|reference)(_|$)/iu.test(key))
+      .map(([, item]) => nestedNarrativeValue(item))
+      .find(Boolean) || '';
+  }
+
+  return firstInsight(
+    source.key_insight,
+    source.keyInsight,
+    source.insight,
+    source.summary,
+    source.positioning_statement,
+    source.promise,
+    source.one_line_definition,
+    source.brand_message,
+    source.family_usp,
+    source.communication_job,
+    source.headline,
+    source.description,
+    firstStringValue,
+    nestedNarrativeValue(source),
+  );
+}
+
 export function adaptExtendedBrandAnatomy(input, context = {}) {
   const model = asRecord(input);
   const target = asRecord(model.target);
@@ -75,6 +137,7 @@ export function adaptExtendedBrandAnatomy(input, context = {}) {
       index,
       label: 'Stage 02',
       title,
+      insight: sectionInsight(section),
       blocks,
     });
   });
@@ -94,6 +157,11 @@ export function adaptExtendedBrandAnatomy(input, context = {}) {
     index: sections.length + 1,
     label: 'Stage 02',
     title: 'Inputs, evidence, and boundaries',
+    insight: firstInsight(
+      asRecord(model.boundaries).key_insight,
+      asRecord(model.source_analysis).summary,
+      'Source inputs and protected boundaries define what the extended brand may and may not change.',
+    ),
     blocks: appendixBlocks,
   }));
 

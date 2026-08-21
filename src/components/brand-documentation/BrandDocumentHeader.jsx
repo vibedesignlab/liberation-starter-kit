@@ -1,6 +1,8 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
+import { BrandDocumentValue } from './BrandDocumentValue.jsx';
+
 /**
  * Render report identity, title, summary, and delivery metadata.
  *
@@ -75,13 +77,14 @@ export function BrandDocumentHeader({ meta }) {
             component="h1"
             variant="h2"
             sx={ {
-              maxWidth: '16ch',
-              fontSize: 'clamp(2.25rem, 5vw, 4.75rem)',
+              maxWidth: '15ch',
+              fontSize: 'clamp(3rem, 7vw, 7rem)',
               fontWeight: 800,
-              lineHeight: 0.98,
-              letterSpacing: '-0.035em',
+              lineHeight: 0.94,
+              letterSpacing: '-0.045em',
               textWrap: 'balance',
               wordBreak: 'keep-all',
+              overflowWrap: 'anywhere',
             } }
           >
             { meta.title }
@@ -90,9 +93,15 @@ export function BrandDocumentHeader({ meta }) {
             <Typography
               variant="body1"
               color="text.secondary"
-              sx={ { maxWidth: '60rem', lineHeight: 1.65, whiteSpace: 'pre-line', textWrap: 'pretty' } }
+              sx={ {
+                maxWidth: '60rem',
+                lineHeight: 1.65,
+                whiteSpace: 'pre-line',
+                textWrap: 'pretty',
+                overflowWrap: 'anywhere',
+              } }
             >
-              { meta.summary }
+              <BrandDocumentValue value={ meta.summary } />
             </Typography>
           ) }
         </Box>
@@ -134,7 +143,7 @@ export function BrandDocumentHeader({ meta }) {
                 { label }
               </Typography>
               <Typography variant="body2" sx={ { fontWeight: 700, overflowWrap: 'anywhere' } }>
-                { value }
+                <BrandDocumentValue value={ value } />
               </Typography>
             </Box>
           )) }

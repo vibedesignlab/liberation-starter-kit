@@ -9,6 +9,7 @@ import {
 import {
   asArray,
   asRecord,
+  firstInsight,
   firstText,
   isRecord,
   makeSection,
@@ -127,20 +128,69 @@ export function adaptLandingMaterials(input, context = {}) {
     listBlock('Out of scope', asRecord(model.boundaries).out_of_scope),
   ]);
 
+  const firstValue = asRecord(asArray(values.values)[0]);
+  const firstProduct = asRecord(products[0]);
+  const firstMappedSection = asRecord(sectionMap[0]);
+  const boundaries = asRecord(model.boundaries);
+
   const sectionDefinitions = [
-    ['landing-narrative', 'Landing narrative and hierarchy', narrativeBlocks],
-    ['brand-value', 'Brand value copy', valueBlocks],
-    ['brand-story', 'Brand story copy', storyBlocks],
-    ['product-family', 'Product-family introduction', familyBlocks],
-    ['product-lineup', 'Product-lineup copy', lineupBlocks],
-    ['product-assets-and-map', 'Product images and landing-section map', mappingBlocks],
-    ['boundaries', 'Boundaries', boundaryBlocks],
+    [
+      'landing-narrative',
+      'Landing narrative and hierarchy',
+      narrativeBlocks,
+      firstInsight(narrative.key_insight, narrative.brand_message, narrative.hero_headline),
+    ],
+    [
+      'brand-value',
+      'Brand value copy',
+      valueBlocks,
+      firstInsight(values.key_insight, values.statement, firstValue.statement, firstValue.description),
+    ],
+    [
+      'brand-story',
+      'Brand story copy',
+      storyBlocks,
+      firstInsight(story.key_insight, story.headline, story.body),
+    ],
+    [
+      'product-family',
+      'Product-family introduction',
+      familyBlocks,
+      firstInsight(family.key_insight, family.shared_promise, family.family_usp, family.description),
+    ],
+    [
+      'product-lineup',
+      'Product-lineup copy',
+      lineupBlocks,
+      firstInsight(model.product_lineup_key_insight, firstProduct.product_usp, firstProduct.headline),
+    ],
+    [
+      'product-assets-and-map',
+      'Product images and landing-section map',
+      mappingBlocks,
+      firstInsight(
+        model.section_map_key_insight,
+        firstMappedSection.communication_job,
+        firstMappedSection.proof_of,
+      ),
+    ],
+    [
+      'boundaries',
+      'Boundaries',
+      boundaryBlocks,
+      firstInsight(
+        boundaries.key_insight,
+        asArray(boundaries.protected_brand_and_product_invariants)[0],
+        'Only approved claims, assets, and product invariants may enter the landing materials.',
+      ),
+    ],
   ];
-  const sections = sectionDefinitions.map(([id, title, blocks], offset) => makeSection({
+  const sections = sectionDefinitions.map(([id, title, blocks, insight], offset) => makeSection({
     id,
     index: offset + 1,
     label: 'Stage 03',
     title,
+    insight,
     blocks,
   }));
 

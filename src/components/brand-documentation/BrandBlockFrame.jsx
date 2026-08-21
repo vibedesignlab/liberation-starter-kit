@@ -1,6 +1,8 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
+import { BrandDocumentValue } from './BrandDocumentValue.jsx';
+
 /**
  * Shared frame for one report block. It provides technical-document spacing
  * and optional heading copy without adding elevation or decorative surfaces.
@@ -12,14 +14,21 @@ import Typography from '@mui/material/Typography';
  */
 export function BrandBlockFrame({ title, description, children }) {
   return (
-    <Box sx={ { display: 'grid', gap: 2 } }>
+    <Box sx={ { display: 'grid', gap: 2, minWidth: 0 } }>
       { (title || description) && (
         <Box sx={ { display: 'grid', gap: 0.75, maxWidth: '68rem' } }>
           { title && (
             <Typography
               component="h3"
               variant="h6"
-              sx={ { fontWeight: 700, lineHeight: 1.3, textWrap: 'balance' } }
+              sx={ {
+                fontSize: 'clamp(1.35rem, 2vw, 2rem)',
+                fontWeight: 750,
+                lineHeight: 1.2,
+                letterSpacing: '-0.02em',
+                textWrap: 'balance',
+                overflowWrap: 'anywhere',
+              } }
             >
               { title }
             </Typography>
@@ -28,9 +37,14 @@ export function BrandBlockFrame({ title, description, children }) {
             <Typography
               variant="body2"
               color="text.secondary"
-              sx={ { lineHeight: 1.6, whiteSpace: 'pre-line', textWrap: 'pretty' } }
+              sx={ {
+                lineHeight: 1.6,
+                whiteSpace: 'pre-line',
+                textWrap: 'pretty',
+                overflowWrap: 'anywhere',
+              } }
             >
-              { description }
+              <BrandDocumentValue value={ description } />
             </Typography>
           ) }
         </Box>

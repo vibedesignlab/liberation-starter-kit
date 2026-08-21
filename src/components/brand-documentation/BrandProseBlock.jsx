@@ -2,6 +2,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
 import { BrandBlockFrame } from './BrandBlockFrame.jsx';
+import { BrandDocumentValue } from './BrandDocumentValue.jsx';
 import { formatDocumentValue } from './formatDocumentValue.js';
 
 /**
@@ -36,7 +37,7 @@ export function BrandProseBlock({ block }) {
                 overflowWrap: 'anywhere',
               } }
             >
-              { formatDocumentValue(text) }
+              <BrandDocumentValue value={ text } />
             </Typography>
           );
         }) }

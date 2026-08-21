@@ -1,6 +1,8 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
+import { BrandDocumentValue } from './BrandDocumentValue.jsx';
+
 /**
  * Display one source-brand typography specimen with its observed metadata.
  *
@@ -19,16 +21,20 @@ export function BrandTypographySpecimen({ item }) {
   return (
     <Box sx={ { display: 'grid', gap: 2, p: { xs: 2, md: 3 }, border: '1px solid', borderColor: 'divider' } }>
       <Box sx={ { display: 'flex', justifyContent: 'space-between', gap: 2, flexWrap: 'wrap' } }>
-        <Typography variant="subtitle2" sx={ { fontWeight: 700 } }>
+        <Typography variant="subtitle2" sx={ { fontWeight: 700, overflowWrap: 'anywhere' } }>
           { item.label ?? item.title ?? 'Typography specimen' }
         </Typography>
         { meta && (
           <Typography
             variant="caption"
             color="text.secondary"
-            sx={ { fontFamily: 'monospace', fontVariantNumeric: 'tabular-nums' } }
+            sx={ {
+              fontFamily: 'monospace',
+              fontVariantNumeric: 'tabular-nums',
+              overflowWrap: 'anywhere',
+            } }
           >
-            { meta }
+            <BrandDocumentValue value={ meta } />
           </Typography>
         ) }
       </Box>
@@ -53,8 +59,12 @@ export function BrandTypographySpecimen({ item }) {
         { item.sample ?? item.text ?? 'Aa 가나 0123' }
       </Typography>
       { item.description && (
-        <Typography variant="caption" color="text.secondary" sx={ { lineHeight: 1.55 } }>
-          { item.description }
+        <Typography
+          variant="caption"
+          color="text.secondary"
+          sx={ { lineHeight: 1.55, overflowWrap: 'anywhere' } }
+        >
+          <BrandDocumentValue value={ item.description } />
         </Typography>
       ) }
     </Box>

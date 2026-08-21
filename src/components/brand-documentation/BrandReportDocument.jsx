@@ -18,7 +18,19 @@ export function BrandReportDocument({ report, maxWidth = false }) {
 
   return (
     <PageContainer maxWidth={ maxWidth }>
-      <Box component="article" sx={ { width: '100%', maxWidth: '112rem', mx: 'auto' } }>
+      <Box
+        component="article"
+        sx={ {
+          width: '100%',
+          maxWidth: '112rem',
+          minWidth: 0,
+          mx: 'auto',
+          '& h1, & h2, & h3, & h4, & h5, & h6, & p, & li, & td, & th, & figcaption, & a': {
+            maxWidth: '100%',
+            overflowWrap: 'anywhere',
+          },
+        } }
+      >
         <BrandDocumentHeader meta={ report.meta } />
         { sections.map((section, sectionIndex) => (
           <BrandDocumentSection

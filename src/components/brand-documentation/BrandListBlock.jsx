@@ -2,6 +2,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
 import { BrandBlockFrame } from './BrandBlockFrame.jsx';
+import { BrandDocumentValue } from './BrandDocumentValue.jsx';
 import { formatDocumentValue } from './formatDocumentValue.js';
 
 /**
@@ -36,18 +37,28 @@ export function BrandListBlock({ block }) {
             <Box
               component="li"
               key={ item?.id ?? `${ itemIndex }-${ formatDocumentValue(itemTitle ?? itemBody).slice(0, 24) }` }
+              sx={ { minWidth: 0, overflowWrap: 'anywhere' } }
             >
               { itemTitle && (
-                <Typography component="span" variant="body2" sx={ { fontWeight: 700, mr: 0.75 } }>
-                  { itemTitle }
+                <Typography
+                  component="span"
+                  variant="body2"
+                  sx={ { fontWeight: 700, mr: 0.75, overflowWrap: 'anywhere' } }
+                >
+                  <BrandDocumentValue value={ itemTitle } />
                 </Typography>
               ) }
               <Typography
                 component="span"
                 variant="body2"
-                sx={ { lineHeight: 1.7, whiteSpace: 'pre-line', textWrap: 'pretty' } }
+                sx={ {
+                  lineHeight: 1.7,
+                  whiteSpace: 'pre-line',
+                  textWrap: 'pretty',
+                  overflowWrap: 'anywhere',
+                } }
               >
-                { formatDocumentValue(itemBody ?? item) }
+                <BrandDocumentValue value={ itemBody ?? item } />
               </Typography>
             </Box>
           );

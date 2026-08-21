@@ -147,6 +147,8 @@ Copy the printed `package_integrity` block into `analysis-handoff.yaml` before v
 
 The shared Storybook document order is: scope, evidence, strategy, verbal, identity/tokens, key visual, brand mood, photography/film, product representation, product-native visual and cognitive language, product/interface/service behavior, grammar, global brand system, evidence gaps, and evidence index. The compatibility HTML mirrors the same order.
 
+Identify one evidence-backed key-insight sentence for every Storybook section. Put it first in that section's canonical narrative content so the adapter can expose it as `insight` without inventing or merging claims. Follow the shared report contract for larger wrap-safe headlines, intrinsic-ratio evidence images, non-clipped text, and concise visible link labels.
+
 The report must use direct EV source images in its main sections. Contact sheets belong only in the evidence appendix. It must render a verified first-party webfont specimen or show a visible webfont gap.
 
 Begin the report with one official masterbrand logo on a verified identity-color background. Keep the report title and short synthesis secondary to the logo. The logo needs the same local-file provenance metadata as every other displayed image, and the chosen background/color role must also be exported under `report_identity` in JSON. Never substitute an interaction, status, product, campaign, or photographic color merely because it is visually prominent.

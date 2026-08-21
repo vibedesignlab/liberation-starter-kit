@@ -18,10 +18,12 @@
   },
   "sections": {
     "source_grammar_application": {
+      "key_insight": "",
       "summary": "",
       "decisions": []
     },
     "brand_positioning": {
+      "key_insight": "",
       "category_frame": "",
       "audience": "",
       "user_outcome": "",
@@ -30,6 +32,7 @@
       "proof": []
     },
     "landing_product_concept": {
+      "key_insight": "",
       "one_line_definition": "",
       "user_and_use_situation": "",
       "core_value": "",
@@ -56,6 +59,7 @@
       "proof_image_roles": []
     },
     "verbal_branding_and_copy_hierarchy": {
+      "key_insight": "",
       "brand_message": "",
       "brand_values": [],
       "family_usp": "",
@@ -77,6 +81,7 @@
       "avoid": []
     },
     "visual_branding_and_key_visual": {
+      "key_insight": "",
       "identity_behavior": [],
       "communication_job": "",
       "premise": "",
@@ -87,6 +92,7 @@
       "avoid": []
     },
     "brand_mood_and_brand_imagery": {
+      "key_insight": "",
       "communication_job": "",
       "emotional_and_cultural_register": [],
       "world_setting_people": [],
@@ -96,6 +102,7 @@
       "avoid": []
     },
     "product_visual_traits_and_product_imagery": {
+      "key_insight": "",
       "communication_job": "",
       "product_visual_traits": {
         "silhouette_or_screen_anatomy": [],
@@ -113,6 +120,7 @@
       }
     },
     "design_token_direction": {
+      "key_insight": "",
       "color": [],
       "typography": [],
       "spacing": [],

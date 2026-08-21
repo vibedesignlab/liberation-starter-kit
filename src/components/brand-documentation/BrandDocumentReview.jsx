@@ -1,6 +1,8 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
+import { BrandDocumentValue } from './BrandDocumentValue.jsx';
+
 /**
  * Render the optional stage review checkpoint at the end of a brand report.
  *
@@ -42,18 +44,33 @@ export function BrandDocumentReview({ review }) {
         } }
       >
         { metadata && (
-          <Typography variant="caption" color="text.secondary" sx={ { fontFamily: 'monospace' } }>
-            { metadata }
+          <Typography
+            variant="caption"
+            color="text.secondary"
+            sx={ { fontFamily: 'monospace', overflowWrap: 'anywhere' } }
+          >
+            <BrandDocumentValue value={ metadata } />
           </Typography>
         ) }
         { review.prompt && (
-          <Typography variant="h6" sx={ { fontWeight: 700, lineHeight: 1.4, textWrap: 'balance' } }>
-            { review.prompt }
+          <Typography
+            variant="h6"
+            sx={ {
+              fontWeight: 700,
+              lineHeight: 1.4,
+              textWrap: 'balance',
+              overflowWrap: 'anywhere',
+            } }
+          >
+            <BrandDocumentValue value={ review.prompt } />
           </Typography>
         ) }
         { review.feedback && (
-          <Typography variant="body2" sx={ { lineHeight: 1.65, whiteSpace: 'pre-line' } }>
-            { review.feedback }
+          <Typography
+            variant="body2"
+            sx={ { lineHeight: 1.65, whiteSpace: 'pre-line', overflowWrap: 'anywhere' } }
+          >
+            <BrandDocumentValue value={ review.feedback } />
           </Typography>
         ) }
       </Box>

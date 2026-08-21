@@ -23,7 +23,9 @@ export function BrandCodeBlock({ block, isFallback = false }) {
         sx={ {
           m: 0,
           p: 2,
-          overflowX: 'auto',
+          width: '100%',
+          maxWidth: '100%',
+          minWidth: 0,
           border: '1px solid',
           borderColor: 'divider',
           backgroundColor: 'grey.50',
@@ -34,6 +36,7 @@ export function BrandCodeBlock({ block, isFallback = false }) {
           tabSize: 2,
           whiteSpace: 'pre-wrap',
           overflowWrap: 'anywhere',
+          wordBreak: 'break-word',
         } }
       >
         { block.language && (

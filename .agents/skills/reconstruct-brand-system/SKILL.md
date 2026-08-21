@@ -74,6 +74,8 @@ Stop before coding or designing the final page. Use the final checkpoint to adju
 
 For all three stages, keep deterministic HTML only as a migration-compatibility artifact until the removal gates in the Storybook report contract are complete. Do not hand-edit it or treat it as a second report source.
 
+For all three Storybook readers, follow the report presentation rules in the shared contract: every section exposes one material `insight` sentence, evidence images retain their intrinsic ratio, report text always wraps, and visible link labels stay concise while preserving the full destination URL.
+
 ## Review and automatic transition
 
 Every checkpoint is a short user adjustment check, not a scored audit. Ask only what should be changed in the material just delivered. Use `pending`, `revision_requested`, or `accepted`; never advance while revisions remain.

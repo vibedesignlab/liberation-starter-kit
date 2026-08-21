@@ -15,6 +15,7 @@ const templateReport = {
       index: 1,
       label: 'Structure',
       title: '공통 문서 모델',
+      insight: '정본 JSON 하나를 공용 섹션과 블록으로 변환해 모든 단계의 리포트를 같은 읽기 문법으로 제공합니다.',
       description: '리포트마다 마크업을 새로 만들지 않고 섹션과 블록 조합으로 표현합니다.',
       blocks: [
         {
@@ -23,6 +24,7 @@ const templateReport = {
           paragraphs: [
             'Stage JSON은 분석과 브랜드 결정을 보존하는 정본입니다.',
             'Storybook 어댑터는 정본을 읽기 위한 구조로 정리하지만 내용을 새로 해석하지 않습니다.',
+            'https://example.com/research/archive/a-very-long-source-path?campaign=brand-report&format=reference',
           ],
         },
         {
@@ -46,6 +48,7 @@ const templateReport = {
       index: 2,
       label: 'Lifecycle',
       title: '등록과 갱신',
+      insight: 'Stage 패키지를 수정하고 다시 등록하면 공용 리더와 배포 패키지가 함께 최신 상태로 갱신됩니다.',
       blocks: [
         {
           type: 'list',

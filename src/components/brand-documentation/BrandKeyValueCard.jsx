@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
-import { formatDocumentValue } from './formatDocumentValue.js';
+import { BrandDocumentValue } from './BrandDocumentValue.jsx';
 
 /**
  * Display one compact label/value record from a card-grid report block.
@@ -30,13 +30,16 @@ export function BrandKeyValueCard({ item }) {
         <Typography
           variant="overline"
           color="text.secondary"
-          sx={ { fontFamily: 'monospace', lineHeight: 1.4 } }
+          sx={ { fontFamily: 'monospace', lineHeight: 1.4, overflowWrap: 'anywhere' } }
         >
           { item.eyebrow }
         </Typography>
       ) }
       { label && (
-        <Typography variant="subtitle2" sx={ { fontWeight: 700, lineHeight: 1.4 } }>
+        <Typography
+          variant="subtitle2"
+          sx={ { fontWeight: 700, lineHeight: 1.4, overflowWrap: 'anywhere' } }
+        >
           { label }
         </Typography>
       ) }
@@ -49,15 +52,21 @@ export function BrandKeyValueCard({ item }) {
           overflowWrap: 'anywhere',
         } }
       >
-        { formatDocumentValue(value ?? item) }
+        <BrandDocumentValue value={ value ?? item } />
       </Typography>
       { item.description && (
         <Typography
           variant="caption"
           color="text.secondary"
-          sx={ { pt: 1, borderTop: '1px solid', borderColor: 'divider', lineHeight: 1.55 } }
+          sx={ {
+            pt: 1,
+            borderTop: '1px solid',
+            borderColor: 'divider',
+            lineHeight: 1.55,
+            overflowWrap: 'anywhere',
+          } }
         >
-          { item.description }
+          <BrandDocumentValue value={ item.description } />
         </Typography>
       ) }
     </Box>

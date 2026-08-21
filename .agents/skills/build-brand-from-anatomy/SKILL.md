@@ -76,6 +76,8 @@ Write exactly eight numbered sections:
 7. product-native visual traits and product-image system;
 8. landing-page design-token direction.
 
+Write one `key_insight` sentence for each numbered section. It must summarize that section's approved material decision, not introduce a ninth decision or compress several unrelated claims. The Storybook adapter exposes it as the section `insight`; follow the shared report contract for larger wrap-safe headlines, intrinsic-ratio images, non-clipped text, and concise visible link labels.
+
 The product section stays concise but must be concrete. Record a directional family name and every product in scope. Define three to five shared product-family invariants, relevant visual or cognitive invariants, and the differentiation logic. Each lineup item needs a working product name, type, lineup role, use case, difference, detailed physical/digital/hybrid form cues, one allowed variation, landing message, and proof-image roles. Do not reduce several products to an unnamed variant. Products in a family must differ by role, use situation, interaction, or behavior—not only size, color, or finish.
 
 Build the verbal system in this order: brand message, two or three brand values, family USP, and product-level USP for every lineup item. When the source grammar and target brief support genuinely different approaches, provide two or three concise narrative routes—human transformation, product system, and brand world are useful route types—and select one for Stage 3. Do not manufacture nominal alternatives that say the same thing.

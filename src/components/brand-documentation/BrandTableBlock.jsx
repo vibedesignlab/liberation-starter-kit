@@ -7,7 +7,7 @@ import TableRow from '@mui/material/TableRow';
 import Typography from '@mui/material/Typography';
 
 import { BrandBlockFrame } from './BrandBlockFrame.jsx';
-import { formatDocumentValue } from './formatDocumentValue.js';
+import { BrandDocumentValue } from './BrandDocumentValue.jsx';
 
 /**
  * Render structured report data as a responsive MUI table.
@@ -26,8 +26,20 @@ export function BrandTableBlock({ block }) {
 
   return (
     <BrandBlockFrame title={ block.title } description={ block.description }>
-      <TableContainer sx={ { border: '1px solid', borderColor: 'divider' } }>
-        <Table size="small" aria-label={ block.title ?? block.caption ?? 'Brand report table' }>
+      <TableContainer
+        sx={ {
+          width: '100%',
+          minWidth: 0,
+          overflowX: 'visible',
+          border: '1px solid',
+          borderColor: 'divider',
+        } }
+      >
+        <Table
+          size="small"
+          aria-label={ block.title ?? block.caption ?? 'Brand report table' }
+          sx={ { width: '100%', tableLayout: 'fixed' } }
+        >
           { block.caption && (
             <caption>
               <Typography component="span" variant="caption" color="text.secondary">
@@ -43,11 +55,14 @@ export function BrandTableBlock({ block }) {
                   align={ column.align ?? 'left' }
                   sx={ {
                     width: column.width,
-                    minWidth: column.minWidth,
+                    minWidth: 0,
                     fontWeight: 700,
                     fontSize: '0.75rem',
                     letterSpacing: '0.02em',
                     verticalAlign: 'bottom',
+                    whiteSpace: 'normal',
+                    overflowWrap: 'anywhere',
+                    wordBreak: 'break-word',
                   } }
                 >
                   { column.label ?? column.key }
@@ -66,11 +81,13 @@ export function BrandTableBlock({ block }) {
                       verticalAlign: 'top',
                       whiteSpace: 'pre-line',
                       lineHeight: 1.6,
+                      overflowWrap: 'anywhere',
+                      wordBreak: 'break-word',
                       fontVariantNumeric: column.numeric ? 'tabular-nums' : undefined,
                       fontFamily: column.monospace ? 'monospace' : undefined,
                     } }
                   >
-                    { formatDocumentValue(row[column.key]) }
+                    <BrandDocumentValue value={ row[column.key] } />
                   </TableCell>
                 )) }
               </TableRow>

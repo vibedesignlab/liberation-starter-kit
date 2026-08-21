@@ -52,6 +52,18 @@ export function firstText(...values) {
   return values.map(toText).find(Boolean) || '';
 }
 
+export function oneSentence(value) {
+  const text = toText(value).replace(/\s+/g, ' ').trim();
+  if (!text) return '';
+
+  const firstSentence = text.match(/^.*?[.!?](?=\s|$)/u)?.[0];
+  return firstSentence?.trim() || text;
+}
+
+export function firstInsight(...values) {
+  return values.map(oneSentence).find(Boolean) || '';
+}
+
 export function firstContent(...values) {
   return values.find(hasContent);
 }
@@ -79,12 +91,15 @@ export function meaningfulEntries(record) {
   return Object.entries(asRecord(record)).filter(([, value]) => hasContent(value));
 }
 
-export function makeSection({ id, index, label, title, description, blocks = [] }) {
+export function makeSection({ id, index, label, title, insight, description, blocks = [] }) {
+  const normalizedInsight = firstInsight(insight);
+
   return {
     id: slugify(id || title, `section-${index}`),
     index,
     label: toText(label) || `Section ${String(index).padStart(2, '0')}`,
     title: toText(title) || 'Untitled section',
+    ...(normalizedInsight ? { insight: normalizedInsight } : {}),
     ...(toText(description) ? { description: toText(description) } : {}),
     blocks: asArray(blocks).filter(Boolean),
   };

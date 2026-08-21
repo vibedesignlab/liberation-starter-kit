@@ -2,7 +2,8 @@ import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 
-import { formatDocumentValue } from './formatDocumentValue.js';
+import { BrandDocumentValue } from './BrandDocumentValue.jsx';
+import { compactUrlLabel } from './formatSourceLink.js';
 
 /**
  * Display one locally registered or public evidence image and its provenance.
@@ -19,6 +20,7 @@ export function BrandEvidenceCard({ item }) {
     : provenance;
   const sourceUrl = item.sourceUrl
     ?? (typeof provenance === 'object' && provenance !== null ? provenance.url : null);
+  const hasDedicatedSourceLink = sourceUrl && provenanceText !== sourceUrl;
 
   return (
     <Box
@@ -42,8 +44,8 @@ export function BrandEvidenceCard({ item }) {
           sx={ {
             display: 'block',
             width: '100%',
-            aspectRatio: item.aspectRatio ?? '4 / 3',
-            objectFit: item.objectFit ?? 'contain',
+            height: 'auto',
+            maxWidth: '100%',
             backgroundColor: 'grey.50',
             borderBottom: '1px solid',
             borderColor: 'divider',
@@ -67,37 +69,60 @@ export function BrandEvidenceCard({ item }) {
         </Box>
       ) }
 
-      <Box component="figcaption" sx={ { display: 'grid', alignContent: 'start', gap: 0.75, p: 2 } }>
+      <Box
+        component="figcaption"
+        sx={ { display: 'grid', alignContent: 'start', gap: 0.75, minWidth: 0, p: 2 } }
+      >
         { (item.id || item.role) && (
           <Typography
             variant="overline"
             color="text.secondary"
-            sx={ { lineHeight: 1.4, fontFamily: 'monospace', letterSpacing: '0.05em' } }
+            sx={ {
+              lineHeight: 1.4,
+              fontFamily: 'monospace',
+              letterSpacing: '0.05em',
+              overflowWrap: 'anywhere',
+            } }
           >
             { [item.id, item.role].filter(Boolean).join(' / ') }
           </Typography>
         ) }
         { item.title && (
-          <Typography variant="subtitle2" sx={ { fontWeight: 700, lineHeight: 1.4 } }>
+          <Typography
+            variant="subtitle2"
+            sx={ { fontWeight: 700, lineHeight: 1.4, overflowWrap: 'anywhere' } }
+          >
             { item.title }
           </Typography>
         ) }
         { (item.caption || item.description) && (
-          <Typography variant="caption" color="text.secondary" sx={ { lineHeight: 1.55 } }>
-            { item.caption ?? item.description }
-          </Typography>
-        ) }
-        { provenanceText && (
           <Typography
             variant="caption"
             color="text.secondary"
-            sx={ { pt: 0.75, borderTop: '1px solid', borderColor: 'divider', lineHeight: 1.5 } }
+            sx={ { lineHeight: 1.55, overflowWrap: 'anywhere' } }
           >
-            { sourceUrl ? (
+            <BrandDocumentValue value={ item.caption ?? item.description } />
+          </Typography>
+        ) }
+        { (provenanceText || hasDedicatedSourceLink) && (
+          <Typography
+            variant="caption"
+            color="text.secondary"
+            sx={ {
+              pt: 0.75,
+              borderTop: '1px solid',
+              borderColor: 'divider',
+              lineHeight: 1.5,
+              overflowWrap: 'anywhere',
+            } }
+          >
+            { provenanceText && <BrandDocumentValue value={ provenanceText } /> }
+            { provenanceText && hasDedicatedSourceLink && ' · ' }
+            { hasDedicatedSourceLink && (
               <Link href={ sourceUrl } target="_blank" rel="noreferrer" color="inherit" underline="always">
-                { formatDocumentValue(provenanceText) }
+                { item.sourceLabel ?? compactUrlLabel(sourceUrl) }
               </Link>
-            ) : formatDocumentValue(provenanceText) }
+            ) }
           </Typography>
         ) }
       </Box>

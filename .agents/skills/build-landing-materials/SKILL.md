@@ -65,6 +65,8 @@ Include:
 - product-lineup copy for every approved product;
 - feature, proof, caption, CTA, and concise state copy needed by the landing outline.
 
+Write one `key_insight` sentence for every Storybook report section: landing narrative, brand value, brand story, product family, product lineup, product assets/map, and boundaries. Each sentence summarizes approved material already present in that section. Follow the shared report contract for larger wrap-safe headlines, intrinsic-ratio product images, non-clipped text, and concise visible link labels.
+
 Do not write generic filler or invent unverified product performance. Keep the product lineup names and differences consistent with Stage 2.
 
 In routed parallel mode, landing copy and section mapping may proceed concurrently with image-prompt compilation and generation after the shot-plan barrier. Copy workers write a structured shard under `.work/`; they do not edit the canonical model.

@@ -6,6 +6,7 @@ export { BrandDocument } from './BrandDocument.jsx';
 export { BrandDocumentHeader } from './BrandDocumentHeader.jsx';
 export { BrandDocumentReview } from './BrandDocumentReview.jsx';
 export { BrandDocumentSection } from './BrandDocumentSection.jsx';
+export { BrandDocumentValue } from './BrandDocumentValue.jsx';
 export { BrandReportDocument } from './BrandReportDocument.jsx';
 export { BrandEvidenceCard } from './BrandEvidenceCard.jsx';
 export { BrandEvidenceGrid } from './BrandEvidenceGrid.jsx';
