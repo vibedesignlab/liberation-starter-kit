@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - codex/storybook-brand-reports-pages
   workflow_dispatch:
 
 permissions:
