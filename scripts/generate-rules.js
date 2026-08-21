@@ -195,7 +195,10 @@ const conditionMatrix = [
     task: '상업용 브랜드·제품 사진 프롬프트',
     rules: [],
     skill: 'commercial-photo-prompting',
-    skillResources: ['commercial-photo-prompting--commercial-photographic-taxonomy'].filter((id) => nodes.some((n) => n.id === id)),
+    skillResources: [
+      'commercial-photo-prompting--web-editorial-composition',
+      'commercial-photo-prompting--commercial-photographic-taxonomy',
+    ].filter((id) => nodes.some((n) => n.id === id)),
   },
 ];
 

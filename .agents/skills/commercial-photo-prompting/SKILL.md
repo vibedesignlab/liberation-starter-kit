@@ -1,6 +1,6 @@
 ---
 name: commercial-photo-prompting
-description: Plan, compile, diagnose, and iteratively refine prompts for realistic commercial or cinematic photography using a technical taxonomy of optics, lighting, color, composition, materials, production craft, and physical consistency. Use when Codex needs to develop a shot direction, turn an approved visual brief into a generation or edit prompt, build a coherent photo series, repair a prompt or generated image that looks CGI or physically inconsistent, or prepare a final prompt for GPT Image or another image model.
+description: Plan, compile, diagnose, and refine realistic commercial or cinematic photo prompts, with web-first routing for hero, PDP, feature, detail, grid, scale, and gallery imagery. Use when Codex needs to choose a web UI image role, angle, distance, copy-safe composition, or technical photographic behavior; build a coherent series; repair a CGI-looking result; or prepare a prompt for GPT Image or another image model.
 ---
 
 # Commercial Photo Prompting
@@ -26,6 +26,7 @@ If the user provides a concrete brief and asks for a prompt, default to Compile.
 Extract these fields from the request and attached material:
 
 - asset purpose and destination
+- web UI role, or evidence that the destination is explicitly non-web
 - subject, action, and environment
 - frame or required output shape
 - supplied brand, product, identity, copy, and geometry invariants
@@ -35,14 +36,20 @@ Extract these fields from the request and attached material:
 
 Ask at most the smallest blocking question set. Do not infer a brand archetype, audience, campaign promise, narrative, color system, cultural cue, or product claim from the product alone. When direction is absent but work can proceed safely, use restrained production defaults and label them as defaults.
 
+Treat an unspecified destination as web-first. Route it through a web UI role before choosing camera behavior. Bypass web routing only when the request explicitly targets print, out-of-home, a film still, or another non-web destination.
+
 ## Use the references progressively
+
+For web-first work, read `references/web-editorial-composition.md` before selecting composition or camera behavior. This is the default route when destination is unspecified. Use its role recipes for hero, PDP primary, feature explainer, detail proof, collection or grid, scale in context, and gallery or angle sequence imagery. Do not load or apply it to an explicitly non-web request.
 
 Use `references/commercial-photographic-taxonomy.md` as the skill's generated technical snapshot. In the Vibe Design Lab repository, `src/data/commercialPhotographicTaxonomyData.js` is the runtime source of truth and the snapshot must pass `node scripts/commercial-photographic-taxonomy.mjs --check`.
 
 1. Inspect its structure with `rg -n '^##|^###' references/commercial-photographic-taxonomy.md`.
 2. Read only the sections needed for the active decision slots.
-3. Read Part 9 for realism, people, reflective materials, water, glass, metal, compositing, or anti-CGI repair.
+3. Read Part 10 for realism, people, reflective materials, water, glass, metal, compositing, or anti-CGI repair.
 4. Prefer `confirmed` entries. Use `probable` only when it supplies necessary visual behavior. Do not treat `pending-gap` or `pending-pool` as authoritative.
+
+Treat a `semantic-bundle` as a decision recipe, not a prompt keyword. Expand its bundle keys into compatible atomic decisions, then express their observable behavior in the decision package and prompt. Preserve evidence labels: never present `probable`, `illustrative-only`, or `not-validated` material as `confirmed`.
 
 When preparing for or executing with the Codex image tool or GPT Image, also read `references/codex-image-profile.md`. Keep model-specific or tool-specific behavior there, not in this core workflow.
 
@@ -50,14 +57,16 @@ When preparing for or executing with the Codex image tool or GPT Image, also rea
 
 Select only decisions that materially affect the requested result. Fill each slot with zero or a few compatible choices. Do not target keyword counts and do not expose unused taxonomy terms.
 
-1. **Purpose and scene**: genre, use, environment, action, and photographic register.
-2. **Frame**: aspect, shot size, viewpoint, crop, subject scale, negative space, and text-safe area.
-3. **Optics and motion**: perspective behavior, depth behavior, focus falloff, motion rendering, and at most one useful artifact.
-4. **Lighting**: motivated key, relative source size, modifier, fill strategy, contrast, falloff, and separation.
-5. **Color and capture**: white balance, color response, saturation, contrast, grain, highlight shoulder, and restrained halation when physically motivated.
-6. **Material and contact**: finish, reflection, translucency, deformation, weight, moisture, manufacturing evidence, and contact shadow.
-7. **Production**: styling, set or location, props, retouching level, exact copy, and supplied brand invariants.
-8. **Constraints and validation**: what must remain, what must not appear, and observable physical checks.
+For web-first work, decide in this order:
+
+0. **Web UI role**: hero, PDP primary, feature explainer, detail proof, collection or grid, scale in context, or gallery or angle sequence.
+1. **Information to communicate**: representative form, feature location, thickness or construction, material evidence, real-world scale, or multiple views.
+2. **Viewpoint**: front, three-quarter, side profile, rear, or another view justified by the required information.
+3. **Distance and occupancy**: wide, medium, or close-up; subject scale; crop; and frame occupancy.
+4. **UI adaptation**: aspect, copy-safe side, title and CTA clearance, responsive crop tolerance, and consistency across cards or frames.
+5. **Physical execution**: optics and motion, lighting, color and capture, material and contact, production, constraints, and observable validation checks.
+
+For an explicitly non-web destination, begin with purpose and scene, then choose frame, optics and motion, lighting, color and capture, material and contact, production, and constraints. In either route, let the information requirement determine viewpoint and distance. Do not hard-code one angle to one role.
 
 Use named looks only when the user supplies one or it solves a specific behavior that cannot be stated more directly. Prefer concrete behavior over adjective stacks such as `cinematic`, `premium`, `hyperreal`, and `ultra-detailed`.
 
@@ -83,11 +92,11 @@ Protect supplied business, identity, product, geometry, and copy invariants. Rep
 Assemble one prompt in this order:
 
 ```text
-Purpose
+Web UI role and information goal, or explicit non-web purpose
 Background and scene
 Main subject and action
 Key visual and physical details
-Composition and photographic behavior
+Viewpoint, distance, occupancy, UI adaptation, and photographic behavior
 Lighting, color, and material response
 Constraints, invariants, and avoid conditions
 ```
@@ -108,7 +117,7 @@ State:
 4. the invariants to preserve
 5. the lighting, perspective, scale, focus, shadow, and color match required for integration
 
-Use direct edit language such as `Change only X. Keep everything else the same.` Repeat the preserve list on every revision. For surgical edits, preserve identity, product geometry, composition, camera angle, lighting, shadows, color response, background, surrounding objects, and existing text unless the request explicitly changes one of them.
+Use direct edit language such as `Change only X. Keep everything else the same.` Repeat the preserve list on every revision. Change only one causal axis when possible. If changing viewpoint or copy-safe placement, state the target web role and information goal while preserving product identity and distinguishing front, side, and rear geometry. For surgical edits, preserve identity, product geometry, composition, camera angle, lighting, shadows, color response, background, surrounding objects, and existing text unless the request explicitly changes one of them.
 
 ### Series
 
@@ -119,9 +128,12 @@ After the master direction is approved, freeze a series lock:
 - dominant light behavior and contrast range
 - color response, grain, highlight behavior, and retouching level
 - recurring composition rule and supplied brand invariants
+- recurring web role, occupancy, alignment, copy-safe behavior, and responsive crop rule when applicable
 - physical realism and avoid constraints
 
 Define the permitted variation axis for each frame, such as framing, action, environment, prop, or pose. Change one axis at a time during iteration. Repeat all critical invariants in every prompt, even when a reference image is attached.
+
+For a gallery or product angle sequence, default to separate front, three-quarter, side-profile, and rear frames with product scale, camera height, centerline, ground line, background, and lighting locked. Create a multi-panel composite only when the user explicitly requests a contact sheet or concept board.
 
 ## Diagnose and iterate
 
@@ -129,9 +141,10 @@ For Diagnose mode, return only the useful layers:
 
 1. **Cause**: the few prompt instructions or visible cues driving the failure.
 2. **Conflict repair**: what to remove, replace, or preserve, with a short physical reason.
-3. **Decision package**: only the active slots.
-4. **Next prompt**: one self-contained prompt when requested.
-5. **Checks**: a short list of observable pass or fail criteria.
+3. **Role fit**: for web-first work, whether the result communicates the selected UI role and information goal at the required viewpoint, occupancy, and safe area.
+4. **Decision package**: only the active slots.
+5. **Next prompt**: one self-contained prompt when requested.
+6. **Checks**: a short list of observable pass or fail criteria.
 
 Do not answer a CGI-looking result with `no CGI` alone. Add positive physical evidence such as plausible contact shadows, asymmetric highlight gradients, material thickness, restrained surface variation, weight deformation, natural skin texture, or irregular moisture. Remove causal synthetic cues such as uniform gloss, cloned symmetry, ray-traced-looking reflections, razor bevels, excessive clarity, HDR contrast, total-frame sharpness, plastic skin, or procedural texture.
 

@@ -2,9 +2,9 @@
 
 > 상업·시네마틱 실사 이미지의 촬영 어휘. 장르에서 스펙으로 내려가는 결정 순서로 프롬프트 조각을 조합합니다.
 
-**8 Parts · 59 Categories · 359 Keywords**
+**9 Parts · 63 Categories · 387 Keywords**
 
-Evidence status: 150 confirmed · 174 probable · 35 pending. Prefer confirmed entries, use probable entries with judgment, and do not treat pending entries as authoritative.
+Evidence status: 125 confirmed · 227 probable · 35 pending. Prefer confirmed entries, use probable entries with judgment, and do not treat pending entries as authoritative.
 
 Prompt policy: 정량 스펙은 근거와 검색을 위해 보존한다. promptFragment는 수치만 반복하지 말고 화면에서 관찰되는 시각적 결과를 함께 설명한다. 수치 해석 능력은 생성 모델마다 다르므로 모델별 사용법은 스킬의 모델 프로필에서 관리한다.
 
@@ -262,7 +262,7 @@ Prompt policy: 정량 스펙은 근거와 검색을 위해 보존한다. promptF
 
 ## Part 3: 색
 
-색온도(Kelvin, CTB/CTO 젤 체계), 색관리(ASC CDL·ACES), 그레이딩 룩, 필름 스톡 (57개 키워드)
+색온도(Kelvin, CTB/CTO 젤 체계), 색관리(ASC CDL·ACES), 그레이딩 룩, 필름 스톡의 색 재현 (52개 키워드)
 
 ### 1. 슬롯 A: 색온도·화이트밸런스 축
 
@@ -333,17 +333,7 @@ Prompt policy: 정량 스펙은 근거와 검색을 위해 보존한다. promptF
 | Cinestill 800T | 시네스틸 800T | 고감도 텅스텐 밸런스 야간용 필름 | ISO 800, 텅스텐 밸런스 (직접 스펙 근거 없음) [C11-유추] | 강한 적색 할레이션, 저조도 네온 야경 | Cinestill 800T, red halation, neon night | pending(갭), 직접 근거 없음 | pending-gap |
 | Ilford HP5 Plus | 일포드 HP5 플러스 | 중간 대비의 ISO 400 흑백 필름 | ISO 400, EI 3200/36°까지 push, medium contrast [C14] | Tri-X보다 부드러운 중간 대비, 넓은 관용도 | Ilford HP5 Plus, medium-contrast documentary black and white | 확정 [C14], MJ 토큰 [C19] | confirmed |
 
-### 5. 슬롯 E: 그레인·할레이션·텍스처
-
-| Keyword | Canonical ID | Relation | 한글 | Definition | Spec | Visual Signature | Prompt Fragment | Verification | Status |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| film grain (Print Grain Index) |  |  | 필름 그레인 | 감광유제 입자가 만드는 질감. PGI로 정량화 | 4단위=관찰자 90% JND, 25=가시성 임계값. Portra 400 16x20=89 [C9] | 미세~굵은 입자 질감, 확대율 비례 | film grain texture, analog grain | 확정 [C9], MJ 토큰 [C19] | confirmed |
-| halation | cp.halation | cross-reference | 할레이션 | rem-jet 백킹 부재 시 하이라이트 광이 유제 뒤에서 반사돼 붉게 번지는 현상 | Vision3의 rem-jet 제거가 Cinestill 할레이션의 모체 [C11] | 밝은 광원 주변 붉은 후광 | red halation glow around highlights | 유력 [C11] | probable |
-| RMS granularity |  |  | RMS 그래뉼래러티 | 그레인 굵기를 나타내는 제조사 정량 지표 | Velvia 9, Provia 100F 8, Astia 7, Provia 400F 13, Pro 400H 4 [C12][C13] | 값이 클수록 굵은 입자 | (개념 지표) | 확정 [C12][C13] | confirmed |
-| expired film |  |  | 만료 필름 | 유효기간 지난 필름의 색 변질·캐스트 텍스처 | MJ 'Expired 35mm/65mm Film' 토큰 [C19] | 예측불가 색시프트, 얼룩, 변색 | expired 35mm film, faded color shift | 유력, 모델 한정 참고 [C19] | probable |
-| rem-jet backing |  |  | 렘젯 백킹 | 시네필름 뒷면의 탄소 반할레이션 층. 제거 여부가 할레이션 유무를 결정 | Vision3 아세테이트 베이스에 rem-jet 존재 [C11] | (제거 시 할레이션 발생) | (개념, 프롬프트 토큰 아님) | 유력 [C11] | probable |
-
-### 6. 슬롯 F: 커머셜 리터칭 색 관행
+### 5. 슬롯 E: 커머셜 리터칭 색 관행
 
 | Keyword | 한글 | Definition | Spec | Visual Signature | Prompt Fragment | Verification | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -353,37 +343,59 @@ Prompt policy: 정량 스펙은 근거와 검색을 위해 보존한다. promptF
 
 ## Part 4: 구도·프레이밍
 
-샷 사이즈, 카메라 앵글, 애스펙트비, 화면 방향성·안전역 (25개 키워드)
+샷 사이즈, 카메라 앵글, 애스펙트비, 화면 방향성·안전역 (38개 키워드)
 
-### 1. 키워드 후보 상위 25개 · Tier A 확정
+### 1. A. 샷 거리·뷰 방향·화면 구성 · distance / view / composition
 
-| Keyword | Canonical ID | Relation | 한글 | Definition | Visual Signature | Prompt Fragment | Verification | Status |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| close-up |  |  | 클로즈업 | 인물은 얼굴만, 제품은 상세 부분 표현 | 세부 디테일 노출, 배경 최소화 | close-up detail shot, tight framing | [C1][C2][C4] 3소스 수렴 | confirmed |
-| medium-shot |  |  | 미디엄샷 | 인물은 허리 위, 제품은 전체 형태 + 맥락 | 피사체 완전 노출, 배경 부분 포함 | medium shot, subject and context | [C1][C2][C4] 3소스 | confirmed |
-| wide-shot |  |  | 와이드샷 | 피사체 전체 + 환경 맥락 노출 | 공간감 강조, 환경 조화 | wide shot, environmental context | [C1][C2][C4] 3소수 | confirmed |
-| extreme-close-up |  |  | 극근접샷 | 눈썹/눈/입술/제품 미세부분 매크로 | 마이크로 텍스처, 개별 입자 가시 | extreme close-up, macro detail | [C5] 매크로 기술서 | probable |
-| eye-level |  |  | 아이레벨 | 카메라 높이 = 피사체 눈높이, 자연스러운 관점 | 중립 감정, 동등한 시점 | eye-level perspective, neutral view | [C2][C3] 상업 샷리스트 | confirmed |
-| high-angle |  |  | 하이앵글 | 카메라 위에서 내려다봄, 피사체 축소 | 권력 불균형, 보호받지 않는 느낌 | high-angle shot, looking down | [C2][C3] 심리 효과 | confirmed |
-| low-angle |  |  | 로우앵글 | 카메라 아래에서 올려다봄, 피사체 강화 | 권력/위엄/위협, 우월 느낌 | low-angle shot, looking up, powerful | [C2][C3] 심리 효과 | confirmed |
-| dutch-angle |  |  | 더치앵글 | 수평선 기울어짐, 불안정·긴장 효과 | 구도 불안정, 심리적 긴장 | tilted Dutch angle, unease | [C6] Wikipedia Dutch Angle | probable |
-| overhead-shot |  |  | 오버헤드샷 | 카메라 직상방, 평면 2D 뷰 | 기하학적 패턴, 조감도 | overhead top-down view, bird's eye | [C4] 촬영 기법 | probable |
-| rule-of-thirds |  |  | 삼분할 법칙 | 프레임을 3x3 격자로 나누고 교점에 배치 | 구도 안정, 시선 흐름 자연 | rule of thirds composition | [C4][C7][C8] 3소스 구도 원칙 | confirmed |
-| leading-lines |  |  | 선도선 | 철도/도로/경계선 등이 중심으로 수렴 | 시선 유도, 원근감 강화 | leading lines, vanishing point | [C4][C7][C8] 3소스 | confirmed |
-| negative-space |  |  | 음의 공간 | 피사체 주변의 빈 공간 의도적 활용 | 피사체 고립, 극적 강조 | negative space, isolation | [C4][C7][C8] 3소스 | confirmed |
-| layering |  |  | 레이어링 | 전/중/후 공간층 다층 배치 | 공간 깊이, 3D 감각 | layered composition, depth | [C4][C9] 심도 구성 | confirmed |
-| aspect-ratio-169 |  |  | 16:9 화면비 | 수평 2배 와이드, 현대 영상 표준 | 영상/TV 표준 좌우 확장 | 16:9 widescreen format | [C11][C12] 표준 정의 | confirmed |
-| aspect-ratio-239 |  |  | 2.39:1 시네마스코프 | 극와이드 영화 표준, 아나모픽 → 디스퀴즈 | 시네마틱 세로 압축감, 극장 경험 | 2.39:1 anamorphic widescreen, cinematic | [C11][C12] 영화 표준 | confirmed |
-| aspect-ratio-square |  |  | 1:1 정사각형 | 소셜 미디어 기본, 균형잡힌 구도 | 대칭, 안정, 소셜 최적화 | 1:1 square Instagram format | [C11] 디지털 표준 | probable |
-| aspect-ratio-vertical |  |  | 9:16 세로형 | 모바일 세로 자연스러움, 스토리 표준 | 세로 강조, 모바일 인-피드 | 9:16 vertical Stories format | [C11] 모바일 표준 | probable |
-| 180-degree-rule |  |  | 180도 규칙 | 카메라가 상상의 선 한쪽만 사용, 연속성 유지 | 공간 방향성 보존, 혼란 회피 | 180-degree rule, screen direction | [C9][C10] 영화 문법 | confirmed |
-| crossing-the-line |  |  | 선 넘기 | 180도 규칙 위반 시 의도적 효과 | 불안, 혼란, 또는 인식 전환 | breaking 180-degree rule, disorientation | [C9][C10] 영화 기법 | confirmed |
-| safety-zone |  |  | 안전역 | TV 자막·로고 배치 보호 영역 | 텍스트/UI 배치 보호 | safe title area, safe action zone | [C13] TV 기술 | probable |
-| screen-direction-left-to-right |  |  | 화면 방향성: 좌→우 | 진행 방향 일관성, 화면 연속성 | 시선 흐름, 내러티브 진행 | left-to-right screen direction | [C9][C10] | confirmed |
-| perspective-compression | cp.perspective-compression | cross-reference | 원근 압축 | 망원렌즈가 z축 깊이 압축, 층 겹침 | 배경·전경 밀착, 평면화 | telephoto compression, stacked depth | [C3][C5] 렌즈 물리 | confirmed |
-| perspective-exaggeration | cp.perspective-exaggeration | cross-reference | 원근 과장 | 광각이 z축 확장, 거리감 극대 | 전경 돌출, 배경 후퇴 | wide-angle exaggeration, expansive space | [C3][C5] 렌즈 물리 | confirmed |
-| rack-focus | cp.rack-focus | cross-reference | 랙 포커스 | 초점 이동으로 시선 유도 (영상)/선택 초점 (스틸) | 선택적 초점, 시선 제어 | selective focus, rack focus | [C14] 영상 기법 | probable |
-| frame-within-frame |  |  | 액자 구도 | 자연·건축물이 피사체를 둘러 프레임 형성 | 피사체 격리, 극적 강조 | frame within frame, nested composition | [C4][C7][C8] 3소스 | confirmed |
+피사체와 카메라의 거리, 카메라 높이, 제품이 보여주는 면, 화면 안 배치를 분리해 제어한다.
+
+| Keyword | Canonical ID | Relation | 한글 | Definition | Spec | Visual Signature | Prompt Fragment | Verification | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| close-up |  |  | 클로즈업 | 인물은 얼굴만, 제품은 상세 부분 표현 |  | 세부 디테일 노출, 배경 최소화 | close-up detail shot, tight framing | [C1][C2][C4] 3소스 수렴 | confirmed |
+| medium-shot |  |  | 미디엄샷 | 인물은 허리 위, 제품은 전체 형태 + 맥락 |  | 피사체 완전 노출, 배경 부분 포함 | medium shot, subject and context | [C1][C2][C4] 3소스 | confirmed |
+| wide-shot |  |  | 와이드샷 | 피사체 전체 + 환경 맥락 노출 |  | 공간감 강조, 환경 조화 | wide shot, environmental context | [C1][C2][C4] 3소수 | confirmed |
+| extreme-close-up |  |  | 극근접샷 | 눈썹/눈/입술/제품 미세부분 매크로 |  | 마이크로 텍스처, 개별 입자 가시 | extreme close-up, macro detail | [C5] 매크로 기술서 | probable |
+| eye-level |  |  | 아이레벨 | 카메라 높이 = 피사체 눈높이, 자연스러운 관점 |  | 중립 감정, 동등한 시점 | eye-level perspective, neutral view | [C2][C3] 상업 샷리스트 | confirmed |
+| high-angle |  |  | 하이앵글 | 카메라 위에서 내려다봄, 피사체 축소 |  | 권력 불균형, 보호받지 않는 느낌 | high-angle shot, looking down | [C2][C3] 심리 효과 | confirmed |
+| low-angle |  |  | 로우앵글 | 카메라 아래에서 올려다봄, 피사체 강화 |  | 권력/위엄/위협, 우월 느낌 | low-angle shot, looking up, powerful | [C2][C3] 심리 효과 | confirmed |
+| dutch-angle |  |  | 더치앵글 | 수평선 기울어짐, 불안정·긴장 효과 |  | 구도 불안정, 심리적 긴장 | tilted Dutch angle, unease | [C6] Wikipedia Dutch Angle | probable |
+| overhead-shot |  |  | 오버헤드샷 | 카메라 직상방, 평면 2D 뷰 |  | 기하학적 패턴, 조감도 | overhead top-down view, bird's eye | [C4] 촬영 기법 | probable |
+| rule-of-thirds |  |  | 삼분할 법칙 | 프레임을 3x3 격자로 나누고 교점에 배치 |  | 구도 안정, 시선 흐름 자연 | rule of thirds composition | [C4][C7][C8] 3소스 구도 원칙 | confirmed |
+| leading-lines |  |  | 선도선 | 철도/도로/경계선 등이 중심으로 수렴 |  | 시선 유도, 원근감 강화 | leading lines, vanishing point | [C4][C7][C8] 3소스 | confirmed |
+| negative-space |  |  | 음의 공간 | 피사체 주변의 빈 공간 의도적 활용 |  | 피사체 고립, 극적 강조 | negative space, isolation | [C4][C7][C8] 3소스 | confirmed |
+| layering |  |  | 레이어링 | 전/중/후 공간층 다층 배치 |  | 공간 깊이, 3D 감각 | layered composition, depth | [C4][C9] 심도 구성 | confirmed |
+| aspect-ratio-169 |  |  | 16:9 화면비 | 수평 2배 와이드, 현대 영상 표준 |  | 영상/TV 표준 좌우 확장 | 16:9 widescreen format | [C11][C12] 표준 정의 | confirmed |
+| aspect-ratio-239 |  |  | 2.39:1 시네마스코프 | 극와이드 영화 표준, 아나모픽 → 디스퀴즈 |  | 시네마틱 세로 압축감, 극장 경험 | 2.39:1 anamorphic widescreen, cinematic | [C11][C12] 영화 표준 | confirmed |
+| aspect-ratio-square |  |  | 1:1 정사각형 | 소셜 미디어 기본, 균형잡힌 구도 |  | 대칭, 안정, 소셜 최적화 | 1:1 square Instagram format | [C11] 디지털 표준 | probable |
+| aspect-ratio-vertical |  |  | 9:16 세로형 | 모바일 세로 자연스러움, 스토리 표준 |  | 세로 강조, 모바일 인-피드 | 9:16 vertical Stories format | [C11] 모바일 표준 | probable |
+| 180-degree-rule |  |  | 180도 규칙 | 카메라가 상상의 선 한쪽만 사용, 연속성 유지 |  | 공간 방향성 보존, 혼란 회피 | 180-degree rule, screen direction | [C9][C10] 영화 문법 | confirmed |
+| crossing-the-line |  |  | 선 넘기 | 180도 규칙 위반 시 의도적 효과 |  | 불안, 혼란, 또는 인식 전환 | breaking 180-degree rule, disorientation | [C9][C10] 영화 기법 | confirmed |
+| safety-zone |  |  | 안전역 | TV 자막·로고 배치 보호 영역 |  | 텍스트/UI 배치 보호 | safe title area, safe action zone | [C13] TV 기술 | probable |
+| screen-direction-left-to-right |  |  | 화면 방향성: 좌→우 | 진행 방향 일관성, 화면 연속성 |  | 시선 흐름, 내러티브 진행 | left-to-right screen direction | [C9][C10] | confirmed |
+| perspective-compression | cp.perspective-compression | cross-reference | 원근 압축 | 망원렌즈가 z축 깊이 압축, 층 겹침 |  | 배경·전경 밀착, 평면화 | telephoto compression, stacked depth | [C3][C5] 렌즈 물리 | confirmed |
+| perspective-exaggeration | cp.perspective-exaggeration | cross-reference | 원근 과장 | 광각이 z축 확장, 거리감 극대 |  | 전경 돌출, 배경 후퇴 | wide-angle exaggeration, expansive space | [C3][C5] 렌즈 물리 | confirmed |
+| rack-focus | cp.rack-focus | cross-reference | 랙 포커스 | 초점 이동으로 시선 유도 (영상)/선택 초점 (스틸) |  | 선택적 초점, 시선 제어 | selective focus, rack focus | [C14] 영상 기법 | probable |
+| frame-within-frame |  |  | 액자 구도 | 자연·건축물이 피사체를 둘러 프레임 형성 |  | 피사체 격리, 극적 강조 | frame within frame, nested composition | [C4][C7][C8] 3소스 | confirmed |
+| front-view |  |  | 정면 뷰 | 카메라를 제품 전면에 수직으로 맞춰 대표 면과 좌우 대칭을 직접 보여주는 뷰 | 카메라 광축을 제품 전면의 주 평면에 수직으로 정렬 | 전면 기능과 그래픽이 왜곡 없이 읽히고 좌우 폭이 명확함 | straight-on front view, camera square to the product face | 유력 [C15][C16] · 상업 제품 샷리스트의 정면 각도 관행, 생성 직접 제어 반복 검증 전 | probable |
+| three-quarter-view |  |  | 3/4 뷰 | 제품의 전면과 한쪽 측면을 동시에 보여 형태와 깊이를 한 컷에서 설명하는 뷰 | 전면과 한쪽 측면이 함께 판독되는 비스듬한 카메라 위치 | 대표 면, 측면 깊이, 모서리 연결이 동시에 읽힘 | three-quarter product view, front and one side visible | 유력 [C15][C16] · 다각도 제품 촬영 관행, 생성 직접 제어 반복 검증 전 | probable |
+| side-profile-view |  |  | 측면 프로필 뷰 | 카메라를 제품 측면에 수직으로 맞춰 두께와 옆면 구조를 분리해 보여주는 뷰 | 카메라 광축을 제품 측면의 주 평면에 수직으로 정렬 | 제품 깊이, 가장자리 형상, 측면 조작부가 겹침 없이 읽힘 | strict side-profile view, product depth and edge construction visible | 유력 [C15][C16] · 다각도 제품 촬영 관행, 생성 직접 제어 반복 검증 전 | probable |
+| rear-view |  |  | 후면 뷰 | 카메라를 제품 후면에 수직으로 맞춰 뒷면의 구조와 연결부를 직접 보여주는 뷰 | 카메라 광축을 제품 후면의 주 평면에 수직으로 정렬 | 후면 패널, 포트, 체결부와 뒷면 실루엣이 분명함 | straight-on rear view, back construction clearly visible | 유력 [C15][C16] · 다각도 제품 촬영 관행, 생성 직접 제어 반복 검증 전 | probable |
+| copy-safe-left |  |  | 왼쪽 카피 안전 구도 | 제품을 오른쪽으로 옮겨 왼쪽에 제목과 CTA를 놓을 수 있는 깨끗한 여백을 확보하는 구도 | 왼쪽 카피 영역과 제품 실루엣, 주요 그림자, 소품의 중첩을 피함 | 오른쪽 제품 중심, 왼쪽에 대비와 질감이 절제된 연속 여백 | product placed away from the left copy area, clean negative space on the left | 유력 [C18] · 웹 히어로 카피 오버레이 관행, 생성 직접 제어 반복 검증 전 | probable |
+| copy-safe-right |  |  | 오른쪽 카피 안전 구도 | 제품을 왼쪽으로 옮겨 오른쪽에 제목과 CTA를 놓을 수 있는 깨끗한 여백을 확보하는 구도 | 오른쪽 카피 영역과 제품 실루엣, 주요 그림자, 소품의 중첩을 피함 | 왼쪽 제품 중심, 오른쪽에 대비와 질감이 절제된 연속 여백 | product placed away from the right copy area, clean negative space on the right | 유력 [C18] · 웹 히어로 카피 오버레이 관행, 생성 직접 제어 반복 검증 전 | probable |
+
+### 2. B. 웹 에디토리얼 샷 역할 · web editorial shot roles
+
+카메라 각도 하나가 아니라 웹 UI에서 이미지가 맡는 정보 역할을 기준으로 여러 구도 원자를 조합한다.
+
+| Keyword | 한글 | Definition | Spec | Visual Signature | Prompt Fragment | Control Class | Commercial Genre | Commercial Use Case | Bundle Keys | QA Keys | Verification | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| hero-copy-safe-shot | 카피 안전 히어로 샷 | 첫 화면에서 제품을 즉시 인식시키면서 제목과 CTA가 겹치지 않을 연속 여백을 남기는 대표 컷 | Bundle keys: P4:three-quarter-view · P4:copy-safe-left · P4:wide-shot · P4:safety-zone | 제품은 한쪽에 명확히 고정되고 반대쪽은 낮은 정보 밀도의 카피 영역으로 유지됨 | a web hero product photograph in three-quarter view, product anchored on the right, broad low-detail negative space on the left for headline and CTA, no object or strong shadow crossing the copy area | semantic-bundle |  | web hero with copy overlay | P4:three-quarter-view<br>P4:copy-safe-left<br>P4:wide-shot<br>P4:safety-zone | L1:camera-angle-internal-consistency<br>L1:ground-plane-shadow-mapping<br>L1:size-depth-consistency | 유력 [C16][C18] · 산업 샷리스트와 히어로 카피 배치 관행의 조합, 번들 직접 검증 전 | probable |
+| pdp-primary-shot | PDP 기본 제품 샷 | 제품 상세 페이지의 첫 이미지에서 전면 정보와 전체 실루엣을 중립적으로 전달하는 기본 컷 | Bundle keys: P4:front-view · P4:medium-shot · P4:eye-level · P4:safety-zone | 전체 제품이 잘리지 않고 대표 면과 외곽선이 배경에서 또렷하게 분리됨 | a primary product detail page photograph, straight-on front view at eye level, the complete product centered with consistent margin and an unobstructed silhouette | semantic-bundle |  | PDP primary gallery image | P4:front-view<br>P4:medium-shot<br>P4:eye-level<br>P4:safety-zone | L1:camera-angle-internal-consistency<br>L1:size-depth-consistency<br>L1:ground-plane-shadow-mapping | 유력 [C15][C17] · PDP 갤러리와 다각도 제품 촬영 관행의 조합, 번들 직접 검증 전 | probable |
+| feature-explainer-shot | 기능 설명 샷 | 제품 전체 형태와 특정 기능 부위의 위치 관계를 한 화면에서 설명하는 상세 섹션용 컷 | Bundle keys: P4:three-quarter-view · P4:medium-shot · P4:rule-of-thirds | 제품의 기준 형태를 유지하면서 설명할 기능 부위가 프레임의 시선 우선점에 놓임 | a feature explainer product photograph in three-quarter view, complete product form retained, the featured control or mechanism clearly visible at a rule-of-thirds focal point, clean adjacent room for a short annotation | semantic-bundle |  | feature explanation section | P4:three-quarter-view<br>P4:medium-shot<br>P4:rule-of-thirds | L1:camera-angle-internal-consistency<br>L1:size-depth-consistency<br>L1:occlusion-shadow-accuracy | 유력 [C16][C17] · 제품 기능 샷과 PDP 이미지 역할의 조합, 번들 직접 검증 전 | probable |
+| detail-proof-shot | 디테일 증거 샷 | 재질, 마감, 결합부처럼 구매 판단에 필요한 품질 근거를 근접 프레이밍으로 제시하는 컷 | Bundle keys: P4:close-up · P4:side-profile-view · P4:eye-level | 한 가지 재질 또는 구조 증거가 프레임 대부분을 차지하고 미세 표면과 경계가 판독됨 | a close-up proof photograph of one product material or construction detail, strict side-profile alignment where relevant, crisp surface texture and edge junctions, no decorative prop obscuring the evidence | semantic-bundle |  | material and construction proof | P4:close-up<br>P4:side-profile-view<br>P4:eye-level | L1:specular-consistency<br>L1:camera-angle-internal-consistency<br>L1:shadow-falloff-continuity | 유력 [C16][C17] · 클로즈업과 상세 갤러리 관행의 조합, 번들 직접 검증 전 | probable |
+| collection-grid-shot | 컬렉션 그리드 샷 | 여러 제품 카드가 나란히 놓여도 크기와 정렬 기준을 비교할 수 있도록 촬영 조건을 통일한 목록용 컷 | Bundle keys: P4:front-view · P4:eye-level · P4:safety-zone | 동일 배경, 동일 시점, 동일 여백 기준으로 제품 실루엣과 상대 크기가 안정적으로 반복됨 | a collection grid product photograph, straight-on eye-level view, centered product with repeatable scale, camera height, background, and equal margins for consistent catalog cards | semantic-bundle |  | collection and catalog grid | P4:front-view<br>P4:eye-level<br>P4:safety-zone | L1:size-depth-consistency<br>L1:camera-angle-internal-consistency<br>L1:ground-plane-shadow-mapping | 유력 [C15][C17] · 카탈로그 일관성과 갤러리 비교 요구의 조합, 번들 직접 검증 전 | probable |
+| scale-in-context-shot | 맥락 속 스케일 샷 | 손, 가구, 신체 또는 익숙한 주변 물체를 함께 보여 제품의 실제 크기와 사용 위치를 설명하는 컷 | Bundle keys: P4:wide-shot · P4:eye-level · P4:layering | 제품과 신뢰할 수 있는 크기 단서가 같은 공간 평면에서 자연스럽게 비교됨 | a scale-in-context product photograph at a natural eye-level distance, the complete product shown beside a familiar real-world size reference in the same spatial plane, believable use context and proportions | semantic-bundle |  | product scale and use context | P4:wide-shot<br>P4:eye-level<br>P4:layering | L1:size-depth-consistency<br>L1:occlusion-shadow-accuracy<br>L1:ground-plane-shadow-mapping | 유력 [C17] · PDP의 인스케일 이미지 요구를 구도 원자로 번역, 번들 직접 검증 전 | probable |
+| product-angle-sequence | 제품 다각도 시퀀스 | 정면, 3/4, 측면, 후면을 같은 높이와 크기로 이어 제품 형태를 빠짐없이 설명하는 갤러리 묶음 | Bundle keys: P4:front-view · P4:three-quarter-view · P4:side-profile-view · P4:rear-view · P4:safety-zone | 네 방향에서 제품 중심, 프레임 점유율, 지평선과 조명이 고정된 연속 이미지 | a four-image product angle sequence with matched scale, camera height, lighting, background, and margins: straight-on front view, three-quarter view, strict side-profile view, and straight-on rear view | semantic-bundle |  | PDP multi-angle gallery sequence | P4:front-view<br>P4:three-quarter-view<br>P4:side-profile-view<br>P4:rear-view<br>P4:safety-zone | L1:camera-angle-internal-consistency<br>L1:size-depth-consistency<br>L1:single-light-source-consistency | 유력 [C15][C16][C17] · 다각도 촬영과 PDP 갤러리 요구의 조합, 번들 직접 검증 전 | probable |
 
 ## Part 5: 피사체·재질
 
@@ -508,84 +520,140 @@ High-key/Low-key, chiaroscuro 계보, named look, 누아르류 무드 어휘 (25
 | hyperrealism-precision | 하이퍼리얼리즘: 정밀 사실주의 | 사진보다 선명한 디테일 + 극도의 마감도, 초현실적 명확성 | 매우 세밀한 질감, 완벽한 선명도 | Hyperrealism precision, ultra-detailed photorealistic | [C4][C20] 2소수 | confirmed |
 | documentary-naturalism | 다큐멘터리 자연주의 | 최소 개입 톤: 자연광 + 약한 보정 + 사실적 피부 | 자연스러운 불완전성, 약한 재질감 | Documentary naturalism, minimal intervention natural | [C4][C22] 2소수 | confirmed |
 
-## Part 7: 장르·상황
+## Part 7: 상업 장르·촬영 시나리오
 
-스튜디오/로케이션, 상업 하위 장르(제품·패션·푸드·뷰티·자동차·건축·라이프스타일) (25개 키워드)
+상업 분야와 에셋 용도에서 출발해 P1~P5·P8의 확정 원자 키로 펼쳐지는 촬영 시나리오 번들 (40개 키워드)
 
-### 1. Product · 제품
+### 1. Product, Tech & Home · 제품·테크·홈
 
-| Keyword | 한글 | Definition | Visual Signature | Prompt Fragment | Verification | Status |
-| --- | --- | --- | --- | --- | --- | --- |
-| three-quarter-view-45deg | 3/4 뷰 45도 | 제품 형태·색감·텍스처 동시 표현 산업 표준 | 좌상향 45° 각도, 모든 측면 가시 | 45-degree three-quarter product view, all sides visible | [C1][C2][C3] 3소수 | confirmed |
-| seamless-background | 심리스 배경 | 무한 곡면(백색/회색) 그림자 제거, 알파 채널 직접 활용 | 격자 없음 배경, 광원 정확 | white seamless cove, shadow-free background | [C1][C2] 2소수 | confirmed |
-| hero-shot-positioning | 히어로샷 배치 | 주요 제품을 좌상향 1/3 교점, 앵글 최적화 | 삼분할 배치, 강조된 제품 | hero shot composition, leading edge forward | [C1][C2] 2소수 | confirmed |
+제품의 판매, 기능 이해, 생활 맥락을 서로 다른 상업 목적으로 분리한다.
 
-### 2. Fashion · 패션
+| Keyword | 한글 | Definition | Spec | Visual Signature | Prompt Fragment | Control Class | Commercial Genre | Commercial Use Case | Bundle Keys | QA Keys | Verification | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| product-launch-hero | 제품 출시 히어로 | 신제품의 형태와 핵심 재질을 즉시 읽히게 하고 카피 공간까지 확보하는 출시 대표 컷 | Bundle keys: P1:normal 50mm · P2:soft light · P4:negative-space · P5:specular-control · P8:product-cleanup-defect-removal | 단일 제품 우선, 명확한 실루엣, 통제된 반사, 카피 여백 | a launch hero photograph that makes the product silhouette and primary material immediately legible | semantic-bundle | product-tech-home | launch hero | P1:normal 50mm<br>P2:soft light<br>P4:negative-space<br>P5:specular-control<br>P8:product-cleanup-defect-removal | L1:ground-plane-shadow-mapping<br>L1:reflection-angle-law<br>L1:specular-reflection-position | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| repairable-tech-demonstration | 수리 가능 테크 데모 | 모듈, 체결부, 교체 가능한 부품과 사용 동작을 한 화면에서 설명하는 기능 중심 컷 | Bundle keys: P1:wide-normal 35mm · P2:soft light · P4:layering · P5:metal-raking · P8:eco-conscious-sustainable | 본체와 분리 부품의 질서, 손의 동작, 구조와 재질의 판독성 | a repairable technology demonstration with the main device, serviceable modules, and one clear hand action | semantic-bundle | product-tech-home | feature demonstration | P1:wide-normal 35mm<br>P2:soft light<br>P4:layering<br>P5:metal-raking<br>P8:eco-conscious-sustainable | L1:size-depth-consistency<br>L1:occlusion-shadow-accuracy<br>L1:camera-angle-internal-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| home-object-contextual-editorial | 홈 오브젝트 맥락 에디토리얼 | 생활 공간 속에서 제품의 크기, 사용 위치, 주변 물성과의 관계를 보여주는 에디토리얼 컷 | Bundle keys: P1:wide-normal 35mm · P2:overcast · P4:rule-of-thirds · P5:matte · P8:custom-set-vs-location-tradeoff | 제품 중심의 실제 공간, 절제된 생활 흔적, 자연스러운 스케일 단서 | a contextual home-object editorial showing believable scale, placement, and restrained signs of use | semantic-bundle | product-tech-home | contextual editorial | P1:wide-normal 35mm<br>P2:overcast<br>P4:rule-of-thirds<br>P5:matte<br>P8:custom-set-vs-location-tradeoff | L1:size-depth-consistency<br>L1:shadow-falloff-continuity<br>L1:vanishing-point-alignment | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
 
-| Keyword | 한글 | Definition | Visual Signature | Prompt Fragment | Verification | Status |
-| --- | --- | --- | --- | --- | --- | --- |
-| full-body-framing-knee-up | 전신 프레임(무릎 위) | 의복 핏·실루엣·모션 표현 최소 요건 | 전신 노출, 신발 생략 허용 | full-body framing minimum knee-down | [C7][C8][C9] 3소수 | confirmed |
-| layered-lighting-silhouette | 다층 조명 실루엣 | 키라이트(45°) + 역광(180°) + 채움 조명으로 형태 분리 | 윤곽 분명, 직물 입체감 | layered lighting emphasizing silhouette and drape | [C7][C8] 2소수 | confirmed |
-| model-neutral-expression | 모델 중립 표정 | 얼굴은 제품 아님, 옷에 시선 유도 | 표정 제약, 시선 산만 회피 | model neutral expression, focus on garment | [C7][C10] 2소수 | confirmed |
+### 2. Fashion, Apparel & Footwear · 패션·의류·풋웨어
 
-### 3. Food · 푸드
+판매용 핏, 캠페인 움직임, 제작 디테일을 서로 다른 촬영 목적으로 구분한다.
 
-| Keyword | 한글 | Definition | Visual Signature | Prompt Fragment | Verification | Status |
-| --- | --- | --- | --- | --- | --- | --- |
-| raking-light-60-90deg | 래킹 라이트 60-90도 | 거의 수평 옆각 라이트로 빵가루·거품·증기 극적화 | 질감 세로줄, 미세 디테일 | raking light 60-90 degrees, texture emphasis | [C11][C12][C13] 3소수 | confirmed |
-| steam-capture-90sec-window | 스팀 캡처 90초 윈도우 | 촬영 후 90초 내 촬영, 그 후 응결·소실 | 따뜻함 표현, 상승 김 | steam effect 90-second window post-cook | [C11][C12] 2소수 | confirmed |
-| garnish-odd-number-triangle | 가니쉬 삼각형(홀수) | 시각적 안정+다이나믹, 홀수(3/5) 배치 | 비대칭 안정, 눈 유도 | odd-number garnish triangular placement | [C12][C14] 2소수 | confirmed |
+| Keyword | 한글 | Definition | Spec | Visual Signature | Prompt Fragment | Control Class | Commercial Genre | Commercial Use Case | Bundle Keys | QA Keys | Verification | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ecommerce-fit-lookbook | 이커머스 핏 룩북 | 의복의 길이, 핏, 실루엣과 착용 관계를 왜곡 없이 비교할 수 있는 판매용 룩북 | Bundle keys: P1:short-tele 85mm · P2:soft light · P4:wide-shot · P5:fabric-layered-3point · P8:wardrobe-coordination-fit | 중립 자세, 전체 핏 판독, 단순한 배경, 일관된 시점 | an ecommerce fit lookbook with neutral performance and fully legible garment silhouette | semantic-bundle | fashion-apparel-footwear | ecommerce fit | P1:short-tele 85mm<br>P2:soft light<br>P4:wide-shot<br>P5:fabric-layered-3point<br>P8:wardrobe-coordination-fit | L1:camera-angle-internal-consistency<br>L1:ground-plane-shadow-mapping<br>L1:size-depth-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| movement-fashion-editorial | 움직임 패션 에디토리얼 | 보행과 회전으로 원단의 드레이프와 의복의 방향성을 보여주는 캠페인 컷 | Bundle keys: P1:wide-normal 35mm · P2:hard light · P4:screen-direction-left-to-right · P5:fabric-layered-3point · P8:wardrobe-coordination-fit | 한 번의 명확한 동작, 분리되는 실루엣, 살아 있는 원단 주름 | a fashion campaign editorial built around one clear movement and readable fabric drape | semantic-bundle | fashion-apparel-footwear | campaign editorial | P1:wide-normal 35mm<br>P2:hard light<br>P4:screen-direction-left-to-right<br>P5:fabric-layered-3point<br>P8:wardrobe-coordination-fit | L1:ground-plane-shadow-mapping<br>L1:multiple-object-shadow-logic<br>L1:camera-angle-internal-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| apparel-construction-detail | 의류 구조 디테일 | 봉제, 접합, 보강, 수선 흔적과 원단 층을 상품 정보로 보여주는 디테일 컷 | Bundle keys: P1:short-tele 85mm · P2:hard light · P4:close-up · P5:fabric-layered-3point · P8:eco-conscious-sustainable | 실밥과 이음선의 판독성, 재질 층, 손 또는 도구의 제한적 등장 | an apparel construction detail showing stitching, layered fabric, and repair or reinforcement evidence | semantic-bundle | fashion-apparel-footwear | construction detail | P1:short-tele 85mm<br>P2:hard light<br>P4:close-up<br>P5:fabric-layered-3point<br>P8:eco-conscious-sustainable | L1:occlusion-shadow-accuracy<br>L1:shadow-falloff-continuity<br>L1:specular-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
 
-### 4. Beauty · 뷰티
+### 3. Food, Beverage & Hospitality · 푸드·음료·호스피탈리티
 
-| Keyword | 한글 | Definition | Visual Signature | Prompt Fragment | Verification | Status |
-| --- | --- | --- | --- | --- | --- | --- |
-| swatch-photography-flat-lay | 샘플 포토 평면 배치 | 컬러 칩/샘플을 90° 직상 촬영, 색 정확 | 무광택 균일 배경, 색 정확 | swatch flat-lay 90 degrees overhead | [C15][C16] 2소수 | confirmed |
-| color-accuracy-standard-lighting | 색 정확 표준 조명 | D65(6500K) 광원, CRI 95+ 필수 | 중립 색재현, 편광 제거 | color-accurate D65 5500K standard lighting | [C15][C16] 2소수 | confirmed |
+메뉴의 식감, 음료 서비스, 현장 접객 순간을 분리해 상업 목적을 명확히 한다.
 
-### 5. Automotive · 자동차
+| Keyword | 한글 | Definition | Spec | Visual Signature | Prompt Fragment | Control Class | Commercial Genre | Commercial Use Case | Bundle Keys | QA Keys | Verification | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| menu-texture-hero | 메뉴 식감 히어로 | 대표 메뉴의 표면, 단면, 수분과 온도 단서를 구매 욕구와 연결하는 메뉴 히어로 | Bundle keys: P1:normal 50mm · P2:soft light · P4:close-up · P5:raking-light-crumb · P8:basic-corrections-exposure-color | 주요 음식 우선, 먹을 수 있는 질감, 절제된 김과 수분, 선명한 단면 | a menu texture hero centered on edible surface detail, freshness, and believable heat or moisture | semantic-bundle | food-beverage-hospitality | menu hero | P1:normal 50mm<br>P2:soft light<br>P4:close-up<br>P5:raking-light-crumb<br>P8:basic-corrections-exposure-color | L1:shadow-falloff-continuity<br>L1:ground-plane-shadow-mapping<br>L1:specular-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| beverage-ritual-editorial | 음료 리추얼 에디토리얼 | 따르기, 거품 올리기, 가니시 배치 같은 한 번의 서비스 동작으로 음료 경험을 전달하는 컷 | Bundle keys: P1:short-tele 85mm · P2:hard light · P4:rule-of-thirds · P5:glass-backlighting · P8:set-composition-brand-integration | 잔과 손의 관계, 액체의 투명도, 한 가지 서비스 제스처, 절제된 바 배경 | a beverage ritual editorial with one precise serving gesture and believable liquid, glass, and garnish behavior | semantic-bundle | food-beverage-hospitality | beverage ritual | P1:short-tele 85mm<br>P2:hard light<br>P4:rule-of-thirds<br>P5:glass-backlighting<br>P8:set-composition-brand-integration | L1:glass-refraction-plausibility<br>L1:reflection-angle-law<br>L1:specular-reflection-position | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| tableside-service-moment | 테이블사이드 서비스 순간 | 직원, 접시, 손님 자리의 관계를 통해 호스피탈리티의 숙련도와 공간 경험을 보여주는 장면 | Bundle keys: P1:wide-normal 35mm · P2:soft light · P4:layering · P5:satin · P8:custom-set-vs-location-tradeoff | 서비스 손동작, 접시 중심, 손님 자리와 공간의 깊이, 과도하지 않은 연출 | a tableside hospitality service moment with one skilled action, a legible dish, and believable guest context | semantic-bundle | food-beverage-hospitality | hospitality service | P1:wide-normal 35mm<br>P2:soft light<br>P4:layering<br>P5:satin<br>P8:custom-set-vs-location-tradeoff | L1:occlusion-shadow-accuracy<br>L1:size-depth-consistency<br>L1:multiple-object-shadow-logic | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
 
-| Keyword | 한글 | Definition | Visual Signature | Prompt Fragment | Verification | Status |
-| --- | --- | --- | --- | --- | --- | --- |
-| overhead-diffusion-silk-20x20 | 천장 확산 실크 20x20피트 | 대형 소프트박스(실크) 반사로 롤링 하이라이트 | 차체 윤곡선 부드럽고 명확 | overhead diffusion silk 20x20ft, rolling highlights | [C17][C18] 2소수 | confirmed |
-| three-quarter-frame-badge-display | 3/4 프레임 배지 노출 | 정면+옆면 동시 표현, 배지/로고 명확 | 엠블럼 선명, 바디라인 | 3/4 frame with badge/emblem visible | [C17][C18] 2소수 | confirmed |
-| circular-polarizer-65-75pct | 원형 편광 65-75% | 유리/페인트 반사 제어, 윤곡선 분명 | 반사광 억제, 색감 명확 | circular polarizer 65-75% reflection control | [C18][C19] 2소수 | confirmed |
+### 4. Beauty, Skin & Hair · 뷰티·스킨·헤어
 
-### 6. Architecture · 건축
+사용 리추얼, 색상 카탈로그, 피부·두피 증거 디테일을 분리한다.
 
-| Keyword | 한글 | Definition | Visual Signature | Prompt Fragment | Verification | Status |
-| --- | --- | --- | --- | --- | --- | --- |
-| one-point-perspective-symmetry | 1점 원근 대칭 | 건물 정면 중앙 촬영, 대칭선 강조 | 중앙 소실점, 깊이감 | one-point perspective centered symmetry | [C20][C21] 2소수 | confirmed |
-| golden-hour-window-glow | 골든아워 창문 빛 | 16:00~18:00 낮은 각도 황금빛, 창 역광 | 따뜻한 톤, 건물 윤곽 | golden hour window glow, warm long shadows | [C20][C21] 2소수 | confirmed |
-| leading-lines-pathway | 선도선 경로 | 길/건축선/펜스가 중앙 소실점으로 수렴 | 시선 유도, 깊이강조 | leading lines converging to vanishing point | [C20][C22] 2소수 | confirmed |
+| Keyword | 한글 | Definition | Spec | Visual Signature | Prompt Fragment | Control Class | Commercial Genre | Commercial Use Case | Bundle Keys | QA Keys | Verification | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| skincare-ritual-editorial | 스킨케어 리추얼 에디토리얼 | 제품과 피부 접촉을 한 번의 명확한 사용 동작으로 보여주면서 실제 피부 질감을 보존하는 컷 | Bundle keys: P1:short-tele 85mm · P2:soft light · P4:close-up · P5:specular-control · P8:invisible-retouching-standard | 손과 얼굴의 자연스러운 접촉, 살아 있는 피부, 제품의 점도와 사용량 단서 | a skincare ritual editorial with one clear application gesture and natural, specific skin texture | semantic-bundle | beauty-skin-hair | skincare ritual | P1:short-tele 85mm<br>P2:soft light<br>P4:close-up<br>P5:specular-control<br>P8:invisible-retouching-standard | L1:specular-consistency<br>L1:shadow-falloff-continuity<br>L1:camera-angle-internal-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| color-swatch-catalog | 컬러 스와치 카탈로그 | 립, 아이, 네일 색상을 동일 조건에서 비교하고 질감 차이까지 판독하는 판매용 스와치 체계 | Bundle keys: P1:normal 50mm · P2:soft light · P4:rule-of-thirds · P5:matte · P8:style-guide-documentation | 동일 크기 스와치, 중립 배경, 색과 광택 차이, 규칙적인 비교 배열 | a calibrated beauty shade catalog with equally presented swatches and legible finish differences | semantic-bundle | beauty-skin-hair | shade catalog | P1:normal 50mm<br>P2:soft light<br>P4:rule-of-thirds<br>P5:matte<br>P8:style-guide-documentation | L1:single-light-source-consistency<br>L1:specular-consistency<br>L1:size-depth-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| hair-scalp-evidence-detail | 헤어·두피 증거 디테일 | 모발 밀도, 가르마, 두피 표면과 제품 사용 부위를 과장 없이 확인하는 증거 중심 컷 | Bundle keys: P1:short-tele 85mm · P2:hard light · P4:close-up · P5:specular-control · P8:source-quality-constraints | 가르마와 모발 뿌리 판독, 제한된 사용 부위, 균일하지 않은 실제 표면 | a hair and scalp evidence detail with legible roots, parting, and realistic surface variation | semantic-bundle | beauty-skin-hair | evidence detail | P1:short-tele 85mm<br>P2:hard light<br>P4:close-up<br>P5:specular-control<br>P8:source-quality-constraints | L1:specular-consistency<br>L1:shadow-falloff-continuity<br>L1:camera-angle-internal-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
 
-### 7. Lifestyle · 라이프스타일
+### 5. Automotive & Mobility · 자동차·모빌리티
 
-| Keyword | 한글 | Definition | Visual Signature | Prompt Fragment | Verification | Status |
-| --- | --- | --- | --- | --- | --- | --- |
-| staging-furniture-arrangement | 스테이징 가구 배치 | 공간 흐름·컬러 팔레트·덱코 소품 조합 | 자연스러운 거주감, 컬러 조화 | staged interior styling, curated arrangement | [C23][C24] 2소수 | confirmed |
-| drone-aerial-perspective | 드론 공중 시점 | 70-100m 상공 조감, 맥락·규모 표현 | 극적 공중각, 맥락 노출 | drone aerial bird's-eye perspective | [C24][C25] 2소수 | confirmed |
+출시 조형, 실제 이동 맥락, 실내 CMF와 인터페이스를 분리한다.
 
-### 8. Special · 특수 기법
+| Keyword | 한글 | Definition | Spec | Visual Signature | Prompt Fragment | Control Class | Commercial Genre | Commercial Use Case | Bundle Keys | QA Keys | Verification | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| studio-vehicle-launch | 스튜디오 차량 출시 | 차체 비례와 표면 연속성을 보존하면서 신차의 대표 조형을 전달하는 출시 컷 | Bundle keys: P1:short-tele 85mm · P2:soft light · P4:low-angle · P5:glossy · P5:specular-control · P8:product-cleanup-defect-removal | 차체 전체 비례, 이어지는 하이라이트, 휠과 유리의 자연스러운 접지 | a studio vehicle launch photograph with preserved body geometry and continuous reflections across paint and glass | semantic-bundle | automotive-mobility | vehicle launch | P1:short-tele 85mm<br>P2:soft light<br>P4:low-angle<br>P5:glossy<br>P5:specular-control<br>P8:product-cleanup-defect-removal | L1:reflection-angle-law<br>L1:specular-reflection-position<br>L1:ground-plane-shadow-mapping | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| road-use-lifestyle | 도로 사용 라이프스타일 | 차량 또는 소형 모빌리티가 실제 이동과 정차 맥락에서 어떤 생활 역할을 하는지 보여주는 컷 | Bundle keys: P1:wide-normal 35mm · P2:overcast · P4:leading-lines · P5:satin · P8:custom-set-vs-location-tradeoff | 이동 경로, 운전자 또는 사용자의 한 동작, 환경과 차량의 스케일 관계 | a mobility lifestyle photograph showing one believable travel or stopover use case in its real environment | semantic-bundle | automotive-mobility | mobility lifestyle | P1:wide-normal 35mm<br>P2:overcast<br>P4:leading-lines<br>P5:satin<br>P8:custom-set-vs-location-tradeoff | L1:size-depth-consistency<br>L1:line-convergence-accuracy<br>L1:multiple-object-shadow-logic | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| cockpit-cmf-detail | 콕핏 CMF 디테일 | 대시보드, 컨트롤, 패널과 재활용 소재의 표면 차이를 기능 정보로 보여주는 실내 디테일 | Bundle keys: P1:normal 50mm · P2:hard light · P4:close-up · P5:metal-raking · P8:eco-conscious-sustainable | 손가락과 컨트롤의 관계, 금속·직물·복합재의 구분, 유리 반사 제어 | an automotive cockpit CMF detail with legible controls and distinct metal, textile, composite, and glass responses | semantic-bundle | automotive-mobility | interior feature | P1:normal 50mm<br>P2:hard light<br>P4:close-up<br>P5:metal-raking<br>P8:eco-conscious-sustainable | L1:reflection-angle-law<br>L1:specular-consistency<br>L1:camera-angle-internal-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
 
-| Keyword | 한글 | Definition | Visual Signature | Prompt Fragment | Verification | Status |
-| --- | --- | --- | --- | --- | --- | --- |
-| underwater-ambient-natural-light | 수중 자연광 | 5-10m 수심, 태양광 + 보조 조명, 색 보정 | 초록/파랑 색감, 기포 | underwater natural ambient sunlight, color cast | [C26][C27] 2소수 | confirmed |
-| aerial-aerial-fixed-wing-drone | 항공 고정익 드론 | 300m+ 고도, 와이드 화각, 지형 매핑 | 극광각, 구름 노출 | fixed-wing drone high altitude aerial | [C25][C28] 2소수 | confirmed |
+### 6. Architecture, Interior & Retail · 건축·인테리어·리테일
 
-### 9. Lighting · 장르 조명 관습
+외부 맥락, 공간 경험, 조립 가능한 리테일 시스템을 구분한다.
 
-| Keyword | 한글 | Definition | Visual Signature | Prompt Fragment | Verification | Status |
-| --- | --- | --- | --- | --- | --- | --- |
-| golden-hour-soft-directional | 골든아워 부드러운 지향광 | 16:00~18:00 대기 산란 + 낮은 각도 = 부드럽고 방향성 | 따뜻한 톤, 긴 그림자 | golden hour soft-warm directional light | [C29][C30] 2소수 | confirmed |
-| blue-hour-twilight-twilight | 블루아워 황혼 | 해진 후 20-40분, 하늘 청색+인공광 혼합 | 청색 톤, 야간 조명 + 잔광 | blue hour twilight, deep blue sky | [C29][C30] 2소수 | confirmed |
+| Keyword | 한글 | Definition | Spec | Visual Signature | Prompt Fragment | Control Class | Commercial Genre | Commercial Use Case | Bundle Keys | QA Keys | Verification | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| exterior-context-hero | 건축 외부 맥락 히어로 | 건축물의 정면만이 아니라 접근 경로, 주변 스케일, 용도를 함께 보여주는 외부 대표 컷 | Bundle keys: P1:wide-normal 35mm · P2:direct sunlight · P4:leading-lines · P4:wide-shot · P8:custom-set-vs-location-tradeoff | 수렴하는 구조선, 명확한 출입 동선, 주변과 건축의 비례 | an architectural exterior hero showing approach, neighborhood scale, and the building's primary use | semantic-bundle | architecture-interior-retail | exterior context | P1:wide-normal 35mm<br>P2:direct sunlight<br>P4:leading-lines<br>P4:wide-shot<br>P8:custom-set-vs-location-tradeoff | L1:line-convergence-accuracy<br>L1:vanishing-point-alignment<br>L1:size-depth-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| hospitality-interior-story | 호스피탈리티 인테리어 스토리 | 좌석, 서비스 지점, 재료와 이동 흐름을 통해 공간의 실제 경험을 전달하는 인테리어 컷 | Bundle keys: P1:wide-normal 35mm · P2:soft light · P4:layering · P4:frame-within-frame · P8:set-composition-brand-integration | 전경과 후경의 공간층, 서비스 중심점, 사람이 사용 가능한 동선 | a hospitality interior story with layered seating, a clear service point, and believable circulation | semantic-bundle | architecture-interior-retail | interior experience | P1:wide-normal 35mm<br>P2:soft light<br>P4:layering<br>P4:frame-within-frame<br>P8:set-composition-brand-integration | L1:line-convergence-accuracy<br>L1:occlusion-shadow-accuracy<br>L1:multiple-object-shadow-logic | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| retail-system-documentation | 리테일 시스템 기록 | 진열, 모듈, 조립 방식과 재배치 가능성을 한눈에 설명하는 리테일 시스템 기록 컷 | Bundle keys: P1:normal 50mm · P2:overcast · P4:rule-of-thirds · P5:matte · P8:modular-construction-reconfiguration | 반복 모듈, 결합부, 상품과 구조의 분리, 확장 가능한 배열 | a retail system documentation photograph showing modular bays, connections, and reconfiguration logic | semantic-bundle | architecture-interior-retail | retail system feature | P1:normal 50mm<br>P2:overcast<br>P4:rule-of-thirds<br>P5:matte<br>P8:modular-construction-reconfiguration | L1:size-depth-consistency<br>L1:camera-angle-internal-consistency<br>L1:ground-plane-shadow-mapping | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
 
-### 10. Context · 상황·맥락
+### 7. Lifestyle, Travel & Workplace · 라이프스타일·여행·워크플레이스
 
-| Keyword | 한글 | Definition | Visual Signature | Prompt Fragment | Verification | Status |
-| --- | --- | --- | --- | --- | --- | --- |
-| studio-controlled-environment | 스튜디오 제어 환경 | 모든 광원 제어, 배경 무한곡면, 일관 재현 | 완벽 제어, 반복 가능 | studio controlled lighting and backdrop | [C31][C32] 2소수 | confirmed |
-| on-location-natural-ambient | 온로케이션 자연광 | 자연광 + 태양광, 환경 맥락 포함, 시간대 의존 | 환경 유입, 타이밍 제약 | on-location natural ambient sunlight | [C31][C32] 2소수 | confirmed |
+생활 루틴, 이동의 문턱, 협업 장면을 목적별로 구분한다.
+
+| Keyword | 한글 | Definition | Spec | Visual Signature | Prompt Fragment | Control Class | Commercial Genre | Commercial Use Case | Bundle Keys | QA Keys | Verification | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| lived-in-home-routine | 생활감 있는 홈 루틴 | 정돈된 쇼룸이 아니라 실제 생활 동작과 제한된 흔적을 통해 제품 또는 서비스를 보여주는 장면 | Bundle keys: P1:wide-normal 35mm · P2:overcast · P4:medium-shot · P4:layering · P8:custom-set-vs-location-tradeoff | 한 사람의 루틴, 사용 중인 물건, 과하지 않은 생활 흔적, 이동 가능한 공간 | a lived-in home routine with one credible action and restrained personal traces rather than showroom styling | semantic-bundle | lifestyle-travel-workplace | home lifestyle | P1:wide-normal 35mm<br>P2:overcast<br>P4:medium-shot<br>P4:layering<br>P8:custom-set-vs-location-tradeoff | L1:size-depth-consistency<br>L1:multiple-object-shadow-logic<br>L1:camera-angle-internal-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| travel-threshold-story | 여행 문턱 스토리 | 역, 로비, 문, 플랫폼처럼 출발과 도착이 교차하는 장소에서 이동의 기대감을 전달하는 컷 | Bundle keys: P1:wide-normal 35mm · P2:soft light · P4:leading-lines · P4:screen-direction-left-to-right · P8:custom-set-vs-location-tradeoff | 여행자와 작은 짐, 진행 방향, 공간의 진입점, 지역성을 보여주는 배경 | a travel threshold story at a station, lobby, doorway, or platform with clear movement and local context | semantic-bundle | lifestyle-travel-workplace | travel editorial | P1:wide-normal 35mm<br>P2:soft light<br>P4:leading-lines<br>P4:screen-direction-left-to-right<br>P8:custom-set-vs-location-tradeoff | L1:line-convergence-accuracy<br>L1:size-depth-consistency<br>L1:ground-plane-shadow-mapping | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| workplace-collaboration-editorial | 워크플레이스 협업 에디토리얼 | 실제 도구와 산출물을 중심으로 두 명 이상이 협업하는 과정을 과장 없이 보여주는 장면 | Bundle keys: P1:normal 50mm · P2:soft light · P4:layering · P5:matte · P8:set-composition-brand-integration | 역할이 다른 참여자, 공유 작업면, 실제 도구, 읽을 수 있는 상호작용 | a workplace collaboration editorial centered on real tools, shared work, and distinct participant roles | semantic-bundle | lifestyle-travel-workplace | workplace editorial | P1:normal 50mm<br>P2:soft light<br>P4:layering<br>P5:matte<br>P8:set-composition-brand-integration | L1:occlusion-shadow-accuracy<br>L1:multiple-object-shadow-logic<br>L1:size-depth-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+
+### 8. Portrait, Editorial & Culture · 인물·에디토리얼·문화
+
+프로필, 환경 인물, 공연과 문화 현장을 서로 다른 서사 밀도로 구분한다.
+
+| Keyword | 한글 | Definition | Spec | Visual Signature | Prompt Fragment | Control Class | Commercial Genre | Commercial Use Case | Bundle Keys | QA Keys | Verification | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| neutral-profile-portrait | 중립 프로필 인물 | 인물의 표정과 얼굴을 과장하지 않고 직업 또는 소개 맥락에 사용할 수 있는 프로필 컷 | Bundle keys: P1:short-tele 85mm · P2:soft light · P4:medium-shot · P5:specular-control · P8:invisible-retouching-standard | 중립 시선, 자연스러운 피부, 단순한 배경 분리, 인물 우선 | a neutral profile portrait with specific natural skin, restrained expression, and simple background separation | semantic-bundle | portrait-editorial-culture | profile portrait | P1:short-tele 85mm<br>P2:soft light<br>P4:medium-shot<br>P5:specular-control<br>P8:invisible-retouching-standard | L1:specular-consistency<br>L1:shadow-falloff-continuity<br>L1:camera-angle-internal-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| environmental-maker-portrait | 환경형 메이커 인물 | 작업자와 도구, 작업 공간을 함께 보여주되 인물의 역할과 숙련도를 중심에 두는 환경 인물 | Bundle keys: P1:wide-normal 35mm · P2:overcast · P4:rule-of-thirds · P4:layering · P8:custom-set-vs-location-tradeoff | 인물과 작업대, 소수의 핵심 도구, 실제 작업 흔적, 공간 깊이 | an environmental maker portrait connecting one person, essential tools, and a credible working space | semantic-bundle | portrait-editorial-culture | environmental portrait | P1:wide-normal 35mm<br>P2:overcast<br>P4:rule-of-thirds<br>P4:layering<br>P8:custom-set-vs-location-tradeoff | L1:size-depth-consistency<br>L1:occlusion-shadow-accuracy<br>L1:multiple-object-shadow-logic | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| culture-performance-editorial | 문화·공연 에디토리얼 | 음악, 출판, 전시, 공연의 실제 행위와 장소성을 한 장의 문화 에디토리얼로 전달하는 컷 | Bundle keys: P1:normal 50mm · P2:hard light · P4:layering · P5:satin · P8:set-composition-brand-integration | 한 가지 핵심 행위, 장소의 실용 조명, 참여자와 도구의 명확한 관계 | a culture and performance editorial built around one real creative action, its tools, and venue context | semantic-bundle | portrait-editorial-culture | culture editorial | P1:normal 50mm<br>P2:hard light<br>P4:layering<br>P5:satin<br>P8:set-composition-brand-integration | L1:single-light-source-consistency<br>L1:ground-plane-shadow-mapping<br>L1:camera-angle-internal-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+
+### 9. Jewelry, Watch & Luxury Craft · 주얼리·워치·럭셔리 공예
+
+캠페인 히어로, 기계 디테일, 장인의 제작 과정을 구분한다.
+
+| Keyword | 한글 | Definition | Spec | Visual Signature | Prompt Fragment | Control Class | Commercial Genre | Commercial Use Case | Bundle Keys | QA Keys | Verification | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| jewelry-campaign-hero | 주얼리 캠페인 히어로 | 보석의 형상과 광학 반응을 보존하면서 한 가지 착용 또는 테이블톱 맥락을 주는 캠페인 컷 | Bundle keys: P1:short-tele 85mm · P2:hard light · P4:negative-space · P5:facet-capture · P8:accessory-jewelry-coordination | 보석 우선, 제어된 하이라이트, 금속과 스톤의 분리, 절제된 배경 | a jewelry campaign hero with controlled facets, metal reflections, and one restrained wearing or tabletop context | semantic-bundle | jewelry-watch-luxury-craft | jewelry hero | P1:short-tele 85mm<br>P2:hard light<br>P4:negative-space<br>P5:facet-capture<br>P8:accessory-jewelry-coordination | L1:reflection-angle-law<br>L1:specular-reflection-position<br>L1:specular-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| watch-movement-detail | 워치 무브먼트 디테일 | 다이얼, 케이스, 크리스털과 무브먼트의 층을 기능과 공예 정보로 보여주는 워치 디테일 | Bundle keys: P1:short-tele 85mm · P2:hard light · P4:close-up · P5:metal-raking · P8:product-cleanup-defect-removal | 기계층의 깊이, 금속 가공 차이, 크리스털 반사, 읽히는 부품 관계 | a watch movement detail with legible mechanical layers, distinct metal finishes, and controlled crystal reflection | semantic-bundle | jewelry-watch-luxury-craft | mechanism detail | P1:short-tele 85mm<br>P2:hard light<br>P4:close-up<br>P5:metal-raking<br>P8:product-cleanup-defect-removal | L1:reflection-angle-law<br>L1:glass-refraction-plausibility<br>L1:specular-reflection-position | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| luxury-craft-process | 럭셔리 공예 과정 | 완성품만이 아니라 세공, 연마, 조립 과정과 손의 숙련도를 함께 전달하는 브랜드 공예 컷 | Bundle keys: P1:normal 50mm · P2:soft light · P4:layering · P5:micro-scratches-raking · P8:shooting-timeline | 손과 도구의 접촉, 진행 중인 부품, 완성품의 제한적 등장, 실제 작업면 | a luxury craft process showing one precise hand-tool action, an in-progress component, and restrained finished-product context | semantic-bundle | jewelry-watch-luxury-craft | craft process | P1:normal 50mm<br>P2:soft light<br>P4:layering<br>P5:micro-scratches-raking<br>P8:shooting-timeline | L1:occlusion-shadow-accuracy<br>L1:multiple-object-shadow-logic<br>L1:specular-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+
+### 10. Documentary, Maker & Process · 다큐멘터리·메이커·과정
+
+제작 현장, 수리 과정, 소재의 출처와 변화를 서로 다른 기록 목적으로 구분한다.
+
+| Keyword | 한글 | Definition | Spec | Visual Signature | Prompt Fragment | Control Class | Commercial Genre | Commercial Use Case | Bundle Keys | QA Keys | Verification | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| workshop-process-documentary | 워크숍 과정 다큐멘터리 | 작업 공간, 도구, 작업자와 진행 중인 결과물을 한 공정 중심으로 기록하는 제작 다큐멘터리 | Bundle keys: P1:wide-normal 35mm · P2:overcast · P4:layering · P5:matte · P8:shooting-timeline | 한 공정의 시작과 결과, 손과 도구, 실제 작업 흔적, 현장 조명 | a workshop process documentary centered on one real making step, its tools, and the in-progress result | semantic-bundle | documentary-maker-process | making process | P1:wide-normal 35mm<br>P2:overcast<br>P4:layering<br>P5:matte<br>P8:shooting-timeline | L1:occlusion-shadow-accuracy<br>L1:size-depth-consistency<br>L1:multiple-object-shadow-logic | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| repair-disassembly-story | 수리·분해 스토리 | 분해 순서, 교체 부품, 도구와 손의 관계를 통해 수리 가능성과 제품 수명을 설명하는 컷 | Bundle keys: P1:normal 50mm · P2:soft light · P4:layering · P5:metal-raking · P8:eco-conscious-sustainable | 분리된 부품의 질서, 본체 위치 고정, 한 가지 수리 동작, 부품 스케일 | a repair and disassembly story with ordered components, one service action, and a fixed main product footprint | semantic-bundle | documentary-maker-process | repair story | P1:normal 50mm<br>P2:soft light<br>P4:layering<br>P5:metal-raking<br>P8:eco-conscious-sustainable | L1:size-depth-consistency<br>L1:occlusion-shadow-accuracy<br>L1:camera-angle-internal-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| provenance-material-process | 소재 출처·공정 기록 | 원재료, 중간 가공 상태, 완성 표면을 연결해 소재의 출처와 변화를 보여주는 기록 컷 | Bundle keys: P1:normal 50mm · P2:hard light · P4:rule-of-thirds · P5:micro-scratches-raking · P8:eco-conscious-sustainable | 세 단계 소재 상태, 일관된 스케일, 표면 차이, 공정 순서 | a material provenance process connecting raw material, an intermediate state, and the finished surface | semantic-bundle | documentary-maker-process | material provenance | P1:normal 50mm<br>P2:hard light<br>P4:rule-of-thirds<br>P5:micro-scratches-raking<br>P8:eco-conscious-sustainable | L1:size-depth-consistency<br>L1:specular-consistency<br>L1:single-light-source-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+
+### 11. Sports & Outdoor · 스포츠·아웃도어
+
+퍼포먼스 동작, 장비의 현장 사용, 짧은 야외 체류 경험을 구분한다.
+
+| Keyword | 한글 | Definition | Spec | Visual Signature | Prompt Fragment | Control Class | Commercial Genre | Commercial Use Case | Bundle Keys | QA Keys | Verification | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| athlete-performance-action | 선수 퍼포먼스 액션 | 한 명의 선수와 한 가지 핵심 동작을 중심으로 자세, 장비, 진행 방향을 읽히게 하는 퍼포먼스 컷 | Bundle keys: P1:telephoto 135mm · P2:direct sunlight · P4:screen-direction-left-to-right · P4:wide-shot · P8:wardrobe-coordination-fit | 명확한 동작 단계, 장비와 신체의 접촉, 진행 방향, 실제 지면 반응 | an athlete performance action centered on one readable movement, equipment contact, and clear travel direction | semantic-bundle | sports-outdoor | performance campaign | P1:telephoto 135mm<br>P2:direct sunlight<br>P4:screen-direction-left-to-right<br>P4:wide-shot<br>P8:wardrobe-coordination-fit | L1:ground-plane-shadow-mapping<br>L1:camera-angle-internal-consistency<br>L1:size-depth-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| outdoor-gear-field-use | 아웃도어 장비 현장 사용 | 의류, 신발, 가방 또는 장비가 날씨와 지형 속에서 실제로 작동하는 방식을 보여주는 현장 컷 | Bundle keys: P1:wide-normal 35mm · P2:overcast · P4:rule-of-thirds · P5:fabric-layered-3point · P8:eco-conscious-sustainable | 장비의 사용 부위, 지형 접촉, 날씨 단서, 기능을 설명하는 한 동작 | an outdoor gear field-use photograph showing one functional action, terrain contact, and credible weather context | semantic-bundle | sports-outdoor | field-use feature | P1:wide-normal 35mm<br>P2:overcast<br>P4:rule-of-thirds<br>P5:fabric-layered-3point<br>P8:eco-conscious-sustainable | L1:ground-plane-shadow-mapping<br>L1:multiple-object-shadow-logic<br>L1:occlusion-shadow-accuracy | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| microadventure-camp-story | 마이크로어드벤처 캠프 스토리 | 근거리 야외 체류에서 장비 배치, 식사, 이동 수단과 사람의 관계를 생활 장면으로 보여주는 컷 | Bundle keys: P1:wide-normal 35mm · P2:soft light · P4:layering · P4:wide-shot · P8:custom-set-vs-location-tradeoff | 작은 캠프 구조, 한 명의 사용자, 이동 수단, 실제 사용 중인 장비 | a microadventure camp story with one user, a compact shelter, transport, and gear in active use | semantic-bundle | sports-outdoor | outdoor lifestyle | P1:wide-normal 35mm<br>P2:soft light<br>P4:layering<br>P4:wide-shot<br>P8:custom-set-vs-location-tradeoff | L1:size-depth-consistency<br>L1:multiple-object-shadow-logic<br>L1:line-convergence-accuracy | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+
+### 12. Conceptual Staged Production · 콘셉추얼·스테이지드 프로덕션
+
+모듈형 세트, 미니어처 세계, 통제된 은유 정물을 구분한다.
+
+| Keyword | 한글 | Definition | Spec | Visual Signature | Prompt Fragment | Control Class | Commercial Genre | Commercial Use Case | Bundle Keys | QA Keys | Verification | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| modular-set-campaign | 모듈형 세트 캠페인 | 재배치 가능한 프레임, 패널, 플랫폼을 사용해 여러 에셋으로 확장 가능한 캠페인 세계를 만드는 컷 | Bundle keys: P1:normal 50mm · P2:soft light · P4:frame-within-frame · P5:matte · P8:modular-construction-reconfiguration | 반복 모듈, 명확한 조립 논리, 제품 또는 인물의 고정 중심, 변형 가능한 배경 | a modular campaign set with visible reconfiguration logic, repeated structural elements, and one fixed hero subject | semantic-bundle | conceptual-staged-production | modular campaign set | P1:normal 50mm<br>P2:soft light<br>P4:frame-within-frame<br>P5:matte<br>P8:modular-construction-reconfiguration | L1:size-depth-consistency<br>L1:ground-plane-shadow-mapping<br>L1:camera-angle-internal-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| miniature-world-composite | 미니어처 월드 합성 | 실물 제품과 축소 환경을 결합하되 크기, 그림자, 원근 관계를 의도적으로 읽히게 하는 스테이지드 컷 | Bundle keys: P1:normal 50mm · P2:hard light · P4:perspective-exaggeration · P5:matte · P8:real-vs-miniature-decision | 제품과 축소 배경의 명확한 스케일 관계, 일관된 소실점, 접지 그림자 | a miniature-world composite with a deliberate product-to-environment scale relationship and coherent perspective | semantic-bundle | conceptual-staged-production | miniature composite | P1:normal 50mm<br>P2:hard light<br>P4:perspective-exaggeration<br>P5:matte<br>P8:real-vs-miniature-decision | L1:size-depth-consistency<br>L1:vanishing-point-alignment<br>L1:ground-plane-shadow-mapping | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| controlled-metaphor-still-life | 통제된 은유 정물 | 제품과 두세 개의 상징 오브젝트를 물리적으로 가능한 한 장면 안에서 연결하는 콘셉추얼 정물 | Bundle keys: P1:normal 50mm · P2:hard light · P4:negative-space · P5:specular-control · P8:set-composition-brand-integration | 단일 제품, 제한된 상징 오브젝트, 명확한 관계, 과도한 장식 없음 | a controlled metaphor still life connecting one product with two or three physically plausible symbolic objects | semantic-bundle | conceptual-staged-production | conceptual still life | P1:normal 50mm<br>P2:hard light<br>P4:negative-space<br>P5:specular-control<br>P8:set-composition-brand-integration | L1:multiple-object-shadow-logic<br>L1:reflection-angle-law<br>L1:occlusion-shadow-accuracy | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+
+### 13. Production Context · 촬영 환경·프로덕션 맥락
+
+상업 장르와 별개로 제작 조건을 바꾸는 스튜디오, 로케이션, 항공, 수중 환경을 구분한다.
+
+| Keyword | 한글 | Definition | Spec | Visual Signature | Prompt Fragment | Control Class | Commercial Genre | Commercial Use Case | Bundle Keys | QA Keys | Verification | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| controlled-studio-production | 통제형 스튜디오 프로덕션 | 광원, 배경, 피사체 위치를 반복 가능하게 고정하는 스튜디오 제작 조건 | Bundle keys: P1:normal 50mm · P2:soft light · P4:negative-space · P5:specular-control · P8:custom-set-vs-location-tradeoff | 제어된 배경, 반복 가능한 그림자, 외부 환경광 없음, 명확한 접지 | a fully controlled studio production with repeatable lighting, backdrop, subject position, and ground contact | semantic-bundle | production-context | controlled studio | P1:normal 50mm<br>P2:soft light<br>P4:negative-space<br>P5:specular-control<br>P8:custom-set-vs-location-tradeoff | L1:single-light-source-consistency<br>L1:ground-plane-shadow-mapping<br>L1:specular-reflection-position | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| on-location-ambient-production | 온로케이션 환경광 프로덕션 | 장소의 구조, 날씨, 시간대와 기존 광원을 촬영 맥락의 일부로 사용하는 제작 조건 | Bundle keys: P1:wide-normal 35mm · P2:overcast · P4:layering · P4:wide-shot · P8:custom-set-vs-location-tradeoff | 실제 장소 단서, 시간대와 날씨의 영향, 자연스러운 환경광 혼합 | an on-location production that preserves real architecture, ambient light, weather, and time-of-day context | semantic-bundle | production-context | on-location production | P1:wide-normal 35mm<br>P2:overcast<br>P4:layering<br>P4:wide-shot<br>P8:custom-set-vs-location-tradeoff | L1:line-convergence-accuracy<br>L1:multiple-object-shadow-logic<br>L1:size-depth-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| aerial-context-production | 항공 맥락 프로덕션 | 지형, 이동 경로, 건축 또는 이벤트의 규모 관계를 위에서 설명하는 항공 촬영 조건 | Bundle keys: P1:wide-normal 35mm · P2:direct sunlight · P4:wide-shot · P4:leading-lines · P8:source-quality-constraints | 넓은 지형 범위, 읽히는 경로, 피사체와 환경의 명확한 스케일 관계 | an aerial context production showing terrain, route, subject, and infrastructure at a legible shared scale | semantic-bundle | production-context | aerial context | P1:wide-normal 35mm<br>P2:direct sunlight<br>P4:wide-shot<br>P4:leading-lines<br>P8:source-quality-constraints | L1:size-depth-consistency<br>L1:line-convergence-accuracy<br>L1:camera-angle-internal-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
+| underwater-field-production | 수중 필드 프로덕션 | 수중의 색 흡수, 부유 입자, 기포, 장비와 피사체의 부력을 실제 환경 조건으로 다루는 촬영 | Bundle keys: P1:wide-normal 35mm · P2:direct sunlight · P4:wide-shot · P5:caustics-projection · P8:source-quality-constraints | 수심에 따른 색 변화, 자연스러운 부유물, 기포 방향, 장비와 신체의 부력 관계 | an underwater field production with plausible depth color loss, suspended particles, bubbles, and buoyancy | semantic-bundle | production-context | underwater field | P1:wide-normal 35mm<br>P2:direct sunlight<br>P4:wide-shot<br>P5:caustics-projection<br>P8:source-quality-constraints | L1:size-depth-consistency<br>L1:multiple-object-shadow-logic<br>L1:camera-angle-internal-consistency | 유력 [C33] · 2026-08-05 승인 소재 조사와 확정 원자 키 조합, 번들 자체 생성 검증 필요 | probable |
 
 ## Part 8: 프로덕션 craft·아트디렉션
 
@@ -641,7 +709,23 @@ High-key/Low-key, chiaroscuro 계보, named look, 누아르류 무드 어휘 (25
 | post-timeline | 포스트 타이밍 | 2~6주: 컬링·배치 편집·리터칭·그레이딩 | 배치 처리 기간 | post-production 2-6 weeks retouching grading | [C19][C20] 2소수 | confirmed |
 | client-communication-checkpoints | 클라이언트 커뮤니케이션 체크포인트 | 프리-세트 승인·촬영 진행도·포스트 진행도 3회 보고 | 투명한 소통 | client approval checkpoints transparency | [C20] 1소수 | probable |
 
-## Part 9: 물리 정합성(anti-slop)
+## Part 9: 필름 질감·현상
+
+아날로그 필름의 감광유제 입자, 할레이션, 반할레이션 구조, 만료와 현상에서 생기는 질감 (5개 키워드)
+
+### 1. 필름 입자·할레이션·현상 특성 · film texture & processing
+
+아날로그 필름의 감광유제, 반할레이션 구조, 보관 상태와 현상 조건이 만드는 입자감과 번짐, 색 변질을 다룬다.
+
+| Keyword | Canonical ID | Relation | 한글 | Definition | Spec | Visual Signature | Prompt Fragment | Verification | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| film grain (Print Grain Index) |  |  | 필름 그레인 | 감광유제 입자가 만드는 질감. PGI로 정량화 | 4단위=관찰자 90% JND, 25=가시성 임계값. Portra 400 16x20=89 [C9] | 미세~굵은 입자 질감, 확대율 비례 | film grain texture, analog grain | 확정 [C9], MJ 토큰 [C19] | confirmed |
+| halation | cp.halation | cross-reference | 할레이션 | rem-jet 백킹 부재 시 하이라이트 광이 유제 뒤에서 반사돼 붉게 번지는 현상 | Vision3의 rem-jet 제거가 Cinestill 할레이션의 모체 [C11] | 밝은 광원 주변 붉은 후광 | red halation glow around highlights | 유력 [C11] | probable |
+| RMS granularity |  |  | RMS 그래뉼래러티 | 그레인 굵기를 나타내는 제조사 정량 지표 | Velvia 9, Provia 100F 8, Astia 7, Provia 400F 13, Pro 400H 4 [C12][C13] | 값이 클수록 굵은 입자 | (개념 지표) | 확정 [C12][C13] | confirmed |
+| expired film |  |  | 만료 필름 | 유효기간 지난 필름의 색 변질·캐스트 텍스처 | MJ 'Expired 35mm/65mm Film' 토큰 [C19] | 예측불가 색시프트, 얼룩, 변색 | expired 35mm film, faded color shift | 유력, 모델 한정 참고 [C19] | probable |
+| rem-jet backing |  |  | 렘젯 백킹 | 시네필름 뒷면의 탄소 반할레이션 층. 제거 여부가 할레이션 유무를 결정 | Vision3 아세테이트 베이스에 rem-jet 존재 [C11] | (제거 시 할레이션 발생) | (개념, 프롬프트 토큰 아님) | 유력 [C11] | probable |
+
+## Part 10: 물리 정합성(anti-slop)
 
 그림자·반사·원근 일관성, 피부 질감(왁스/플라스틱 회피), 톤 과잉 회피. P1·P2·P5 교차 태그 (25개 키워드)
 

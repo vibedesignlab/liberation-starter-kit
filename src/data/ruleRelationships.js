@@ -184,7 +184,7 @@ export const ruleNodes = [
     "name": "commercial-photo-prompting (Codex Skill)",
     "priority": "Skill",
     "path": ".agents/skills/commercial-photo-prompting/SKILL.md",
-    "description": "Plan, compile, diagnose, and iteratively refine prompts for realistic commercial or cinematic photography using a technical taxonomy of optics, lighting, color, composition, materials, production craft, and physical consistency. Use when Codex needs to develop a shot direction, turn an approved visual brief into a generation or edit prompt, build a coherent photo series, repair a prompt or generated image that looks CGI or physically inconsistent, or prepare a final prompt for GPT Image or another image model."
+    "description": "Plan, compile, diagnose, and refine realistic commercial or cinematic photo prompts, with web-first routing for hero, PDP, feature, detail, grid, scale, and gallery imagery. Use when Codex needs to choose a web UI image role, angle, distance, copy-safe composition, or technical photographic behavior; build a coherent series; repair a CGI-looking result; or prepare a prompt for GPT Image or another image model."
   },
   {
     "id": "commercial-photo-prompting--codex-image-profile",
@@ -199,6 +199,13 @@ export const ruleNodes = [
     "priority": "Skill Resource",
     "path": ".agents/skills/commercial-photo-prompting/references/commercial-photographic-taxonomy.md",
     "description": "> 상업·시네마틱 실사 이미지의 촬영 어휘. 장르에서 스펙으로 내려가는 결정 순서로 프롬프트 조각을 조합합니다."
+  },
+  {
+    "id": "commercial-photo-prompting--web-editorial-composition",
+    "name": "web-editorial-composition.md",
+    "priority": "Skill Resource",
+    "path": ".agents/skills/commercial-photo-prompting/references/web-editorial-composition.md",
+    "description": "Use web placement as the first composition classifier for commercial photography. Most requested commercial images will be placed in a website or product interface, so do not wait for the user to say `web` before routing the shot."
   },
   {
     "id": "reconstruct-brand-system",
@@ -484,6 +491,12 @@ export const ruleEdges = [
     "note": ""
   },
   {
+    "from": "commercial-photo-prompting",
+    "to": "commercial-photo-prompting--web-editorial-composition",
+    "type": "resources",
+    "note": ""
+  },
+  {
     "from": "claude-md",
     "to": "reconstruct-brand-system",
     "type": "activates",
@@ -717,6 +730,7 @@ export const conditionMatrix = [
     "rules": [],
     "skill": "commercial-photo-prompting",
     "skillResources": [
+      "commercial-photo-prompting--web-editorial-composition",
       "commercial-photo-prompting--commercial-photographic-taxonomy"
     ]
   }

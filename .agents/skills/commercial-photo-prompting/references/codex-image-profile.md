@@ -20,6 +20,14 @@ Official sources:
 - Treat detailed lens, camera, aperture, and shutter specifications loosely. Use them to steer perspective, framing, depth, and motion character, not as guaranteed optical simulation.
 - Put exclusions, preserve instructions, and avoid conditions into the same prompt. The Codex image tool accepts one prompt, so do not emit a detached negative-prompt block.
 
+## Product-view and web-layout controls
+
+- Treat the supplied brief or product reference as the authority for which surface is the front and which is the rear. `Straight-on` controls alignment, not face identity. Name the authoritative face and its defining visible structures in the prompt when front or rear distinction matters.
+- A copy-safe region must exclude more than the main subject. Explicitly keep cast shadows, reflections, foreground and background props, and high-contrast edges outside that region.
+- Produce a product angle sequence as separate front, three-quarter, side-profile, and rear frames. Repeat the identity and series locks in each frame prompt. Do not use one multi-panel generation as the production asset.
+- When a concept composite is explicitly requested, state the exact panel count, the ordered view assigned to each panel, and that no additional panel may appear.
+- A single illustrative output, including a multi-panel example, shows only the intended distinction. It is not evidence of identity, geometry, lighting, or framing continuity across independently generated frames.
+
 ## Codex tool inputs
 
 - For a new image, omit both `referenced_image_paths` and `num_last_images_to_include`.
