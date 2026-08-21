@@ -1,6 +1,6 @@
 ---
 name: research-brand-anatomy
-description: Research and model one existing reference brand without inventing, mapping, or planning a target brand. Deliver an evidence-backed human-readable HTML report and a structured JSON handoff covering strategy, verbal systems, identity, key visuals, brand mood, photography, product representation, physical or digital product-native language, behavior, and a portable global framework for color, typography, spacing, and layout. Stop before any transfer or fictional-brand work.
+description: Research and model one existing reference brand without inventing, mapping, or planning a target brand. Deliver an evidence-backed Storybook document and structured JSON handoff covering strategy, verbal systems, identity, key visuals, brand mood, photography, product representation, physical or digital product-native language, behavior, and a portable global framework for color, typography, spacing, and layout. Keep deterministic HTML only as a migration-compatibility artifact. Stop before any transfer or fictional-brand work.
 ---
 
 # Stage 1 — Research Brand Anatomy
@@ -25,6 +25,7 @@ Build one source-only brand model, deliver it, and stop for a short user adjustm
 - Before the global system, read [references/global-brand-system-framework.md](references/global-brand-system-framework.md).
 - Before delivery, read [references/report-language-style.md](references/report-language-style.md).
 - Before exporting the handoff JSON, read [references/brand-model-json-contract.md](references/brand-model-json-contract.md).
+- Before registering the reader document, read the router's [Storybook report contract](../reconstruct-brand-system/references/storybook-report-contract.md).
 
 ## Initialize
 
@@ -45,6 +46,8 @@ Required artifacts:
 - `stage-review.json`
 - `outputs/source-brand-analysis.html`
 - `outputs/source-brand-analysis.json`
+
+The JSON is canonical. The Storybook entry registered under `Brand Reports/<brand>/Source Brand Analysis` is the primary reader. Keep the HTML only while the compatibility gates in the Storybook report contract remain open.
 
 Do not create a scored audit artifact.
 
@@ -122,7 +125,7 @@ Then describe the source brand's portable operating guidance for:
 
 Separate identity color, interaction/status color, product/campaign color, and photographic color before recording exact values. Exact first-party typography or color values are dated channel observations, not universal tokens. Never invent a fixed scale, framework syntax, JSON, CSS variables, or target implementation.
 
-### A4 — Export, render, check, deliver, and stop for review
+### A4 — Export, render compatibility output, register in Storybook, check, deliver, and stop for review
 
 Use the shared renderer; do not build brand-specific HTML or CSS.
 
@@ -134,22 +137,26 @@ python3 scripts/render_report.py <analysis-directory>
 python3 scripts/package_digests.py <analysis-directory>
 python3 scripts/validate_analysis.py <analysis-directory> all
 python3 scripts/validate_report_language.py <analysis-directory>/outputs/source-brand-analysis.html
+pnpm register-brand-report -- <analysis-directory>
+pnpm register-brand-report -- <analysis-directory> --check
 ```
+
+Run the `pnpm` commands from the Liberation Starter Kit repository root. Registration copies the validated JSON, review record, provenance, and referenced assets into Storybook without changing the analysis package.
 
 Copy the printed `package_integrity` block into `analysis-handoff.yaml` before validation.
 
-The shared report order is: scope, evidence, strategy, verbal, identity/tokens, key visual, brand mood, photography/film, product representation, product-native visual and cognitive language, product/interface/service behavior, grammar, global brand system, evidence gaps, and evidence index.
+The shared Storybook document order is: scope, evidence, strategy, verbal, identity/tokens, key visual, brand mood, photography/film, product representation, product-native visual and cognitive language, product/interface/service behavior, grammar, global brand system, evidence gaps, and evidence index. The compatibility HTML mirrors the same order.
 
 The report must use direct EV source images in its main sections. Contact sheets belong only in the evidence appendix. It must render a verified first-party webfont specimen or show a visible webfont gap.
 
 Begin the report with one official masterbrand logo on a verified identity-color background. Keep the report title and short synthesis secondary to the logo. The logo needs the same local-file provenance metadata as every other displayed image, and the chosen background/color role must also be exported under `report_identity` in JSON. Never substitute an interaction, status, product, campaign, or photographic color merely because it is visually prominent.
 
-The HTML and JSON are a paired handoff. The report explains context, evidence, and interpretation. The JSON explicitly records the material claims, qualitative operating rules, global design-system relationships, evidence lineage, protected boundaries, exceptions, and gaps needed by the later transfer plan. It must cover physical, digital, or hybrid product-native language as applicable; design tokens alone are insufficient. Export each global design-system area as explicit roles, relationships, invariants, variables, observed references, evidence, and limits rather than leaving the transfer step to reinterpret prose tables.
+The Storybook document and JSON are a paired handoff. Storybook explains context, evidence, and interpretation through shared document components. The JSON explicitly records the material claims, qualitative operating rules, global design-system relationships, evidence lineage, protected boundaries, exceptions, and gaps needed by the later transfer plan. It must cover physical, digital, or hybrid product-native language as applicable; design tokens alone are insufficient. Export each global design-system area as explicit roles, relationships, invariants, variables, observed references, evidence, and limits rather than leaving the transfer step to reinterpret prose tables.
 
 The JSON is not a target token file. Keep exact source values dated and scoped, keep `target_direction: null`, and state that the later transfer step requires new user direction and approval. A later second-brand model will add tuning lineage and implementation guidance before product-photography or landing-page planning begins.
 
 The deterministic completion check verifies structure, evidence traceability, layer separation, key-visual surfaces, image provenance, font disclosure, global-system layers, target contamination, and delivery state. It returns `PASS` or `NEEDS COMPLETION`; it does not assign a quality score or judge conceptual interest.
 
-Create `analysis-handoff.yaml` with package version, source-JSON schema version, SHA-256 digests for the anatomy, grammar, final HTML, and final JSON, grammar IDs, protected surfaces, unresolved gaps, and `validation_status: pass`. Compute the digests only after the final export and render; any material content change requires new digests and a package-version bump. Keep `target_direction: null`, set `current_stage: SOURCE_REVIEW_REQUIRED`, deliver the report and JSON, show the single short prompt from `stage-review.json`, and stop. After the user responds, record `accepted` or `revision_requested`; do not begin Stage 2 while revisions remain.
+Create `analysis-handoff.yaml` with package version, source-JSON schema version, SHA-256 digests for the anatomy, grammar, compatibility HTML, and final JSON, grammar IDs, protected surfaces, unresolved gaps, and `validation_status: pass`. Compute the digests only after the final export and render; any material content change requires new digests and a package-version bump followed by Storybook re-registration. Keep `target_direction: null`, set `current_stage: SOURCE_REVIEW_REQUIRED`, deliver the Storybook reader path and JSON, show the single short prompt from `stage-review.json`, and stop. After the user responds, record `accepted` or `revision_requested`; do not begin Stage 2 while revisions remain.
 
 If `pipeline_state_path` is registered and the user approves, do not stop after editing the review JSON manually. Run the router's `advance_pipeline.py` with the user's decision and feedback. On `CHAIN_ACTION=CALL_SKILL`, immediately read and execute `$build-brand-from-anatomy` using the printed source and destination package paths. On a revision request, remain in this skill.

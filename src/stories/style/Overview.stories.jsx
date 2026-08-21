@@ -18,6 +18,8 @@ export default {
 /** 기본 - Theme 트리 탐색기 */
 export const Default = {
   render: () => {
+    // Storybook render callbacks are React render functions.
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const theme = useTheme();
 
     // theme 객체에서 순환 참조와 함수를 제외한 주요 키만 추출
@@ -137,6 +139,8 @@ export const Default = {
 export const TableView = {
   name: 'Table View',
   render: () => {
+    // Storybook render callbacks are React render functions.
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const theme = useTheme();
 
     const tables = [
@@ -256,7 +260,7 @@ export const TableView = {
                   </Box>
                 </Box>
                 <Box component="tbody">
-                  { table.data.map((row, index) => {
+                  { table.data.map((row) => {
                     const isColor = typeof row.value === 'string' && (
                       row.value.startsWith('#') ||
                       row.value.startsWith('rgb')

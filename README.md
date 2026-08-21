@@ -8,7 +8,7 @@
 
 ```
 ├── MUI 7 + React 19          UI 프레임워크 + 커스텀 테마
-├── Storybook 10               디자인 토큰 문서 + MUI 컴포넌트 데모
+├── Storybook 10               브랜드 리포트 + 디자인 토큰 문서 + MUI 컴포넌트 데모
 ├── 디자인 토큰                 색상 · 타이포 · 간격 · 아이콘
 └── Claude Code / Codex 설정    Rules + Skills + Agents + Settings
 ```
@@ -24,7 +24,10 @@
 pnpm storybook
 ```
 
+배포된 Storybook: [vibedesignlab.github.io/liberation-starter-kit](https://vibedesignlab.github.io/liberation-starter-kit/)
+
 - **Overview** — 프로젝트 소개, 룰 관계 시각화
+- **Brand Reports** — 브랜드 파이프라인 Stage 1–3 모듈 문서
 - **Style** — 색상, 타이포, 간격, 아이콘 등 디자인 토큰
 - **Components** — MUI 대표 기본 컴포넌트 데모
 
@@ -39,7 +42,7 @@ Claude Code와 Codex가 이 프로젝트의 규칙과 작업 스킬을 찾도록
 | `.claude/agents/` (3개) | `ai-slop-fixer` · `stable-layout-auditor` · `typography-auditor` — 디자인/레이아웃/타이포 감사 |
 | `.agents/skills/vdl-visual-asset-prompt/` | (Codex) 비주얼 에셋 생성 프롬프트 설계 스킬 |
 | `.agents/skills/reconstruct-brand-system/` | (Codex) 브랜드 분석 → 전환 → 랜딩페이지 재료 준비를 연결하는 3단계 라우터 |
-| `.agents/skills/research-brand-anatomy/` | (Codex) 기존 브랜드의 근거 기반 아나토미 리서치와 HTML+JSON 산출 |
+| `.agents/skills/research-brand-anatomy/` | (Codex) 기존 브랜드의 근거 기반 아나토미 리서치와 Storybook+JSON 산출 |
 | `.agents/skills/build-brand-from-anatomy/` | (Codex) 승인된 분석을 신규 브랜드·제품 라인업·비주얼 시스템으로 전환 |
 | `.agents/skills/build-landing-materials/` | (Codex) UX 카피와 제품별 이미지 렌더링 재료 작성 |
 | `.agents/skills/commercial-photo-prompting/` | (Codex) 브랜드·제품 상업 사진 프롬프트 설계 |
@@ -54,6 +57,15 @@ Claude Code와 Codex가 이 프로젝트의 규칙과 작업 스킬을 찾도록
 3. `build-landing-materials` — 랜딩페이지용 카피, 제품 정보, 이미지 재료 준비
 
 2·3단계의 상업 이미지 방향에는 `commercial-photo-prompting`을 사용합니다. 각 단계의 결과를 확인한 뒤 다음 단계로 넘어가는 구조이며, 한 브랜드 안에서 안전한 조사·작성 작업은 병렬 처리할 수 있습니다.
+
+각 단계의 JSON은 정본으로 유지하고, 아래 명령으로 Storybook 리포트와 근거 이미지를 등록합니다. 기존 HTML은 검증 체계를 옮기는 동안만 호환 산출물로 유지합니다.
+
+```bash
+pnpm register-brand-report -- <stage-package-directory>
+pnpm register-brand-report -- <stage-package-directory> --check
+```
+
+디렉토리 규칙과 단계별 전환 계획은 [`docs/brand-report-storybook-migration.md`](docs/brand-report-storybook-migration.md)에 정리되어 있습니다.
 
 ### 커스텀 테마
 
@@ -133,5 +145,6 @@ pnpm add -D prettier
 | `pnpm storybook` | Storybook 실행 (포트 6006) |
 | `pnpm build` | 프로덕션 빌드 |
 | `pnpm build-storybook` | Storybook 정적 빌드 |
+| `pnpm register-brand-report -- <package>` | Stage 1–3 JSON·이미지를 Storybook 리포트로 등록 |
 | `pnpm lint` | ESLint 실행 |
 | `pnpm generate-rules` | `.claude/` 규칙·스킬과 `.agents/skills/`를 스캔하여 룰 시각화 데이터 재생성 |

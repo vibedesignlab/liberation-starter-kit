@@ -1,6 +1,6 @@
 ---
 name: build-landing-materials
-description: "Stage 3 of the brand pipeline. Turn an accepted extended-brand anatomy into landing-page source material: UX copy hierarchy, brand value, brand story, product introduction, explicit product-lineup copy, and registered product-image renders. Use commercial-photo-prompting to preserve the approved product and image system, then stop for user adjustment. Do not build or code the final landing page."
+description: "Stage 3 of the brand pipeline. Turn an accepted extended-brand anatomy into a modular Storybook+JSON landing-material report: UX copy hierarchy, brand value, brand story, product introduction, explicit product-lineup copy, and registered product-image renders. Use commercial-photo-prompting to preserve the approved product and image system, then stop for user adjustment. Keep deterministic HTML only as a migration-compatibility artifact; do not build or code the final landing page."
 ---
 
 # Stage 3 — Build Landing Materials
@@ -9,7 +9,7 @@ Create the copy and product-render package that a later landing-page design or c
 
 ## Boundary
 
-- Require an accepted Stage 2 `outputs/extended-brand-anatomy.json`, HTML, `asset-registry.json`, and `stage-review.json`.
+- Require an accepted Stage 2 `outputs/extended-brand-anatomy.json`, registered Storybook report, `asset-registry.json`, and `stage-review.json`. During the compatibility phase also verify the Stage 2 HTML.
 - Preserve the approved positioning, product lineup, product form, key visual, brand mood, and design-token direction. Do not reopen brand strategy unless the user requests a revision.
 - Deliver landing materials, not a coded page, component system, full UX specification, or new brand manual.
 - When `stage-review.json.pipeline_state_path` is non-empty, follow the router chaining contract after the user's explicit checkpoint response. Validation success alone is not approval.
@@ -18,9 +18,10 @@ Create the copy and product-render package that a later landing-page design or c
 ## Read before working
 
 1. Read [references/landing-materials-contract.md](references/landing-materials-contract.md).
-2. Invoke `$commercial-photo-prompting` before planning or compiling product-render prompts. Read its Codex image profile before using the image tool.
-3. Use `$imagegen` in built-in default mode for the actual bitmap generation and save selected project assets under `assets/product-renders/`.
-4. In a routed full pipeline, read and follow the router's [parallel execution contract](../reconstruct-brand-system/references/parallel-execution-contract.md). The root coordinator is the only writer of canonical Stage 3 files.
+2. Before loading or registering report readers, read the router's [Storybook report contract](../reconstruct-brand-system/references/storybook-report-contract.md).
+3. Invoke `$commercial-photo-prompting` before planning or compiling product-render prompts. Read its Codex image profile before using the image tool.
+4. Use `$imagegen` in built-in default mode for the actual bitmap generation and save selected project assets under `assets/product-renders/`.
+5. In a routed full pipeline, read and follow the router's [parallel execution contract](../reconstruct-brand-system/references/parallel-execution-contract.md). The root coordinator is the only writer of canonical Stage 3 files.
 
 ## Initialize
 
@@ -38,6 +39,8 @@ Canonical artifacts:
 - `assets/product-renders/`
 - `prompts/`
 - `stage-review.json`
+
+The JSON is canonical. The registered `Brand Reports/<brand>/Stage 3 — Landing Materials` story is the primary reader. Keep the HTML only while the compatibility gates in the Storybook report contract remain open.
 
 ## Workflow
 
@@ -90,13 +93,17 @@ The output is a material map, not page code.
 
 ### C4 — Deliver and stop for user adjustment
 
-Deliver paired HTML+JSON and render all registered product images in the HTML. End with one plain adjustment prompt covering copy hierarchy, story, lineup clarity, and product-image consistency. Record `pending`, `accepted`, or `revision_requested` in `stage-review.json`.
+Deliver the paired Storybook document and JSON, and render every registered product image in Storybook. The compatibility HTML mirrors the same content while its gates remain open. End with one plain adjustment prompt covering copy hierarchy, story, lineup clarity, and product-image consistency. Record `pending`, `accepted`, or `revision_requested` in `stage-review.json`.
 
 Treat `outputs/landing-materials.json` as the canonical Stage 3 content model. After every required product image is registered, generate Markdown and HTML deterministically:
 
 ```bash
 python3 scripts/render_landing_report.py <stage-3-directory>
+pnpm register-brand-report -- <stage-3-directory>
+pnpm register-brand-report -- <stage-3-directory> --check
 ```
+
+Run the `pnpm` commands from the Liberation Starter Kit repository root. Re-register after any material model, review, provenance, or image change.
 
 If `pipeline_state_path` is registered, record the user's checkpoint decision through the router's `advance_pipeline.py`. A revision request stays in this skill. Acceptance produces `CHAIN_ACTION=COMPLETE`; stop without starting page design or coding.
 
@@ -106,4 +113,4 @@ If `pipeline_state_path` is registered, record the user's checkpoint decision th
 python3 scripts/validate_landing.py <stage-3-directory>
 ```
 
-Validation checks accepted Stage 2 lineage, copy completeness, lineup parity, local image and prompt registration, HTML visibility, and review structure. It does not score taste.
+Validation checks accepted Stage 2 lineage, copy completeness, lineup parity, local image and prompt registration, compatibility HTML visibility, and review structure. The registration check separately verifies the primary Storybook reader package and generated story. Neither scores taste.

@@ -9,7 +9,7 @@
 
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { writeFileSync } from 'node:fs';
-import { join, basename, relative } from 'node:path';
+import { join, basename } from 'node:path';
 
 const ROOT = new URL('..', import.meta.url).pathname.replace(/\/$/, '');
 const RULES_DIR = join(ROOT, '.claude', 'rules');
@@ -116,8 +116,6 @@ for (const source of SKILL_SOURCES) {
 // ── conditionMatrix ──
 // 의미적 매핑이므로 자동 생성 불가. 노드 id 기반으로 정적 정의.
 const ruleIds = nodes.filter((n) => ['CRITICAL', 'MUST', 'SHOULD'].includes(n.priority)).map((n) => n.id);
-const skillIds = nodes.filter((n) => n.priority === 'Skill').map((n) => n.id);
-
 const conditionMatrix = [
   {
     task: '컴포넌트 생성',

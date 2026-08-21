@@ -1,6 +1,6 @@
 # Source-report language and editorial style
 
-Use this reference only when turning the approved source anatomy into the reader-facing HTML report. Do not rewrite the evidence register, Core Claim rows, or grammar source fields merely to make them sound simpler.
+Use this reference only when turning the approved source anatomy into the reader-facing Storybook document and its compatibility HTML. Do not rewrite the evidence register, Core Claim rows, or grammar source fields merely to make them sound simpler.
 
 ## 1. Meaning comes before brevity
 
@@ -109,7 +109,7 @@ The source files remain the authority:
 
 - `source-brand-anatomy.md` preserves analytical terminology, complete claim fields, and evidence links;
 - `grammar-kernel.md` preserves the full causal rule, alternatives, exceptions, tests, and falsifiers;
-- `source-brand-analysis.html` translates those findings for a reader without creating, deleting, or upgrading claims.
+- the Storybook source-brand document translates those findings for a reader without creating, deleting, or upgrading claims; `source-brand-analysis.html` mirrors it only for migration compatibility.
 
 The report may rename a grammar rule for readability only when the rule ID remains visible and the full source rule is linked.
 

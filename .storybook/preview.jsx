@@ -1,5 +1,6 @@
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import { createElement } from 'react';
 
 import { defaultTheme } from '../src/styles/themes';
 
@@ -36,6 +37,8 @@ const preview = {
       storySort: {
         order: [
           'Overview',
+          'Brand Reports',
+          ['Overview'],
           'Style',
           ['Overview', 'Colors', 'Typography', 'Icons', 'Spacing', 'Component Tokens'],
           'Component',
@@ -66,7 +69,7 @@ const preview = {
       <ThemeProvider theme={defaultTheme}>
         <CssBaseline />
         <div style={{ width: '100%', paddingTop: '40px' }}>
-          <Story />
+          { createElement(Story) }
         </div>
       </ThemeProvider>
     ),

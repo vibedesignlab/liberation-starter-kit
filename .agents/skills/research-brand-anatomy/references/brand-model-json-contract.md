@@ -1,6 +1,6 @@
 # Source brand-model JSON contract
 
-Create `outputs/source-brand-analysis.json` beside the reader-facing HTML. The HTML explains the analysis; this JSON is the explicit handoff used to draft a later transfer plan. It is not an implementation token file.
+Create `outputs/source-brand-analysis.json` as the canonical handoff and register it in the reader-facing Storybook document. Storybook explains the analysis; this JSON is the explicit input used to draft a later transfer plan. It is not an implementation token file. Keep the adjacent HTML only as a migration-compatibility artifact.
 
 ## Required top-level records
 
@@ -50,10 +50,10 @@ Keep identity color, interaction/status color, product/campaign color, and photo
 
 ## Downstream use
 
-The transfer plan must read the HTML and JSON together. It may not infer the target from either artifact. After a new user direction arrives, it uses source claims, grammar, design-system relationships, protected boundaries, and gaps to propose layer-by-layer tuning.
+The transfer plan must read the Storybook document and JSON together. It may not infer the target from either artifact. During migration, the compatibility HTML may be used only when Storybook registration is unavailable. After a new user direction arrives, the transfer plan uses source claims, grammar, design-system relationships, protected boundaries, and gaps to propose layer-by-layer tuning.
 
 The later second-brand JSON should keep the same semantic areas and add source lineage, approved tuning operation, target evidence, decision status, implementation guidance, and downstream briefs. Product-photo and landing-page work consume the second-brand JSON, never the source JSON alone.
 
 ## Package integrity
 
-`analysis-handoff.yaml` pins the source JSON schema version and SHA-256 digests for `source-brand-anatomy.md`, `grammar-kernel.md`, `outputs/source-brand-analysis.html`, and `outputs/source-brand-analysis.json`. A later transfer brief copies those values. If a material source decision changes, increment the source package version and regenerate the digests; do not silently approve a changed package under the old version.
+During the compatibility phase, `analysis-handoff.yaml` pins the source JSON schema version and SHA-256 digests for `source-brand-anatomy.md`, `grammar-kernel.md`, `outputs/source-brand-analysis.html`, and `outputs/source-brand-analysis.json`. A later transfer brief copies those values. If a material source decision changes, increment the source package version, regenerate the digests, and re-register the Storybook report; do not silently approve a changed package under the old version.

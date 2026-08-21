@@ -13,6 +13,9 @@ const config = {
     "@storybook/addon-docs",
     "@storybook/addon-onboarding"
   ],
+  "staticDirs": [
+    "../public"
+  ],
   "framework": "@storybook/react-vite"
 };
 export default config;

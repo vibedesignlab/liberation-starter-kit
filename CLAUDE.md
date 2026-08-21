@@ -17,4 +17,4 @@ MUI 기본 컴포넌트와 디자인 토큰만 담은 라이트 구조를 유지
 - **Claude Skills**: `component-work`, `project-planning`
 - **Codex Skills**: `reconstruct-brand-system`, `research-brand-anatomy`, `build-brand-from-anatomy`, `build-landing-materials`, `commercial-photo-prompting`, `vdl-visual-asset-prompt`
 - **Agents**: `ai-slop-fixer`, `stable-layout-auditor`, `typography-auditor`
-- **Storybook**: Style(디자인 토큰) · Overview · Components(MUI 대표 컴포넌트 데모)
+- **Storybook**: Overview · Brand Reports(Stage 1–3 모듈 문서) · Style(디자인 토큰) · Components(MUI 대표 컴포넌트 데모)

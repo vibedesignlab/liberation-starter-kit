@@ -22,9 +22,11 @@ src/
 │   ├── overlay-feedback/ # 오버레이 (Dialog 등)
 │   ├── scroll/          # 스크롤 기반 인터랙션
 │   ├── templates/       # 페이지 템플릿
+│   ├── brand-documentation/ # 브랜드 리포트 전용 순수 프레젠테이션 컴포넌트
 │   └── typography/      # 타이포그래피
 ├── common/ui/           # 공통 유틸리티 UI (Placeholder, Indicator 등)
-├── stories/             # Storybook 전용 (style, overview, page, template)
+├── stories/             # Storybook 전용 (style, overview, brand-reports, page, template)
+│   └── brand-reports/   # 브랜드 리포트 로더, 개요, 생성된 CSF 엔트리
 ├── styles/              # 테마, 글로벌 스타일
 ├── utils/               # 유틸리티 함수
 └── data/                # 데이터 파일
@@ -52,3 +54,12 @@ src/
 
 - 디자인 토큰 문서화 (색상, 타이포 등) → `src/stories/style/`
 - 프로젝트 소개/가이드 → `src/stories/overview/`
+- 브랜드 리포트 개요와 정적 패키지 로더 → `src/stories/brand-reports/`
+- 등록 CLI가 생성한 리포트 엔트리 → `src/stories/brand-reports/generated/` (직접 편집 금지)
+
+### 브랜드 리포트 데이터
+
+- 정본은 각 Stage 패키지의 `outputs/*.json`, `stage-review.json`, `asset-registry.json`이다.
+- Storybook 제공용 복사본과 이미지 → `public/brand-reports/{report-id}/`
+- 전체 리포트 레지스트리 → `public/brand-reports/registry.json`
+- `public/brand-reports/`와 `generated/`는 등록 스크립트로만 갱신한다.

@@ -172,6 +172,8 @@ const SingleColorBlock = ({ name, color, hasBorder = false }) => (
 /** Docs - 색상 시스템 문서 (첫 번째 스토리) */
 export const Docs = {
   render: () => {
+    // Storybook render callbacks are React render functions.
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const theme = useTheme();
 
     // 토큰 구조 (트리 뷰용)
@@ -410,6 +412,8 @@ export const Palette = {
 export const SemanticTokens = {
   name: '2. Semantic Tokens',
   render: () => {
+    // Storybook render callbacks are React render functions.
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const theme = useTheme();
     return (
       <>

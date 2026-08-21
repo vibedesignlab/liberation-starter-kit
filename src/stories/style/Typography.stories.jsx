@@ -24,6 +24,8 @@ export default {
 /** 타이포그래피 시스템 문서 */
 export const Docs = {
   render: () => {
+    // Storybook render callbacks are React render functions.
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const theme = useTheme();
 
     // 토큰 구조 (트리 뷰용)

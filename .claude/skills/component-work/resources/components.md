@@ -118,3 +118,14 @@ Vibe Dictionary 텍소노미 v0.4 기반 분류. 번호는 텍소노미 카테�
 - Indicator: 범용 인디케이터 (`common/ui/Indicator.jsx`)
 - Placeholder: 스토리 예제용 FPO 플레이스홀더 시스템. Box/Image/Media/Text/Line/Paragraph/Card 서브컴포넌트 (`common/ui/Placeholder.jsx`)
 - FilterBar: 필터 바 (`components/templates/FilterBar.jsx`)
+
+## Storybook Documentation
+
+- DocumentTitle: 일반 Storybook 문서 메타 헤더 (`components/storybookDocumentation/DocumentTitle.jsx`)
+- PageContainer: Storybook 문서 콘텐츠 컨테이너 (`components/storybookDocumentation/PageContainer.jsx`)
+- SectionTitle: 일반 Storybook 문서 섹션 구분 (`components/storybookDocumentation/SectionTitle.jsx`)
+- BrandReportDocument: Stage 1–3 정규화 모델을 조립하는 브랜드 리포트 셸 (`components/brand-documentation/BrandReportDocument.jsx`)
+- BrandDocumentHeader: 브랜드 아이덴티티와 리포트 메타 헤더 (`components/brand-documentation/BrandDocumentHeader.jsx`)
+- BrandDocumentSection: 번호·라벨·블록을 조합하는 리포트 섹션 (`components/brand-documentation/BrandDocumentSection.jsx`)
+- BrandBlockRenderer: prose, list, table, evidence, card, typography, code 블록 라우터 (`components/brand-documentation/BrandBlockRenderer.jsx`)
+- BrandDocumentReview: `stage-review.json` 기반 조정 체크포인트 (`components/brand-documentation/BrandDocumentReview.jsx`)

@@ -56,7 +56,7 @@ Describe information roles and relative hierarchy:
 - Latin, Korean, CJK, RTL, and other script substitution or expansion;
 - what must remain stable when the typeface changes.
 
-For an owned digital channel, verify more than the family name when the source exposes it. Record the first-party CSS family stack, webfont family, weight, style, file format, direct source URL, locale/script coverage, observation date, and fallback order. In the reader-facing HTML, render a `type-token-matrix`: one row per observed role, with a short metadata label and a large, directly comparable glyph sample. Every row must apply the verified font and display role, family, size, weight, line height, script, and specimen text. Cover display, title, lead, body, label, caption, and materially different localized scripts when evidence exists. Do not present a list of font URLs as the typography output; keep URLs in compact provenance or the evidence index. If licensing or access prevents loading the font, show a `webfont gap` rather than silently falling back.
+For an owned digital channel, verify more than the family name when the source exposes it. Record the first-party CSS family stack, webfont family, weight, style, file format, direct source URL, locale/script coverage, observation date, and fallback order. In the reader-facing Storybook document, render a typography-specimen matrix: one row per observed role, with a short metadata label and a large, directly comparable glyph sample. Every row must apply the verified font and display role, family, size, weight, line height, script, and specimen text. Cover display, title, lead, body, label, caption, and materially different localized scripts when evidence exists. Mirror this as `type-token-matrix` in the compatibility HTML. Do not present a list of font URLs as the typography output; keep URLs in compact provenance or the evidence index. If licensing or access prevents loading the font, show a `webfont gap` rather than silently falling back.
 
 Do not prescribe one font file, fixed type scale, or universal pixel/rem values as the global system. Exact source fonts and sizes may be shown in `Observed reference values` with their channel and date. Do not copy a font into the project unless its license permits redistribution; a first-party remote URL may be used as a dated research reference when direct loading is permitted.
 
@@ -105,7 +105,7 @@ The final framework may state how color, typography, spacing, and layout support
 
 ## Reader-facing table
 
-Use this compact structure in the final HTML:
+Use this compact structure in the final Storybook document and mirror it in the compatibility HTML:
 
 | Area | Observed reference values | Role / color layer | Relationship | Keep stable | May vary | Evidence / limit |
 |---|---|---|---|---|---|---|

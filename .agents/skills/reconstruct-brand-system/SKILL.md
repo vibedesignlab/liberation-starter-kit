@@ -1,11 +1,11 @@
 ---
 name: reconstruct-brand-system
-description: "Route one brand-reconstruction project through three reviewed stages while parallelizing safe work inside the active stage: source-brand research, extended target-brand anatomy with two anchor images, then landing UX copy and product-render materials."
+description: "Route one brand-reconstruction project through three reviewed Storybook+JSON stages while parallelizing safe work inside the active stage: source-brand research, extended target-brand anatomy with two anchor images, then landing UX copy and product-render materials."
 ---
 
 # Three-Stage Brand Reconstruction Router
 
-Use exactly one stage at a time. Never combine source research, target-brand invention, and final landing-material production in one run. Parallel work is allowed only inside the active stage. Read [references/chaining-contract.md](references/chaining-contract.md) and [references/parallel-execution-contract.md](references/parallel-execution-contract.md) before starting a multi-stage pipeline.
+Use exactly one stage at a time. Never combine source research, target-brand invention, and final landing-material production in one run. Parallel work is allowed only inside the active stage. Read [references/chaining-contract.md](references/chaining-contract.md), [references/parallel-execution-contract.md](references/parallel-execution-contract.md), and [references/storybook-report-contract.md](references/storybook-report-contract.md) before starting a multi-stage pipeline.
 
 ## Initialize the chain
 
@@ -30,11 +30,11 @@ Use `$research-brand-anatomy`.
 
 Deliver:
 
-- evidence-backed source HTML and JSON;
+- evidence-backed source Storybook document and canonical JSON;
 - source grammar, key visual, brand mood, photography, product-native language, and global color/type/spacing/layout relationships;
 - `stage-review.json`.
 
-After scope lock, fan out the three source-research lanes from the parallel contract when worker slots are available. Merge evidence before the coordinator writes final claims, grammar, HTML, or JSON.
+After scope lock, fan out the three source-research lanes from the parallel contract when worker slots are available. Merge evidence before the coordinator writes final claims, grammar, JSON, compatibility HTML, or the Storybook registration.
 
 Stop at `SOURCE_REVIEW_REQUIRED`. Continue only after the user records no remaining adjustments and review status becomes `accepted`.
 
@@ -44,7 +44,7 @@ Use `$build-brand-from-anatomy` with the accepted Stage 1 package.
 
 Deliver:
 
-- eight-section extended-brand anatomy HTML and JSON;
+- eight-section extended-brand anatomy Storybook document and canonical JSON;
 - target positioning, explicit product family and lineup, product-by-product differences and detailed form cues;
 - verbal system, key visual, brand mood, product-native visual language, and landing-page design-token direction;
 - one representative-product hero image and one brand-mood image generated through `$commercial-photo-prompting` and registered with local file and prompt provenance;
@@ -65,12 +65,14 @@ Deliver:
 - product-family introduction and copy for every lineup product;
 - product renders covering every lineup product and only the additional proof shots used by the landing outline;
 - landing-section copy/image/CTA mapping;
-- paired HTML and JSON plus registered local image and prompt files;
+- paired Storybook document and canonical JSON plus registered local image and prompt files;
 - `stage-review.json`.
 
 Lock the product-by-product shot plan first. Then run landing copy and product-render groups concurrently; the coordinator merges them into the canonical report after the image barrier.
 
 Stop before coding or designing the final page. Use the final checkpoint to adjust copy, lineup clarity, and product renders.
+
+For all three stages, keep deterministic HTML only as a migration-compatibility artifact until the removal gates in the Storybook report contract are complete. Do not hand-edit it or treat it as a second report source.
 
 ## Review and automatic transition
 

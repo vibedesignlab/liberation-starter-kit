@@ -11,6 +11,7 @@ Storybook 스토리 작성 시 준수해야 할 규칙
 | **Template** | `Template/` | 여러 컴포넌트를 조합한 템플릿 |
 | **Section** | `Section/` | 페이지를 구성하는 섹션 단위 컴포넌트 |
 | **Page** | `Page/` | 전체 페이지 레벨 컴포넌트 |
+| **Brand Reports** | `Brand Reports/` | Stage JSON을 공통 문서 컴포넌트로 읽는 브랜드 리포트 |
 
 ## 필수 규칙
 
@@ -110,6 +111,7 @@ import { placeholderSvg } from '../../common/ui/Placeholder';
 |------|----------|-----------|---------------|----------|
 | Component (interactive) | `tags: ['autodocs']` | NOT needed | NOT supported in Docs tab | Components with props (Button, Card, Icons) |
 | Documentation (static) | None | Required | Required | Overview, Style sections (Introduction, Typography) |
+| Brand report (static package) | None | Required | `BrandReportDocument` shell | Stage 1–3 canonical JSON readers |
 
 **Note:** `docs.page` with JSX causes dynamic import errors in Vite + Storybook. Do NOT use DocumentTitle in autodocs Docs tab.
 
@@ -460,6 +462,17 @@ export const Default = {
 - 불필요한 배경색, 그라데이션 금지
 - 이모지 과다 사용 금지
 - 마케팅 문구 금지
+
+## Brand Reports 스토리
+
+- 사이드바 구조는 `Brand Reports/<brand>/<stage label>`을 사용한다.
+- 첫 export는 반드시 `Docs`로 한다.
+- 리포트 내용은 Stage 패키지 JSON을 `normalizeBrandReport()`로 정규화한 뒤 `BrandReportDocument`로 렌더링한다.
+- 데이터 로딩과 정적 경로 해석은 `src/stories/brand-reports/`가 담당하고, `src/components/brand-documentation/`은 순수 프레젠테이션만 담당한다.
+- 생성된 `src/stories/brand-reports/generated/*.stories.jsx`와 `public/brand-reports/`는 직접 편집하지 않는다.
+- 근거 이미지에는 EV/asset ID, 출처, 크레딧, 권리 메모를 유지한다.
+- `stage-review.json`의 상태와 질문을 문서 끝의 review checkpoint에 표시하되, 렌더 성공을 사용자 승인으로 간주하지 않는다.
+- 브랜드 소스의 관찰 색상·폰트는 리포트 데이터로 표시한다. 프로젝트 MUI theme을 해당 브랜드의 구현 토큰으로 오해하거나 덮어쓰지 않는다.
 
 ---
 

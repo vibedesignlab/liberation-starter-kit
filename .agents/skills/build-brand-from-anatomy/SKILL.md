@@ -1,6 +1,6 @@
 ---
 name: build-brand-from-anatomy
-description: Stage 2 of the brand pipeline. Turn an accepted source-brand HTML+JSON anatomy and a short user brief into an extended target-brand anatomy with explicit product family and lineup, product detail, verbal and visual systems, key visual, brand mood, product-native visual language, landing-page design tokens, one generated representative-product image, and one generated brand-mood image. Stop for user adjustment before landing-material production.
+description: Stage 2 of the brand pipeline. Turn an accepted source-brand Storybook+JSON anatomy and a short user brief into an extended target-brand anatomy with explicit product family and lineup, product detail, verbal and visual systems, key visual, brand mood, product-native visual language, landing-page design tokens, one generated representative-product image, and one generated brand-mood image. Keep deterministic HTML only as a migration-compatibility artifact. Stop for user adjustment before landing-material production.
 ---
 
 # Stage 2 — Build Extended Brand Anatomy
@@ -9,7 +9,7 @@ Create one coherent target-brand and product direction from an accepted Stage 1 
 
 ## Boundary
 
-- Require `outputs/source-brand-analysis.html`, `outputs/source-brand-analysis.json`, and an accepted Stage 1 `stage-review.json`. For a legacy source package without the review file, obtain one explicit source-analysis acceptance and record it before continuing.
+- Require `outputs/source-brand-analysis.json`, its registered Storybook report, and an accepted Stage 1 `stage-review.json`. During the compatibility phase also verify `outputs/source-brand-analysis.html`. For a legacy source package without the review file, obtain one explicit source-analysis acceptance and record it before continuing.
 - This stage defines the target brand, product family, product lineup, product form, imagery systems, and landing-page token direction. It is not a full PRD, component system, production landing page, or complete image set.
 - Do not rebuild or score the source analysis.
 - When `stage-review.json.pipeline_state_path` is non-empty, follow the router chaining contract after the user's explicit checkpoint response. Validation success alone is not approval.
@@ -20,9 +20,10 @@ Create one coherent target-brand and product direction from an accepted Stage 1 
 1. Read [references/transfer-input-contract.md](references/transfer-input-contract.md) before intake.
 2. Read [references/tuning-framework.md](references/tuning-framework.md) before synthesis.
 3. Read [references/transfer-direction-contract.md](references/transfer-direction-contract.md) before delivery.
-4. Before image planning or generation, invoke `$commercial-photo-prompting`, read its `SKILL.md`, inspect only the relevant taxonomy sections, and read its Codex image profile when using the image tool.
-5. Use `$imagegen` for the actual bitmap generation after the commercial-photo prompt is compiled. Save selected project assets into the Stage 2 workspace; do not leave them only in the default generated-image location.
-6. In a routed full pipeline, read and follow the router's [parallel execution contract](../reconstruct-brand-system/references/parallel-execution-contract.md). The root coordinator is the only writer of canonical Stage 2 files.
+4. Before loading or registering report readers, read the router's [Storybook report contract](../reconstruct-brand-system/references/storybook-report-contract.md).
+5. Before image planning or generation, invoke `$commercial-photo-prompting`, read its `SKILL.md`, inspect only the relevant taxonomy sections, and read its Codex image profile when using the image tool.
+6. Use `$imagegen` for the actual bitmap generation after the commercial-photo prompt is compiled. Save selected project assets into the Stage 2 workspace; do not leave them only in the default generated-image location.
+7. In a routed full pipeline, read and follow the router's [parallel execution contract](../reconstruct-brand-system/references/parallel-execution-contract.md). The root coordinator is the only writer of canonical Stage 2 files.
 
 ## Initialize
 
@@ -42,11 +43,13 @@ Canonical artifacts:
 - `prompts/`
 - `stage-review.json`
 
+The JSON is canonical. The registered `Brand Reports/<brand>/Stage 2 — Extended Brand Anatomy` story is the primary reader. Keep the HTML only while the compatibility gates in the Storybook report contract remain open.
+
 ## Workflow
 
 ### B0 — Load the accepted source
 
-Use the source JSON for explicit grammar, design-system relationships, product language, protected boundaries, and gaps. Use the source HTML for narrative and visual context. Confirm the artifact identity and accepted review only; do not run a new source audit.
+Use the source JSON for explicit grammar, design-system relationships, product language, protected boundaries, and gaps. Use its Storybook document for narrative and visual context; use source HTML only as a compatibility fallback. Confirm the artifact identity and accepted review only; do not run a new source audit.
 
 ### B1 — Capture target direction once
 
@@ -97,19 +100,23 @@ For each asset:
 - generate the image with `$imagegen` in its built-in default mode;
 - save it under the matching `assets/` folder;
 - register ID, role, communication job, file path, prompt path, product or scene, aspect ratio, generation provenance, reference lineage, invariants, one allowed variation, invariant check, and status in `asset-registry.json`;
-- show the actual registered image in the Stage 2 HTML. Do not substitute a contact sheet or report screenshot.
+- show the actual registered image in the Stage 2 Storybook document and compatibility HTML. Do not substitute a contact sheet or report screenshot.
 
 These two images lock the visual baseline; they are not the final landing image set.
 
 ### B4 — Deliver and stop for user adjustment
 
-Deliver paired HTML+JSON and the registered images. The HTML must render the explicit product lineup and both anchor images. End with one plain-language adjustment prompt: ask what should change in the brand direction, product family or two anchor images, and state that an answer of `없음`, `승인`, or equivalent advances the pipeline.
+Deliver the paired Storybook document and JSON plus the registered images. The Storybook document must render the explicit product lineup and both anchor images. The compatibility HTML mirrors the same content while its gates remain open. End with one plain-language adjustment prompt: ask what should change in the brand direction, product family or two anchor images, and state that an answer of `없음`, `승인`, or equivalent advances the pipeline.
 
 Treat `outputs/extended-brand-anatomy.json` as the canonical Stage 2 content model. After both images are registered, generate Markdown and HTML deterministically instead of hand-assembling three versions:
 
 ```bash
 python3 scripts/render_extended_report.py <stage-2-directory>
+pnpm register-brand-report -- <stage-2-directory>
+pnpm register-brand-report -- <stage-2-directory> --check
 ```
+
+Run the `pnpm` commands from the Liberation Starter Kit repository root. Re-register after any material model, review, provenance, or image change.
 
 Record `pending`, `accepted`, or `revision_requested` in `stage-review.json`. This is not a scored audit. Do not start Stage 3 until the status is `accepted`.
 
@@ -121,4 +128,4 @@ If `pipeline_state_path` is registered and the user approves, run the router's `
 python3 scripts/validate_extended.py <stage-2-directory> all
 ```
 
-Validation checks artifact structure, explicit lineup, HTML visibility, two registered local images, prompt records, token relationships, and the review checkpoint. It does not judge taste or persuasion.
+Validation checks artifact structure, explicit lineup, compatibility HTML visibility, two registered local images, prompt records, token relationships, and the review checkpoint. The registration check separately verifies the primary Storybook reader package and generated story. Neither judges taste or persuasion.

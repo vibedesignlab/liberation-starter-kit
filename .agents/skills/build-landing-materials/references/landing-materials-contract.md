@@ -2,7 +2,8 @@
 
 ## Inputs
 
-- accepted `extended-brand-anatomy.html` and `.json`;
+- accepted `extended-brand-anatomy.json` and registered Storybook document;
+- compatibility `extended-brand-anatomy.html` while legacy lineage checks remain;
 - accepted Stage 2 `stage-review.json`;
 - Stage 2 `asset-registry.json` with one product hero and one brand-mood image.
 - Stage 2 selected narrative route and message-to-visual map when present.
@@ -18,7 +19,7 @@ The report contains six numbered material sections:
 5. product-lineup copy;
 6. product-image renders and landing-section mapping.
 
-After section 6, render an unnumbered `data-review-checkpoint` block. Do not add a page implementation chapter.
+After section 6, render an unnumbered review checkpoint. Keep `data-review-checkpoint` in the compatibility HTML while legacy validators require it. Do not add a page implementation chapter.
 
 ## JSON
 
