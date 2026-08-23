@@ -6,7 +6,6 @@
   "source_analysis": {
     "reference_brand": "",
     "package_path": "",
-    "report_path": "outputs/source-brand-analysis.html",
     "json_path": "outputs/source-brand-analysis.json",
     "review_path": "stage-review.json",
     "review_status": ""

@@ -8,14 +8,12 @@ source_analysis:
   visual_corpus_path: "visual-corpus.csv"
   contact_sheet_path: "contact-sheets/overview.jpg"
   validation_status: "pending"
-  validation_log_path: "validation/completion-check.txt"
   version: ""
   delivered_at: ""
   source_json_schema_version: "1.2.0"
 package_integrity:
   anatomy_sha256: ""
   grammar_sha256: ""
-  source_html_sha256: ""
   source_json_sha256: ""
 approved_grammar_ids: []
 protected_surface_families: []

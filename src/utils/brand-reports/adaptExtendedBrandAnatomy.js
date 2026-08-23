@@ -122,8 +122,17 @@ export function adaptExtendedBrandAnatomy(input, context = {}) {
     const index = offset + 1;
     const section = asRecord(sourceSections[sectionKey]);
     const blocks = recordToBlocks(section);
+    if (sectionKey === 'source_grammar_application') {
+      blocks.unshift(
+        ...recordToBlocks(model.source_analysis, { overviewTitle: 'Source analysis' }),
+        ...recordToBlocks(model.boundaries, { overviewTitle: 'Protected boundaries' }),
+      );
+    }
     if (sectionKey === 'brand_positioning') {
       blocks.unshift(...recordToBlocks(target, { overviewTitle: 'Target scope' }));
+    }
+    if (sectionKey === 'brand_mood_and_brand_imagery') {
+      blocks.push(...recordToBlocks(model.moodboard_inputs, { overviewTitle: 'Moodboard inputs' }));
     }
     const evidence = evidenceGridBlock(
       'Registered anchor assets',
@@ -141,29 +150,6 @@ export function adaptExtendedBrandAnatomy(input, context = {}) {
       blocks,
     });
   });
-
-  const appendixBlocks = [
-    ...recordToBlocks(model.source_analysis, { overviewTitle: 'Source analysis' }),
-    ...recordToBlocks(model.moodboard_inputs, { overviewTitle: 'Moodboard inputs' }),
-    ...recordToBlocks(model.boundaries, { overviewTitle: 'Boundaries' }),
-  ];
-  const allAssets = evidenceGridBlock('Registered anchor assets', assets, {
-    assetIndex,
-    publicBasePath: context.publicBasePath,
-  });
-  if (allAssets) appendixBlocks.push(allAssets);
-  sections.push(makeSection({
-    id: 'inputs-and-boundaries',
-    index: sections.length + 1,
-    label: 'Stage 02',
-    title: 'Inputs, evidence, and boundaries',
-    insight: firstInsight(
-      asRecord(model.boundaries).key_insight,
-      asRecord(model.source_analysis).summary,
-      'Source inputs and protected boundaries define what the extended brand may and may not change.',
-    ),
-    blocks: appendixBlocks,
-  }));
 
   const positioning = asRecord(sourceSections.brand_positioning);
   const concept = asRecord(sourceSections.landing_product_concept);

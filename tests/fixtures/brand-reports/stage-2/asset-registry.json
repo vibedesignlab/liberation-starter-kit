@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.1.0",
+  "artifact_type": "brand_asset_registry",
+  "stage": "extended_brand_anatomy",
+  "assets": [
+    {
+      "asset_id": "A2-HERO-001",
+      "role": "representative_product_hero",
+      "file_path": "assets/fixture-focus-hero.svg",
+      "prompt_path": "prompts/fixture-focus-hero.md",
+      "subject": "Fixture Focus One",
+      "aspect_ratio": "4:3",
+      "generation_provenance": "repository-local deterministic SVG fixture",
+      "communication_job": "Prove the shared product form and visible focus state.",
+      "reference_lineage": ["GK-01", "GK-02"],
+      "invariants": ["rounded body", "single status plane", "front control"],
+      "allowed_variation": ["crop", "background tone"],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "A2-MOOD-001",
+      "role": "brand_mood",
+      "file_path": "assets/fixture-focus-mood.svg",
+      "prompt_path": "prompts/fixture-focus-mood.md",
+      "subject": "Quiet shared studio",
+      "aspect_ratio": "4:3",
+      "generation_provenance": "repository-local deterministic SVG fixture",
+      "communication_job": "Establish a calm work world without replacing product proof.",
+      "reference_lineage": ["GK-03"],
+      "invariants": ["quiet work surface", "directional daylight", "warm neutral field"],
+      "allowed_variation": ["prop placement", "daylight angle"],
+      "invariant_check": "pass",
+      "status": "registered"
+    }
+  ]
+}

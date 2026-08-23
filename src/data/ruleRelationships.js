@@ -5,7 +5,7 @@
  * 직접 수정하지 마세요. 수정이 필요하면 스크립트를 수정하세요.
  *
  * 생성: pnpm generate-rules
- * 생성일: 2026-08-21
+ * 생성일: 2026-08-23
  */
 
 export const priorityMeta = {
@@ -79,63 +79,14 @@ export const ruleNodes = [
     "name": "build-brand-from-anatomy (Claude Skill)",
     "priority": "Skill",
     "path": ".claude/skills/build-brand-from-anatomy/SKILL.md",
-    "description": "Stage 2 of the local brand pipeline. Use this skill whenever Claude must turn an accepted source-brand Storybook+JSON anatomy and a short target-brand brief into an extended target-brand anatomy, explicit product family and lineup, verbal and visual systems, key visual, at least two brand-mood directions, landing-page design tokens, generation-ready commercial-photo prompts, a pending external-asset registry, and an approval checkpoint. Claude must not call an image model; it prepares prompts and registers externally generated files later."
-  },
-  {
-    "id": "build-brand-from-anatomy--image-prompt-handoff-contract",
-    "name": "image-prompt-handoff-contract.md",
-    "priority": "Skill Resource",
-    "path": ".claude/skills/build-brand-from-anatomy/resources/image-prompt-handoff-contract.md",
-    "description": "Claude는 이 Stage에서 bitmap을 생성하지 않는다. 대신 외부 생성자가 바로 실행할 수 있는 prompt/spec과 검증 가능한 pending registry를 만든다."
-  },
-  {
-    "id": "build-brand-from-anatomy--parallel-execution-contract",
-    "name": "parallel-execution-contract.md",
-    "priority": "Skill Resource",
-    "path": ".claude/skills/build-brand-from-anatomy/resources/parallel-execution-contract.md",
-    "description": "Use this contract only for a full routed pipeline. Standalone stage skills keep their normal execution behavior."
-  },
-  {
-    "id": "build-brand-from-anatomy--storybook-report-contract",
-    "name": "storybook-report-contract.md",
-    "priority": "Skill Resource",
-    "path": ".claude/skills/build-brand-from-anatomy/resources/storybook-report-contract.md",
-    "description": "Brand reports are authored from their stage package and read in this repository's Storybook. The stage JSON remains the canonical content model; Storybook is the reader and component-composition layer."
-  },
-  {
-    "id": "build-brand-from-anatomy--transfer-direction-contract",
-    "name": "transfer-direction-contract.md",
-    "priority": "Skill Resource",
-    "path": ".claude/skills/build-brand-from-anatomy/resources/transfer-direction-contract.md",
-    "description": "등록된 Storybook 문서와 `outputs/extended-brand-anatomy.json`을 한 쌍으로 전달한다. JSON은 Stage 3의 explicit input이며 Storybook은 사람이 읽고 승인하는 Stage 2 anatomy다. `outputs/extended-brand-anatomy.html`은 마이그레이션 호환 산출물로만 유지한다."
-  },
-  {
-    "id": "build-brand-from-anatomy--transfer-input-contract",
-    "name": "transfer-input-contract.md",
-    "priority": "Skill Resource",
-    "path": ".claude/skills/build-brand-from-anatomy/resources/transfer-input-contract.md",
-    "description": "The intake exists only to obtain enough information to write a useful direction report. It is not a workshop or a second report."
-  },
-  {
-    "id": "build-brand-from-anatomy--tuning-framework",
-    "name": "tuning-framework.md",
-    "priority": "Skill Resource",
-    "path": ".claude/skills/build-brand-from-anatomy/resources/tuning-framework.md",
-    "description": "Apply the source anatomy as an operating model, not as a collection of recognizable surfaces."
+    "description": "Build a target-brand Stage 2 anatomy from accepted source JSON and its registered Storybook report, then finalize the fixed eight-section React report."
   },
   {
     "id": "build-landing-materials",
     "name": "build-landing-materials (Claude Skill)",
     "priority": "Skill",
     "path": ".claude/skills/build-landing-materials/SKILL.md",
-    "description": "Stage 3 of the local brand pipeline. Use this skill whenever an accepted extended-brand anatomy must become a modular Storybook+JSON landing-material package with UX copy hierarchy, brand value, brand story, full product-lineup copy, inherited mood and product constraints, and generation-ready product-image prompt handoffs. Claude does not generate or edit images in this skill; it records prompt specs and pending assets, then stops at the user approval gate. Do not build the landing page."
-  },
-  {
-    "id": "build-landing-materials--landing-materials-contract",
-    "name": "landing-materials-contract.md",
-    "priority": "Skill Resource",
-    "path": ".claude/skills/build-landing-materials/resources/landing-materials-contract.md",
-    "description": "- accepted Stage 2 `outputs/extended-brand-anatomy.json` and registered Storybook document"
+    "description": "Build Stage 3 landing copy and product-image materials from accepted Stage 2 JSON and finalize the fixed six-section React Storybook report."
   },
   {
     "id": "commercial-photo-prompting",
@@ -261,70 +212,14 @@ export const ruleNodes = [
     "name": "reconstruct-brand-system (Claude Skill)",
     "priority": "Skill",
     "path": ".claude/skills/reconstruct-brand-system/SKILL.md",
-    "description": "Use this skill whenever Claude must route a full brand-reconstruction project through three reviewed Storybook+JSON stages: source-brand research, extended target-brand anatomy, and landing materials. It preserves explicit approval gates and parallelizes safe work inside only the active stage. Because Claude has no built-in image model in this workflow, visual stages deliver generation-ready prompt packs and pending asset handoffs instead of generating or editing images."
-  },
-  {
-    "id": "reconstruct-brand-system--chaining-contract",
-    "name": "chaining-contract.md",
-    "priority": "Skill Resource",
-    "path": ".claude/skills/reconstruct-brand-system/resources/chaining-contract.md",
-    "description": "The pipeline uses one shared `pipeline-state.json`. Each stage keeps its own existing `stage-review.json`; no second approval format is introduced."
-  },
-  {
-    "id": "reconstruct-brand-system--parallel-execution-contract",
-    "name": "parallel-execution-contract.md",
-    "priority": "Skill Resource",
-    "path": ".claude/skills/reconstruct-brand-system/resources/parallel-execution-contract.md",
-    "description": "Use this contract only for a full routed pipeline. Standalone stage skills keep their normal execution behavior."
-  },
-  {
-    "id": "reconstruct-brand-system--storybook-report-contract",
-    "name": "storybook-report-contract.md",
-    "priority": "Skill Resource",
-    "path": ".claude/skills/reconstruct-brand-system/resources/storybook-report-contract.md",
-    "description": "Brand reports are authored from their stage package and read in this repository's Storybook. The stage JSON remains the canonical content model; Storybook is the reader and component-composition layer."
+    "description": "Route one brand project through three reviewed JSON-and-Storybook stages with fixed React reports, automatic registration, and no HTML reports."
   },
   {
     "id": "research-brand-anatomy",
     "name": "research-brand-anatomy (Claude Skill)",
     "priority": "Skill",
     "path": ".claude/skills/research-brand-anatomy/SKILL.md",
-    "description": "Research and model one existing reference brand without inventing, mapping, or planning a target brand. Always use this skill when the user asks Claude to research, reverse-engineer, reconstruct, audit, or document an existing brand's anatomy as the source stage of the local brand pipeline. Deliver an evidence-backed Storybook document and structured JSON handoff covering strategy, verbal systems, identity, key visuals, brand mood, photography, product representation, physical or digital product-native language, behavior, and a portable global framework for color, typography, spacing, and layout. Keep deterministic HTML only as a migration-compatibility artifact, and stop before any transfer or fictional-brand work."
-  },
-  {
-    "id": "research-brand-anatomy--brand-model-json-contract",
-    "name": "brand-model-json-contract.md",
-    "priority": "Skill Resource",
-    "path": ".claude/skills/research-brand-anatomy/resources/brand-model-json-contract.md",
-    "description": "Create `outputs/source-brand-analysis.json` as the canonical handoff and register it in the reader-facing Storybook document. Storybook explains the analysis; this JSON is the explicit input used to draft a later transfer plan. It is not an implementation token file. Keep the adjacent HTML only as a migration-compatibility artifact."
-  },
-  {
-    "id": "research-brand-anatomy--evidence-and-layer-model",
-    "name": "evidence-and-layer-model.md",
-    "priority": "Skill Resource",
-    "path": ".claude/skills/research-brand-anatomy/resources/evidence-and-layer-model.md",
-    "description": "- `primary`: official site, product, packaging, interface, press kit, campaign, store, social account, report, manual, or first-party interview."
-  },
-  {
-    "id": "research-brand-anatomy--global-brand-system-framework",
-    "name": "global-brand-system-framework.md",
-    "priority": "Skill Resource",
-    "path": ".claude/skills/research-brand-anatomy/resources/global-brand-system-framework.md",
-    "description": "Use this framework after the source anatomy and grammar are complete. It turns source observations into portable brand operating guidance without creating a target design system."
-  },
-  {
-    "id": "research-brand-anatomy--report-language-style",
-    "name": "report-language-style.md",
-    "priority": "Skill Resource",
-    "path": ".claude/skills/research-brand-anatomy/resources/report-language-style.md",
-    "description": "Use this reference only when turning the approved source anatomy into the reader-facing Storybook document and its compatibility HTML. Do not rewrite the evidence register, Core Claim rows, or grammar source fields merely to make them sound simpler."
-  },
-  {
-    "id": "research-brand-anatomy--source-anatomy-schema",
-    "name": "source-anatomy-schema.md",
-    "priority": "Skill Resource",
-    "path": ".claude/skills/research-brand-anatomy/resources/source-anatomy-schema.md",
-    "description": "Every material statement uses `Observed` or `Inferred`, confidence, evidence IDs, scope, alternative explanation, and exception where relevant."
+    "description": "Research one existing brand as a ten-minute source-only Stage 1 package with canonical JSON and a fixed automatically registered Storybook report."
   },
   {
     "id": "codex--analyze-site-design-with-aside",
@@ -352,14 +247,14 @@ export const ruleNodes = [
     "name": "build-brand-from-anatomy (Codex Skill)",
     "priority": "Skill",
     "path": ".agents/skills/build-brand-from-anatomy/SKILL.md",
-    "description": "Stage 2 of the brand pipeline. Turn an accepted source-brand Storybook+JSON anatomy and a short user brief into an extended target-brand anatomy with explicit product family and lineup, product detail, verbal and visual systems, key visual, brand mood, product-native visual language, landing-page design tokens, one generated representative-product image, and one generated brand-mood image. Keep deterministic HTML only as a migration-compatibility artifact. Stop for user adjustment before landing-material production."
+    "description": "Build a target-brand Stage 2 anatomy from an accepted source JSON and registered Storybook report. Deliver canonical JSON, two registered anchor images, and the fixed Storybook reader; never create an HTML report."
   },
   {
     "id": "codex--build-brand-from-anatomy--transfer-direction-contract",
     "name": "transfer-direction-contract.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/build-brand-from-anatomy/references/transfer-direction-contract.md",
-    "description": "Deliver the registered Storybook document and `outputs/extended-brand-anatomy.json` as a pair. Storybook is the readable Stage 2 anatomy and must show the two registered anchor images. The JSON is the explicit input for Stage 3 landing copy and product-image production. Keep `outputs/extended-brand-anatomy.html` only as a migration-compatibility artifact."
+    "description": "Deliver the registered Storybook document and `outputs/extended-brand-anatomy.json` as a pair. Storybook is the readable Stage 2 anatomy and must show the two registered anchor images. The JSON is the explicit input for Stage 3 landing copy and product-image production."
   },
   {
     "id": "codex--build-brand-from-anatomy--transfer-input-contract",
@@ -380,7 +275,7 @@ export const ruleNodes = [
     "name": "build-landing-materials (Codex Skill)",
     "priority": "Skill",
     "path": ".agents/skills/build-landing-materials/SKILL.md",
-    "description": "Stage 3 of the brand pipeline. Turn an accepted extended-brand anatomy into a modular Storybook+JSON landing-material report: UX copy hierarchy, brand value, brand story, product introduction, explicit product-lineup copy, and registered product-image renders. Use commercial-photo-prompting to preserve the approved product and image system, then stop for user adjustment. Keep deterministic HTML only as a migration-compatibility artifact; do not build or code the final landing page."
+    "description": "Build Stage 3 landing copy and product-image materials from an accepted Stage 2 JSON and registered Storybook report. Deliver canonical JSON and the fixed Storybook reader; never create an HTML report or coded landing page."
   },
   {
     "id": "codex--build-landing-materials--landing-materials-contract",
@@ -506,7 +401,7 @@ export const ruleNodes = [
     "name": "reconstruct-brand-system (Codex Skill)",
     "priority": "Skill",
     "path": ".agents/skills/reconstruct-brand-system/SKILL.md",
-    "description": "Route one brand-reconstruction project through three reviewed Storybook+JSON stages while parallelizing safe work inside the active stage: source-brand research, extended target-brand anatomy with two anchor images, then landing UX copy and product-render materials."
+    "description": "Route one brand project through three reviewed JSON-and-Storybook stages: time-boxed source research, extended target-brand anatomy, and landing materials. Enforce fixed React reports, automatic registration, and no HTML reports."
   },
   {
     "id": "codex--reconstruct-brand-system--brand-anatomy-schema",
@@ -562,7 +457,7 @@ export const ruleNodes = [
     "name": "storybook-report-contract.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/reconstruct-brand-system/references/storybook-report-contract.md",
-    "description": "Brand reports are authored from their stage package and read in this repository's Storybook. The stage JSON remains the canonical content model; Storybook is the reader and component-composition layer."
+    "description": "Brand reports are authored as canonical Stage JSON and read through one fixed React document system. This contract is subordinate to [the normative pipeline specification](../../../../docs/brand-research-pipeline-spec.md)."
   },
   {
     "id": "codex--reconstruct-brand-system--transfer-rules",
@@ -583,14 +478,14 @@ export const ruleNodes = [
     "name": "research-brand-anatomy (Codex Skill)",
     "priority": "Skill",
     "path": ".agents/skills/research-brand-anatomy/SKILL.md",
-    "description": "Research and model one existing reference brand without inventing, mapping, or planning a target brand. Deliver an evidence-backed Storybook document and structured JSON handoff covering strategy, verbal systems, identity, key visuals, brand mood, photography, product representation, physical or digital product-native language, behavior, and a portable global framework for color, typography, spacing, and layout. Keep deterministic HTML only as a migration-compatibility artifact. Stop before any transfer or fictional-brand work."
+    "description": "Research one existing reference brand as a time-boxed source-only Stage 1 package. Deliver canonical JSON and a fixed automatically registered Storybook report; do not create target-brand work or HTML reports."
   },
   {
     "id": "codex--research-brand-anatomy--brand-model-json-contract",
     "name": "brand-model-json-contract.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/research-brand-anatomy/references/brand-model-json-contract.md",
-    "description": "Create `outputs/source-brand-analysis.json` as the canonical handoff and register it in the reader-facing Storybook document. Storybook explains the analysis; this JSON is the explicit input used to draft a later transfer plan. It is not an implementation token file. Keep the adjacent HTML only as a migration-compatibility artifact."
+    "description": "Create `outputs/source-brand-analysis.json` as the canonical handoff and register it in the reader-facing Storybook document. Storybook explains the analysis; this JSON is the explicit input used to draft a later transfer plan. It is not an implementation token file. Do not create an adjacent HTML report."
   },
   {
     "id": "codex--research-brand-anatomy--evidence-and-layer-model",
@@ -611,7 +506,7 @@ export const ruleNodes = [
     "name": "report-language-style.md",
     "priority": "Skill Resource",
     "path": ".agents/skills/research-brand-anatomy/references/report-language-style.md",
-    "description": "Use this reference only when turning the approved source anatomy into the reader-facing Storybook document and its compatibility HTML. Do not rewrite the evidence register, Core Claim rows, or grammar source fields merely to make them sound simpler."
+    "description": "Use this reference only when turning the approved source anatomy into the reader-facing Storybook document. Do not rewrite the evidence register, Core Claim rows, or grammar source fields merely to make them sound simpler."
   },
   {
     "id": "codex--research-brand-anatomy--source-anatomy-schema",
@@ -683,52 +578,10 @@ export const ruleEdges = [
     "note": "Claude"
   },
   {
-    "from": "build-brand-from-anatomy",
-    "to": "build-brand-from-anatomy--image-prompt-handoff-contract",
-    "type": "resources",
-    "note": ""
-  },
-  {
-    "from": "build-brand-from-anatomy",
-    "to": "build-brand-from-anatomy--parallel-execution-contract",
-    "type": "resources",
-    "note": ""
-  },
-  {
-    "from": "build-brand-from-anatomy",
-    "to": "build-brand-from-anatomy--storybook-report-contract",
-    "type": "resources",
-    "note": ""
-  },
-  {
-    "from": "build-brand-from-anatomy",
-    "to": "build-brand-from-anatomy--transfer-direction-contract",
-    "type": "resources",
-    "note": ""
-  },
-  {
-    "from": "build-brand-from-anatomy",
-    "to": "build-brand-from-anatomy--transfer-input-contract",
-    "type": "resources",
-    "note": ""
-  },
-  {
-    "from": "build-brand-from-anatomy",
-    "to": "build-brand-from-anatomy--tuning-framework",
-    "type": "resources",
-    "note": ""
-  },
-  {
     "from": "claude-md",
     "to": "build-landing-materials",
     "type": "activates",
     "note": "Claude"
-  },
-  {
-    "from": "build-landing-materials",
-    "to": "build-landing-materials--landing-materials-contract",
-    "type": "resources",
-    "note": ""
   },
   {
     "from": "claude-md",
@@ -839,58 +692,10 @@ export const ruleEdges = [
     "note": "Claude"
   },
   {
-    "from": "reconstruct-brand-system",
-    "to": "reconstruct-brand-system--chaining-contract",
-    "type": "resources",
-    "note": ""
-  },
-  {
-    "from": "reconstruct-brand-system",
-    "to": "reconstruct-brand-system--parallel-execution-contract",
-    "type": "resources",
-    "note": ""
-  },
-  {
-    "from": "reconstruct-brand-system",
-    "to": "reconstruct-brand-system--storybook-report-contract",
-    "type": "resources",
-    "note": ""
-  },
-  {
     "from": "claude-md",
     "to": "research-brand-anatomy",
     "type": "activates",
     "note": "Claude"
-  },
-  {
-    "from": "research-brand-anatomy",
-    "to": "research-brand-anatomy--brand-model-json-contract",
-    "type": "resources",
-    "note": ""
-  },
-  {
-    "from": "research-brand-anatomy",
-    "to": "research-brand-anatomy--evidence-and-layer-model",
-    "type": "resources",
-    "note": ""
-  },
-  {
-    "from": "research-brand-anatomy",
-    "to": "research-brand-anatomy--global-brand-system-framework",
-    "type": "resources",
-    "note": ""
-  },
-  {
-    "from": "research-brand-anatomy",
-    "to": "research-brand-anatomy--report-language-style",
-    "type": "resources",
-    "note": ""
-  },
-  {
-    "from": "research-brand-anatomy",
-    "to": "research-brand-anatomy--source-anatomy-schema",
-    "type": "resources",
-    "note": ""
   },
   {
     "from": "claude-md",
@@ -1308,36 +1113,25 @@ export const conditionMatrix = [
     "task": "브랜드 재구성 전체 체인",
     "rules": [],
     "skill": "reconstruct-brand-system",
-    "skillResources": [
-      "reconstruct-brand-system--chaining-contract",
-      "reconstruct-brand-system--parallel-execution-contract"
-    ]
+    "skillResources": []
   },
   {
     "task": "기존 브랜드 아나토미 분석",
     "rules": [],
     "skill": "research-brand-anatomy",
-    "skillResources": [
-      "research-brand-anatomy--source-anatomy-schema",
-      "research-brand-anatomy--brand-model-json-contract"
-    ]
+    "skillResources": []
   },
   {
     "task": "분석 브랜드를 신규 브랜드로 전환",
     "rules": [],
     "skill": "build-brand-from-anatomy",
-    "skillResources": [
-      "build-brand-from-anatomy--transfer-direction-contract",
-      "build-brand-from-anatomy--tuning-framework"
-    ]
+    "skillResources": []
   },
   {
     "task": "랜딩페이지 카피·제품 이미지 재료 준비",
     "rules": [],
     "skill": "build-landing-materials",
-    "skillResources": [
-      "build-landing-materials--landing-materials-contract"
-    ]
+    "skillResources": []
   },
   {
     "task": "상업용 브랜드·제품 사진 프롬프트",

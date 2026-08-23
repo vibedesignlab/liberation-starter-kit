@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.1.0",
+  "artifact_type": "landing_materials_input",
+  "status": "ready",
+  "extended_brand_source": {
+    "package_path": "__STAGE_2_PACKAGE__",
+    "json_path": "outputs/extended-brand-anatomy.json",
+    "asset_registry_path": "asset-registry.json",
+    "review_path": "stage-review.json"
+  },
+  "landing_goal": "Explain the family promise and distinguish both products.",
+  "goal_source": "Accepted Stage 2 fixture direction.",
+  "selected_narrative_route": "route-visible-ritual"
+}

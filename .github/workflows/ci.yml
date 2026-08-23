@@ -1,0 +1,49 @@
+name: Validate starter kit
+
+on:
+  push:
+    branches:
+      - main
+      - codex/storybook-brand-reports-pages
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-brand-reports.txt
+
+      - name: Install brand-report validator dependencies
+        run: python3 -m pip install -r requirements-brand-reports.txt
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Check fixed brand-report contracts
+        run: pnpm check-brand-report-contracts
+
+      - name: Test fixture finalization and routing
+        run: pnpm test-brand-report-pipeline
+
+      - name: Lint
+        run: pnpm lint

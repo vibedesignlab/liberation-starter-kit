@@ -122,16 +122,15 @@ export function adaptLandingMaterials(input, context = {}) {
     cardGridBlock('Landing-section roles', sectionMap, { idPrefix: 'landing-section' }),
   ]);
 
-  const boundaryBlocks = compactBlocks([
+  mappingBlocks.push(...compactBlocks([
     listBlock('Unverified claims', asRecord(model.boundaries).unverified_claims),
     listBlock('Protected brand and product invariants', asRecord(model.boundaries).protected_brand_and_product_invariants),
     listBlock('Out of scope', asRecord(model.boundaries).out_of_scope),
-  ]);
+  ]));
 
   const firstValue = asRecord(asArray(values.values)[0]);
   const firstProduct = asRecord(products[0]);
   const firstMappedSection = asRecord(sectionMap[0]);
-  const boundaries = asRecord(model.boundaries);
 
   const sectionDefinitions = [
     [
@@ -172,16 +171,6 @@ export function adaptLandingMaterials(input, context = {}) {
         model.section_map_key_insight,
         firstMappedSection.communication_job,
         firstMappedSection.proof_of,
-      ),
-    ],
-    [
-      'boundaries',
-      'Boundaries',
-      boundaryBlocks,
-      firstInsight(
-        boundaries.key_insight,
-        asArray(boundaries.protected_brand_and_product_invariants)[0],
-        'Only approved claims, assets, and product invariants may enter the landing materials.',
       ),
     ],
   ];

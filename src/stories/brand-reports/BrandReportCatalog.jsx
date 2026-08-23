@@ -77,7 +77,7 @@ export function BrandReportCatalog() {
   if (state.reports.length === 0) {
     return (
       <Alert severity="info">
-        아직 등록된 브랜드 리포트가 없습니다. `pnpm register-brand-report -- &lt;package&gt;`로 등록할 수 있습니다.
+        아직 등록된 브랜드 리포트가 없습니다. `pnpm finalize-brand-report -- &lt;package&gt;`로 등록할 수 있습니다.
       </Alert>
     );
   }

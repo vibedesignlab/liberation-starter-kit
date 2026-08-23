@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.1.0",
+  "artifact_type": "extended_brand_anatomy",
+  "source_analysis": {
+    "reference_brand": "Fixture Source",
+    "relationship": "Apply grammar while protecting the synthetic source identity."
+  },
+  "target": {
+    "working_name": "Fixture Focus",
+    "category": "ambient focus devices",
+    "product_mode": "physical",
+    "audience": ["people who want a calm work ritual"],
+    "use_contexts": ["desk", "shared studio"],
+    "direction_status": "pending"
+  },
+  "sections": {
+    "source_grammar_application": {
+      "summary": "Clarity precedes decoration and every image receives one proof job.",
+      "decisions": ["Use one promise before proof", "Separate hero and detail imagery"]
+    },
+    "brand_positioning": {
+      "category_frame": "Calm physical devices for visible focus state.",
+      "audience": "People who want a quiet work ritual.",
+      "user_outcome": "Know when a focus block is active at a glance.",
+      "positioning_statement": "Fixture Focus turns an invisible work intention into a calm shared signal.",
+      "promise": "A visible focus ritual without visual noise.",
+      "proof": ["single status plane", "clear front control", "two scale options"]
+    },
+    "landing_product_concept": {
+      "one_line_definition": "A two-product family that makes focus state visible.",
+      "user_and_use_situation": "Solo desks and shared studios during timed work blocks.",
+      "core_value": "Calm, legible focus state.",
+      "landing_features": ["Visible state", "Quiet control", "Two scales"],
+      "lineup_mode": "focused_family",
+      "product_family": {
+        "working_name": "Fixture Focus Family",
+        "promise": "One calm signal across personal and shared work.",
+        "shared_architecture": "Rounded body, illuminated plane, and one tactile control.",
+        "differentiation_logic": "Scale and viewing distance separate individual and shared use.",
+        "status": "defined",
+        "shared_invariants": ["rounded body", "single illuminated plane", "one tactile control"],
+        "cognitive_invariants": ["state is visible", "control is obvious"]
+      },
+      "product_lineup": [
+        {
+          "product_name": "Fixture Focus One",
+          "product_type": "personal desk device",
+          "lineup_role": "hero product",
+          "use_case": "individual timed focus",
+          "differentiator": "compact near-field scale",
+          "product_usp": "A personal focus signal readable at arm's length.",
+          "form_cues": ["compact rounded body", "front status plane"],
+          "allowed_variation": ["small body", "near-field brightness"],
+          "landing_message": "Your focus state, quietly visible.",
+          "image_roles": ["hero form", "control detail"]
+        },
+        {
+          "product_name": "Fixture Focus Duo",
+          "product_type": "shared studio device",
+          "lineup_role": "family extension",
+          "use_case": "shared focus sessions",
+          "differentiator": "wider long-distance signal",
+          "product_usp": "A shared focus signal readable across the room.",
+          "form_cues": ["wider rounded body", "broad status plane"],
+          "allowed_variation": ["wide body", "room-scale brightness"],
+          "landing_message": "One calm signal for the room.",
+          "image_roles": ["family comparison", "shared context"]
+        }
+      ],
+      "hero_product": "Fixture Focus One",
+      "necessary_variants": ["Fixture Focus Duo"],
+      "form_cues": {"shared": ["rounded body", "illuminated status plane", "front control"]},
+      "proof_image_roles": ["hero form", "feature detail", "use context", "state proof"]
+    },
+    "verbal_branding_and_copy_hierarchy": {
+      "voice": ["calm", "direct", "concrete"],
+      "vocabulary": ["focus state", "quiet signal", "work ritual"],
+      "message_hierarchy": ["brand promise", "family value", "product USP", "proof"],
+      "headline_direction": "Name the visible outcome in one short sentence.",
+      "supporting_copy_direction": "Explain how the form and state signal create proof.",
+      "cta_direction": "Use low-pressure product discovery language.",
+      "brand_message": "Make focus visible, quietly.",
+      "brand_values": [
+        {"value": "Clarity", "statement": "State is visible before explanation."},
+        {"value": "Calm", "statement": "The signal supports the room instead of dominating it."}
+      ],
+      "family_usp": "One signal architecture for personal and shared work.",
+      "product_usps": [
+        {"product_name": "Fixture Focus One", "usp": "Personal focus at arm's length."},
+        {"product_name": "Fixture Focus Duo", "usp": "Shared focus across the room."}
+      ],
+      "narrative_routes": [
+        {"route_id": "route-visible-ritual", "summary": "Turn intention into a visible ritual."},
+        {"route_id": "route-calm-room", "summary": "Coordinate focus without adding noise."}
+      ],
+      "selected_narrative_route": "route-visible-ritual",
+      "message_visual_map": {
+        "brand_message_to_key_visual": "One illuminated plane makes focus visible.",
+        "brand_values_to_brand_mood": ["quiet daylight", "ordered work surface"],
+        "family_and_product_usp_to_product_imagery": ["shared silhouette", "scale comparison", "state detail"]
+      }
+    },
+    "visual_branding_and_key_visual": {
+      "identity_behavior": "A compact wordmark sits outside the illuminated product plane.",
+      "premise": "One calm signal becomes the focal actor.",
+      "focal_actor": "The illuminated status plane.",
+      "type_message_image_product_ui_relationship": "Type states the promise; the product plane proves it.",
+      "repeatable_variables": ["product scale", "crop", "background tone"],
+      "communication_job": "Make the invisible focus state immediately visible.",
+      "series_rule": "Keep one status plane dominant in every key visual."
+    },
+    "brand_mood_and_brand_imagery": {
+      "emotional_and_cultural_register": "Quiet, attentive, and collaborative.",
+      "world_setting_people": "Ordered desks and shared studios with minimal human traces.",
+      "materials_and_sensory_cues": ["matte mineral surface", "paper", "soft daylight"],
+      "camera_light_color": "Eye-level frames, directional daylight, warm neutral field.",
+      "image_series_roles": ["world opener", "use context", "transition frame"],
+      "communication_job": "Show the calm work world the product supports."
+    },
+    "product_visual_traits_and_product_imagery": {
+      "communication_job": "Prove shared family form and product-specific scale.",
+      "product_visual_traits": {
+        "silhouette_or_screen_anatomy": "Rounded capsule body with a flat illuminated plane.",
+        "proportion_hierarchy_density": "Low, wide body with one dominant front surface.",
+        "material_surface_or_component_character": "Matte shell and diffused light plane.",
+        "controls_states_feedback_visible_in_imagery": "One tactile control and three legible light states."
+      },
+      "product_image_direction": {
+        "hero_form": "Three-quarter view showing the front plane and body depth.",
+        "feature_detail": "Macro crop of the tactile control and diffused edge.",
+        "use_interaction": "Hand starts a focus block without hiding the state plane.",
+        "state_proof": "Three-state sequence with identical framing.",
+        "camera_light_background_crop_retouching": "Softbox, warm gray field, clean edge, restrained retouching."
+      }
+    },
+    "design_token_direction": {
+      "color": [{"role": "identity field", "relationship": "tune", "source_basis": "calm contrast", "target_direction": "warm gray with deep green text", "landing_use": "hero and navigation", "status": "directional"}],
+      "typography": [{"role": "message hierarchy", "relationship": "keep", "source_basis": "short declarative hierarchy", "target_direction": "compact grotesk with readable body", "landing_use": "headlines and proof copy", "status": "directional"}],
+      "spacing": [{"role": "content rhythm", "relationship": "keep", "source_basis": "four repeatable intervals", "target_direction": "8/16/32/64 rhythm", "landing_use": "section and module spacing", "status": "directional"}],
+      "layout": [{"role": "proof composition", "relationship": "tune", "source_basis": "asymmetric modules", "target_direction": "alternating message and product proof columns", "landing_use": "feature and lineup sections", "status": "directional"}]
+    }
+  },
+  "moodboard_inputs": {
+    "copywriting": ["Make focus visible, quietly."],
+    "hierarchy": ["promise", "family", "lineup", "proof"],
+    "brand_mood_images": ["quiet studio daylight", "ordered work surface"],
+    "product_description": ["rounded body", "single status plane", "tactile control"],
+    "product_image_generation": ["hero form", "detail", "state sequence", "family comparison"]
+  },
+  "boundaries": {
+    "protected_source_expressions": ["Fixture Source identity colors and mark"],
+    "out_of_scope": ["coded landing page", "manufacturing claims"]
+  },
+  "registered_anchor_assets": ["A2-HERO-001", "A2-MOOD-001"]
+}

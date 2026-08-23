@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.1.0",
+  "artifact_type": "landing_product_asset_registry",
+  "stage": "landing_materials",
+  "assets": [
+    {
+      "asset_id": "A3-ONE-001",
+      "product_name": "Fixture Focus One",
+      "role": "product_hero",
+      "file_path": "assets/fixture-focus-one.svg",
+      "prompt_path": "prompts/fixture-focus-one.md",
+      "generation_provenance": "repository-local deterministic SVG fixture",
+      "communication_job": "Prove the personal product scale and visible state.",
+      "reference_lineage": ["A2-HERO-001", "Fixture Focus One"],
+      "invariants": ["rounded body", "single status plane", "front control"],
+      "allowed_variation": ["compact scale", "near-field brightness"],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "A3-DUO-001",
+      "product_name": "Fixture Focus Duo",
+      "role": "product_hero",
+      "file_path": "assets/fixture-focus-duo.svg",
+      "prompt_path": "prompts/fixture-focus-duo.md",
+      "generation_provenance": "repository-local deterministic SVG fixture",
+      "communication_job": "Prove the shared product scale and room-readable state.",
+      "reference_lineage": ["A2-HERO-001", "Fixture Focus Duo"],
+      "invariants": ["rounded body", "single status plane", "front control"],
+      "allowed_variation": ["wide scale", "room-scale brightness"],
+      "invariant_check": "pass",
+      "status": "registered"
+    }
+  ]
+}

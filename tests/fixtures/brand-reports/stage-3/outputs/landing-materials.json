@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.1.0",
+  "artifact_type": "landing_materials",
+  "extended_brand_source": {
+    "brand_name": "Fixture Focus",
+    "review_status": "accepted",
+    "schema_version": "1.1.0"
+  },
+  "selected_narrative_route": "route-visible-ritual",
+  "message_visual_map": {
+    "brand_message_to_key_visual": "One illuminated plane makes focus visible.",
+    "brand_values_to_brand_mood": ["quiet daylight", "ordered work surface"],
+    "family_and_product_usp_to_product_imagery": ["shared silhouette", "scale difference", "visible state"]
+  },
+  "landing_narrative": {
+    "key_insight": "The page moves from invisible intention to visible product proof.",
+    "brand_name": "Fixture Focus",
+    "brand_message": "Make focus visible, quietly.",
+    "hero_eyebrow": "Fixture Focus",
+    "hero_headline": "Give focus a visible state.",
+    "hero_support": "A calm two-product signal family for personal desks and shared studios.",
+    "primary_cta": "Meet the family",
+    "section_sequence": ["hero", "brand value", "brand story", "family", "lineup", "proof"]
+  },
+  "brand_value": {
+    "key_insight": "Clarity and calm are expressed as observable product behaviors.",
+    "statement": "A focus signal should be clear enough to trust and calm enough to live with.",
+    "values": [
+      {"value": "Clarity", "statement": "State is visible before explanation.", "proof": "One illuminated plane carries the active state."},
+      {"value": "Calm", "statement": "The signal supports the room instead of dominating it.", "proof": "Warm neutrals and diffused light reduce visual noise."}
+    ],
+    "proof": ["single state plane", "one tactile control", "shared family silhouette"],
+    "short_variants": ["Visible by design.", "Quiet in the room."]
+  },
+  "brand_story": {
+    "key_insight": "The story connects a work intention to a visible shared ritual.",
+    "headline": "Focus begins when everyone can see it.",
+    "body": "Work sessions often start as private intentions. Fixture Focus gives that intention a visible beginning, active state, and end without adding another screen.",
+    "product_connection": "The illuminated plane and one tactile control turn the story into a concrete interaction."
+  },
+  "product_introduction": {
+    "key_insight": "One signal architecture scales from personal to shared work.",
+    "family_name": "Fixture Focus",
+    "headline": "One calm signal, two working distances.",
+    "description": "The family shares a rounded body, illuminated status plane, and one tactile control while changing scale for individual and room use.",
+    "shared_promise": "Make focus visible without visual noise.",
+    "family_usp": "One signal architecture for personal and shared work."
+  },
+  "product_lineup_key_insight": "Each product preserves the same promise while changing scale and viewing distance.",
+  "product_lineup_copy": [
+    {
+      "product_name": "Fixture Focus One",
+      "product_usp": "A personal focus signal readable at arm's length.",
+      "eyebrow": "Personal focus",
+      "headline": "Your focus state, quietly visible.",
+      "description": "A compact desk device that starts a focus block with one control and keeps its state visible in your near field.",
+      "feature_copy": ["Compact desk scale", "One tactile control", "Three visible states"],
+      "proof_copy": "The front status plane remains visible in the registered hero render.",
+      "cta": "Explore Focus One"
+    },
+    {
+      "product_name": "Fixture Focus Duo",
+      "product_usp": "A shared focus signal readable across the room.",
+      "eyebrow": "Shared focus",
+      "headline": "One calm signal for the room.",
+      "description": "A wider studio device that carries the same state architecture across a longer viewing distance.",
+      "feature_copy": ["Wide studio scale", "Room-readable state", "Shared family controls"],
+      "proof_copy": "The wider registered render preserves the same silhouette and control logic.",
+      "cta": "Explore Focus Duo"
+    }
+  ],
+  "section_map_key_insight": "Every product render has one proof job and one primary landing placement.",
+  "section_map": [
+    {
+      "section": "product-one",
+      "communication_job": "Prove the personal product scale and visible state.",
+      "copy": "Your focus state, quietly visible.",
+      "proof_of": "personal scale and near-field state",
+      "asset_id": "A3-ONE-001",
+      "cta": "Explore Focus One"
+    },
+    {
+      "section": "product-duo",
+      "communication_job": "Prove the shared product scale and room-readable state.",
+      "copy": "One calm signal for the room.",
+      "proof_of": "shared scale and room-readable state",
+      "asset_id": "A3-DUO-001",
+      "cta": "Explore Focus Duo"
+    }
+  ],
+  "registered_product_assets": ["A3-ONE-001", "A3-DUO-001"],
+  "boundaries": {
+    "unverified_claims": ["No manufacturing or performance claim is represented."],
+    "protected_brand_and_product_invariants": ["rounded body", "single status plane", "front control"],
+    "out_of_scope": ["coded landing page", "production deployment"]
+  }
+}

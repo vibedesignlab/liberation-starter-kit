@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.1.0",
+  "artifact_type": "brand_transfer_input",
+  "status": "ready",
+  "source_analysis": {
+    "reference_brand": "Fixture Source",
+    "package_path": "__STAGE_1_PACKAGE__",
+    "json_path": "outputs/source-brand-analysis.json",
+    "review_path": "stage-review.json",
+    "review_status": "accepted"
+  },
+  "product": {
+    "category": "ambient focus devices",
+    "product_mode": "physical",
+    "audience": ["people who want a calm work ritual"],
+    "use_contexts": ["desk", "shared studio"],
+    "desired_outcome": "Make focus state visible without visual noise.",
+    "priorities": ["clear state", "quiet form"],
+    "known_facts": ["Two-product fixture family"],
+    "open_concept": false
+  },
+  "source_relationship": {
+    "qualities_to_apply": ["clear hierarchy", "separate proof jobs"],
+    "traits_to_avoid": ["copying the fixture source identity"]
+  },
+  "token_preferences": {
+    "color": "tune",
+    "typography": "keep",
+    "spacing": "keep",
+    "layout": "tune"
+  },
+  "understood_direction": "Translate clarity into a calm two-product focus family.",
+  "lineup_mode": "focused_family",
+  "visual_priority": "product proof first, brand mood second",
+  "landing_goal": "Explain the family promise and distinguish both products.",
+  "user_response_excerpts": ["Use the deterministic fixture direction."]
+}

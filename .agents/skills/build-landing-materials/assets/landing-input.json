@@ -4,7 +4,6 @@
   "status": "draft",
   "extended_brand_source": {
     "package_path": "",
-    "html_path": "outputs/extended-brand-anatomy.html",
     "json_path": "outputs/extended-brand-anatomy.json",
     "asset_registry_path": "asset-registry.json",
     "review_path": "stage-review.json"

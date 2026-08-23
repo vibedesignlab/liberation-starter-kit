@@ -5,7 +5,6 @@
   "source_analysis": {
     "brand": "",
     "package_path": "",
-    "html_path": "outputs/source-brand-analysis.html",
     "json_path": "outputs/source-brand-analysis.json"
   },
   "target": {

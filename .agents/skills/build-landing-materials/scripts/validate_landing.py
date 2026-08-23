@@ -44,11 +44,9 @@ def main() -> int:
             if not nonempty(landing_input.get(key)):
                 errors.append(f"Stage 3 schema 1.1 input has blank {key}")
 
-    html_path = case / "outputs" / "landing-materials.html"
     model_path = case / "outputs" / "landing-materials.json"
-    html = html_path.read_text(encoding="utf-8") if html_path.is_file() else ""
     model = object_at(model_path)
-    if not (case / "landing-materials.md").is_file() or not html or not model:
+    if not (case / "landing-materials.md").is_file() or not model:
         errors.append("canonical landing material outputs are incomplete")
     if model.get("artifact_type") != "landing_materials":
         errors.append("landing JSON artifact_type must be landing_materials")
@@ -87,8 +85,6 @@ def main() -> int:
                 errors.append(f"landing lineup item {item.get('product_name', '?')} has blank {field}")
         if model_v11 and not nonempty(item.get("product_usp")):
             errors.append(f"Stage 3 schema 1.1 lineup item {item.get('product_name', '?')} has blank product_usp")
-        if str(item.get("product_name", "")) not in html:
-            errors.append(f"landing HTML does not render {item.get('product_name', '?')}")
 
     registry = object_at(case / "asset-registry.json")
     registry_v11 = str(registry.get("schema_version", "")).startswith("1.1")
@@ -118,8 +114,6 @@ def main() -> int:
         asset_id = str(item.get("asset_id", "")).strip()
         if asset_id:
             registered_ids.add(asset_id)
-            if asset_id not in html or str(item.get("file_path", "")) not in html:
-                errors.append(f"landing HTML does not render asset {asset_id}")
     if set(model.get("registered_product_assets", [])) != registered_ids:
         errors.append("landing JSON registered_product_assets does not match registry")
     mapped_ids: set[str] = set()
@@ -138,8 +132,6 @@ def main() -> int:
                     errors.append(f"Stage 3 schema 1.1 section map has blank {field}")
     if model_v11 and mapped_ids != registered_ids:
         errors.append("Stage 3 schema 1.1 must map every registered asset to a landing section")
-    if "data-review-checkpoint" not in html:
-        errors.append("landing HTML has no review checkpoint")
     final_review = object_at(case / "stage-review.json")
     if final_review.get("artifact_type") != "stage_review" or final_review.get("stage") != "landing_materials":
         errors.append("landing stage-review.json has invalid identity")

@@ -39,7 +39,7 @@ Do not reintroduce removed `Custom Component`, `Template`, `Section`, or `Page` 
 - Use `Brand Reports/<brand>/<stage label>` for registered packages.
 - Normalize canonical Stage JSON through `src/utils/brand-reports` and render it with `BrandReportDocument`.
 - Keep data loading and static path resolution in `src/stories/brand-reports`; keep `src/components/brand-documentation` presentation-only.
-- Never hand-edit `src/stories/brand-reports/generated/*.stories.jsx` or `public/brand-reports`. Use `pnpm register-brand-report -- <package>` and its `--check` mode.
+- Never hand-edit `src/stories/brand-reports/generated/*.stories.jsx` or `public/brand-reports`. Use `pnpm finalize-brand-report -- <package>`; it validates, registers, and checks drift in one command.
 - Preserve evidence IDs, source/credit/rights notes, asset provenance, and the review checkpoint. Rendering success is not user approval.
 
 ## Completion checks

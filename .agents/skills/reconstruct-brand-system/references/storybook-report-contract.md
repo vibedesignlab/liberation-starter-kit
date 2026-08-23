@@ -1,45 +1,55 @@
 # Storybook brand-report contract
 
-Brand reports are authored from their stage package and read in this repository's Storybook. The stage JSON remains the canonical content model; Storybook is the reader and component-composition layer.
+Brand reports are authored as canonical Stage JSON and read through one fixed React document system. This contract is subordinate to [the normative pipeline specification](../../../../docs/brand-research-pipeline-spec.md).
 
 ## Source of truth
 
-- Stage 1: `outputs/source-brand-analysis.json`, `stage-review.json`, and locally registered evidence assets.
+- Stage 1: `outputs/source-brand-analysis.json` and `stage-review.json`.
 - Stage 2: `outputs/extended-brand-anatomy.json`, `stage-review.json`, and `asset-registry.json`.
 - Stage 3: `outputs/landing-materials.json`, `stage-review.json`, and `asset-registry.json`.
-- Do not hand-edit generated Storybook story files or the copied public report package. Update the stage package, validate it, and register it again.
-- Storybook adapters may reorganize content for reading but must not invent, omit, or reinterpret material decisions.
+- HTML reports and brand-specific report markup are forbidden.
+- Storybook adapters may organize canonical data but must not invent, omit, or reinterpret material decisions.
 
-## Registration
+## Fixed reader
 
-From the Liberation Starter Kit repository root, run:
+All reports use this path:
 
-```bash
-pnpm register-brand-report -- <stage-package-directory>
-pnpm register-brand-report -- <stage-package-directory> --check
+```text
+canonical Stage JSON
+  -> normalizeBrandReport
+  -> exact Stage section contract
+  -> BrandReportDocument
+  -> Brand Reports/<brand>/<stage>
 ```
 
-Registration copies the canonical JSON, review record, asset registry when present, and referenced local images into `public/brand-reports/<report-id>/`. It also updates `public/brand-reports/registry.json` and the generated CSF entry under `src/stories/brand-reports/generated/`.
+The exact ordered section IDs live in `src/utils/brand-reports/reportStructure.js`. Registration fails when an adapter emits a missing, extra, duplicated, reordered, or insight-free section. `Brand Reports/Templates` previews all three locked formats.
 
-Re-register after any material JSON, review, provenance, or image change. Registration never changes the stage package.
+## Finalization and registration
 
-## Delivery
+From the starter-kit root run exactly:
 
-Treat `Brand Reports/<brand>/<stage>` in Storybook as the primary human-readable report. Deliver the canonical JSON and registered assets beside that reader path. The review checkpoint remains data from `stage-review.json`; Storybook validation is not user approval.
+```bash
+pnpm finalize-brand-report -- <stage-package-directory>
+```
+
+Initial or revised finalization runs the current Stage validator once, fixed React structure check, atomic package registration, CSF generation, and drift check. It writes `registration-receipt.json` with the locked report ID and registered package SHA.
+
+Acceptance does not rerun the Stage validator. The router checks the receipt against the current registered package, updates the review, and uses the registration-only path to refresh the accepted checkpoint with the same report ID. Re-run full finalization only after canonical JSON, provenance, or image data changes.
+
+Do not hand-edit:
+
+- `public/brand-reports/<report-id>/`;
+- `public/brand-reports/registry.json` entries;
+- `src/stories/brand-reports/generated/*.stories.jsx`.
 
 ## Reader presentation rules
 
-- Give every normalized report section one `insight` sentence. Prefer an explicit canonical `key_insight`; for legacy packages, derive it from the first material statement without adding a new claim. Never summarize by combining unrelated claims.
-- Keep the report title, section titles, and block titles in a clear display hierarchy. Headings may scale responsively, but they must wrap inside their container without clipping, ellipsis, or horizontal scrolling.
-- Render evidence images at their intrinsic aspect ratio. Do not force a shared crop or default aspect ratio; a missing-image placeholder may use a fixed ratio because it has no source dimensions.
-- Report content must wrap. Do not use `text-overflow: ellipsis`, line clamping, `nowrap`, or hidden overflow to shorten prose, labels, table cells, captions, provenance, or review copy.
-- Preserve the complete URL in `href` and canonical provenance, but use the source title, credit, or hostname as visible link text. Show a raw URL only when the literal address is itself evidence or appears in a code/data block.
+- Every section starts with one canonical `insight` sentence.
+- Headings and prose wrap without clipping, ellipsis, line clamps, `nowrap`, or hidden overflow.
+- Evidence images retain intrinsic aspect ratio.
+- Preserve evidence IDs, source URL, credit, rights note, local provenance, source lineage, protected boundaries, and review checkpoint.
+- Preserve complete URLs in `href`; use a concise source title, credit, or hostname as visible text.
+- Missing optional content renders as an explicit gap or empty state, never invented copy.
+- Validation and registration do not equal user approval.
 
-During the compatibility phase, continue generating the existing `outputs/*.html` file because current package validators and pipeline lineage still reference it. It is a deterministic legacy artifact, not a second editable report. Remove it only after all of the following are migrated:
-
-1. Stage validators check the canonical JSON, registered asset package, generated CSF entry, and review record without parsing HTML.
-2. Stage 2 and Stage 3 lineage records no longer require an HTML path.
-3. The pipeline router validates Storybook registration instead of report HTML.
-4. Report-language and image-visibility checks operate on normalized report data or a static Storybook build.
-
-Never use browser automation merely to validate registration. Use the registration check, lint, and a static Storybook build unless the user explicitly requests browser inspection.
+Browser automation is not a registration or validation method. Use deterministic checks and lint unless the user explicitly requests browser inspection.

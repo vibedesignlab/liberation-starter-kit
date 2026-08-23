@@ -7,3 +7,4 @@ export {
   supportedBrandReportTypes,
 } from './normalizeBrandReport.js';
 export { toPublicAssetUrl } from './paths.js';
+export { assertFixedReportStructure, reportStructureFor, REPORT_STRUCTURES } from './reportStructure.js';

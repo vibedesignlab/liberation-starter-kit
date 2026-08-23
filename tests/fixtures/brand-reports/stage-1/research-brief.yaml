@@ -1,0 +1,39 @@
+research_depth: rapid
+reference_brand:
+  name: Fixture Source
+entity_scope: "A deterministic fictional source used only to test the report pipeline."
+product_mode: physical
+markets:
+  - Global
+languages:
+  - English
+channels:
+  - owned web
+era_start: "2024"
+era_end: "2026"
+research_priorities:
+  - fixed report structure
+exclusions:
+  - real-world market claims
+original_user_priority: "Exercise every pipeline contract without external research."
+thresholds:
+  structural_sources: 4
+  primary_structural_sources: 3
+  visual_candidates: 8
+  unique_local_visuals: 8
+  visual_layers: 5
+  core_claims: 8
+  grammar_rules: 4
+report_identity:
+  hero_background_color: "#F2EFE8"
+  hero_foreground_color: "#17212B"
+  hero_color_layer: identity
+  hero_logo_evidence_id: EV-101
+  hero_logo_local_path: assets/visual-01.svg
+  hero_logo_source_url: "https://example.invalid/fixture-source/logo"
+  hero_logo_credit: "Fixture Source"
+  hero_logo_rights_note: "Synthetic test fixture; repository use only."
+  hero_logo_variant: "fixture wordmark"
+  hero_logo_render_treatment: none
+  hero_identity_scope: "Pipeline test fixture only"
+inapplicable_visual_layers: []

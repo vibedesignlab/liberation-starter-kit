@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "stage_review",
+  "stage": "landing_materials",
+  "status": "pending",
+  "pipeline_state_path": "",
+  "review_targets": ["landing narrative, lineup copy, and section map"],
+  "adjustment_prompts": ["Accept this deterministic fixture to complete the route."],
+  "user_feedback": [],
+  "updated_at": "2026-08-23T00:11:00Z"
+}

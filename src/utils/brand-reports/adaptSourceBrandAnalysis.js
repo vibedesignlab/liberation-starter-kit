@@ -21,21 +21,17 @@ import {
 import { createAssetIndex, toPublicAssetUrl } from './paths.js';
 import { normalizeReview } from './review.js';
 
-const SOURCE_LAYER_ORDER = [
-  ['source_synthesis', 'Source synthesis'],
-  ['evidence_and_authorship', 'Evidence and authorship'],
-  ['strategy', 'Strategic and cultural anatomy'],
-  ['verbal_system', 'Verbal anatomy'],
-  ['identity_and_channel_tokens', 'Identity and channel tokens'],
-  ['key_visual_system', 'Key-visual system'],
-  ['brand_mood_and_world', 'Brand mood and world'],
-  ['photography_and_film', 'Photography and film'],
-  ['product_representation', 'Product representation'],
-  ['product_native_visual_and_cognitive_language', 'Product-native visual and cognitive language'],
-  ['composition_and_cross_channel_grammar', 'Composition and cross-channel grammar'],
-  ['product_interface_and_service_behavior', 'Product, interface, and service behavior'],
-  ['system_synthesis', 'System synthesis'],
-  ['global_brand_system', 'Global brand-system framework'],
+const MATERIAL_LAYER_SECTIONS = [
+  ['strategy', 'strategy', 'Strategic and cultural anatomy'],
+  ['verbal', 'verbal_system', 'Verbal anatomy'],
+  ['identity-channel-tokens', 'identity_and_channel_tokens', 'Identity and channel tokens'],
+  ['key-visual', 'key_visual_system', 'Key-visual system'],
+  ['brand-mood', 'brand_mood_and_world', 'Brand mood and world'],
+  ['photography-film', 'photography_and_film', 'Photography and film'],
+  ['product-representation', 'product_representation', 'Product representation'],
+  ['product-native-visual-language', 'product_native_visual_and_cognitive_language', 'Product-native visual and cognitive language'],
+  ['composition', 'composition_and_cross_channel_grammar', 'Composition and cross-channel grammar'],
+  ['product-interface-service', 'product_interface_and_service_behavior', 'Product, interface, and service behavior'],
 ];
 
 const CLAIM_DOMAIN_BY_LAYER = {
@@ -174,60 +170,135 @@ export function adaptSourceBrandAnalysis(input, context = {}) {
     .map(toText)
     .find(Boolean);
 
-  const sections = SOURCE_LAYER_ORDER.map(([layerKey, fallbackTitle], offset) => {
-    const index = offset + 1;
-    const layer = asRecord(layers[layerKey]);
-    const blocks = asArray(layer.topics).flatMap(topicBlocks);
-
-    if (layerKey === 'source_synthesis') {
-      const scope = keyValueTable('Research scope', {
-        entity_scope: brand.entity_scope,
-        era_start: brand.era_start,
-        era_end: brand.era_end,
-        product_mode: brand.product_mode,
-      });
-      const markets = listBlock('Markets', brand.markets);
-      const languages = listBlock('Languages', brand.languages);
-      const channels = listBlock('Channels', brand.channels);
-      blocks.unshift(...[scope, markets, languages, channels].filter(Boolean));
-    }
-
-    const claimDomain = CLAIM_DOMAIN_BY_LAYER[layerKey];
-    const claims = claimDomain ? cardGridBlock('Material claims', decisionIndex[claimDomain], { idPrefix: 'claim' }) : null;
-    if (claims) blocks.push(claims);
-
-    if (layerKey === 'system_synthesis') {
-      const grammar = cardGridBlock('Causal grammar rules', model.grammar_rules, { idPrefix: 'grammar' });
-      if (grammar) blocks.push(grammar);
-    }
-
-    if (layerKey === 'global_brand_system') {
-      ['brand_color_scheme', 'typography_hierarchy', 'spacing_strategy', 'layout_strategy']
-        .forEach((key) => blocks.push(...areaBlocks(designSystem[key])));
-      const specimens = typographySpecimensBlock(
-        'Typography specimens',
-        typographyRows(designSystem.typography_hierarchy),
-      );
-      const boundary = proseBlock('Implementation boundary', [designSystem.implementation_boundary]);
-      if (specimens) blocks.push(specimens);
-      if (boundary) blocks.push(boundary);
-    }
-
-    const evidenceBlock = evidenceGridBlock(
-      'Direct evidence',
-      sectionEvidence(layer, evidence, layerKey),
-      { assetIndex, publicBasePath: context.publicBasePath },
-    );
-    if (evidenceBlock) blocks.push(evidenceBlock);
-
-    return makeSection({
-      id: layerKey,
-      index,
+  const sections = [];
+  const addSection = ({ id, title, insight, blocks }) => {
+    sections.push(makeSection({
+      id,
+      index: sections.length + 1,
       label: 'Stage 01',
+      title,
+      insight,
+      blocks,
+    }));
+  };
+
+  addSection({
+    id: 'terminology',
+    title: 'Terminology',
+    insight: 'Observed findings are direct evidence; inferred findings are bounded interpretations that retain alternatives and exceptions.',
+    blocks: [tableBlock('Epistemic labels', [
+      { key: 'label', label: 'Label' },
+      { key: 'meaning', label: 'Meaning' },
+      { key: 'requirement', label: 'Requirement' },
+    ], [
+      { label: 'Observed', meaning: 'Directly visible or stated in registered evidence.', requirement: 'Cite at least one evidence ID.' },
+      { label: 'Inferred', meaning: 'A bounded interpretation of repeated evidence.', requirement: 'Cite evidence, confidence, alternative, and exception.' },
+    ])].filter(Boolean),
+  });
+
+  const scopeBlocks = [
+    keyValueTable('Research scope', {
+      entity_scope: brand.entity_scope,
+      era_start: brand.era_start,
+      era_end: brand.era_end,
+      product_mode: brand.product_mode,
+    }),
+    listBlock('Markets', brand.markets),
+    listBlock('Languages', brand.languages),
+    listBlock('Channels', brand.channels),
+    ...asArray(synthesis.topics).flatMap(topicBlocks),
+  ].filter(Boolean);
+  addSection({
+    id: 'source-brand-anatomy',
+    title: firstText(synthesis.title, 'Source brand anatomy'),
+    insight: layerInsight(synthesis, decisionIndex, 'source_synthesis'),
+    blocks: scopeBlocks,
+  });
+
+  const evidenceLayer = asRecord(layers.evidence_and_authorship);
+  addSection({
+    id: 'evidence',
+    title: firstText(evidenceLayer.title, 'Evidence and authorship'),
+    insight: layerInsight(evidenceLayer, decisionIndex, 'evidence_and_authorship'),
+    blocks: [
+      ...asArray(evidenceLayer.topics).flatMap(topicBlocks),
+      evidenceGridBlock('Direct evidence', evidence, {
+        assetIndex,
+        publicBasePath: context.publicBasePath,
+      }),
+    ].filter(Boolean),
+  });
+
+  MATERIAL_LAYER_SECTIONS.forEach(([id, layerKey, fallbackTitle]) => {
+    const layer = asRecord(layers[layerKey]);
+    const claimDomain = CLAIM_DOMAIN_BY_LAYER[layerKey];
+    addSection({
+      id,
       title: firstText(layer.title, fallbackTitle),
       insight: layerInsight(layer, decisionIndex, layerKey),
-      blocks,
+      blocks: [
+        ...asArray(layer.topics).flatMap(topicBlocks),
+        claimDomain
+          ? cardGridBlock('Material claims', decisionIndex[claimDomain], { idPrefix: 'claim' })
+          : null,
+        evidenceGridBlock(
+          'Direct evidence',
+          sectionEvidence(layer, evidence, layerKey),
+          { assetIndex, publicBasePath: context.publicBasePath },
+        ),
+      ].filter(Boolean),
     });
+  });
+
+  const systemSynthesis = asRecord(layers.system_synthesis);
+  addSection({
+    id: 'grammar',
+    title: 'Causal brand grammar',
+    insight: firstInsight(
+      layerInsight(systemSynthesis, decisionIndex, 'system_synthesis'),
+      asRecord(asArray(model.grammar_rules)[0]).intended_effect,
+    ),
+    blocks: [
+      ...asArray(systemSynthesis.topics).flatMap(topicBlocks),
+      cardGridBlock('Causal grammar rules', model.grammar_rules, { idPrefix: 'grammar' }),
+    ].filter(Boolean),
+  });
+
+  const globalLayer = asRecord(layers.global_brand_system);
+  const globalBlocks = asArray(globalLayer.topics).flatMap(topicBlocks);
+  ['brand_color_scheme', 'typography_hierarchy', 'spacing_strategy', 'layout_strategy']
+    .forEach((key) => globalBlocks.push(...areaBlocks(designSystem[key])));
+  globalBlocks.push(
+    typographySpecimensBlock('Typography specimens', typographyRows(designSystem.typography_hierarchy)),
+    proseBlock('Implementation boundary', [designSystem.implementation_boundary]),
+  );
+  addSection({
+    id: 'global-brand-system-framework',
+    title: firstText(globalLayer.title, 'Global brand-system framework'),
+    insight: layerInsight(globalLayer, decisionIndex, 'global_brand_system'),
+    blocks: globalBlocks.filter(Boolean),
+  });
+
+  const allClaims = Object.values(decisionIndex).flatMap(asArray);
+  addSection({
+    id: 'core-claims',
+    title: 'Core claims',
+    insight: firstInsight(
+      asRecord(allClaims[0]).claim,
+      asRecord(allClaims[0]).statement,
+      'Material claims retain evidence, confidence, alternatives, and scope.',
+    ),
+    blocks: [cardGridBlock('Decision index', allClaims, { idPrefix: 'claim' })].filter(Boolean),
+  });
+
+  addSection({
+    id: 'evidence-index',
+    title: 'Evidence index',
+    insight: 'Every displayed source remains traceable to its evidence ID, provenance, rights note, and local asset.',
+    blocks: [evidenceGridBlock('Evidence index', evidence, {
+      assetIndex,
+      publicBasePath: context.publicBasePath,
+    })].filter(Boolean),
   });
 
   const handoffBlocks = [
@@ -239,16 +310,10 @@ export function adaptSourceBrandAnalysis(input, context = {}) {
     listBlock('Approved grammar IDs', handoff.approved_grammar_ids),
     listBlock('Unresolved gaps', handoff.unresolved_gaps),
     codeBlock('Downstream contract', model.downstream_contract),
-    evidenceGridBlock('Evidence index', evidence, {
-      assetIndex,
-      publicBasePath: context.publicBasePath,
-    }),
   ].filter(Boolean);
-  sections.push(makeSection({
-    id: 'handoff-and-evidence-gaps',
-    index: sections.length + 1,
-    label: 'Stage 01',
-    title: 'Handoff, evidence gaps, and evidence index',
+  addSection({
+    id: 'structured-data-handoff',
+    title: 'Structured data handoff',
     insight: firstInsight(
       handoff.key_insight,
       handoff.summary,
@@ -256,7 +321,7 @@ export function adaptSourceBrandAnalysis(input, context = {}) {
       'The handoff preserves approved grammar and makes unresolved gaps explicit for the next stage.',
     ),
     blocks: handoffBlocks,
-  }));
+  });
 
   return {
     meta: {

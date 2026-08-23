@@ -8,7 +8,6 @@ import json
 import re
 import subprocess
 import sys
-from html.parser import HTMLParser
 from pathlib import Path
 
 import yaml
@@ -112,32 +111,18 @@ def completed_claim_rows(anatomy: str) -> list[tuple[str, list[str]]]:
     return completed
 
 
-class Images(HTMLParser):
-    def __init__(self) -> None:
-        super().__init__()
-        self.items: list[dict[str, str]] = []
-
-    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        if tag.lower() == "img":
-            self.items.append({key: value or "" for key, value in attrs})
-
-
 def main() -> int:
     parser = argparse.ArgumentParser(description="Validate source-only brand analysis gates.")
     parser.add_argument("analysis_directory")
-    parser.add_argument("stage", choices=("brief", "evidence", "visual", "anatomy", "grammar", "delivery", "html", "all"))
-    parser.add_argument("--html-path", default="outputs/source-brand-analysis.html")
+    parser.add_argument("stage", choices=("brief", "evidence", "visual", "anatomy", "grammar", "delivery", "all"))
     args = parser.parse_args()
 
     case = Path(args.analysis_directory).expanduser().resolve()
     if args.stage == "all":
         stages = ("brief", "evidence", "visual", "anatomy", "grammar", "delivery")
         failed = False
-        log_parts: list[str] = []
         for stage in stages:
             command = [sys.executable, str(Path(__file__).resolve()), str(case), stage]
-            if stage == "delivery":
-                command.extend(["--html-path", args.html_path])
             result = subprocess.run(
                 command,
                 check=False,
@@ -147,15 +132,7 @@ def main() -> int:
             print(result.stdout, end="")
             if result.stderr:
                 print(result.stderr, file=sys.stderr, end="")
-            log_parts.append(result.stdout + result.stderr)
             failed = failed or result.returncode != 0
-        validation_dir = case / "validation"
-        validation_dir.mkdir(parents=True, exist_ok=True)
-        summary = "NEEDS COMPLETION" if failed else "PASS"
-        (validation_dir / "completion-check.txt").write_text(
-            "\n".join(log_parts) + f"\nOverall result: {summary}\n",
-            encoding="utf-8",
-        )
         return 1 if failed else 0
 
     errors: list[str] = []
@@ -205,8 +182,8 @@ def main() -> int:
         if exceptions and not yaml_value(brief, "inapplicable_visual_layer_rationale"):
             errors.append("inapplicable visual layers require a rationale")
         depth = yaml_value(brief, "research_depth").lower()
-        if depth and depth not in {"standard", "expanded"}:
-            errors.append("research_depth must be standard or expanded")
+        if depth and depth not in {"rapid", "expanded"}:
+            errors.append("research_depth must be rapid or expanded")
         if depth == "expanded" and not yaml_value(brief, "expanded_depth_rationale"):
             errors.append("expanded research requires expanded_depth_rationale")
 
@@ -218,9 +195,9 @@ def main() -> int:
         structural = [row for row in included if row.get("content_type", "").strip().lower() not in {"image_candidate", "visual_candidate", "motion_frame"}]
         primary = [row for row in structural if row.get("source_tier", "").strip().lower() == "primary"]
         visual = [row for row in included if row.get("visual_category", "").strip()]
-        min_structural = scalar(brief, "structural_sources", 8)
-        min_primary = scalar(brief, "primary_structural_sources", 6)
-        min_visual = scalar(brief, "visual_candidates", 24)
+        min_structural = scalar(brief, "structural_sources", 4)
+        min_primary = scalar(brief, "primary_structural_sources", 3)
+        min_visual = scalar(brief, "visual_candidates", 8)
         if len(structural) < min_structural:
             errors.append(f"structural sources {len(structural)} < {min_structural}")
         if len(primary) < min_primary:
@@ -246,7 +223,7 @@ def main() -> int:
     elif args.stage == "visual":
         corpus = rows(case / "visual-corpus.csv")
         included = [row for row in corpus if row.get("status", "").strip().lower() == "included"]
-        minimum = scalar(brief, "unique_local_visuals", 24)
+        minimum = scalar(brief, "unique_local_visuals", 8)
         if len(included) < minimum:
             errors.append(f"included local visuals {len(included)} < {minimum}")
         layers: set[str] = set()
@@ -324,7 +301,7 @@ def main() -> int:
             errors.append("missing anatomy heading: product-native visual and cognitive language")
         completed_claims = completed_claim_rows(anatomy)
         claims = {claim_id for claim_id, _ in completed_claims}
-        min_claims = scalar(brief, "core_claims", 20)
+        min_claims = scalar(brief, "core_claims", 8)
         if len(claims) < min_claims:
             errors.append(f"completed unique core claim rows {len(claims)} < {min_claims}")
         for claim_id, cells in completed_claims:
@@ -371,9 +348,10 @@ def main() -> int:
     elif args.stage == "grammar":
         grammar = read(case / "grammar-kernel.md")
         rules = GK_RE.findall(grammar)
-        min_rules = scalar(brief, "grammar_rules", 5)
-        if not min_rules <= len(rules) <= 8:
-            errors.append(f"grammar rule count {len(rules)} outside {min_rules}–8")
+        min_rules = scalar(brief, "grammar_rules", 4)
+        max_rules = 6 if yaml_value(brief, "research_depth").lower() == "rapid" else 8
+        if not min_rules <= len(rules) <= max_rules:
+            errors.append(f"grammar rule count {len(rules)} outside {min_rules}–{max_rules}")
         for field in ("Input condition:", "Transformation:", "Intended effect:", "Evidence IDs:", "Confidence:", "Alternative explanation:", "Exception and scope:", "Protected source expression:", "Acceptance test:", "Rejection test:"):
             if grammar.count(field) < len(rules):
                 errors.append(f"grammar rules missing field {field}")
@@ -387,11 +365,7 @@ def main() -> int:
             if not evidence_line or len(set(EV_RE.findall(evidence_line.group(1)))) < 2:
                 errors.append(f"{rule_id}: requires at least two evidence IDs")
 
-    elif args.stage in {"delivery", "html"}:
-        html_path = (case / args.html_path).resolve()
-        html = read(html_path)
-        if not html:
-            errors.append("missing outputs/source-brand-analysis.html")
+    elif args.stage == "delivery":
         json_path = case / "outputs" / "source-brand-analysis.json"
         model: dict[str, object] = {}
         if not json_path.is_file():
@@ -445,85 +419,27 @@ def main() -> int:
                     ):
                         if field not in area:
                             errors.append(f"source JSON design-system area {key} missing {field}")
-            if len(model.get("grammar_rules", [])) < 5:
-                errors.append("source JSON contains fewer than 5 grammar rules")
+            min_rules = scalar(brief, "grammar_rules", 4)
+            if len(model.get("grammar_rules", [])) < min_rules:
+                errors.append(f"source JSON contains fewer than {min_rules} grammar rules")
             if len(model.get("decision_index", {})) < 4:
                 errors.append("source JSON decision_index is not materially structured")
             downstream = model.get("downstream_contract") if isinstance(model.get("downstream_contract"), dict) else {}
             for key in ("transfer_plan_requires", "second_brand_model_must_add", "product_photo_brief_requires_from_second_brand", "landing_page_brief_requires_from_second_brand"):
                 if not downstream.get(key):
                     errors.append(f"source JSON downstream_contract missing {key}")
-        collector = Images()
-        collector.feed(html)
-        if len(collector.items) < 12:
-            errors.append(f"source analysis HTML images {len(collector.items)} < 12")
-        for index, item in enumerate(collector.items, start=1):
-            label = f"HTML image {index}"
-            src = item.get("src", "").strip()
-            if not src or src.startswith(("http://", "https://", "data:")):
-                errors.append(f"{label}: src must be local")
-            elif not (html_path.parent / src).resolve().is_file():
-                errors.append(f"{label}: local image missing {src}")
-            for field in ("alt", "data-evidence-id", "data-category", "data-layer", "data-era", "data-source-url", "data-credit", "data-rights-note"):
-                if not item.get(field, "").strip():
-                    errors.append(f"{label}: missing {field}")
-        hero_logos = [item for item in collector.items if "masthead__logo" in item.get("class", "").split()]
-        if len(hero_logos) != 1:
-            errors.append("HTML hero must contain exactly one official masterbrand logo")
-        elif hero_logos[0].get("data-layer", "").strip().lower() != "identity":
-            errors.append("HTML hero logo must be classified in the identity layer")
-        if not re.search(r'<header[^>]+class=["\'][^"\']*masthead[^"\']*["\'][^>]+--hero-bg:\s*#[0-9A-Fa-f]{6}', html):
-            errors.append("HTML masthead is missing an explicit verified identity background color")
-        for anchor in (
-            "source-brand-anatomy", "identity-channel-tokens", "key-visual", "brand-mood",
-            "photography-film",
-            "global-brand-system-framework",
-        ):
-            if anchor not in html:
-                errors.append(f"HTML missing required source section marker {anchor}")
-        if not any(anchor in html for anchor in ("product-representation", "product-image-production")):
-            errors.append("HTML missing product-representation section")
-        if not any(anchor in html for anchor in ("product-native-visual-language", "intrinsic-product-visual-language")):
-            errors.append("HTML missing product-native visual and cognitive language section")
-        if 'data-layout-rail="compact"' not in html:
-            errors.append("HTML missing compact shared section-label rail marker")
-        if "data-review-checkpoint" not in html and "current_stage: SOURCE_REVIEW_REQUIRED" in read(case / "analysis-status.yaml"):
-            errors.append("HTML missing source review checkpoint")
-        if not re.search(r'class=["\'][^"\']*(?:font-specimen|webfont-gap)', html):
-            errors.append("HTML requires a verified actual-webfont specimen or visible webfont gap")
-        if "type-token-matrix" not in html and "webfont-gap" not in html:
-            errors.append("HTML requires a rendered type-token matrix or visible webfont gap")
-        key_visual_section = re.search(
-            r'<section[^>]+id=["\']key-visual["\'][^>]*>(.*?)(?=<section\b|\Z)',
-            html,
-            re.DOTALL | re.IGNORECASE,
-        )
-        if not key_visual_section:
-            errors.append("HTML missing independent key-visual section")
-        else:
-            key_visual_html = key_visual_section.group(1)
-            if "key-visual-operating-model" not in key_visual_html:
-                errors.append("key-visual section missing cross-surface operating model")
-            if "key-visual-cross-surface" not in key_visual_html:
-                errors.append("key-visual section missing cross-surface evidence map")
-            image_count = len(re.findall(r"<img\b", key_visual_html, re.IGNORECASE))
-            if image_count < 6:
-                errors.append("key-visual section requires at least six direct EV images")
-            surfaces = re.findall(
-                r'data-key-visual-surface=["\']([^"\']+)["\']',
-                key_visual_html,
-                re.IGNORECASE,
-            )
-            if len(surfaces) < 6:
-                errors.append("every key-visual example requires data-key-visual-surface")
-            distinct_surfaces = {surface.strip().lower() for surface in surfaces if surface.strip()}
-            if len(distinct_surfaces) < 3:
-                errors.append("key-visual evidence requires at least three distinct surface roles")
-            for required_surface in ("identity", "ui", "content"):
-                if not any(required_surface in surface for surface in distinct_surfaces):
-                    errors.append(f"key-visual evidence missing {required_surface} surface translation")
         handoff = read(case / "analysis-handoff.yaml")
         status = read(case / "analysis-status.yaml")
+        run = json_object(case / "research-run.json")
+        if run.get("artifact_type") != "brand_research_run":
+            errors.append("source analysis has no valid research-run.json")
+        elif run.get("mode") == "rapid":
+            if run.get("status") != "completed":
+                errors.append("rapid research run is not completed")
+            limit_seconds = int(run.get("timebox_minutes", 10)) * 60
+            elapsed_seconds = run.get("elapsed_seconds")
+            if not isinstance(elapsed_seconds, int) or elapsed_seconds > limit_seconds:
+                errors.append("rapid research run exceeded its timebox")
         if not re.search(r"(?m)^\s*target_direction:\s*null\s*$", handoff):
             errors.append("analysis handoff must keep target_direction null")
         if not any(marker in status for marker in ("current_stage: SOURCE_REVIEW_REQUIRED", "current_stage: USER_DIRECTION_REQUIRED")):
@@ -580,7 +496,6 @@ def main() -> int:
             digest_targets = {
                 "anatomy_sha256": case / "source-brand-anatomy.md",
                 "grammar_sha256": case / "grammar-kernel.md",
-                "source_html_sha256": html_path,
                 "source_json_sha256": case / "outputs" / "source-brand-analysis.json",
             }
             for key, path in digest_targets.items():

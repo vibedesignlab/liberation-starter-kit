@@ -250,7 +250,7 @@
 |---|---|---|---|---|---|
 | | | | | | |
 
-The HTML report must render a `font-specimen type-token-matrix` with one visibly rendered row for display, title, lead, body, label, caption, and every materially different localized script, or show a visible `webfont-gap`. Each row records role, family, size, weight, line height, and script. Font URLs remain provenance, not the specimen itself.
+The Storybook report must render a typography-specimen matrix with one visibly rendered row for display, title, lead, body, label, caption, and every materially different localized script, or show a visible `webfont-gap`. Each row records role, family, size, weight, line height, and script. Font URLs remain provenance, not the specimen itself.
 
 | Information role | Hierarchy relationship | Invariant | Variable by channel / locale | Evidence and limits |
 |---|---|---|---|---|

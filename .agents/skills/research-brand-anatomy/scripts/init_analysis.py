@@ -14,6 +14,7 @@ ASSETS = (
     "grammar-kernel.md",
     "analysis-handoff.yaml",
     "analysis-status.yaml",
+    "research-run.json",
     "stage-review.json",
 )
 

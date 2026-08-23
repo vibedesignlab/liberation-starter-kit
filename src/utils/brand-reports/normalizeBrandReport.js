@@ -2,6 +2,7 @@ import { adaptExtendedBrandAnatomy } from './adaptExtendedBrandAnatomy.js';
 import { adaptLandingMaterials } from './adaptLandingMaterials.js';
 import { adaptSourceBrandAnalysis } from './adaptSourceBrandAnalysis.js';
 import { asRecord, firstText } from './helpers.js';
+import { assertFixedReportStructure } from './reportStructure.js';
 
 const ADAPTERS = {
   source_brand_analysis: adaptSourceBrandAnalysis,
@@ -19,7 +20,7 @@ export function normalizeBrandReport(input, context = {}) {
     throw new TypeError(`Unsupported brand report artifact_type "${artifactType || 'missing'}". Expected one of: ${supported}.`);
   }
 
-  return adapter(model, asRecord(context));
+  return assertFixedReportStructure(adapter(model, asRecord(context)), artifactType);
 }
 
 export function isSupportedBrandReport(input) {

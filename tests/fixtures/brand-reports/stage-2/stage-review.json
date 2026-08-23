@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "stage_review",
+  "stage": "extended_brand_anatomy",
+  "status": "pending",
+  "pipeline_state_path": "",
+  "review_targets": ["target anatomy and two-product lineup"],
+  "adjustment_prompts": ["Accept this deterministic fixture to exercise Stage 3 wiring."],
+  "user_feedback": [],
+  "updated_at": "2026-08-23T00:10:00Z"
+}

@@ -110,12 +110,8 @@ def source_errors(case: Path) -> list[str]:
         errors.append("source analysis package_path is not a directory")
         return errors
 
-    report_path = str(source.get("report_path", "outputs/source-brand-analysis.html"))
     json_path = str(source.get("json_path", "outputs/source-brand-analysis.json"))
-    source_html = read(package / report_path)
     source_model = json_object(package / json_path)
-    if not source_html.strip():
-        errors.append("source analysis HTML is missing or empty")
     if not source_model:
         errors.append("source analysis JSON is missing or invalid")
         return errors
@@ -143,7 +139,7 @@ def input_errors(case: Path) -> list[str]:
         errors.append("transfer input status must be ready")
 
     source = model.get("source_analysis") if isinstance(model.get("source_analysis"), dict) else {}
-    for key in ("reference_brand", "package_path", "report_path", "json_path"):
+    for key in ("reference_brand", "package_path", "json_path"):
         if not nonempty(source.get(key)):
             errors.append(f"transfer input source_analysis has blank {key}")
 
@@ -183,14 +179,10 @@ def direction_errors(case: Path) -> list[str]:
     markdown_path = case / "extended-brand-anatomy.md"
     if not markdown_path.is_file():
         markdown_path = case / "brand-transfer-direction.md"
-    html_path = case / "outputs" / "extended-brand-anatomy.html"
-    if not html_path.is_file():
-        html_path = case / "outputs" / "brand-transfer-direction.html"
     json_path = case / "outputs" / "extended-brand-anatomy.json"
     if not json_path.is_file():
         json_path = case / "outputs" / "brand-transfer-direction.json"
     markdown = read(markdown_path)
-    html = read(html_path)
     model = json_object(json_path)
 
     if not markdown:
@@ -203,18 +195,6 @@ def direction_errors(case: Path) -> list[str]:
             errors.append("direction Markdown contains a numbered section after section 8")
         if re.search(r"approval questions|production handoff", markdown, re.IGNORECASE):
             errors.append("direction Markdown contains approval questions or production handoff")
-
-    if not html:
-        errors.append("brand-transfer-direction.html is missing or empty")
-    else:
-        for number in range(1, 9):
-            marker = rf"(?:id=[\"']section-{number}[\"']|data-section=[\"']{number}[\"'])"
-            if not re.search(marker, html, re.IGNORECASE):
-                errors.append(f"direction HTML missing section marker {number}")
-        if re.search(r"(?:id=[\"']section-(?:9|1[0-9])[\"']|data-section=[\"'](?:9|1[0-9])[\"'])", html, re.IGNORECASE):
-            errors.append("direction HTML contains a numbered section after section 8")
-        if re.search(r"approval questions|production handoff", html, re.IGNORECASE):
-            errors.append("direction HTML contains approval questions or production handoff")
 
     if not model:
         return errors + ["brand-transfer-direction.json is missing or invalid"]
@@ -306,16 +286,14 @@ def direction_errors(case: Path) -> list[str]:
             errors.append("Stage 2 schema 1.1 landing product concept has invalid lineup_mode")
         elif len(lineup) not in expected_counts[lineup_mode]:
             errors.append(f"Stage 2 schema 1.1 lineup count does not match {lineup_mode}")
-    if html and not re.search(r"data-product-lineup(?:=[\"'][^\"']*[\"'])?", html, re.IGNORECASE):
-        errors.append("direction HTML section 3 has no visible data-product-lineup block")
     if markdown and not re.search(r"product lineup|제품 라인업", markdown, re.IGNORECASE):
         errors.append("direction Markdown has no explicit product lineup")
     for item in lineup:
         if not isinstance(item, dict):
             continue
         product_name = str(item.get("product_name", "")).strip()
-        if product_name and product_name not in html:
-            errors.append(f"direction HTML does not render product lineup item {product_name}")
+        if product_name and product_name not in markdown:
+            errors.append(f"direction Markdown does not include product lineup item {product_name}")
     form_cues = product.get("form_cues") if isinstance(product.get("form_cues"), dict) else {}
     mode_key = mode if mode in {"physical", "digital", "hybrid"} else "shared"
     if not nonempty(form_cues.get("shared")) and not nonempty(form_cues.get(mode_key)):

@@ -1,6 +1,6 @@
 # Eight-section transfer-direction contract
 
-Deliver the registered Storybook document and `outputs/extended-brand-anatomy.json` as a pair. Storybook is the readable Stage 2 anatomy and must show the two registered anchor images. The JSON is the explicit input for Stage 3 landing copy and product-image production. Keep `outputs/extended-brand-anatomy.html` only as a migration-compatibility artifact.
+Deliver the registered Storybook document and `outputs/extended-brand-anatomy.json` as a pair. Storybook is the readable Stage 2 anatomy and must show the two registered anchor images. The JSON is the explicit input for Stage 3 landing copy and product-image production.
 
 ## Report body
 
@@ -17,8 +17,7 @@ The numbered body contains exactly eight sections:
 
 A hero and short metadata block may appear before section 1. Evidence references and assumptions belong inside the relevant section or JSON metadata. Do not append approval questions, a ninth section, production handoff, full PRD, component system, or methodology appendix.
 
-In the normalized Storybook model, identify the numbered sections as `section-1` through `section-8`. During migration, the compatibility HTML keeps the same `id` or matching `data-section` values for deterministic checks.
-Inside section 3, render the product lineup explicitly. Every lineup product name in JSON must be visible in Storybook; during migration it must also remain visible in the compatibility HTML.
+Use the exact eight ordered React section IDs in the normative pipeline specification. Inside section 3, render the product lineup explicitly. Every lineup product name in JSON must be visible in Storybook.
 
 ## Product-concept limit
 
@@ -75,4 +74,4 @@ Required `moodboard_inputs`:
 - `product_description`;
 - `product_image_generation`.
 
-These are concise downstream inputs, not a ninth report section. After section 8, render an unnumbered review checkpoint from `stage-review.json`; keep `data-review-checkpoint` in the compatibility HTML while legacy validators require it. Do not add component-system, CSS architecture, or full UX-state records.
+These are concise downstream inputs, not a ninth report section. After section 8, render an unnumbered review checkpoint from `stage-review.json`. Do not add component-system, CSS architecture, or full UX-state records.

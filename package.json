@@ -11,7 +11,11 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "aside:check": "node .agents/skills/analyze-site-design-with-aside/scripts/check-aside.mjs",
+    "check-brand-report-contracts": "node scripts/brand-reports/check-report-contracts.mjs",
+    "finalize-brand-report": "node scripts/brand-reports/finalize-brand-report.mjs",
+    "test-brand-report-pipeline": "node scripts/brand-reports/test-brand-report-pipeline.mjs",
     "register-brand-report": "node scripts/brand-reports/register-brand-report.mjs",
+    "unregister-brand-report": "node scripts/brand-reports/unregister-brand-report.mjs",
     "generate-rules": "node scripts/generate-rules.js"
   },
   "dependencies": {

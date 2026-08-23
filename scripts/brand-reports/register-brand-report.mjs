@@ -16,6 +16,8 @@ import {
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import { normalizeBrandReport } from '../../src/utils/brand-reports/index.js';
+
 const SCRIPT_DIRECTORY = path.dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = path.resolve(SCRIPT_DIRECTORY, '..', '..');
 const REPORTS_ROOT = path.join(PROJECT_ROOT, 'public', 'brand-reports');
@@ -242,6 +244,13 @@ async function loadSourcePackage(packageArgument) {
         `Invalid stage in ${reviewPath}: expected "${stage.stage}", received ${JSON.stringify(review.stage)}.`,
       );
     }
+  }
+
+  if (!review) {
+    fail(`Required stage review is missing: ${reviewPath}`);
+  }
+  if (stage.stage !== 'source_brand_analysis' && !assetRegistry) {
+    fail(`Required asset registry is missing: ${assetRegistryPath}`);
   }
 
   if (assetRegistry) {
@@ -719,6 +728,15 @@ async function main() {
   const brand = inferBrand(sourcePackage.report, sourcePackage.stage, sourcePackage.packageRoot);
   const fallbackBrandSlug = `brand-${sha256(brand).slice(0, 8)}`;
   const id = validateId(options.id || `${slugify(brand) || fallbackBrandSlug}-${sourcePackage.stage.idSuffix}`);
+  try {
+    normalizeBrandReport(sourcePackage.report, {
+      review: sourcePackage.review,
+      assetRegistry: sourcePackage.assetRegistry,
+      publicBasePath: `/brand-reports/${id}`,
+    });
+  } catch (error) {
+    fail(`Fixed React report contract failed: ${error.message}`);
+  }
   const prepared = await preparePackage(sourcePackage, id);
   const story = buildStory(id, brand, sourcePackage.stage.stageLabel);
 

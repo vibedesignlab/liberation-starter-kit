@@ -18,9 +18,8 @@ def object_at(path: Path) -> dict:
 
 def extended_errors(case: Path) -> list[str]:
     errors: list[str] = []
-    html_path = case / "outputs" / "extended-brand-anatomy.html"
     model_path = case / "outputs" / "extended-brand-anatomy.json"
-    for path in (case / "extended-brand-anatomy.md", html_path, model_path):
+    for path in (case / "extended-brand-anatomy.md", model_path):
         if not path.is_file() or not path.stat().st_size:
             errors.append(f"missing canonical Stage 2 artifact {path.name}")
 
@@ -60,18 +59,6 @@ def extended_errors(case: Path) -> list[str]:
 
     if set(model.get("registered_anchor_assets", [])) != set(registered_ids):
         errors.append("Stage 2 JSON registered_anchor_assets does not match asset registry")
-    html = html_path.read_text(encoding="utf-8") if html_path.is_file() else ""
-    for item in assets:
-        if isinstance(item, dict):
-            asset_id = str(item.get("asset_id", ""))
-            file_path = str(item.get("file_path", ""))
-            if asset_id and asset_id not in html:
-                errors.append(f"Stage 2 HTML does not render asset ID {asset_id}")
-            if file_path and file_path not in html:
-                errors.append(f"Stage 2 HTML does not render local asset path {file_path}")
-    if "data-review-checkpoint" not in html:
-        errors.append("Stage 2 HTML has no review checkpoint")
-
     review = object_at(case / "stage-review.json")
     if review.get("artifact_type") != "stage_review" or review.get("stage") != "extended_brand_anatomy":
         errors.append("Stage 2 stage-review.json has invalid identity")
@@ -101,18 +88,18 @@ def source_review_errors(case: Path) -> list[str]:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Validate Stage 2 extended brand anatomy.")
     parser.add_argument("stage_2_directory")
-    parser.add_argument("stage", choices=("source", "input", "direction", "assets", "all"))
+    parser.add_argument("stage", choices=("source", "input", "direction", "assets", "current", "all"))
     args = parser.parse_args()
     case = Path(args.stage_2_directory).expanduser().resolve()
     errors: list[str] = []
     if args.stage in {"source", "all"}:
         errors.extend(source_errors(case))
         errors.extend(source_review_errors(case))
-    if args.stage in {"input", "all"}:
+    if args.stage in {"input", "current", "all"}:
         errors.extend(input_errors(case))
-    if args.stage in {"direction", "all"}:
+    if args.stage in {"direction", "current", "all"}:
         errors.extend(direction_errors(case))
-    if args.stage in {"assets", "all"}:
+    if args.stage in {"assets", "current", "all"}:
         errors.extend(extended_errors(case))
     print(f"Extended brand anatomy: {case}")
     print(f"Stage: {args.stage}")

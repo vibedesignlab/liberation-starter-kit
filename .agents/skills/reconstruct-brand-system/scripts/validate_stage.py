@@ -8,7 +8,6 @@ import csv
 import re
 import subprocess
 import sys
-from html.parser import HTMLParser
 from pathlib import Path
 
 
@@ -22,16 +21,6 @@ ANATOMY_HEADINGS = (
     "## 7. System synthesis",
     "## Evidence index",
 )
-
-
-class ImageCollector(HTMLParser):
-    def __init__(self) -> None:
-        super().__init__()
-        self.images: list[dict[str, str]] = []
-
-    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        if tag.lower() == "img":
-            self.images.append({key: value or "" for key, value in attrs})
 
 
 def parse_args() -> argparse.Namespace:
@@ -48,11 +37,10 @@ def parse_args() -> argparse.Namespace:
             "mapping",
             "dossier",
             "audit",
-            "html",
         ),
     )
-    parser.add_argument("--min-images", type=int, default=24)
-    parser.add_argument("--min-visual-candidates", type=int, default=24)
+    parser.add_argument("--min-images", type=int, default=8)
+    parser.add_argument("--min-visual-candidates", type=int, default=8)
     parser.add_argument("--min-categories", type=int, default=4)
     return parser.parse_args()
 
@@ -136,10 +124,10 @@ def main() -> int:
         for row in included:
             if not row.get("source_url", "").strip() and not row.get("local_path", "").strip():
                 errors.append(f"source {row.get('evidence_id', '(unknown)')}: no URL or local path")
-        if len(structural) < 12:
-            errors.append(f"structural source count {len(structural)} < 12")
-        if len(primary) < 8:
-            errors.append(f"primary structural source count {len(primary)} < 8")
+        if len(structural) < 4:
+            errors.append(f"structural source count {len(structural)} < 4")
+        if len(primary) < 3:
+            errors.append(f"primary structural source count {len(primary)} < 3")
         if len(visual_candidates) < args.min_visual_candidates:
             errors.append(
                 f"visual candidate count {len(visual_candidates)} < {args.min_visual_candidates}"
@@ -238,8 +226,8 @@ def main() -> int:
         if not re.search(r"\bInferred\b", text):
             errors.append("source anatomy contains no Inferred label")
         evidence_ids = set(re.findall(r"EV-\d{3,}", text))
-        if len(evidence_ids) < 20:
-            errors.append(f"source anatomy unique evidence ID count {len(evidence_ids)} < 20")
+        if len(evidence_ids) < 8:
+            errors.append(f"source anatomy unique evidence ID count {len(evidence_ids)} < 8")
         if "contact-sheets/" not in text:
             errors.append("source anatomy does not link an EV-labeled contact sheet")
         if not (case / "contact-sheets" / "overview.jpg").is_file():
@@ -255,8 +243,8 @@ def main() -> int:
             for line in claim_lines
             if (match := re.search(r"CL-\d{3,}", line))
         }
-        if len(claim_ids) < 24:
-            errors.append(f"completed core claim count {len(claim_ids)} < 24")
+        if len(claim_ids) < 8:
+            errors.append(f"completed core claim count {len(claim_ids)} < 8")
         for line in claim_lines:
             claim_id = re.search(r"CL-\d{3,}", line).group(0)
             supports = set(re.findall(r"EV-\d{3,}", line))
@@ -272,9 +260,9 @@ def main() -> int:
             for line in grammar_lines
             if (match := re.search(r"GK-\d{2}", line))
         }
-        if len(grammar_candidates) < 5 or len(grammar_candidates) > 8:
+        if len(grammar_candidates) < 4 or len(grammar_candidates) > 6:
             errors.append(
-                f"source anatomy grammar candidate count {len(grammar_candidates)} is outside 5–8"
+                f"source anatomy grammar candidate count {len(grammar_candidates)} is outside 4–6"
             )
         for line in grammar_lines:
             rule_id = re.search(r"GK-\d{2}", line).group(0)
@@ -295,8 +283,8 @@ def main() -> int:
         path = case / "grammar-kernel.md"
         text = path.read_text(encoding="utf-8") if path.is_file() else ""
         rule_ids = set(re.findall(r"GK-\d{2}", text))
-        if len(rule_ids) < 5 or len(rule_ids) > 8:
-            errors.append(f"grammar rule count {len(rule_ids)} is outside 5–8")
+        if len(rule_ids) < 4 or len(rule_ids) > 6:
+            errors.append(f"grammar rule count {len(rule_ids)} is outside 4–6")
         if not re.search(r"EV-\d{3}", text):
             errors.append("grammar contains no evidence IDs")
         for signal in (
@@ -426,48 +414,6 @@ def main() -> int:
             )
             if critical and re.search(r"^\s*-\s+(?!none\b|없음\b)", critical.group(1), re.MULTILINE | re.IGNORECASE):
                 errors.append("fidelity audit contains a critical failure")
-
-    elif args.stage == "html":
-        candidates = list((case / "outputs").glob("*.html"))
-        if not candidates:
-            errors.append("missing HTML output")
-        for path in candidates:
-            text = path.read_text(encoding="utf-8")
-            parser = ImageCollector()
-            parser.feed(text)
-            if not parser.images:
-                errors.append(f"image-free HTML: {path.name}")
-            categories: set[str] = set()
-            for index, item in enumerate(parser.images, start=1):
-                label = f"{path.name} image {index}"
-                src = item.get("src", "").strip()
-                if not src:
-                    errors.append(f"{label}: blank src")
-                elif src.startswith(("http://", "https://", "data:")):
-                    errors.append(f"{label}: image must use a local file, found {src[:40]}")
-                else:
-                    image_path = (path.parent / src).resolve()
-                    if not image_path.is_file():
-                        errors.append(f"{label}: local image not found: {src}")
-                if not item.get("alt", "").strip():
-                    errors.append(f"{label}: blank alt")
-                if not re.fullmatch(r"EV-\d{3,}", item.get("data-evidence-id", "").strip()):
-                    errors.append(f"{label}: missing data-evidence-id")
-                for field in ("data-era", "data-source-url", "data-credit", "data-rights-note"):
-                    if not item.get(field, "").strip():
-                        errors.append(f"{label}: missing {field}")
-                categories.update(split_values(item.get("data-category", "")))
-            if len(categories) < args.min_categories:
-                errors.append(
-                    f"{path.name}: represented image category count {len(categories)} < {args.min_categories}"
-                )
-            if (
-                'id="source-brand-anatomy"' not in text
-                and "Source brand anatomy" not in text
-                and "Source Brand Anatomy" not in text
-                and "원본 브랜드 아나토미" not in text
-            ):
-                errors.append(f"missing source anatomy section in HTML: {path.name}")
 
     print(f"Case: {case}")
     print(f"Stage: {args.stage}")

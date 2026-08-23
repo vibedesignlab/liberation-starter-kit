@@ -382,7 +382,7 @@ def main() -> int:
         "grammar_rules": rules,
         "evidence_index": evidence_index(case),
         "downstream_contract": {
-            "read_with": "outputs/source-brand-analysis.html",
+            "read_with": "storybook_registered_report",
             "transfer_plan_requires": [
                 "new user target direction",
                 "decision_index",

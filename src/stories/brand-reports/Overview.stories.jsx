@@ -107,7 +107,7 @@ export const Docs = {
             fontSize: 12,
           } }
         >
-          { `pnpm register-brand-report -- <stage-package-directory>\npnpm register-brand-report -- <stage-package-directory> --check` }
+          { `pnpm finalize-brand-report -- <stage-package-directory>` }
         </Typography>
       </PageContainer>
     </>

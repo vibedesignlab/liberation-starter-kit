@@ -1,0 +1,24 @@
+source_analysis:
+  reference_brand: "Fixture Source"
+  exact_scope: "Deterministic pipeline fixture"
+  package_path: "tests/fixtures/brand-reports/stage-1"
+  anatomy_path: "source-brand-anatomy.md"
+  grammar_path: "grammar-kernel.md"
+  manifest_path: "source-manifest.csv"
+  visual_corpus_path: "visual-corpus.csv"
+  contact_sheet_path: "contact-sheets/overview.jpg"
+  validation_status: "pass"
+  version: "2.0.0"
+  delivered_at: "2026-08-23T00:09:00Z"
+  source_json_schema_version: "1.1.0"
+approved_grammar_ids:
+  - GK-01
+  - GK-02
+  - GK-03
+  - GK-04
+protected_surface_families:
+  - synthetic fixture identity
+unresolved_source_gaps:
+  - no real-world claims are represented
+target_direction: null
+next_required_action: "Use only as a deterministic Stage 2 test source."

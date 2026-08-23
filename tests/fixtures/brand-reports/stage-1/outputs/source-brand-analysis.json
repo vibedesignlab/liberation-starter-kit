@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.1.0",
+  "artifact_type": "source_brand_analysis",
+  "brand": {
+    "name": "Fixture Source",
+    "entity_scope": "Deterministic pipeline fixture",
+    "product_mode": "physical",
+    "era_start": "2024",
+    "era_end": "2026",
+    "markets": ["Global"],
+    "languages": ["English"],
+    "channels": ["owned web"]
+  },
+  "report_identity": {
+    "background_color": "#F2EFE8",
+    "foreground_color": "#17212B",
+    "color_layer": "identity",
+    "identity_scope": "Pipeline test fixture only",
+    "logo": {
+      "evidence_id": "EV-101",
+      "local_path": "assets/visual-01.svg",
+      "source_url": "https://example.invalid/fixture-source/logo",
+      "credit": "Fixture Source",
+      "rights_note": "Synthetic test fixture; repository use only.",
+      "variant": "fixture wordmark",
+      "render_treatment": "none"
+    }
+  },
+  "analysis_layers": {
+    "source_synthesis": {"title": "Source brand anatomy", "key_insight": "The fixture isolates structure from real-world brand claims."},
+    "evidence_and_authorship": {"title": "Evidence and authorship", "key_insight": "Every visual is synthetic, local, and traceable."},
+    "strategy": {"title": "Strategic and cultural anatomy", "key_insight": "Clarity is framed as the primary user value.", "evidence_ids": ["EV-001"]},
+    "verbal_system": {"title": "Verbal anatomy", "key_insight": "Short declarative copy carries the hierarchy.", "evidence_ids": ["EV-002"]},
+    "identity_and_channel_tokens": {"title": "Identity and channel tokens", "key_insight": "Navy and cream define the identity field.", "evidence_ids": ["EV-101", "EV-106"]},
+    "key_visual_system": {"title": "Key-visual system", "key_insight": "Modular fields create repeatable recognition.", "evidence_ids": ["EV-102"]},
+    "brand_mood_and_world": {"title": "Brand mood and world", "key_insight": "Quiet spatial cues keep the world restrained.", "evidence_ids": ["EV-107"]},
+    "photography_and_film": {"title": "Photography and film", "key_insight": "Soft light and clear framing preserve legibility.", "evidence_ids": ["EV-103"]},
+    "product_representation": {"title": "Product representation", "key_insight": "Hero form and detail proof have separate jobs.", "evidence_ids": ["EV-104"]},
+    "product_native_visual_and_cognitive_language": {"title": "Product-native language", "key_insight": "Rounded geometry and tactile controls signal approachability.", "evidence_ids": ["EV-105"]},
+    "composition_and_cross_channel_grammar": {"title": "Composition", "key_insight": "Asymmetric modules reuse one spacing rhythm.", "evidence_ids": ["EV-106"]},
+    "product_interface_and_service_behavior": {"title": "Product and interface behavior", "key_insight": "Visible states make feedback explicit.", "evidence_ids": ["EV-108"]},
+    "system_synthesis": {"title": "System synthesis", "key_insight": "Calm hierarchy and concrete proof form one grammar."},
+    "global_brand_system": {"title": "Global brand-system framework", "key_insight": "Four token areas preserve a single decision hierarchy."}
+  },
+  "design_system": {
+    "brand_color_scheme": {"title": "Brand color scheme", "roles": ["identity field", "status accent"]},
+    "typography_hierarchy": {"title": "Typography hierarchy", "roles": ["headline", "support", "body"]},
+    "spacing_strategy": {"title": "Spacing strategy", "roles": ["four repeatable intervals"]},
+    "layout_strategy": {"title": "Layout strategy", "roles": ["asymmetric editorial grid", "isolated proof frame"]},
+    "implementation_boundary": "This fixture describes relationships, not production tokens."
+  },
+  "grammar_rules": [
+    {"grammar_id": "GK-01", "summary": "Clarity before decoration", "intended_effect": "Promise precedes proof.", "evidence_ids": ["EV-001", "EV-104"]},
+    {"grammar_id": "GK-02", "summary": "Separate image jobs", "intended_effect": "Form and detail stay legible.", "evidence_ids": ["EV-104", "EV-105"]},
+    {"grammar_id": "GK-03", "summary": "Reuse modular rhythm", "intended_effect": "Channels read as one system.", "evidence_ids": ["EV-102", "EV-106"]},
+    {"grammar_id": "GK-04", "summary": "Make state visible", "intended_effect": "Feedback is explicit.", "evidence_ids": ["EV-103", "EV-108"]}
+  ],
+  "decision_index": {
+    "strategy": [{"claim_id": "CL-001", "claim": "Observed: clarity is the primary value.", "evidence_ids": ["EV-001"]}],
+    "verbal_system": [{"claim_id": "CL-002", "claim": "Observed: copy is short and declarative.", "evidence_ids": ["EV-002"]}],
+    "identity_and_tokens": [{"claim_id": "CL-003", "claim": "Observed: navy and cream form the identity field.", "evidence_ids": ["EV-101"]}],
+    "key_visual": [{"claim_id": "CL-004", "claim": "Inferred: modular fields create recognition.", "evidence_ids": ["EV-102", "EV-106"]}],
+    "brand_mood": [{"claim_id": "CL-005", "claim": "Observed: the world is visually quiet.", "evidence_ids": ["EV-107"]}],
+    "photography_and_film": [{"claim_id": "CL-006", "claim": "Observed: framing preserves legibility.", "evidence_ids": ["EV-103"]}],
+    "product_representation": [{"claim_id": "CL-007", "claim": "Inferred: hero and detail jobs improve proof.", "evidence_ids": ["EV-104", "EV-105"]}],
+    "product_native_language": [{"claim_id": "CL-008", "claim": "Inferred: tactile controls signal approachability.", "evidence_ids": ["EV-104", "EV-105"]}],
+    "composition": [{"claim_id": "CL-009", "claim": "Observed: modules reuse one rhythm.", "evidence_ids": ["EV-106"]}],
+    "product_interface_service": [{"claim_id": "CL-010", "claim": "Observed: states make feedback visible.", "evidence_ids": ["EV-108"]}],
+    "system_and_other": [{"claim_id": "CL-011", "claim": "Inferred: calm hierarchy and proof form one grammar.", "evidence_ids": ["EV-001", "EV-104"]}]
+  },
+  "evidence_index": [
+    {"evidence_id": "EV-101", "title": "Fixture identity", "local_path": "assets/visual-01.svg", "source_url": "https://example.invalid/fixture-source/logo", "credit": "Fixture Source", "rights_note": "Synthetic test fixture"},
+    {"evidence_id": "EV-102", "title": "Fixture key visual", "local_path": "assets/visual-02.svg", "source_url": "https://example.invalid/fixture-source/key-visual", "credit": "Fixture Source", "rights_note": "Synthetic test fixture"},
+    {"evidence_id": "EV-103", "title": "Fixture photography", "local_path": "assets/visual-03.svg", "source_url": "https://example.invalid/fixture-source/photography", "credit": "Fixture Source", "rights_note": "Synthetic test fixture"},
+    {"evidence_id": "EV-104", "title": "Fixture product", "local_path": "assets/visual-04.svg", "source_url": "https://example.invalid/fixture-source/product", "credit": "Fixture Source", "rights_note": "Synthetic test fixture"},
+    {"evidence_id": "EV-105", "title": "Fixture native", "local_path": "assets/visual-05.svg", "source_url": "https://example.invalid/fixture-source/native", "credit": "Fixture Source", "rights_note": "Synthetic test fixture"},
+    {"evidence_id": "EV-106", "title": "Fixture channel", "local_path": "assets/visual-06.svg", "source_url": "https://example.invalid/fixture-source/channel", "credit": "Fixture Source", "rights_note": "Synthetic test fixture"},
+    {"evidence_id": "EV-107", "title": "Fixture campaign", "local_path": "assets/visual-07.svg", "source_url": "https://example.invalid/fixture-source/campaign", "credit": "Fixture Source", "rights_note": "Synthetic test fixture"},
+    {"evidence_id": "EV-108", "title": "Fixture interface", "local_path": "assets/visual-08.svg", "source_url": "https://example.invalid/fixture-source/interface", "credit": "Fixture Source", "rights_note": "Synthetic test fixture"}
+  ],
+  "handoff": {
+    "status": "pending",
+    "package_version": "2.0.0",
+    "approved_grammar_ids": ["GK-01", "GK-02", "GK-03", "GK-04"],
+    "protected_surface_families": ["synthetic fixture identity"],
+    "unresolved_gaps": ["no real-world claims are represented"],
+    "target_direction": null,
+    "summary": "The fixture preserves every Stage 1 handoff field."
+  },
+  "downstream_contract": {
+    "transfer_plan_requires": ["accepted source review"],
+    "second_brand_model_must_add": ["target direction"],
+    "product_photo_brief_requires_from_second_brand": ["product invariants"],
+    "landing_page_brief_requires_from_second_brand": ["message hierarchy"]
+  }
+}

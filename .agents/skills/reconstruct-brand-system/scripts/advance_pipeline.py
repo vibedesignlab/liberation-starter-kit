@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import copy
 import json
 import subprocess
 import sys
@@ -39,31 +40,28 @@ def state_path_from(value: str) -> Path:
     return candidate if candidate.name == "pipeline-state.json" else candidate / "pipeline-state.json"
 
 
-def validation_commands(stage_id: str, package: Path, skills_root: Path) -> list[list[str]]:
-    python = sys.executable
-    if stage_id == "stage_1":
-        return [
-            [python, str(skills_root / "research-brand-anatomy/scripts/validate_analysis.py"), str(package), "all"],
-            [python, str(skills_root / "research-brand-anatomy/scripts/validate_report_language.py"), str(package / "outputs/source-brand-analysis.html")],
-        ]
-    if stage_id == "stage_2":
-        return [[python, str(skills_root / "build-brand-from-anatomy/scripts/validate_extended.py"), str(package), "all"]]
-    if stage_id == "stage_3":
-        return [[python, str(skills_root / "build-landing-materials/scripts/validate_landing.py"), str(package)]]
-    raise ValueError(f"unknown stage: {stage_id}")
-
-
-def validate(stage_id: str, package: Path, skills_root: Path) -> bool:
-    for command in validation_commands(stage_id, package, skills_root):
-        result = subprocess.run(command, text=True, capture_output=True, check=False)
-        if result.stdout:
-            print(result.stdout.rstrip())
-        if result.stderr:
-            print(result.stderr.rstrip(), file=sys.stderr)
-        if result.returncode != 0:
-            print("CHAIN_ACTION=STAY")
-            print("CHAIN_REASON=STAGE_VALIDATION_FAILED")
-            return False
+def sync_registration(package: Path, project_root: Path, *, check: bool) -> bool:
+    command = [
+        "node",
+        str(project_root / "scripts/brand-reports/finalize-brand-report.mjs"),
+        str(package),
+        "--registration-only",
+    ]
+    if check:
+        command.append("--check")
+    result = subprocess.run(command, text=True, capture_output=True, check=False, cwd=project_root)
+    if result.stdout:
+        print(result.stdout.rstrip())
+    if result.stderr:
+        print(result.stderr.rstrip(), file=sys.stderr)
+    if result.returncode != 0:
+        print("CHAIN_ACTION=STAY")
+        print(
+            "CHAIN_REASON=STORYBOOK_REGISTRATION_STALE"
+            if check
+            else "CHAIN_REASON=STORYBOOK_REGISTRATION_FAILED"
+        )
+        return False
     return True
 
 
@@ -108,7 +106,6 @@ def wire_next_input(stage_id: str, source_package: Path, next_package: Path) -> 
             source = {}
         source.update({
             "package_path": str(source_package),
-            "report_path": "outputs/source-brand-analysis.html",
             "json_path": "outputs/source-brand-analysis.json",
             "review_path": "stage-review.json",
             "review_status": "accepted",
@@ -123,7 +120,6 @@ def wire_next_input(stage_id: str, source_package: Path, next_package: Path) -> 
             source = {}
         source.update({
             "package_path": str(source_package),
-            "html_path": "outputs/extended-brand-anatomy.html",
             "json_path": "outputs/extended-brand-anatomy.json",
             "asset_registry_path": "asset-registry.json",
             "review_path": "stage-review.json",
@@ -166,6 +162,7 @@ def main() -> int:
     except ValueError as exc:
         print(f"ERROR: {exc}")
         return 1
+    original_review = copy.deepcopy(review)
     if review.get("artifact_type") != "stage_review" or review.get("stage") != EXPECTED_REVIEW_STAGE.get(stage_id):
         print(f"ERROR: invalid review identity for {stage_id}")
         return 1
@@ -207,7 +204,8 @@ def main() -> int:
         return 1
 
     skills_root = Path(__file__).resolve().parent.parent.parent
-    if not validate(stage_id, package, skills_root):
+    project_root = skills_root.parent.parent
+    if not sync_registration(package, project_root, check=True):
         return 1
 
     if args.decision:
@@ -216,6 +214,9 @@ def main() -> int:
     review["updated_at"] = now()
     review["pipeline_state_path"] = str(state_path)
     write_json(review_path, review)
+    if not sync_registration(package, project_root, check=False):
+        write_json(review_path, original_review)
+        return 1
     stage["status"] = "accepted"
     stage["completed_at"] = now()
 

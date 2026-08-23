@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "stage_review",
+  "stage": "source_brand_analysis",
+  "status": "pending",
+  "pipeline_state_path": "",
+  "review_targets": ["fixed source report contract"],
+  "adjustment_prompts": ["Accept this deterministic fixture to exercise routing."],
+  "user_feedback": [],
+  "updated_at": "2026-08-23T00:09:00Z"
+}

@@ -1,7 +1,0 @@
-{
-  "schema_version": "1.2.0",
-  "artifact_type": "landing_product_asset_registry",
-  "stage": "landing_materials",
-  "prompt_only": true,
-  "assets": []
-}

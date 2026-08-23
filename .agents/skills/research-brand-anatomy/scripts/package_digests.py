@@ -9,7 +9,6 @@ from pathlib import Path
 FILES = {
     "anatomy_sha256": "source-brand-anatomy.md",
     "grammar_sha256": "grammar-kernel.md",
-    "source_html_sha256": "outputs/source-brand-analysis.html",
     "source_json_sha256": "outputs/source-brand-analysis.json",
 }
 

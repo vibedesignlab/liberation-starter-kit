@@ -1,5 +1,5 @@
 case_title: ""
-research_depth: "standard"
+research_depth: "rapid"
 expanded_depth_rationale: ""
 reference_brand:
   name: ""
@@ -25,8 +25,8 @@ inapplicable_visual_layers: []
 inapplicable_visual_layer_rationale: ""
 deliverable:
   language: "ko"
-  depth: "full"
-  image_bearing_html: true
+  depth: "concise"
+  image_bearing_storybook: true
 report_identity:
   hero_background_color: ""
   hero_foreground_color: ""
@@ -40,14 +40,16 @@ report_identity:
   hero_logo_render_treatment: "none" # none | invert(1) | brightness(0)
   hero_identity_scope: ""
 evidence_thresholds:
-  structural_sources: 8
-  primary_structural_sources: 6
-  visual_candidates: 24
-  unique_local_visuals: 24
-  visual_layers: 5
-  core_claims: 20
-  grammar_rules: 5
+  structural_sources: 4
+  primary_structural_sources: 3
+  visual_candidates: 8
+  unique_local_visuals: 8
+  visual_layers: 4
+  core_claims: 8
+  grammar_rules: 4
 research_constraints:
   browser_automation_allowed: false
+  rapid_timebox_minutes: 10
+  research_stop_minute: 8
   notes: ""
 original_user_priority: ""

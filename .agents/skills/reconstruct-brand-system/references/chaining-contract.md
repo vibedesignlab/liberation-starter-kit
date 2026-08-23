@@ -9,7 +9,7 @@ For a full single-brand chain, the router also uses the shared [parallel executi
 1. Finishing files or passing validation never advances a stage by itself.
 2. Present the current stage and its short adjustment checkpoint to the user.
 3. Interpret a clear response such as `승인`, `조절 없음`, or `그대로 진행` as `accepted`. Interpret requested changes as `revision_requested`.
-4. Record that decision with `advance_pipeline.py`. The script validates the current package before accepting it.
+4. Record that decision with `advance_pipeline.py`. The script checks the current registration receipt and drift before accepting; it does not rerun the Stage validator.
 5. On `CHAIN_ACTION=CALL_SKILL`, immediately read and execute the named next skill in the same conversation. Reuse the printed package paths; do not repeat intake already stored in the pipeline.
 6. On `CHAIN_ACTION=STAY`, revise the current stage and present the checkpoint again.
 7. Stage 3 acceptance produces `CHAIN_ACTION=COMPLETE`. It does not start page design or coding.
