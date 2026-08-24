@@ -14,7 +14,7 @@ For a full single-brand chain, the router also uses the shared [parallel executi
 6. On `CHAIN_ACTION=STAY`, revise the current stage and present the checkpoint again.
 7. Stage 3 acceptance produces `CHAIN_ACTION=COMPLETE`. It does not start page design or coding.
 
-Inside the active stage, the coordinator may complete several bounded jobs concurrently. Only the coordinator writes canonical package files and calls `advance_pipeline.py`. A worker finishing a shard or image never advances the stage.
+Inside the active stage, the coordinator may complete several bounded jobs concurrently. Only the coordinator plans jobs, updates pipeline state, writes canonical package files, and calls `advance_pipeline.py`. A worker writes its assigned work directory and reports completion to the coordinator; it never calls router scripts or advances the stage.
 
 ## Commands
 
@@ -43,13 +43,21 @@ python3 scripts/advance_pipeline.py <pipeline-directory> \
 
 Without `--decision`, the script reports or follows the decision already stored in the current stage review file.
 
-Track material parallel jobs without adding a second content artifact:
+After the current Stage lock, create its fixed material jobs without adding another report artifact:
+
+```bash
+python3 scripts/plan_stage_jobs.py <pipeline-directory> --stage stage_2
+```
+
+The root then tracks a generated job:
 
 ```bash
 python3 scripts/update_job.py <pipeline-directory> \
   --stage stage_2 --job product_anchor --parallel-group stage2_anchors \
   --status running --owner image-worker
 ```
+
+Every completed worker writes the generated `result.json` contract first. The root records completion, waits for the barrier, merges into the canonical model once, and may inspect read-only timing with `summarize_parallel_run.py`.
 
 ## Standalone use
 

@@ -70,8 +70,9 @@ export function firstContent(...values) {
 
 export function pickValue(record, candidates) {
   const entries = Object.entries(asRecord(record));
+  const normalizeKey = (value) => value.trim().toLowerCase().replace(/[-_]+/gu, ' ');
   const match = entries.find(([key]) =>
-    candidates.some((candidate) => key.trim().toLowerCase() === candidate.toLowerCase()),
+    candidates.some((candidate) => normalizeKey(key) === normalizeKey(candidate)),
   );
   return match?.[1];
 }

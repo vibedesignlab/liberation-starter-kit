@@ -15,5 +15,10 @@ Hard requirements:
 - produce exactly eight fixed React sections and two registered anchor images;
 - canonical output is `outputs/extended-brand-anatomy.json`, `asset-registry.json`, and `stage-review.json`;
 - final delivery runs `pnpm finalize-brand-report -- <package>`;
+- the finalizer is the only validation command; do not run standalone validators or a post-pass audit;
 - no HTML report or brand-specific report markup is created;
+- color swatches and linked typography hierarchy are documentation-only and never alter starter-kit theme tokens;
+- verbal direction follows the fixed purpose/essence-to-message/value-to-activation hierarchy;
+- collect missing direction decisions in one compact prompt and ask one follow-up only for material conflicts;
+- in a routed pipeline, use the fixed worker specs and keep external anchor calls serial until image parallelism is enabled;
 - stop for user review before Stage 3.

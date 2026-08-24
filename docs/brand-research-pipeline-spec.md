@@ -1,7 +1,7 @@
 # Brand Research Pipeline Specification
 
 Status: normative
-Version: 2.0.0
+Version: 2.1.0
 Applies to: `research-brand-anatomy`, `build-brand-from-anatomy`, `build-landing-materials`, and `reconstruct-brand-system`
 
 ## 1. Design objective
@@ -31,6 +31,9 @@ The package JSON owns content. React owns presentation. Generated Storybook stor
 8. Registration is not an optional delivery step. A Stage is deliverable only after `finalize-brand-report` validates, registers, and checks the package.
 9. Generated files under `src/stories/brand-reports/generated/` and copied packages under `public/brand-reports/` are CLI-owned.
 10. Pipeline advancement checks the finalized registration receipt and re-registers the accepted review record with the same report ID before changing Stage state. It does not rerun the Stage validator.
+11. Stage 1 and Stage 2 token sections use the shared color-swatch and typography-hierarchy blocks. Linked research fonts are document-only and never modify the starter-kit theme, global styles, or product tokens.
+12. Stage 1 and Stage 2 verbal sections use one shared five-tier hierarchy: foundation, strategic definition, core verbal platform, expression, and activation/proof. Core values and the audience-facing brand message must appear above USP, headline, and CTA copy.
+13. A routed parallel Stage uses the versioned fixed job plan. The root coordinator alone writes pipeline state and canonical files; workers write only their assigned `.work/<job-id>/` directory and return the fixed result contract.
 
 ## 3. Stage report structures
 
@@ -79,6 +82,22 @@ The React structures preserve the final legacy HTML information architecture whi
 
 Stage 3 boundaries remain canonical data and render inside `product-assets-and-map`; they do not create an unapproved seventh section.
 
+### Stage 1–2 token-guide contract
+
+- Color records render as swatches with a literal value, color layer, role, scope or source lineage, and observed/directional status. A missing exact Stage 1 value remains an explicit gap; it is never invented.
+- Typography records render in one fixed Display, H1, H2, H3, Body, Label, Caption comparison. Exact source values remain labeled `observed`; fixed reader scale used only to reveal hierarchy remains labeled `documentation-preview`.
+- A verified http(s) stylesheet or font-file URL remains visible as provenance and may be loaded only for the specimen text. Access or licensing failure renders `webfont_gap`.
+- Both canonical token sections set `documentation_only: true`. Adapters and components must not write these values into MUI theme configuration, global `body` styles, CSS variables, or starter-kit design tokens.
+
+### Stage 1–2 verbal hierarchy contract
+
+- Tier 1 `Brand foundation`: brand purpose and brand essence.
+- Tier 2 `Strategic definition`: positioning and brand promise.
+- Tier 3 `Core verbal platform`: named core brand values and one audience-facing brand message. This message is visually emphasized and must not be silently replaced by a campaign line, product USP, or CTA.
+- Tier 4 `Expression system`: voice, vocabulary, and sentence behavior.
+- Tier 5 `Activation and proof`: message architecture, narrative route, reasons to believe, family/product USP, headline/support direction, and CTA.
+- Stage 1 synthesizes these levels only from evidence already collected and allows explicit `gap` records; it does not extend the ten-minute research window. Stage 2 records target purpose and essence directly and reuses positioning and promise from its positioning section.
+
 ## 4. Ten-minute Stage 1 contract
 
 The default research mode is `rapid`. It preserves the complete Stage 1 report structure while limiting evidence volume.
@@ -123,6 +142,8 @@ The command must:
 
 The command is idempotent for identical canonical inputs. It validates the current Stage once and writes only one operational source-package file, `registration-receipt.json`, containing the locked report ID, registered package SHA, review status, and finalization time.
 
+The finalizer is the sole validation entrypoint for delivery. Agents must not run a Stage validator separately as a preflight, repeat it after finalization, or follow a pass with manual rereading, evidence recounting, digest comparison, or an independent audit. Successful internal command output is collapsed into one `FINALIZED` line containing Stage, report ID, validation time, registration time, drift-check time, total time, and package path. On failure, the relevant command output is exposed; only a canonical data or provenance change authorizes another full finalization.
+
 User acceptance uses the internal registration-only path. It checks the existing receipt and registered package, updates the review checkpoint, and re-registers that review with the locked ID without invoking a Stage validator again. Full finalization runs again only after canonical JSON, provenance, or image data changes.
 
 Generated registration can be removed without hand-editing registry or story files:
@@ -150,7 +171,25 @@ active
 - Acceptance never reruns the current or upstream Stage validators.
 - Registration failure leaves the current Stage active and prevents transition.
 
-## 7. Acceptance tests
+## 7. Routed parallel execution
+
+`parallel_single_brand` is a bounded Stage-internal workflow, not permission to cross a review gate. After the source, direction, or shot-plan lock, the root creates the fixed Stage jobs with `plan_stage_jobs.py`, dispatches independent specs, records lifecycle events with `update_job.py`, waits at the barrier, and writes the canonical model once.
+
+Every completed job must provide `.work/<job-id>/result.json` with matching Stage and job identity, `status: completed`, and `lineage`, `unresolved_gaps`, and `files` arrays. Declared files must exist inside that job directory. Missing plans, missing or shared outputs, path escapes, invalid status transitions, and all-skipped plans without an explicit serial fallback block acceptance.
+
+Pipeline-state writes use a lock and atomic replacement as defense in depth. Operationally, workers still never write state or call routing, validation, finalization, or registration commands; the root processes their events sequentially.
+
+The fixed waves are:
+
+- Stage 1: three research jobs for strategy/verbal/identity, visual corpus, and product-native language under the same ten-minute deadline;
+- Stage 2: three direction shards, then product-hero and brand-mood anchor jobs;
+- Stage 3: landing copy/map plus at most two disjoint product-render lanes.
+
+External image concurrency defaults to `pilot_pending`. Text and research jobs may run concurrently, but Stage 2 and Stage 3 external image calls remain serial until a controlled provider pilot confirms real concurrency, acceptable cost and rate-limit behavior, and visual consistency. Enabled image concurrency remains capped at two workers.
+
+The Stage 1 live pilot is promoted only when stage start to pending registration improves by at least 20%, no job result or state update is lost, and first-pass finalization and revision performance do not regress. `summarize_parallel_run.py` reports job and wave timings without mutating the package or adding a validation pass.
+
+## 8. Acceptance tests
 
 A pipeline implementation conforms only when all of the following pass:
 
@@ -160,10 +199,15 @@ A pipeline implementation conforms only when all of the following pass:
 - registration is idempotent and `--check` detects drift;
 - the router cannot accept a Stage whose Storybook registration is missing or stale, and restores the original review when finalization fails;
 - acceptance succeeds even when the Stage validator is unavailable after a valid pending finalization, proving that the router does not revalidate;
+- finalization emits one compact timing summary and suppresses successful validator and registrar chatter while preserving failure diagnostics;
 - the full fixture route proves pending registration, accepted re-registration, Stage 1-to-2 and Stage 2-to-3 input wiring, and Stage 3 completion;
 - a rapid Stage 1 package records an elapsed duration of ten minutes or less;
 - lint and the non-browser contract checks pass;
 - the Storybook template story exposes all three fixed Stage formats.
+- Stage 1 and Stage 2 normalize both token-guide blocks, preserve webfont provenance, and expose the complete seven-role typography hierarchy without changing theme tokens.
+- Stage 1 and Stage 2 normalize the same five-tier verbal hierarchy and visibly preserve core values and brand message above activation copy.
+- the fixture route uses `parallel_single_brand`, creates the fixed Stage jobs, rejects missing and incomplete results, preserves concurrent state updates, and reaches each merge barrier;
+- delayed fake workers prove an independent wave completes faster in parallel than the same workers run serially, without calling an external image API;
 
 The required non-browser CI baseline is:
 

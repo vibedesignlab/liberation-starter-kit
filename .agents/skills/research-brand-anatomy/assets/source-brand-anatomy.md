@@ -60,6 +60,22 @@
 
 ### Verbal exceptions and proprietary language
 
+### Verbal brand hierarchy
+
+> Synthesize only evidence already collected in strategy and verbal sections. Use `gap` when a level is not explicitly supported; do not extend research to fill it.
+
+| Tier | Element | Name | Statement | Epistemic status (`observed` / `inferred` / `gap`) | Evidence and scope |
+|---|---|---|---|---|---|
+| Foundation | Brand purpose | | | | |
+| Foundation | Brand essence | | | | |
+| Strategy | Positioning | | | | |
+| Strategy | Brand promise | | | | |
+| Core verbal platform | Core brand value | | | | |
+| Core verbal platform | Core brand value | | | | |
+| Core verbal platform | Brand message | | | | |
+| Expression | Voice principles | | | | |
+| Activation | Proof and activation | | | | |
+
 ## 5. Identity and channel-token anatomy
 
 ### Mark behavior
@@ -238,11 +254,17 @@
 
 ### Typography hierarchy
 
-#### Observed reference values
+#### Observed typography specimens
 
-| Observed value | Source role | Channel / market / date | Evidence and scope |
-|---|---|---|---|
-| | | | |
+| Information role | Family | Size | Weight | Line height | Letter spacing | Script | Specimen | Channel / market / date | Evidence and scope |
+|---|---|---|---|---|---|---|---|---|---|
+| Display | | | | | | | | | |
+| H1 | | | | | | | | | |
+| H2 | | | | | | | | | |
+| H3 | | | | | | | | | |
+| Body | | | | | | | | | |
+| Label | | | | | | | | | |
+| Caption | | | | | | | | | |
 
 #### Verified webfont artifacts
 
@@ -250,7 +272,7 @@
 |---|---|---|---|---|---|
 | | | | | | |
 
-The Storybook report must render a typography-specimen matrix with one visibly rendered row for display, title, lead, body, label, caption, and every materially different localized script, or show a visible `webfont-gap`. Each row records role, family, size, weight, line height, and script. Font URLs remain provenance, not the specimen itself.
+Set `documentation_only: true`. The Storybook report must render a typography-specimen matrix with visibly distinct rows for Display, H1, H2, H3, Body, Label, Caption, and every materially different localized script, or show a visible `webfont-gap`. Each observed row records role, family, size, weight, line height, letter spacing, script, and specimen. When an exact source scale is unavailable, the fixed reader may supply a clearly labeled `documentation-preview` scale; it is not a source claim or design token. Webfont links are research provenance loaded only inside the report specimen and must never modify the starter-kit theme or typography tokens.
 
 | Information role | Hierarchy relationship | Invariant | Variable by channel / locale | Evidence and limits |
 |---|---|---|---|---|

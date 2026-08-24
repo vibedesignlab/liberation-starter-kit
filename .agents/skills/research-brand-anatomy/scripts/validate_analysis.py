@@ -407,6 +407,41 @@ def main() -> int:
             ):
                 if key not in layers:
                     errors.append(f"source JSON missing analysis layer {key}")
+            if schema_version.startswith("1.2"):
+                verbal_model = model.get("verbal_branding") if isinstance(model.get("verbal_branding"), dict) else {}
+                verbal_fields = (
+                    "brand_purpose", "brand_essence", "positioning", "brand_promise",
+                    "brand_message", "voice_principles", "activation_principles",
+                )
+                allowed_statuses = {"observed", "inferred", "gap"}
+                for key in verbal_fields:
+                    record = verbal_model.get(key) if isinstance(verbal_model.get(key), dict) else {}
+                    if not record:
+                        errors.append(f"source JSON verbal_branding missing {key}")
+                        continue
+                    if not nonempty(record.get("statement")) or not nonempty(record.get("evidence_and_scope")):
+                        errors.append(f"source JSON verbal_branding {key} needs statement and evidence_and_scope")
+                    status = str(record.get("epistemic_status", "")).lower()
+                    if status not in allowed_statuses:
+                        errors.append(f"source JSON verbal_branding {key} has invalid epistemic_status")
+                    if status != "gap" and not EV_RE.search(str(record.get("evidence_and_scope", ""))):
+                        errors.append(f"source JSON verbal_branding {key} needs an evidence ID")
+                core_values = verbal_model.get("core_values") if isinstance(verbal_model.get("core_values"), list) else []
+                if not core_values:
+                    errors.append("source JSON verbal_branding needs core_values or one explicit gap record")
+                for index, record in enumerate(core_values, start=1):
+                    if not isinstance(record, dict):
+                        errors.append(f"source JSON core value {index} is not an object")
+                        continue
+                    status = str(record.get("epistemic_status", "")).lower()
+                    if not nonempty(record.get("statement")) or not nonempty(record.get("evidence_and_scope")):
+                        errors.append(f"source JSON core value {index} needs statement and evidence_and_scope")
+                    if status not in allowed_statuses:
+                        errors.append(f"source JSON core value {index} has invalid epistemic_status")
+                    if status != "gap" and not nonempty(record.get("name")):
+                        errors.append(f"source JSON core value {index} needs a name")
+                    if status != "gap" and not EV_RE.search(str(record.get("evidence_and_scope", ""))):
+                        errors.append(f"source JSON core value {index} needs an evidence ID")
             system = model.get("design_system") if isinstance(model.get("design_system"), dict) else {}
             for key in ("brand_color_scheme", "typography_hierarchy", "spacing_strategy", "layout_strategy"):
                 if key not in system:
@@ -419,6 +454,42 @@ def main() -> int:
                     ):
                         if field not in area:
                             errors.append(f"source JSON design-system area {key} missing {field}")
+            if schema_version.startswith("1.2"):
+                color_model = system.get("brand_color_scheme") if isinstance(system.get("brand_color_scheme"), dict) else {}
+                color_tokens = color_model.get("color_tokens") if isinstance(color_model.get("color_tokens"), list) else []
+                if not color_tokens and not nonempty(color_model.get("color_value_gap")):
+                    errors.append("source JSON color guide needs observed color_tokens or an explicit color_value_gap")
+                for index, token in enumerate(color_tokens, start=1):
+                    if not isinstance(token, dict):
+                        errors.append(f"source JSON color token {index} is not an object")
+                        continue
+                    if not nonempty(token.get("color_layer")) or not nonempty(token.get("role")):
+                        errors.append(f"source JSON color token {index} needs color_layer and role")
+                    value = str(token.get("value", "")).strip()
+                    if not re.match(r"^(?:#[0-9a-f]{3,8}|rgba?\(|hsla?\(|(?:ok)?lch\(|lab\(|color\()", value, re.IGNORECASE):
+                        errors.append(f"source JSON color token {index} has no renderable color value")
+
+                type_model = system.get("typography_hierarchy") if isinstance(system.get("typography_hierarchy"), dict) else {}
+                if type_model.get("documentation_only") is not True:
+                    errors.append("source JSON typography hierarchy must set documentation_only true")
+                webfonts = type_model.get("documentation_webfonts") if isinstance(type_model.get("documentation_webfonts"), list) else []
+                if not webfonts and not nonempty(type_model.get("webfont_gap")):
+                    errors.append("source JSON typography hierarchy needs documentation_webfonts or an explicit webfont_gap")
+                for index, font in enumerate(webfonts, start=1):
+                    if not isinstance(font, dict):
+                        errors.append(f"source JSON webfont {index} is not an object")
+                        continue
+                    if not nonempty(font.get("family")):
+                        errors.append(f"source JSON webfont {index} has blank family")
+                    source_url = str(font.get("source_url", "")).strip()
+                    if not re.match(r"^https?://", source_url, re.IGNORECASE):
+                        errors.append(f"source JSON webfont {index} has no http(s) source_url")
+                specimens = type_model.get("specimens") if isinstance(type_model.get("specimens"), list) else []
+                if webfonts and not specimens:
+                    errors.append("source JSON verified webfonts need at least one observed typography specimen")
+                for index, specimen in enumerate(specimens, start=1):
+                    if not isinstance(specimen, dict) or not nonempty(specimen.get("role")) or not nonempty(specimen.get("family")):
+                        errors.append(f"source JSON typography specimen {index} needs role and family")
             min_rules = scalar(brief, "grammar_rules", 4)
             if len(model.get("grammar_rules", [])) < min_rules:
                 errors.append(f"source JSON contains fewer than {min_rules} grammar rules")

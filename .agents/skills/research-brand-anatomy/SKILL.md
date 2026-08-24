@@ -13,6 +13,8 @@ Produce one evidence-backed source-brand model, finalize it in Storybook, and st
 - The JSON is canonical. Storybook is the only human-readable report surface.
 - Never create or preserve an `outputs/*.html` report, brand-specific report CSS, or report screenshot.
 - Record only `Observed` and `Inferred`; never add a target brand, transfer, fictional name, or target token.
+- Feed the fixed color-swatch and typography-hierarchy blocks with scoped observed values. Remote fonts are report-only provenance (`documentation_only: true`) and must never modify starter-kit theme tokens; use an explicit gap when loading is unavailable.
+- Synthesize the fixed verbal hierarchy from evidence already collected: purpose, essence, positioning, promise, core values, brand message, voice, and activation/proof. Use explicit gaps instead of extending the rapid research window.
 - Never use Playwright, Chrome MCP, or browser automation unless the user explicitly requests it.
 
 ## Initialize and start the timer
@@ -53,6 +55,8 @@ Expanded mode requires the user's explicit request in `expanded_depth_rationale`
 
 Fill `research-brief.yaml`. Use the current global masterbrand when scope is clear. Ask at most one question only when entity, era, or portfolio scope would materially change the result.
 
+For a routed pipeline, the root now runs `plan_stage_jobs.py` and dispatches the three generated Stage 1 research specs concurrently. Every lane receives the same Stage deadline. Workers write only `.work/<job-id>/result.json`; the root records job state sequentially, stops all searching at minute 6, deduplicates URLs and evidence, and writes the canonical anatomy. Do not add a second research wave merely because workers are available.
+
 ### Minute 1–6 — Evidence
 
 Lead with current first-party evidence. Capture four structural sources and eight representative local visuals across at least four applicable layers. Preserve source URL, capture date, credit, rights note, local path, and hash. Stop collecting when a rule is represented; repeated examples do not extend the run.
@@ -84,8 +88,10 @@ pnpm finalize-brand-report -- <analysis-directory>
 
 `finalize-brand-report` runs Stage validation, enforces the exact React section contract, registers JSON/review/assets, generates the CSF story, and checks registration drift. Do not run a separate renderer or hand-edit generated Storybook files.
 
+This finalizer is the only validation entrypoint. Never run `validate_analysis.py` separately before or after it. If finalization passes, do not manually reread the package, recount evidence, recompute digests, or run an extra audit. If it fails, change only the reported canonical artifact or provenance issue and rerun the finalizer after that change.
+
 ## Delivery checkpoint
 
-Set `current_stage: SOURCE_REVIEW_REQUIRED`. Deliver the Storybook story path and canonical JSON, show the single adjustment prompt from `stage-review.json`, and stop. Record `accepted` or `revision_requested`; deterministic validation is not approval.
+Set `current_stage: SOURCE_REVIEW_REQUIRED`. Report one compact status line — `Stage 1 finalization PASS — canonical data, local evidence, fixed React report, and Storybook registration match; review pending.` — then provide the Storybook story path, canonical JSON path, and the single adjustment prompt from `stage-review.json`. Do not enumerate internal validator categories unless the user asks. Record `accepted` or `revision_requested`; deterministic validation is not approval.
 
 When the package is routed and the user responds, use the router's `advance_pipeline.py`. A revision remains in Stage 1. Acceptance re-registers the accepted review before Stage 2 begins.

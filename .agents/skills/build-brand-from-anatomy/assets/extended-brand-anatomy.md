@@ -46,6 +46,9 @@
 
 ## 4. Verbal branding and copy hierarchy
 
+- Brand purpose:
+- Brand essence:
+- Positioning and promise (reuse section 2; do not rewrite):
 - Brand message:
 - Brand values (2–3):
 - Family USP:
@@ -90,10 +93,38 @@
 
 ## 8. Landing-page design-token direction
 
+`documentation_only: true` — the values below feed the fixed Storybook guide and do not modify starter-kit theme tokens.
+
+### Color guide
+
+| Name | Value | Color layer | Role | Relationship (`keep` / `tune` / `new`) | Source basis | Target direction | Landing use | Status |
+|---|---|---|---|---|---|---|---|---|
+| | | Identity | | | | | | directional |
+
+### Typography sources
+
+| Source ID | Family | Source type | Stylesheet or font URL | Weight / style | License boundary | Status |
+|---|---|---|---|---|---|---|
+| | | stylesheet | | | | verified |
+
+Use an explicit `webfont_gap` instead of an inaccessible or unlicensed source.
+
+### Typography hierarchy
+
+| Role | Font family | Font source ID | Font size | Font weight | Line height | Letter spacing | Specimen | Relationship | Source basis | Target direction | Landing use | Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Display | | | | | | | | | | | | directional |
+| H1 | | | | | | | | | | | | directional |
+| H2 | | | | | | | | | | | | directional |
+| H3 | | | | | | | | | | | | directional |
+| Body | | | | | | | | | | | | directional |
+| Label | | | | | | | | | | | | directional |
+| Caption | | | | | | | | | | | | directional |
+
+### Spacing, layout, shape, and motion
+
 | Token area | Role | Relationship (`keep` / `tune` / `new`) | Source basis | Target direction | Landing use | Status |
 |---|---|---|---|---|---|---|
-| Color | | | | | | directional |
-| Typography | | | | | | directional |
 | Spacing | | | | | | directional |
 | Layout | | | | | | directional |
 | Shape / radius / border | | | | | | directional |

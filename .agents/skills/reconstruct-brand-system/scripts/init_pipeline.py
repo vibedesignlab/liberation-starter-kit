@@ -63,6 +63,11 @@ def main() -> int:
     parser.add_argument("--stage-2-package")
     parser.add_argument("--stage-3-package")
     parser.add_argument("--no-auto-chain", action="store_true")
+    parser.add_argument(
+        "--enable-image-parallelism",
+        action="store_true",
+        help="Allow at most two concurrent external image workers after a provider pilot passes.",
+    )
     args = parser.parse_args()
 
     pipeline = Path(args.pipeline_directory).expanduser().resolve()
@@ -93,6 +98,9 @@ def main() -> int:
     state["auto_chain"] = not args.no_auto_chain
     state["created_at"] = timestamp
     state["updated_at"] = timestamp
+    image_parallelism = state["execution"].get("image_parallelism")
+    if isinstance(image_parallelism, dict) and args.enable_image_parallelism:
+        image_parallelism["mode"] = "enabled"
     state["stages"]["stage_1"]["started_at"] = timestamp
     for stage_id, package in package_paths.items():
         state["stages"][stage_id]["package_path"] = str(package)
@@ -105,6 +113,7 @@ def main() -> int:
     print(f"CURRENT_STAGE={state['current_stage']}")
     print(f"CURRENT_SKILL={state['stages'][state['current_stage']]['skill']}")
     print(f"CURRENT_PACKAGE={state['stages'][state['current_stage']]['package_path']}")
+    print(f"IMAGE_PARALLELISM={state['execution']['image_parallelism']['mode']}")
     print("CHAIN_ACTION=CALL_SKILL")
     return 0
 
