@@ -13,3 +13,4 @@ export { default as UseMomentCard } from './UseMomentCard';
 export { default as VesselPhaseBlock } from './VesselPhaseBlock';
 export { default as FactBadge } from './FactBadge';
 export { default as NewsletterCTA } from './NewsletterCTA';
+export { default as TableFooter } from './TableFooter';

@@ -3,6 +3,11 @@
  * The public report registry owns the immutable, content-hashed delivery files.
  */
 
+import recipeThymeHoney from '../../assets/video/recipes/mora-recipe-thyme-honey.mp4';
+import recipeBuckwheat from '../../assets/video/recipes/mora-recipe-roasted-buckwheat.mp4';
+import recipeCitrusPeel from '../../assets/video/recipes/mora-recipe-citrus-peel.mp4';
+import recipeBlackSesame from '../../assets/video/recipes/mora-recipe-black-sesame.mp4';
+
 const A = '/brand-reports/mora-infused-greek-yogurt-landing-materials/assets';
 
 const assets = {
@@ -25,6 +30,12 @@ const assets = {
   etchBlackSesame: `${A}/st3-r6-etch-black-sesame-square-83fb5b67508b8b27feaf35d40d3fe7b967672ec422f414f5cc14faa5598ce80b.png`,
   etchOliveOil: `${A}/st3-r6-etch-olive-oil-sea-salt-square-3e5a48bd77e30be4eb13d2c391eec4342b170d0970e696704f27d6382f43e3dc.png`,
 
+  // Recipe motion folios — restrained seamless loops
+  recipeThymeHoney,
+  recipeBuckwheat,
+  recipeCitrusPeel,
+  recipeBlackSesame,
+
   // Material Method
   methodProcessTable: `${A}/st3-r5-05-material-method-left-safe-3x2-ec12bd1c9cf14ab8b3c65451c00a0c32c3335fb86d934bb85eedbbecce7ba978.png`,
   methodIngredientAtlas: `${A}/st3-r5-05-material-method-left-safe-3x2-ec12bd1c9cf14ab8b3c65451c00a0c32c3335fb86d934bb85eedbbecce7ba978.png`,
@@ -37,6 +48,13 @@ const assets = {
   vesselOpenService: `${A}/st3-r5-09-vessel-open-bottom-left-3x2-a6db33619b02b20cb495848a68e61e99c9ed3a8c1d5dd04b6da242011956b46e.png`,
   firstSpoonMacro: `${A}/st3-r5-10-vessel-taste-bottom-left-3x2-43194c49a1d7a39d0dd6323c3fba533f69416b688eb6cd8ded6321beba4ad636.png`,
   vesselClosureProof: `${A}/st3-r5-07-vessel-see-bottom-left-3x2-152d09840ca13ccdea5eab6f64467b01f744448f5d7aa64ca5862a20aded4d9e.png`,
+
+  // R9 vessel-to-table narrative — populated Batch Record and lived-in use
+  vesselStorySee: `${A}/st3-r9-see-final-check-workshop-3x2-9ec814db99e052d41e2871e163dc2dc332054c040491d39839515b9f54fafd3a.png`,
+  vesselStoryRead: `${A}/st3-r9-read-household-batch-record-3x2-f62218f36981b91bf0dceeae3fc4f47f1e952d3624be27d7c9e7e1190a036fa8.png`,
+  vesselStoryOpen: `${A}/st3-r9-open-food-seal-3x2-b1bd933661e7402a6ceef572859d82e9ebb30fcb3f028a9ad228f79ca6d3daad.png`,
+  vesselStoryTaste: `${A}/st3-r9-taste-first-plate-3x2-0c281434125ee56260346d116dc71432018f88a6c64c536c95a2e6194341045d.png`,
+  tableStory: `${A}/st3-r9-table-after-use-3x2-c53e2a2827d1e931473fcf1312c6900b8ee96503139c1ea59b14889b653d75f5.png`,
 
   // Products — glass front R2
   productThymeHoney: `${A}/st3-r5-product-thyme-honey-b62b8575d48cb3833b1b30fb8c8e035adbf99a012a335583bc937ca9853a39d5.png`,

@@ -20,7 +20,7 @@ export default function ProductCard({ product }) {
           borderRadius: 0,
         }}
       />
-      <Typography sx={{ fontSize: '11px', mt: '4px', mb: '4px', px: '12px' }}>
+      <Typography variant="overline" sx={{ mt: 0.75, mb: 0.75, px: { xs: 1.5, md: 2 }, display: 'block' }}>
         {product.name}
       </Typography>
     </Box>

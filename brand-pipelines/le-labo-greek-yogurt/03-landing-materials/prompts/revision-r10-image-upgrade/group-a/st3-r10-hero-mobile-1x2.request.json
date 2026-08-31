@@ -1,0 +1,43 @@
+{
+  "asset_id": "ST3-R10-HERO-MOBILE-1X2",
+  "model": "openai/gpt-image-2/edit",
+  "quality": "high",
+  "output_format": "png",
+  "background": "opaque",
+  "requested_size": { "width": 1344, "height": 2688 },
+  "prompt_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/prompts/revision-r10-image-upgrade/group-a/st3-r10-hero-mobile-1x2.md",
+  "reference_inputs": [
+    {
+      "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/references/identity/mora-female-maker-identity-master-r10.png",
+      "role": "identity, skin, hair and workwear authority only; not an edit target or composition template"
+    },
+    {
+      "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/references/environment/st3-r10-ref-environment-master-front.png",
+      "role": "workshop, material, scale and light authority only; not an edit target or composition template"
+    }
+  ],
+  "expected_output": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/group-a/st3-r10-hero-mobile-1x2.png",
+  "result": {
+    "provider_request_id": "01a0589f-17bc-7e83-a81d-30734e0ece19",
+    "generated_at_utc": "2026-08-31T16:27:01Z",
+    "returned_size": { "width": 1344, "height": 2688 },
+    "file_size_bytes": 4714887,
+    "sha256": "5199d6f9f55ebabe08d8eaa258c66098f6382eacd7b7648d636dbb7761685b90",
+    "output_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/group-a/st3-r10-hero-mobile-1x2.png",
+    "retry_count": 0,
+    "inspection": {
+      "method": "view_image original-size",
+      "status": "pass",
+      "checks": {
+        "native_portrait_composition": "pass",
+        "top_left_logo_safe": "pass",
+        "central_headline_corridor": "pass",
+        "maker_and_action_right": "pass",
+        "complete_credible_hands": "pass",
+        "dense_yogurt_and_translucent_whey": "pass",
+        "clean_digital_skin_hair_finish": "pass"
+      },
+      "visible_risk": "The quiet headline corridor is strongest across the left and center; the maker necessarily occupies its far-right edge."
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "asset_id": "mora-home-curator-identity-master-r10",
+  "role": "read_open_household_curator_identity_authority_only",
+  "provider": "fal.ai",
+  "model": "openai/gpt-image-2",
+  "operation": "text_to_image",
+  "request_id": "01a0589b-8992-7b30-bfe5-38cf2fa70f34",
+  "status": "COMPLETED",
+  "request": {
+    "quality": "high",
+    "image_size": {
+      "width": 2048,
+      "height": 2048
+    },
+    "background": "opaque",
+    "num_images": 1,
+    "output_format": "png"
+  },
+  "result": {
+    "remote_url": "https://v3b.fal.media/files/b/0aa890e3/SaxoakwAvphexFQsYI7Yo_73xF5TVb.png",
+    "content_type": "image/png",
+    "actual_width": 2048,
+    "actual_height": 2048,
+    "color_format": "8-bit/color RGB",
+    "interlace": "none",
+    "file_size_bytes": 6075815,
+    "sha256": "7615a382b9877d521a712fa69f2dbe4f72ceb1175811dda029c259d1642b951d",
+    "completed_at": "2026-08-31T16:18:55.146Z",
+    "retry_count": 0
+  },
+  "prompt_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/prompts/revision-r10-image-upgrade/references/home-curator/mora-home-curator-identity-master-r10.md",
+  "asset_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/references/home-curator/mora-home-curator-identity-master-r10.png",
+  "inspection": {
+    "method": "view_image original detail plus sips, file and sha256 metadata",
+    "one_korean_woman_late_30s_to_early_40s": "pass",
+    "strict_front_chest_up_anatomy": "pass",
+    "distinct_from_older_workshop_maker": "pass",
+    "natural_unretouched_skin_no_wax": "pass",
+    "separate_hair_strands_no_ribbon_hair": "pass",
+    "plain_charcoal_shirt_no_hands_props_text_logo": "pass",
+    "neutral_warm_grey_no_grain_scan_softness_hdr_glamour": "pass",
+    "targeted_retry_used": false,
+    "risk": "Use as identity, age, skin, hair and clothing authority only; downstream scenes must not copy the centered portrait composition, blank background or direct camera gaze."
+  }
+}

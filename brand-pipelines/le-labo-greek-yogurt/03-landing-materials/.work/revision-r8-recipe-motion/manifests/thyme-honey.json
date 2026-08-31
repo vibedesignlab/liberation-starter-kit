@@ -1,0 +1,36 @@
+{
+  "model": "fal-ai/kling-video/v3/pro/image-to-video",
+  "submissions": [
+    {
+      "id": "mora-r8-thyme-honey-loop",
+      "model": "fal-ai/kling-video/v3/pro/image-to-video",
+      "request_id": "01a0583f-a5ec-79c0-ad16-c564c591a3da",
+      "status": "COMPLETED",
+      "output": "src/assets/video/recipes/mora-recipe-thyme-honey.mp4",
+      "downloaded": true,
+      "video_url": "https://v3b.fal.media/files/b/0aa88ea0/YaRgDlwYHPRSSfxqBq2DK_output.mp4",
+      "start": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r6-feedback/etchings/core/st3-r6-etch-thyme-honey-square.png",
+      "end": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r6-feedback/etchings/core/st3-r6-etch-thyme-honey-square.png",
+      "start_image_url": "https://v3b.fal.media/files/b/0aa88e87/9P398WnJ1Jh-xHDd6iXn0_st3-r6-etch-thyme-honey-square.png",
+      "end_image_url": "https://v3b.fal.media/files/b/0aa88e87/UPRY4EwiZvUziZEkV733E_st3-r6-etch-thyme-honey-square.png",
+      "profile": "kling",
+      "input": {
+        "prompt": "A seamless restrained motion loop inside the exact existing square culinary etching. Fully locked camera and fully locked composition. Preserve every object, the warm paper field, metal geometry, scale, shadows, engraved pencil linework and sparse color exactly. Only one recipe action occurs: one small viscous honey drop slowly lengthens beneath the existing strainer, falls into the pot, and the existing yogurt fold in the bowl settles by only a few millimetres. All utensils, syringe, thyme sprig and vessels remain completely still. The final frame returns exactly to the supplied original frame.",
+        "duration": "3",
+        "start_image_url": "https://v3b.fal.media/files/b/0aa88e87/9P398WnJ1Jh-xHDd6iXn0_st3-r6-etch-thyme-honey-square.png",
+        "end_image_url": "https://v3b.fal.media/files/b/0aa88e87/UPRY4EwiZvUziZEkV733E_st3-r6-etch-thyme-honey-square.png",
+        "negative_prompt": "camera movement, zoom, pan, tilt, reframing, object drift, morphing vessel, moving utensil, moving thyme, hand, splash, pouring stream, stirring, added object, removed object, new text, logo, watermark, CGI, photoreal conversion, loss of engraved pencil linework",
+        "generate_audio": false
+      },
+      "result_data": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0aa88ea0/YaRgDlwYHPRSSfxqBq2DK_output.mp4",
+          "content_type": "video/mp4",
+          "file_name": "output.mp4",
+          "file_size": 5683228
+        }
+      },
+      "submitted_at": "2026-08-31T14:40:15.012Z"
+    }
+  ]
+}

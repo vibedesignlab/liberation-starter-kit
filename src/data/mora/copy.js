@@ -62,9 +62,9 @@ const copy = {
       imageAlt: 'Six ingredient preparations and one final fold',
     },
     evening: {
-      headline: 'A table for one cup.',
-      body: 'One jar, one spoon, and nothing staged beyond use.',
-      imageAlt: 'MORA yogurt and spoon on a quiet evening table',
+      headline: 'The work continues at the table.',
+      body: 'The maker decides what may leave. Someone else decides how it belongs.',
+      imageAlt: 'A lived-in shared table after serving MORA Thyme Honey yogurt with rye and roasted pear',
       productName: 'MORA Craft Greek Yogurt',
     },
   },
@@ -131,10 +131,30 @@ const copy = {
   ],
 
   vesselPhases: [
-    { phase: 'SEE', label: 'See', desc: 'See the actual food, fill level and partial Batch Record together.', imageAlt: 'Sealed MORA jar showing food and partial Batch Record' },
-    { phase: 'READ', label: 'Read', desc: 'Separate fixed food facts from the authentic maker-check field.', imageAlt: 'Partial Batch Record with fixed facts and blank maker-check field' },
-    { phase: 'OPEN', label: 'Open', desc: 'Remove the food seal and inspect the wide, clean rim.', imageAlt: 'Hand removing the food seal from a wide-mouth MORA jar' },
-    { phase: 'TASTE', label: 'Taste', desc: 'Confirm density and internal trace in the first spoon section.', imageAlt: 'First spoon showing yogurt density and ingredient trace' },
+    {
+      phase: 'SEE',
+      label: 'The Last Check',
+      desc: 'The food, the fold and the person who passed it leave the workshop together.',
+      imageAlt: 'MORA maker completing the final check beside yogurt, whey and a populated Batch Record',
+    },
+    {
+      phase: 'READ',
+      label: 'The Handover',
+      desc: 'Recipe, process and final check are recorded before the cup reaches the table.',
+      imageAlt: 'Household culinary curator reading the populated MORA Thyme Honey Batch Record',
+    },
+    {
+      phase: 'OPEN',
+      label: 'The Pairing',
+      desc: 'The seal breaks on a working counter, beside warm rye and roasted pear.',
+      imageAlt: 'MORA Thyme Honey yogurt opened beside warm rye and roasted pear on a working kitchen counter',
+    },
+    {
+      phase: 'TASTE',
+      label: 'The First Plate',
+      desc: 'Thyme Honey stays inside the yogurt; the first spoon carries the fold into the meal.',
+      imageAlt: 'Thyme Honey yogurt served with rye and roasted pear while the open MORA jar remains nearby',
+    },
   ],
 
   recipeSlides: [
@@ -143,24 +163,28 @@ const copy = {
       number: '01',
       name: 'Thyme Honey',
       headline: 'Honey folded with thyme, not poured on top.',
+      desc: 'Wild thyme steeped into raw honey at low heat. The infused honey is folded once into strained yogurt — no drizzle, no swirl.',
     },
     {
       id: 'roasted-buckwheat',
       number: '02',
       name: 'Roasted Buckwheat',
       headline: 'Toasted grain traced inside, not scattered on the surface.',
+      desc: 'Hulled buckwheat dry-roasted until the kernel darkens. Ground to a coarse meal and folded through, leaving the grain visible in every spoon.',
     },
     {
       id: 'citrus-peel',
       number: '03',
       name: 'Citrus Peel',
       headline: 'Peel threaded through, not tinted across.',
+      desc: 'Hand-peeled zest blanched twice to remove bitterness. Fine threads are folded in so aroma arrives without altering the yogurt body.',
     },
     {
       id: 'black-sesame',
       number: '04',
       name: 'Black Sesame',
       headline: 'Sesame depth meeting yogurt brightness in one fold.',
+      desc: 'Seeds slow-roasted and stone-ground into a dense paste. The dark fold meets the bright yogurt in one pass — no blending, no uniform tone.',
     },
   ],
 

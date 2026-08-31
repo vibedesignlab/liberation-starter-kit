@@ -138,23 +138,23 @@ const typography = {
   h1: {
     fontFamily: headlineFontFamily,
     fontWeight: 700,
-    fontSize: 'clamp(2.5rem, 5vw, 4rem)',   // 40→64px
-    lineHeight: 1.1,                         // Zodiak multi-line 호흡
+    fontSize: 'clamp(1.75rem, calc(0.5rem + 4vw), 4rem)',  // 28→64px (모바일 28px)
+    lineHeight: 1.1,
     letterSpacing: '-0.02em',
     textWrap: 'balance',
   },
   h2: {
     fontFamily: headlineFontFamily,
     fontWeight: 500,
-    fontSize: 'clamp(2.25rem, 4vw, 3rem)',  // 36→48px
-    lineHeight: 1.15,                        // h1보다 여유, 위계 구분
-    letterSpacing: '-0.015em',               // h1보다 살짝 open
+    fontSize: 'clamp(1.375rem, calc(0.25rem + 3.5vw), 3rem)', // 22→48px (모바일 22px)
+    lineHeight: 1.15,
+    letterSpacing: '-0.015em',
     textWrap: 'balance',
   },
   h3: {
     fontFamily: bodyFontFamily,
     fontWeight: 600,
-    fontSize: '1.125rem',    // 18px — 제품명·섹션 소제목
+    fontSize: 'clamp(0.9375rem, calc(0.875rem + 0.3vw), 1.125rem)', // 15→18px
     lineHeight: 1.3,
     letterSpacing: '-0.01em',
   },

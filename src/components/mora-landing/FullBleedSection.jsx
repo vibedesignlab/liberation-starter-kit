@@ -14,15 +14,15 @@ const positionStyles = {
     position: 'sticky',
     bottom: 0,
     alignSelf: 'flex-end',
-    maxWidth: 500,
-    p: '24px',
+    maxWidth: { xs: '85vw', sm: 500 },
+    p: { xs: 2, md: 3 },
   },
   'left-center': {
     position: 'absolute',
     top: '50%',
-    left: { xs: '24px', md: '40px' },
+    left: { xs: '6vw', md: '8vw' },
     transform: 'translateY(-50%)',
-    maxWidth: 600,
+    maxWidth: { xs: '85vw', sm: 'sm' },
   },
   center: {
     position: 'absolute',
@@ -30,17 +30,19 @@ const positionStyles = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     textAlign: 'center',
-    maxWidth: 700,
+    maxWidth: { xs: '90vw', sm: 'sm' },
     width: '100%',
-    px: '24px',
+    px: 3,
   },
 };
 
 export default function FullBleedSection({
   image,
+  mobileImage,
   alt = '',
   aspectRatio = '3 / 2',
   textPosition = 'bottom-left',
+  loading = 'lazy',
   children,
   sx = {},
 }) {
@@ -58,20 +60,30 @@ export default function FullBleedSection({
       }}
     >
       <Box
-        component="img"
-        src={image}
-        alt={alt}
-        loading="lazy"
+        component="picture"
         sx={{
           position: 'absolute',
           inset: 0,
           width: '100%',
           height: '100%',
-          objectFit: 'cover',
-          borderRadius: 0,
           display: 'block',
         }}
-      />
+      >
+        {mobileImage && <source media="(max-width: 899.95px)" srcSet={mobileImage} />}
+        <Box
+          component="img"
+          src={image}
+          alt={alt}
+          loading={loading}
+          sx={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            borderRadius: 0,
+            display: 'block',
+          }}
+        />
+      </Box>
       {children && (
         <Box
           sx={{

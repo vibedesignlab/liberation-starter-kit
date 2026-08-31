@@ -3,45 +3,49 @@ import Typography from '@mui/material/Typography';
 import ProductCard from './ProductCard';
 
 /**
- * Niksen "Shop the Look" → MORA "Shop the Cup".
+ * 2-column grid: scrolling image column + sticky content column.
  *
- * 2-column grid: image (1fr) + content (1fr).
- * Content column: title/body → 2×2 product grid (sticky) → CTA (sticky bottom).
- * `reverse` flips column order.
+ * Props:
+ * @param {Array} scrollImages - 스크롤 열에 쌓을 이미지 배열 [{src, alt, aspectRatio?}] [Optional]
+ * @param {string} mainImage - scrollImages 미사용 시 단일 이미지 폴백 [Optional]
+ * @param {string} mainAlt - mainImage alt 텍스트 [Optional]
+ * @param {Array} products - 2×2 제품 그리드 데이터 [Optional]
+ * @param {string} title - 제목 [Optional]
+ * @param {string} body - 본문 [Optional]
+ * @param {boolean} reverse - 열 순서 반전 [Optional, 기본값: false]
+ *
+ * Example usage:
+ * <StickyProductGrid scrollImages={[{src, alt, aspectRatio: '3 / 2'}]} products={coreProducts} title="Vol. 1" />
  */
 export default function StickyProductGrid({
+  scrollImages,
   mainImage,
   mainAlt = '',
   products = [],
   title = '',
   body = '',
-  cta = '',
-  ctaHref = '#',
   reverse = false,
 }) {
+  const images = scrollImages || (mainImage ? [{ src: mainImage, alt: mainAlt, aspectRatio: '1 / 2' }] : []);
+
   const imageCol = (
-    <Box
-      sx={{
-        position: 'relative',
-        overflow: 'visible',
-        aspectRatio: '1 / 2',  // 이미지 열을 매우 세로로 → sticky 여유 확보
-      }}
-    >
-      <Box
-        component="img"
-        src={mainImage}
-        alt={mainAlt}
-        loading="lazy"
-        sx={{
-          position: 'absolute',
-          inset: 0,
-          width: '100%',
-          height: '100%',
-          objectFit: 'cover',
-          borderRadius: 0,
-          display: 'block',
-        }}
-      />
+    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+      {images.map((img, i) => (
+        <Box
+          key={i}
+          component="img"
+          src={img.src}
+          alt={img.alt || ''}
+          loading="lazy"
+          sx={{
+            width: '100%',
+            aspectRatio: img.aspectRatio || '3 / 4',
+            objectFit: 'cover',
+            borderRadius: 0,
+            display: 'block',
+          }}
+        />
+      ))}
     </Box>
   );
 
@@ -49,7 +53,7 @@ export default function StickyProductGrid({
     <Box sx={{ overflow: 'visible', display: 'flex', flexDirection: 'column' }}>
       {/* Title + body at top */}
       {(title || body) && (
-        <Box sx={{ px: '12px', pt: '10px', pb: '16px' }}>
+        <Box sx={{ px: { xs: 2, md: 3 }, pt: { xs: 2, md: 3 }, pb: { xs: 2.5, md: 3.5 } }}>
           {title && (
             <Typography variant="h2" sx={{ mb: 0.5 }}>
               {title}
@@ -67,7 +71,7 @@ export default function StickyProductGrid({
       <Box
         sx={{
           position: 'sticky',
-          top: '34px',
+          top: { xs: 48, md: 40 },
           display: 'grid',
           gridTemplateColumns: '1fr 1fr',
           gap: '2px',
@@ -79,22 +83,6 @@ export default function StickyProductGrid({
         ))}
       </Box>
 
-      {/* CTA at bottom */}
-      {cta && (
-        <Box sx={{ position: 'sticky', bottom: 0, px: '12px', py: '10px' }}>
-          <Typography
-            component="a"
-            href={ctaHref}
-            sx={{
-              color: 'text.primary',
-              textDecoration: 'none',
-              '&:hover': { textDecoration: 'underline', textUnderlineOffset: '3px' },
-            }}
-          >
-            {cta}
-          </Typography>
-        </Box>
-      )}
     </Box>
   );
 

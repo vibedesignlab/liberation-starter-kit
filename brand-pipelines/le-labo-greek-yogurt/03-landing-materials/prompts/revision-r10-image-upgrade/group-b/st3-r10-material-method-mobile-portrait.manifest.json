@@ -1,0 +1,35 @@
+{
+  "asset_id": "st3-r10-material-method-mobile-portrait",
+  "provider": "fal.ai",
+  "model": "openai/gpt-image-2/edit",
+  "quality": "high",
+  "output_format": "png",
+  "requested_dimensions": { "width": 1344, "height": 2688 },
+  "returned_dimensions": { "width": 1344, "height": 2688 },
+  "prompt_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/prompts/revision-r10-image-upgrade/group-b/st3-r10-material-method-mobile-portrait.md",
+  "asset_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/group-b/st3-r10-material-method-mobile-portrait.png",
+  "references": [
+    { "role": "identity_and_partial_hand_skin_only", "sha256": "33aa45406dcea156e95ab591f7b0874d13c8fd0637af169875f09b5aad4484e4" },
+    { "role": "workshop_material_light_only", "sha256": "bc8d42c492b31533b20de733b341228912610a9a9e68aeb5496b112f8c04ef30" }
+  ],
+  "generation_history": [
+    { "pass": 1, "request_id": "01a0589f-0f8c-7572-a58b-4dbc7cbfb5cf", "sha256": "e4431ebcf2c6b63df3c9cba68fa00d9e7384952560e1208f90736ebf3e339299", "selected": false, "reason": "lower bench edge entered the central copy band and a separate salt dish created a seventh preparation vessel" },
+    { "pass": 2, "request_id": "01a058a5-2688-79c3-a160-ce42129758f8", "sha256": "4c3ee221d6d1597a8781482a7e3d32378fc5264c44b25260084451e783f0894e", "selected": true, "correction": "central copy-band boundary and exact-six grouping only" }
+  ],
+  "selected_file": { "bytes": 5331740, "sha256": "4c3ee221d6d1597a8781482a7e3d32378fc5264c44b25260084451e783f0894e" },
+  "retry_count": 1,
+  "qa": {
+    "exact_dimensions": "pass",
+    "central_y32_y68_copy_safe": "pass",
+    "preparation_evidence_split_above_below": "pass",
+    "exactly_six_preparation_states": "pass",
+    "olive_oil_and_sea_salt_single_state": "pass",
+    "action_outside_copy_band": "pass",
+    "natural_hand_and_material_response": "pass",
+    "no_readable_text_logo_or_pseudotext": "pass",
+    "no_generated_grain_softness_or_hdr": "pass",
+    "risk": "none visible at the requested hard-lock inspection level"
+  },
+  "completed_at_utc": "2026-08-31T16:32:06Z"
+}
+

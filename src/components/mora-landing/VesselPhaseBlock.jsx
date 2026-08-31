@@ -1,12 +1,27 @@
 import Typography from '@mui/material/Typography';
 import FullBleedSection from './FullBleedSection';
 
-/**
- * Vessel Record phase: full-bleed image + sticky bottom phase label.
- */
-export default function VesselPhaseBlock({ phase, label, desc, image, alt = '' }) {
+/** Vessel story phase: full-bleed scene with sticky narrative copy. */
+export default function VesselPhaseBlock({ phase, label, desc, image, mobileImage, alt = '', aspectRatio }) {
   return (
-    <FullBleedSection image={image} alt={alt || [phase, label].filter(Boolean).join(' — ')}>
+    <FullBleedSection
+      image={image}
+      mobileImage={mobileImage}
+      alt={alt || [phase, label].filter(Boolean).join(' — ')}
+      aspectRatio={aspectRatio}
+    >
+      {label && (
+        <Typography
+          variant="overline"
+          sx={{
+            color: 'background.default',
+            opacity: 0.82,
+            letterSpacing: '0.16em',
+          }}
+        >
+          {label}
+        </Typography>
+      )}
       <Typography variant="h1" sx={{ color: 'background.default' }}>
         {phase}
       </Typography>

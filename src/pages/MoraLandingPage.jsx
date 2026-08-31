@@ -1,14 +1,13 @@
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
 import {
   MoraNav,
   FullBleedSection,
-  SplitEditorial,
   StickyProductGrid,
   VesselPhaseBlock,
-  NewsletterCTA,
+  TableFooter,
 } from '../components/mora-landing';
 
 // eslint-disable-next-line no-unused-vars
@@ -50,24 +49,41 @@ function IngredientGrid({ products }) {
       {visibleProducts.map((product) => (
         <Box
           key={`${product.id}-ingredient`}
-          component="img"
-          src={product.ingredient}
-          alt={product.ingredientAlt}
-          loading="lazy"
-          sx={{ width: '100%', aspectRatio: '1 / 1', objectFit: 'cover', display: 'block', borderRadius: 0 }}
-        />
+          sx={{ position: 'relative' }}
+        >
+          <Box
+            component="img"
+            src={product.ingredient}
+            alt={product.ingredientAlt}
+            loading="lazy"
+            sx={{ width: '100%', aspectRatio: '1 / 1', objectFit: 'cover', display: 'block', borderRadius: 0 }}
+          />
+          <Typography
+            variant="caption"
+            sx={{
+              position: 'absolute',
+              bottom: 0,
+              left: 0,
+              px: { xs: 1.5, md: 2 },
+              py: { xs: 1, md: 1.5 },
+              color: 'primary.contrastText',
+              letterSpacing: '0.05em',
+            }}
+          >
+            {product.name}
+          </Typography>
+        </Box>
       ))}
     </Box>
   );
 }
 
 /**
- * RecipeSlideCard - 레시피 가로 스크롤 슬라이드 (Horizontal Parallax)
+ * RecipeSlideCard - 85vw split-layout 레시피 슬라이드
  *
- * 세로 패럴랙스 원리를 가로에 적용:
- * - 이미지: 빠른 속도로 진입 (translateX 배율 1.3x), 퇴장은 트랙과 동일 속도
- * - 텍스트: 이미지보다 더 빠르게 진입 (배율 1.5x), 퇴장은 트랙과 동일 속도
- * - opacity 없음, 순수 위치 차이만으로 깊이감 생성
+ * 왼쪽: horizon-line 그리드 위에 단계적 텍스트 리빌 (number → name → headline → desc)
+ * 오른쪽: 에칭 이미지
+ * 가로 패럴랙스 (translateX only, no opacity)
  *
  * Props:
  * @param {Object} slide - recipeSlides 데이터 항목 [Required]
@@ -76,7 +92,7 @@ function IngredientGrid({ products }) {
  */
 function RecipeSlideCard({ slide, index, total }) {
   const scrollYProgress = useHorizontalScrollProgress();
-
+  const reduceMotion = useReducedMotion();
   const segmentSize = 1 / total;
   const slideCenter = (index + 0.5) * segmentSize;
 
@@ -90,74 +106,206 @@ function RecipeSlideCard({ slide, index, total }) {
     return -(Math.abs(v) ** 0.6);
   });
 
-  const textXRaw = useTransform(
+  const numberXRaw = useTransform(
     scrollYProgress,
     [slideCenter - segmentSize, slideCenter, slideCenter + segmentSize],
+    [280, 0, -50]
+  );
+  const numberX = useTransform(numberXRaw, (v) => {
+    if (v > 0) return v * v / 280;
+    return -(Math.abs(v) ** 0.6);
+  });
+
+  const nameXRaw = useTransform(
+    scrollYProgress,
+    [slideCenter - segmentSize * 0.85, slideCenter, slideCenter + segmentSize],
+    [240, 0, -50]
+  );
+  const nameX = useTransform(nameXRaw, (v) => {
+    if (v > 0) return v * v / 240;
+    return -(Math.abs(v) ** 0.6);
+  });
+
+  const headlineXRaw = useTransform(
+    scrollYProgress,
+    [slideCenter - segmentSize * 0.7, slideCenter, slideCenter + segmentSize],
     [200, 0, -50]
   );
-  const textX = useTransform(textXRaw, (v) => {
+  const headlineX = useTransform(headlineXRaw, (v) => {
     if (v > 0) return v * v / 200;
     return -(Math.abs(v) ** 0.6);
   });
 
+  const descXRaw = useTransform(
+    scrollYProgress,
+    [slideCenter - segmentSize * 0.55, slideCenter, slideCenter + segmentSize],
+    [160, 0, -50]
+  );
+  const descX = useTransform(descXRaw, (v) => {
+    if (v > 0) return v * v / 160;
+    return -(Math.abs(v) ** 0.6);
+  });
+
+  const mediaOpacity = useTransform(
+    scrollYProgress,
+    [0, 0.08],
+    [0, 1]
+  );
+
+  const line1Scale = useTransform(
+    scrollYProgress,
+    [slideCenter - segmentSize * 0.9, slideCenter - segmentSize * 0.6],
+    [0, 1]
+  );
+  const line2Scale = useTransform(
+    scrollYProgress,
+    [slideCenter - segmentSize * 0.7, slideCenter - segmentSize * 0.4],
+    [0, 1]
+  );
+  const line3Scale = useTransform(
+    scrollYProgress,
+    [slideCenter - segmentSize * 0.5, slideCenter - segmentSize * 0.2],
+    [0, 1]
+  );
+
   return (
     <Box
       sx={{
-        width: { xs: '85vw', sm: '60vw', md: '50vw' },
+        width: { xs: '92vw', md: '85vw' },
+        height: '100%',
         flexShrink: 0,
-        position: 'relative',
-        overflow: 'hidden',
+        display: 'flex',
+        flexDirection: { xs: 'column', md: 'row' },
       }}
     >
-      <motion.div style={{ x: imgX }}>
-        <Box
-          component="img"
-          src={slide.etching}
-          alt={`${slide.name} material folio`}
-          loading="lazy"
-          sx={{
-            width: '100%',
-            aspectRatio: '1 / 1',
-            objectFit: 'cover',
-            display: 'block',
-            borderRadius: 0,
-          }}
-        />
-      </motion.div>
-      <motion.div
-        style={{
-          x: textX,
-          position: 'absolute',
-          top: 0,
-          left: 0,
+      {/* Left — description with horizon-line separators */}
+      <Box
+        sx={{
+          width: { xs: '100%', md: '40%' },
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          px: { xs: 3, md: 6 },
+          py: { xs: 2, md: 0 },
+          overflow: 'hidden',
         }}
       >
-        <Box sx={{ pt: { xs: '24px', md: '40px' }, pl: { xs: '20px', md: '32px' }, maxWidth: '80%' }}>
+        <motion.div style={{ x: numberX }}>
+          <Typography
+            variant="h2"
+            sx={{
+              letterSpacing: '0.1em',
+              pb: { xs: 1.5, md: 4 },
+            }}
+          >
+            {slide.number}
+          </Typography>
+        </motion.div>
+
+        <motion.div style={{ scaleX: line1Scale, originX: 1 }}>
+          <Box sx={{ width: '100%', height: '1px', bgcolor: 'text.primary' }} />
+        </motion.div>
+
+        <motion.div style={{ x: nameX }}>
           <Typography
             variant="h1"
-            sx={{ fontSize: 'clamp(2rem, calc(1.5rem + 2.5vw), 4rem)' }}
-          >
-            {slide.number} {slide.name}
-          </Typography>
-          <Typography
             sx={{
-              fontSize: 'clamp(1.125rem, calc(1rem + 0.75vw), 1.75rem)',
-              color: 'text.primary',
-              mt: 2,
-              lineHeight: 1.5,
+              fontSize: 'clamp(1.5rem, calc(0.5rem + 4vw), 5rem)',
+              lineHeight: 0.95,
+              py: { xs: 1.5, md: 5 },
+            }}
+          >
+            {slide.name}
+          </Typography>
+        </motion.div>
+
+        <motion.div style={{ scaleX: line2Scale, originX: 1 }}>
+          <Box sx={{ width: '100%', height: '1px', bgcolor: 'text.primary' }} />
+        </motion.div>
+
+        <motion.div style={{ x: headlineX }}>
+          <Typography
+            variant="h3"
+            sx={{
+              fontSize: 'clamp(0.875rem, calc(0.75rem + 1vw), 1.75rem)',
+              lineHeight: 1.4,
+              py: { xs: 1.5, md: 5 },
             }}
           >
             {slide.headline}
           </Typography>
-        </Box>
-      </motion.div>
+        </motion.div>
+
+        {slide.desc && (
+          <>
+            <motion.div style={{ scaleX: line3Scale, originX: 1 }}>
+              <Box sx={{ width: '100%', height: '1px', bgcolor: 'text.primary' }} />
+            </motion.div>
+            <motion.div style={{ x: descX }}>
+              <Typography
+                variant="body1"
+                sx={{
+                  color: 'text.primary',
+                  pt: { xs: 1.5, md: 5 },
+                }}
+              >
+                {slide.desc}
+              </Typography>
+            </motion.div>
+          </>
+        )}
+      </Box>
+
+      {/* Right — restrained recipe motion folio (60%) */}
+      <Box sx={{ width: { xs: '100%', md: '60%' }, maxHeight: { xs: '42vh', md: 'none' }, overflow: 'hidden' }}>
+        <motion.div style={{ x: imgX, opacity: mediaOpacity, height: '100%' }}>
+          <Box
+            component={reduceMotion || !slide.motion ? 'img' : 'video'}
+            src={reduceMotion || !slide.motion ? slide.etching : slide.motion}
+            poster={reduceMotion || !slide.motion ? undefined : slide.etching}
+            alt={reduceMotion || !slide.motion ? `${slide.name} material folio` : undefined}
+            aria-label={reduceMotion || !slide.motion ? undefined : `${slide.name} recipe motion folio`}
+            autoPlay={reduceMotion || !slide.motion ? undefined : true}
+            loop={reduceMotion || !slide.motion ? undefined : true}
+            muted={reduceMotion || !slide.motion ? undefined : true}
+            playsInline={reduceMotion || !slide.motion ? undefined : true}
+            preload={reduceMotion || !slide.motion ? undefined : 'metadata'}
+            sx={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              display: 'block',
+            }}
+          />
+        </motion.div>
+      </Box>
     </Box>
   );
 }
 
 export default function MoraLandingPage() {
+  const heroRef = useRef(null);
   const transitionRef = useRef(null);
   const reduceMotion = useReducedMotion();
+
+  const [heroH, setHeroH] = useState(800);
+  useEffect(() => {
+    if (!heroRef.current) return;
+    const update = () => setHeroH(heroRef.current.offsetHeight || 800);
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(heroRef.current);
+    return () => ro.disconnect();
+  }, []);
+
+  const { scrollYProgress: heroScrollProgress } = useScroll({
+    target: heroRef,
+    offset: ['start start', 'end start'],
+  });
+  const hp = Math.max(0.02, (0.15 * heroH - 20) / heroH);
+  const heroLogoScale = useTransform(heroScrollProgress, [0, hp * 0.5, hp], [3.5, 3.5, 1]);
+  const heroLogoOpacity = useTransform(heroScrollProgress, [hp - 0.01, hp + 0.02], [1, 0]);
+
   const { scrollYProgress: transitionScrollProgress } = useScroll({
     target: transitionRef,
     offset: ['start start', 'end end'],
@@ -172,33 +320,63 @@ export default function MoraLandingPage() {
     [0, 0.28, 0.42],
     [1, 1, 0]
   );
-
   return (
-    <Box sx={{ bgcolor: 'background.default', color: 'text.primary' }}>
+    <Box sx={{ bgcolor: 'background.default', color: 'text.primary', overflowX: 'clip' }}>
 
-      <MoraNav {...navigation} />
+      <MoraNav {...navigation} heroRef={heroRef} />
 
-      {/* Hero — left center */}
-      <FullBleedSection image={sections.hero.image} alt={sections.hero.imageAlt} textPosition="left-center">
-        <Typography variant="h1" sx={{ color: 'primary.contrastText' }}>
-          {sections.hero.headline}
-        </Typography>
-        <Typography
-          variant="body1"
-          sx={{
-            fontSize: 'clamp(1.125rem, calc(1rem + 0.5vw), 1.375rem)',
-            lineHeight: 1.5,
-            color: 'rgba(245, 241, 232, 0.85)',
-            mt: 3,
-          }}
-        >
-          {sections.hero.support}
-        </Typography>
-      </FullBleedSection>
+      {/* Hero */}
+      <Box ref={heroRef} data-nav-theme="dark" sx={{ position: 'relative' }}>
+        <FullBleedSection image={sections.hero.image} alt={sections.hero.imageAlt} textPosition="left-center" aspectRatio={{ xs: '2 / 3', md: '3 / 2' }} loading="eager">
+          <Typography variant="h1" sx={{ color: 'primary.contrastText' }}>
+            {sections.hero.headline}
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            sx={{
+              color: 'primary.contrastText',
+              opacity: 0.85,
+              mt: 3,
+            }}
+          >
+            {sections.hero.support}
+          </Typography>
+        </FullBleedSection>
+
+        {/* Hero logotype — 히어로 안에서 자연스럽게 스크롤, GNB 도달 시 nav로 인수 */}
+        <Box sx={{ position: 'absolute', top: { xs: '8%', md: '15%' }, left: { xs: '6vw', md: '8vw' }, zIndex: 2 }}>
+          <motion.a
+            href={navigation.brandHref || '#'}
+            style={{
+              scale: heroLogoScale,
+              opacity: heroLogoOpacity,
+              transformOrigin: 'left center',
+              display: 'block',
+              textDecoration: 'none',
+              color: 'inherit',
+            }}
+          >
+            <Typography
+              component="span"
+              sx={{
+                fontFamily: (theme) => theme.typography.headingFontFamily,
+                fontSize: 'clamp(0.875rem, calc(0.8rem + 0.3vw), 1rem)',
+                fontWeight: 500,
+                letterSpacing: '0.08em',
+                color: 'primary.contrastText',
+                lineHeight: 1,
+              }}
+            >
+              {navigation.brandLabel}
+            </Typography>
+          </motion.a>
+        </Box>
+      </Box>
 
       {/* Feature — scroll-scrubbed process transition */}
       <Box
         ref={transitionRef}
+        data-nav-theme="dark"
         component="section"
         aria-label={sections.transition.imageAlt}
         sx={{
@@ -235,7 +413,7 @@ export default function MoraLandingPage() {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              px: '24px',
+              px: 3,
               pointerEvents: 'none',
             }}
           >
@@ -255,7 +433,7 @@ export default function MoraLandingPage() {
                   letterSpacing: '-0.035em',
                   whiteSpace: 'pre-line',
                   textAlign: 'center',
-                  maxWidth: 1200,
+                  maxWidth: 'lg',
                   mx: 'auto',
                 }}
               >
@@ -271,7 +449,7 @@ export default function MoraLandingPage() {
         <HorizontalScrollContainer
           gap="32px"
           padding="40px"
-          backgroundColor="background.default"
+          backgroundColor="transparent"
           seamlessEntry
         >
           {recipeSlides.map((slide, i) => (
@@ -282,49 +460,30 @@ export default function MoraLandingPage() {
         </HorizontalScrollContainer>
       </Box>
 
-      {/* Why MORA: Maker + First Furrow */}
-      <Box>
-        <SplitEditorial
-          left={
-            <Box
-              component="img"
-              src={sections.whyMora.makerImage}
-              alt={sections.whyMora.makerAlt}
-              loading="lazy"
-              sx={{ width: '100%', aspectRatio: '3 / 2', objectFit: 'cover', display: 'block', borderRadius: 0 }}
-            />
-          }
-          right={
-            <Box
-              component="img"
-              src={sections.whyMora.etchingImage}
-              alt={sections.whyMora.etchingAlt}
-              loading="lazy"
-              sx={{ width: '100%', aspectRatio: '3 / 2', objectFit: 'cover', display: 'block', borderRadius: 0 }}
-            />
-          }
-        />
-      </Box>
-
-      {/* Core Collection */}
+      {/* Core Collection — main, maker, etching 통합 스크롤 */}
       <Box id="collection">
         <StickyProductGrid
-          mainImage={sections.coreCollection.mainImage}
-          mainAlt={sections.coreCollection.mainImageAlt}
+          scrollImages={[
+            { src: sections.coreCollection.mainImage, alt: sections.coreCollection.mainImageAlt, aspectRatio: '3 / 4' },
+            { src: sections.whyMora.makerImage, alt: sections.whyMora.makerAlt, aspectRatio: '3 / 2' },
+            { src: sections.whyMora.etchingImage, alt: sections.whyMora.etchingAlt, aspectRatio: '3 / 2' },
+          ]}
           products={coreProducts}
           title={sections.coreCollection.title}
           body={sections.coreCollection.body}
         />
       </Box>
 
-      {/* Core ingredient grid (aerial only) */}
+      {/* Core ingredient grid */}
       <IngredientGrid products={coreProducts} />
 
-      {/* Studio Trials — reversed */}
+      {/* Studio Trials — main, cloth-to-body 통합 스크롤 */}
       <Box>
         <StickyProductGrid
-          mainImage={sections.studioTrials.mainImage}
-          mainAlt={sections.studioTrials.mainImageAlt}
+          scrollImages={[
+            { src: sections.studioTrials.mainImage, alt: sections.studioTrials.mainImageAlt, aspectRatio: '1 / 2' },
+            { src: sections.clothToBody.image, alt: sections.clothToBody.imageAlt, aspectRatio: '3 / 2' },
+          ]}
           products={trialProducts}
           title={sections.studioTrials.title}
           body={sections.studioTrials.body}
@@ -332,28 +491,20 @@ export default function MoraLandingPage() {
         />
       </Box>
 
-      {/* Trial ingredient grid (aerial only) */}
+      {/* Trial ingredient grid */}
       <IngredientGrid products={trialProducts} />
 
-      {/* Cloth to Body etching */}
-      <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-        <Box
-          component="img"
-          src={sections.clothToBody.image}
-          alt={sections.clothToBody.imageAlt}
-          sx={{ width: '100%', maxWidth: '60%', display: 'block' }}
-        />
-      </Box>
-
       {/* Collection Statement — left center */}
-      <FullBleedSection image={sections.materialMethod.image} alt={sections.materialMethod.imageAlt} textPosition="left-center">
+      <Box data-nav-theme="dark">
+        <FullBleedSection image={sections.materialMethod.image} alt={sections.materialMethod.imageAlt} textPosition="left-center" aspectRatio={{ xs: '2 / 3', md: '3 / 2' }}>
         <Typography variant="h1" sx={{ color: 'background.default', whiteSpace: 'pre-line' }}>
           {sections.materialMethod.headline}
         </Typography>
       </FullBleedSection>
+      </Box>
 
       {/* Vessel Record */}
-      <Box id="vessel">
+      <Box id="vessel" data-nav-theme="dark">
         {vesselPhases.map((vp) => (
           <VesselPhaseBlock
             key={vp.phase}
@@ -362,47 +513,20 @@ export default function MoraLandingPage() {
             desc={vp.desc}
             image={vp.image}
             alt={vp.alt}
+            aspectRatio={{ xs: '2 / 3', md: '3 / 2' }}
           />
         ))}
       </Box>
 
-      {/* Use Moment */}
-      <FullBleedSection image={sections.evening.image} alt={sections.evening.imageAlt} textPosition="bottom-left">
-        <Typography variant="h2" sx={{ color: 'background.default' }}>
-          {sections.evening.headline}
-        </Typography>
-        <Typography
-          variant="body1"
-          sx={{
-            fontSize: 'clamp(1.0625rem, calc(1rem + 0.3vw), 1.25rem)',
-            color: 'background.default',
-            opacity: 0.85,
-            mt: 2,
-          }}
-        >
-          {sections.evening.body}
-        </Typography>
-      </FullBleedSection>
-
-      <NewsletterCTA {...newsletter} />
-
-      {/* Footer */}
-      <Box
-        component="footer"
-        id="truth"
-        sx={{
-          display: 'flex', justifyContent: 'space-between',
-          px: '10px', py: '40px',
-          borderTop: 1, borderColor: 'divider',
-        }}
-      >
-        <Typography variant="caption" sx={{ color: 'text.secondary' }}>
-          {footer.legal}
-        </Typography>
-        <Typography variant="caption" sx={{ color: 'text.secondary' }}>
-          {footer.facts}
-        </Typography>
-      </Box>
+      {/* Table story + mailing list + footer */}
+      <TableFooter
+        image={sections.evening.image}
+        imageAlt={sections.evening.imageAlt}
+        headline={sections.evening.headline}
+        body={sections.evening.body}
+        newsletter={newsletter}
+        footer={footer}
+      />
     </Box>
   );
 }

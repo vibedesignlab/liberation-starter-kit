@@ -1,0 +1,37 @@
+{
+  "asset_id": "st3-r10-see-desktop-final-approval",
+  "provider": "fal.ai",
+  "model": "openai/gpt-image-2/edit",
+  "quality": "high",
+  "output_format": "png",
+  "requested_dimensions": { "width": 2304, "height": 1536 },
+  "returned_dimensions": { "width": 2304, "height": 1536 },
+  "prompt_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/prompts/revision-r10-image-upgrade/group-b/st3-r10-see-desktop-final-approval.md",
+  "asset_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/group-b/st3-r10-see-desktop-final-approval.png",
+  "references": [
+    { "role": "maker_identity_only", "sha256": "33aa45406dcea156e95ab591f7b0874d13c8fd0637af169875f09b5aad4484e4" },
+    { "role": "workshop_material_light_only", "sha256": "bc8d42c492b31533b20de733b341228912610a9a9e68aeb5496b112f8c04ef30" },
+    { "role": "jar_geometry_and_partial_paper_proportion_only", "sha256": "f1e9f642168c88599854c10346bdcaf6b91e405adddaf8f6adaf0753973b405e" }
+  ],
+  "generation_history": [
+    { "pass": 1, "request_id": "01a0589f-0f8a-7833-99a8-6bf9d837729d", "sha256": "4c8cb5240703467ab07fe81a847fd1ea682b0426dc821ca647350ec968db2497", "selected": false, "reason": "paper record and pencil hand entered the bottom-left copy rectangle" },
+    { "pass": 2, "request_id": "01a058a5-2669-70b0-b421-1135634572af", "sha256": "68a93fc2946edd7c46bb270947cac03d1cd91bb6c412e62db785fb9a94e92665", "selected": true, "correction": "bottom-left copy-field geometry only" }
+  ],
+  "selected_file": { "bytes": 5502321, "sha256": "68a93fc2946edd7c46bb270947cac03d1cd91bb6c412e62db785fb9a94e92665" },
+  "retry_count": 1,
+  "qa": {
+    "exact_dimensions": "pass",
+    "strict_front_axis": "pass",
+    "same_maker_identity_and_anatomy": "pass",
+    "one_pencil_check_action": "pass",
+    "true_scale_low_wide_jar_and_partial_record": "pass",
+    "strained_yogurt_cloth_and_whey_witnesses": "pass",
+    "bottom_left_40_by_28_copy_safe": "pass_with_visible_boundary_risk",
+    "material_specific_response": "pass",
+    "no_readable_text_logo_or_pseudotext": "pass",
+    "no_generated_grain_softness_or_hdr": "pass",
+    "risk": "The separate paper record's extreme lower-left corner still visually grazes roughly the rightmost 1–2 percent of the nominal bottom-left copy rectangle. One allowed correction was used; keep overlay copy away from that boundary."
+  },
+  "completed_at_utc": "2026-08-31T16:32:06Z"
+}
+

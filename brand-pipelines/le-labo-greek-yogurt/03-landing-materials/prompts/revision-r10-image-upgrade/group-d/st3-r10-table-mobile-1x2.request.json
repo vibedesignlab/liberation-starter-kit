@@ -1,0 +1,21 @@
+{
+  "asset_id": "ST3-R10-TABLE-MOBILE-1X2",
+  "model": "openai/gpt-image-2/edit",
+  "quality": "high",
+  "output_format": "png",
+  "background": "opaque",
+  "requested_size": { "width": 1344, "height": 2688 },
+  "prompt_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/prompts/revision-r10-image-upgrade/group-d/st3-r10-table-mobile-1x2.md",
+  "reference_inputs": [
+    {
+      "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r9-vessel-life-story/references/label-product/st3-r9-ref-label-product-master.png",
+      "role": "jar and label geometry only; not an edit target or composition/quality reference"
+    },
+    {
+      "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r9-vessel-life-story/references/home-pairing/ref-pairing-thyme-honey-3x2.png",
+      "role": "rye, roasted-pear and food-trace identity only; not an edit target or composition/quality reference"
+    }
+  ],
+  "expected_output": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/group-d/st3-r10-table-mobile-1x2.png",
+  "result": null
+}

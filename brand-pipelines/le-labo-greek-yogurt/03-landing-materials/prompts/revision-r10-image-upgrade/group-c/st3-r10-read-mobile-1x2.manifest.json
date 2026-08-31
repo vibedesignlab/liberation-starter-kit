@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "asset_id": "st3-r10-read-mobile-1x2",
+  "role": "read_mobile_household_curator_label_reading",
+  "provider": "fal.ai",
+  "model": "openai/gpt-image-2/edit",
+  "operation": "reference_conditioned_generation",
+  "request_id": "01a058a1-e167-7c43-b74c-671433789b84",
+  "status": "COMPLETED",
+  "request": {
+    "quality": "high",
+    "image_size": {
+      "width": 1344,
+      "height": 2688
+    },
+    "background": "opaque",
+    "num_images": 1,
+    "output_format": "png",
+    "reference_count": 2
+  },
+  "references": [
+    {
+      "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/references/home-curator/mora-home-curator-identity-master-r10.png",
+      "role": "sole_identity_skin_hair_clothing_authority"
+    },
+    {
+      "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r9-vessel-life-story/references/label-product/st3-r9-ref-label-product-master.png",
+      "role": "jar_food_label_geometry_authority_only"
+    }
+  ],
+  "result": {
+    "remote_url": "https://v3b.fal.media/files/b/0aa8910d/yK-jZFmNPI05wAgw7FSpw_Ty4YEhS4.png",
+    "content_type": "image/png",
+    "actual_width": 1344,
+    "actual_height": 2688,
+    "file_size_bytes": 4455633,
+    "sha256": "7ad9370ca9cabf21f72af2e9a36e9d675ae60808359119a216a880d681fdfb34",
+    "completed_at": "2026-08-31T16:25:18.547Z",
+    "retry_count": 0
+  },
+  "prompt_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/prompts/revision-r10-image-upgrade/group-c/st3-r10-read-mobile-1x2.md",
+  "asset_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/group-c/st3-r10-read-mobile-1x2.png",
+  "inspection": {
+    "method": "view_image original detail plus sips and sha256 metadata",
+    "status": "pass",
+    "checks": {
+      "native_portrait_composition": "pass",
+      "curator_identity_skin_hair": "pass",
+      "single_label_reading_action": "pass",
+      "grounded_complete_low_wide_jar": "pass",
+      "bottom_64_to_100_copy_safe": "pass",
+      "hand_contact_anatomy": "pass",
+      "clean_digital_finish": "pass"
+    },
+    "visible_risk": "The jar is deliberately small in the tall narrative frame, so legal label detail must come from dedicated product artwork rather than this photograph."
+  }
+}

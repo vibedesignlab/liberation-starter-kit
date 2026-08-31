@@ -14,7 +14,7 @@ export default function ProcessScroll({ steps = [] }) {
     <Box>
       {/* Steps without images as a simple list */}
       {withoutImage.length > 0 && (
-        <Box sx={{ my: '128px', px: '10px', maxWidth: 600 }}>
+        <Box sx={{ my: { xs: 10, md: 16 }, px: { xs: 2, md: 1.25 }, maxWidth: 600 }}>
           {withoutImage.map((s) => (
             <Typography key={s.step} variant="body2" sx={{ color: 'text.secondary', mb: 1 }}>
               {s.label}

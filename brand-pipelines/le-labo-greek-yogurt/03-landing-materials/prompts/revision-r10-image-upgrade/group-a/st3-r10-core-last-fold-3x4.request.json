@@ -1,0 +1,44 @@
+{
+  "asset_id": "ST3-R10-CORE-LAST-FOLD-3X4",
+  "model": "openai/gpt-image-2/edit",
+  "quality": "high",
+  "output_format": "png",
+  "background": "opaque",
+  "requested_size": { "width": 1536, "height": 2048 },
+  "prompt_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/prompts/revision-r10-image-upgrade/group-a/st3-r10-core-last-fold-3x4.md",
+  "reference_inputs": [
+    {
+      "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/references/identity/mora-female-maker-identity-master-r10.png",
+      "role": "identity, skin, hair and workwear authority only; not an edit target or composition template"
+    },
+    {
+      "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/references/environment/st3-r10-ref-environment-master-front.png",
+      "role": "workshop, material, scale and light authority only; not an edit target or composition template"
+    }
+  ],
+  "expected_output": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/group-a/st3-r10-core-last-fold-3x4.png",
+  "result": {
+    "provider_request_id": "01a058a2-3da0-7821-958d-d4cd4f49ee8d",
+    "generated_at_utc": "2026-08-31T16:27:01Z",
+    "returned_size": { "width": 1536, "height": 2048 },
+    "file_size_bytes": 4530972,
+    "sha256": "185695bf1b4078b69a6630c4c7e976efdd686d68b58cfdef4ccb6047b57f7370",
+    "output_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/group-a/st3-r10-core-last-fold-3x4.png",
+    "retry_count": 0,
+    "inspection": {
+      "method": "view_image original-size",
+      "status": "pass",
+      "checks": {
+        "exact_3x4_portrait": "pass",
+        "single_broad_paddle_last_fold": "pass",
+        "free_hand_steadies_rim": "pass",
+        "four_complete_core_cues_tight_row": "pass",
+        "no_packaging_or_text": "pass",
+        "complete_credible_hands": "pass",
+        "dense_yogurt_and_material_realism": "pass",
+        "clean_digital_skin_hair_finish": "pass"
+      },
+      "visible_risk": "The bowl and paddle read at the upper end of ordinary small-batch scale, but remain physically coherent."
+    }
+  }
+}

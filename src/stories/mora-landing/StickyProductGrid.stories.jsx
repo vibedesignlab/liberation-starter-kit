@@ -10,15 +10,15 @@ export default {
     reverse: { control: 'boolean' },
     title: { control: 'text' },
     body: { control: 'text' },
-    cta: { control: 'text' },
   },
   args: {
-    mainImage: sections.coreCollection.mainImage,
-    mainAlt: sections.coreCollection.mainImageAlt,
+    scrollImages: [
+      { src: sections.coreCollection.mainImage, alt: sections.coreCollection.mainImageAlt, aspectRatio: '3 / 4' },
+      { src: sections.whyMora.makerImage, alt: sections.whyMora.makerAlt, aspectRatio: '3 / 2' },
+      { src: sections.whyMora.etchingImage, alt: sections.whyMora.etchingAlt, aspectRatio: '3 / 2' },
+    ],
     title: sections.coreCollection.title,
     body: sections.coreCollection.body,
-    cta: sections.coreCollection.ctaLabel,
-    ctaHref: sections.coreCollection.ctaHref,
     reverse: false,
   },
 };
@@ -33,12 +33,12 @@ export const Playground = {
 
 export const Reversed = {
   args: {
-    mainImage: sections.studioTrials.mainImage,
-    mainAlt: sections.studioTrials.mainImageAlt,
+    scrollImages: [
+      { src: sections.studioTrials.mainImage, alt: sections.studioTrials.mainImageAlt, aspectRatio: '3 / 4' },
+      { src: sections.clothToBody.image, alt: sections.clothToBody.imageAlt, aspectRatio: '4 / 5' },
+    ],
     title: sections.studioTrials.title,
     body: sections.studioTrials.body,
-    cta: sections.studioTrials.ctaLabel,
-    ctaHref: sections.studioTrials.ctaHref,
     reverse: true,
   },
   render: (args) => (

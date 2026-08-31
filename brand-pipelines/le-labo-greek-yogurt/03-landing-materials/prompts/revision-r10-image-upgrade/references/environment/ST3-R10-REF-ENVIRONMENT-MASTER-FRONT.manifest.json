@@ -1,0 +1,41 @@
+{
+  "asset_id": "st3-r10-ref-environment-master-front",
+  "role": "environment_material_light_authority_only",
+  "provider": "fal.ai",
+  "model": "openai/gpt-image-2",
+  "request_id": "01a05894-e2b4-7473-bae3-c4925dd7e15d",
+  "quality": "high",
+  "output_format": "png",
+  "requested_dimensions": {
+    "width": 2304,
+    "height": 1536,
+    "aspect_ratio": "3:2"
+  },
+  "returned_dimensions": {
+    "width": 2304,
+    "height": 1536,
+    "aspect_ratio": "3:2"
+  },
+  "returned_file": {
+    "bytes": 6262648,
+    "color_format": "8-bit/color RGB",
+    "interlace": "none",
+    "sha256": "bc8d42c492b31533b20de733b341228912610a9a9e68aeb5496b112f8c04ef30"
+  },
+  "prompt_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/prompts/revision-r10-image-upgrade/references/environment/ST3-R10-REF-ENVIRONMENT-MASTER-FRONT.md",
+  "asset_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/references/environment/st3-r10-ref-environment-master-front.png",
+  "generated_at_utc": "2026-08-31T16:11:46Z",
+  "generation_pass": 1,
+  "targeted_retry_used": false,
+  "inspection": {
+    "method": "view_image_original_plus_sips_and_file_metadata",
+    "strict_front_axis": "pass",
+    "human_scale_workshop": "pass",
+    "studio_or_set_rejection": "pass",
+    "distinct_nonprocedural_material_response": "pass",
+    "coherent_practical_light": "pass",
+    "no_people_brand_or_readable_text": "pass",
+    "no_generated_grain_scan_softness_or_hdr": "pass",
+    "risk": "The three cloth-covered strainers form a somewhat regular row, but the repaired shell, offset crates, peripheral equipment, and practical lighting keep the room from reading as a broadcast or showroom set."
+  }
+}

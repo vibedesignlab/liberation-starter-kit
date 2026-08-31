@@ -1,0 +1,36 @@
+{
+  "model": "fal-ai/kling-video/v3/pro/image-to-video",
+  "submissions": [
+    {
+      "id": "mora-r8-black-sesame-loop",
+      "model": "fal-ai/kling-video/v3/pro/image-to-video",
+      "request_id": "01a0583f-a5e8-78d0-8339-aa5b2604dfc6",
+      "status": "COMPLETED",
+      "output": "src/assets/video/recipes/mora-recipe-black-sesame.mp4",
+      "downloaded": true,
+      "video_url": "https://v3b.fal.media/files/b/0aa88ea1/_TaIWvMeBNepsikybpfpo_output.mp4",
+      "start": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r6-feedback/etchings/core/st3-r6-etch-black-sesame-square.png",
+      "end": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r6-feedback/etchings/core/st3-r6-etch-black-sesame-square.png",
+      "start_image_url": "https://v3b.fal.media/files/b/0aa88e87/x9q8YWMOp4oJR4UGEZSfA_st3-r6-etch-black-sesame-square.png",
+      "end_image_url": "https://v3b.fal.media/files/b/0aa88e9e/h_B7OuFrouBK9HTB4chpz_st3-r6-etch-black-sesame-square.png",
+      "profile": "kling",
+      "input": {
+        "prompt": "A seamless restrained motion loop inside the exact existing square culinary etching. Fully locked camera and fully locked composition. Preserve every object, the warm paper field, metal geometry, scale, shadows, engraved pencil linework and sparse color exactly. Only one recipe action occurs: the existing dense black sesame paste at the scraper tip slowly stretches once and just touches the bright yogurt, forming one short dark fold with no stirring and no uniform blending. The hand, scraper, paddle, mortar, tray, bowl and seeds remain completely still. The final frame returns exactly to the supplied original frame.",
+        "duration": "3",
+        "start_image_url": "https://v3b.fal.media/files/b/0aa88e87/x9q8YWMOp4oJR4UGEZSfA_st3-r6-etch-black-sesame-square.png",
+        "end_image_url": "https://v3b.fal.media/files/b/0aa88e9e/h_B7OuFrouBK9HTB4chpz_st3-r6-etch-black-sesame-square.png",
+        "negative_prompt": "camera movement, zoom, pan, tilt, reframing, object drift, morphing vessel, moving hand, moving utensil, stirring, black flood, splash, added object, removed object, new text, logo, watermark, CGI, photoreal conversion, loss of engraved pencil linework",
+        "generate_audio": false
+      },
+      "result_data": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0aa88ea1/_TaIWvMeBNepsikybpfpo_output.mp4",
+          "content_type": "video/mp4",
+          "file_name": "output.mp4",
+          "file_size": 4350360
+        }
+      },
+      "submitted_at": "2026-08-31T14:40:26.140Z"
+    }
+  ]
+}

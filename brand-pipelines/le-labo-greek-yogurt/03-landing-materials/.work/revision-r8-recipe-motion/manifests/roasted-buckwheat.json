@@ -1,0 +1,36 @@
+{
+  "model": "fal-ai/kling-video/v3/pro/image-to-video",
+  "submissions": [
+    {
+      "id": "mora-r8-roasted-buckwheat-loop",
+      "model": "fal-ai/kling-video/v3/pro/image-to-video",
+      "request_id": "01a0583f-a679-7a40-a10f-c434071f1454",
+      "status": "COMPLETED",
+      "output": "src/assets/video/recipes/mora-recipe-roasted-buckwheat.mp4",
+      "downloaded": true,
+      "video_url": "https://v3b.fal.media/files/b/0aa88eb9/isTrvFGzmJVBfhPUlXwne_output.mp4",
+      "start": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r6-feedback/etchings/core/st3-r6-etch-roasted-buckwheat-square.png",
+      "end": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r6-feedback/etchings/core/st3-r6-etch-roasted-buckwheat-square.png",
+      "start_image_url": "https://v3b.fal.media/files/b/0aa88e87/2_KA7TcA_e3lfqQsqowrv_st3-r6-etch-roasted-buckwheat-square.png",
+      "end_image_url": "https://v3b.fal.media/files/b/0aa88e87/sTvaXql4cAKqlnG0OeoZw_st3-r6-etch-roasted-buckwheat-square.png",
+      "profile": "kling",
+      "input": {
+        "prompt": "A seamless restrained motion loop inside the exact existing square culinary etching. Fully locked camera and fully locked composition. Preserve every object, the warm paper field, metal geometry, scale, shadows, engraved pencil linework and sparse color exactly. Only one recipe action occurs: three or four roasted buckwheat groats slip gently from the existing spoon into the yogurt and settle into the visible grain trace without splash or scattering. The spoon, mortar, strainer, bowls and all other grains remain completely still. The final frame returns exactly to the supplied original frame.",
+        "duration": "3",
+        "start_image_url": "https://v3b.fal.media/files/b/0aa88e87/2_KA7TcA_e3lfqQsqowrv_st3-r6-etch-roasted-buckwheat-square.png",
+        "end_image_url": "https://v3b.fal.media/files/b/0aa88e87/sTvaXql4cAKqlnG0OeoZw_st3-r6-etch-roasted-buckwheat-square.png",
+        "negative_prompt": "camera movement, zoom, pan, tilt, reframing, object drift, morphing vessel, moving utensil, moving mortar, hand, grain shower, splash, stirring, added object, removed object, new text, logo, watermark, CGI, photoreal conversion, loss of engraved pencil linework",
+        "generate_audio": false
+      },
+      "result_data": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0aa88eb9/isTrvFGzmJVBfhPUlXwne_output.mp4",
+          "content_type": "video/mp4",
+          "file_name": "output.mp4",
+          "file_size": 4753135
+        }
+      },
+      "submitted_at": "2026-08-31T14:40:36.843Z"
+    }
+  ]
+}

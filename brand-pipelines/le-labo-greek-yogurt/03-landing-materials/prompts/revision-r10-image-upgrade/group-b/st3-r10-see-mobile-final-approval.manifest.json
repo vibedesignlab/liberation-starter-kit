@@ -1,0 +1,37 @@
+{
+  "asset_id": "st3-r10-see-mobile-final-approval",
+  "provider": "fal.ai",
+  "model": "openai/gpt-image-2/edit",
+  "quality": "high",
+  "output_format": "png",
+  "requested_dimensions": { "width": 1344, "height": 2688 },
+  "returned_dimensions": { "width": 1344, "height": 2688 },
+  "prompt_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/prompts/revision-r10-image-upgrade/group-b/st3-r10-see-mobile-final-approval.md",
+  "asset_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/group-b/st3-r10-see-mobile-final-approval.png",
+  "references": [
+    { "role": "maker_identity_only", "sha256": "33aa45406dcea156e95ab591f7b0874d13c8fd0637af169875f09b5aad4484e4" },
+    { "role": "workshop_material_light_only", "sha256": "bc8d42c492b31533b20de733b341228912610a9a9e68aeb5496b112f8c04ef30" },
+    { "role": "jar_geometry_and_partial_paper_proportion_only", "sha256": "f1e9f642168c88599854c10346bdcaf6b91e405adddaf8f6adaf0753973b405e" }
+  ],
+  "generation_history": [
+    { "pass": 1, "request_id": "01a058a0-d031-7051-8901-b237369d0f32", "sha256": "475820fb3ec8a41a320e34ef9d029ec20d005c18253f77a1ae31765206fab0a8", "selected": false, "reason": "jar omitted its attached partial paper Batch Record" },
+    { "pass": 2, "request_id": "01a058a6-f267-77f1-9303-c4c10fe28181", "sha256": "e43a83ad000ce40435e066631e85d3c1e94c5fcf43f7e4f8461c9806f7ca6126", "selected": true, "correction": "jar partial-record surface only" }
+  ],
+  "selected_file": { "bytes": 4678700, "sha256": "e43a83ad000ce40435e066631e85d3c1e94c5fcf43f7e4f8461c9806f7ca6126" },
+  "retry_count": 1,
+  "qa": {
+    "exact_dimensions": "pass",
+    "same_maker_identity_and_anatomy": "pass",
+    "one_pencil_check_action": "pass",
+    "upper_center_evidence_cluster": "pass",
+    "bottom_y64_y100_copy_safe": "pass",
+    "true_scale_low_wide_jar": "pass",
+    "attached_structured_unreadable_partial_record": "pass",
+    "strained_yogurt_cloth_and_whey_witnesses": "pass",
+    "no_readable_text_logo_or_pseudotext": "pass",
+    "no_generated_grain_softness_or_hdr": "pass",
+    "risk": "none visible at the requested hard-lock inspection level"
+  },
+  "completed_at_utc": "2026-08-31T16:32:06Z"
+}
+

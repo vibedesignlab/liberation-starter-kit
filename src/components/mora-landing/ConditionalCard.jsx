@@ -20,11 +20,11 @@ export default function ConditionalCard({ product }) {
           borderRadius: 0,
         }}
       />
-      <Typography variant="body2" sx={{ mt: '8px' }}>
+      <Typography variant="body2" sx={{ mt: 1 }}>
         {product.name}
       </Typography>
       {product.status && (
-        <Typography variant="caption" sx={{ color: 'text.secondary', mt: '2px', display: 'block' }}>
+        <Typography variant="caption" sx={{ color: 'text.secondary', mt: 0.25, display: 'block' }}>
           {product.status}
         </Typography>
       )}

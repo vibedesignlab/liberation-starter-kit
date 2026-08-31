@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "provider": "fal.ai",
+  "model": "openai/gpt-image-2",
+  "operation": "text_to_image",
+  "input": {
+    "prompt": "Use case: photorealistic-natural. Asset type: high-fidelity square identity reference for consistent downstream editorial photography; identity authority only, not a scene-composition reference. Scene/backdrop: one plain low-detail warm-gray background, evenly quiet and free of objects, architecture, gradients, hotspots or decorative texture. Subject: one Korean woman in her late 40s to early 50s, a calm and responsible culinary craftsperson. Front-facing chest-up portrait, shoulders square and relaxed, head upright, eyes naturally open and looking directly toward the camera, mouth at rest, composed attentive expression. She reads as capable and accountable through presence rather than pose; no smile performance, severity, glamour or stereotype. Identity and anatomy: fully coherent adult facial anatomy with subtle natural left-right asymmetry. Preserve age-appropriate unretouched skin: irregular pores that vary by facial region, fine lines around eyes and mouth, gentle under-eye variation, small natural tonal differences, restrained capillary warmth at cheeks, nose and ears, and a continuous natural skin-tone gradient. Keep both eyes structurally coherent, pupils aligned, eyelids and lashes distinct, nostrils and lips physically formed, ears plausible, jaw and neck transitions natural. No beauty retouching, skin smoothing, procedural pore grid, wax or plastic gloss. Hair: dark brown to near-black hair, simply gathered back for food work. Show a physically plausible hairline, irregular flyaways and many separate fine strands with varied thickness and direction. Hair must never become glossy ribbons, rope-like loops, molded clumps or a helmet silhouette. Natural dark eyebrows with separate hairs. Clothing: restrained plain charcoal food-work jacket or overshirt with a simple collar, matte densely woven cotton, normal seams, minor real cloth variation and no visible brand. No patterned jacquard, embossed swirls, fashion styling, jewelry or decorative accessories. Composition and photographic behavior: exact 1:1 square, centered front view, chest-up framing from upper chest through complete head, generous margin above hair and beside shoulders. Neutral 70–90 mm portrait perspective feel, eye-level camera, no wide-angle facial distortion. Both eyes, face, ears, hairline, neck and shoulders are in clear natural focus. Hands and forearms remain entirely below the frame; no hand-object interaction. Lighting and color: one broad neutral warm-gray daylight source, approximately 4800–5200 K in appearance, with soft directional modeling and a subtle natural shadow side. One coherent highlight direction, restrained facial specular response, open shadows, no rim light or colored practical contamination. Color-accurate natural skin and charcoal cloth. Preserve highlight and shadow detail. Medium and finish: high-fidelity photorealistic editorial portrait with clean contemporary digital capture. Natural microcontrast without excessive clarity. No film grain, scan softness, halation, vignette, HDR, cinematic grade, sepia, teal-orange, CGI polish, glamour retouch or artificial sharpening. Constraints: exactly one adult woman; no hands, tool, food, jar, label, text, logo, watermark, set dressing, kitchen, workshop scene, prop, hat, apron slogan, perfume cue, makeup campaign, jewelry, smile pose, extreme expression, profile or three-quarter turn. No malformed anatomy, asymmetry failure, duplicated feature, crossed eyes, wax skin, uniform pore pattern, ribbon hair, merged strands or patterned fabric.",
+    "image_size": {
+      "width": 2048,
+      "height": 2048
+    },
+    "background": "opaque",
+    "quality": "high",
+    "num_images": 1,
+    "output_format": "png",
+    "sync_mode": false
+  },
+  "expected_output": {
+    "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/references/identity/mora-female-maker-identity-master-r10.png",
+    "mime_type": "image/png",
+    "width": 2048,
+    "height": 2048
+  },
+  "result": {
+    "request_id": "01a05895-a482-7140-8bd1-1f0c0106f90d",
+    "status": "COMPLETED",
+    "model": "openai/gpt-image-2",
+    "remote_url": "https://v3b.fal.media/files/b/0aa890bb/V6-H2JRxL6E2rkB2rFwge_iJpopEHk.png",
+    "content_type": "image/png",
+    "actual_width": 2048,
+    "actual_height": 2048,
+    "file_size_bytes": 6463146,
+    "sha256": "33aa45406dcea156e95ab591f7b0874d13c8fd0637af169875f09b5aad4484e4",
+    "output_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/references/identity/mora-female-maker-identity-master-r10.png",
+    "completed_at": "2026-08-31T16:12:13.577Z",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "asset_id": "st3-r10-open-mobile-1x2",
+  "role": "open_mobile_household_curator_seal_peel",
+  "provider": "fal.ai",
+  "model": "openai/gpt-image-2/edit",
+  "operation": "reference_conditioned_generation_then_single_axis_edit",
+  "request_id": "01a058a7-2c98-7812-9e7a-11b5920329e5",
+  "status": "COMPLETED",
+  "request": {
+    "quality": "high",
+    "image_size": {
+      "width": 1344,
+      "height": 2688
+    },
+    "background": "opaque",
+    "num_images": 1,
+    "output_format": "png",
+    "initial_reference_count": 2
+  },
+  "references": [
+    {
+      "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/references/home-curator/mora-home-curator-identity-master-r10.png",
+      "role": "sole_identity_skin_hair_clothing_authority_for_initial_generation"
+    },
+    {
+      "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r9-vessel-life-story/references/label-product/st3-r9-ref-label-product-master.png",
+      "role": "jar_food_label_geometry_authority_only_for_initial_generation"
+    }
+  ],
+  "generation_chain": [
+    {
+      "request_id": "01a058a3-b434-7e03-bef3-08b25e605dbe",
+      "operation": "initial_reference_conditioned_generation",
+      "result": "visually sound; plate silhouette marginally crossed the y=64% copy boundary"
+    },
+    {
+      "request_id": "01a058a7-2c98-7812-9e7a-11b5920329e5",
+      "operation": "single_axis_copy_safe_edit",
+      "edit_delta": "Move only the complete plate/rye/pear group upward so the bottom y=64–100% remains object-free.",
+      "inference_time_seconds": 94.63100004196167
+    }
+  ],
+  "result": {
+    "remote_url": "https://v3b.fal.media/files/b/0aa8912f/CZaGGyQ7Kc6QibAeQJkN2_Ykh1iwSY.png",
+    "content_type": "image/png",
+    "actual_width": 1344,
+    "actual_height": 2688,
+    "file_size_bytes": 4861634,
+    "sha256": "ed53c1e63b395f5dcb7521eb7523a1adfa6416d56225107453510a96cebe5725",
+    "retrieved_at": "2026-08-31T16:31:49Z",
+    "retry_count": 1
+  },
+  "prompt_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/prompts/revision-r10-image-upgrade/group-c/st3-r10-open-mobile-1x2.md",
+  "asset_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/group-c/st3-r10-open-mobile-1x2.png",
+  "inspection": {
+    "method": "view_image original detail plus sips and sha256 metadata",
+    "status": "pass",
+    "checks": {
+      "native_portrait_composition": "pass",
+      "curator_identity_skin_hair": "pass",
+      "one_hand_attached_seal_peel": "pass",
+      "grounded_complete_low_wide_jar": "pass",
+      "one_rye_slice_two_pear_wedges": "pass",
+      "bottom_64_to_100_copy_safe": "pass_after_single_axis_edit",
+      "hand_contact_anatomy": "pass",
+      "clean_digital_finish": "pass"
+    },
+    "visible_risk": "The plate sits close to the upper edge of the copy-safe boundary; any downstream crop must preserve the authored native 1:2 frame and object-position."
+  }
+}

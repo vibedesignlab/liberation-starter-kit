@@ -1,0 +1,35 @@
+{
+  "asset_id": "st3-r10-trial-review-mobile-1x2",
+  "provider": "fal.ai",
+  "model": "openai/gpt-image-2/edit",
+  "quality": "high",
+  "output_format": "png",
+  "requested_dimensions": { "width": 1344, "height": 2688 },
+  "returned_dimensions": { "width": 1344, "height": 2688 },
+  "prompt_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/prompts/revision-r10-image-upgrade/group-b/st3-r10-trial-review-mobile-1x2.md",
+  "asset_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/group-b/st3-r10-trial-review-mobile-1x2.png",
+  "references": [
+    { "role": "maker_identity_only", "sha256": "33aa45406dcea156e95ab591f7b0874d13c8fd0637af169875f09b5aad4484e4" },
+    { "role": "workshop_material_light_only", "sha256": "bc8d42c492b31533b20de733b341228912610a9a9e68aeb5496b112f8c04ef30" }
+  ],
+  "generation_history": [
+    { "pass": 1, "request_id": "01a058a0-f8aa-7dd3-90ec-235269dc4147", "sha256": "1a879cc2472c3512bce635c23040702f9acd3e5da9b79d4e562d797d1978bfe9", "selected": false, "reason": "both covered vessels extended well outside the central 68 percent width" },
+    { "pass": 2, "request_id": "01a058a7-0801-7da2-9430-6272e956b388", "sha256": "57bd4d3019a948c2cd97ea276257afd45d4f0250cae0d8e7e50713f8daaa07de", "selected": true, "correction": "covered-vessel horizontal scale and placement only" }
+  ],
+  "selected_file": { "bytes": 5176213, "sha256": "57bd4d3019a948c2cd97ea276257afd45d4f0250cae0d8e7e50713f8daaa07de" },
+  "retry_count": 1,
+  "qa": {
+    "exact_dimensions_and_1_to_2_ratio": "pass",
+    "same_maker_identity_and_anatomy": "pass",
+    "one_plain_record_and_pencil_check": "pass",
+    "exactly_two_separated_covered_states": "pass",
+    "fig_leaf_and_olive_oil_sea_salt_distinction": "pass",
+    "inner_88_percent": "pass",
+    "central_68_percent": "pass_with_visible_boundary_risk",
+    "material_specific_response": "pass",
+    "no_approval_claim_readable_text_logo_or_pseudotext": "pass",
+    "no_generated_grain_softness_or_hdr": "pass",
+    "risk": "The left vessel cover and faint contact shadow appear to begin around x=14–15 percent rather than the exact x=16 percent target; all critical contents remain safely inside and one allowed correction was used."
+  },
+  "completed_at_utc": "2026-08-31T16:32:06Z"
+}

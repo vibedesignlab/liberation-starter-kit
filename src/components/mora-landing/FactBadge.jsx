@@ -4,14 +4,14 @@ import Typography from '@mui/material/Typography';
 export default function FactBadge({ label }) {
   return (
     <Typography
+      variant="overline"
       component="span"
       sx={{
-        fontSize: '11px',
         color: 'text.secondary',
         border: 1,
         borderColor: 'divider',
-        px: '8px',
-        py: '3px',
+        px: 1,
+        py: 0.375,
         borderRadius: 0,
         display: 'inline-block',
       }}

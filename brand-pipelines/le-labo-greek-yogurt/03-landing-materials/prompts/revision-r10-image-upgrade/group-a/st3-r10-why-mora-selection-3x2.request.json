@@ -1,0 +1,43 @@
+{
+  "asset_id": "ST3-R10-WHY-MORA-SELECTION-3X2",
+  "model": "openai/gpt-image-2/edit",
+  "quality": "high",
+  "output_format": "png",
+  "background": "opaque",
+  "requested_size": { "width": 2304, "height": 1536 },
+  "prompt_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/prompts/revision-r10-image-upgrade/group-a/st3-r10-why-mora-selection-3x2.md",
+  "reference_inputs": [
+    {
+      "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/references/identity/mora-female-maker-identity-master-r10.png",
+      "role": "identity, skin, hair and workwear authority only; not an edit target or composition template"
+    },
+    {
+      "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/references/environment/st3-r10-ref-environment-master-front.png",
+      "role": "workshop, material, scale and light authority only; not an edit target or composition template"
+    }
+  ],
+  "expected_output": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/group-a/st3-r10-why-mora-selection-3x2.png",
+  "result": {
+    "provider_request_id": "01a058a2-3d9f-7200-aec6-e5f87f67b3ad",
+    "generated_at_utc": "2026-08-31T16:27:01Z",
+    "returned_size": { "width": 2304, "height": 1536 },
+    "file_size_bytes": 5354373,
+    "sha256": "7e89063d47a9b2123a33f547f4dfb708c97da06726b383a1b71442e2c6f8b6f7",
+    "output_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/group-a/st3-r10-why-mora-selection-3x2.png",
+    "retry_count": 0,
+    "inspection": {
+      "method": "view_image original-size",
+      "status": "pass",
+      "checks": {
+        "strict_front_camera": "pass",
+        "maker_central_right": "pass",
+        "accepted_rejected_thyme_legibility": "pass",
+        "two_complete_trays_and_hands_inner_80": "pass",
+        "one_unified_action": "pass",
+        "workshop_material_realism": "pass",
+        "clean_digital_skin_hair_finish": "pass"
+      },
+      "visible_risk": "The left window is high contrast, acceptable because this frame has no copy-safe requirement."
+    }
+  }
+}

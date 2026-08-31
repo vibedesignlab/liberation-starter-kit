@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "asset_id": "st3-r10-read-desktop-3x2",
+  "role": "read_desktop_household_curator_label_reading",
+  "provider": "fal.ai",
+  "model": "openai/gpt-image-2/edit",
+  "operation": "reference_conditioned_generation",
+  "request_id": "01a058a1-e168-7de0-9561-ab1074ec7292",
+  "status": "COMPLETED",
+  "request": {
+    "quality": "high",
+    "image_size": {
+      "width": 2304,
+      "height": 1536
+    },
+    "background": "opaque",
+    "num_images": 1,
+    "output_format": "png",
+    "reference_count": 2
+  },
+  "references": [
+    {
+      "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/references/home-curator/mora-home-curator-identity-master-r10.png",
+      "role": "sole_identity_skin_hair_clothing_authority"
+    },
+    {
+      "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r9-vessel-life-story/references/label-product/st3-r9-ref-label-product-master.png",
+      "role": "jar_food_label_geometry_authority_only"
+    }
+  ],
+  "result": {
+    "remote_url": "https://v3b.fal.media/files/b/0aa8910c/onnuq9h9Mlv0-CyEc8HgL_mVEiCXtR.png",
+    "content_type": "image/png",
+    "actual_width": 2304,
+    "actual_height": 1536,
+    "file_size_bytes": 4441468,
+    "sha256": "855072e6b5356ecd690a66ccf8465b8d658763400aee647664c0d09f01939876",
+    "completed_at": "2026-08-31T16:25:27.931Z",
+    "retry_count": 0
+  },
+  "prompt_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/prompts/revision-r10-image-upgrade/group-c/st3-r10-read-desktop-3x2.md",
+  "asset_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/group-c/st3-r10-read-desktop-3x2.png",
+  "inspection": {
+    "method": "view_image original detail plus sips and sha256 metadata",
+    "status": "pass",
+    "checks": {
+      "curator_identity_skin_hair": "pass",
+      "single_label_reading_action": "pass",
+      "grounded_complete_low_wide_jar": "pass",
+      "populated_partial_record": "pass",
+      "bottom_left_copy_safe": "pass",
+      "hand_contact_anatomy": "pass",
+      "clean_digital_finish": "pass"
+    },
+    "visible_risk": "The generated record includes plausible contextual microtext and should never be treated as legally approved packaging copy."
+  }
+}

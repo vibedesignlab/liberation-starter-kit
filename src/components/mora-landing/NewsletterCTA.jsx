@@ -2,7 +2,17 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
 /**
- * Niksen "Join the family".
+ * Newsletter subscribe section.
+ *
+ * Props:
+ * @param {string} headline - 제목 [Optional]
+ * @param {string} body - 본문 [Optional]
+ * @param {string} emailPlaceholder - 이메일 입력 플레이스홀더 [Optional]
+ * @param {string} ctaLabel - CTA 버튼 텍스트 [Optional]
+ * @param {string} ctaHref - CTA 링크 [Optional]
+ *
+ * Example usage:
+ * <NewsletterCTA headline="Join" body="..." emailPlaceholder="you@email.com" ctaLabel="Subscribe" />
  */
 export default function NewsletterCTA({
   headline = '',
@@ -12,14 +22,14 @@ export default function NewsletterCTA({
   ctaHref = '#',
 }) {
   return (
-    <Box sx={{ py: '128px', px: '10px', width: '100%' }}>
+    <Box sx={{ py: { xs: 10, md: 16 }, px: { xs: 3, md: 6 }, width: '100%' }}>
       <Typography variant="h1" sx={{ mb: 2, position: 'relative', zIndex: 1 }}>
         {headline}
       </Typography>
       <Typography variant="body1" sx={{ color: 'text.secondary', mb: 3, position: 'relative', zIndex: 1 }}>
         {body}
       </Typography>
-      <Box sx={{ display: 'flex', gap: '2px' }}>
+      <Box sx={{ display: 'flex', gap: 0.25 }}>
         <Box
           component="input"
           type="email"
@@ -29,9 +39,9 @@ export default function NewsletterCTA({
             border: 1,
             borderColor: 'divider',
             borderRadius: 0,
-            px: '10px',
-            py: '8px',
-            fontSize: '14px',
+            px: 1.25,
+            py: 1,
+            fontSize: (theme) => theme.typography.button.fontSize,
             fontFamily: 'inherit',
             bgcolor: 'transparent',
             color: 'text.primary',
@@ -40,14 +50,14 @@ export default function NewsletterCTA({
           }}
         />
         <Typography
+          variant="button"
           component="a"
           href={ctaHref}
           sx={{
-            fontSize: '14px',
             color: 'text.primary',
             textDecoration: 'none',
-            px: '16px',
-            py: '8px',
+            px: 2,
+            py: 1,
             alignSelf: 'center',
             '&:hover': { textDecoration: 'underline', textUnderlineOffset: '3px' },
           }}

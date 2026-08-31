@@ -26,23 +26,27 @@ const productMedia = {
     product: assets.productThymeHoney,
     ingredient: assets.ingredientThymeHoney,
     etching: assets.etchThymeHoney,
+    motion: assets.recipeThymeHoney,
     moment: assets.momentMorning,
   },
   'roasted-buckwheat': {
     product: assets.productBuckwheat,
     ingredient: assets.ingredientBuckwheat,
     etching: assets.etchBuckwheat,
+    motion: assets.recipeBuckwheat,
     moment: assets.momentAfternoon,
   },
   'citrus-peel': {
     product: assets.productCitrusPeel,
     ingredient: assets.ingredientCitrusPeel,
     etching: assets.etchCitrusPeel,
+    motion: assets.recipeCitrusPeel,
   },
   'black-sesame': {
     product: assets.productBlackSesame,
     ingredient: assets.ingredientBlackSesame,
     etching: assets.etchBlackSesame,
+    motion: assets.recipeBlackSesame,
   },
   'fig-leaf': {
     product: assets.productFigLeaf,
@@ -58,10 +62,10 @@ const productMedia = {
 };
 
 const vesselMedia = {
-  SEE: assets.vesselMaster,
-  READ: assets.inspectionFront,
-  OPEN: assets.vesselOpenService,
-  TASTE: assets.firstSpoonMacro,
+  SEE: assets.vesselStorySee,
+  READ: assets.vesselStoryRead,
+  OPEN: assets.vesselStoryOpen,
+  TASTE: assets.vesselStoryTaste,
 };
 
 export const navigation = copy.navigation;
@@ -131,13 +135,14 @@ export const sections = {
   },
   evening: {
     ...copy.sections.evening,
-    image: assets.momentEvening,
+    image: assets.tableStory,
   },
 };
 
 export const recipeSlides = copy.recipeSlides.map((slide) => ({
   ...slide,
   etching: productMedia[slide.id]?.etching,
+  motion: productMedia[slide.id]?.motion,
 }));
 
 export const brand = {

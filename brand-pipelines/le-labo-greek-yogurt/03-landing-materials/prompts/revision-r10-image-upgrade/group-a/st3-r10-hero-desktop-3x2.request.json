@@ -1,0 +1,43 @@
+{
+  "asset_id": "ST3-R10-HERO-DESKTOP-3X2",
+  "model": "openai/gpt-image-2/edit",
+  "quality": "high",
+  "output_format": "png",
+  "background": "opaque",
+  "requested_size": { "width": 3504, "height": 2336 },
+  "prompt_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/prompts/revision-r10-image-upgrade/group-a/st3-r10-hero-desktop-3x2.md",
+  "reference_inputs": [
+    {
+      "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/references/identity/mora-female-maker-identity-master-r10.png",
+      "role": "identity, skin, hair and workwear authority only; not an edit target or composition template"
+    },
+    {
+      "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/references/environment/st3-r10-ref-environment-master-front.png",
+      "role": "workshop, material, scale and light authority only; not an edit target or composition template"
+    }
+  ],
+  "expected_output": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/group-a/st3-r10-hero-desktop-3x2.png",
+  "result": {
+    "provider_request_id": "01a0589f-17bd-7233-bb92-355d70a2fd83",
+    "generated_at_utc": "2026-08-31T16:27:01Z",
+    "returned_size": { "width": 3504, "height": 2336 },
+    "file_size_bytes": 10960305,
+    "sha256": "f6c888b31421cfab60d2c0674561ffb13a36fbab3288c40917a429655ec1f427",
+    "output_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/group-a/st3-r10-hero-desktop-3x2.png",
+    "retry_count": 0,
+    "inspection": {
+      "method": "view_image original-size",
+      "status": "pass",
+      "checks": {
+        "strict_front_camera": "pass",
+        "left_45_percent_low_frequency_copy_field": "pass",
+        "single_accept_reject_action": "pass",
+        "complete_anatomical_hands": "pass",
+        "dense_yogurt_and_translucent_whey": "pass",
+        "workshop_material_realism": "pass",
+        "clean_digital_skin_hair_finish": "pass"
+      },
+      "visible_risk": "The practical task lamp is bright but remains wholly outside the locked copy field."
+    }
+  }
+}

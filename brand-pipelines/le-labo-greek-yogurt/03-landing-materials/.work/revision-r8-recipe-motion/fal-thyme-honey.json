@@ -1,0 +1,16 @@
+{
+  "profile": "kling",
+  "duration": "3",
+  "generate_audio": false,
+  "negative_prompt": "camera movement, zoom, pan, tilt, reframing, object drift, morphing vessel, moving utensil, moving thyme, hand, splash, pouring stream, stirring, added object, removed object, new text, logo, watermark, CGI, photoreal conversion, loss of engraved pencil linework",
+  "poll_interval_ms": 5000,
+  "timeout_ms": 1800000,
+  "out": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/.work/revision-r8-recipe-motion/manifests/thyme-honey.json",
+  "clips": [{
+    "id": "mora-r8-thyme-honey-loop",
+    "start": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r6-feedback/etchings/core/st3-r6-etch-thyme-honey-square.png",
+    "end": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r6-feedback/etchings/core/st3-r6-etch-thyme-honey-square.png",
+    "prompt": "A seamless restrained motion loop inside the exact existing square culinary etching. Fully locked camera and fully locked composition. Preserve every object, the warm paper field, metal geometry, scale, shadows, engraved pencil linework and sparse color exactly. Only one recipe action occurs: one small viscous honey drop slowly lengthens beneath the existing strainer, falls into the pot, and the existing yogurt fold in the bowl settles by only a few millimetres. All utensils, syringe, thyme sprig and vessels remain completely still. The final frame returns exactly to the supplied original frame.",
+    "output": "src/assets/video/recipes/mora-recipe-thyme-honey.mp4"
+  }]
+}

@@ -1,0 +1,36 @@
+{
+  "model": "fal-ai/kling-video/v3/pro/image-to-video",
+  "submissions": [
+    {
+      "id": "mora-r8-citrus-peel-loop",
+      "model": "fal-ai/kling-video/v3/pro/image-to-video",
+      "request_id": "01a0583f-a691-7af0-981c-ce6dd9f51e30",
+      "status": "COMPLETED",
+      "output": "src/assets/video/recipes/mora-recipe-citrus-peel.mp4",
+      "downloaded": true,
+      "video_url": "https://v3b.fal.media/files/b/0aa88e94/R3-XuleM3-N8IFwDFStRo_output.mp4",
+      "start": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r6-feedback/etchings/core/st3-r6-etch-citrus-peel-square.png",
+      "end": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r6-feedback/etchings/core/st3-r6-etch-citrus-peel-square.png",
+      "start_image_url": "https://v3b.fal.media/files/b/0aa88e9d/u3f8pv-GuMLorUUPs7DS3_st3-r6-etch-citrus-peel-square.png",
+      "end_image_url": "https://v3b.fal.media/files/b/0aa88e87/kMEHcLaL0906yJ1-rqxY1_st3-r6-etch-citrus-peel-square.png",
+      "profile": "kling",
+      "input": {
+        "prompt": "A seamless restrained motion loop inside the exact existing square culinary etching. Fully locked camera and fully locked composition. Preserve every object, the warm paper field, metal geometry, scale, shadows, engraved pencil linework and sparse color exactly. Only one recipe action occurs: one existing fine citrus peel thread relaxes slightly from the grater toward the preparation bowl while the existing yogurt furrow closes by only a few millimetres. The grater, fruit, pot, beaker, syringe, spoon and all other peel remain completely still. The final frame returns exactly to the supplied original frame.",
+        "duration": "3",
+        "start_image_url": "https://v3b.fal.media/files/b/0aa88e9d/u3f8pv-GuMLorUUPs7DS3_st3-r6-etch-citrus-peel-square.png",
+        "end_image_url": "https://v3b.fal.media/files/b/0aa88e87/kMEHcLaL0906yJ1-rqxY1_st3-r6-etch-citrus-peel-square.png",
+        "negative_prompt": "camera movement, zoom, pan, tilt, reframing, object drift, morphing vessel, moving utensil, moving syringe, hand, peel explosion, splash, stirring, added object, removed object, new text, logo, watermark, CGI, photoreal conversion, loss of engraved pencil linework",
+        "generate_audio": false
+      },
+      "result_data": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0aa88e94/R3-XuleM3-N8IFwDFStRo_output.mp4",
+          "content_type": "video/mp4",
+          "file_name": "output.mp4",
+          "file_size": 1245985
+        }
+      },
+      "submitted_at": "2026-08-31T14:38:12.400Z"
+    }
+  ]
+}

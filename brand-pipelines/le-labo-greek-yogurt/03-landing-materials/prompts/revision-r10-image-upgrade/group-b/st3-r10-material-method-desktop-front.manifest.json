@@ -1,0 +1,35 @@
+{
+  "asset_id": "st3-r10-material-method-desktop-front",
+  "provider": "fal.ai",
+  "model": "openai/gpt-image-2/edit",
+  "quality": "high",
+  "output_format": "png",
+  "requested_dimensions": { "width": 2304, "height": 1536 },
+  "returned_dimensions": { "width": 2304, "height": 1536 },
+  "prompt_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/prompts/revision-r10-image-upgrade/group-b/st3-r10-material-method-desktop-front.md",
+  "asset_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r10-image-upgrade/group-b/st3-r10-material-method-desktop-front.png",
+  "references": [
+    { "role": "identity_and_partial_hand_skin_only", "sha256": "33aa45406dcea156e95ab591f7b0874d13c8fd0637af169875f09b5aad4484e4" },
+    { "role": "workshop_material_light_only", "sha256": "bc8d42c492b31533b20de733b341228912610a9a9e68aeb5496b112f8c04ef30" }
+  ],
+  "generation_history": [
+    { "pass": 1, "request_id": "01a0589f-0f8b-73e1-8f12-8c34130fbdf9", "sha256": "e7b0ecf40a5caff1b72e017be81cf73a86277e495977b80490a5b5b4c62e9430", "selected": false, "reason": "stainless table edge entered the left 45 percent copy field" },
+    { "pass": 2, "request_id": "01a058a5-2524-7ff2-bde3-017edc5e881f", "sha256": "1eefb759fa5a387d2125e834e3f3a5036a10b6e8a7aeca9dd58872ba3a09a178", "selected": true, "correction": "copy-safe geometry only" }
+  ],
+  "selected_file": { "bytes": 5060050, "sha256": "1eefb759fa5a387d2125e834e3f3a5036a10b6e8a7aeca9dd58872ba3a09a178" },
+  "retry_count": 1,
+  "qa": {
+    "exact_dimensions": "pass",
+    "strict_front_axis": "pass",
+    "left_45_percent_copy_safe": "pass",
+    "exactly_six_preparation_states": "pass",
+    "one_bowl_paddle_partial_hand_action": "pass",
+    "natural_hand_and_contact": "pass",
+    "material_specific_response": "pass",
+    "no_readable_text_logo_or_pseudotext": "pass",
+    "no_generated_grain_softness_or_hdr": "pass",
+    "risk": "none visible at the requested hard-lock inspection level"
+  },
+  "completed_at_utc": "2026-08-31T16:32:06Z"
+}
+
