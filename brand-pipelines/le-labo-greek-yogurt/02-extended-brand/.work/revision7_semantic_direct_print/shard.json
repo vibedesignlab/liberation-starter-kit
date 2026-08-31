@@ -1,0 +1,488 @@
+{
+  "artifact_type": "stage2_revision7_semantic_direct_print_shard",
+  "schema_version": "1.0.0",
+  "brand": "MORA",
+  "language": "ko-KR",
+  "status": "directional_canonical_replacement_recommendation",
+  "scope": "개별 종이 라벨과 fiber collar를 제거하고 투명 식품접촉 용기에 최소 검정 단색 정보를 직접 인쇄하는 최신 피드백을, 승인된 Stage 1 의미 문법과 현재 Stage 2 구조에 인과적으로 연결한다.",
+  "source_state": {
+    "stage1_review": "accepted",
+    "stage2_review": "revision_requested",
+    "current_stage2_revision": 6,
+    "latest_feedback_is_authoritative_for": [
+      "개별 컵의 종이 라벨과 fiber collar 제거",
+      "투명 식품용기를 기본 시각 방향으로 전환",
+      "개별 컵의 최소 검정 단색 직접 인쇄",
+      "원재료 색·질감·최소 형태를 패키지와 무드 이미지에 일관되게 반영"
+    ],
+    "not_a_production_claim": "투명 용기, 수지, 인쇄 잉크, 실링재, 정보 배치와 공정 장면은 모두 패키지 엔지니어링·식품안전·법정표시·실제 제조 검증 전의 방향성이다."
+  },
+  "previous_feedback_consistency": {
+    "kept": [
+      "source의 표면 외형이 아니라 verbal premise → philosophy → object/material → tool/action → causal trace의 연결을 번역한다.",
+      "원재료 색은 실제 요거트 안의 ribbon, fleck, thread, marble, veil, emulsion 같은 식용 흔적에서 먼저 읽힌다.",
+      "형태는 낮고 넓은 1회 섭취 요거트 컵, 넓은 입구, 완전 제거되는 peelable foil처럼 food-native 최소 구조로 유지한다.",
+      "크래프트는 손·도구·중간 산출물·한 번의 변화가 함께 보이는 실제 공정 행동으로 증명한다.",
+      "제품 비교 이미지는 동일 크기·노출·축을 고정하고, 무드의 paired evidence는 strict front와 strict 90-degree side를 유지한다.",
+      "향수·약국·빈티지 실험실의 식별 가능한 trade dress와 개인화 문법은 계속 배제한다."
+    ],
+    "superseded": [
+      {
+        "old_direction": "불투명 mineral-white primary vessel을 production baseline으로 두고 반투명을 candidate로만 취급",
+        "new_direction": "투명 식품접촉 primary vessel을 최신 피드백의 기본 시각 방향으로 채택하되 양산 가능성은 검증 대기로 유지"
+      },
+      {
+        "old_direction": "L3 dry fiber collar가 브랜드·레시피·정보·그립·seam evidence를 담당",
+        "new_direction": "개별 컵의 L3 collar를 완전히 삭제하고 정보는 L1 직접 인쇄, L2 foil 또는 허용되는 외부 물류층에 배분"
+      },
+      {
+        "old_direction": "collar seam·die-cut·조립이 Packing Table의 대표 craft action",
+        "new_direction": "직접 인쇄는 분류 장치일 뿐 craft proof가 아니다. 대표 행동은 충전·실링·중량/실링/외관 확인 같은 식품·포장 공정으로 이동"
+      },
+      {
+        "old_direction": "recipe locator가 foil tab 또는 fiber seam 옆 한 지점에서 작동",
+        "new_direction": "개별 컵의 인쇄색은 검정 하나로 고정하고 SKU 차이는 실제 내용물 색·입자·내부 흔적으로 우선 판독"
+      }
+    ],
+    "interpretation_rule": "최신 피드백은 이전의 원재료 disclosure, 최소 food form, causal craft, strict-axis evidence를 취소하지 않는다. 종이·불투명 컵·collar craft에 의존했던 해결책만 교체한다."
+  },
+  "accepted_evidence_basis": [
+    {
+      "evidence_ids": ["EV-020", "EV-021"],
+      "observed_source_signal": "서로 다른 task-native 용기에서 종이 wrap label 없이 검정 정보 인쇄가 직접 표면에 놓이고, 기능·용량·향·설명 순서가 유지된다.",
+      "inference": "source의 portable principle은 종이 자체가 아니라 용기 형식이 달라져도 사실의 위계가 살아남는 monochrome classification이다.",
+      "boundary": "source의 조밀한 ruled grid, bilingual pharmacy cadence와 exact type construction은 이식하지 않는다."
+    },
+    {
+      "evidence_ids": ["EV-011", "EV-013"],
+      "observed_source_signal": "투명 재료가 내부 상태를 드러내고 반복 제품군 속 실제 내용물 차이를 보이게 한다.",
+      "inference": "투명성의 semantic job은 perfume glass aesthetic가 아니라 product state disclosure다.",
+      "boundary": "원통 향수병, 두꺼운 glass foot, shoulder·neck·cap, 회색 PDP 정물과 wrap label은 복제하지 않는다."
+    },
+    {
+      "evidence_ids": ["EV-016", "EV-039"],
+      "observed_source_signal": "손·도구·대상과 한 번의 물리적 변화가 한 프레임에 함께 있어 작업이 주장보다 먼저 읽힌다.",
+      "inference": "craft의 portable principle은 label application 장면이 아니라 관찰 가능한 action → changed state다.",
+      "boundary": "라벨 정렬, 향수 조제, hammer·punch·wood, 어두운 공방을 MORA 장면으로 재연하지 않는다."
+    },
+    {
+      "evidence_ids": ["EV-036", "EV-037", "EV-038"],
+      "observed_source_signal": "원재료의 실제 색과 표면의 weave·ink·pore가 그 재료가 있던 곳에서만 국소적으로 나타난다.",
+      "inference": "색과 trace는 전역 decoration이 아니라 물질의 원인과 위치를 증명해야 한다.",
+      "boundary": "source의 denim tan print, porous concrete, dark-green harvest grade를 MORA의 고정 palette나 faux texture로 만들지 않는다."
+    }
+  ],
+  "causal_translation_map": [
+    {
+      "source_signal": "clear glass reveals liquid state",
+      "semantic_job": "내용물과 용기 경계를 숨기지 않고 제품 상태를 disclosure",
+      "mora_mechanism": "낮고 넓은 투명 식품접촉 컵을 통해 실제 요거트의 색·fill level·내부 trace를 보이게 함",
+      "boundary": "투명 향수병 실루엣, 유리 같은 두꺼운 바닥, neck·shoulder·charcoal cap, apothecary proportion 금지",
+      "evidence_ids": ["EV-011", "EV-013"]
+    },
+    {
+      "source_signal": "direct black information survives bottle-to-tube format change",
+      "semantic_job": "표면을 장식하지 않고 제품 사실의 읽기 순서를 고정",
+      "mora_mechanism": "투명 컵 외벽의 한 검정 잉크로 MORA → recipe → approved category → validated net quantity를 최소 위계로 직접 인쇄",
+      "boundary": "약국식 grid, 과밀한 formula copy, source typeface, bilingual 행정 리듬, ingredient-plus-number 명명 금지",
+      "evidence_ids": ["EV-020", "EV-021"]
+    },
+    {
+      "source_signal": "paper label is visibly separate from vessel and can record facts",
+      "semantic_job": "정보가 제품 물질과 다른 기록층임을 명확히 함",
+      "mora_mechanism": "개별 컵에서는 paper를 삭제한다. 기록 기능은 직접 인쇄와 검증된 foil/back code zone이 맡고, 종이는 필요한 경우에만 냉장 멀티팩·배송·영수증·법정 외부 기록에서 보조",
+      "boundary": "collar, sleeve, wrap label, band, hangtag, paper lid, underlay 또는 frosted label-shaped print panel로 종이를 재도입하지 않음",
+      "evidence_ids": ["EV-016", "EV-019"]
+    },
+    {
+      "source_signal": "one hand or tool action changes the object",
+      "semantic_job": "크래프트 철학을 관찰 가능한 행동과 before/after state로 증명",
+      "mora_mechanism": "거름, low-shear fold, 정량 충전, full-perimeter 실링, 최종 중량·seal-edge·fill-level·print 확인 가운데 한 장면에 한 동작만 노출",
+      "boundary": "label application을 직접 인쇄의 대체 craft scene으로 재현하거나 실제 SOP·수치·검사 완료를 근거 없이 주장하지 않음",
+      "evidence_ids": ["EV-016", "EV-039"]
+    },
+    {
+      "source_signal": "raw material color and causal surface trace stay local",
+      "semantic_job": "색·질감이 styling이 아니라 재료와 작업의 결과임을 증명",
+      "mora_mechanism": "recipe color는 투명 컵 안 실제 식용 trace에서, craft trace는 spoon ridge·fill line·peel edge·seal land·검증된 code/print edge에서 읽힘",
+      "boundary": "SKU별 용기 tint, 전면 spot color, 무드 조명색, faux distress·misregistration·손글씨 batch mark 금지",
+      "evidence_ids": ["EV-036", "EV-037", "EV-038"]
+    }
+  ],
+  "revised_verbal_material_rule": {
+    "canonical_working_copy": "음식은 색을 만들고, 투명 용기는 상태를 드러내며, 검정 잉크는 사실을 고정한다. 금속과 도구는 과정을 수행하고, 남은 실제 흔적이 크래프트를 증명한다.",
+    "short_rule": "보이는 것은 재료의 결과이고, 적힌 것은 검증된 사실이며, 크래프트는 행동 뒤의 실제 변화로 증명한다.",
+    "paper_rule": "종이는 개별 컵의 정체성·그립·크래프트 장식이 아니다. 필요한 경우에만 외부 물류·법정·거래 기록을 보조한다.",
+    "causal_chain": "재료가 머문 결 → 상태를 숨기지 않음 → 투명 food-native vessel + one black factual print + peelable foil → fill·seal·check → visible fill/trace·clean peel edge·verified code → 제품이 무엇이고 어떻게 보호됐는지 이해",
+    "premium_definition": "고급감은 종이 질감이나 빈티지 표면이 아니라 내용물을 숨기지 않는 구조, 적게 인쇄된 검증 정보, 정밀한 seal·print·fill 정렬과 실제 공정 증거에서 발생한다.",
+    "copy_tone": [
+      "짧고 구체적인 재료·감각·행동 언어",
+      "만든 사람의 영웅 서사보다 바뀐 상태와 확인 가능한 사실 우선",
+      "검증 전 원산지·수제·small-batch·fresh·craft·장인·영양·환경 효능을 단정하지 않음"
+    ]
+  },
+  "revised_package_architecture": {
+    "system_name": "MORA Direct Witness Pack",
+    "rule": "개별 컵의 각 재료와 표시는 실제 한 기능만 수행하고, 정보층이 음식의 색과 상태를 가리지 않는다.",
+    "layers": [
+      {
+        "id": "L0",
+        "name": "Edible evidence",
+        "job": "공통 요거트 밀도와 recipe-specific internal trace로 제품 차이를 증명",
+        "visible_witness": "actual food color, fleck, thread, marble, ribbon/emulsion, spoon furrow and stable ridge"
+      },
+      {
+        "id": "L1",
+        "name": "Transparent direct-print primary food-contact vessel",
+        "job": "요거트를 담고 실제 내용물 상태를 드러내며 최소 사실을 직접 분류",
+        "direction": "low-wide clear food-contact cup, minimal one-color black exterior print, no label-shaped opaque or frosted field",
+        "validation": "resin and additives, light/oxygen/moisture barrier, migration and taint, chilled shelf life, drop/compression, condensation/rub/scuff, print cure/adhesion/set-off, ink-food-contact separation and sortability"
+      },
+      {
+        "id": "L2",
+        "name": "Peelable foil seal",
+        "job": "primary vessel을 전 둘레 밀봉하고 최초 개봉과 완전 제거 동작을 명확히 함",
+        "direction": "matched lidding laminate or validated equivalent, one asymmetrical tab, no paper-disc lid illusion",
+        "validation": "seal-window, rim contamination, integrity, peel force, cold/wet-hand use, ink and code compatibility"
+      },
+      {
+        "id": "L3",
+        "name": "Cold-chain outer restraint and record",
+        "job": "복수의 sealed cup을 운송·진열하고 개별 컵에서 수용하기 어려운 허용 정보와 물류 코드를 배치",
+        "direction": "tested retail carrier or separate insulated e-commerce shipper; paper/fiber is permitted here only when functionally required and never masquerades as the unit identity",
+        "validation": "condensation, vibration, compression, retail handling, applicable labeling and environmental-claim review"
+      }
+    ],
+    "removed_components": [
+      "individual paper label",
+      "dry fiber collar or sleeve",
+      "collar seam and aperture",
+      "paper grip zone",
+      "recipe-color locator printed on the individual cup"
+    ],
+    "assembly_sequence": [
+      "fill approved yogurt into the validated direct-print primary vessel",
+      "apply matched foil inside the validated temperature-pressure-dwell window",
+      "inspect actual weight, fill level, full-perimeter seal, variable code, print registration and exterior condition",
+      "place sealed cups in the tested cold-chain outer restraint"
+    ],
+    "consumer_sequence": [
+      "read actual food color and minimal front facts through the transparent cup",
+      "lift the asymmetrical foil tab",
+      "remove foil completely",
+      "read density and recipe-specific internal trace at first spoon",
+      "follow only locally validated disposal or sorting instructions"
+    ]
+  },
+  "direct_print_information_architecture": {
+    "front_hierarchy": [
+      {
+        "order": 1,
+        "content": "MORA",
+        "role": "quiet orientation mark",
+        "relative_emphasis": "smallest or second-smallest"
+      },
+      {
+        "order": 2,
+        "content": "[WORKING RECIPE NAME]",
+        "role": "primary product identifier",
+        "relative_emphasis": "largest"
+      },
+      {
+        "order": 3,
+        "content": "[APPROVED CATEGORY WORDING]",
+        "role": "food form clarification; ‘Infused Greek Yogurt’ remains working copy until market review",
+        "relative_emphasis": "small"
+      },
+      {
+        "order": 4,
+        "content": "[VALIDATED NET QUANTITY]",
+        "role": "quantity fact; 150 g remains directional until fill and legal validation",
+        "relative_emphasis": "small"
+      }
+    ],
+    "secondary_information": "ingredients, allergen, nutrition, storage, producer, barcode, lot/date and other mandatory facts are assigned to a narrow back/lower exterior print zone, a technically suitable foil zone or the permitted outer pack only after jurisdictional and legibility review. A paper collar or label is not a fallback.",
+    "variable_code_rule": "lot/date coding is a separate verified operational field, never an enlarged decorative batch ritual and never generated in concept imagery.",
+    "visual_rules": [
+      "one dark-neutral or black ink only on the individual cup",
+      "no recipe spot colors, flood tint, white label block, frosted band or faux paper rectangle",
+      "no pharmacy grid; use an open field, one clear start line and generous separation",
+      "print must not conceal the food trace or simulate a wrap label",
+      "actual food color—not cup ink—carries SKU differentiation",
+      "if black print loses contrast against a dark recipe, relocate or reduce information to a validated clear/foil/outer-pack zone; do not add a paper label or opaque band"
+    ],
+    "release_tests": [
+      "curved-surface distortion and hierarchy comprehension at actual cup size",
+      "contrast and legibility across all six actual fill colors, fill levels and open/closed states",
+      "cold condensation, wet-hand rub, abrasion, stacking, scuff and retail light",
+      "ink chemistry, cure, adhesion, migration, set-off, odor/taint and food-contact separation",
+      "sealing heat/pressure interaction, flange and rim clearance, variable-code durability",
+      "applicable-market mandatory labeling, type size, language, barcode and net-content review",
+      "material sorting and environmental claims reviewed without inferring recyclability from transparency"
+    ]
+  },
+  "craft_evidence_relocation": {
+    "principle": "투명성·직접 인쇄·minimalism은 design structure이지 craft proof가 아니다. 장인성의 증거는 packaging decoration에서 실제 food and packing action으로 이동한다.",
+    "remove_as_craft_proof": [
+      "paper grain",
+      "die-cut edge",
+      "fiber compression",
+      "collar seam closure",
+      "label alignment or application",
+      "faux ink irregularity",
+      "handwritten or stamped batch theater"
+    ],
+    "approved_directional_actions": [
+      {
+        "action": "Strain",
+        "tool": "covered perforated stainless frame and validated food filter",
+        "changed_state": "cultured set separates into dense base and acid whey",
+        "visible_trace": "filter boundary, pale whey level and weighed dense output",
+        "truth_boundary": "actual equipment, temperature, time, yield and hygiene controls required before public claim"
+      },
+      {
+        "action": "Low-shear fold",
+        "tool": "broad paddle and shallow stainless vessel or validated low-shear mixer",
+        "changed_state": "ingredient preparation enters dense base without becoming decorative topping",
+        "visible_trace": "one internal ribbon, fleck, thread, marble or emulsion caused by the action",
+        "truth_boundary": "recipe-specific trace must match an approved sample and actual preparation route"
+      },
+      {
+        "action": "Fill and seal",
+        "tool": "low-shear filler and matched cup sealer",
+        "changed_state": "open food-contact cup becomes a sealed refrigerated unit",
+        "visible_trace": "controlled fill level, clean flange, flat full-perimeter foil and intact tab",
+        "truth_boundary": "do not show unsupported machine settings, throughput or seal-performance claims"
+      },
+      {
+        "action": "Final check",
+        "tool": "calibrated stainless platform scale plus visual seal/print/code check",
+        "changed_state": "filled and sealed unit becomes an inspected candidate for cold-chain placement",
+        "visible_trace": "same direct-print transparent cup, scale contact, fill/print/seal alignment and readable code zone",
+        "truth_boundary": "directional scene only until actual SOP and acceptance criteria are approved; generated numbers are prohibited"
+      }
+    ],
+    "packing_table_pair_replacement": {
+      "series_name": "The Final Check, Two Axes",
+      "verbal_premise": "같은 사람이 이미 충전·밀봉된 같은 컵을 같은 확인 동작에 놓습니다. 정면에서는 내용물·인쇄·실링의 정렬을, 측면에서는 용기 벽·fill level·foil edge·도구 접촉을 봅니다.",
+      "pair_caption": "같은 제작자, 같은 밀봉 컵, 같은 확인 순간. 카메라 축만 바뀝니다.",
+      "front_frame": "strict frontal; maker places the sealed direct-print transparent cup on the scale; fill color, front hierarchy, foil plane and cup centerline remain readable",
+      "side_frame": "strict right 90-degree profile; same action phase; cup wall, actual fill, foil edge, scale contact and one hand pressure share one focal plane",
+      "continuity_locks": [
+        "same non-founder maker, wardrobe, sealed SKU, cup, foil-tab orientation, scale, table, action phase, camera height, subject scale and light source",
+        "only camera azimuth changes from 0 degrees to exact 90 degrees",
+        "no sleeve, paper label, collar fitting, printing action, generated scale value, perfume tool or unsupported cleanliness theater"
+      ],
+      "status": "directional_visual_replacement_requires_actual_process_confirmation"
+    }
+  },
+  "prohibited_identifiable_imitation": [
+    "clear cylindrical perfume bottle, heavy glass foot, sloped shoulder, narrow neck, spray pump, stopper or charcoal fragrance cap",
+    "warm paper wrap label, individual sleeve, fiber collar, label-shaped frost/white block or printed band that visually restores a paper label",
+    "dense pharmacy ruled grid, formula panel, ingredient-plus-number naming, city/date/recipient personalization or hand-compounded label cadence",
+    "Le Labo wordmark, exact grotesque/monospace/typewriter/stencil construction, Bell Gothic-like clone or source layout proportions",
+    "label alignment/application, beaker-to-bottle pour, refill ritual, black-steel laboratory, amber apothecary glass, vintage scale or compounding tool as brand theater",
+    "Le Journal engraving/collage/newspaper surface, discovery-vial box organization or source grey-field fragrance PDP composition",
+    "rustic kraft, deckle edge, twine, wax, stamp, faux recycled speckle, gold foil, varnished cosmetic black, sepia wear or arbitrary patina",
+    "fake ink bleed, distress, misregistration, handwriting, decorative batch code or invented inspection number",
+    "SKU-specific cup tint, printed recipe-color locator, background light wash or global ingredient palette that replaces actual food evidence",
+    "unverified handmade, artisanal, small-batch, fresh, preservative-free, leak-proof, recyclable, biodegradable, lower-impact or superior-barrier claims"
+  ],
+  "exact_canonical_replacement_recommendations": [
+    {
+      "path": "sections.source_grammar_application.summary",
+      "operation": "replace",
+      "with": "Le Labo의 portable cause는 glass·paper·metal의 빈티지 조합이 아니라 상태 disclosure, factual classification, observable action, causal trace다. MORA에서는 음식이 색을 만들고 투명 cup이 상태를 드러내며 black direct print가 사실을 고정하고 tools/actions가 craft를 증명한다."
+    },
+    {
+      "path": "sections.source_grammar_application.causal_model.target_chain",
+      "operation": "replace",
+      "with": "재료가 머문 결 → 상태를 숨기지 않음 → transparent food-native vessel + one black factual print + peelable foil → fill·seal·check → visible fill/trace·clean peel edge·verified code → 제품과 보호 방식의 이해"
+    },
+    {
+      "path": "sections.source_grammar_application.causal_model.material_rule",
+      "operation": "replace",
+      "with": "음식은 색을 만들고, 투명 용기는 상태를 드러내며, 검정 잉크는 사실을 고정한다. 금속과 도구는 과정을 수행하고, 남은 실제 흔적이 크래프트를 증명한다."
+    },
+    {
+      "path": "sections.source_grammar_application.causal_model.material_roles",
+      "operation": "replace_array",
+      "with": [
+        "food reveals ingredient behavior, edible color and internal trace",
+        "transparent primary vessel contains food and discloses actual fill state after validation",
+        "black direct ink classifies a minimal set of verified facts without becoming decoration",
+        "foil performs one-time full-perimeter sealing and a legible peel action",
+        "paper supports only necessary outer logistics, legal or transaction records and never identifies the individual cup",
+        "stainless tools perform measurable food or packing actions",
+        "craft trace is accepted only when its physical cause is visible"
+      ]
+    },
+    {
+      "path": "sections.source_grammar_application.decisions[source_grammar_id=GK-06].target_direction",
+      "operation": "replace",
+      "with": "Separate edible yogurt, a validated transparent direct-print food-contact cup, one-time peelable foil and cold-chain outer restraint. Show actual food state, print hierarchy, peel edge, tool contact and process-caused trace; do not add an individual paper layer."
+    },
+    {
+      "path": "sections.landing_product_concept.product_family.shared_invariants[3]",
+      "operation": "replace",
+      "with": "모든 포장은 L0 음식 → L1 투명 직접인쇄 식품접촉 primary vessel → L2 one-time peelable foil → L3 냉장 물류용 외부 restraint의 기능 순서를 공유한다. 개별 컵의 종이 라벨·collar·sleeve·aperture는 사용하지 않는다."
+    },
+    {
+      "path": "sections.landing_product_concept.product_family.differentiation_logic.fixed",
+      "operation": "replace",
+      "with": "낮고 넓은 투명 food-contact vessel 비례, full-perimeter foil, 비대칭 필 탭, one-color black direct-print hierarchy, 스푼 자국, 촬영 각도"
+    },
+    {
+      "path": "sections.landing_product_concept.product_family.differentiation_logic.decision_rule",
+      "operation": "replace",
+      "with": "제품 차이는 용기 인쇄색이 아니라 실제 음식의 veil, fleck, thread, marble, ribbon/emulsion 또는 검증된 material behavior에서 발생한다. 개별 컵은 검정 한 색만 사용하며 recipe locator를 foil tab·seam·background로 확장하지 않는다."
+    },
+    {
+      "path": "sections.landing_product_concept.product_family.physical_package_cues",
+      "operation": "replace_array",
+      "with_ref": "revised_package_architecture.layers + direct_print_information_architecture.visual_rules",
+      "required_text": "투명 low-wide food-contact cup, one-color black direct print, peelable foil, no individual paper/collar; all barrier, migration, shelf-life, condensation, print and legal gates remain open"
+    },
+    {
+      "path": "sections.landing_product_concept.product_family.material_witness_pack",
+      "operation": "replace_object",
+      "with_ref": "revised_package_architecture",
+      "note": "old L3 collar is removed; old L4 cold-chain layer is renumbered L3; sleeve-removal gates become print/contrast/condensation gates"
+    },
+    {
+      "path": "sections.visual_branding_and_key_visual.surface_translation",
+      "operation": "replace_object_fields",
+      "with": {
+        "landing_hero": "open direct-print transparent Thyme Honey cup and sealed companion reveal actual food, cup wall, black facts and foil without a paper layer",
+        "process_content": "straining, folding, filling, sealing and final check each show one tool, one action and one changed state; no sleeve fitting or labeling",
+        "packaging": "transparent validated food-contact vessel + one black factual print + matte peelable foil + cold-chain outer restraint",
+        "brand_mood_opener": "Final Check Frame A declares food/print/seal alignment on the packing table",
+        "process_pair": "Final Check A/B use the same sealed cup and scale action; front reads hierarchy/alignment, side reads wall/fill/foil/tool contact"
+      }
+    },
+    {
+      "path": "sections.visual_branding_and_key_visual.material_witness_visual_system",
+      "operation": "replace_object",
+      "with": {
+        "rule": "food colors; transparent vessel discloses; black ink classifies; foil seals; tools act; actual traces prove",
+        "hero_states": [
+          "open food with spoon trace through transparent wall",
+          "sealed companion with full-perimeter matte foil and pull tab",
+          "minimal black direct print as an open information field",
+          "no individual paper, collar, aperture or decorative locator"
+        ],
+        "ingredient_color_behavior": "ingredient color stays in actual edible trace and never becomes unit print, global accent, wall, light, CTA or full-pack tint",
+        "material_contrast": "actual dairy/ingredient color · clear food-contact wall · thin matte foil · black ink · brushed stainless tool",
+        "candidate_boundary": "transparent direct-print vessel is the user-locked visual direction but not a production claim until barrier, migration, shelf-life, condensation, print and seal tests pass",
+        "status": "directional_revision_7"
+      }
+    },
+    {
+      "path": "sections.brand_mood_and_brand_imagery.material_witness_mood_system",
+      "operation": "replace_object",
+      "with_ref": "craft_evidence_relocation.packing_table_pair_replacement",
+      "note": "delete sealed-then-sleeved language, collar action, collar physical QA and sleeve-based package anatomy support"
+    },
+    {
+      "path": "sections.brand_mood_and_brand_imagery.strict_axis_series",
+      "operation": "replace_collar_specific_fields",
+      "with_ref": "craft_evidence_relocation.packing_table_pair_replacement",
+      "note": "retain strict front/side grammar and continuity locks; replace sleeve assembly with final check"
+    },
+    {
+      "path": "sections.product_visual_traits_and_product_imagery.product_visual_traits.proportion_hierarchy_density",
+      "operation": "replace_array",
+      "with_ref": "direct_print_information_architecture.front_hierarchy + direct_print_information_architecture.secondary_information"
+    },
+    {
+      "path": "sections.product_visual_traits_and_product_imagery.product_visual_traits.material_surface_or_component_character",
+      "operation": "replace_array",
+      "with": [
+        "primary vessel is a smooth clear food-contact candidate, closure is thin matte foil and exterior facts use one black direct ink",
+        "no opaque baseline, paper collar, sleeve, aperture, die-cut edge or label-shaped frost remains on the individual cup",
+        "actual edible color and trace—not print color—differentiate recipes",
+        "direct print uses an open hierarchy and avoids pharmacy grids, faux distress and decorative variable codes",
+        "all material, print, seal and shelf-life specifications remain validation-dependent"
+      ]
+    },
+    {
+      "path": "sections.product_visual_traits_and_product_imagery.product_image_direction",
+      "operation": "replace_collar_specific_fields",
+      "with": {
+        "hero_form": "show direct-print transparent cup, actual edible trace, matte foil and open/closed states without fiber collar or aperture",
+        "feature_detail": "record cup wall/fill boundary, black print edge, rim, foil tab/peel edge, seal land and spoon section",
+        "use_interaction": "replace collar fitting with one final-check action on a sealed cup; consumer interaction remains peel or first spoon",
+        "background_material_separation": "separate clear wall, food, black ink and silver foil with neutral light; do not hide transparency behind label-like panels"
+      }
+    },
+    {
+      "path": "sections.design_token_direction.color",
+      "operation": "remove_collar_and_recipe_locator_targets",
+      "with_rule": "individual cup ink is one black/dark-neutral; recipe tokens may describe actual edible evidence and digital explanation only, never seam, aperture, cup tint or decorative unit print"
+    },
+    {
+      "path": "sections.design_token_direction.shape[product-cup]",
+      "operation": "replace_target_direction",
+      "with": "low-wide transparent food-contact cup with direct black information field and peelable foil; no dry collar, paper seam or opaque mineral-white baseline"
+    },
+    {
+      "path": "moodboard_inputs.product_description",
+      "operation": "replace_collar_and_opaque_vessel_language",
+      "with": "MORA is a low-wide transparent food-contact yogurt cup whose actual food color and internal trace remain visible beneath minimal black direct print and a fully removable matte foil seal."
+    },
+    {
+      "path": "moodboard_inputs.brand_mood_images",
+      "operation": "replace_packing_table_description",
+      "with_ref": "craft_evidence_relocation.packing_table_pair_replacement"
+    },
+    {
+      "path": "moodboard_inputs.product_image_generation",
+      "operation": "replace_all_collar_aperture_seam_and_opaque_baseline_prompts",
+      "with_rule": "transparent direct-print food cup, one black hierarchy, actual fill/trace, foil seal; no paper/collar, recipe-color print, perfume silhouette or label-shaped panel"
+    },
+    {
+      "path": "boundaries.assumptions",
+      "operation": "replace_packaging_assumptions",
+      "with": [
+        "transparent direct-print food-contact cup is a user-requested visual direction, not a verified production specification",
+        "individual paper label and fiber collar are removed from the direction",
+        "print allocation and category/net-content wording require actual-market review",
+        "food colors, fill state and process traces require approved physical samples before public use"
+      ]
+    },
+    {
+      "path": "boundaries.factual_limits",
+      "operation": "replace_translucent_candidate_and_sleeve_language",
+      "with_ref": "direct_print_information_architecture.release_tests",
+      "note": "explicitly prohibit claims that transparency, direct print or paper removal proves recyclability, freshness, barrier performance or craftsmanship"
+    }
+  ],
+  "canonical_consistency_sweep": {
+    "remove_terms_when_they_refer_to_individual_unit": [
+      "fiber collar",
+      "dry fiber",
+      "sleeve",
+      "sleeved",
+      "collar seam",
+      "aperture",
+      "mineral-white production baseline",
+      "translucent candidate",
+      "foil-tab or sleeve-seam locator"
+    ],
+    "retain_only_when_qualified": [
+      "paper or fiber for tested outer cold-chain restraint",
+      "actual packaging material is unverified",
+      "generated images are directional and do not close release gates",
+      "strict frontal and strict side visual comparison",
+      "actual edible trace, peel edge, seal land and tool contact as evidence"
+    ],
+    "cross_section_test": "landing concept, key visual, brand mood, product imagery, design tokens, moodboard inputs and boundaries must describe the same transparent direct-print cup and the same absence of unit paper."
+  },
+  "decision_summary": [
+    "종이를 빼도 source semantics는 약해지지 않는다. EV-020/021은 factual black hierarchy가 task-native 직접 인쇄로 이동할 수 있음을 보여 준다.",
+    "투명 컵의 역할은 perfume-glass mood가 아니라 실제 음식 상태와 재료색 disclosure다.",
+    "직접 인쇄는 craft가 아니라 classification이다. craft proof는 strain/fold/fill/seal/check 같은 실제 행동으로 이동한다.",
+    "제품별 차이는 검정 인쇄색이 아니라 내용물의 실제 색·입자·내부 trace가 맡는다.",
+    "개별 종이를 다시 가져오는 모든 우회안과 source의 약국·향수 식별 문법은 금지한다."
+  ]
+}

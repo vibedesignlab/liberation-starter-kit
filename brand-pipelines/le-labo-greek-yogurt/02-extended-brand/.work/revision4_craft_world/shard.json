@@ -1,0 +1,292 @@
+{
+  "shard_type": "stage2_craft_world_revision",
+  "brand": "MORA",
+  "scope": "Brand-world, verbal hierarchy, controlled personalization and protected boundaries only; technical process parameters remain subject to the process shard and production validation.",
+  "key_decision": "Le Labo의 랩·라벨 표면을 옮기지 않고, 프리미엄의 근거를 발효·거름·재료별 중간 상태·저전단 폴딩·한 컵 마감처럼 관찰 가능한 식품 행동으로 바꾼다.",
+  "brand_platform": {
+    "purpose": "천연 재료가 요거트 안에서 어떻게 향과 질감, 여운으로 바뀌는지 누구나 보고 고를 수 있게 한다.",
+    "belief": "좋은 한 컵의 가치는 화려한 토핑보다 시간, 분리, 거름, 접기처럼 눈으로 확인할 수 있는 과정에서 생긴다.",
+    "world_premise": "MORA는 완제품만 진열하는 요거트 브랜드가 아니라, 우유가 밀도를 얻고 재료가 각자 맞는 중간 상태를 거쳐 한 줄의 흔적으로 컵에 들어가는 과정을 공개하는 현대 식품 아틀리에다.",
+    "brand_essence": "Measured Transformation / 측정된 변화",
+    "master_message": "한 컵 안에, 재료가 머문 결.",
+    "craft_message": "한 컵의 밀도는 발효와 거름에서, 한 컵의 개성은 재료의 중간 상태에서 시작됩니다.",
+    "promise": "같은 그릭요거트의 밀도 안에서, 재료마다 다른 중간 상태와 마지막 흔적을 분명하게 보여 줍니다.",
+    "positioning_support": "맛을 덧붙인 요거트가 아니라, 요거트의 몸과 재료의 흔적을 각각 만든 뒤 가장 적은 동작으로 만나게 한 ingredient-led Greek yogurt.",
+    "tone": [
+      "차분한",
+      "구체적인",
+      "감각적이되 검증 가능한",
+      "장인 영웅담보다 작업의 증거를 앞세우는",
+      "한계를 숨기지 않는"
+    ]
+  },
+  "brand_values": [
+    {
+      "value": "보이는 제작",
+      "belief": "장인성은 형용사가 아니라 누가 무엇을 어떻게 다루는지 보이는 상태다.",
+      "behavior": "한 장면에는 한 사람, 한 도구, 한 변화만 두고 행동의 시작과 결과를 함께 보여 준다.",
+      "proof": "발효된 세트, 빠져나온 유청, 남은 농축 요거트, 계량된 인퓨전 베이스, 폴딩 뒤의 한 줄 흔적",
+      "claim_gate": "실제 생산에서 확인되지 않은 공정은 촬영하거나 handmade, small-batch, slow-infused 같은 주장으로 쓰지 않는다."
+    },
+    {
+      "value": "재료마다 다른 중간 상태",
+      "belief": "모든 재료를 같은 투명 액체로 만드는 것은 공예가 아니라 연출이다.",
+      "behavior": "허브·꿀·곡물·껍질·씨앗·오일에 맞춰 infusion, syrup, slurry, paste, oil phase 또는 emulsion처럼 정직한 식품 형태를 구분한다.",
+      "proof": "원재료와 그것에서 나온 식용 중간 산출물을 한 프레임에 대응시킨다.",
+      "claim_gate": "식품 안전, 배합, 관능, 알레르기와 표시 적합성이 검증된 형태만 소비자 언어로 명명한다."
+    },
+    {
+      "value": "밀도를 지키는 절제",
+      "belief": "더 많이 섞고 더 많이 장식하는 대신, 요거트의 몸을 보존하는 최소 행동이 제품의 성격을 만든다.",
+      "behavior": "농축 뒤 넓은 패들로 부드럽게 접고, 한 제품에는 하나의 재료 흔적과 하나의 사용 동작만 남긴다.",
+      "proof": "무너지지 않는 스푼 홈, 요거트 안쪽까지 이어지는 리본·입자·마블, 과도한 스플래시가 없는 폴딩 장면",
+      "claim_gate": "저전단 또는 질감 보존 표현은 실제 설비·점도 시험과 연결될 때만 사실 문구로 사용한다."
+    },
+    {
+      "value": "고를 수 있는 마지막 방식",
+      "belief": "개인화는 레시피를 임의로 바꾸는 일이 아니라, 검증된 한 컵을 먹는 마지막 방식을 고르는 일이다.",
+      "behavior": "Finish Counter에서 제품별 승인 베이스의 총량과 조성은 고정하고 Soft Fold, Single Trace, On the Side 중 표현 방식 하나만 선택하게 한다.",
+      "proof": "같은 제품과 같은 계량량이 세 가지 마감 상태로 달라지는 서비스 시퀀스",
+      "claim_gate": "밀봉 소매 제품, 배달, 장기 보관 제품에는 현장 마감을 적용하거나 개인화했다고 말하지 않는다."
+    },
+    {
+      "value": "기록 가능한 정직성",
+      "belief": "프리미엄은 신비보다 어떤 배치와 중간 산출물이 한 컵에 들어갔는지 설명할 수 있는 능력에 가깝다.",
+      "behavior": "제품명, 요거트 배치, 인퓨전 베이스 로트, 마감 방식과 필수 보관 정보를 사실 위계로 기록한다.",
+      "proof": "생산 기록과 연결된 Batch Card 또는 디지털 조회 정보",
+      "claim_gate": "시스템이 실제로 연결되기 전에는 추적 가능, 산지 보증, 장인 서명 같은 문구를 사용하지 않는다."
+    }
+  ],
+  "world_system": {
+    "world_name": "The MORA Making Rooms",
+    "world_rule": "공간은 분위기 세트가 아니라 공정의 한 기능을 맡는다. 각 장은 한 장소, 한 동사, 한 중간 산출물, 한 소비자 의미로 구성한다.",
+    "chapters": [
+      {
+        "chapter": 1,
+        "location": "The Culturing Room / 발효실",
+        "verb": "기다리다",
+        "observable_action": "온도와 산도를 확인한 뒤 우유가 스스로 세트를 형성하도록 움직임을 줄인다.",
+        "evidence_object": "우유 베이스, 배양 용기, 식품용 온도계와 pH 미터, 형성된 커드",
+        "intermediate_output": "cultured set",
+        "consumer_meaning": "밀도는 첨가된 장식이 아니라 배양과 시간에서 시작된다.",
+        "chapter_line": "우유가 몸을 얻는 시간."
+      },
+      {
+        "chapter": 2,
+        "location": "The Straining Table / 거름대",
+        "verb": "나누다",
+        "observable_action": "식품용 천과 타공 프레임 위에 세트를 두어 유청과 농축 요거트를 분리한다.",
+        "evidence_object": "muslin, 타공 스테인리스 프레임, 유청 받이, 옅은 황록색 acid whey, 남은 요거트 베이스",
+        "intermediate_output": "acid whey + strained yogurt base",
+        "consumer_meaning": "빠져나온 것과 남은 것을 함께 보여 줄 때 그릭요거트의 밀도가 이해된다.",
+        "chapter_line": "덜어낸 유청만큼, 남는 밀도."
+      },
+      {
+        "chapter": 3,
+        "location": "The Infusion Pantry / 인퓨전 팬트리",
+        "verb": "꺼내다",
+        "observable_action": "재료마다 맞는 식품용 매질과 처리법을 택해 향, 색, 입자 또는 오일 상을 별도의 중간 베이스로 만든다.",
+        "evidence_object": "원재료와 나란히 놓인 wide-mouth food vessels, mesh basket, chinois, shallow bowl, 계량 저울",
+        "intermediate_output": "ingredient-specific infusion base",
+        "consumer_meaning": "여섯 맛은 같은 향료 액체의 변주가 아니라 재료의 물성에 맞는 여섯 중간 상태다.",
+        "chapter_line": "재료마다, 머무는 방식이 다릅니다."
+      },
+      {
+        "chapter": 4,
+        "location": "The Folding Bench / 폴딩 벤치",
+        "verb": "접다",
+        "observable_action": "계량한 베이스를 농축 요거트에 넓은 패들로 최소한만 접어 밀도와 한 줄 흔적을 함께 남긴다.",
+        "evidence_object": "calibrated scale, broad stainless paddle, strained yogurt base, measured ingredient base, ribbon or fleck after folding",
+        "intermediate_output": "finished recipe with one trace",
+        "consumer_meaning": "재료가 보이되 요거트의 몸을 덮지 않는 이유를 한 동작으로 설명한다.",
+        "chapter_line": "세게 섞지 않고, 한 줄의 흔적만."
+      },
+      {
+        "chapter": 5,
+        "location": "The Finish Counter / 피니시 카운터",
+        "verb": "고르다",
+        "observable_action": "즉시 섭취하는 아틀리에 컵에 한해 고객이 승인된 세 가지 마감 상태 중 하나를 고르면 maker가 고정량으로 완성한다.",
+        "evidence_object": "open cup, product-specific measured base, one spoon or paddle, finish marker, Batch Card",
+        "intermediate_output": "served cup",
+        "consumer_meaning": "레시피의 안전성과 일관성은 고정하고, 먹는 마지막 관계만 개인이 선택한다.",
+        "chapter_line": "레시피는 고정하고, 마지막 방식은 고릅니다."
+      }
+    ],
+    "visual_story_sequence": [
+      "Milk → Body",
+      "Set → Whey + Concentrate",
+      "Ingredient → Infusion Base",
+      "Base → Trace",
+      "Cup → Finish"
+    ],
+    "chapter_transition_rule": "각 장의 끝에는 다음 장으로 이동하는 실제 물질을 남긴다. Culturing Room의 세트가 Straining Table로, 농축 베이스와 인퓨전 베이스가 Folding Bench로, 완성 레시피가 Finish Counter로 이어져야 한다.",
+    "premium_equation": "Measured time + visible separation + ingredient-appropriate intermediate state + restrained finishing + factual record"
+  },
+  "finish_counter": {
+    "service_principle": "고객이 고르는 것은 레시피·농도·효능이 아니라 같은 승인 레시피의 마지막 배치 방식이다.",
+    "eligibility": "현장에서 즉시 섭취하는 아틀리에 컵에만 적용한다. 각 제품에는 사전 승인된 자기 재료 베이스 하나만 사용한다.",
+    "fixed_invariants": [
+      "제품별 요거트 배치와 인퓨전 베이스 조성",
+      "총 제공량과 인퓨전 베이스 계량량",
+      "알레르기·보관·위생 기준",
+      "제품명과 배치 추적 정보"
+    ],
+    "choices": [
+      {
+        "name": "Soft Fold",
+        "korean_descriptor": "부드럽게 접기",
+        "action": "승인 베이스를 넓은 스푼 또는 패들로 한두 번만 접어 컵 전체에 느슨하게 이어지게 한다.",
+        "sensory_read": "첫입부터 베이스와 요거트가 함께 읽히는 가장 고른 상태",
+        "visual_cue": "넓고 옅은 마블"
+      },
+      {
+        "name": "Single Trace",
+        "korean_descriptor": "한 줄 남기기",
+        "action": "같은 계량량을 컵 표면과 한 번의 얕은 폴드에 연속된 한 줄로 남긴다.",
+        "sensory_read": "한 숟갈 안에서도 요거트와 재료 흔적의 대비가 분명한 상태",
+        "visual_cue": "하나의 선명한 리본"
+      },
+      {
+        "name": "On the Side",
+        "korean_descriptor": "곁에 두기",
+        "action": "같은 계량량의 승인 베이스를 작은 식품용 컵 또는 스푼에 따로 제공해 고객이 숟갈마다 양을 조절한다.",
+        "sensory_read": "요거트의 기본 밀도와 재료 베이스를 번갈아 비교하는 상태",
+        "visual_cue": "열린 요거트 컵과 작은 측면 포션"
+      }
+    ],
+    "service_script": [
+      "오늘의 컵과 인퓨전 베이스는 이미 정해진 레시피입니다.",
+      "마지막 방식만 고를 수 있습니다: 부드럽게 접기, 한 줄 남기기, 곁에 두기.",
+      "어떤 방식을 골라도 재료와 제공량은 같습니다."
+    ],
+    "prohibited_customization": [
+      "재료 임의 혼합 또는 제품 간 베이스 교차 사용",
+      "산도, 배양, 당도, 알레르기 성분 또는 유통기한의 현장 변경",
+      "고객 이름이나 기념 날짜를 조제 증거처럼 쓰는 라벨",
+      "밀봉 소매 컵을 개봉해 재가공하거나 개인화하는 서비스"
+    ]
+  },
+  "traceability_system": {
+    "working_name": "MORA Batch Card",
+    "role": "개인화 기념물이 아니라 한 컵의 실제 경로를 짧게 확인하는 사실 기록",
+    "consumer_visible_fields": [
+      "product_name",
+      "yogurt_batch_id",
+      "infusion_base_lot",
+      "finish_mode_if_counter_served",
+      "required_storage_and_serve_by_information"
+    ],
+    "production_record_only_fields": [
+      "validated culture and heat-treatment record",
+      "target and measured process controls",
+      "ingredient receipt and allergen records",
+      "sanitation and cold-chain checks",
+      "operator and station logs"
+    ],
+    "display_rule": "소비자 카드에는 선택에 필요한 사실만 단순 텍스트로 제시하고, 생산 기록은 내부 시스템에 남긴다. 법적 날짜·로트 표시는 기능 정보로만 사용하며 손글씨, maker 서명, 고객 이름, 처방전 격자로 연출하지 않는다.",
+    "implementation_gate": "실제 생산 기록과 조회 체계가 연결되기 전에는 카드 시안을 traceability proof로 주장하지 않는다."
+  },
+  "message_hierarchy": [
+    {
+      "level": 1,
+      "name": "Brand belief",
+      "message": "좋은 한 컵은 더 많이 더하는 대신, 무엇을 남길지 정확히 고르는 데서 시작됩니다.",
+      "job": "MORA가 왜 존재하는지 말한다."
+    },
+    {
+      "level": 2,
+      "name": "Brand premise",
+      "message": "한 컵 안에, 재료가 머문 결.",
+      "job": "모든 제품과 채널을 묶는 가장 짧은 명제다."
+    },
+    {
+      "level": 3,
+      "name": "Craft system",
+      "message": "발효로 몸을 만들고, 거름으로 밀도를 남기고, 재료별 중간 상태를 한 번만 접습니다.",
+      "job": "프리미엄의 근거를 관찰 가능한 제작 순서로 설명한다."
+    },
+    {
+      "level": 4,
+      "name": "Ingredient system",
+      "message": "허브, 잎, 곡물, 껍질, 씨앗, 오일은 서로 다른 방식으로 요거트에 머뭅니다.",
+      "job": "여섯 제품의 차이가 이름이 아니라 재료 물성에서 생긴다는 것을 가르친다."
+    },
+    {
+      "level": 5,
+      "name": "Personal finish",
+      "message": "레시피는 고정하고, 마지막 방식은 고릅니다.",
+      "job": "Finish Counter의 제한된 개인화를 이해시킨다."
+    },
+    {
+      "level": 6,
+      "name": "Product truth",
+      "message": "검증된 재료, 배치, 제공량, 보관과 알레르기 정보를 사실 그대로 공개합니다.",
+      "job": "감각 서사 뒤에 필요한 식품 사실과 한계를 둔다."
+    }
+  ],
+  "korean_copy_bank": {
+    "manifesto_short": [
+      "우리는 맛을 얹지 않고, 재료가 머물 자리를 만듭니다.",
+      "우유는 발효로 몸을 얻고, 거름을 지나 밀도를 남깁니다.",
+      "재료는 저마다 다른 중간 상태를 거쳐 요거트 안에 한 줄의 흔적으로 들어갑니다.",
+      "한 컵의 마지막 방식은 고를 수 있지만, 그 안의 기준은 바꾸지 않습니다."
+    ],
+    "world_headlines": [
+      "우유가 몸을 얻는 시간.",
+      "덜어낸 유청만큼, 남는 밀도.",
+      "재료마다, 머무는 방식이 다릅니다.",
+      "세게 섞지 않고, 한 줄의 흔적만.",
+      "레시피는 고정하고, 마지막 방식은 고릅니다."
+    ],
+    "proof_lines": [
+      "보이는 유청과 남은 밀도가 한 컵의 시작을 설명합니다.",
+      "꿀은 시럽으로, 깨는 고운 페이스트로, 오일은 오일의 상태로 다룹니다.",
+      "한 장면에는 한 동작만. 손과 도구, 재료의 변화가 모두 보여야 합니다.",
+      "만든 사람의 신비보다, 만들어진 상태의 증거를 남깁니다."
+    ],
+    "finish_counter_lines": [
+      "부드럽게 접을까요, 한 줄 남길까요, 곁에 둘까요?",
+      "어떤 방식을 골라도 같은 레시피와 같은 양입니다.",
+      "당신이 고르는 것은 맛의 공식이 아니라 마지막 한 숟갈의 방식입니다."
+    ]
+  },
+  "protected_boundaries": {
+    "do_not_copy": [
+      "Le Labo의 약국형 격자 라벨, 압축 워드마크, 원료명+숫자 네이밍",
+      "고객 이름·도시·조제 날짜를 기념화하는 개인 라벨",
+      "퍼퓨머·화학자·백의·조제 의식과 앰버 병·비커·피펫·시험관",
+      "Le Journal형 신문 편집, 흑백 향수 판화, 세피아 빈티지 랩",
+      "향수 배합을 연상시키는 formula, elixir, essence, spirit, alchemy vocabulary"
+    ],
+    "food_native_replacements": [
+      "apothecary lab → modern food atelier",
+      "formula → validated recipe",
+      "perfume concentrate → ingredient-specific food base",
+      "personal label → factual Batch Card",
+      "custom formulation → fixed recipe with selectable finish mode",
+      "mysterious artisan → observable maker action"
+    ],
+    "claim_boundaries": [
+      "handmade, artisan, small-batch, slow-infused는 문서화된 실제 운영이 있을 때만 사용한다.",
+      "fig leaf를 포함한 모든 원재료와 중간 베이스는 식품 안전·법적 사용·알레르기·배합 검증 전 방향성으로만 표기한다.",
+      "모든 재료를 위스키처럼 투명한 spirit로 표현하지 않는다. 실제 점도와 상을 보존한다.",
+      "소비자용 스토리텔링의 온도·시간·pH·비율은 승인된 생산 사양과 일치할 때만 공개한다.",
+      "현장 마감과 밀봉 소매 생산을 같은 공정처럼 섞어 보여 주지 않는다."
+    ]
+  },
+  "merge_recommendation": {
+    "verbal_branding_and_copy_hierarchy": [
+      "brand_platform",
+      "brand_values",
+      "message_hierarchy",
+      "korean_copy_bank",
+      "protected_boundaries"
+    ],
+    "brand_mood_and_brand_imagery": [
+      "world_system",
+      "finish_counter",
+      "traceability_system"
+    ],
+    "status": "directional_revision_pending_process_and_food_safety_validation"
+  }
+}

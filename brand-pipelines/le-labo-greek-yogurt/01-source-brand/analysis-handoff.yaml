@@ -1,0 +1,31 @@
+source_analysis:
+  reference_brand: "Le Labo Fragrances"
+  exact_scope: "Current global masterbrand with official US English web, product, package, lab and service expression"
+  package_path: "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/01-source-brand"
+  anatomy_path: "source-brand-anatomy.md"
+  grammar_path: "grammar-kernel.md"
+  manifest_path: "source-manifest.csv"
+  visual_corpus_path: "visual-corpus.csv"
+  contact_sheet_path: "contact-sheets/overview.jpg"
+  validation_status: "pass"
+  version: "1.2.0"
+  delivered_at: "2026-08-31"
+  source_json_schema_version: "1.2.0"
+package_integrity:
+  anatomy_sha256: "1681e90bb21bdbf19136257bc937c61241290680a17c1a0f73a5e5c1418f5ccf"
+  grammar_sha256: "c3df806affa97589ab1c7838ba5971e42906b4521196c2a146785ce201237161"
+  source_json_sha256: "a1cd2ec263dcac4cd2fe1cd95faaa067eba88c6c06506a27d7c7f0243e3ea06a"
+approved_grammar_ids: ["GK-01", "GK-02", "GK-03", "GK-04", "GK-05"]
+protected_surface_families:
+  - "Le Labo wordmark and exact laboratory-style label construction"
+  - "Ingredient-or-scent name plus number naming architecture"
+  - "We believe manifesto and same bottle same scent same perfume copy"
+  - "Le Journal newspaper format and identifiable lab/store trade dress"
+unresolved_source_gaps:
+  - "No public formal identity manual; exact global logo, palette, spacing, and print rules remain unverified."
+  - "Film motion, edit rhythm, and sound were not captured; motion posters support framing only."
+  - "Five city-lab posters and one interior image broaden the sample but cannot prove the complete global retail system."
+  - "Font licensing and full non-Latin glyph coverage remain unverified."
+  - "The three user-supplied mood references EV-042–EV-044 have no embedded source URL, creator, or rights metadata and therefore remain contextual references rather than first-party evidence."
+target_direction: null
+next_required_action: "Review and accept the Stage 1 v1.2.0 mood-reference revision; downstream target-brand packages remain separate."

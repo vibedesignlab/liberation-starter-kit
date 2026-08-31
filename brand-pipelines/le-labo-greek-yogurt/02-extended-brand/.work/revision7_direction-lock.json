@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "stage_2_revision_direction_lock",
+  "revision": 7,
+  "decision": "MORA Clear Witness Cup",
+  "user_feedback": "Remove the individual paper label and fiber collar. Print only essential information directly on a transparent food-contact vessel so the yogurt and ingredient trace remain the primary visual identity.",
+  "causal_rule": "food reveals; direct print records; foil proves first opening; tools and hands prove process; paper appears only when it performs an outer transport job",
+  "architecture": [
+    {
+      "layer": "L0",
+      "name": "edible evidence",
+      "job": "Actual yogurt density, ingredient ribbon, fleck, thread, marble or oil interface creates the SKU color and product recognition."
+    },
+    {
+      "layer": "L1",
+      "name": "transparent primary vessel",
+      "job": "A validated food-contact vessel reveals the food, carries filling and sealing loads, and keeps one low-wide 150 g family silhouette."
+    },
+    {
+      "layer": "L2",
+      "name": "direct print",
+      "job": "One restrained dark factual-ink system records MORA, recipe, category, net weight and required information without a paper label, sleeve, collar or simulated label panel."
+    },
+    {
+      "layer": "L3",
+      "name": "peelable foil",
+      "job": "A flat full-perimeter foil and one asymmetrical tab prove sealing and first opening."
+    },
+    {
+      "layer": "L4",
+      "name": "outer multipack only",
+      "job": "Paper or molded fiber may restrain multiple sealed cups in transport but never wraps an individual cup or claims insulation, freshness or sustainability from appearance."
+    }
+  ],
+  "print_zones": {
+    "front": "MORA / recipe name / Infused Greek Yogurt / 150 g, centered on the authoritative front face with no opaque background patch",
+    "side_or_rear": "compact factual and regulatory information subject to market, substrate, legibility and food-label review",
+    "bottom_or_rim": "lot, date and variable traceability code after real production-line readability testing",
+    "foil": "seal and opening surface; no decorative paper simulation and no claim beyond verified seal behavior"
+  },
+  "fixed_invariants": [
+    "no paper label, paper sleeve, paper collar, kraft band, sticker, opaque label-shaped field or wrap on an individual cup",
+    "actual food is the first and largest color field",
+    "one transparent low-wide 150 g vessel family with minimal dark direct print",
+    "one flat peelable foil with one readable opening tab",
+    "no decorative SKU color bands, global accent color or artificially tinted yogurt",
+    "no fragrance bottle, cosmetic jar, apothecary, pharmacy grid or Le Labo trade dress"
+  ],
+  "production_boundaries": [
+    "transparent-vessel material, oxygen and moisture barrier, light exposure, migration, seal integrity, cold-chain and shelf life require physical validation",
+    "direct-print ink system requires food-packaging suitability, adhesion, rub, condensation, abrasion, registration and legibility tests",
+    "black direct print is a directional baseline; contrast must be verified against every approved food state without adding a decorative opaque label panel",
+    "recyclable, recycled, compostable, plastic-free, freshness, leak-proof and small-batch claims remain prohibited without evidence",
+    "the generated package images are directional visualization, not a released production specification"
+  ],
+  "image_replacement_scope": [
+    "representative product hero",
+    "strict frontal brand-mood anchor",
+    "strict right-side brand-mood companion",
+    "package anatomy",
+    "six frontal product portraits"
+  ],
+  "stage_boundary": "Revise Stage 2 only; Stage 3 remains locked until user approval."
+}

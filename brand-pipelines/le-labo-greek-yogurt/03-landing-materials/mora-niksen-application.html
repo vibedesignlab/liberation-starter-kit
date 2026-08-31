@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MORA × Estudio Niksen — Application Plan</title>
+<style>
+:root{--cream:#F5F1E8;--carbon:#171714;--mid:#8A8780;--line:#D6D2C9;--surface:#FDFCF9;--card:#FFF;--r:6px;--w:1040px;--amber:#C6973B}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Pretendard',-apple-system,sans-serif;background:var(--surface);color:var(--carbon);line-height:1.72;font-size:15px}
+
+nav{position:sticky;top:0;z-index:100;background:rgba(253,252,249,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.ni{max-width:var(--w);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 28px}
+.nl{font-size:12px;letter-spacing:.25em;font-weight:600;color:var(--carbon);text-decoration:none}
+.nk{display:flex;gap:6px;flex-wrap:wrap}
+.nk a{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--mid);text-decoration:none;padding:5px 10px;border-radius:4px;transition:.2s}
+.nk a:hover{color:var(--carbon);background:var(--cream)}
+
+.w{max-width:var(--w);margin:0 auto;padding:0 28px}
+section{padding:56px 0}
+section+section{border-top:1px solid var(--line)}
+
+.hero{background:var(--cream);padding:64px 0;text-align:center}
+.hero h1{font-size:28px;font-weight:500;line-height:1.3;margin-bottom:10px}
+.hero .ey{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--mid);margin-bottom:18px}
+.hero .sub{font-size:14px;color:var(--mid);max-width:540px;margin:0 auto 20px}
+
+h2{font-size:18px;font-weight:600;margin-bottom:8px}
+h3{font-size:15px;font-weight:600;margin:24px 0 8px}
+h4{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--mid);margin-bottom:6px}
+p{margin-bottom:12px;font-size:14px;line-height:1.7}
+a{color:var(--carbon)}
+
+.note{background:var(--cream);border-radius:var(--r);padding:16px 20px;font-size:13px;line-height:1.6;margin-bottom:20px}
+
+table{width:100%;border-collapse:collapse;margin-bottom:20px;font-size:13px}
+th{text-align:left;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mid);padding:9px 12px;border-bottom:2px solid var(--carbon);background:var(--cream)}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+
+.cb{background:var(--cream);border-radius:var(--r);padding:16px 18px;font-family:'SF Mono','Fira Code',monospace;font-size:11.5px;line-height:1.7;overflow-x:auto;white-space:pre;margin-bottom:14px}
+
+.il{list-style:none;padding:0;margin-bottom:14px}
+.il li{position:relative;padding-left:18px;margin-bottom:7px;font-size:13.5px;line-height:1.55}
+.il li::before{content:'';position:absolute;left:0;top:7px;width:7px;height:7px;border-radius:50%;border:1.5px solid var(--carbon)}
+
+.proposal{background:#FFF8E1;border-left:3px solid var(--amber);border-radius:0 var(--r) var(--r) 0;padding:14px 18px;margin:16px 0;font-size:13px;line-height:1.6}
+.proposal strong{color:var(--amber)}
+
+.gc{display:grid;grid-template-columns:56px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.gc:last-child{border-bottom:none}
+.gi{font-size:12px;font-weight:700;font-family:'SF Mono',monospace;color:var(--amber)}
+.gn{font-weight:600;margin-bottom:2px;font-size:13px}
+.gd{font-size:12.5px;color:var(--mid);line-height:1.5}
+
+footer{text-align:center;padding:36px 28px;font-size:11.5px;color:var(--mid);border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<nav><div class="ni">
+<a href="#top" class="nl">MORA &times; NIKSEN</a>
+<div class="nk">
+<a href="#analysis">분석</a>
+<a href="#mapping">매핑</a>
+<a href="#plans">응용안</a>
+<a href="#materials">추가 재료</a>
+</div>
+</div></nav>
+
+<header class="hero" id="top"><div class="w">
+<div class="ey">추가 레퍼런스 &middot; 원본 직접 방문 분석</div>
+<h1>Estudio Niksen 랜딩페이지 분석<br>&amp; MORA 응용 기획안</h1>
+<p class="sub"><a href="https://estudioniksen.com/" target="_blank">estudioniksen.com</a>의 랜딩 구조를 직접 방문해 분석하고, MORA 랜딩에 응용할 수 있는 스토리텔링/레이아웃/인터랙션 패턴을 추출.</p>
+</div></header>
+
+<!-- ═══ 1. ANALYSIS ═══ -->
+<section id="analysis"><div class="w">
+<h4>Part 1</h4>
+<h2>Estudio Niksen 랜딩 구조 분석</h2>
+<p>몬트리올 + 서울 기반 인디펜던트 라이프스타일 브랜드. "Niksen"은 네덜란드어로 "아무것도 하지 않기". 의류 + 리빙 + 콜라보를 하나의 세계관으로 묶음.</p>
+
+<h3>랜딩 섹션 흐름 (직접 관찰)</h3>
+<div style="overflow-x:auto">
+<table>
+<thead><tr><th>#</th><th>섹션</th><th>구조</th><th>관찰된 패턴</th></tr></thead>
+<tbody>
+<tr><td>01</td><td><strong>Hero &mdash; Capsule Drop</strong></td><td>풀블리드 이미지 + 대형 H1 "Niksen Walking Capsule Vol. 2" + 서브카피 + CTA</td><td>캡슐 컬렉션 단위로 진입. 시즌이 아니라 <strong>"행위(Walking)"</strong>가 제목. 이미지는 자연 속 인물.</td></tr>
+<tr><td>02</td><td><strong>New Arrivals 캐러셀</strong></td><td>수평 드래그 캐러셀 (16 slides). 제품명 + 가격. Prev/Next 버튼.</td><td>제품 카드에 카테고리 태그 없이 <strong>이름과 가격만</strong>. 이미지가 제품을 설명하는 유일한 도구. 극도로 절제된 정보.</td></tr>
+<tr><td>03</td><td><strong>Feature &mdash; Selvedge Denim</strong></td><td>풀블리드 이미지 + H1 + 서사 카피 ("Nearly a year after...finally back") + CTA</td><td>한 제품의 <strong>복귀 서사</strong>를 히어로급으로 배치. 아래에 4제품 그리드 (셔츠+티+데님+반다나). <strong>조합 제안</strong>으로 기능.</td></tr>
+<tr><td>04</td><td><strong>Shop the Look #1</strong></td><td>좌: 풀하이트 라이프스타일 사진 (모델 전신) / 우: 4개 제품 세로 스택. 모델 사이즈 명시.</td><td>한 인물의 착장을 분해해서 개별 구매 연결. <strong>"이 사람의 전체 = 부분들의 합"</strong> 구조.</td></tr>
+<tr><td>05</td><td><strong>Shop the Look #2</strong></td><td>04와 좌우 반전. 다른 모델, 다른 성별.</td><td>동일 포맷 반복으로 <strong>젠더리스</strong> 메시지. 구조의 일관성이 비교를 유도.</td></tr>
+<tr><td>06</td><td><strong>Collection Statement</strong></td><td>풀블리드 이미지 + H2 "Spring Summer '26" + 서사 ("begins with a wish to return to the source") + CTA</td><td>시즌 컬렉션의 <strong>철학적 출발점</strong>을 한 문단으로 선언. 제품 목록이 아닌 태도 서술.</td></tr>
+<tr><td>07</td><td><strong>Collaboration &mdash; Saucony</strong></td><td>풀블리드 이미지 + H1 "Niksen Trainer 80s" + 콜라보 카피</td><td>콜라보를 독립 히어로로 취급. "heritage with quiet refinement" &mdash; 브랜드 어조 유지.</td></tr>
+<tr><td>08</td><td><strong>Niksen Sounds</strong></td><td>H2 + "Live music, good people, great playlists" + CTA</td><td>의류 브랜드가 <strong>음악/커뮤니티를 콘텐츠 축</strong>으로 편입. 플레이리스트 = 브랜드 감각의 연장.</td></tr>
+<tr><td>09</td><td><strong>Newsletter + Footer</strong></td><td>라인 드로잉 일러스트 + "Join the family" + 이메일 수집. 푸터에 매장 주소/영업시간/SNS.</td><td>일러스트가 브랜드 아이덴티티의 <strong>시그네처 터치</strong>. 뉴스레터를 "family"로 프레이밍.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>핵심 디자인 패턴 요약</h3>
+<ul class="il">
+<li><strong>행위 중심 네이밍:</strong> "Walking Capsule", "Walking Jacket", "Walking Pants" &mdash; 제품이 아니라 행위가 카테고리. 의류를 동사로 분류.</li>
+<li><strong>풀블리드 이미지 + 짧은 서사:</strong> 모든 주요 섹션이 풀와이드 사진 + 1-2문장 선언 + CTA. 설명이 아니라 태도를 전달.</li>
+<li><strong>Shop the Look (착장 분해):</strong> 한 인물의 전신 → 입고 있는 제품 4개를 세로 스택으로 분해. "전체에서 부분으로" 역방향 쇼핑.</li>
+<li><strong>캡슐 컬렉션 구조:</strong> 시즌이 아니라 "Vol. 2" 넘버링. 한정 수량 + 리스톡 서사 ("finally back").</li>
+<li><strong>최소 정보 원칙:</strong> 제품 카드에 이름 + 가격만. 카테고리/태그/뱃지/리뷰 없음. 이미지가 유일한 설명.</li>
+<li><strong>브랜드 세계관 확장:</strong> 의류 → 리빙 → 음악(Niksen Sounds) → 콜라보(Saucony). 제품 밖의 감각으로 세계관 형성.</li>
+<li><strong>색상:</strong> 아이보리/크림 배경, 거의 블랙 텍스트, 자연광 사진. MORA의 Cultured Cream + Carbon과 톤 일치.</li>
+</ul>
+
+<div class="note">
+<strong>About 페이지 직접 확인:</strong> "clothes worn for living rather than being seen. The kind you reach for without thinking, because they already feel familiar." &mdash; 이 문장이 브랜드 전체를 관통. MORA의 "짧은 머묾"과 정서적으로 연결되는 지점: 과시가 아니라 일상의 감각.
+</div>
+</div></section>
+
+<!-- ═══ 2. MAPPING ═══ -->
+<section id="mapping"><div class="w">
+<h4>Part 2</h4>
+<h2>Niksen → MORA 패턴 매핑</h2>
+<p>Niksen의 패턴을 MORA의 8개 랜딩 섹션에 대입하면 어떻게 변환되는지.</p>
+
+<div style="overflow-x:auto">
+<table>
+<thead><tr><th>Niksen 패턴</th><th>Niksen 원본</th><th>MORA 변환</th><th>적용 섹션</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>행위 중심 네이밍</strong></td>
+<td>"Walking Capsule" &mdash; 제품을 행위로 분류</td>
+<td>MORA 6종을 <strong>행위/순간</strong>으로 재분류: "아침의 결" (Thyme Honey), "식사 곁의 결" (Olive Oil &amp; Sea Salt), "저녁의 결" (Black Sesame). 제품명이 아니라 <strong>사용 순간이 1차 분류축</strong>.</td>
+<td>Section 05 Core Collection, Section 11 Comparison Matrix</td>
+</tr>
+<tr>
+<td><strong>착장 분해 (Shop the Look)</strong></td>
+<td>전신 사진 → 입고 있는 제품 4개 세로 스택</td>
+<td><strong>"한 컵의 분해":</strong> 완성된 제품 사진(전체) → 구성 요소(요거트 베이스 + 재료 + 흔적 + 용기)를 세로 스택으로 분해. Triptych의 확장판.</td>
+<td>Section 05 Core Collection, Section 07 Vessel Record</td>
+</tr>
+<tr>
+<td><strong>풀블리드 서사 선언</strong></td>
+<td>풀와이드 사진 + 1-2문장 태도 + CTA</td>
+<td>MORA의 각 섹션 전환점에 <strong>풀블리드 무드 이미지 + 한 줄 선언</strong>을 삽입. 예: measured-table-aerial + "재료가 바뀌면, 머무는 방식도 달라집니다."</td>
+<td>Section 02 Why MORA, Section 04 Material Method 도입부</td>
+</tr>
+<tr>
+<td><strong>캡슐/Vol. 넘버링</strong></td>
+<td>"Walking Capsule Vol. 2" + 한정 수량 리스톡 서사</td>
+<td>Core Collection을 <strong>"MORA Collection Vol. 1"</strong>로 프레이밍. Studio Trials를 "다음 Vol.의 후보"로 포지셔닝. 리스톡이 아니라 <strong>"검증 완료 시 합류"</strong>라는 서사.</td>
+<td>Section 05-06 통합 서사</td>
+</tr>
+<tr>
+<td><strong>최소 정보 제품 카드</strong></td>
+<td>이름 + 가격만. 이미지가 유일한 설명.</td>
+<td>Core Collection 카드를 <strong>이름 + eyebrow + 이미지</strong>로 극도로 절제. 상세 정보는 Triptych 확장 시에만 공개. 첫 인상에서는 <strong>이미지의 결(trace)이 차이를 말함</strong>.</td>
+<td>Section 05 Core Collection 1차 노출</td>
+</tr>
+<tr>
+<td><strong>세계관 확장 (Sounds)</strong></td>
+<td>의류 → 음악 플레이리스트</td>
+<td><strong>"MORA Table":</strong> 각 제품의 사용 순간에 어울리는 식사/음악/시간대를 에디토리얼로 제안. 예: Thyme Honey = 아침 + 커피 + 조용한 재즈. 제품 밖의 감각으로 세계관 형성.</td>
+<td>Section 05 확장 또는 별도 서브섹션</td>
+</tr>
+<tr>
+<td><strong>라인 드로잉 시그네처</strong></td>
+<td>뉴스레터 섹션에 사람 라인 드로잉</td>
+<td>MORA의 Material Folios(에칭)가 이미 이 역할. 뉴스레터/클로징에 <strong>brand-trace-master 에칭을 시그네처 일러스트로 배치</strong>.</td>
+<td>Section 08 Closing CTA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div></section>
+
+<!-- ═══ 3. APPLICATION PLANS ═══ -->
+<section id="plans"><div class="w">
+<h4>Part 3</h4>
+<h2>구체적 응용 기획안 5개</h2>
+
+<h3>응용안 N-01: "한 컵의 분해" (Shop the Cup)</h3>
+<p>Niksen의 Shop the Look을 식품으로 번역. 한 컵의 완성 사진에서 구성 요소로 분해.</p>
+<div class="cb">&lt;ShopTheCup product="Thyme Honey"&gt;
+  &lt;FullCupImage&gt;         // 좌측 60%: thyme-honey-front.png (완성된 한 컵)
+  &lt;ComponentStack&gt;       // 우측 40%: 세로 스택
+    ├── &lt;Component label="BASE"&gt;
+    │     요거트 베이스 150g
+    │     농축 밀도, 되직한 몸
+    ├── &lt;Component label="PREPARATION"&gt;
+    │     honey-led thyme preparation
+    │     옅은 호박색 시럽
+    ├── &lt;Component label="TRACE"&gt;
+    │     honey ribbon + fine thyme flecks
+    │     안쪽까지 이어지는 흔적
+    └── &lt;Component label="VESSEL"&gt;
+          투명 유리, 검정 직접 인쇄
+          MORA / THYME HONEY / 01
+&lt;/ShopTheCup&gt;</div>
+<ul class="il">
+<li><strong>Niksen과의 차이:</strong> Niksen은 제품 구매 연결. MORA는 구매가 아니라 <strong>"이 컵이 어떻게 이루어져 있는가"의 교육</strong>. 각 component는 링크가 아니라 설명.</li>
+<li><strong>인터랙션:</strong> 완성 이미지에서 각 component에 해당하는 영역을 호버하면 우측 스택의 대응 항목이 하이라이트.</li>
+<li><strong>적용 위치:</strong> Section 05 Core Collection에서 Triptych 대신 또는 Triptych 확장 시 이 구조로 전환.</li>
+</ul>
+
+<h3>응용안 N-02: "사용 순간 캡슐" (Moment Capsule)</h3>
+<p>Niksen의 "Walking Capsule" 네이밍을 MORA의 사용 맥락으로 번역.</p>
+<div class="cb">&lt;MomentCapsuleSection&gt;
+  &lt;CapsuleHeader&gt;
+    &lt;H2&gt;        MORA Moments
+    &lt;SubCopy&gt;   같은 밀도, 다른 순간.
+  &lt;/CapsuleHeader&gt;
+  &lt;MomentGrid cols=3&gt;
+    ├── &lt;MomentCard moment="아침의 결"&gt;
+    │     &lt;MomentImage&gt;   // 역제안: 아침 식탁 위 Thyme Honey 무드
+    │     &lt;Products&gt;      Thyme Honey, Citrus Peel
+    │     &lt;Context&gt;       커피와 함께, 천천히 시작하는 하루
+    ├── &lt;MomentCard moment="오후의 결"&gt;
+    │     &lt;Products&gt;      Roasted Buckwheat, Fig Leaf
+    │     &lt;Context&gt;       책상 곁, 고소한 온기
+    └── &lt;MomentCard moment="저녁의 결"&gt;
+          &lt;Products&gt;      Black Sesame, Olive Oil &amp; Sea Salt
+          &lt;Context&gt;       식사 곁이나 후, 깊은 여운
+  &lt;/MomentGrid&gt;
+&lt;/MomentCapsuleSection&gt;</div>
+<ul class="il">
+<li><strong>Niksen "Walking"의 번역:</strong> Niksen은 "걷기"라는 행위로 캡슐을 묶음. MORA는 <strong>"아침/오후/저녁"이라는 시간</strong>으로 6종을 3개 순간으로 묶음.</li>
+<li><strong>효과:</strong> 제품 선택의 기준이 "맛 이름"에서 <strong>"내 하루의 어느 순간"</strong>으로 전환. Niksen의 "clothes worn for living" = MORA의 "한 컵의 짧은 머묾".</li>
+<li><strong>적용 위치:</strong> Section 05와 06 사이, 또는 Section 11 비교 매트릭스의 대안 뷰.</li>
+</ul>
+
+<h3>응용안 N-03: "캡슐 Vol. 서사" (Collection Vol. Narrative)</h3>
+<p>Niksen의 "Vol. 2" + "finally back" 리스톡 서사를 MORA의 Core/Trial 구분에 적용.</p>
+<div class="cb">&lt;CollectionVolSection&gt;
+  &lt;VolHeader&gt;
+    &lt;Eyebrow&gt;    MORA COLLECTION
+    &lt;H1&gt;         Vol. 1 — 네 가지 결
+    &lt;SubCopy&gt;     처음 만나는 Core Collection.
+  &lt;/VolHeader&gt;
+  &lt;CoreGrid&gt;     // 4제품 (Thyme Honey ~ Black Sesame)
+  
+  &lt;TrialPreview&gt;
+    &lt;Eyebrow&gt;    STUDIO TRIALS — NEXT VOL. CANDIDATES
+    &lt;H2&gt;         다음 컬렉션을 위한 두 가지 방향.
+    &lt;SubCopy&gt;     검증이 끝나면, Vol. 2에서 만납니다.
+    &lt;TrialCards&gt;  // Fig Leaf + Olive Oil &amp; Sea Salt (desaturated)
+  &lt;/TrialPreview&gt;
+&lt;/CollectionVolSection&gt;</div>
+<ul class="il">
+<li><strong>Niksen "Vol. 2"의 번역:</strong> Core Collection = Vol. 1 (검증 완료, 출시 준비). Studio Trials = "다음 Vol.의 후보" (검증 진행 중).</li>
+<li><strong>서사 효과:</strong> Trial 제품이 "미완성"이 아니라 <strong>"다음 이야기의 예고편"</strong>이 됨. 소비자에게 "이 브랜드는 계속 확장된다"는 기대감.</li>
+<li><strong>Niksen "finally back"의 번역:</strong> Trial 제품이 Core로 승격되면 "Vol. 2 — Fig Leaf, 결을 증명하다" 같은 리스톡/승격 서사 가능.</li>
+</ul>
+
+<h3>응용안 N-04: "풀블리드 선언 디바이더" (Statement Breaker)</h3>
+<p>Niksen의 풀블리드 사진 + 1-2문장 선언 구조를 MORA 섹션 전환에 삽입.</p>
+<div class="cb">// 현재 MORA: #09 Etching Line Divider (1px 가는 선)
+// 추가: 주요 전환점 3곳에 풀블리드 선언 삽입
+
+&lt;StatementBreaker position="Hero → Why MORA 사이"&gt;
+  &lt;FullBleedImage&gt;   measured-table-aerial.png (풀와이드, 어둡게 오버레이)
+  &lt;Statement&gt;         한 컵 안에, 재료가 머문 결.
+&lt;/StatementBreaker&gt;
+
+&lt;StatementBreaker position="Transformation → Material Method 사이"&gt;
+  &lt;FullBleedImage&gt;   // 역제안: 거름 천 위 요거트 클로즈업 (aerial)
+  &lt;Statement&gt;         재료가 바뀌면, 머무는 방식도 달라집니다.
+&lt;/StatementBreaker&gt;
+
+&lt;StatementBreaker position="Collection → Vessel Record 사이"&gt;
+  &lt;FullBleedImage&gt;   glass-package-master-front.png (풀와이드, 어둡게)
+  &lt;Statement&gt;         라벨 대신, 한 컵의 기록을 유리에.
+&lt;/StatementBreaker&gt;</div>
+<ul class="il">
+<li><strong>Niksen 원본:</strong> "begins with a wish to return to the source" &mdash; 컬렉션 철학을 풀블리드로 선언.</li>
+<li><strong>MORA 번역:</strong> 서사의 위계(결→측정→기록) 전환점마다 <strong>한 장의 큰 사진 + 브랜드 메시지 한 줄</strong>로 호흡을 끊고 다음 챕터를 예고.</li>
+<li><strong>기존 에칭 디바이더와 병용:</strong> 에칭 디바이더는 소규모 전환, Statement Breaker는 대챕터 전환. 위계가 생김.</li>
+</ul>
+
+<h3>응용안 N-05: "MORA Table" 세계관 확장 (Beyond the Cup)</h3>
+<p>Niksen Sounds(음악 플레이리스트)의 구조를 MORA의 식사 맥락으로 번역.</p>
+<div class="cb">&lt;MoraTableSection&gt;
+  &lt;H2&gt;          MORA Table
+  &lt;SubCopy&gt;     한 컵이 놓이는 식탁.
+  &lt;TableGrid cols=3&gt;
+    ├── &lt;TableCard context="조용한 아침"&gt;
+    │     &lt;MoodImage&gt;    // 역제안: 아침 식탁 무드 (natural light, 크림 톤)
+    │     &lt;Pairing&gt;      Thyme Honey + 블랙 커피 + 통밀 토스트
+    │     &lt;Playlist&gt;     "Morning Slow" — Spotify link
+    ├── &lt;TableCard context="책상 곁 오후"&gt;
+    │     &lt;MoodImage&gt;    // 역제안: 데스크 위 요거트 + 책 무드
+    │     &lt;Pairing&gt;      Roasted Buckwheat + 보리차
+    │     &lt;Playlist&gt;     "Desk Hours" — Spotify link
+    └── &lt;TableCard context="저녁 식사 곁"&gt;
+          &lt;MoodImage&gt;    // 역제안: 저녁 테이블 무드 (warm light)
+          &lt;Pairing&gt;      Olive Oil &amp; Sea Salt + 가벼운 빵 + 와인잔
+          &lt;Playlist&gt;     "Table Talk" — Spotify link
+  &lt;/TableGrid&gt;
+&lt;/MoraTableSection&gt;</div>
+<ul class="il">
+<li><strong>Niksen Sounds의 번역:</strong> Niksen은 옷 밖의 감각(음악)으로 세계관 확장. MORA는 <strong>한 컵 밖의 감각(식탁, 음악, 시간대)</strong>으로 확장.</li>
+<li><strong>효과:</strong> 요거트가 "간식"이 아니라 <strong>"하루의 한 순간을 구성하는 요소"</strong>로 포지셔닝. Niksen의 "clothes worn for living" = MORA의 "한 컵이 놓이는 식탁".</li>
+<li><strong>구현:</strong> Phase 1에서는 정적 이미지 + 텍스트. Phase 2에서 Spotify embed 추가 가능.</li>
+</ul>
+</div></section>
+
+<!-- ═══ 4. ADDITIONAL MATERIALS ═══ -->
+<section id="materials"><div class="w">
+<h4>Part 4</h4>
+<h2>추가 재료 역제안</h2>
+<p>Niksen 응용안을 실현하기 위해 현재 에셋에 없는 이미지 제안.</p>
+
+<div class="gc"><div class="gi">N-01</div><div>
+<div class="gn">아침 식탁 무드 (Morning Table)</div>
+<div class="gd">자연광 아침 식탁 위에 Thyme Honey 컵 + 커피 + 토스트. #F5F1E8 톤, 넓은 여백, true aerial 또는 45도. Niksen의 자연광 라이프스타일 사진 톤. Statement Breaker + MORA Table 양쪽에서 사용.</div>
+</div></div>
+
+<div class="gc"><div class="gi">N-02</div><div>
+<div class="gn">데스크 오후 무드 (Desk Afternoon)</div>
+<div class="gd">데스크 위 Roasted Buckwheat 컵 + 책 또는 노트북. 따뜻한 오후 빛. 45도 앵글. MORA Table "책상 곁 오후" 카드에 사용.</div>
+</div></div>
+
+<div class="gc"><div class="gi">N-03</div><div>
+<div class="gn">저녁 테이블 무드 (Evening Table)</div>
+<div class="gd">저녁 식탁 위 Olive Oil &amp; Sea Salt 컵 + 빵 + 와인잔 (또는 물잔). 따뜻한 인공 조명. MORA Table "저녁 식사 곁" 카드에 사용. 세이보리 사용 맥락의 직접 증거.</div>
+</div></div>
+
+<div class="gc"><div class="gi">N-04</div><div>
+<div class="gn">거름 천 클로즈업 aerial (Straining Cloth Aerial)</div>
+<div class="gd">Statement Breaker #2 (Transformation→Material Method 전환)용. 거름 천 위에 농축 요거트가 남아 있는 상태를 true aerial로. 천의 결(texture)이 보이게. #F5F1E8 배경.</div>
+</div></div>
+
+<div class="gc"><div class="gi">N-05</div><div>
+<div class="gn">"한 컵의 분해" 구성 컷 (Cup Decomposition)</div>
+<div class="gd">Shop the Cup (N-01) 우측 스택용. 요거트 베이스, preparation base(호박색 시럽), trace(ribbon), 빈 유리 용기를 각각 분리 촬영한 4컷 세트. 동일한 #F5F1E8 배경, 동일한 조명, 동일한 앵글. 세트로서의 일관성 필수.</div>
+</div></div>
+
+<div class="note">
+<strong>기존 에셋과의 관계:</strong> N-01~N-03은 현재 에셋에 없는 <strong>라이프스타일/사용 맥락 무드</strong> 카테고리. 기존 에셋은 제품 정면/aerial/에칭/공정으로 구성되어 있어 "사용 순간" 이미지가 부재. Niksen 응용의 핵심 가치가 "행위/순간 중심 스토리텔링"이므로, 이 카테고리 자체가 새로운 에셋 축이 됨.
+<br><br>
+N-04는 기존 역제안 G-04(Whey Separation Aerial)와 유사하나, Statement Breaker 용도로 <strong>더 넓은 풀블리드 비율(16:9)</strong>이 필요. N-05는 기존 에셋을 개별 촬영으로 분리하는 작업.
+</div>
+
+<h3>스토리텔링 구성 업데이트 요약</h3>
+<p>Niksen 응용을 반영하면 MORA 랜딩의 독서 흐름에 3가지가 추가됩니다:</p>
+<div style="overflow-x:auto">
+<table>
+<thead><tr><th>추가 요소</th><th>위치</th><th>효과</th></tr></thead>
+<tbody>
+<tr><td><strong>Statement Breaker 3개</strong></td><td>Hero→Why / Transformation→Material / Collection→Vessel 사이</td><td>대챕터 전환 호흡. 에칭 디바이더(소전환)와 위계 분리.</td></tr>
+<tr><td><strong>Moment Capsule 또는 MORA Table</strong></td><td>Section 05-06 사이 또는 Section 11 대안</td><td>제품 선택 기준을 "맛 이름"에서 "사용 순간"으로 전환.</td></tr>
+<tr><td><strong>Shop the Cup 분해 구조</strong></td><td>Section 05 Triptych 확장 시</td><td>완성→구성 요소 역분해로 "이 컵이 어떻게 이루어져 있는가" 교육.</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>기존 11개 기획안과 충돌 없이 <strong>삽입/대체</strong> 가능한 모듈형 구조입니다. N-02(Moment Capsule)는 #11(Comparison Matrix)의 대안 뷰로 운영할 수 있고, N-04(Statement Breaker)는 #09(Etching System)와 병용합니다.</p>
+
+</div></section>
+
+<footer>
+MORA &times; Estudio Niksen Application Plan &middot; <a href="https://estudioniksen.com/" target="_blank">estudioniksen.com</a> 직접 방문 분석 기반
+</footer>
+
+</body></html>

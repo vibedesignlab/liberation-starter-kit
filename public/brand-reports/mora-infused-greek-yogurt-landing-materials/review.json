@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "stage_review",
+  "stage": "landing_materials",
+  "status": "pending",
+  "pipeline_state_path": "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/pipeline-state.json",
+  "review_targets": [
+    "R5가 현재 MoraLandingPage의 32 unique raster 역할과 정확히 대응하고 기존 grid·sticky scroll·section order를 바꾸지 않는지",
+    "Hero·Transition·Method·Vessel·Evening이 exact 3:2와 left-center / center / bottom-left safe area를 지키는지",
+    "Core와 Trial sticky가 generic landscape 재사용 없이 exact 1:2로 제작되어 maker action과 product evidence를 자르지 않는지",
+    "제품 6종이 exact 1:1 strict-front, 동일 jar scale·좌표·#F5F1E8 UI field·부분 Batch Record를 유지하는지",
+    "원재료 6종이 exact 1:1 true-aerial, complete vessels와 실제 조리 규모를 유지하는지",
+    "R5 process imagery가 lived-in urban workshop와 위생적 stainless contact zone을 함께 보여 주며 방송 세트로 보이지 않는지",
+    "Stage 2 NR-10-01 여성 메이커 서사가 외모·모성·가사 클리셰가 아니라 selection·transformation·last check 행동으로 이어지는지",
+    "모든 active raster가 요구 delivery dimensions를 충족하며 native / crop / resample provenance를 숨기지 않는지"
+  ],
+  "adjustment_prompts": [
+    "필요한 수정은 개별 R5 asset ID와 역할을 지정해 주세요. 기존 layout이나 interaction 변경은 별도 요청으로 분리합니다."
+  ],
+  "user_feedback": [
+    {
+      "decision": "stage3_requested",
+      "message": "실제 브랜드 런칭 및 랜딩페이지에 바로 들어갈 수준으로 핵심 가치, 창업자 스토리, 제조 방식 및 재료, 시그네처 원재료, 인퓨징 원액, 중간 산출물, 최종 제품, 패키징과 고객경험을 구체화하고 commercial photography 기준의 정면·측면·aerial 무드, strict-front 제품, 원재료·인퓨전·메타 이미지를 병렬로 제작할 것.",
+      "recorded_at": "2026-08-26T12:10:00+09:00"
+    },
+    {
+      "decision": "accepted",
+      "message": "사용자가 Stage 3 landing page materials 문서를 일단 승인한다고 명시함. 생성된 문서를 직접 확인할 수 있는 Storybook 등록과 로컬 접근 경로를 함께 전달할 것.",
+      "recorded_at": "2026-08-26T00:56:52.806034+00:00"
+    },
+    {
+      "decision": "revision_requested",
+      "message": "Stage 3에 르라보 병의 비례를 식품용 고급 유리 용기로 번역한 패키지 마스터, 모든 SKU의 오브제 크기와 위치를 고정하는 제품 구도 마스터, 여섯 원재료의 개별 레퍼런스, 브랜드 무드 외 전 이미지의 plain brand background 규칙과 모델 공통 반복 생성·검수 루프를 먼저 추가할 것.",
+      "recorded_at": "2026-08-28T00:00:00+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "8개 레퍼런스 이미지, 5개 공통 프롬프트 모듈, 픽셀 오버레이·수치 QA·one-axis delta·adapter stop condition을 Stage 3 canonical package에 등록함. 기존 제품 및 비무드 이미지는 legacy_pending_migration으로 유지하고 reference 승인 뒤에만 순차 교체함.",
+      "recorded_at": "2026-08-28T10:45:00+09:00"
+    },
+    {
+      "decision": "revision_requested",
+      "message": "1번 문서의 Le Labo 향수 패키징에서 실루엣뿐 아니라 기록 정보·조제 의식·재료 대비를 더 깊게 번역한 MORA Vessel Record 패키지로 발전시키고, Journal의 에칭·초현실 편집 은유에서 영감을 받은 브랜드·창업자·공정·여섯 재료 Material Folios 일러스트를 병렬 제작할 것.",
+      "recorded_at": "2026-08-29T00:00:00+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "Vessel Record 패키지 사진·정확한 SVG·사용 구도와 Material Folios 스타일 마스터·서사 3개·재료 플레이트 6개를 병렬 제작하고 원본-detail QA, one-axis delta, SHA, source-distance 및 founder factual gate를 통과해 35개 canonical asset에 등록함.",
+      "recorded_at": "2026-08-29T02:20:00+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "브랜드 스토리 진단을 반영해 공개 서사를 ‘남은 결 → 결을 지키는 측정 → 결과를 남기는 기록’으로 재정렬함. Material Folios는 실제 제조와 원재료 뒤에 배치하고, Core Collection 4종과 Studio Trials 2종을 분리했으며, Founder Table과 생성·치수·검증 메모는 Production Reference로 격리함.",
+      "recorded_at": "2026-08-29T02:40:59+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "Stage 3을 실제 랜딩 독서 순서의 8개 구간으로 재배치하고 각 구간을 카피 다음 해당 이미지가 이어지는 구조로 등록함. 공개 본문 32개 에셋과 Production Reference 3개 에셋을 분리하고, 전체 35개 에셋 매핑과 검증 경계는 문서 뒤 부록으로 이동함.",
+      "recorded_at": "2026-08-29T02:51:52+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "르라보의 열린 작업실·보이는 도구·숙련된 한 동작·정직한 재료 사용 원리만 번역하고 트레이드 드레스는 배제한 16:9 MORA Hero Craft Space 4종을 제작함. 같은 메이커·공간·빛·좌측 카피 여백을 고정하고 거름, 인퓨전 계량, 최소 폴딩, 여섯 용기 충전·검수만 베리에이션해 Stage 3 Hero 후보로 등록함.",
+      "recorded_at": "2026-08-29T12:00:00+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "3번 문서 본문에서 기본 1순위였던 V1 Straining Wall을 최종 히어로로 확정함. V2–V4는 등록 자산·랜딩 구성·섹션 매핑에서 제외하고 원본 파일과 프롬프트만 보존한 채 문서 최하단 이전 버전 관리로 축약함.",
+      "recorded_at": "2026-08-29T14:20:02+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "8개 피드백을 모두 반영했다. Hero는 zero-people 제조실, Why MORA는 한 명의 메이커와 세 상태 비교로 분리했고, 에칭은 동일 배경의 물리적 제조 장면으로 재생성했다. Material Method는 큰 여백·작은 표본·실험적 food-R&D로 교체했으며, 모든 활성 제품·패키징·고객경험 이미지를 얇은 4–6% 캡과 foil-under-cap의 무거운 유리 Vessel Record로 통일했다. 구형 플라스틱·두꺼운 캡·추상 에칭·인물 Hero는 이전 버전 관리로만 보존한다.",
+      "recorded_at": "2026-08-29T16:55:00+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "사용자가 실행 승인한 R3 추가 재료 5장(첫 스푼 매크로, Core 사용 순간 2장, Studio Trial 조건부 사용 순간 1장, 거름 천 풀블리드 전환)을 제작·QA하고 canonical package에 등록했다. ST3-ETCH-R2-44 Founder Bench는 공개 landing_page_composition에서 제거하고 내부 Production Reference로 고정했다.",
+      "recorded_at": "2026-08-29T07:56:50.466Z"
+    },
+    {
+      "decision": "revision_requested",
+      "message": "따뜻한 공방 분위기를 살짝 몰입감 있는 장인정신의 이미지 톤으로 전환하고, 브랜드 메시지→핵심 가치→재료·맛·공정 특징→제품→원재료 상세 순으로 큰 메시지를 먼저 보여 준 뒤 이미지 크기와 텍스트 구간으로 서사의 완급을 조절할 것.",
+      "recorded_at": "2026-08-31T00:40:00+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "R4 Quiet Intensity를 병렬 실행해 S3를 12개 메시지 중심 모듈로 재구성하고 핵심 가치를 3개로 정리했다. Hero·Why MORA·거름 전환을 cool-neutral 몰입형 이미지로 교체했으며, 제품 6종을 원재료 상세보다 먼저 배치하고 full-bleed를 Hero·거름 전환·첫 스푼 세 장으로 제한했다. 교체된 따뜻한 R2/R3 이미지는 공개 구성에서 제외하고 등록된 lineage audit로 보존했다.",
+      "recorded_at": "2026-08-31T00:56:24+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "변경된 Stage 2 Revision 10/R16–R18을 기준으로 Stage 3을 R5 layout-aware package로 교체했다. 현재 landing component, 2열 grid, 2×2 sticky product matrix와 scroll sequence는 유지하고, 32 unique raster 역할을 3:2 FullBleed, 1:2 sticky, 1:1 product/ingredient exact source masters로 맞췄다. 신규 delivery는 3072×2048, 2048×4096, 2048×2048로 제공하며 native 생성본과 crop/resample provenance를 분리 기록했다. direct-print tall glass와 mismatched legacy imagery는 active registry에서 제외하고 partial Batch Record 체계로 통일했다.",
+      "recorded_at": "2026-08-31T21:40:00+09:00"
+    }
+  ],
+  "updated_at": "2026-08-31T21:40:00+09:00"
+}

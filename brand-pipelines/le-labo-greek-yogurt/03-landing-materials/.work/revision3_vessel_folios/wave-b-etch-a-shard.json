@@ -1,0 +1,322 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "stage3_vessel_folios_wave_b_etch_lane_a_shard",
+  "revision": "stage3_revision3_vessel_folios",
+  "generated_at": "2026-08-29T02:20:00+09:00",
+  "status": "generated_and_qa_passed",
+  "scope": "Wave B Material Folios lane A final art, compiled prompts and QA metadata only. Canonical JSON, asset registry, stage review, pipeline state, public registration and generated stories remain root-owned.",
+  "direction_lock": ".work/revision3_vessel_folios/direction-lock.json#material_folios",
+  "series_contract": {
+    "style_authority": "assets/editorial-etchings/mora-etching-brand-trace-master.png",
+    "paper": "clean contemporary Cultured Cream #F5F1E8",
+    "ink": "fine Carbon #171714 copperplate contour with breathable cross-hatch and restrained stipple",
+    "light": "one coherent upper-left engraving light",
+    "negative_space_percent": "65-70",
+    "transition": "exactly one continuous impossible material transformation per frame",
+    "artwork_text": "none",
+    "wave_b_reference_boundary": "No Stage 1 Le Labo Journal original was attached to any Wave B generation call. Only the approved MORA style master and, where specified, MORA object or ingredient identity references were used."
+  },
+  "assets": [
+    {
+      "asset_id": "ST3-ETCH-BRAND-FIRST-FURROW-27",
+      "name": "The First Furrow",
+      "role": "origin_narrative_etching",
+      "communication_job": "Show the founding question as one measurable path from spoon furrow through scale datum and filter-cloth weave to a retained ingredient trace, without inventing biography.",
+      "file_path": "assets/editorial-etchings/mora-etch-brand-first-furrow-3x2.png",
+      "prompt_path": "prompts/ST3-ETCH-BRAND-FIRST-FURROW-27.md",
+      "media_type": "image/png",
+      "dimensions": "1536x1024",
+      "aspect_ratio": "3:2",
+      "file_size_bytes": 1708328,
+      "sha256": "5cf24bc09875297c80458ddb8e25d73ac80ce4a5efe963d23809ccfb144328ec",
+      "subject": "one spoon and dense-yogurt furrow continuing through an unnumbered scale datum and folded filter-cloth weave into one retained ingredient trace",
+      "reference_order": [
+        {
+          "slot": "Image 1",
+          "path": "assets/editorial-etchings/mora-etching-brand-trace-master.png",
+          "authority": "immutable line, hatch, stipple, paper, light, negative-space and one-transition style authority"
+        }
+      ],
+      "generation_provenance": {
+        "mode": "Codex built-in imagegen",
+        "use_case": "illustration-story",
+        "distinct_generation_call": true,
+        "initial_candidate": "exec-25efe28b-47b6-4cb8-b27a-e4b0a67b39cb.png",
+        "delta_candidate": "exec-d35b9253-65e5-4d93-a690-541cc97276ca.png",
+        "iteration": "Candidate 1 passed story/style but failed left crop. Delta 1 changed crop only by uniformly reducing and recentering the connected group; accepted.",
+        "postprocess": "none; generated at final 1536x1024"
+      },
+      "invariants": [
+        "left-to-right furrow → unnumbered scale datum → cloth weave → retained trace",
+        "one touching causal group and exactly one continuous path",
+        "no person, hand, biography, text, numeral or second transition",
+        "all critical contours inside the 8% safe margin"
+      ],
+      "qa": {
+        "inspection": "view_image original plus file/dimension/SHA check",
+        "checks": {
+          "delivery_geometry": "pass — 1536x1024 RGB PNG",
+          "crop_safety": "pass — complete spoon handle and right trace clear the 8% safe margin after crop-only delta",
+          "negative_space": "pass — compact lower band with large uninterrupted upper cream field",
+          "single_transition": "pass — one unbroken furrow path briefly takes scale datum and cloth weave before the terminal trace",
+          "palette_line_light": "pass — cream/near-black, fine line, one upper-left engraving light",
+          "prohibited_content": "pass — no artwork text, human, founder identity, Le Journal motif or invented history"
+        },
+        "decision": "approve",
+        "accepted_delta_axis": "crop"
+      },
+      "source_distance_check": "pass — no house, perfume bottle, portal, suitcase, travel scene, source wording, label or copied Le Journal composition",
+      "invariant_check": "pass",
+      "status": "generated_and_qa_passed"
+    },
+    {
+      "asset_id": "ST3-ETCH-FOUNDER-TABLE-28",
+      "name": "The Table Before the Product",
+      "role": "founder_boundary_narrative_etching",
+      "communication_job": "Show the unanswered founding question through an empty contemporary worktable and factual tools, never through an invented founder.",
+      "file_path": "assets/editorial-etchings/mora-etch-founder-table-3x2.png",
+      "prompt_path": "prompts/ST3-ETCH-FOUNDER-TABLE-28.md",
+      "media_type": "image/png",
+      "dimensions": "1536x1024",
+      "aspect_ratio": "3:2",
+      "file_size_bytes": 1731704,
+      "sha256": "c3eeaaa73033792ee442bdccc9a2e24f07ac8f6d46bba5efbcde9b9bb0b98c24",
+      "subject": "an empty modern worktable with bench scale, folded filter cloth, blank notebook, non-identifying specimen and empty MORA vessel; one cloth edge becomes the vessel wall",
+      "reference_order": [
+        {
+          "slot": "Image 1",
+          "path": "assets/editorial-etchings/mora-etching-brand-trace-master.png",
+          "authority": "immutable visual-system authority"
+        },
+        {
+          "slot": "Image 2",
+          "path": "assets/reference-system/mora-glass-package-master-front.png",
+          "authority": "MORA Vessel Record geometry only; wording and batch data prohibited"
+        }
+      ],
+      "generation_provenance": {
+        "mode": "Codex built-in imagegen",
+        "use_case": "illustration-story",
+        "distinct_generation_call": true,
+        "initial_candidate": "exec-58ce3d74-b61d-45a4-b3b9-77d8d3b9632c.png",
+        "iteration": "first candidate accepted; no delta edit",
+        "postprocess": "none; generated at final 1536x1024"
+      },
+      "invariants": [
+        "exactly five factual objects: unnumbered bench scale, folded cloth, blank closed notebook, non-identifying specimen and empty unmarked MORA vessel",
+        "cloth edge → clear vessel wall is the only impossible transition",
+        "no person, hand, face, reflection, identity cue, signature, date, city or founder implication",
+        "largest continuous negative-space field anchored on the right"
+      ],
+      "qa": {
+        "inspection": "view_image original plus file/dimension/SHA check",
+        "checks": {
+          "delivery_geometry": "pass — 1536x1024 RGB PNG",
+          "factual_object_count": "pass — exact five-object worktable cluster",
+          "founder_boundary": "pass — notebook blank, scale unnumbered, specimen not identified, no human or identity clue",
+          "single_transition": "pass — one cloth edge continuously condenses into one vessel wall; other objects remain factual",
+          "palette_line_light": "pass — monochrome fine engraving on warm cream with coherent upper-left light",
+          "prohibited_content": "pass — no text, record print, source-brand composition, perfume trade dress or historical claim"
+        },
+        "decision": "approve",
+        "accepted_delta_axis": null
+      },
+      "source_distance_check": "pass — MORA vessel geometry is directional and unmarked; no Le Journal composition, wording or trade dress",
+      "invariant_check": "pass",
+      "status": "generated_and_qa_passed"
+    },
+    {
+      "asset_id": "ST3-ETCH-MATERIAL-THYME-HONEY-30",
+      "name": "Thyme Honey Material Plate",
+      "role": "ingredient_material_plate",
+      "communication_job": "Connect recognizable thyme and honey to a honey-led preparation and one amber ribbon with fine thyme flecks.",
+      "file_path": "assets/editorial-etchings/mora-etch-material-thyme-honey-square.png",
+      "prompt_path": "prompts/ST3-ETCH-MATERIAL-THYME-HONEY-30.md",
+      "media_type": "image/png",
+      "dimensions": "1536x1536",
+      "aspect_ratio": "1:1",
+      "file_size_bytes": 1904241,
+      "sha256": "7225f7a7e723d546794a477712154b206472803964accf0da698d8d134da5ebb",
+      "subject": "one monochrome thyme-and-honey raw identity flowing lower-left to upper-right through honey-led syrup into one dense-yogurt ribbon with thyme flecks",
+      "reference_order": [
+        {
+          "slot": "Image 1",
+          "path": "assets/editorial-etchings/mora-etching-brand-trace-master.png",
+          "authority": "immutable visual-system authority"
+        },
+        {
+          "slot": "Image 2",
+          "path": "assets/reference-system/mora-ingredient-thyme-honey-aerial.png",
+          "authority": "raw thyme/honey identity, texture and sampled amber only; specimen dish and photographic lighting prohibited"
+        }
+      ],
+      "generation_provenance": {
+        "mode": "Codex built-in imagegen",
+        "use_case": "illustration-story",
+        "distinct_generation_call": true,
+        "initial_candidate": "exec-815467a9-c52f-42a5-bf56-dbb6924969b0.png",
+        "delta_candidate": "exec-66d2f976-9ad4-4968-ab18-f54a4cc26702.png",
+        "iteration": "Candidate 1 passed composition/story but amber exceeded the restrained material-tint read. Delta 1 reduced tint_opacity only to a barely perceptible 6%; accepted.",
+        "postprocess": "imagegen-native 1254x1254 deterministically resampled to 1536x1536 using Lanczos; no crop or content change"
+      },
+      "material_contract": {
+        "raw": "one fresh thyme sprig touching raw honey, monochrome",
+        "preparation": "pale slowly flowing honey-led thyme syrup",
+        "finished_trace": "one honey ribbon with fine thyme flecks in dense yogurt",
+        "tint": "#F5C246 at 6% opacity",
+        "tint_scope": "preparation and finished trace only"
+      },
+      "qa": {
+        "inspection": "view_image original after final Lanczos normalization plus file/dimension/SHA check",
+        "checks": {
+          "delivery_geometry": "pass — 1536x1536 RGB PNG",
+          "narrative_direction": "pass — fixed lower-left → upper-right material path with large cream field",
+          "single_transition": "pass — one shared thyme/honey contour thickens into syrup and resolves inside one yogurt fold",
+          "identity": "pass — thyme sprig and honey-led viscosity are immediately legible; no specimen dish",
+          "tint_scope": "pass — black line reads first; raw ingredient stays monochrome; subtle #F5C246 occurs only in preparation/trace",
+          "prohibited_content": "pass — no text, atlas, prop, source motif or unsupported SOP claim"
+        },
+        "decision": "approve",
+        "accepted_delta_axis": "tint_opacity"
+      },
+      "source_distance_check": "pass — no Le Journal reference attached; no apothecary, tincture, perfume, botanical-label or source-composition cue",
+      "invariant_check": "pass",
+      "status": "generated_and_qa_passed"
+    },
+    {
+      "asset_id": "ST3-ETCH-MATERIAL-FIG-LEAF-31",
+      "name": "Fig Leaf Material Plate",
+      "role": "conditional_ingredient_material_plate",
+      "communication_job": "Connect one botanically legible fig leaf to a very pale filtered direction and one near-ivory green-beige yogurt vein while preserving the safety gate.",
+      "file_path": "assets/editorial-etchings/mora-etch-material-fig-leaf-square.png",
+      "prompt_path": "prompts/ST3-ETCH-MATERIAL-FIG-LEAF-31.md",
+      "media_type": "image/png",
+      "dimensions": "1536x1536",
+      "aspect_ratio": "1:1",
+      "file_size_bytes": 2430675,
+      "sha256": "4eaf7bb60ba63627ab0cc8b9dc9c4720c2a29fad59713f91ccad12d941556ed1",
+      "subject": "one monochrome lobed fig leaf whose central vein continues lower-left to upper-right as a very pale filtered flow and one dense-yogurt vein",
+      "reference_order": [
+        {
+          "slot": "Image 1",
+          "path": "assets/editorial-etchings/mora-etching-brand-trace-master.png",
+          "authority": "immutable visual-system authority"
+        },
+        {
+          "slot": "Image 2",
+          "path": "assets/reference-system/mora-ingredient-fig-leaf-aerial.png",
+          "authority": "single raw leaf identity, vein structure and sampled tint only; specimen dish and photographic lighting prohibited"
+        }
+      ],
+      "generation_provenance": {
+        "mode": "Codex built-in imagegen",
+        "use_case": "illustration-story",
+        "distinct_generation_call": true,
+        "initial_candidate": "exec-884a4bd8-6cd5-45ab-9f23-69c85e99811b.png",
+        "iteration": "first candidate accepted; no delta edit",
+        "postprocess": "imagegen-native 1254x1254 deterministically resampled to 1536x1536 using Lanczos; no crop or content change"
+      },
+      "material_contract": {
+        "raw": "one clean lobed fig leaf, monochrome",
+        "preparation": "very pale filtered aqueous direction",
+        "finished_trace": "one near-ivory green-beige vein in dense yogurt",
+        "tint": "#8F8F31 at 6% opacity",
+        "tint_scope": "preparation and finished trace only",
+        "launch_gate": "conditional direction only; no edible suitability, safety approval or validated SOP implied"
+      },
+      "qa": {
+        "inspection": "view_image original after final Lanczos normalization plus file/dimension/SHA check",
+        "checks": {
+          "delivery_geometry": "pass — 1536x1536 RGB PNG",
+          "narrative_direction": "pass — fixed lower-left → upper-right path with large cream field",
+          "single_transition": "pass — one leaf vein narrows into one aqueous flow and resolves as one yogurt vein",
+          "identity": "pass — exactly one legible lobed fig leaf; no dish, fruit or second specimen",
+          "tint_scope": "pass — raw leaf monochrome; very pale #8F8F31 confined to preparation/trace",
+          "conditional_boundary": "pass — no eating, serving, safety, certification, approval, validated process or launch-ready cue"
+        },
+        "decision": "approve_conditional_direction",
+        "accepted_delta_axis": null
+      },
+      "source_distance_check": "pass — no Le Journal reference attached; no botanical atlas, apothecary, perfume, label or source-composition cue",
+      "invariant_check": "pass",
+      "status": "generated_and_qa_passed"
+    },
+    {
+      "asset_id": "ST3-ETCH-MATERIAL-ROASTED-BUCKWHEAT-32",
+      "name": "Roasted Buckwheat Material Plate",
+      "role": "ingredient_material_plate",
+      "communication_job": "Connect discrete roasted triangular groats to one toasted particulate preparation and particles retained at two depths of one yogurt body.",
+      "file_path": "assets/editorial-etchings/mora-etch-material-roasted-buckwheat-square.png",
+      "prompt_path": "prompts/ST3-ETCH-MATERIAL-ROASTED-BUCKWHEAT-32.md",
+      "media_type": "image/png",
+      "dimensions": "1536x1536",
+      "aspect_ratio": "1:1",
+      "file_size_bytes": 2611673,
+      "sha256": "641fce045c7f9da73b40b057350ebdf28868ea78816dd51073abe96bb9b35464",
+      "subject": "monochrome triangular roasted buckwheat groats dissolving lower-left to upper-right into one toasted particulate stream retained at surface and cut depth of one yogurt fold",
+      "reference_order": [
+        {
+          "slot": "Image 1",
+          "path": "assets/editorial-etchings/mora-etching-brand-trace-master.png",
+          "authority": "immutable visual-system authority"
+        },
+        {
+          "slot": "Image 2",
+          "path": "assets/reference-system/mora-ingredient-roasted-buckwheat-aerial.png",
+          "authority": "raw triangular groat identity, toasted texture and sampled brown only; specimen dish and photographic lighting prohibited"
+        }
+      ],
+      "generation_provenance": {
+        "mode": "Codex built-in imagegen",
+        "use_case": "illustration-story",
+        "distinct_generation_call": true,
+        "initial_candidate": "exec-f71d64e7-a26e-4aa5-8ae1-e480f47957d3.png",
+        "iteration": "first candidate accepted; no delta edit",
+        "postprocess": "imagegen-native 1254x1254 deterministically resampled to 1536x1536 using Lanczos; no crop or content change"
+      },
+      "material_contract": {
+        "raw": "discrete roasted triangular buckwheat groats, monochrome",
+        "preparation": "warm lightly turbid toasted-grain infusion or fine slurry",
+        "finished_trace": "fine toasted particles at the surface and spoon-cut depth of one yogurt body",
+        "tint": "#B57028 at 6% opacity",
+        "tint_scope": "preparation and finished trace only"
+      },
+      "qa": {
+        "inspection": "view_image original after final Lanczos normalization plus file/dimension/SHA check",
+        "checks": {
+          "delivery_geometry": "pass — 1536x1536 RGB PNG",
+          "narrative_direction": "pass — fixed lower-left → upper-right particulate path with large cream field",
+          "single_transition": "pass — triangular groat edges dissolve into one stream and resolve at two depths of the same yogurt body",
+          "identity": "pass — discrete triangular groats remain legible; no dish, stalk or flour pile",
+          "tint_scope": "pass — raw groats monochrome; translucent #B57028 confined to preparation/trace",
+          "prohibited_content": "pass — no text, separate samples, source motif or unsupported roast/process parameter"
+        },
+        "decision": "approve",
+        "accepted_delta_axis": null
+      },
+      "source_distance_check": "pass — no Le Journal reference attached; no elixir, whiskey, perfume, apothecary or source-composition cue",
+      "invariant_check": "pass",
+      "status": "generated_and_qa_passed"
+    }
+  ],
+  "cross_asset_qa": {
+    "inspection_method": "All five final project-owned PNGs inspected with view_image at original detail after final normalization; file dimensions, byte sizes and SHA-256 values recomputed from the final files.",
+    "distinct_calls": "pass — five assets originated from five distinct built-in imagegen calls; only First Furrow crop and Thyme Honey tint opacity received isolated delta calls",
+    "reference_order": "pass — every asset uses the approved style master as Image 1; materials use their matching ingredient reference as Image 2; Founder Table uses vessel geometry as Image 2; no Stage 1 Journal image was attached",
+    "series_coherence": "pass — contemporary warm cream, fine near-black engraving, upper-left light, high negative space and exactly one causal material transition remain consistent",
+    "delivery_geometry": "pass — two narrative assets are 1536x1024 and three material plates are 1536x1536",
+    "artwork_text": "pass — no text, letter, numeral, logo, label, signature, watermark, border or frame",
+    "source_distance": "pass — no source composition, character, wording, trade dress, bottle-as-door, house, suitcase or travel cue",
+    "decision": "ready_for_root_cross_lane_review_and_registration"
+  },
+  "handoff": {
+    "canonical_write_authority": "root Stage 3 merge only",
+    "recommended_action": "Cross-check these five final assets against Wave B lane B, then merge registry-ready records and prompt paths from this shard.",
+    "forbidden_from_this_shard": [
+      "canonical landing JSON edit",
+      "asset-registry edit",
+      "stage-review or pipeline-state edit",
+      "public registration or generated story edit"
+    ]
+  }
+}

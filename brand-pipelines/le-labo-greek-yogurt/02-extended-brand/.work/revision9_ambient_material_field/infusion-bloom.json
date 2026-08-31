@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "asset_id": "ST2-AMBIENT-INFUSION-BLOOM-09",
+  "concept": "Infusion Bloom",
+  "series_name": "The Background Is the Batch",
+  "operation": "controlled infusion",
+  "status": "final_directional_concept",
+  "output": {
+    "path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/ambient-system/mora-ambient-infusion-bloom-r9.png",
+    "format": "PNG",
+    "width_px": 1536,
+    "height_px": 1024,
+    "aspect_ratio": "3:2",
+    "color_mode": "RGB",
+    "sha256": "74224a37b561f22ad06abd8778e344d3df5f2a5a851d9d9f760a77674c80debc"
+  },
+  "generation": {
+    "mode": "built-in image_gen",
+    "cli_or_api_fallback_used": false,
+    "initial_generated_source": "/Users/ddd/.codex/generated_images/01a056b4-507a-7750-99d7-53de2310478b/exec-58f9469b-6392-4b70-be2a-b2408373bca0.png",
+    "final_generated_source": "/Users/ddd/.codex/generated_images/01a056b4-507a-7750-99d7-53de2310478b/exec-8d6ca412-ff71-4c8c-a29e-a156fe3a1b24.png",
+    "attempt_count": 2,
+    "targeted_retry_reason": "The first result read partly as a scraped surface channel with honey droplets; the final targeted revision changed only that material behavior to a shallow continuous subsurface bloom.",
+    "prompt_record": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/prompts/ST2-AMBIENT-INFUSION-BLOOM-09.md"
+  },
+  "visual_qa": {
+    "inspection_method": "view_image at original detail after final generation",
+    "checks": [
+      {
+        "criterion": "Continuous warm mineral-ivory yogurt field with broad negative space",
+        "result": "pass",
+        "note": "The field is full-bleed, warm ivory, quiet, and unbounded; most of the frame remains low-activity space."
+      },
+      {
+        "criterion": "Amber-green ingredient character emerges from beneath the field",
+        "result": "pass",
+        "note": "A low-contrast amber zone with sparse thyme micro-fibers reads at shallow mixed depths and dissolves on every side."
+      },
+      {
+        "criterion": "Controlled infusion rather than garnish, splash, pour, fold, or fully mixed marbling",
+        "result": "pass",
+        "note": "The final revision removes surface droplets and the scraped-channel cue; the ingredient zone behaves as capillary subsurface diffusion."
+      },
+      {
+        "criterion": "Hybrid photographic ingredient truth plus minimal matte graphic field",
+        "result": "pass",
+        "note": "Yogurt grain and botanical fibers remain materially legible while the overall composition stays minimal and matte."
+      },
+      {
+        "criterion": "No people, product, typography, logo, whole herb, object cutout, bounded photo, tabletop, or horizon",
+        "result": "pass",
+        "note": "None of the prohibited representational objects or text elements are present."
+      },
+      {
+        "criterion": "Series palette and light lock",
+        "result": "pass",
+        "note": "Mineral ivory dominates, with pale honey amber and sparse muted thyme green under one soft directional source; no crushed black or dramatic ray."
+      },
+      {
+        "criterion": "Natural asymmetry and no uniform CGI gloss",
+        "result": "pass",
+        "note": "The bloom is irregular and off-center with subtle density variation; there is no synthetic shine or jelly volume."
+      }
+    ],
+    "overall": "pass",
+    "unresolved_risks": [
+      "Because the bloom is intentionally very low contrast, some compressed or low-brightness presentations may reduce the visibility of the thyme fibers.",
+      "The concept image communicates material behavior directionally and should not be treated as a literal prediction of production-batch appearance."
+    ]
+  },
+  "evidence_boundary": "Directional ambient concept visual only; not evidence of a production recipe, SOP, sensory panel, or finished food appearance."
+}

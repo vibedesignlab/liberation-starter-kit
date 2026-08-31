@@ -1,0 +1,182 @@
+{
+  "capture_date": "2026-08-25",
+  "scope": "Official Le Labo product and packaging visual expansion; source evidence only.",
+  "method": "Direct HTTP page and asset retrieval with curl; no browser automation. MIME/dimensions verified with file; uniqueness verified by SHA-256 against 01-source-brand/evidence/visuals.",
+  "asset_count": 9,
+  "assets": [
+    {
+      "id": "EV-PP-01",
+      "title": "SANTAL 33 50 ml neutral PDP",
+      "page_url": "https://www.lelabofragrances.com/santal-33-147.html?size=50ml",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/skus/050PS33100__PRODUCT_01--IMG_1200--SANTAL33-200129705.jpg",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-01-santal33-50ml-neutral.jpg",
+      "mime_type": "image/jpeg",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "ee9c6f7043a68245462e2883d279da6772d068f62a7ee567117154db8a0dd17a",
+      "layer": "product-representation",
+      "role": "neutral-pdp-primary",
+      "credit": "Le Labo official product catalog / official CDN",
+      "rights": "Research reference only; copyrighted by Le Labo or its licensors; no redistribution license inferred.",
+      "visual_observations": ["Single clear cylindrical spray bottle isolated low in a square grey field.", "Thick clear glass foot, pale liquid, matte charcoal cylindrical cap and warm off-white wrap label.", "Long side shadow, visible paper texture and extensive negative space make the label legible without a white-background cutout."]
+    },
+    {
+      "id": "EV-PP-02",
+      "title": "SANTAL 33 500 ml format",
+      "page_url": "https://www.lelabofragrances.com/santal-33-147.html?size=50ml",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/skus/500PS33100__PRODUCT_01--IMG_1200--SANTAL33-1901642987.jpg",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-02-santal33-500ml-format.jpg",
+      "mime_type": "image/jpeg",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "7112b367a838309c07aebf0de80ed2ef00cf62f36d4edc0fc70905c5a3428ccc",
+      "layer": "product-native-form",
+      "role": "size-and-container-variant",
+      "credit": "Le Labo official product catalog / official CDN",
+      "rights": "Research reference only; copyrighted by Le Labo or its licensors; no redistribution license inferred.",
+      "visual_observations": ["Large apothecary/decanter silhouette replaces the small spray bottle.", "Broad cylindrical body, sloped shoulder, clear ground-glass-style neck and faceted transparent stopper.", "The same ruled information label preserves family identity across a materially different container." ]
+    },
+    {
+      "id": "EV-PP-03",
+      "title": "SANTAL 33 15 ml discovery size",
+      "page_url": "https://www.lelabofragrances.com/santal-33-147.html?size=50ml",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/skus/015PS33100__PRODUCT_01--IMG_1200--SANTAL33--2048295810.jpg",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-03-santal33-15ml-sample.jpg",
+      "mime_type": "image/jpeg",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "8d02449be59b5d6c98d2bf08c242ff722f855b8e0c97f3c4082c70ac0da7c14d",
+      "layer": "product-native-form",
+      "role": "discovery-size-variant",
+      "credit": "Le Labo official product catalog / official CDN",
+      "rights": "Research reference only; copyrighted by Le Labo or its licensors; no redistribution license inferred.",
+      "visual_observations": ["Slim clear cylindrical travel/sample spray retains the charcoal cap and full wrap label.", "The oversized label consumes most of the small vessel, prioritizing identity and production fields over exposed glass.", "Framing and grey shadow treatment match the 50 ml and 500 ml family." ]
+    },
+    {
+      "id": "EV-PP-04",
+      "title": "Personalized label application",
+      "page_url": "https://www.lelabofragrances.com/personalization.html",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/cms/524_LARGE_IMAGE_01_13170_-879790025.jpg",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-04-personalized-label-hands.jpg",
+      "mime_type": "image/jpeg",
+      "width": 2000,
+      "height": 528,
+      "sha256": "9de0bca110b025ea181596c48bdaa49e7f89d99c242aafdbf1a660d44ac99198",
+      "layer": "packaging-and-service-ceremony",
+      "role": "personalized-label-process",
+      "credit": "Le Labo official Personalization page / official CDN",
+      "rights": "Research reference only; copyrighted by Le Labo or its licensors; no redistribution license inferred.",
+      "visual_observations": ["Two hands align a freshly printed SANTAL 33 label in front of the bottle.", "Dark workbench, machine/tool at left and open presentation box at right frame personalization as physical labor.", "Wide cinematic crop makes hands, label and bottle the operating sequence rather than a conventional beauty still life." ]
+    },
+    {
+      "id": "EV-PP-05",
+      "title": "Classic Collection discovery set open box",
+      "page_url": "https://www.lelabofragrances.com/discovery-sets/classic-collection/discovery-set/17-8.html",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/skus/J40X01R000__PRODUCT_01--IMG_1200--DISCOVERYSET--1016611150.jpg",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-05-discovery-open-box.jpg",
+      "mime_type": "image/jpeg",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "7ab5a833a080b7ba1d0357cf82ef754bb57762419388df761e6f1e31a88a6b6c",
+      "layer": "packaging-and-unboxing",
+      "role": "discovery-unboxing-and-internal-organization",
+      "credit": "Le Labo official product catalog / official CDN",
+      "rights": "Research reference only; copyrighted by Le Labo or its licensors; no redistribution license inferred.",
+      "visual_observations": ["Open kraft hinged carton reveals 17 narrow vials arranged in two rows.", "Black die-cut foam sharply contrasts the clear vials, pale liquids and black caps.", "Three-quarter view exposes shell, lid, insert depth and vial organization in one factual frame." ]
+    },
+    {
+      "id": "EV-PP-06",
+      "title": "SANTAL 26 classic candle neutral PDP",
+      "page_url": "https://www.lelabofragrances.com/santal-26-33.html",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/skus/CNDCS26100__PRODUCT_01--IMG_1200--SANTAL26--886638108.jpg",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-06-santal26-candle-neutral.jpg",
+      "mime_type": "image/jpeg",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "01b69a347ab90b3d84283c80fdecfcfe530051c17d51b4fd6342149eb91dcf98",
+      "layer": "product-native-form",
+      "role": "home-format-neutral-pdp",
+      "credit": "Le Labo official product catalog / official CDN",
+      "rights": "Research reference only; copyrighted by Le Labo or its licensors; no redistribution license inferred.",
+      "visual_observations": ["Clear heavy-bottomed glass tumbler contains off-white wax and one natural-colored wick.", "The same ruled personalized label scales to the wider vessel and names weight, product form, city, date and recipient.", "Soft grey field and low side shadow match fragrance PDP representation." ]
+    },
+    {
+      "id": "EV-PP-07",
+      "title": "SANTAL 26 candle label detail",
+      "page_url": "https://www.lelabofragrances.com/santal-26-33.html",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/skus/CNDCS26100__PRODUCT_07--IMG_1200--SANTAL26-1621790330.jpg",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-07-santal26-candle-detail.jpg",
+      "mime_type": "image/jpeg",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "c8151d2a715cb7df4e630e59427c1d78ecc3d0bb043a088a216c0b633aa9b91f",
+      "layer": "product-detail-and-service-ceremony",
+      "role": "label-material-and-application-detail",
+      "credit": "Le Labo official product catalog / official CDN",
+      "rights": "Research reference only; copyrighted by Le Labo or its licensors; no redistribution license inferred.",
+      "visual_observations": ["Hands hold the un-applied paper label edge-to-edge against the candle vessel.", "Close crop makes paper grain, black rules, weight, bilingual product form, city/date fields and hand-crafted line readable.", "The image explicitly distinguishes the removable printed label from the glass and wax substrate." ]
+    },
+    {
+      "id": "EV-PP-08",
+      "title": "Hinoki shower gel 250 ml",
+      "page_url": "https://www.lelabofragrances.com/shower-gel-hinoki-429.html?size=250ml",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/skus/P016250100__PRODUCT_01--IMG_1200--SHOWERGEL--1883409868.jpg",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-08-hinoki-shower-gel.jpg",
+      "mime_type": "image/jpeg",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "ef66d123fc873fa75ce15c9c1c00ee7af89a9697dea97ac6d3a5fd053c19abc5",
+      "layer": "product-native-form",
+      "role": "body-format-bottle",
+      "credit": "Le Labo official product catalog / official CDN",
+      "rights": "Research reference only; copyrighted by Le Labo or its licensors; no redistribution license inferred.",
+      "visual_observations": ["Amber-brown product is visible through a translucent rounded-rectangle squeeze bottle.", "Clear dispensing cap and direct black grid typography replace the fragrance bottle's paper wrap label.", "Label hierarchy foregrounds function first, then volume, scent, freshness period and formula copy." ]
+    },
+    {
+      "id": "EV-PP-09",
+      "title": "Hinoki hand pomade 55 ml",
+      "page_url": "https://www.lelabofragrances.com/hand-pomade-435.html?size=55ml",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/skus/P015075100__PRODUCT_01--IMG_1200--HANDPOMADE-1457772461.jpg",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-09-hinoki-hand-pomade.jpg",
+      "mime_type": "image/jpeg",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "86657554d6ad107f1f94f61a29acb7679d9d6e21ae939de685f2c20fc3561ad3",
+      "layer": "product-native-form",
+      "role": "body-format-tube",
+      "credit": "Le Labo official product catalog / official CDN",
+      "rights": "Research reference only; copyrighted by Le Labo or its licensors; no redistribution license inferred.",
+      "visual_observations": ["Warm off-white collapsible squeeze tube stands on a small faceted cap.", "Dense black bilingual function, volume, scent, freshness and formula text is printed directly in a ruled vertical grid.", "The task-native tube changes silhouette and reading direction while preserving monochrome administrative typography." ]
+    }
+  ],
+  "verification": {
+    "all_downloads_http_success": true,
+    "all_mime_types_verified": true,
+    "all_dimensions_verified": true,
+    "all_sha256_recorded": true,
+    "hash_matches_against_existing_evidence_visuals": [],
+    "result": "9 unique new assets"
+  },
+  "duplicates_exclusions": [
+    {
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/skus/J2B001R000__PRODUCT_08--IMG_1200--DISCOVERYSET--2781293.jpg",
+      "reason": "Excluded: already present as evidence/visuals/EV-LL-010-discovery-set-product.jpg with SHA-256 1b7274a5d5436fbdd93714300a004c5c4fff84e13087b92d6e9e6375fcc054f7. New open-box asset EV-PP-05 shows the interior instead."
+    },
+    {
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/cms/524_MEDIUM_IMAGE_01_13172_-1096473663.jpg",
+      "reason": "Excluded: lower-resolution responsive rendition of the selected personalization scene."
+    },
+    {
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/cms/524_SMALL_IMAGE_01_13169_-1920204579.jpg",
+      "reason": "Excluded: lower-resolution responsive rendition of the selected personalization scene."
+    },
+    {
+      "pattern": "*_IMG_360-*",
+      "reason": "Excluded: 360 px recommendation thumbnails when a 1200 px official primary or detail image was available."
+    },
+    {
+      "pattern": "shared navigation content assets on each PDP",
+      "reason": "Excluded: page chrome/editorial navigation assets are not product-packaging evidence and several are already represented in evidence/visuals."
+    }
+  ]
+}

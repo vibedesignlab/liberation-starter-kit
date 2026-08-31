@@ -1,0 +1,581 @@
+{
+  "schema_version": "1.1.0",
+  "artifact_type": "stage3_lineup_packaging_customer_experience_merge_shard",
+  "job_id": "stage3_lineup_pack_cx",
+  "status": "completed",
+  "source_basis": [
+    "../02-extended-brand/outputs/extended-brand-anatomy.json",
+    "../02-extended-brand/extended-brand-anatomy.md",
+    ".work/stage3-direction-lock.json"
+  ],
+  "narrative_lock": {
+    "route": "NR-01 — 재료가 머문 결",
+    "brand_message": "한 컵 안에, 재료가 머문 결.",
+    "lineup_story": "하나의 되직한 요거트 베이스가 익숙한 허브 단맛, 조용한 초록 향, 볶은 촉감, 밝은 껍질, 깊은 씨앗, 세이보리 접면이라는 여섯 재료 질문에 답한다. 차이는 패키지 색이 아니라 투명 컵 안에서 실제 음식이 만드는 리본·베일·입자·스레드·마블·접면으로 읽힌다.",
+    "copy_boundary": "감각과 사용 순간을 말하되 검증 전 영양·건강·원산지·장인성·지속가능성·포장 성능을 주장하지 않는다. Le Labo의 이름+숫자, 배치 의식, 도시·개인명, 약국식 라벨 문법은 사용하지 않는다."
+  },
+  "assortment_logic": {
+    "family_invariants": [
+      "같은 낮고 넓은 투명 한 컵, 같은 검정 직접 인쇄 위계, 같은 평평한 박리 포일, 같은 첫 스푼 상태를 반복한다.",
+      "제품별 색은 실제 음식에서만 나오며 인쇄색·띠·locator·foil 색·배경 조명으로 복제하지 않는다.",
+      "각 SKU는 하나의 사람 순간, 하나의 감각 역할, 하나의 food-native preparation form, 하나의 검증 가능한 내부 흔적을 가진다.",
+      "여섯 제품을 동시에 양산하는 것이 기본 전제가 아니며 안전·안정성·관능·사용 이해도에 따라 단계적으로 출시한다."
+    ],
+    "portfolio_sequence": [
+      "Thyme Honey — 익숙한 입구이자 family decoder",
+      "Fig Leaf — 안전 검증이 필요한 green aromatic outlier",
+      "Roasted Buckwheat — 볶은 촉감의 anchor",
+      "Citrus Peel — 식후의 bright lift",
+      "Black Sesame — 깊은 디저트 endpoint",
+      "Olive Oil & Sea Salt — 식사 곁으로 넓히는 savory endpoint"
+    ],
+    "launch_order": [
+      {
+        "tier": "Tier 1 / core launch hypothesis",
+        "products": [
+          "Thyme Honey",
+          "Roasted Buckwheat",
+          "Citrus Peel",
+          "Black Sesame"
+        ],
+        "release_condition": "공통 base·냉장 shelf life·포장 적합성에 더해 각 레시피의 식품안전, 알레르겐, 관능, 입자·산화·산도 gate를 통과한다."
+      },
+      {
+        "tier": "Tier 2 / context expansion",
+        "products": [
+          "Olive Oil & Sea Salt"
+        ],
+        "release_condition": "오일 안정성·상분리·염도와 고객의 savory/meal-adjacent 이해가 검증된 뒤 제한된 채널에서 시작한다."
+      },
+      {
+        "tier": "Tier 3 / conditional exploration",
+        "products": [
+          "Fig Leaf"
+        ],
+        "release_condition": "정확한 종·식용 부위·라텍스·광독성 관련 위해·독성·규제 검토가 명시적으로 통과될 때만 소비자 테스트로 이동하며, 실패 시 이름과 재료를 kill-or-replace한다."
+      }
+    ],
+    "redundancy_rule": "새 SKU가 기존 제품과 human moment, sensory role, preparation physics, visible internal trace 중 세 축 이상 겹치면 추가하지 않는다."
+  },
+  "product_development_charter": [
+    "먼저 ‘이 재료가 왜 요거트 안에 있어야 하는가?’를 한 문장으로 답한다.",
+    "재료의 실제 성질에 맞는 하나의 preparation form과 완제품에서 확인 가능한 하나의 internal trace를 설계한다.",
+    "기존 SKU와 다른 사용 순간·감각 역할·공정 증거 중 최소 두 가지를 맡긴다.",
+    "토핑 양, 유행 맛, 임의 색상, 장식용 패키지 변화만으로 차이를 만들지 않는다.",
+    "식용 적합성·알레르겐·미생물·산화·물성·관능·냉장 shelf life gate를 통과하지 못하면 서사가 좋아도 출시하지 않는다.",
+    "실제 R&D 샘플 사진과 승인된 법정 정보가 생성 이미지를 대체하기 전까지 모든 음식·포장 이미지는 방향성 상업 비주얼로 취급한다."
+  ],
+  "future_lineup_admission_rules": {
+    "principle": "새로운 재료명보다 아직 비어 있는 사람의 순간, 감각 역할 또는 식품 물성을 추가한다.",
+    "required_axes": [
+      "human moment",
+      "sensory role",
+      "preparation physics",
+      "visible internal trace"
+    ],
+    "minimum_novelty": "네 축 중 최소 두 축에서 기존 전 제품과 독립적인 이유가 있어야 한다.",
+    "evidence_required": [
+      "식용 적합성과 시장별 규제 검토",
+      "원재료·알레르겐·공급 사양",
+      "food-native preparation prototype",
+      "완제품 내부 흔적과 관능 독립성",
+      "냉장 안정성·미생물·산화·상분리 또는 침전 결과",
+      "사용 순간 이해도와 기존 SKU 중복 테스트"
+    ],
+    "decision": "통과하면 limited test 또는 기존 SKU replacement로 시작하고, 안전·안정성·관능 gate가 닫히지 않으면 중단한다."
+  },
+  "product_lineup_copy": [
+    {
+      "product_name": "Thyme Honey",
+      "product_usp": "익숙한 꿀의 둥근 단맛 사이로 타임의 가는 허브 결이 이어지는, 가족의 인퓨전 방식을 가장 분명하게 보여 주는 한 컵.",
+      "eyebrow": "HERBAL · CORE",
+      "headline": "꿀의 빛 뒤에, 타임의 가는 결.",
+      "description": "익숙한 꿀의 둥근 입구 뒤로 타임의 작은 향이 이어집니다. MORA의 ‘재료가 머문 결’을 가장 먼저 이해하게 하는 한 컵입니다.",
+      "feature_copy": "되직한 미색 요거트 안에 옅은 호박색 리본과 드문 타임 fleck가 한 번의 스푼 자국까지 이어지는 방향입니다.",
+      "proof_copy": "투명 sidewall, 열린 표면, 첫 spoon cut에서 같은 리본과 fleck가 계속 보이는지 실제 시제품으로 확인합니다.",
+      "cta": "타임 허니 살펴보기",
+      "signature_ingredients": [
+        "honey",
+        "edible thyme candidate"
+      ],
+      "preparation_form": "honey-led thyme preparation; pale-amber viscous syrup direction",
+      "visible_trace": "thin pale-amber ribbon and sparse fine thyme flecks inside the yogurt mass",
+      "use_moment": "집에서 천천히 시작하는 아침, 커피나 차 곁에서 바로 떠먹는 한 컵",
+      "launch_status": "Tier 1 core launch hypothesis / family decoder",
+      "claim_status": "directional pending validated recipe and finished-product evidence",
+      "gates": [
+        "thyme species, edible part and supplier specification",
+        "honey preparation, water activity, heat route, microbiology and crystallization",
+        "sweetness, herb intensity, ribbon viscosity and sensory distinction",
+        "shared chilled shelf life and package release gates"
+      ]
+    },
+    {
+      "product_name": "Fig Leaf",
+      "product_usp": "무화과 열매의 단맛 대신 잎에서 시작하는 차분한 초록 향을 되직한 요거트 안에 남기는 가장 절제된 선택.",
+      "eyebrow": "GREEN · CONDITIONAL",
+      "headline": "과일보다 먼저, 잎의 조용한 향.",
+      "description": "열매의 단맛 대신 거의 미색에 가까운 초록 향의 방향을 탐색합니다. 안전과 식용 적합성이 먼저 닫혀야 하는 조건부 레시피입니다.",
+      "feature_copy": "검증된 옅은 수상 preparation이 요거트 안에 green-beige vein으로 남는 방향이며, 생잎 조각이나 인공적인 초록색은 사용하지 않습니다.",
+      "proof_copy": "정확한 종과 식용 부위가 승인된 원재료, 여과된 base, 완제품 내부 vein이 같은 인과로 연결될 때만 공개합니다.",
+      "cta": "피그 리프 조건 보기",
+      "signature_ingredients": [
+        "fig-leaf candidate pending exact species and edible-part clearance"
+      ],
+      "preparation_form": "very pale filtered aqueous preparation; directional only before safety clearance",
+      "visible_trace": "near-ivory yogurt with one restrained green-beige internal vein",
+      "use_moment": "늦은 오전이나 가벼운 식사 뒤, 디저트보다 조용한 방향이 필요한 순간",
+      "launch_status": "Tier 3 conditional exploration / kill-or-replace gate",
+      "claim_status": "not consumer-release-ready",
+      "gates": [
+        "exact species, plant part and food-grade supplier specification",
+        "latex and furanocoumarin-related hazard review where applicable",
+        "toxicology, process controls and market-specific regulatory clearance",
+        "independent green-aromatic sensory role versus Citrus Peel",
+        "shared chilled shelf life and package release gates"
+      ]
+    },
+    {
+      "product_name": "Roasted Buckwheat",
+      "product_usp": "고소한 볶음 결을 미세한 입자와 따뜻한 색으로 끝까지 읽게 하는, 라인업에서 가장 촉각적인 선택.",
+      "eyebrow": "TOASTED · CORE",
+      "headline": "볶은 입자가, 밀도의 안쪽까지.",
+      "description": "바삭한 토핑을 올리는 대신 볶은 곡물의 향과 고운 입자를 요거트 안으로 가져옵니다. 라인업에서 촉감이 가장 또렷한 한 컵입니다.",
+      "feature_copy": "따뜻한 크림색 바탕과 미세한 toasted particle이 표면과 spoon cut의 두 깊이에 남는 방향입니다.",
+      "proof_copy": "선택된 볶음 route와 입자 규격이 밀도·침전·관능을 해치지 않으면서 두 깊이에서 읽히는지 시제품으로 검증합니다.",
+      "cta": "볶은 메밀 살펴보기",
+      "signature_ingredients": [
+        "roasted buckwheat candidate"
+      ],
+      "preparation_form": "roasted-grain infusion or fine slurry with controlled sediment",
+      "visible_trace": "warm-cream yogurt with fine toasted particles at surface and spoon-cut depth",
+      "use_moment": "책상 위 오후 간식, 밝은 과일보다 차분한 볶은 방향이 필요한 순간",
+      "launch_status": "Tier 1 core launch hypothesis / toasted textural anchor",
+      "claim_status": "directional pending validated recipe and finished-product evidence",
+      "gates": [
+        "roast route and food-grade ingredient specification",
+        "allergen and cross-contact assessment for the selected supply chain",
+        "particle size, sediment, hydration, texture and stability",
+        "sensory distinction without a crunchy topping mound",
+        "shared chilled shelf life and package release gates"
+      ]
+    },
+    {
+      "product_name": "Citrus Peel",
+      "product_usp": "감귤 껍질의 가는 선과 향의 밝은 방향을 요거트 안쪽까지 이어 주는, 가장 선명한 한 컵.",
+      "eyebrow": "BRIGHT · CORE",
+      "headline": "껍질의 가는 선이, 한 숟갈을 밝힙니다.",
+      "description": "잼이나 과육 더미 대신 감귤 껍질의 밝은 향과 가는 선을 남깁니다. 가벼운 식사 뒤 라인업의 리듬을 환기하는 한 컵입니다.",
+      "feature_copy": "아이보리 요거트 안에 yellow-orange peel thread와 작은 zest point가 표면부터 spoon cut까지 이어지는 방향입니다.",
+      "proof_copy": "검증된 껍질 preparation과 실제 thread가 쓴맛·산도·오일·색 안정성 범위 안에서 유지될 때만 완제품 증거로 사용합니다.",
+      "cta": "시트러스 필 살펴보기",
+      "signature_ingredients": [
+        "validated citrus species and edible peel candidate"
+      ],
+      "preparation_form": "filtered aqueous peel preparation with controlled peel solids",
+      "visible_trace": "fine yellow-orange peel threads and zest points continuing through ivory yogurt",
+      "use_moment": "가벼운 식사 뒤 작은 디저트 또는 늦은 오후의 밝은 전환",
+      "launch_status": "Tier 1 core launch hypothesis / bright post-meal contrast",
+      "claim_status": "directional pending validated recipe and finished-product evidence",
+      "gates": [
+        "citrus species, edible peel part and supplier specification",
+        "residue and pesticide controls appropriate to peel use",
+        "bitterness, aromatic oil level, pH and dairy compatibility",
+        "thread size, distribution, color and chilled stability",
+        "shared chilled shelf life and package release gates"
+      ]
+    },
+    {
+      "product_name": "Black Sesame",
+      "product_usp": "검은깨의 짙은 볶음 결을 회색 마블과 실제 입자로 보여 주면서 요거트의 밝은 바탕을 남기는 깊은 디저트 선택.",
+      "eyebrow": "DEEP · CORE",
+      "headline": "회색 마블 사이, 요거트의 밝은 몸.",
+      "description": "검은깨의 볶은 깊이를 회색 마블과 고운 입자로 드러내되 요거트의 밝은 바탕은 남깁니다. 라인업의 작은 저녁 디저트 끝점입니다.",
+      "feature_copy": "stone-grey와 ivory가 한 번의 fold 경계를 만들고, fine sesame particle이 두 영역의 spoon cut 안에 남는 방향입니다.",
+      "proof_copy": "입자 크기·오일 분리·산화와 밝은/회색 대비가 승인 범위 안에 있을 때 실제 샘플 단면으로 교체합니다.",
+      "cta": "검은깨 살펴보기",
+      "signature_ingredients": [
+        "black sesame"
+      ],
+      "preparation_form": "opaque black-sesame fine slurry or paste; not a transparent infusion",
+      "visible_trace": "ivory and stone-grey marbling with fine black-sesame particles",
+      "use_moment": "저녁의 작은 디저트, 밝은 제품보다 깊은 볶은 방향이 필요한 순간",
+      "launch_status": "Tier 1 core launch hypothesis / deep dessert endpoint",
+      "claim_status": "directional pending validated recipe and finished-product evidence",
+      "gates": [
+        "sesame allergen disclosure and cross-contact controls",
+        "raw-material specification, roast profile and particle size",
+        "oxidation, oil separation, viscosity and color stability",
+        "ivory/grey contrast without a uniform black mass",
+        "shared chilled shelf life and package release gates"
+      ]
+    },
+    {
+      "product_name": "Olive Oil & Sea Salt",
+      "product_usp": "얇은 올리브 오일 리본과 소금의 짧은 대비를 되직한 요거트 안에 겹쳐, 같은 한 컵 구조를 식사 곁의 세이보리 순간까지 넓히는 라인업의 여섯 번째 끝점.",
+      "eyebrow": "SAVORY · SECOND WAVE",
+      "headline": "오일의 둥근 결 뒤, 소금의 짧은 대비.",
+      "description": "얇은 오일 리본과 짧은 염미로 떠먹는 한 컵을 식사 곁까지 넓힙니다. dip이나 한 끼 대체가 아니라 세이보리 방향의 이해를 먼저 시험합니다.",
+      "feature_copy": "아이보리 요거트 안에 얇은 olive-gold ribbon과 pearly interface가 이어지고, 소금 흔적은 검증된 레시피에 실제로 남을 때만 보입니다.",
+      "proof_copy": "오일상·접면·염도가 냉장 유통 중 안정되고 고객이 meal-adjacent 한 컵으로 이해할 때 제한된 출시 근거가 됩니다.",
+      "cta": "세이보리 방향 살펴보기",
+      "signature_ingredients": [
+        "olive-oil candidate without unverified grade or origin",
+        "salt candidate without unverified origin or mineral claim"
+      ],
+      "preparation_form": "olive-oil phase or validated micro-emulsion plus controlled salt system",
+      "visible_trace": "thin translucent olive-gold ribbon, restrained pearly interface and visible salt only if retained by the validated recipe",
+      "use_moment": "가벼운 점심 곁에서 직접 떠먹는 작은 세이보리 컵; serving context 검증 전 방향성",
+      "launch_status": "Tier 2 context expansion / second-wave comprehension test",
+      "claim_status": "directional pending formulation, stability and serving-context validation",
+      "gates": [
+        "oil identity and food-grade specification without unsupported grade, cultivar or origin language",
+        "oxidation, oil separation, emulsion behavior and chilled stability",
+        "salt system, dissolution, sensory level, sodium calculation and applicable labeling",
+        "savory comprehension and meal-adjacent use without dip or meal-replacement confusion",
+        "shared chilled shelf life and package release gates"
+      ]
+    }
+  ],
+  "clear_witness_packaging_architecture": {
+    "system_name": "MORA Clear Witness Cup",
+    "material_witness_rule": "음식은 색과 상태를 증언하고, 투명 용기는 이를 숨기지 않으며, 검정 직접 인쇄는 사실만 기록하고, 포일과 도구는 밀봉·개봉·확인 행동을 증명한다.",
+    "layers": [
+      {
+        "id": "L0",
+        "name": "Edible evidence",
+        "job": "공통 요거트 밀도와 recipe-specific 내부 흔적으로 제품 차이를 보여 준다.",
+        "visible_evidence": "stable ridge, first-spoon furrow and prototype-verified ribbon, vein, particle, thread, marble or oil interface",
+        "status": "directional until physical R&D sample approval"
+      },
+      {
+        "id": "L1",
+        "name": "Transparent primary food-contact vessel",
+        "job": "식품을 직접 담고 실제 색·fill level·내부 흔적을 보이게 한다.",
+        "direction": "low-wide lightly tapered transparent food-contact candidate; no paper label, sleeve, collar, sticker, frosted or opaque backing field",
+        "status": "candidate pending food-contact, barrier, migration, light, seal, cold-chain and shelf-life validation"
+      },
+      {
+        "id": "L2",
+        "name": "Minimal neutral-black direct print",
+        "job": "브랜드와 레시피를 투명 외벽 위에서 분류하고 검증된 사실만 기록한다.",
+        "direction": "one restrained dark-neutral exterior ink; no recipe color, white underprint, label shape or pharmacy grid",
+        "status": "process unspecified pending ink, cure, migration, condensation-rub and registration trials"
+      },
+      {
+        "id": "L3",
+        "name": "Full-perimeter peelable foil",
+        "job": "primary rim을 밀봉하고 비대칭 탭으로 최초 개봉 행동을 명확히 한다.",
+        "direction": "thin flat low-glare matched lidding candidate with one graspable asymmetric tab; complete removal after opening",
+        "status": "pending seal-window, integrity, taint, peel-force and wet-hand usability validation"
+      },
+      {
+        "id": "L4",
+        "name": "External cold-chain multipack restraint",
+        "job": "여러 sealed cup을 냉장 운송·진열 중 배열하고 물류 및 비교 정보를 제공한다. 냉장을 만들거나 보장하지 않는다.",
+        "direction": "tested open-sided molded- or folding-fiber carrier; fiber remains separate from the individual cup",
+        "status": "pending drop, vibration, compression, moisture and channel-specific logistics validation"
+      }
+    ],
+    "information_zones": {
+      "front": "시각 방향에서는 `MORA`와 정확한 recipe name만 검정 직접 인쇄로 보여 준다. 실제 판매 팩의 category와 순중량 배치는 시장별 법정·가독성 검토와 정량 검증 후 확정한다.",
+      "back": "원재료, 알레르겐, 보관, 사업자 및 시장별 필수 정보가 검증된 뒤 투명 외벽의 별도 무구획 면에 배치될 수 있다. 생성 이미지에는 만들지 않는다.",
+      "bottom": "lot/date와 가변 코드는 생산·판독·rub 시험을 통과한 reserved zone에서 사실 정보로만 사용한다. 전면 장식으로 쓰지 않는다.",
+      "foil": "개봉 기능과 필요한 검증 정보만 담당하며 recipe-color cue, 마케팅 claim 또는 종이 뚜껑처럼 보이는 그래픽을 두지 않는다.",
+      "outer_multipack": "retail 비교·barcode·물류·검증된 분리배출 정보는 외부 팩에 둘 수 있다. 단일 컵의 fiber label 역할로 되돌리지 않는다."
+    },
+    "assembly_sequence": [
+      "승인된 direct-print transparent candidate를 인쇄·cure·등록 검사하고 내부와 seal land를 깨끗하게 유지한다.",
+      "검증된 recipe와 fill process로 정량 충전한다.",
+      "matched foil을 승인된 temperature-pressure-dwell window 안에서 전 둘레 실링한다.",
+      "중량, fill level, 전 둘레 seal, variable code, 인쇄 registration과 외관을 검사한다.",
+      "sealed cup을 검증된 외부 cold-chain restraint에 배치한다."
+    ],
+    "validation_gates": [
+      "final recipe, fill process, intended shelf life and applicable market",
+      "food-contact BOM, supplier declarations, overall/specific migration and sensory taint review",
+      "oxygen, moisture and light protection required by each finished recipe",
+      "fill-seal window, rim-contamination controls, seal integrity, leak and peel-force testing",
+      "chilled shelf life, temperature abuse plan, condensation, cold-rub and print adhesion/cure",
+      "front/back/bottom registration, nesting, set-off, code readability and line feasibility",
+      "cold/wet-hand grip, tab findability, one-hand peel and complete foil removal usability",
+      "drop, vibration, compression and multipack moisture performance",
+      "market-specific labeling, trademark, sorting/recycling instruction and environmental-claim review",
+      "approved physical prototype photography; generated images never close a release gate"
+    ],
+    "forbidden_unit_components": [
+      "paper label",
+      "paper or fiber sleeve",
+      "fiber collar",
+      "adhesive sticker",
+      "opaque or frosted backing panel",
+      "recipe-color band or foil",
+      "rigid decorative lid"
+    ],
+    "claim_boundary": "외관만으로 food-safe, high-barrier, fresh, leak-proof, recyclable, compostable, biodegradable, low-impact 또는 기타 포장 성능·환경성을 주장하지 않는다."
+  },
+  "customer_journey": [
+    {
+      "step": "recognition",
+      "consumer_action": "투명 sidewall의 실제 음식 상태와 전면의 `MORA`·recipe name을 함께 읽는다.",
+      "experience_job": "패키지 색이 아니라 음식 trace로 여섯 SKU를 구분한다.",
+      "proof_asset": "six accepted strict-front product renders",
+      "failure_gate": "결로·어두운 음식·곡면 왜곡 때문에 이름이나 음식이 읽히지 않으면 zone과 인쇄 사양을 다시 검증한다."
+    },
+    {
+      "step": "peel",
+      "consumer_action": "인쇄를 가리지 않는 grip zone을 잡고 비대칭 탭을 들어 포일을 완전히 제거한다.",
+      "experience_job": "최초 개봉과 한 컵의 사용 시작을 한 동작으로 이해시킨다.",
+      "proof_asset": "ST3-CUSTOMER-OPEN-SPOON-16",
+      "failure_gate": "젖거나 차가운 손으로 탭을 찾고 잡고 당길 수 없거나 포일이 찢어지면 release하지 않는다."
+    },
+    {
+      "step": "inspect",
+      "consumer_action": "열린 표면의 공통 밀도와 선택한 레시피의 내부 흔적을 눈으로 확인한다.",
+      "experience_job": "sealed package가 약속한 음식 차이를 개봉 직후 검증하게 한다.",
+      "proof_asset": "ST3-CUSTOMER-OPEN-SPOON-16 and six product-front renders",
+      "failure_gate": "생성 이미지와 실제 R&D 샘플의 색·입자·분리·점도가 다르면 실제 샘플 이미지와 카피로 교체한다."
+    },
+    {
+      "step": "spoon",
+      "consumer_action": "한 개의 스푼으로 첫 숟갈을 떠서 깊은 furrow와 단면 안의 trace를 확인한다.",
+      "experience_job": "되직한 base와 재료가 표면 토핑이 아니라 안쪽까지 이어지는 관계를 보여 준다.",
+      "proof_asset": "ST3-CUSTOMER-OPEN-SPOON-16",
+      "failure_gate": "스푼 접근, 컵 안정성, 모서리 잔류 또는 점도가 사용성을 해치면 cup geometry와 recipe를 재검토한다."
+    },
+    {
+      "step": "truth_panel",
+      "consumer_action": "실제 판매 팩에서 검증된 원재료·알레르겐·보관·정량·가변 정보를 필요한 정보 면에서 확인한다.",
+      "experience_job": "감각적 첫인상을 법정·생산 사실과 분리해 정확하게 닫는다.",
+      "proof_asset": "physical legal artwork and production prototype required; no generated asset closes this step",
+      "failure_gate": "시장별 필수 정보, 가독성, code, 보관 또는 claim review가 미완료면 판매 팩으로 release하지 않는다."
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "ST3-PRODUCT-THYME-HONEY-01",
+      "product_name": "Thyme Honey",
+      "role": "product_front",
+      "file_path": "assets/product-renders/mora-thyme-honey-front.png",
+      "prompt_path": "prompts/ST3-PRODUCT-THYME-HONEY-01.md",
+      "communication_job": "대표 레시피의 꿀 리본·타임 fleck·첫 스푼과 투명 직접 인쇄 컵을 한 장에 묶어 family grammar를 해독한다.",
+      "reference_lineage": [
+        "ST2-PRODUCT-THYME-HONEY-02",
+        "One Cup, Six Traces",
+        "stage3-direction-lock"
+      ],
+      "invariants": [
+        "strict frontal 1:1 and shared cup scale",
+        "transparent low-wide cup and black direct print `MORA` / `THYME HONEY`",
+        "removed flat foil, one spoon, deep furrow, honey ribbon and sparse thyme flecks",
+        "no unit-level paper or unsupported claim"
+      ],
+      "allowed_variation": [
+        "responsive crop that preserves full cup, spoon, foil and trace",
+        "caption may identify directional sensory role but not unvalidated performance"
+      ],
+      "pass": true,
+      "invariant_check": "pass",
+      "status": "accepted_generated_render"
+    },
+    {
+      "asset_id": "ST3-PRODUCT-FIG-LEAF-02",
+      "product_name": "Fig Leaf",
+      "role": "product_front",
+      "file_path": "assets/product-renders/mora-fig-leaf-front.png",
+      "prompt_path": "prompts/ST3-PRODUCT-FIG-LEAF-02.md",
+      "communication_job": "near-ivory green-beige vein으로 조건부 green aromatic 역할을 보여 주면서 안전 gate를 닫지 않는다.",
+      "reference_lineage": [
+        "ST2-PRODUCT-FIG-LEAF-02",
+        "One Cup, Six Traces",
+        "stage3-direction-lock"
+      ],
+      "invariants": [
+        "strict frontal 1:1 and shared cup scale",
+        "transparent direct-print cup with exact `MORA` / `FIG LEAF`",
+        "removed foil, one spoon and restrained near-ivory green-beige trace",
+        "conditional status and no raw leaf or saturated green"
+      ],
+      "allowed_variation": [
+        "responsive crop preserving full state proof",
+        "use only beside explicit species/edible-part/toxicology/regulatory gate language"
+      ],
+      "pass": true,
+      "invariant_check": "pass",
+      "status": "accepted_generated_render"
+    },
+    {
+      "asset_id": "ST3-PRODUCT-ROASTED-BUCKWHEAT-03",
+      "product_name": "Roasted Buckwheat",
+      "role": "product_front",
+      "file_path": "assets/product-renders/mora-roasted-buckwheat-front.png",
+      "prompt_path": "prompts/ST3-PRODUCT-ROASTED-BUCKWHEAT-03.md",
+      "communication_job": "표면과 단면 두 깊이의 toasted particle로 라인업의 촉각적 anchor를 비교 가능하게 한다.",
+      "reference_lineage": [
+        "ST2-PRODUCT-ROASTED-BUCKWHEAT-02",
+        "One Cup, Six Traces",
+        "stage3-direction-lock"
+      ],
+      "invariants": [
+        "strict frontal 1:1 and shared cup scale",
+        "transparent direct-print cup with exact product name",
+        "fine toasted particles inside the food rather than a topping mound",
+        "same removed foil, spoon and furrow system"
+      ],
+      "allowed_variation": [
+        "responsive crop preserving full cup and two-depth trace",
+        "particle description remains directional until prototype approval"
+      ],
+      "pass": true,
+      "invariant_check": "pass",
+      "status": "accepted_generated_render"
+    },
+    {
+      "asset_id": "ST3-PRODUCT-CITRUS-PEEL-04",
+      "product_name": "Citrus Peel",
+      "role": "product_front",
+      "file_path": "assets/product-renders/mora-citrus-peel-front.png",
+      "prompt_path": "prompts/ST3-PRODUCT-CITRUS-PEEL-04.md",
+      "communication_job": "가는 peel thread가 요거트 안쪽까지 이어지는 bright post-meal 차이를 보여 준다.",
+      "reference_lineage": [
+        "ST2-PRODUCT-CITRUS-PEEL-02",
+        "One Cup, Six Traces",
+        "stage3-direction-lock"
+      ],
+      "invariants": [
+        "strict frontal 1:1 and shared cup scale",
+        "transparent direct-print cup with exact product name",
+        "fine yellow-orange thread inside ivory yogurt, not marmalade",
+        "same removed foil, spoon and furrow system"
+      ],
+      "allowed_variation": [
+        "responsive crop preserving full cup and thread path",
+        "thread length copy remains within validated recipe evidence"
+      ],
+      "pass": true,
+      "invariant_check": "pass",
+      "status": "accepted_generated_render"
+    },
+    {
+      "asset_id": "ST3-PRODUCT-BLACK-SESAME-05",
+      "product_name": "Black Sesame",
+      "role": "product_front",
+      "file_path": "assets/product-renders/mora-black-sesame-front.png",
+      "prompt_path": "prompts/ST3-PRODUCT-BLACK-SESAME-05.md",
+      "communication_job": "ivory와 stone-grey 마블 및 실제 입자로 라인업의 deep dessert endpoint를 보여 준다.",
+      "reference_lineage": [
+        "ST2-PRODUCT-BLACK-SESAME-02",
+        "One Cup, Six Traces",
+        "stage3-direction-lock"
+      ],
+      "invariants": [
+        "strict frontal 1:1 and shared cup scale",
+        "transparent direct-print cup with exact product name",
+        "ivory body remains visible beside stone-grey marble and sesame particles",
+        "same removed foil, spoon and furrow system"
+      ],
+      "allowed_variation": [
+        "responsive crop preserving bright/dark boundary",
+        "marble coverage copy remains directional until physical approval"
+      ],
+      "pass": true,
+      "invariant_check": "pass",
+      "status": "accepted_generated_render"
+    },
+    {
+      "asset_id": "ST3-PRODUCT-OLIVE-OIL-SEA-SALT-06",
+      "product_name": "Olive Oil & Sea Salt",
+      "role": "product_front",
+      "file_path": "assets/product-renders/mora-olive-oil-sea-salt-front.png",
+      "prompt_path": "prompts/ST3-PRODUCT-OLIVE-OIL-SEA-SALT-06.md",
+      "communication_job": "olive-gold ribbon과 pearly interface로 패밀리의 savory/meal-adjacent 확장 가능성을 보여 준다.",
+      "reference_lineage": [
+        "ST2-PRODUCT-OLIVE-OIL-SEA-SALT-02",
+        "One Cup, Six Traces",
+        "stage3-direction-lock"
+      ],
+      "invariants": [
+        "strict frontal 1:1 and shared cup scale",
+        "transparent direct-print cup with exact product name",
+        "thin warm oil ribbon distinct from Fig Leaf sage; no oil lake",
+        "no grade, cultivar, origin, mineral, sodium, health or meal claim"
+      ],
+      "allowed_variation": [
+        "responsive crop preserving cup, spoon, foil and interface",
+        "visible salt cue only if the validated recipe actually retains it"
+      ],
+      "pass": true,
+      "invariant_check": "pass",
+      "status": "accepted_generated_render"
+    },
+    {
+      "asset_id": "ST3-PACKAGING-ANATOMY-15",
+      "product_name": "MORA Packaging",
+      "role": "packaging_metadata",
+      "file_path": "assets/product-renders/mora-clear-witness-package-anatomy.png",
+      "prompt_path": "prompts/ST3-PACKAGING-ANATOMY-15.md",
+      "communication_job": "transparent primary cup, separate flat foil, spoon and external two-cup fiber carrier의 네 기능을 한 건식 지면에서 분리한다.",
+      "reference_lineage": [
+        "ST2-PACKAGE-ANATOMY-03",
+        "MORA Clear Witness Cup",
+        "stage3-direction-lock"
+      ],
+      "invariants": [
+        "elevated oblique 16:9 material separation",
+        "exactly one clear direct-print cup, one separate foil, one spoon and one external carrier",
+        "fiber remains external to the single cup",
+        "directional architecture does not prove performance or sustainability"
+      ],
+      "allowed_variation": [
+        "responsive crop preserving all four components and their separation",
+        "callouts may name function layers but not unvalidated material performance"
+      ],
+      "pass": true,
+      "invariant_check": "pass",
+      "status": "accepted_generated_supporting_render"
+    },
+    {
+      "asset_id": "ST3-CUSTOMER-OPEN-SPOON-16",
+      "product_name": "MORA Customer Experience",
+      "role": "customer_experience",
+      "file_path": "assets/product-renders/mora-customer-open-spoon-front.png",
+      "prompt_path": "prompts/ST3-CUSTOMER-OPEN-SPOON-16.md",
+      "communication_job": "한 손의 foil peel과 한 개 스푼의 first-spoon 상태를 100% 정면에서 연결해 recognition에서 inspect와 spoon으로 넘어가는 사용을 보여 준다.",
+      "reference_lineage": [
+        "ST3-PRODUCT-THYME-HONEY-01",
+        "ST3-PACKAGING-ANATOMY-15",
+        "stage3-direction-lock",
+        "commercial-photo-prompting"
+      ],
+      "invariants": [
+        "strict 100% frontal 3:2, pale mineral modern setting",
+        "exactly one adult hand, no face, actively lifting the asymmetric foil tab",
+        "exactly one spoon resting in exposed yogurt with one restrained spoonful and one furrow",
+        "transparent low-wide cup with only `MORA` and `THYME HONEY` direct print",
+        "no unit paper, opaque backing, claim text, extra prop or invented legal information"
+      ],
+      "allowed_variation": [
+        "responsive 16:9 or 4:5 crop only if hand, foil-to-rim relation, spoon, full front copy and cup base remain visible",
+        "caption may describe a directional open-and-spoon moment, not validated seal, freshness or usability performance"
+      ],
+      "pass": true,
+      "invariant_check": "pass",
+      "status": "generated_and_qa_passed_directional"
+    }
+  ],
+  "global_claim_boundary": [
+    "제품 카피는 감각 방향과 사용 순간의 제안이며 실제 recipe, 미생물, 관능, 영양, 법무 검증 전 판매 claim이 아니다.",
+    "Fig Leaf는 정확한 종·식용 부위·독성·규제 gate가 닫히기 전 조건부 탐색으로만 남긴다.",
+    "Olive Oil & Sea Salt에는 grade, cultivar, harvest, pressing, origin, mineral, sodium, antioxidant 또는 건강 언어를 붙이지 않는다.",
+    "어떤 제품에도 probiotic, high-protein, low-sugar, digestive, medical, meal-replacement 또는 unverified origin claim을 붙이지 않는다.",
+    "투명 cup, black direct print, foil과 outer carrier는 food-contact, barrier, shelf-life, cold-chain, recycling 또는 sustainability 성능을 자동으로 증명하지 않는다.",
+    "생성 이미지는 founder, actual facility, approved SOP, production run 또는 physical prototype evidence가 아니다."
+  ],
+  "merge_notes": [
+    "`product_lineup_copy`는 여섯 accepted Stage 2 제품을 정확히 한 번씩 포함하며 landing contract의 product_name, product_usp, eyebrow, headline, description, feature_copy, proof_copy, cta를 모두 채운다.",
+    "Tier 1 네 제품, Tier 2 Olive Oil & Sea Salt, Tier 3 Fig Leaf의 단계적 출시 가설을 유지하고 six-SKU simultaneous launch를 가정하지 않는다.",
+    "패키지는 Clear Witness L0–L4를 canonical로 병합하되 개별 paper collar/sleeve/label을 재도입하지 않는다.",
+    "여덟 자산의 파일·프롬프트·lineage·invariant·allowed variation·pass·status가 일대일로 기록되어 있다.",
+    "asset registry, landing canonical JSON/Markdown, review, pipeline state, public report와 generated stories는 이 shard에서 수정하지 않았다."
+  ]
+}

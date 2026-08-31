@@ -1,4 +1,5 @@
 import { BrandCardGrid } from './BrandCardGrid.jsx';
+import { BrandColorTokens } from './BrandColorTokens.jsx';
 import { BrandCodeBlock } from './BrandCodeBlock.jsx';
 import { BrandEvidenceGrid } from './BrandEvidenceGrid.jsx';
 import { BrandListBlock } from './BrandListBlock.jsx';
@@ -30,6 +31,8 @@ export function BrandBlockRenderer({ block }) {
     case 'key-value':
     case 'key-value-group':
       return <BrandCardGrid block={ block } />;
+    case 'color-tokens':
+      return <BrandColorTokens block={ block } />;
     case 'typography':
     case 'typography-specimens':
       return <BrandTypographySpecimens block={ block } />;

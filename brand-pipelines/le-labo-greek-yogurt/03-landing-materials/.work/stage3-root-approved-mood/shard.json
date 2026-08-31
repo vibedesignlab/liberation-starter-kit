@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.1.0",
+  "job_id": "stage3_root_approved_mood",
+  "status": "completed",
+  "assets": [
+    {
+      "asset_id": "ST3-MOOD-FINAL-CHECK-FRONT-07",
+      "product_name": "MORA Brand World",
+      "role": "brand_mood_front",
+      "communication_job": "동일 제작자가 이미 direct-printed, filled and foil-sealed cup의 print, fill and seal alignment를 100% 정면에서 확인하는 장면으로 Measured Transformation의 마지막 책임을 보여 준다.",
+      "file_path": "assets/product-renders/mora-final-check-front.png",
+      "prompt_path": "prompts/ST3-MOOD-FINAL-CHECK-FRONT-07.md",
+      "subject": "Generic MORA food maker performing a final visual inspection of one transparent direct-print sealed cup, strict frontal",
+      "aspect_ratio": "3:2 landscape",
+      "generation_provenance": "Accepted Stage 2 generated image copied without visual alteration into the Stage 3 package on 2026-08-26; source ST2-BRAND-MOOD-01; sha256 57f74183d164816b48b159043d5fe4f22215cb609d04b427d9720eb5a9af1a8b.",
+      "reference_lineage": ["ST2-BRAND-MOOD-01", "Final Check, Two Axes", "revision7_visual_direct_print", "stage3-direction-lock"],
+      "invariants": [
+        "strict 0-degree frontal camera and centered maker/cup axis",
+        "same generic maker, charcoal wardrobe, modern stainless workspace and hard-but-broad daylight as the side companion",
+        "transparent low-wide cup, actual pale food, minimal black direct print and sealed foil remain distinct",
+        "no individual paper component, perfume, apothecary, lab or rustic styling",
+        "caption never identifies the maker as founder or the scene as an approved SOP"
+      ],
+      "allowed_variation": ["responsive crops preserving face, both hands, cup and final-check axis", "copy may be placed only in existing low-information wall area"],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-MOOD-FINAL-CHECK-SIDE-08",
+      "product_name": "MORA Brand World",
+      "role": "brand_mood_side",
+      "communication_job": "같은 final-check 순간을 exact 90-degree side에서 보여 clear wall, food fill, exterior print arc, foil edge와 hand contact의 물리적 관계를 설명한다.",
+      "file_path": "assets/product-renders/mora-final-check-side.png",
+      "prompt_path": "prompts/ST3-MOOD-FINAL-CHECK-SIDE-08.md",
+      "subject": "Same generic MORA food maker performing the same final visual inspection, exact maker-right side profile",
+      "aspect_ratio": "3:2 landscape",
+      "generation_provenance": "Accepted Stage 2 generated supporting image copied without visual alteration into the Stage 3 package on 2026-08-26; source ST2-BRAND-MOOD-SIDE-03; sha256 08086e394d5ff30a64a41276a45846dcca8be69482982b4f49d305f658caa31a.",
+      "reference_lineage": ["ST2-BRAND-MOOD-SIDE-03", "Final Check, Two Axes", "revision7_visual_direct_print", "stage3-direction-lock"],
+      "invariants": [
+        "exact one-eye maker-right 90-degree side profile",
+        "same generic maker, charcoal wardrobe, cup, hand phase, workspace and light family as the front anchor",
+        "clear wall, actual fill, direct-print arc, foil edge and contact remain readable in one lateral plane",
+        "no individual paper component, perfume, apothecary, lab or rustic styling",
+        "caption never identifies the maker as founder or the scene as an approved SOP"
+      ],
+      "allowed_variation": ["responsive crops preserving profile clearance, both hands and full cup", "front asset must appear before or beside this companion"],
+      "invariant_check": "pass",
+      "status": "registered"
+    }
+  ],
+  "qa": {
+    "method": "Original-resolution inspection with local image viewer and Stage 2 acceptance receipt; no browser automation.",
+    "decision": "pass",
+    "rights_boundary": "Generated directional maker and workspace, not a founder, employee, facility or production-proof claim."
+  }
+}

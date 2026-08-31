@@ -1,0 +1,391 @@
+{
+  "schema_version": "1.0.0",
+  "shard_id": "revision6_mood_reconstruction",
+  "brand": "MORA",
+  "mode": "commercial_photography_plan",
+  "status": "directional_pending_package_engineering_and_generation",
+  "scope": "A four-frame packaging and Packing Table image system only. It does not validate substrate specifications, food safety, sealing performance, sustainability, shelf life, product appearance or manufacturing operations.",
+  "series_name": "The Packing Table — Material Witness",
+  "photographic_premise": "완성된 표면을 장식하는 대신, 식품·식품 접촉 용기·foil seal·마른 fiber sleeve가 각자 맡은 일을 한눈에 읽게 한다. 프리미엄은 낡은 공방 분위기가 아니라 정확한 결합 순서, 한 번의 실제 손동작, 남아 있는 재료 경계로 보여 준다.",
+  "portable_source_translation": {
+    "causal_chain": "verbal belief → observable value → material with one job → one real tool or hand action → retained physical trace",
+    "food_native_disclosure": "투명 향수병 대신 열린 요거트 표면과 spoon cut, 노출된 food-contact rim, peelable foil edge, 분리 가능한 dry fiber sleeve로 안과 밖의 관계를 공개한다.",
+    "paper_job": "제품과 레시피를 분류하고 짧은 이야기를 담는 비식품 접촉 정보층",
+    "metal_job": "foil seal과 stainless scale처럼 밀봉·계량·정렬을 수행하는 기능 재료",
+    "ingredient_color_job": "실제 음식 흔적과 한 개의 recipe locator에만 국소적으로 나타나는 식별 신호"
+  },
+  "source_evidence_lineage": {
+    "glass_to_food_native_state_disclosure": [
+      "EV-013",
+      "EV-018",
+      "EV-011"
+    ],
+    "paper_to_state_binding": [
+      "EV-016",
+      "EV-012",
+      "EV-006"
+    ],
+    "ink_and_substrate_hierarchy": [
+      "EV-020",
+      "EV-021",
+      "EV-037"
+    ],
+    "metal_as_tool_contact": [
+      "EV-023",
+      "EV-039",
+      "EV-016"
+    ],
+    "raw_ingredient_color": [
+      "EV-009",
+      "EV-036",
+      "EV-011"
+    ],
+    "causal_craft_trace": [
+      "EV-037",
+      "EV-038",
+      "EV-039"
+    ],
+    "boundary": "These Stage 1 evidence IDs support portable relationships only. They do not substantiate MORA materials, packaging performance or manufacturing operations."
+  },
+  "material_witness_lock": {
+    "chain": [
+      {
+        "layer": 1,
+        "material": "approved yogurt prototype",
+        "job": "제품 자체의 밀도와 재료 흔적을 보여 주는 첫 증거",
+        "visible_truth": "hero에서 열린 표면과 한 번의 spoon cut로만 보이며, 실제 샘플이 없으면 concept food appearance로 명시한다."
+      },
+      {
+        "layer": 2,
+        "material": "opaque low-wide heat-sealable food-contact primary vessel",
+        "job": "요거트와 직접 닿고 냉장 유통에 필요한 1차 용기 역할을 맡는다.",
+        "visible_truth": "satin polymer or validated equivalent의 매끈한 벽, 성형된 rim과 flange를 paper와 다른 반사·edge로 보여 준다. PP는 방향 후보일 뿐 확정 사양이 아니다."
+      },
+      {
+        "layer": 3,
+        "material": "matched full-perimeter peelable foil-based seal with one large asymmetrical tab",
+        "job": "1차 밀봉과 한 번의 peel opening boundary를 만든다. tamper-evidence 또는 barrier 성능 주장은 component and pack validation 뒤에만 가능하다.",
+        "visible_truth": "rim에 붙은 seal perimeter, 얇은 foil laminate edge, 자연스러운 crease와 큰 tab을 보인다. foil을 reusable closure나 장식용 금속판처럼 보이게 하지 않는다."
+      },
+      {
+        "layer": 4,
+        "material": "removable non-food-contact fiber band or sleeve",
+        "job": "recipe classification, ingredient locator and secondary story를 담는다.",
+        "visible_truth": "seal-integrity and leak check 뒤 외면이 마른 상태에서 flange 아래에 기계적으로 끼워진다. crisp cut edge와 실제 seam을 남기고, foil·rim을 가로지르거나 glued-on faux paper skin이 되지 않는다."
+      },
+      {
+        "layer": 5,
+        "material": "optional dry board multipack restraint or divider",
+        "job": "여러 sealed cup을 이동 중 물리적으로 고정한다.",
+        "visible_truth": "primary package와 분리된 dry outer component로만 보인다. 보냉·냉장·단열 기능을 암시하지 않는다."
+      }
+    ],
+    "packing_order": [
+      "filled primary cup",
+      "full-perimeter foil seal",
+      "seal-integrity and leak check",
+      "exterior dry check",
+      "dry fiber sleeve fitted below flange",
+      "final weight, alignment and factual-label check"
+    ],
+    "nonnegotiables": [
+      "Bare paper never touches yogurt, the food-contact rim or the seal face.",
+      "The paper remains visibly dry, crisp and free of condensation, oil or yogurt marks.",
+      "A narrow reveal of the primary vessel remains visible between sleeve and foil flange so the layer order cannot be mistaken.",
+      "The foil seal and its tab remain visible; the sleeve never bridges, disguises or replaces the seal. Foil appearance alone does not prove barrier, tamper-evidence, leak or shelf-life performance.",
+      "Identity, lot, date, storage and other mandatory facts remain on foil or primary vessel where required by validated jurisdictional review.",
+      "Every material and tool visible in frame performs its actual job."
+    ]
+  },
+  "series_lock": {
+    "maker": "The same adult female food maker shown in assets/brand-mood/mora-infusion-front-v2.png and mora-infusion-side-v2.png: same facial identity, tied-back dark hair, charcoal cotton shirt and apron, natural skin and hands. She is a maker model, not a founder or source-evidence subject.",
+    "maker_behavior": "Quiet concentration, eyes on the package, clean short nails, no jewelry, no smile or camera address. Gloves appear only if an approved production SOP requires them; do not invent laboratory PPE.",
+    "workspace": "The same contemporary food atelier extended into a packing station: pale warm-grey limewashed wall, one light-oak shelf, brushed stainless worktop, restrained food-safe equipment, no decorative clutter.",
+    "batch_moment": "The same sealed Thyme Honey directional package, scale, dry sleeve and alignment phase in both Packing Table frames.",
+    "package_identity": "Low-wide approximately 1.55:1 cup silhouette, slightly tapered opaque food-contact vessel, broad flange, full-perimeter silver foil seal, one large asymmetrical foil tab, pale mineral-white removable fiber sleeve below the flange, one small Thyme Honey ingredient locator.",
+    "type_behavior": "Paper uses restrained Korean-first hierarchy and black ink only as information carrier. Use only approved identity and product copy; reserve small legal copy for post-production rather than generating fictitious text. No monospace, typewriter, stencil, pharmacy grid or personalized fields.",
+    "palette": "Pale limewash, cultured cream, mineral white, natural silver foil, brushed steel, light oak and charcoal cloth. Thyme Honey amber stays below 5–8% as one locator or real food trace, never as atmospheric lighting.",
+    "camera_pair": "Front and side are separate 3:2 horizontal frames made at the same camera radius, height, lens family, moderate depth of field, maker scale, cup baseline and table position. Only camera azimuth changes from 0° frontal to exact 90° maker-right profile.",
+    "room_light": "One fixed large west-side atelier window is the motivated key. It appears camera-left in the frontal frame and becomes a lateral/back-side source after the camera rotates; shadow direction changes on screen only as room geometry requires. A fixed neutral overhead reflection card keeps foil legible in both axes.",
+    "rendering": "Photorealistic natural editorial capture, plausible contact and weight, natural skin and fiber variation, controlled foil reflection, retained midtones and highlight texture, subtle grain, invisible retouching.",
+    "continuity_check": "Maker identity, hair, wardrobe, cup geometry, sleeve locator and seam, foil-tab orientation, scale, worktop, shelf, window direction, action phase and all object placements must match across the pair."
+  },
+  "assets": [
+    {
+      "working_asset_id": "ST2-R6-PACKAGING-HERO-01",
+      "name": "Packaging Hero — Food to Fiber",
+      "role": {
+        "web_ui_role": "hero",
+        "destination": "landing hero or packaging opener",
+        "communication_job": "한 컵이 요거트, food-contact vessel, peelable foil, dry fiber sleeve의 순서로 구성된 ready-to-eat refrigerated food임을 첫 화면에서 설명한다."
+      },
+      "information_goal": [
+        "MORA가 향수·화장품·종이 용기가 아니라 떠먹는 요거트임을 즉시 인식",
+        "open food surface → clean molded peel edge → fully removed foil → dry external sleeve의 계층을 3초 안에 판독",
+        "제품 실루엣과 paper classification을 보이면서 왼쪽 headline·CTA 영역 확보"
+      ],
+      "action": "Single post-opening pause: one Thyme Honey cup is open after the one-time foil has been peeled off completely. The cup shows one approved spoon cut and a clean molded peel edge; the removed real foil lies flat beside and slightly behind the cup with its large tab visible, never propped upright, hinged to the cup or resting on the sleeve.",
+      "camera": {
+        "viewpoint": "three-quarter product view, about 25–30° azimuth and 18–22° elevation so the front sleeve, molded rim, foil attachment and yogurt surface are simultaneously legible",
+        "distance_and_occupancy": "medium product shot; cup occupies the right 45–50% and remains fully inside frame with a complete contact shadow",
+        "lens_behavior": "60–70 mm full-frame-equivalent natural product perspective; no wide-angle enlargement of the tab or rim",
+        "focus": "moderate depth, keeping sleeve face, primary-vessel reveal, clean peel edge, removed foil and spoon cut sharp; background falls off gently",
+        "format_and_ui": "16:9 landscape master with broad continuous low-detail copy-safe space on the left; preserve a centered 4:5 crop containing the entire cup, removed foil, sleeve and contact shadow"
+      },
+      "lighting": {
+        "key": "large directional diffused source high camera-left, broad enough to wrap the cup but low enough across the sleeve to reveal fiber relief",
+        "reflection_control": "one neutral overhead/left reflection card creates a continuous, non-clipped silver gradient across the foil; a restrained dark flag separates the satin vessel edge from the fiber sleeve",
+        "fill_and_tone": "soft neutral fill about two stops below key; warm-neutral 4300–4800 K response, readable shadows, no crushed black or blown foil/yogurt",
+        "shadow_logic": "single coherent cast-shadow direction; shadow and bright reflection stay outside the left copy zone"
+      },
+      "material_behavior": [
+        "Yogurt keeps fine dairy grain, one stable spoon ridge and only prototype-verified Thyme Honey trace.",
+        "Primary vessel reads smooth and satin with a real molded flange, never fibrous or ceramic.",
+        "Removed foil reads thin, flexible and metallic with an asymmetrical pull tab and restrained peel creases, never thick chrome or gold leaf.",
+        "Sleeve reads dry pale mineral fiber with crisp die-cut edges, subtle tooth and one tongue-and-slot or validated friction/interlock seam below the flange; no deckle, stains, warping or condensation."
+      ],
+      "invariants": [
+        "Exactly one low-wide cup; no duplicate pack, floating components or ingredient still-life competing with it.",
+        "A visible primary-vessel band separates foil and paper around the cup.",
+        "Foil is fully removed, lies flat on the same dry plane and never rests on the paper sleeve.",
+        "Paper stays below flange and fully dry.",
+        "MORA and Thyme Honey identity follow approved artwork; no invented provenance, nutrition, batch or sustainability copy.",
+        "Ingredient color is limited to one small locator and actual verified food trace."
+      ],
+      "qa": [
+        "At first glance the subject reads as an open single-serving yogurt cup, not perfume, skincare cream, candle or paper tub.",
+        "The eye can trace food → clean primary peel edge → removed foil → sleeve without any layer merging or impossible intersection.",
+        "The removed foil corresponds to the cup diameter, lies flat under gravity and has believable thickness, peel crease and specular gradient.",
+        "The paper shows no wet edge, condensation, oil mark, yogurt contact or foil overlap.",
+        "The cup is grounded by a contact shadow; no levitation, double rim or malformed ellipse.",
+        "Left copy-safe area contains no object, shadow, reflection or high-contrast edge; the 4:5 crop retains the full material chain."
+      ],
+      "avoid": [
+        "sealed-only beauty shot that hides the yogurt and food-contact hierarchy",
+        "partly attached or upright foil posed like a hinged lid; removed foil must be fully separated and flat",
+        "bare paper cup, paper touching food, paper lid, paper wrapping over foil or faux full-surface glued paper skin",
+        "gold foil, perfume cap, glass cylinder, cosmetic cream swirl, amber bottle, beaker or pipette",
+        "kraft brown, deckled edge, twine, wax seal, stamp, patina, rustic crumbs or vintage workbench",
+        "pharmacy grid, ingredient-plus-number name, typewriter text, city/date/name personalization",
+        "uniform CGI gloss, impossible foil reflection, clipped white yogurt, random microcopy, sustainability icons or unverified claims"
+      ]
+    },
+    {
+      "working_asset_id": "ST2-R6-PACKING-FRONTAL-02",
+      "name": "Packing Table A — Frontal Alignment",
+      "role": {
+        "web_ui_role": "feature explainer",
+        "destination": "primary brand-mood anchor for packaging craft",
+        "communication_job": "밀봉과 누수 확인이 끝난 컵에 dry fiber sleeve가 마지막으로 정확히 끼워진다는 순서를 100% 정면의 한 동작으로 선언한다."
+      },
+      "information_goal": [
+        "paper는 barrier가 아니라 마지막 external information layer임을 증명",
+        "sealed cup, visible foil tab, primary-vessel reveal, dry sleeve and calibrated scale의 관계를 한 축으로 정렬",
+        "craft를 인물의 포즈가 아니라 측정과 정렬 행위로 표현"
+      ],
+      "action": "The already filled and fully foil-sealed Thyme Honey cup stands centered on a calibrated stainless bench scale. The maker uses both hands symmetrically to lower and square one preformed dry fiber sleeve around the vessel, stopping below the flange; the front recipe locator is being aligned at the captured instant. No filling, sealing, wiping or labeling action occurs simultaneously.",
+      "camera": {
+        "viewpoint": "strict 100% frontal, 0° azimuth; sensor plane parallel to the back wall and table front, lens axis perpendicular to the maker's frontal plane",
+        "distance_and_occupancy": "medium-wide waist-up environmental process frame; maker, hands, cup and scale occupy the central 45%, with complete elbows, work surface and cup contact visible",
+        "lens_behavior": "50 mm full-frame-equivalent normal perspective at a working distance that does not enlarge hands or compress cup depth",
+        "focus": "f/8-like moderate-deep field holding face, hands, sleeve edge, foil tab and scale platform; shelf may soften slightly but no extreme bokeh",
+        "format_and_geometry": "3:2 horizontal; camera may use a slight fixed downward pitch shared with the side frame to reveal the seal, while wall, shelf, scale, table edges and maker shoulders remain perfectly level and bilaterally balanced"
+      },
+      "lighting": {
+        "key": "fixed hard-but-broad daylight from the room's west window, camera-left in this frontal view, grazing paper and brushed steel while retaining a coherent long shadow",
+        "fill": "neutral opposite bounce about two stops below key; no second dramatic key",
+        "foil_control": "fixed overhead white reflection card gives the foil seal a readable silver plane without erasing its edge or tab",
+        "tone": "4300–4800 K warm-neutral daylight, charcoal cloth and skin retain detail, paper and foil highlights do not clip"
+      },
+      "material_behavior": [
+        "Clean natural hands exert light lateral and downward pressure only on the external sleeve.",
+        "Fiber sleeve remains flat, dry and crisp; the upper edge stays visibly below the smooth primary-vessel flange.",
+        "Foil seal remains flat and bonded with one asymmetrical tab visible beyond the rim.",
+        "Scale and brushed steel show controlled gradients and small real-use variation, not decorative aging.",
+        "Cotton shirt and apron retain weave and natural folds; skin retains pores, fine lines and asymmetric highlights."
+      ],
+      "invariants": [
+        "Same maker identity, hair, charcoal wardrobe and contemporary atelier as the current frontal and side mood references.",
+        "Same Thyme Honey sealed cup, sleeve, foil-tab orientation, scale and action phase as Packing Table B.",
+        "Maker stands square with both shoulders equally visible and looks down at the work.",
+        "Cup, sleeve, scale and maker sternum share one central vertical axis.",
+        "Paper enters only after the cup is sealed, checked and externally dry.",
+        "One action only: sleeve fit and front alignment."
+      ],
+      "qa": [
+        "Back wall, shelf, table front, scale and foil rim read as horizontal frontal anchors with no oblique convergence.",
+        "Both shoulders and hands are bilaterally legible; the maker is not three-quarter or off-axis.",
+        "Hands contact only sleeve and sealed package exterior; no finger crosses into food or under the foil.",
+        "The sleeve top edge, primary-vessel reveal, foil edge and tab remain separate at normal report size.",
+        "Scale supports the cup with plausible contact; any display is blank, turned away or added from verified data later.",
+        "Skin, paper, foil, polymer, cotton and steel each have distinct physically plausible response under one room light."
+      ],
+      "avoid": [
+        "three-quarter camera, tilted table, diagonal shelf, asymmetric shoulders or fashion pose",
+        "simultaneous filling, sealing, wiping, stamping or tying actions",
+        "wet sleeve, condensation, yogurt or oil on paper, paper crossing the foil or rim",
+        "gloves, lab coat, goggles, technician persona or sterile pharmaceutical theatre unless required by an approved SOP",
+        "black industrial cabinetry, amber glass, laboratory vessels, apothecary drawers or perfume-boutique darkness",
+        "kraft board, rough deckle, wax, twine, rubber stamp, handwritten label or heroic artisan patina",
+        "generated scale numbers, random package text, crushed blacks, blown foil, plastic skin or malformed hands"
+      ]
+    },
+    {
+      "working_asset_id": "ST2-R6-PACKING-SIDE-03",
+      "name": "Packing Table B — Side Contact Proof",
+      "role": {
+        "web_ui_role": "detail proof",
+        "destination": "supporting brand-mood frame paired with Packing Table A",
+        "communication_job": "같은 sleeve-fitting 순간을 엄격한 측면에서 보여 주어 paper seam, sleeve thickness, primary-vessel reveal, foil edge and tab의 실제 접촉 순서를 증명한다."
+      },
+      "information_goal": [
+        "fiber sleeve가 cup wall에만 기계적으로 맞고 flange와 foil을 침범하지 않음을 측면에서 확인",
+        "손가락 압력, sleeve seam, cup wall, scale platform이 한 lateral action plane에서 연결",
+        "front frame의 정렬 선언을 물리적 edge와 thickness 증거로 보완"
+      ],
+      "action": "The exact same sleeve-fitting phase as Packing Table A. The sealed cup remains upright on the same scale; the maker's near fingertips guide the mechanically plausible sleeve seam into final alignment while the far hand stabilizes the vessel. The sleeve upper edge remains below the flange and the foil tab projects free of the paper.",
+      "camera": {
+        "viewpoint": "strict exact 90° maker-right side profile; the camera rotates around the same cup center without changing height, radius or tilt",
+        "distance_and_occupancy": "same medium-wide waist-up scale and baseline as the frontal companion; maker profile, forearms, hands, sleeve seam, cup and scale form one uncluttered lateral silhouette",
+        "lens_behavior": "same 50 mm full-frame-equivalent lens family and working distance as Frame A",
+        "focus": "f/8-like field with maker profile, near hand, sleeve seam, primary-vessel band, foil edge and scale platform in a readable shared depth zone",
+        "format_and_geometry": "3:2 horizontal; only one eye contour, one nose profile and one cheek line visible; no face turn, over-shoulder view or three-quarter torso"
+      },
+      "lighting": {
+        "key": "the same fixed west-window source in room coordinates; from this camera position it reads as a lateral/back-side plane that traces profile, hands, sleeve fibers and foil edge",
+        "fill": "same fixed neutral room bounce and contrast range as Frame A, preserving the far hand and dark apron without flattening the edge proof",
+        "foil_control": "same overhead reflection card; foil shows one continuous silver highlight consistent with the new camera angle, not a copied frontal reflection",
+        "tone": "same 4300–4800 K response, exposure, midtone density, grain and invisible retouching as the frontal companion"
+      },
+      "material_behavior": [
+        "Sleeve edge has real paper thickness and a crisp tongue-and-slot or validated friction/interlock seam; it neither sinks into nor floats away from the cup wall.",
+        "A narrow smooth primary-vessel band remains visible above paper and below foil flange.",
+        "Foil laminate reads thin and bonded; tab projects clear without behaving like a rigid lid.",
+        "Fingertip contact produces slight paper pressure only at the seam, not deep deformation, tearing or wet buckling.",
+        "Steel scale, polymer wall, paper, foil, skin and cotton keep distinct edge and reflection behavior."
+      ],
+      "invariants": [
+        "Same maker, hair, wardrobe, batch, cup, sleeve design, seam location, foil-tab orientation, scale, table and shelf as Frame A.",
+        "Exact same action phase and hand roles; only camera azimuth changes.",
+        "Maker remains a strict profile and looks toward the cup, never toward camera.",
+        "Cup remains vertical and centered on the scale platform with the same real-world size.",
+        "Paper stays dry and below flange; foil remains visible and untouched by sleeve.",
+        "One action only: side-pressure and final sleeve seam alignment."
+      ],
+      "qa": [
+        "Only one facial profile is visible; torso and shoulders do not rotate toward camera.",
+        "The cup, scale, hands and sleeve seam share a coherent lateral plane with accurate occlusion.",
+        "Sleeve circumference, wall taper and seam geometry are compatible with the front frame and finished hero cup.",
+        "The foil tab emerges from the same package side and remains physically attached with correct reflection-angle behavior.",
+        "All object shadows agree with the fixed room source; the side frame does not fake a second camera-left key.",
+        "Pair check passes for identity, camera height, occupancy, baseline, action phase, package geometry and color response."
+      ],
+      "avoid": [
+        "frontal or three-quarter face, both eyes, over-shoulder view, diagonal worktop or shifted cup baseline",
+        "different maker, hairstyle, sleeve seam, foil-tab side, scale, package proportions or action phase",
+        "paper under foil, paper over flange, glued label illusion, wet wrinkle, condensation or food contact",
+        "hands pinching foil while fitting sleeve, double action, extra workers or decorative tools",
+        "pharmacy, perfume, lab, black-steel apothecary, vintage shop, rustic barn or sepia craft mood",
+        "false rim thickness, impossible seam, floating fingers, fused hand/package, cloned reflection or mismatched shadows"
+      ]
+    },
+    {
+      "working_asset_id": "ST2-R6-PACKAGE-ANATOMY-04",
+      "name": "Package Anatomy — Four Jobs, Four Materials",
+      "role": {
+        "web_ui_role": "detail proof",
+        "destination": "package anatomy or material-truth section",
+        "communication_job": "primary vessel, foil seal, dry fiber sleeve and assembled pack을 실제 부품 상태로 나란히 두어 각 재료의 경계와 역할을 한 프레임에서 검증한다."
+      },
+      "information_goal": [
+        "paper가 food-contact barrier가 아니고 foil이 reusable cap이 아니라는 구조적 구분",
+        "각 부품의 thickness, rim match, seal diameter, sleeve circumference and seam을 비교",
+        "완성 컵에서 모든 부품이 어디에 놓이는지 즉시 대응"
+      ],
+      "action": "Static left-to-right assembly record on one dry plane: a clean empty primary-vessel sample upright with its molded rim visible; a matching peelable foil membrane lying flat with its asymmetrical tab and laminate edge visible; one dry fiber sleeve opened into a shallow stable arc to show crisp cut and mechanical seam; one fully assembled sealed Thyme Honey cup at the end. Nothing floats or overlaps.",
+      "camera": {
+        "viewpoint": "close oblique detail view at roughly 25–30° elevation, oriented so the cup rim, foil edge, sleeve thickness and finished fit share a readable plane",
+        "distance_and_occupancy": "close-up evidence frame; all four states retain complete outlines and equal breathing room on the same ground plane",
+        "lens_behavior": "80–85 mm full-frame-equivalent short-tele perspective to reduce size distortion without flattening material thickness",
+        "focus": "f/8–f/11-like depth; every proof edge sharp enough to compare, with only the far background soft",
+        "format_and_ui": "4:5 master for a vertical material section, with a safe 3:2 landscape crop that preserves the complete left-to-right chain; no overlaid copy on proof surfaces"
+      },
+      "lighting": {
+        "key": "one broad directional source grazing from upper left at a low angle to reveal fiber tooth, molded polymer edge and foil laminate thickness",
+        "fill": "large neutral fill from camera-right keeps pale materials separated without flattening relief",
+        "reflection_control": "white and black cards create a restrained continuous foil gradient and a dark line at its edge; no mirrored studio clutter or clipped chrome patch",
+        "tone": "neutral warm-grey mineral surface, 4300–4800 K, moderate contrast and retained highlight texture"
+      },
+      "material_behavior": [
+        "Primary vessel sample is smooth, opaque, satin and clean; its flange geometry matches the assembled cup exactly.",
+        "Foil membrane lies naturally flat with slight edge memory and one visible large tab; its diameter matches the rim and its thin laminate edge remains credible.",
+        "Fiber sleeve is pale mineral-white, dry and uncoated in appearance with subtle directional fiber tooth, crisp machine-cut edges and a working seam, not fuzzy handmade paper.",
+        "Assembled cup leaves the same primary-vessel reveal between sleeve and foil and shows sleeve seam without disguising it.",
+        "No material is artificially distressed, over-cleaned, uniformly procedural or given a false sustainability cue."
+      ],
+      "invariants": [
+        "Exactly four states in physical order: primary vessel, foil seal, dry fiber sleeve, assembled sealed cup.",
+        "All component dimensions correspond to the same package; no stylized exploded scale changes.",
+        "Every object rests on the same dry surface with a visible contact shadow.",
+        "Paper never touches an open food sample and no moisture source appears in frame.",
+        "Finished package matches hero and Packing Table pair in cup taper, flange, tab, sleeve edge, seam and locator placement.",
+        "Only approved identity copy appears; small legal and technical facts are added later from verified artwork."
+      ],
+      "qa": [
+        "A viewer can point to which component touches food, which seals, which carries story and which shows the final fit without reading a caption.",
+        "Foil diameter and tab align with primary flange; sleeve circumference and taper align with the cup wall.",
+        "No component floats, intersects another object or casts a shadow inconsistent with its contact point.",
+        "Paper fibers, foil specular, satin polymer and assembled edges remain visibly distinct at report size.",
+        "The material order agrees with hero and both Packing Table frames.",
+        "The image contains no visual suggestion of recyclability, compostability, insulation, reclosure or shelf-life performance."
+      ],
+      "avoid": [
+        "floating exploded-view parts, impossible cutaway, x-ray transparency or diagram arrows rendered as objects",
+        "empty perfume bottle, cosmetic jar, candle, medicine tub, black cap or amber laboratory glass",
+        "kraft or brown stock, deckled handmade paper, torn fiber, twine, wax, stamp, brass tool, rust or wood-grain nostalgia",
+        "paper moisture barrier implication, foil as rigid reusable lid, board as cold-chain insulation",
+        "water droplets, yogurt smear, oil stain, condensation, ingredient garnish or food touching the sleeve",
+        "fake certification marks, recycling icons, proprietary material names, invented specs, small generated legal text or apothecary grid"
+      ]
+    }
+  ],
+  "cross_asset_qa": [
+    "Hero, frontal, side and anatomy use the same cup taper, flange diameter, foil-tab shape and orientation, primary-vessel reveal, sleeve height, seam and recipe locator.",
+    "Material chain is food-native and immediately legible in every frame where more than one layer is visible.",
+    "Paper remains dry in all four images; no frame implies that fiber supplies the moisture barrier.",
+    "Foil remains a thin peelable full-perimeter seal and candidate first-opening witness; no frame turns it into a cap or decorative metallic disc, and no tamper-evidence claim is made before validation.",
+    "Front and side pair pass maker identity, action phase, camera radius/height, baseline, scale, object placement, fixed room light and color continuity checks.",
+    "Ingredient color stays local; lighting, wall, wardrobe, tools and background remain neutral.",
+    "All images avoid Le Labo identity, apothecary trade dress, perfumery silhouette, vintage craft theatre and generic rustic premium cues."
+  ],
+  "release_gates": [
+    {
+      "gate": "package_engineering",
+      "required": "validated food-contact vessel, barrier and sealing specification; sleeve fit and seam prototype; jurisdictional artwork allocation",
+      "blocked_claims": "PP grade, barrier performance, hermeticity, tamper evidence, recyclability, compostability, shelf life or production feasibility"
+    },
+    {
+      "gate": "food_and_cold_chain",
+      "required": "approved physical yogurt sample, fill/seal/leak process, storage and condensation behavior",
+      "blocked_claims": "actual product color, texture, ingredient trace, refrigeration performance or serve life"
+    },
+    {
+      "gate": "packing_operation",
+      "required": "actual final-check order, scale use, external-dry criterion, sleeve-fitting action and worker SOP",
+      "blocked_claims": "current hand packing, calibrated final weight, leak inspection or small-batch craft operation"
+    },
+    {
+      "gate": "identity_and_rights",
+      "required": "approved package artwork, maker model release, wardrobe and location continuity rights",
+      "blocked_claims": "founder depiction, exact legal copy, actual batch metadata or source-evidence status"
+    }
+  ],
+  "global_avoid": [
+    "Le Labo wordmark, label geometry, ingredient-plus-number names, city/date/name personalization or Le Journal typography",
+    "pharmacy, apothecary, fragrance laboratory, perfume vessel, amber bottle, beaker, pipette or specimen-card mimic",
+    "vintage, rustic, farmhouse, sepia, kraft-and-black industrial, wax, twine, stamp, rust, brass patina or heroic artisan cliché",
+    "paper-food contact, wet paper, faux paper barrier, hidden foil, false closure, decorative tool or impossible assembly",
+    "generic luxury adjectives made visual through darkness, gold, marble, smoke, glare or excessive staging",
+    "unverified manufacturing, food-safety, nutrition, origin, sustainability, packaging or shelf-life claim"
+  ]
+}

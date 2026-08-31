@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.1.0",
+  "job_id": "stage3_lineup_pack_cx",
+  "created_at": "2026-08-26",
+  "source_stage": {
+    "canonical": "../02-extended-brand/outputs/extended-brand-anatomy.json",
+    "review_status": "accepted",
+    "direction_lock": ".work/stage3-direction-lock.json"
+  },
+  "assets": [
+    {
+      "asset_id": "ST3-PRODUCT-THYME-HONEY-01",
+      "source_asset_id": "ST2-PRODUCT-THYME-HONEY-02",
+      "source_path": "../02-extended-brand/assets/product-series-clear/mora-thyme-honey-clear-frontal.png",
+      "output_path": "assets/product-renders/mora-thyme-honey-front.png",
+      "prompt_path": "prompts/ST3-PRODUCT-THYME-HONEY-01.md",
+      "method": "accepted Stage 2 generated render copied without visual alteration",
+      "dimensions": "1254x1254",
+      "sha256": "e555d0c2dd2b4cf3cdf2f2f973724afce12c1912c10a77be64e6bdcb24b6bd00",
+      "copy_verified": true,
+      "status": "accepted_generated_render"
+    },
+    {
+      "asset_id": "ST3-PRODUCT-FIG-LEAF-02",
+      "source_asset_id": "ST2-PRODUCT-FIG-LEAF-02",
+      "source_path": "../02-extended-brand/assets/product-series-clear/mora-fig-leaf-clear-frontal.png",
+      "output_path": "assets/product-renders/mora-fig-leaf-front.png",
+      "prompt_path": "prompts/ST3-PRODUCT-FIG-LEAF-02.md",
+      "method": "accepted Stage 2 generated render copied without visual alteration",
+      "dimensions": "1254x1254",
+      "sha256": "9f74b136a539b50b3dbc75f71858d34d9f3ed99cda464057827ce93a8b2ad379",
+      "copy_verified": true,
+      "status": "accepted_generated_render"
+    },
+    {
+      "asset_id": "ST3-PRODUCT-ROASTED-BUCKWHEAT-03",
+      "source_asset_id": "ST2-PRODUCT-ROASTED-BUCKWHEAT-02",
+      "source_path": "../02-extended-brand/assets/product-series-clear/mora-roasted-buckwheat-clear-frontal.png",
+      "output_path": "assets/product-renders/mora-roasted-buckwheat-front.png",
+      "prompt_path": "prompts/ST3-PRODUCT-ROASTED-BUCKWHEAT-03.md",
+      "method": "accepted Stage 2 generated render copied without visual alteration",
+      "dimensions": "1254x1254",
+      "sha256": "9e8574da6e399a45b0c646021943b101e00af2c107834be2f44e1bfb5696e330",
+      "copy_verified": true,
+      "status": "accepted_generated_render"
+    },
+    {
+      "asset_id": "ST3-PRODUCT-CITRUS-PEEL-04",
+      "source_asset_id": "ST2-PRODUCT-CITRUS-PEEL-02",
+      "source_path": "../02-extended-brand/assets/product-series-clear/mora-citrus-peel-clear-frontal.png",
+      "output_path": "assets/product-renders/mora-citrus-peel-front.png",
+      "prompt_path": "prompts/ST3-PRODUCT-CITRUS-PEEL-04.md",
+      "method": "accepted Stage 2 generated render copied without visual alteration",
+      "dimensions": "1254x1254",
+      "sha256": "bb41e5214f82046b7fb130803b2524cf84f654eee4cee6784084a9c262b9b4db",
+      "copy_verified": true,
+      "status": "accepted_generated_render"
+    },
+    {
+      "asset_id": "ST3-PRODUCT-BLACK-SESAME-05",
+      "source_asset_id": "ST2-PRODUCT-BLACK-SESAME-02",
+      "source_path": "../02-extended-brand/assets/product-series-clear/mora-black-sesame-clear-frontal.png",
+      "output_path": "assets/product-renders/mora-black-sesame-front.png",
+      "prompt_path": "prompts/ST3-PRODUCT-BLACK-SESAME-05.md",
+      "method": "accepted Stage 2 generated render copied without visual alteration",
+      "dimensions": "1254x1254",
+      "sha256": "a96b12a56db4a81d9de533e6de2f97e8f6fb0d8711f4f1c2e8b3b28e7594b501",
+      "copy_verified": true,
+      "status": "accepted_generated_render"
+    },
+    {
+      "asset_id": "ST3-PRODUCT-OLIVE-OIL-SEA-SALT-06",
+      "source_asset_id": "ST2-PRODUCT-OLIVE-OIL-SEA-SALT-02",
+      "source_path": "../02-extended-brand/assets/product-series-clear/mora-olive-oil-sea-salt-clear-frontal.png",
+      "output_path": "assets/product-renders/mora-olive-oil-sea-salt-front.png",
+      "prompt_path": "prompts/ST3-PRODUCT-OLIVE-OIL-SEA-SALT-06.md",
+      "method": "accepted Stage 2 generated render copied without visual alteration",
+      "dimensions": "1254x1254",
+      "sha256": "98efa45dc930cc9d14587afdefdf2bd78f29c58f72ed287054d012562637da42",
+      "copy_verified": true,
+      "status": "accepted_generated_render"
+    },
+    {
+      "asset_id": "ST3-PACKAGING-ANATOMY-15",
+      "source_asset_id": "ST2-PACKAGE-ANATOMY-03",
+      "source_path": "../02-extended-brand/assets/packaging-system/mora-clear-witness-anatomy-v2.png",
+      "output_path": "assets/product-renders/mora-clear-witness-package-anatomy.png",
+      "prompt_path": "prompts/ST3-PACKAGING-ANATOMY-15.md",
+      "method": "accepted Stage 2 generated supporting render copied without visual alteration",
+      "dimensions": "1672x941",
+      "sha256": "403fcd8a438d7d00a24306ef2329a6a1b475d46512a23447426cc4c5264f1fa2",
+      "copy_verified": true,
+      "status": "accepted_generated_supporting_render"
+    },
+    {
+      "asset_id": "ST3-CUSTOMER-OPEN-SPOON-16",
+      "source_asset_id": null,
+      "source_path": "/Users/ddd/.codex/generated_images/01a0384a-155d-7aa3-976e-415e1c5cc092/exec-88a64eeb-9a89-4ad6-bd42-bd3e7a17d78e.png",
+      "work_copy": ".work/stage3_lineup_pack_cx/generated-originals/mora-customer-open-spoon-front-generated.png",
+      "output_path": "assets/product-renders/mora-customer-open-spoon-front.png",
+      "prompt_path": "prompts/ST3-CUSTOMER-OPEN-SPOON-16.md",
+      "method": "built-in image generation edit mode with two local accepted visual references",
+      "references": [
+        "assets/product-renders/mora-thyme-honey-front.png",
+        "assets/product-renders/mora-clear-witness-package-anatomy.png"
+      ],
+      "dimensions": "1535x1024",
+      "aspect_ratio": "3:2 landscape",
+      "sha256": "e69b038dfa3a3dca2a6aa85679c87baf5ef65c7a607c8b6af076097f0760aabb",
+      "original_resolution_inspection": "pass via local view_image at original detail; no browser automation",
+      "status": "generated_and_qa_passed_directional"
+    }
+  ]
+}

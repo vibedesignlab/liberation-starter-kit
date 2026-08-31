@@ -1,0 +1,16 @@
+/* Geist Sans — Swiss neo-grotesk, Suisse Intl 대안 */
+@font-face {
+  font-family: 'Geist Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./GeistSans-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Geist Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./GeistSans-SemiBold.woff2') format('woff2');
+}

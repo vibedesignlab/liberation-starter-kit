@@ -1,0 +1,436 @@
+{
+  "shard_id": "verbal_narrative",
+  "artifact_scope": "Stage 2 directional shard; not canonical output",
+  "working_brand": "MORA",
+  "language": "Korean-first with MORA as a supporting Latin-script mark",
+  "source_inputs": {
+    "accepted_source_json": "../01-source-brand/outputs/source-brand-analysis.json",
+    "transfer_input": "../02-extended-brand/transfer-input.json",
+    "source_brand": "Le Labo Fragrances",
+    "source_review_status": "accepted"
+  },
+  "epistemic_boundary": {
+    "status": "open_concept",
+    "known_direction": [
+      "MORA is the working brand name.",
+      "The intended category is premium Greek yogurt infused with varied natural ingredients.",
+      "The directional format is one 150 g serving cup.",
+      "The five working products are Thyme Honey, Fig Leaf, Roasted Buckwheat, Citrus Peel and Black Sesame.",
+      "The audience, use contexts, visual priority and landing goal are locked in transfer-input.json."
+    ],
+    "not_yet_verified": [
+      "Finished recipes and whether every ingredient is infused rather than mixed, layered or topped",
+      "Sensory performance, sweetness, particle size, yogurt density and aftertaste",
+      "Ingredient origin, farming method and supply-chain claims",
+      "Nutrition, protein, sugar, cultures, functional benefits and allergen statements",
+      "Manufacturing process, infusion time, serving size, package material, storage and shelf life"
+    ],
+    "copy_rule": "Sensory and process language in this shard is a creative target for R&D validation, not publishable substantiation. Final landing copy must replace or remove every unsupported claim."
+  },
+  "source_grammar_application": [
+    {
+      "source_grammar_id": "GK-01",
+      "source_signal": "A neutral repeatable structure holds controlled product differences.",
+      "semantic_job": "Make a five-product family easy to compare without flattening ingredient character.",
+      "relationship": "tune",
+      "target_decision": "Keep one fixed cup-information hierarchy and vary only the ingredient name, one ingredient-derived identification field, a short sensory sequence and verified recipe facts.",
+      "verbal_application": "Every product follows the same order: ingredient name, one-line role, sensory sequence, use moment, verified facts.",
+      "source_boundary": "Do not use the source's ingredient-plus-number names, pharmacy label layout, personal-name/date ritual, or laboratory vocabulary.",
+      "status": "directional"
+    },
+    {
+      "source_grammar_id": "GK-02",
+      "source_signal": "Communication moves from a sensory scene to product facts.",
+      "semantic_job": "Invite appetite before giving the facts needed to choose.",
+      "relationship": "tune",
+      "target_decision": "Begin with one ordinary eating moment and one material sensation, then disclose recipe, texture, sweetness and serving information in compact factual blocks.",
+      "verbal_application": "Use one calm sensory sentence, followed by one plain product sentence; operational, ingredient and legal information always remains literal.",
+      "source_boundary": "Do not reproduce the source manifesto, perfumery metaphors, rhetorical swagger, ellipsis-heavy cadence or any recognizable product prose.",
+      "status": "directional"
+    },
+    {
+      "source_grammar_id": "GK-03",
+      "source_signal": "Observable making action supports a quality claim.",
+      "semantic_job": "Ground premium value in visible material handling rather than prestige adjectives.",
+      "relationship": "tune",
+      "target_decision": "Pair copy with one verifiable food action such as folding an ingredient through yogurt, revealing a spoon cut or showing a measured recipe step. Name the action only after the actual process is confirmed.",
+      "verbal_application": "Prefer concrete verbs such as fold, rest, roast, zest, spoon and reveal only when they match production truth.",
+      "source_boundary": "Do not stage a fragrance lab, technician persona, compounding ceremony, apothecary tools or heroic artisan narrative.",
+      "status": "requires_process_validation"
+    },
+    {
+      "source_grammar_id": "GK-04",
+      "source_signal": "The information-bearing object also functions as the graphic device.",
+      "semantic_job": "Let the cup and ingredient evidence carry the message without decorative luxury codes.",
+      "relationship": "tune",
+      "target_decision": "Treat the open cup, spoon mark, ingredient trace and concise recipe panel as the communication surface. Editorial copy should behave like a tasting note and fact card, not a newspaper or specimen label.",
+      "verbal_application": "Headlines name the material experience; captions explain what the image proves.",
+      "source_boundary": "Do not copy Le Journal, black-and-white perfume editorial, official label geometry or source trade dress.",
+      "status": "directional"
+    },
+    {
+      "source_grammar_id": "GK-05",
+      "source_signal": "One human action activates an otherwise repeated product family.",
+      "semantic_job": "Show use and appetite while keeping all five products comparable.",
+      "relationship": "tune",
+      "target_decision": "Keep cup framing and copy order fixed; change one spoon action or ingredient reveal per scene. Family copy compares products by sensory role, not by lifestyle persona.",
+      "verbal_application": "Each product owns one verb and one use moment; avoid stacking several gestures or benefits into one sentence.",
+      "source_boundary": "Do not replicate the source's hand poses, product sets or service sequence.",
+      "status": "directional"
+    }
+  ],
+  "positioning": {
+    "positioning_statement": "For urban adults who want a dense, restrained snack or small dessert with a clear ingredient point of view, MORA is a five-recipe Greek-yogurt family designed to reveal each ingredient through aroma, texture and finish. Unlike topping-led desserts or benefit-first yogurt, it makes the yogurt body and the ingredient trace the basis of choice, with claims limited to what the finished recipe can prove.",
+    "category_frame": "Ingredient-led premium Greek yogurt",
+    "audience": "Urban adults aged 25–44 who care about ingredient provenance, texture, restrained sweetness and an orderly daily ritual.",
+    "representative_use_situations": [
+      "A slow cup at the start of the day",
+      "A focused afternoon desk snack",
+      "A small dessert after a light meal"
+    ],
+    "tension": "Most flavored yogurt is chosen by a flavor label, topping abundance or nutrition promise; MORA should make the ingredient's actual sensory behavior inside dense yogurt the choice architecture.",
+    "functional_promise": "A legible comparison among five ingredient directions in a consistent single-serving format.",
+    "emotional_promise": "A short pause in which one ingredient unfolds in a clear sequence rather than arriving as undifferentiated sweetness.",
+    "social_posture": "Quietly exacting and ingredient-aware, without wellness performance or ornate luxury signaling.",
+    "reason_to_believe_direction": [
+      "The opened cup visibly shows yogurt density and ingredient traces.",
+      "A consistent sensory sequence explains what changes from first aroma to finish.",
+      "A factual recipe panel identifies actual ingredients, quantities or process only after validation.",
+      "A fixed family structure lets customers compare the five recipes directly."
+    ],
+    "reason_to_believe_status": "The structure is approved direction; all recipe, sensory and process particulars require R&D and legal substantiation."
+  },
+  "brand_message": {
+    "primary": "한 컵 안에, 재료가 머문 결.",
+    "supporting": "밀도 높은 그릭요거트에서 다섯 재료의 향과 질감, 여운을 차례로 발견합니다.",
+    "english_support": "Ingredient, held in texture.",
+    "job": "Define MORA as an ingredient-and-texture experience, then open naturally into the five-product comparison.",
+    "status": "working_copy",
+    "validation_note": "The word '머문' must not imply a specific infusion duration or technique until the manufacturing process is confirmed."
+  },
+  "brand_values": [
+    {
+      "name": "보이는 재료성",
+      "definition": "재료는 이름이나 장식으로 끝나지 않고 컵 안의 색, 입자, 향, 질감 또는 여운 중 확인 가능한 방식으로 드러난다.",
+      "behavior": "Show the opened product and name the observable evidence before making an evaluative claim.",
+      "proof_required": "Finished-product imagery and validated sensory/ingredient specification.",
+      "status": "directional"
+    },
+    {
+      "name": "차분한 정확성",
+      "definition": "감각을 부풀리지 않고 선택에 필요한 차이와 한계를 같은 위계 안에서 분명히 말한다.",
+      "behavior": "Place recipe, serving, allergen and storage facts in plain language after the concise sensory lead.",
+      "proof_required": "Approved label facts and legal review.",
+      "status": "directional"
+    },
+    {
+      "name": "짧은 머묾",
+      "definition": "한 컵과 한 번의 스푼 동작으로 일상에 작지만 또렷한 감각의 구간을 만든다.",
+      "behavior": "Write for a specific eating moment without prescribing an aspirational lifestyle.",
+      "proof_required": "No factual substantiation required when presented as brand intent rather than a performance claim.",
+      "status": "directional"
+    }
+  ],
+  "family_usp": {
+    "statement": "같은 한 컵 구조 안에서 다섯 재료를 향의 첫인상, 요거트와 만나는 질감, 마지막 여운의 순서로 비교하게 하는 인퓨전 그릭요거트 패밀리.",
+    "short_form": "한 가지 밀도, 다섯 가지 재료의 결.",
+    "differentiation_logic": "The base architecture, portion and information order stay consistent while each product owns a distinct sensory role, ingredient cue and use moment.",
+    "status": "open_concept",
+    "validation_note": "Shared yogurt density, actual infusion status and sensory sequence must be confirmed across all five recipes before publication."
+  },
+  "product_usps": [
+    {
+      "product_name": "Thyme Honey",
+      "working_korean_name": "타임 허니",
+      "lineup_role": "The gentle entry point",
+      "use_case": "A slow morning cup",
+      "product_usp": "타임의 가벼운 허브 향으로 시작해 꿀의 온화한 단맛으로 마무리되는 아침 방향.",
+      "landing_message": "허브의 첫 향, 꿀의 잔잔한 끝.",
+      "owned_vocabulary": ["허브 향", "온화한 단맛", "아침", "부드러운 여운"],
+      "avoid_until_verified": ["raw honey", "single-origin honey", "low sugar", "soothing", "antioxidant"],
+      "status": "open_concept_requires_recipe_and_sensory_validation"
+    },
+    {
+      "product_name": "Fig Leaf",
+      "working_korean_name": "피그 리프",
+      "lineup_role": "The green aromatic contrast",
+      "use_case": "An afternoon pause that is not dessert-sweet",
+      "product_usp": "무화과 열매의 진한 단맛 대신 잎의 푸르고 부드러운 향을 밀도 안에서 발견하는 방향.",
+      "landing_message": "달콤함보다 먼저 오는, 푸른 잎의 향.",
+      "owned_vocabulary": ["푸른 향", "잎", "부드러운 향", "가벼운 오후"],
+      "avoid_until_verified": ["fresh fig leaf", "botanical infusion", "low sweetness", "calming", "detox"],
+      "status": "open_concept_requires_recipe_safety_and_sensory_validation"
+    },
+    {
+      "product_name": "Roasted Buckwheat",
+      "working_korean_name": "로스티드 버크위트",
+      "lineup_role": "The toasted grain expression",
+      "use_case": "A substantial desk snack",
+      "product_usp": "메밀을 볶은 고소한 향과 곡물의 입자감으로 한 컵의 포만한 인상을 만드는 방향.",
+      "landing_message": "볶은 곡물의 향, 씹을수록 또렷한 결.",
+      "owned_vocabulary": ["볶은 향", "곡물", "고소함", "입자감", "오후 간식"],
+      "avoid_until_verified": ["whole grain", "high fiber", "protein-rich", "gluten-free", "long-lasting fullness"],
+      "status": "open_concept_requires_recipe_allergen_and_sensory_validation"
+    },
+    {
+      "product_name": "Citrus Peel",
+      "working_korean_name": "시트러스 필",
+      "lineup_role": "The bright bitter lift",
+      "use_case": "A clean finish after a light meal",
+      "product_usp": "시트러스 껍질의 밝은 향과 미세한 쌉쌀함이 요거트의 밀도에 선명한 끝을 더하는 방향.",
+      "landing_message": "밝은 향 뒤에 남는, 껍질의 미세한 쌉쌀함.",
+      "owned_vocabulary": ["껍질", "밝은 향", "미세한 쌉쌀함", "선명한 끝"],
+      "avoid_until_verified": ["vitamin C", "immune", "cold-pressed", "organic citrus", "digestive"],
+      "status": "open_concept_requires_recipe_origin_and_sensory_validation"
+    },
+    {
+      "product_name": "Black Sesame",
+      "working_korean_name": "블랙 세서미",
+      "lineup_role": "The deep roasted finish",
+      "use_case": "A small dessert after a light meal",
+      "product_usp": "검은깨의 깊은 볶은 향과 고운 입자가 그릭요거트를 작은 디저트로 전환하는 방향.",
+      "landing_message": "깊게 볶은 향, 고운 입자로 남는 작은 디저트.",
+      "owned_vocabulary": ["깊은 볶은 향", "고운 입자", "작은 디저트", "고소한 여운"],
+      "avoid_until_verified": ["calcium-rich", "black sesame paste", "superfood", "anti-aging", "traditional recipe"],
+      "status": "open_concept_requires_recipe_allergen_and_sensory_validation"
+    }
+  ],
+  "verbal_system": {
+    "voice": {
+      "persona": "A calm ingredient observer with the precision of a good food editor, not a chef-genius, wellness coach or laboratory expert.",
+      "qualities": ["calm", "sensory", "specific", "restrained", "transparent about limits"],
+      "temperature": "Warm enough to invite appetite; cool enough to keep facts legible.",
+      "point_of_view": "Use MORA or an omitted subject for product truth; use '우리' sparingly for brand intent; address the reader only in practical guidance."
+    },
+    "vocabulary": {
+      "preferred_nouns": ["한 컵", "재료", "결", "밀도", "향", "입자", "스푼", "여운", "레시피", "아침", "오후", "작은 디저트"],
+      "preferred_verbs": ["머물다", "드러나다", "접히다", "퍼지다", "남다", "떠먹다", "비교하다", "고르다"],
+      "conditional_verbs_after_validation": ["인퓨징하다", "접어 넣다", "볶다", "숙성하다", "우려내다", "갈다"],
+      "preferred_adjectives": ["차분한", "선명한", "온화한", "푸른", "볶은", "고운", "미세한", "밀도 높은"],
+      "reserved_terms": ["인퓨전", "천연", "그릭요거트"],
+      "reserved_term_rule": "Use only when ingredient definition, recipe/process and category labeling support the term."
+    },
+    "sentence_behavior": [
+      "Lead with one concrete sensory observation, usually 6–16 Korean words.",
+      "Follow with one complete factual sentence naming product format, ingredient role or use moment.",
+      "Use at most one contrast per block: first/finish, aroma/texture or familiar/new; do not stack poetic oppositions.",
+      "Prefer periods and commas. Use colons only for fact labels; avoid ellipses, exclamation marks and rhetorical questions.",
+      "One sentence should carry one claim. Separate verified facts from creative sensory interpretation.",
+      "Transactional, allergen, storage and nutrition copy is always direct and non-metaphorical.",
+      "Product names remain the supplied working names without numbers, city suffixes or laboratory codes."
+    ],
+    "modulation_by_surface": {
+      "hero": "One material image plus the primary brand message; no ingredient list or stacked benefits.",
+      "family_intro": "Explain the fixed comparison logic and the five ingredient directions in two short sentences.",
+      "product_card": "Product name, sensory role, use moment and one verified differentiator.",
+      "product_detail": "Scene, sensory sequence, recipe/process facts, serving information and legal facts in that order.",
+      "commerce_and_support": "Facts first: size, ingredients, allergens, storage, delivery and substitutions. No mood copy in error states."
+    }
+  },
+  "message_hierarchy": [
+    {
+      "level": 1,
+      "name": "Brand premise",
+      "message": "한 컵 안에, 재료가 머문 결.",
+      "job": "State the distinctive ingredient-and-texture idea in the first screen."
+    },
+    {
+      "level": 2,
+      "name": "Family choice logic",
+      "message": "향의 첫인상, 요거트와 만나는 질감, 마지막 여운으로 다섯 컵을 비교합니다.",
+      "job": "Teach how to choose among the family."
+    },
+    {
+      "level": 3,
+      "name": "Product role",
+      "message": "Each product receives one role and one use moment.",
+      "job": "Prevent the lineup from reading as five arbitrary flavors."
+    },
+    {
+      "level": 4,
+      "name": "Sensory sequence",
+      "message": "First aroma → texture in yogurt → finish.",
+      "job": "Provide a repeatable tasting structure, pending validation."
+    },
+    {
+      "level": 5,
+      "name": "Product truth",
+      "message": "Recipe, ingredient amount/origin where verified, 150 g status, sweetness, texture and process.",
+      "job": "Supply purchase facts without breaking the sensory flow."
+    },
+    {
+      "level": 6,
+      "name": "Required operational facts",
+      "message": "Ingredients, allergens, nutrition, cultures, storage, shelf life and delivery.",
+      "job": "State regulated and support information plainly; unknown fields remain explicit gaps."
+    }
+  ],
+  "narrative_routes": [
+    {
+      "id": "NR-01",
+      "name": "재료가 머문 결",
+      "premise": "Begin with the visible mark left by an ingredient in dense yogurt, then reveal its aroma, texture and finish.",
+      "opening_copy": "한 컵 안에, 재료가 머문 결.",
+      "sequence": ["Open cup and spoon cut", "ingredient trace", "three-part sensory note", "verified recipe facts", "five-cup comparison"],
+      "strength": "Best alignment with the locked narrative preference, visual priority and source grammar of scene-to-fact disclosure.",
+      "risk": "'머문' can falsely suggest duration or a particular infusion process if manufacturing differs.",
+      "mitigation": "Treat the line as working copy and validate process before publication.",
+      "status": "selected"
+    },
+    {
+      "id": "NR-02",
+      "name": "하루의 다섯 순간",
+      "premise": "Organize the lineup by morning, desk break and small-dessert situations, using each cup as a different daily pause.",
+      "opening_copy": "오늘의 시간에 맞는 한 컵.",
+      "sequence": ["Daily moment", "single spoon action", "product role", "sensory note", "comparison by use context"],
+      "strength": "Immediately practical and makes the five use cases easy to scan.",
+      "risk": "Lifestyle segmentation can overshadow ingredient truth and may force weak time-of-day distinctions.",
+      "status": "alternate"
+    },
+    {
+      "id": "NR-03",
+      "name": "같은 바탕, 다른 여운",
+      "premise": "Lead with a consistent Greek-yogurt base and compare how five ingredients change the ending.",
+      "opening_copy": "같은 밀도에서 시작해, 다섯 가지 여운으로.",
+      "sequence": ["Family lineup", "fixed cup/base", "ingredient-specific contrast", "sensory matrix", "choose one cup"],
+      "strength": "Strongest route for family architecture and side-by-side shopping.",
+      "risk": "It depends on verified shared-base and shared-density facts and may feel more system-led than appetizing.",
+      "status": "alternate"
+    }
+  ],
+  "selected_narrative_route": {
+    "route_id": "NR-01",
+    "reason": "It lets the opened product and ingredient trace deliver the first idea, then supports the required move from calm sensory narrative to recipe and texture facts. It also differentiates MORA without borrowing the source brand's manifesto, naming or laboratory expression.",
+    "landing_arc": [
+      "Hero: one opened representative cup, one spoon cut and the primary message",
+      "Meaning: define '결' through visible ingredient evidence, not abstract philosophy",
+      "Family: introduce the shared comparison sequence",
+      "Lineup: give each product one role, use moment and product USP",
+      "Proof: show one verified preparation action and factual recipe panel",
+      "Choice: compare all five by aroma, texture and finish",
+      "Commerce: present ingredients, allergens, nutrition, storage and purchase details literally"
+    ],
+    "status": "selected_direction_pending_product_validation"
+  },
+  "message_to_visual_map": [
+    {
+      "message_layer": "Brand message",
+      "message": "한 컵 안에, 재료가 머문 결.",
+      "visual_layer": "key_visual",
+      "communication_job": "Make density, ingredient trace and one-serving use understandable before explanation.",
+      "visual_direction": "One opened low, wide cup; one clear spoon cut; one ingredient-derived trace; restrained copy beside rather than over the food.",
+      "series_rule": "Keep crop, cup angle and copy position fixed; change only the ingredient trace, product name and one identification field."
+    },
+    {
+      "message_layer": "Value — 보이는 재료성",
+      "message": "재료는 확인 가능한 방식으로 드러난다.",
+      "visual_layer": "brand_mood",
+      "communication_job": "Create trust through observable food materiality.",
+      "visual_direction": "Close natural-light studies of yogurt folds, particles, peel, leaf, grain, honey flow or sesame only when they match the finished recipes."
+    },
+    {
+      "message_layer": "Value — 차분한 정확성",
+      "message": "감각과 사실을 같은 위계에서 말한다.",
+      "visual_layer": "brand_mood",
+      "communication_job": "Balance appetite with editorial clarity.",
+      "visual_direction": "Quiet neutral surfaces, consistent scale and concise captions that state exactly what each frame proves."
+    },
+    {
+      "message_layer": "Value — 짧은 머묾",
+      "message": "한 컵과 한 번의 스푼 동작으로 만드는 짧은 구간.",
+      "visual_layer": "brand_mood",
+      "communication_job": "Place the product in a real but uncluttered daily moment.",
+      "visual_direction": "One hand, one spoon and one cup in morning, desk or post-meal light; no aspirational crowd scene."
+    },
+    {
+      "message_layer": "Family USP",
+      "message": "향, 질감, 여운으로 비교하는 다섯 컵.",
+      "visual_layer": "product_imagery",
+      "communication_job": "Explain family invariants and controlled ingredient differences.",
+      "visual_direction": "Five cups at identical angle and fill level, plus a three-column comparison for first aroma, texture and finish after validation."
+    },
+    {
+      "message_layer": "Product USPs",
+      "message": "Each product owns one sensory role and use moment.",
+      "visual_layer": "product_imagery",
+      "communication_job": "Give every product a distinct reason to choose without changing the family grammar.",
+      "visual_direction": "Thyme Honey: light herb/honey trace; Fig Leaf: green aromatic cue; Roasted Buckwheat: toasted grain particles; Citrus Peel: visible fine zest; Black Sesame: dark fine speckle. All depictions require recipe truth."
+    },
+    {
+      "message_layer": "Reason to believe",
+      "message": "One observable preparation action supports each quality claim.",
+      "visual_layer": "product_imagery",
+      "communication_job": "Turn process from mythology into proof.",
+      "visual_direction": "Show one real action at a time with the ingredient, food-safe tool and yogurt clearly visible; caption the verified action in literal language."
+    }
+  ],
+  "copy_avoids": [
+    {
+      "avoid": "Le Labo-protected or recognizable expression",
+      "examples": ["We believe-style declarations", "ingredient name plus number", "same bottle/same scent repetition", "lab technician, compounded, formulation-date personalization", "Le Journal-like editorial voice"],
+      "replacement": "Use MORA's Korean-first material vocabulary, fixed sensory sequence and ingredient/use-role names."
+    },
+    {
+      "avoid": "Unverified health or nutrition benefit",
+      "examples": ["gut health", "high protein", "low sugar", "immune support", "detox", "antioxidant", "guilt-free"],
+      "replacement": "Publish only tested nutrition and approved factual statements."
+    },
+    {
+      "avoid": "Unsupported ingredient and process superiority",
+      "examples": ["100% natural", "organic", "single origin", "slow infused", "handmade", "small batch", "artisan", "finest ingredients"],
+      "replacement": "Name the actual ingredient, source and production action only after documentation."
+    },
+    {
+      "avoid": "Generic premium language",
+      "examples": ["luxurious", "elevated", "indulgent", "crafted to perfection", "a masterpiece in every spoon"],
+      "replacement": "Describe observable density, particle, aroma, sweetness and finish."
+    },
+    {
+      "avoid": "Dessert excess cues",
+      "examples": ["decadent toppings", "explosion of flavor", "irresistibly sweet", "loaded"],
+      "replacement": "Keep one ingredient role and one clear sensory contrast per product."
+    },
+    {
+      "avoid": "Overwritten source-like cadence",
+      "examples": ["ellipsis chains", "rhetorical questions", "multiple parenthetical jokes", "staccato dramatic fragments"],
+      "replacement": "One calm observation followed by one plain fact sentence."
+    },
+    {
+      "avoid": "False precision",
+      "examples": ["exact infusion hours", "ingredient percentages", "specific origin", "texture scores", "shelf-life or culture claims without approved data"],
+      "replacement": "Mark fields pending, omit from consumer copy, or provide validated values."
+    }
+  ],
+  "unresolved_gaps": [
+    {
+      "gap": "Representative hero product is not selected.",
+      "impact": "The narrative can lead with the family, but the first-screen product and primary proof action remain undecided.",
+      "recommended_resolution": "Choose the recipe whose finished appearance most clearly proves density and ingredient trace after prototype review."
+    },
+    {
+      "gap": "No finished recipe, process map or sensory panel exists for the five products.",
+      "impact": "All five product USPs and the word '인퓨전' remain directional rather than publishable.",
+      "recommended_resolution": "Run R&D and sensory validation, then replace each provisional sequence with approved observations."
+    },
+    {
+      "gap": "The shared yogurt base and common density are assumed but not confirmed.",
+      "impact": "The family short form and Route NR-03 may overstate sameness.",
+      "recommended_resolution": "Confirm base architecture or rewrite around a shared cup/information system rather than shared density."
+    },
+    {
+      "gap": "Ingredient origin, allergen, nutrition, culture, storage and shelf-life facts are unknown.",
+      "impact": "Reason-to-believe and transactional copy cannot be finalized.",
+      "recommended_resolution": "Populate an approved fact sheet before Stage 3 consumer-copy lock."
+    },
+    {
+      "gap": "MORA and all product names are working names without trademark or linguistic clearance.",
+      "impact": "Naming should remain directional across story, packaging and landing materials.",
+      "recommended_resolution": "Complete trademark, market and Korean/English language review before production."
+    },
+    {
+      "gap": "The safety and regulatory framing of Fig Leaf as a food ingredient has not been documented.",
+      "impact": "The product direction cannot progress to factual claims or production imagery without ingredient and formulation review.",
+      "recommended_resolution": "Confirm permitted ingredient form, supplier specification, process and label naming with food R&D and regulatory counsel."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0.0",
+  "qa_date": "2026-08-26",
+  "decision": "generated_and_qa_passed_with_claim_gates",
+  "method": [
+    "Opened all five saved workspace PNGs at original resolution with local view_image; no browser or Playwright.",
+    "Verified dimensions, aspect ratio and SHA-256 after workspace copy.",
+    "Checked individual role evidence, Series locks, material physics, food plausibility, people/tool contact and exclusions."
+  ],
+  "series_checks": [
+    {
+      "check": "world continuity",
+      "status": "pass",
+      "evidence": "Pale-mineral, off-white ceramic, brushed stainless, upper-left daylight and restrained warm-neutral grade remain coherent across five frames."
+    },
+    {
+      "check": "causal sequence",
+      "status": "pass",
+      "evidence": "Raw atlas, six bases, 3x3 raw-base-trace matrix, straining and folding advance one observable state per role."
+    },
+    {
+      "check": "text and mimic exclusions",
+      "status": "pass",
+      "evidence": "No generated text, labels, arrows, packages, apothecary grid, perfume, cosmetics, spirits, labware, kraft or rustic trade dress."
+    },
+    {
+      "check": "claim containment",
+      "status": "pass",
+      "evidence": "No numeric process data, ingredient origin, health, nutrition, sustainability, handmade, small-batch or validated-SOP claim appears."
+    }
+  ],
+  "asset_checks": [
+    {
+      "asset_id": "ST3-INGREDIENT-SIGNATURE-ATLAS-10",
+      "status": "pass",
+      "checks": [
+        "native 4:3 and true 90-degree overhead",
+        "exact 2x3 six stations: thyme+honey, isolated Fig Leaf direction, buckwheat, citrus peel, black sesame, olive oil+actual-scale salt",
+        "no label, seventh group, whole citrus, oversized salt or decorative prop",
+        "single-source shadows and consistent overhead vessel perspective"
+      ]
+    },
+    {
+      "asset_id": "ST3-INFUSION-BASE-LIBRARY-11",
+      "status": "pass",
+      "checks": [
+        "native 3:2 strict frontal workspace",
+        "exact six bowls and comparable baseline",
+        "viscous syrup, pale aqueous prep, fine slurry, filtered citrus prep, opaque paste and oil phase are materially distinct",
+        "no glass drinking vessel, whiskey/spirit cue, labware, strainer or cloth"
+      ]
+    },
+    {
+      "asset_id": "ST3-INTERMEDIATE-TRACE-MATRIX-12",
+      "status": "pass",
+      "checks": [
+        "native 4:3 elevated oblique",
+        "exact 3 rows x 3 columns and no tenth group",
+        "Thyme Honey, Citrus Peel and Black Sesame each read raw-to-base-to-finished left to right",
+        "no invented text, arrow, grid line, package or garnish substitution"
+      ]
+    },
+    {
+      "asset_id": "ST3-PROCESS-STRAINING-13",
+      "status": "pass",
+      "checks": [
+        "native 3:2 strict maker-right one-eye side profile",
+        "dense concentrate, muslin, perforated frame, three gravity drip paths and pale acid whey share one vertical axis",
+        "hands only steady frame; no squeezing, press, pump or invented equipment",
+        "same maker/charcoal wardrobe continuity and generic production-role reading"
+      ]
+    },
+    {
+      "asset_id": "ST3-PROCESS-FOLDING-14",
+      "status": "pass",
+      "checks": [
+        "native 3:2 tight 3/4 detail",
+        "plain measured-base cup, broad paddle, dense standing ridge and one retained amber-thyme trace all visible",
+        "one fold only; no simultaneous pour, whisk, mixer or extra action",
+        "face cropped, hands and bowl contacts plausible, no founder reading"
+      ]
+    }
+  ],
+  "residual_gates": [
+    "Fig Leaf species, part, preparation, supplier batch, latex/furanocoumarin risk and market legality remain unresolved; do not caption the visual as proof of edible suitability.",
+    "Actual R&D samples must replace or validate every food color, particle, viscosity, phase, separation and retained-trace appearance.",
+    "Straining image does not establish duration, yield, whey disposition, temperature, pH, sanitation plan or equipment specification.",
+    "Folding image does not establish dose, shear rate, mixing time, batch size, recipe or SOP.",
+    "Generated maker is not founder, employee or production-source evidence and requires no biographical caption."
+  ]
+}

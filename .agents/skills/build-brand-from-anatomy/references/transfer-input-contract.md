@@ -30,7 +30,7 @@ Use this CLI format when a structured question tool is unavailable:
 
 Useful question order, only when missing:
 
-1. **Product and lineup:** what is being made, which product leads, and whether the concept is a single product, a focused 2–3 product family, or an exploratory 3–5 product family?
+1. **Product and lineup:** what is being made, which product leads, and whether the concept is a single product, a focused 2–3 product family, or an exploratory 3–6 product family?
 2. **User and situation:** who uses it, where, and for what immediate outcome?
 3. **Source distance:** what source quality should remain, and what recognizable expression should not transfer?
 4. **Visual priority:** should the first impression explain form, use, state, or atmosphere?

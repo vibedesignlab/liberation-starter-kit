@@ -1,0 +1,225 @@
+{
+  "artifact_type": "stage3_reference_system_ingredient_shard",
+  "schema_version": "1.0.0",
+  "status": "generated_and_qa_passed",
+  "scope": "Registry-ready individual reference assets for Thyme Honey, Fig Leaf and Roasted Buckwheat only. Canonical, registry, review, pipeline, public and generated report files remain root-owned.",
+  "authoritative_lock": ".work/revision2_glass_reference/direction-lock.json#ingredient_reference_lock",
+  "production_mode": {
+    "prompt_compiler": ".agents/skills/commercial-photo-prompting/SKILL.md",
+    "generator": "Codex built-in imagegen",
+    "use_case": "product-mockup",
+    "web_role": "collection-grid individual ingredient reference",
+    "generated_on": "2026-08-28",
+    "operation_policy": "One distinct built-in imagegen call per ingredient. Obvious occupancy failures were revised on the single causal axis of subject scale only. Approved 1254x1254 tool-native squares were deterministically resampled to the locked 1536x1536 delivery canvas with ffmpeg Lanczos, without crop or content change. Final delivery outputs were inspected at original detail with view_image."
+  },
+  "series_lock": {
+    "background": "Cultured Cream #F5F1E8, plain seamless matte surface",
+    "camera": "true 90-degree aerial, 100 mm macro-equivalent visual character",
+    "subject_center_percent": {
+      "x": 50,
+      "y": 50
+    },
+    "target_subject_bbox_percent": {
+      "left": 28,
+      "top": 28,
+      "right": 72,
+      "bottom": 72
+    },
+    "target_outer_dish_diameter_percent": 44,
+    "container": "one low circular optically-clear glass specimen dish with the same visual geometry in every frame",
+    "lighting": "one broad soft upper-left source, restrained frontal fill, physically coherent soft contact shadow",
+    "permitted_variation_axis": "recipe ingredient identity and natural ingredient microvariation only",
+    "prohibited": [
+      "group atlas",
+      "unrelated prop",
+      "second dish",
+      "ingredient spill outside dish",
+      "text, label, logo or watermark",
+      "package or bottle",
+      "paper or plastic cue",
+      "laboratory, apothecary or rustic styling"
+    ]
+  },
+  "asset_records": [
+    {
+      "asset_id": "ST3-REF-INGREDIENT-THYME-HONEY-19",
+      "product_name": "Thyme Honey",
+      "role": "individual_ingredient_reference",
+      "communication_job": "한 접시 안에서 thyme sprig와 raw honey가 하나의 recipe pairing임을 보여 주되, 다른 재료나 조리·효능·원산지 주장을 만들지 않는다.",
+      "file_path": "assets/reference-system/mora-ingredient-thyme-honey-aerial.png",
+      "prompt_path": "prompts/ST3-REF-INGREDIENT-THYME-HONEY-19.md",
+      "media_type": "image/png",
+      "dimensions": "1536x1536",
+      "aspect_ratio": "1:1",
+      "sha256": "905715f45b15856e5048b59e470afec31ab3bcaaec95e85890bf56e78330c845",
+      "subject": "one clear-glass specimen dish containing a single Thyme Honey recipe pairing",
+      "generation_provenance": "Codex built-in imagegen new generation followed by scale-only delta edits from the same generated subject; approved tool-native square selected 2026-08-28, then deterministically Lanczos-resampled from 1254x1254 to 1536x1536 with no crop or content change.",
+      "reference_lineage": [
+        "revision2_glass_reference/direction-lock.json#ingredient_reference_lock",
+        "ST3-INGREDIENT-SIGNATURE-ATLAS-10",
+        "ST3-REF-INGREDIENT-THYME-HONEY-19 prompt"
+      ],
+      "invariants": [
+        "true 90-degree aerial",
+        "one circular optically-clear glass dish",
+        "thyme sprig and raw pale-amber honey coexist inside the same dish",
+        "outer dish diameter approximately 44% with center at approximately 50/50",
+        "plain Cultured Cream #F5F1E8 background",
+        "single upper-left light logic and grounded contact shadow",
+        "no other ingredient, prop, text, package, paper or plastic"
+      ],
+      "allowed_variation": [
+        "natural thyme posture and leaf microvariation",
+        "natural honey surface and bubble microvariation only"
+      ],
+      "invariant_check": "pass",
+      "status": "generated_and_qa_passed",
+      "claim_gate_ids": [
+        "CG-R2-01",
+        "CG-R2-02"
+      ]
+    },
+    {
+      "asset_id": "ST3-REF-INGREDIENT-FIG-LEAF-20",
+      "product_name": "Fig Leaf",
+      "role": "individual_ingredient_reference",
+      "communication_job": "개별 fig leaf의 lobes, vein, stem을 하나의 식물 재료 방향으로 식별하되 edible approval, species, supplier, preparation 또는 safety claim을 만들지 않는다.",
+      "file_path": "assets/reference-system/mora-ingredient-fig-leaf-aerial.png",
+      "prompt_path": "prompts/ST3-REF-INGREDIENT-FIG-LEAF-20.md",
+      "media_type": "image/png",
+      "dimensions": "1536x1536",
+      "aspect_ratio": "1:1",
+      "sha256": "7ad43f32ffe41c6768c65fdae27cb63e823600019980ad2a63c5759df417cc6a",
+      "subject": "one clear-glass specimen dish containing exactly one isolated fig leaf",
+      "generation_provenance": "Codex built-in imagegen new generation followed by scale-only delta edits from the same generated subject. A smaller-dish correction branch was rejected; the final cross-lane 44%-diameter tool-native square was selected 2026-08-28, then deterministically Lanczos-resampled from 1254x1254 to 1536x1536 with no crop or content change.",
+      "reference_lineage": [
+        "revision2_glass_reference/direction-lock.json#ingredient_reference_lock",
+        "ST3-INGREDIENT-SIGNATURE-ATLAS-10",
+        "ST3-REF-INGREDIENT-FIG-LEAF-20 prompt"
+      ],
+      "invariants": [
+        "true 90-degree aerial",
+        "one circular optically-clear glass dish",
+        "exactly one fig leaf and no fig fruit",
+        "outer dish diameter approximately 44% with center at approximately 50/50",
+        "plain Cultured Cream #F5F1E8 background",
+        "single upper-left light logic and grounded contact shadow",
+        "no other ingredient, prop, text, package, paper or plastic",
+        "no edible-approval implication"
+      ],
+      "allowed_variation": [
+        "natural vein, edge and olive-green botanical microvariation only"
+      ],
+      "invariant_check": "pass",
+      "status": "generated_and_qa_passed",
+      "claim_gate_ids": [
+        "CG-R2-01",
+        "CG-R2-03"
+      ]
+    },
+    {
+      "asset_id": "ST3-REF-INGREDIENT-ROASTED-BUCKWHEAT-21",
+      "product_name": "Roasted Buckwheat",
+      "role": "individual_ingredient_reference",
+      "communication_job": "roasted buckwheat groat의 실제 입자 형태와 toasted color range를 한 재료 프레임으로 보여 주되 origin, grade, roast parameter 또는 nutrition claim을 만들지 않는다.",
+      "file_path": "assets/reference-system/mora-ingredient-roasted-buckwheat-aerial.png",
+      "prompt_path": "prompts/ST3-REF-INGREDIENT-ROASTED-BUCKWHEAT-21.md",
+      "media_type": "image/png",
+      "dimensions": "1536x1536",
+      "aspect_ratio": "1:1",
+      "sha256": "225c64dfcc1840cd0ed979ae052e5d0ba25c65db6b1bafce4b625a238453c14a",
+      "subject": "one clear-glass specimen dish containing roasted buckwheat groats only",
+      "generation_provenance": "Codex built-in imagegen new generation followed by scale-only delta edits from the same generated subject; approved tool-native square selected 2026-08-28, then deterministically Lanczos-resampled from 1254x1254 to 1536x1536 with no crop or content change.",
+      "reference_lineage": [
+        "revision2_glass_reference/direction-lock.json#ingredient_reference_lock",
+        "ST3-INGREDIENT-SIGNATURE-ATLAS-10",
+        "ST3-REF-INGREDIENT-ROASTED-BUCKWHEAT-21 prompt"
+      ],
+      "invariants": [
+        "true 90-degree aerial",
+        "one circular optically-clear glass dish",
+        "roasted buckwheat groats only and all kernels remain inside dish",
+        "outer dish diameter approximately 44% with center at approximately 50/50",
+        "plain Cultured Cream #F5F1E8 background",
+        "single upper-left light logic and grounded contact shadow",
+        "no other ingredient, prop, text, package, paper or plastic"
+      ],
+      "allowed_variation": [
+        "natural groat shape and restrained toasted color microvariation only"
+      ],
+      "invariant_check": "pass",
+      "status": "generated_and_qa_passed",
+      "claim_gate_ids": [
+        "CG-R2-01",
+        "CG-R2-02"
+      ]
+    }
+  ],
+  "qa": {
+    "inspection_method": "Original-detail view_image inspection of all three final local PNGs plus cross-lane visual comparison against the x28–72% direction lock.",
+    "shared_checks": [
+      {
+        "check": "individual frame, not group atlas",
+        "result": "pass"
+      },
+      {
+        "check": "true 90-degree aerial and circular rim",
+        "result": "pass"
+      },
+      {
+        "check": "same clear-glass specimen-dish grammar",
+        "result": "pass"
+      },
+      {
+        "check": "outer dish diameter approximately 44% and center within ±2% of 50/50",
+        "result": "pass",
+        "note": "Scale was the only regenerated axis after the initial over/under-occupancy branches."
+      },
+      {
+        "check": "plain Cultured Cream background with no environmental set",
+        "result": "pass"
+      },
+      {
+        "check": "single-source shadow and physically plausible clear-glass response",
+        "result": "pass"
+      },
+      {
+        "check": "no unrelated prop, group, text, package, paper, plastic, laboratory, apothecary or rustic cue",
+        "result": "pass"
+      }
+    ],
+    "asset_specific": {
+      "ST3-REF-INGREDIENT-THYME-HONEY-19": "pass — thyme and honey read as one recipe pairing inside one dish; no third ingredient.",
+      "ST3-REF-INGREDIENT-FIG-LEAF-20": "pass — exactly one fig leaf; no fig fruit; final scale-only correction matches the 44% series occupancy.",
+      "ST3-REF-INGREDIENT-ROASTED-BUCKWHEAT-21": "pass — only roasted groats are present and all remain inside the dish."
+    },
+    "delivery_note": "Final local PNGs are exactly 1536x1536. Each approved 1254x1254 tool-native square was resampled with ffmpeg `scale=1536:1536:flags=lanczos`; crop, content, coordinates and color were unchanged. Original-detail post-resample inspection passed."
+  },
+  "claim_gates": [
+    {
+      "gate_id": "CG-R2-01",
+      "gate": "generated_visual_boundary",
+      "rule": "Generated ingredient photographs are art-direction references, not evidence of an actual recipe, supplier, facility, batch, method, safety status or product claim."
+    },
+    {
+      "gate_id": "CG-R2-02",
+      "gate": "ingredient_identity",
+      "rule": "Origin, cultivar, grade, supplier, harvest, roast parameters, recipe quantities, nutrition and functional benefits remain unverified."
+    },
+    {
+      "gate_id": "CG-R2-03",
+      "gate": "fig_leaf",
+      "rule": "Do not publish Fig Leaf as edible-approved until species, plant part, supplier batch, preparation, latex/furanocoumarin risk and applicable-market legality pass explicit review."
+    }
+  ],
+  "handoff": {
+    "canonical_write_authority": "root Stage 3 merge only",
+    "recommended_action": "Register the three asset records and map them to the Stage 3 reference-system section. Preserve the cross-lane 44% occupancy and the Fig Leaf claim gate.",
+    "forbidden_from_this_shard": [
+      "canonical JSON or landing-materials Markdown edit",
+      "asset-registry edit",
+      "review or pipeline-state edit",
+      "public report or generated story edit"
+    ]
+  }
+}

@@ -1,0 +1,2404 @@
+{
+  "manifest_id": "ST2-R8-GLASS-MIGRATION",
+  "schema_version": "1.0.0",
+  "audited_at": "2026-08-29",
+  "scope": {
+    "stage2_root": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/",
+    "canonical_source": "outputs/extended-brand-anatomy.json",
+    "registry_source": "asset-registry.json",
+    "stage3_r2_reference_root": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/",
+    "non_mutation_note": "This is a preparation manifest only. It does not alter canonical JSON, the asset registry, the report, registration, review files, or existing assets."
+  },
+  "counts": {
+    "unique_active_rendered_assets_audited": 14,
+    "unique_visual_assets_requiring_glass_migration": 11,
+    "active_file_path_pointer_occurrences_requiring_migration": 14,
+    "registered_anchor_id_pointer_occurrences_requiring_rebinding": 2,
+    "canonical_textual_locations_requiring_migration": 176,
+    "registry_textual_locations_requiring_migration": 17,
+    "total_textual_locations_requiring_migration": 193,
+    "ordinary_korean_one_cup_locations_protected": 55,
+    "one_cup_locations_inside_physical_package_sentences_and_therefore_not_blanket_protected": 6
+  },
+  "system_lock": {
+    "brand_system_name": "MORA Glass Vessel Record",
+    "physical_primary_pack": "heavy optically clear flint-glass wide-mouth vessel with thick wall and base, short shoulder, and stable food-native proportions",
+    "closure": "very thin graphite anodized-aluminum cap measuring 4–6% of closed-vessel height; real peelable foil tamper seal sits beneath cap",
+    "graphics": "restrained neutral-black direct print on glass; no primary-pack paper label, sticker, sleeve, or opaque backing field",
+    "protected_language": "Preserve ordinary Korean 한 컵 when it describes a serving, moment, or experience rather than physical package architecture.",
+    "protected_secondary_pack": "Preserve external molded-fiber multipack/carrier language when it clearly describes secondary packaging, never the primary food-contact vessel.",
+    "forbidden_transform": "Never perform a generic blind cup-to-jar replacement."
+  },
+  "visual_migrations": [
+    {
+      "source_asset_id": "ST2-PRODUCT-HERO-01",
+      "source_paths": [
+        "assets/product-hero/mora-thyme-honey-clear-witness-hero-v3.png"
+      ],
+      "pointer_locations": [
+        {
+          "source": "asset-registry.json",
+          "json_path": "$.assets[0].file_path"
+        },
+        {
+          "source": "outputs/extended-brand-anatomy.json",
+          "json_path": "$.registered_anchor_assets[0]",
+          "pointer_type": "asset_id"
+        }
+      ],
+      "replacement_stage3": [
+        {
+          "asset_id": "ST3-PRODUCT-GLASS-THYME-HONEY-59",
+          "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/products/mora-thyme-honey-glass-front-r2.png",
+          "status": "ready"
+        }
+      ],
+      "new_stage2_destination": "assets/product-hero/mora-thyme-honey-glass-vessel-hero-r2.png",
+      "prompt_wrapper": "prompts/revision-r2/ST2-PRODUCT-HERO-GLASS-R2.md",
+      "migration_action": "regenerate_stage2_hero_from_locked_stage3_product_reference"
+    },
+    {
+      "source_asset_id": "ST2-BRAND-MOOD-01",
+      "source_paths": [
+        "assets/brand-mood/mora-direct-print-inspection-front-v2.png"
+      ],
+      "pointer_locations": [
+        {
+          "source": "asset-registry.json",
+          "json_path": "$.assets[1].file_path"
+        },
+        {
+          "source": "outputs/extended-brand-anatomy.json",
+          "json_path": "$.registered_anchor_assets[1]",
+          "pointer_type": "asset_id"
+        },
+        {
+          "source": "outputs/extended-brand-anatomy.json",
+          "json_path": "$.sections.brand_mood_and_brand_imagery.material_witness_mood_system.front_frame.file_path"
+        }
+      ],
+      "replacement_stage3": [
+        {
+          "asset_id": "ST3-WHY-MORA-MAKER-41",
+          "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/narrative/mora-why-mora-maker-r2.png",
+          "status": "ready",
+          "target_role": "registered_brand_mood_anchor"
+        },
+        {
+          "asset_id": "ST3-GLASS-CONTEXT-R2-65",
+          "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/glass-context/mora-glass-final-inspection-front-r2.png",
+          "status": "ready",
+          "target_role": "final_inspection_front_support"
+        }
+      ],
+      "new_stage2_destination": [
+        {
+          "role": "registered_brand_mood_anchor",
+          "path": "assets/brand-mood/mora-why-mora-maker-r2.png"
+        },
+        {
+          "role": "final_inspection_front_support",
+          "path": "assets/brand-mood/mora-glass-final-inspection-front-r2.png"
+        }
+      ],
+      "prompt_wrapper": "prompts/revision-r2/ST2-BRAND-MOOD-WHY-MORA-R2.md",
+      "migration_action": "split_old_overloaded_asset_binding_into_story_anchor_and_glass_context_support"
+    },
+    {
+      "source_asset_id": "ST2-BRAND-MOOD-SIDE-03",
+      "source_paths": [
+        "assets/brand-mood/mora-direct-print-inspection-side-v2.png"
+      ],
+      "pointer_locations": [
+        {
+          "source": "outputs/extended-brand-anatomy.json",
+          "json_path": "$.sections.brand_mood_and_brand_imagery.material_witness_mood_system.side_frame.file_path"
+        },
+        {
+          "source": "outputs/extended-brand-anatomy.json",
+          "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[0].file_path"
+        }
+      ],
+      "replacement_stage3": [
+        {
+          "asset_id": "ST3-GLASS-CONTEXT-R2-66",
+          "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/glass-context/mora-glass-final-inspection-side-r2.png",
+          "status": "ready"
+        }
+      ],
+      "new_stage2_destination": "assets/brand-mood/mora-glass-final-inspection-side-r2.png",
+      "migration_action": "replace_in_place_semantically_after_copy_and_asset_review"
+    },
+    {
+      "source_asset_id": "ST2-PACKAGE-ANATOMY-03",
+      "source_paths": [
+        "assets/packaging-system/mora-clear-witness-anatomy-v2.png"
+      ],
+      "pointer_locations": [
+        {
+          "source": "outputs/extended-brand-anatomy.json",
+          "json_path": "$.sections.brand_mood_and_brand_imagery.material_witness_mood_system.package_anatomy_support.file_path"
+        },
+        {
+          "source": "outputs/extended-brand-anatomy.json",
+          "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[1].file_path"
+        }
+      ],
+      "replacement_stage3": [
+        {
+          "asset_id": "ST3-VESSEL-GLASS-R2-56",
+          "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/vessel/mora-glass-vessel-master-thin-cap-r2.png",
+          "status": "ready"
+        },
+        {
+          "asset_id": "ST3-VESSEL-GLASS-R2-57",
+          "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/vessel/mora-glass-vessel-closure-proof-r2.png",
+          "status": "ready"
+        },
+        {
+          "asset_id": "ST3-VESSEL-GLASS-R2-58",
+          "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/vessel/mora-glass-vessel-open-service-r2.png",
+          "status": "ready"
+        }
+      ],
+      "new_stage2_destination": "assets/packaging-system/mora-glass-vessel-record-anatomy-r2.png",
+      "migration_action": "compose_new_stage2_anatomy_from_three_locked_vessel_views"
+    },
+    {
+      "source_asset_id": "ST2-PRODUCT-THYME-HONEY-02",
+      "source_paths": [
+        "assets/product-series-clear/mora-thyme-honey-clear-frontal.png"
+      ],
+      "pointer_locations": [
+        {
+          "source": "outputs/extended-brand-anatomy.json",
+          "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[2].file_path"
+        }
+      ],
+      "replacement_stage3": [
+        {
+          "asset_id": "ST3-PRODUCT-GLASS-THYME-HONEY-59",
+          "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/products/mora-thyme-honey-glass-front-r2.png",
+          "status": "ready"
+        }
+      ],
+      "new_stage2_destination": "assets/product-series-glass/mora-thyme-honey-glass-front-r2.png",
+      "migration_action": "copy_or_register_locked_stage3_front_product_as_stage2_lineup_portrait"
+    },
+    {
+      "source_asset_id": "ST2-PRODUCT-FIG-LEAF-02",
+      "source_paths": [
+        "assets/product-series-clear/mora-fig-leaf-clear-frontal.png"
+      ],
+      "pointer_locations": [
+        {
+          "source": "outputs/extended-brand-anatomy.json",
+          "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[3].file_path"
+        }
+      ],
+      "replacement_stage3": [
+        {
+          "asset_id": "ST3-PRODUCT-GLASS-FIG-LEAF-60",
+          "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/products/mora-fig-leaf-glass-front-r2.png",
+          "status": "ready"
+        }
+      ],
+      "new_stage2_destination": "assets/product-series-glass/mora-fig-leaf-glass-front-r2.png",
+      "migration_action": "copy_or_register_locked_stage3_front_product_as_stage2_lineup_portrait"
+    },
+    {
+      "source_asset_id": "ST2-PRODUCT-ROASTED-BUCKWHEAT-02",
+      "source_paths": [
+        "assets/product-series-clear/mora-roasted-buckwheat-clear-frontal.png"
+      ],
+      "pointer_locations": [
+        {
+          "source": "outputs/extended-brand-anatomy.json",
+          "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[4].file_path"
+        }
+      ],
+      "replacement_stage3": [
+        {
+          "asset_id": "ST3-PRODUCT-GLASS-ROASTED-BUCKWHEAT-61",
+          "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/products/mora-roasted-buckwheat-glass-front-r2.png",
+          "status": "ready"
+        }
+      ],
+      "new_stage2_destination": "assets/product-series-glass/mora-roasted-buckwheat-glass-front-r2.png",
+      "migration_action": "copy_or_register_locked_stage3_front_product_as_stage2_lineup_portrait"
+    },
+    {
+      "source_asset_id": "ST2-PRODUCT-CITRUS-PEEL-02",
+      "source_paths": [
+        "assets/product-series-clear/mora-citrus-peel-clear-frontal.png"
+      ],
+      "pointer_locations": [
+        {
+          "source": "outputs/extended-brand-anatomy.json",
+          "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[5].file_path"
+        }
+      ],
+      "replacement_stage3": [
+        {
+          "asset_id": "ST3-PRODUCT-GLASS-CITRUS-PEEL-62",
+          "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/products/mora-citrus-peel-glass-front-r2.png",
+          "status": "ready"
+        }
+      ],
+      "new_stage2_destination": "assets/product-series-glass/mora-citrus-peel-glass-front-r2.png",
+      "migration_action": "copy_or_register_locked_stage3_front_product_as_stage2_lineup_portrait"
+    },
+    {
+      "source_asset_id": "ST2-PRODUCT-BLACK-SESAME-02",
+      "source_paths": [
+        "assets/product-series-clear/mora-black-sesame-clear-frontal.png"
+      ],
+      "pointer_locations": [
+        {
+          "source": "outputs/extended-brand-anatomy.json",
+          "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[6].file_path"
+        }
+      ],
+      "replacement_stage3": [
+        {
+          "asset_id": "ST3-PRODUCT-GLASS-BLACK-SESAME-63",
+          "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/products/mora-black-sesame-glass-front-r2.png",
+          "status": "ready"
+        }
+      ],
+      "new_stage2_destination": "assets/product-series-glass/mora-black-sesame-glass-front-r2.png",
+      "migration_action": "copy_or_register_locked_stage3_front_product_as_stage2_lineup_portrait"
+    },
+    {
+      "source_asset_id": "ST2-PRODUCT-OLIVE-OIL-SEA-SALT-02",
+      "source_paths": [
+        "assets/product-series-clear/mora-olive-oil-sea-salt-clear-frontal.png"
+      ],
+      "pointer_locations": [
+        {
+          "source": "outputs/extended-brand-anatomy.json",
+          "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[7].file_path"
+        }
+      ],
+      "replacement_stage3": [
+        {
+          "asset_id": "ST3-PRODUCT-GLASS-OLIVE-OIL-SEA-SALT-64",
+          "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/products/mora-olive-oil-sea-salt-glass-front-r2.png",
+          "status": "ready"
+        }
+      ],
+      "new_stage2_destination": "assets/product-series-glass/mora-olive-oil-sea-salt-glass-front-r2.png",
+      "migration_action": "copy_or_register_locked_stage3_front_product_as_stage2_lineup_portrait"
+    },
+    {
+      "source_asset_id": "ST2-PROCESS-FINISH-04",
+      "source_paths": [
+        "assets/process-world/mora-finish-counter.png"
+      ],
+      "pointer_locations": [
+        {
+          "source": "outputs/extended-brand-anatomy.json",
+          "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[11].file_path"
+        }
+      ],
+      "replacement_stage3": [
+        {
+          "asset_id": "ST3-GLASS-CONTEXT-R2-67",
+          "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/glass-context/mora-glass-customer-peel-spoon-front-r2.png",
+          "status": "dependency_pending",
+          "dependency": "prompt exists; final raster not present at audit time"
+        }
+      ],
+      "new_stage2_destination": "assets/process-world/mora-glass-customer-peel-spoon-front-r2.png",
+      "migration_action": "wait_for_stage3_67_then_replace_finish_service_visual"
+    }
+  ],
+  "retained_active_visuals": [
+    {
+      "asset_id": "ST2-PROCESS-STRAINING-01",
+      "path": "assets/process-world/mora-straining-whey.png",
+      "reason": "process image contains no primary-pack cup architecture"
+    },
+    {
+      "asset_id": "ST2-PROCESS-INFUSION-LIBRARY-02",
+      "path": "assets/process-world/mora-infusion-library.png",
+      "reason": "ingredient/infusion process image contains no primary-pack cup architecture"
+    },
+    {
+      "asset_id": "ST2-PROCESS-FOLDING-03",
+      "path": "assets/process-world/mora-low-shear-fold.png",
+      "reason": "folding process image contains no primary-pack cup architecture"
+    }
+  ],
+  "textual_migrations": [
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.editorial_structure.brand_in_one_sentence",
+      "current_value": "하나의 되직한 요거트 베이스와 하나의 투명한 컵을 고정하고, 여섯 재료가 서로 다른 준비 방식과 내부 흔적으로 머무는 과정을 보여 주는 브랜드.",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.editorial_structure.concept_snapshot.packaging",
+      "current_value": "MORA Clear Witness Cup — 실제 음식이 보이는 넓은 투명 유리, 검정 직접 인쇄, 완전 분리형 밀봉",
+      "required_rules": [
+        "rename_clear_witness_system",
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.source_grammar_application.causal_model.target_chain",
+      "current_value": "재료가 머문 결 → 실제 음식 상태를 숨기지 않음 → 투명 food-native vessel·검정 직접 인쇄·foil을 분리 → 충전·실링·최종 확인 → fill line·print edge·peel edge·spoon trace → 무엇이 만들어지고 보호되는지 이해",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.source_grammar_application.causal_model.material_rule",
+      "current_value": "음식은 색과 상태를 만들고, 투명 용기는 이를 드러내며, 검정 직접 인쇄는 사실을 고정하고, 도구는 과정을 증명한다.",
+      "required_rules": [
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.source_grammar_application.causal_model.material_roles[1]",
+      "current_value": "primary vessel contains food and survives validated fill, seal and cold chain",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.source_grammar_application.causal_model.material_roles[2]",
+      "current_value": "foil performs one-time full-perimeter sealing and a legible peel action",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.source_grammar_application.decisions[3].target_direction",
+      "current_value": "Treat the open cup, spoon mark, ingredient trace and concise recipe panel as the communication surface. Editorial copy should behave like a tasting note and fact card, not a newspaper or specimen label.",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.source_grammar_application.decisions[5].target_direction",
+      "current_value": "Separate edible yogurt, a validated transparent food-contact vessel, minimal black direct print, one-time peelable foil and outer cold-chain multipack. Show fill level, print registration, peel edge, tool contact and actual food trace.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print",
+        "preserve_external_fiber_only"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_positioning.proof[0]",
+      "current_value": "The opened cup visibly shows yogurt density and ingredient traces.",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.key_insight",
+      "current_value": "MORA의 차이는 포장 장식이 아니라, 열린 한 컵에서 보이는 요거트의 밀도와 재료가 안에 머문 흔적을 제품별로 명확히 구분하는 데서 생긴다.",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.landing_features[0].proof",
+      "current_value": "정면 오픈 컵과 한 번 떠낸 45도 클로즈업",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.landing_features[3].message",
+      "current_value": "150 g 낮고 넓은 컵, 크게 잡히는 필 탭, 넓은 입구가 열고 바로 떠먹는 용도를 명확히 한다.",
+      "required_rules": [
+        "replace_physical_geometry",
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_family.shared_architecture",
+      "current_value": "150 g 낮고 넓은 1회용 컵을 고정하고, 각 레시피는 하나의 주재료 조합, 하나의 감각 방향, 하나의 대표 사용 순간, 하나의 식용 표면 패턴으로 구분한다. 허브·그린·토스티드·브라이트·딥 방향이 아침·간식·작은 디저트 안에서 차이를 만들고, 세이보리 방향의 Olive Oil & Sea Salt가 동일 구조를 식사 곁까지 확장한다. 랜딩에서는 여섯 제품 모두를 closed pack, open cup, spoon cut의 같은 세 상태로 반복한다.",
+      "required_rules": [
+        "replace_physical_geometry"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_family.shared_invariants[0]",
+      "current_value": "모든 제품은 높이보다 입구가 넓게 느껴지는 150 g 단일 섭취 컵과 큰 필 탭을 사용해 '열고 떠먹기'를 즉시 이해시킨다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_family.shared_invariants[3]",
+      "current_value": "모든 포장은 L0 음식 → L1 투명 식품접촉 primary vessel → L2 최소 검정 직접 인쇄 → L3 one-time peelable foil → L4 외부 냉장 물류용 멀티팩의 기능 순서를 공유한다. 개별 컵에는 종이 라벨·슬리브·fiber collar·불투명 라벨형 패널을 두지 않는다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print",
+        "preserve_external_fiber_only"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_family.shared_invariants[4]",
+      "current_value": "모든 전면 정보는 MORA → 제품명 → 승인된 category wording → 검증된 순중량 순서로 투명 용기 외벽에 직접 인쇄한다. 법정 정보는 실제 시장·크기·가독성 검토 후 후면·하단·foil 또는 외부 팩에 배분하며 개인 이름·도시·조제 날짜 의식은 사용하지 않는다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_family.cognitive_invariants[0]",
+      "current_value": "사용자는 제품명을 보기 전에도 낮고 넓은 컵과 오픈 컵 사진으로 '한 번에 떠먹는 요거트'임을 이해한다.",
+      "required_rules": [
+        "replace_physical_geometry"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_family.differentiation_logic.fixed",
+      "current_value": "낮고 넓은 투명 primary vessel 비례, 한 검정 직접 인쇄 위계, full-perimeter foil, 비대칭 필 탭, 스푼 자국, 촬영 각도",
+      "required_rules": [
+        "replace_physical_geometry",
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_family.differentiation_logic.decision_rule",
+      "current_value": "색은 인쇄 장식이 아니라 투명 컵을 통해 보이는 실제 음식 trace에서만 나온다. 각 제품은 다른 식용 패턴을 가져 여섯 종을 흑백으로 보아도 veil, fleck, thread, marble, ribbon/emulsion/crystal의 차이로 구분되어야 한다. SKU별 인쇄색·띠·locator·배경 조명색은 사용하지 않는다.",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_family.physical_package_cues[1]",
+      "current_value": "전 둘레가 실제로 맞물리는 얇은 무광 알루미늄계 peelable foil과 한 손으로 잡히는 비대칭 필 탭; 종이 원판을 리드처럼 세우지 않는다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_family.physical_package_cues[3]",
+      "current_value": "개별 컵 정보는 투명 용기 외벽에 한 검정 잉크로 직접 인쇄한다. 종이 라벨·fiber collar·슬리브·스티커·불투명 패널·recipe color band는 사용하지 않는다.",
+      "required_rules": [
+        "preserve_direct_print",
+        "preserve_external_fiber_only"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_family.material_witness_pack.system_name",
+      "current_value": "MORA Clear Witness Cup",
+      "required_rules": [
+        "rename_clear_witness_system"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_family.material_witness_pack.rule",
+      "current_value": "음식은 색과 상태를 드러내고, 투명 용기는 이를 숨기지 않으며, 검정 직접 인쇄는 사실만 기록하고, foil과 도구는 밀봉·개봉·확인 행동을 증명한다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_family.material_witness_pack.layers[1].name",
+      "current_value": "Transparent direct-print primary food-contact vessel",
+      "required_rules": [
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_family.material_witness_pack.layers[1].direction",
+      "current_value": "low-wide transparent food-contact candidate with one restrained black direct-print system; no label-shaped opaque or frosted field; validate light, oxygen, moisture, migration, shelf life, condensation and rub",
+      "required_rules": [
+        "replace_physical_geometry",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_family.material_witness_pack.layers[2].job",
+      "current_value": "MORA, recipe, 승인된 category wording, 검증된 순중량과 필요한 사실을 투명 외벽에 직접 분류한다.",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_family.material_witness_pack.layers[3].name",
+      "current_value": "Peelable foil seal",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_family.material_witness_pack.layers[4].job",
+      "current_value": "sealed cups를 냉장 운송·진열 중 배열하고 물류·비교 정보를 제공한다. 냉장 자체를 만들지는 않는다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_family.material_witness_pack.assembly_sequence[3]",
+      "current_value": "place sealed cups in the tested cold-chain restraint",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_family.material_witness_pack.consumer_sequence[1]",
+      "current_value": "lift the asymmetrical foil tab",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_lineup[0].form_cues.package[0]",
+      "current_value": "Warm ivory low-wide cup",
+      "required_rules": [
+        "replace_physical_geometry"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_lineup[0].form_cues.use_signal",
+      "current_value": "Hero image shows a hand lifting one spoonful above the open cup while the cup and remaining furrow stay fully visible.",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_lineup[0].image_roles[0].brief",
+      "current_value": "45도 오픈 컵과 들어 올린 한 숟갈; 밀도, 150 g 한 컵 사용, 두 재료 흔적을 한 장에서 설명",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_lineup[0].image_roles[1].brief",
+      "current_value": "정면보다 약간 높은 각도의 닫힌 컵; 넓은 뚜껑과 큰 필 탭, amber/green 식별 영역 확인",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_lineup[1].form_cues.package[0]",
+      "current_value": "Warm ivory low-wide cup",
+      "required_rules": [
+        "replace_physical_geometry"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_lineup[1].form_cues.use_signal",
+      "current_value": "Open cup is shown beside a clean spoon, with the broad surface and peel-back lid visible; no serving bowl substitution.",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_lineup[2].form_cues.package[0]",
+      "current_value": "Warm ivory low-wide cup",
+      "required_rules": [
+        "replace_physical_geometry"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_lineup[2].image_roles[2].brief",
+      "current_value": "toasted ingredient field와 넓은 필 탭이 보이는 닫힌 컵",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_lineup[3].form_cues.package[0]",
+      "current_value": "Warm ivory low-wide cup",
+      "required_rules": [
+        "replace_physical_geometry"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_lineup[4].form_cues.package[0]",
+      "current_value": "Warm ivory low-wide cup",
+      "required_rules": [
+        "replace_physical_geometry"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_lineup[5].form_cues.package[0]",
+      "current_value": "The same transparent low-wide 150 g food-contact candidate vessel, one black direct-print hierarchy and one-time peelable foil used by the family.",
+      "required_rules": [
+        "replace_physical_geometry",
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_lineup[5].form_cues.package[1]",
+      "current_value": "The actual olive-gold ribbon is visible through the transparent sidewall and open cup; it is the primary recipe identifier and must remain distinct from Fig Leaf's sage trace.",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.product_lineup[5].image_roles[3].brief",
+      "current_value": "투명 sidewall과 열린 컵에서 보이는 실제 translucent oil ribbon을 나란히 놓아 음식색이 장식이 아니라 내용물 증거임을 보여 준다.",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.form_cues.shared[0]",
+      "current_value": "모든 제품은 높이보다 입구가 넓게 느껴지는 150 g 단일 섭취 컵과 큰 필 탭을 사용해 '열고 떠먹기'를 즉시 이해시킨다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.form_cues.shared[3]",
+      "current_value": "모든 포장은 L0 음식 → L1 투명 식품접촉 primary vessel → L2 최소 검정 직접 인쇄 → L3 one-time peelable foil → L4 외부 냉장 물류용 multipack의 기능 순서를 공유한다. 음식색은 투명 sidewall과 열린 컵에서 보이며 장식용 브랜드 포인트 컬러는 두지 않는다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print",
+        "preserve_external_fiber_only"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.form_cues.physical[1]",
+      "current_value": "전면에서 보이는 큰 필 탭과 평평한 밀봉 리드; 닫힌 팩 이미지에서도 개봉 방향이 읽혀야 한다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.form_cues.physical[2]",
+      "current_value": "투명 food-contact vessel, black direct print, matte foil과 outer carrier가 서로 다른 기능과 물성으로 읽힌다. 종이 라벨·fiber collar·슬리브·스티커·종이 뚜껑·금박·향수형 캡·병목·약국형 격자 라벨은 배제한다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print",
+        "preserve_external_fiber_only"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.form_cues.physical[3]",
+      "current_value": "투명 vessel은 방향성 기준안이며 barrier·migration·seal·cold-chain·shelf-life·condensation·print-rub 시험 후 생산 사양으로 확정한다. 외관만으로 재활용·생분해·친환경성·freshness를 암시하지 않는다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.proof_image_roles[0].communication_job",
+      "current_value": "낮고 넓은 150 g 컵, 깊은 spoon furrow, 들어 올린 한 숟갈, honey ribbon과 thyme fleck를 한 장에 보여 제품 정의를 즉시 이해시킨다.",
+      "required_rules": [
+        "replace_physical_geometry"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.proof_image_roles[1].communication_job",
+      "current_value": "동일한 transparent vessel·black direct print·foil 구조 속에서 sidewall과 열린 컵의 실제 음식 흔적만 바뀌는 여섯 제품 가족 구조를 증명하며, Fig Leaf sage와 Olive Oil & Sea Salt olive-gold가 명확히 분리되어야 한다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.proof_image_roles[4].communication_job",
+      "current_value": "closed cup → peel → scoop 세 상태로 150 g 한 컵의 실제 사용을 설명한다.",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.actual_manufacturing_direction.process_sequence[7].step",
+      "current_value": "08 Cup → Seal",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.actual_manufacturing_direction.process_sequence[7].tools",
+      "current_value": "low-shear filler, check scale, cup sealer, monitored cold storage",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.landing_product_concept.actual_manufacturing_direction.process_sequence[7].output",
+      "current_value": "sealed refrigerated MORA cup",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.narrative_routes[0].sequence[0]",
+      "current_value": "Open cup and spoon cut",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.narrative_routes[2].summary",
+      "current_value": "Lead with a consistent cup architecture and compare how each ingredient changes the ending.",
+      "required_rules": [
+        "replace_physical_geometry"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.visual_branding_and_key_visual.key_insight",
+      "current_value": "MORA의 비주얼은 개별 종이 라벨을 제거하고 음식 자체를 가장 큰 색·텍스처 면으로 쓴다. 투명 vessel은 상태를 드러내고, 검정 직접 인쇄는 사실을 기록하며, foil·손·도구는 보호와 최종 확인 행동을 증명한다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.visual_branding_and_key_visual.communication_job",
+      "current_value": "제품 key visual은 실제 음식 → transparent food-contact vessel → black direct print → peelable foil의 관계를 설명하고, 직교 brand-mood pair는 밀봉된 직접 인쇄 컵의 fill·seal·print 상태를 확인하는 하나의 동작을 증명한다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.visual_branding_and_key_visual.premise",
+      "current_value": "음식은 색을 만들고, 투명 용기는 상태를 드러내며, 검정 잉크는 사실을 고정한다. 도구는 과정을 수행하고 fill line, print edge, peel edge와 edible trace가 크래프트를 증명한다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.visual_branding_and_key_visual.focal_actor",
+      "current_value": "열린 150 g 컵의 실제 요거트 trace와 투명 sidewall을 통해 보이는 fill level, curved black direct print, primary-vessel rim과 matte foil",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.visual_branding_and_key_visual.series_rule",
+      "current_value": "모든 레시피에서 같은 낮고 넓은 열린 컵을 30–35도 시점과 같은 화면 비율로 보여 주고, 한 번의 스푼 당김으로 초승달형 골을 만든다. 실제 배합에서 확인된 재료의 입자·리본·결만 골 안팎에 남기고, 원재료 한 묶음을 화면 가장자리 한 곳에 둔다. 카메라·광원·컵 크기·활자 위치는 고정하고 레시피명, 실제 흔적, 사용 순간만 바꾼다. 재료색 표식은 음식 영역 밖의 좁은 식별 마커에만 쓴다.",
+      "required_rules": [
+        "replace_physical_geometry"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.visual_branding_and_key_visual.series_rule_spec.fixed_invariants[0]",
+      "current_value": "낮고 넓은 150 g 컵이 화면의 주역이다.",
+      "required_rules": [
+        "replace_physical_geometry"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.visual_branding_and_key_visual.series_rule_spec.ingredient_color_boundary",
+      "current_value": "제품색은 투명 용기와 열린 컵에서 보이는 실제 음식 trace로만 만든다. 개별 컵의 SKU 인쇄색·마커·밴드·탭·불투명 backing field는 사용하지 않으며 CTA·링크·섹션 배경에도 재사용하지 않는다.",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.visual_branding_and_key_visual.surface_translation.landing_hero",
+      "current_value": "대표 Thyme Honey의 open cup과 sealed companion을 함께 보여 food → transparent vessel → direct print → foil의 차이를 첫 화면에서 읽히게 하고, 좌측 연속 여백에 한 문장과 제품 형식·용량을 둔다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.visual_branding_and_key_visual.surface_translation.lineup_grid",
+      "current_value": "여섯 투명 컵을 같은 크기와 각도로 반복하고 실제 음식 trace, 제품명과 예상 질감 설명만 바꾼다.",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.visual_branding_and_key_visual.surface_translation.packaging",
+      "current_value": "검증 대기 중인 투명 food-contact vessel, 한 검정 직접 인쇄, matte foil과 outer carrier를 기능층으로 분리한다. 개별 종이 라벨·fiber collar·recipe-color locator는 없다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print",
+        "preserve_external_fiber_only"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.visual_branding_and_key_visual.surface_translation.process_pair",
+      "current_value": "Final Check Frame A와 B를 같은 높이의 두 패널로 연결해 정면에서 print/fill 정렬을, 측면에서 cup wall·fill level·foil edge·scale contact를 읽게 한다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.visual_branding_and_key_visual.surface_translation.responsive",
+      "current_value": "모바일에서는 정면 다음 측면 순서로 쌓고 두 프레임의 cup baseline, maker scale, foil-tab orientation과 action phase를 일치시킨다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.visual_branding_and_key_visual.avoid[2]",
+      "current_value": "향수병처럼 세운 투명 용기, 화장품 크림처럼 보이는 매끈한 흰 스월",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.visual_branding_and_key_visual.generated_anchor_fit[2]",
+      "current_value": "요거트 능선, 꿀 리본, 타임 입자, 스푼 한 번의 사용과 transparent vessel·black direct print·foil의 서로 다른 재료 응답이 한 장에서 읽힌다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.visual_branding_and_key_visual.mood_series_relationship",
+      "current_value": "One Cup, One Trace는 투명 컵 안 제품별 실제 재료 흔적을 비교한다. The Final Check, Two Axes는 동일 maker·sealed direct-print cup·scale·검사 위상을 고정하고 카메라만 100% 정면과 엄격한 90도 측면으로 이동한다. 제품 시리즈는 먹는 결과를, 무드 시리즈는 fill·print·seal 상태를 확인하는 마지막 손동작을 맡는다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.visual_branding_and_key_visual.material_witness_visual_system.rule",
+      "current_value": "food reveals and colors; transparent vessel discloses; direct black print records; foil and tools act; causally visible fill, print, peel and food traces prove",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.visual_branding_and_key_visual.material_witness_visual_system.hero_states[1]",
+      "current_value": "sealed companion with full-perimeter matte foil and pull tab",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.visual_branding_and_key_visual.material_witness_visual_system.hero_states[2]",
+      "current_value": "transparent primary-vessel wall and rim visible as a separate material",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.visual_branding_and_key_visual.material_witness_visual_system.material_contrast",
+      "current_value": "clear molded polymer · one black direct print · thin matte metal · dense dairy surface · brushed stainless tool",
+      "required_rules": [
+        "replace_polymer_primary_pack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.visual_branding_and_key_visual.material_witness_visual_system.modernity_rule",
+      "current_value": "precision of fill, print registration, foil plane, transparent wall and hard-but-broad light creates premium tension; paper collar, rustic kraft, deckle, twine, wax, stains, sepia and faux wear are prohibited",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.visual_branding_and_key_visual.material_witness_visual_system.candidate_boundary",
+      "current_value": "current clear-vessel imagery is a direction, not a production claim; transparent material, ink and foil remain subject to barrier, migration, seal, condensation, rub and shelf-life tests",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.key_insight",
+      "current_value": "Final Check, Two Axes는 craft를 장식하지 않는다. 같은 투명 direct-print cup의 print placement, fill, foil edge와 clarity를 front와 exact side에서 확인하며, premium tension을 실제 음식·투명 벽·검정 정보·밀봉의 정렬에서 만든다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.communication_job",
+      "current_value": "동일 maker가 이미 인쇄·충전·밀봉된 투명 컵을 마지막으로 시각 검사하는 같은 순간을 정면과 측면으로 보여 주되, specific printing method, SOP, numeric tolerance, founder biography 또는 paper assembly를 발명하지 않는다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.emotional_and_cultural_register[2]",
+      "current_value": "어두운 럭셔리가 아니라 통제된 방향광과 보존된 fiber·foil·polymer 디테일이 만드는 현대적 프리미엄",
+      "required_rules": [
+        "replace_polymer_primary_pack",
+        "rebuild_closure_stack",
+        "preserve_external_fiber_only"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.emotional_and_cultural_register[3]",
+      "current_value": "완벽한 CGI 표면보다 피부, 직물, 압축 섬유, 성형 cup, foil과 stainless의 실제 편차",
+      "required_rules": [
+        "replace_polymer_primary_pack",
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.world_setting_people[1]",
+      "current_value": "Frame A에서는 몸·작업대·sealed cup을 100% 정면으로 정렬하고 Frame B에서는 동일한 final-check 동작을 strict 90-degree side profile로 기록한다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.world_setting_people[2]",
+      "current_value": "인물은 카메라를 응시하거나 제품을 과시하지 않고, direct print·fill·foil edge와 clear wall의 관계를 보며 실제 시각 검사 동작을 수행한다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.materials_and_sensory_cues[0]",
+      "current_value": "foil 위로 드러나는 정확한 primary-vessel rim과 비대칭 pull tab",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.materials_and_sensory_cues[1]",
+      "current_value": "실제 음식이 보이는 transparent molded wall, 최소 black direct print, continuous flange와 flat foil edge",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.materials_and_sensory_cues[2]",
+      "current_value": "현대적인 compact stainless cup sealer, brushed packing table과 sealed cup의 물리적 접촉",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.materials_and_sensory_cues[3]",
+      "current_value": "cool mineral plaster wall, charcoal cotton, clear vessel, dense food, matte foil와 black factual ink",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.image_series_roles[0].required_content",
+      "current_value": "동일 maker, centered frontal symmetry, transparent direct-print sealed cup, visible foil tab, idle stainless cup sealer, modern packing table",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.image_series_roles[1].communication_job",
+      "current_value": "clear wall, fill, print arc, foil edge와 손의 접촉을 설명",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.image_series_roles[1].required_content",
+      "current_value": "same maker and final-check phase, strict side profile, unobstructed wall-to-fill-to-print-to-foil contact chain",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.image_series_roles[2].communication_job",
+      "current_value": "transparent direct-print vessel, peelable foil, spoon과 outer carrier의 역할을 분리",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print",
+        "preserve_external_fiber_only"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.generated_anchor_fit[0]",
+      "current_value": "후면 벽·작업대가 이미지 평면과 평행하고, maker의 양어깨·양손·sealed cup이 중앙 정면축에 놓인다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.generated_anchor_fit[1]",
+      "current_value": "foil이 이미 밀봉된 상태에서 두 손이 direct print·fill·foil edge와 clear wall의 관계를 확인하는 한 동작으로 연결된다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.generated_anchor_fit[2]",
+      "current_value": "compact stainless cup sealer는 실제 선행 공정을 암시하되 손동작보다 앞서지 않으며, food·clear wall·black ink·foil의 차이가 방향광 아래 분리된다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.series_rule",
+      "current_value": "동일 maker·옷·packing table·transparent direct-print sealed cup·foil-tab orientation·final-check phase·idle cup sealer·조명을 고정한다. 카메라만 action center를 중심으로 정확히 90도 이동해 Frame A의 100% 정면과 Frame B의 90도 측면을 만든다. 두 장의 horizon, cup baseline, maker scale, white balance와 package geometry를 맞추고 다른 3/4 보조 시점은 이 대표 시리즈에 추가하지 않는다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.material_witness_mood_system.verbal_premise",
+      "current_value": "같은 사람이 이미 direct-printed, filled and foil-sealed cup을 같은 검사 순간에 봅니다. 정면에서는 print·fill·seal alignment를, 측면에서는 wall·foil edge·hand contact를 봅니다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.material_witness_mood_system.front_frame.communication_job",
+      "current_value": "100% frontal symmetry로 MORA/recipe print origin, fill level, continuous foil edge, maker hands와 cup axis를 정렬한다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.material_witness_mood_system.side_frame.communication_job",
+      "current_value": "strict right-side profile로 clear wall, fill, print arc, flange/foil edge와 hand-cup contact를 한 focal plane에서 보여 준다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.material_witness_mood_system.series_lock.action",
+      "current_value": "same already printed, filled and foil-sealed Thyme Honey cup is lightly indexed by hand and visually checked; one hand steadies the side/base and the other lightly indexes the opposite side; no printing, filling, sealing, coding, wiping, peeling or paper fitting",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.material_witness_mood_system.series_lock.package",
+      "current_value": "same transparent low-wide vessel, actual fill, exterior black art, foil-tab orientation and clear-wall geometry",
+      "required_rules": [
+        "replace_physical_geometry",
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.material_witness_mood_system.series_lock.workspace",
+      "current_value": "cool mineral plaster wall, brushed stainless packing table and the same compact idle cup sealer",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.material_witness_mood_system.series_lock.camera_pair",
+      "current_value": "front and side remain 3:2 horizontal, same camera height, 45–50 mm lens family, subject scale, cup baseline and moderate depth; only azimuth changes 0° to exact 90°",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.material_witness_mood_system.series_lock.material_truth",
+      "current_value": "actual food, transparent wall, exterior black print, foil and stainless each retain a distinct response; no individual paper and no claimed print method, adhesion result or numeric SOP",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.material_witness_mood_system.physical_qa[2]",
+      "current_value": "front shows print/fill/seal alignment while side shows clear wall/fill/foil/contact without ghost text",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.material_witness_mood_system.package_anatomy_support.communication_job",
+      "current_value": "transparent direct-print cup, removable foil, spoon and external two-cup molded-fiber carrier를 한 건식 지면에 분리해 각 재료의 기능을 보여 준다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print",
+        "preserve_external_fiber_only"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.material_witness_mood_system.package_anatomy_support.boundary",
+      "current_value": "generated material-direction image; exact resin, foil laminate, fiber stock, coatings, print method, recyclability and production feasibility remain unverified",
+      "required_rules": [
+        "replace_polymer_primary_pack",
+        "rebuild_closure_stack",
+        "preserve_external_fiber_only"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[0].communication_job",
+      "current_value": "동일 maker와 같은 final-check phase를 엄격한 90도 측면에서 보여 clear wall, fill, print arc, foil edge와 손의 접촉 관계를 설명한다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[0].subject",
+      "current_value": "Same food maker in charcoal apron, strict right-side profile, visually inspecting an already-filled and foil-sealed transparent direct-print yogurt cup",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[0].invariants[0]",
+      "current_value": "same maker, charcoal apron, transparent direct-print sealed cup, final-check phase, cup sealer and modern packing table as the frontal anchor",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[0].invariants[2]",
+      "current_value": "clear wall, actual fill, print arc, foil edge, both hands and cup contact visible in one lateral action plane",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[1].communication_job",
+      "current_value": "transparent direct-print primary cup, peelable foil, spoon and external molded-fiber carrier를 한 건식 지면에서 분리해 food visibility, sealing, use and multipack restraint 역할을 비교한다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print",
+        "preserve_external_fiber_only"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[1].invariants[0]",
+      "current_value": "transparent direct-print primary cup, foil seal and outer two-cup carrier remain separate complete objects",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print",
+        "preserve_external_fiber_only"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[2].invariants[0]",
+      "current_value": "same low-wide 150 g transparent food-contact candidate vessel, removed flat matte foil and one black direct-print hierarchy",
+      "required_rules": [
+        "replace_physical_geometry",
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[2].invariants[2]",
+      "current_value": "same square crop, cup scale, removed-foil position, spoon position, camera family and warm neutral set",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[2].invariants[3]",
+      "current_value": "only product name, actual food through the transparent sidewall, edible trace and one restrained ingredient/use cue change",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[2].invariants[6]",
+      "current_value": "Thyme Honey color remains in actual food trace visible through the clear wall; no paper, backing field or decorative swatch",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[3].invariants[0]",
+      "current_value": "same low-wide 150 g transparent food-contact candidate vessel, removed flat matte foil and one black direct-print hierarchy",
+      "required_rules": [
+        "replace_physical_geometry",
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[3].invariants[2]",
+      "current_value": "same square crop, cup scale, removed-foil position, spoon position, camera family and warm neutral set",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[3].invariants[3]",
+      "current_value": "only product name, actual food through the transparent sidewall, edible trace and one restrained ingredient/use cue change",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[3].invariants[6]",
+      "current_value": "Fig Leaf direction remains in actual food trace visible through the clear wall; no paper, backing field or decorative sage swatch",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[4].generation_provenance",
+      "current_value": "OpenAI built-in image generation; generated 2026-08-26 from the prior Roasted Buckwheat portrait and Material Witness hero, then corrected by targeted edits to remove an erroneous upright paper disc and restore one flat matte foil membrane.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[4].invariants[0]",
+      "current_value": "same low-wide 150 g transparent food-contact candidate vessel, removed flat matte foil and one black direct-print hierarchy",
+      "required_rules": [
+        "replace_physical_geometry",
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[4].invariants[2]",
+      "current_value": "same square crop, cup scale, removed-foil position, spoon position, camera family and warm neutral set",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[4].invariants[3]",
+      "current_value": "only product name, actual food through the transparent sidewall, edible trace and one restrained ingredient/use cue change",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[4].invariants[6]",
+      "current_value": "Roasted Buckwheat color remains in actual food trace visible through the clear wall; no paper, kraft backing or brown swatch",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[5].invariants[0]",
+      "current_value": "same low-wide 150 g transparent food-contact candidate vessel, removed flat matte foil and one black direct-print hierarchy",
+      "required_rules": [
+        "replace_physical_geometry",
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[5].invariants[2]",
+      "current_value": "same square crop, cup scale, removed-foil position, spoon position, camera family and warm neutral set",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[5].invariants[3]",
+      "current_value": "only product name, actual food through the transparent sidewall, edible trace and one restrained ingredient/use cue change",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[5].invariants[6]",
+      "current_value": "Citrus Peel color remains in actual food trace visible through the clear wall; no paper, backing field or orange swatch",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[6].invariants[0]",
+      "current_value": "same low-wide 150 g transparent food-contact candidate vessel, removed flat matte foil and one black direct-print hierarchy",
+      "required_rules": [
+        "replace_physical_geometry",
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[6].invariants[2]",
+      "current_value": "same square crop, cup scale, removed-foil position, spoon position, camera family and warm neutral set",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[6].invariants[3]",
+      "current_value": "only product name, actual food through the transparent sidewall, edible trace and one restrained ingredient/use cue change",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[6].invariants[6]",
+      "current_value": "Black Sesame color remains in actual food trace visible through the clear wall; no paper, backing field, all-black pack or charcoal swatch",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[7].invariants[0]",
+      "current_value": "same low-wide 150 g transparent food-contact candidate vessel, removed flat matte foil and one black direct-print hierarchy",
+      "required_rules": [
+        "replace_physical_geometry",
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[7].invariants[2]",
+      "current_value": "same square crop, cup scale, removed-foil position, spoon position, camera family and warm neutral set",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[7].invariants[3]",
+      "current_value": "only product name, actual food through the transparent sidewall, edible trace and one restrained ingredient/use cue change",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[7].invariants[6]",
+      "current_value": "Olive Oil & Sea Salt color remains in actual food trace visible through the clear wall; no paper, backing field, metallic or olive decorative swatch",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[11].invariants[0]",
+      "current_value": "one edible single-serve cup is the outcome",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.brand_mood_and_brand_imagery.brand_world_and_craft_system.functional_tool_language[7]",
+      "current_value": "low-shear filler, cup sealer and monitored cold storage",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.key_insight",
+      "current_value": "MORA의 제품 고유성은 낮고 넓은 투명 한 컵, 외벽의 최소 검정 직접 인쇄, 열린 뒤 드러나는 실제 질감과 flat foil이 서로 다른 기능층으로 읽히는 데서 생긴다.",
+      "required_rules": [
+        "replace_physical_geometry",
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.product_visual_traits.silhouette_or_screen_anatomy[0]",
+      "current_value": "방향성 비례는 지름:높이 약 1.55:1의 낮고 넓은 150 g 컵이다.",
+      "required_rules": [
+        "replace_physical_geometry"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.product_visual_traits.silhouette_or_screen_anatomy[2]",
+      "current_value": "상단 closure는 primary flange에 전 둘레 밀봉된 얇은 matte foil과 한 손으로 잡히는 비대칭 tab이며, 개봉 후 완전히 분리된다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.product_visual_traits.proportion_hierarchy_density[0]",
+      "current_value": "투명 외벽의 넓은 무구획 면에 검정 직접 인쇄를 놓고 음식 상태가 글자 사이와 주변에서 계속 보이게 한다.",
+      "required_rules": [
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.product_visual_traits.proportion_hierarchy_density[3]",
+      "current_value": "재료색은 투명 sidewall과 열린 컵의 실제 음식에서만 읽히며, 별도 SKU locator·색띠·foil 색·불투명 backing field는 사용하지 않는다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.product_visual_traits.material_surface_or_component_character[0]",
+      "current_value": "primary vessel은 transparent food-contact candidate, closure는 thin matte foil, exterior information은 one black direct print로 서로 다른 반사·두께를 가진다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.product_visual_traits.material_surface_or_component_character[3]",
+      "current_value": "직접 인쇄는 투명 벽의 넓은 무구획 면과 선명한 글자를 사용하고 약국식 사각 테이블·세로 구분선·도장 질감·faux distress를 피한다.",
+      "required_rules": [
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.product_visual_traits.controls_states_feedback_visible_in_imagery[0]",
+      "current_value": "sealed: flat foil plane, asymmetrical tab, transparent sidewall, direct black recipe name과 실제 fill level이 함께 보이는 미개봉 상태",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.truth_boundaries[7]",
+      "current_value": "Keep MORA's food-native low-wide transparent vessel, minimal black direct print, full-perimeter peelable foil and edible ingredient trace; do not introduce paper labels, fiber collars, Le Labo labels, name-plus-number architecture, perfume vessels, individualized production labels or laboratory trade dress.",
+      "required_rules": [
+        "replace_physical_geometry",
+        "rebuild_closure_stack",
+        "preserve_direct_print",
+        "preserve_external_fiber_only"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.truth_boundaries[8]",
+      "current_value": "현재 transparent primary vessel과 direct-print construction은 방향성 이미지다. 실제 food-contact, barrier, light, seal, cold-chain, condensation, print cure/rub, code and shelf-life 검증 전 생산 사양이나 지속가능성 근거로 표현하지 않는다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.product_image_direction.hero_form[0]",
+      "current_value": "Thyme Honey의 open cup과 sealed companion을 자연스러운 50 mm 원근의 3/4 시점으로 오른쪽에 배치하고 왼쪽 45%를 카피 안전 영역으로 둔다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.product_image_direction.hero_form[1]",
+      "current_value": "MORA·THYME HONEY의 검정 직접 인쇄, transparent food-contact vessel, matte foil, 열린 요거트 표면, 스푼과 한 번 떠낸 질감을 함께 보여 준다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.product_image_direction.feature_detail[1]",
+      "current_value": "primary rim, transparent wall·fill line·refraction, foil tab·peel edge, direct black-ink edge와 스푼이 지나간 단면을 사실적으로 기록한다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.product_image_direction.use_interaction[0]",
+      "current_value": "한 손이 foil을 완전히 벗기거나 한 번 떠먹는 장면만 사용해 제품을 가리지 않는다. Final Check Table은 sealed direct-print cup의 fill·print·seal 상태를 확인하는 별도 한 동작만 사용한다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.product_image_direction.camera_light_background_crop_retouching[2]",
+      "current_value": "배경은 #FFFDF7 또는 cool mineral gray에 가까운 무광 식품 표면·혼드 스톤·brushed stainless를 사용해 white food, clear polymer, silver foil와 dark ink를 분리한다.",
+      "required_rules": [
+        "replace_polymer_primary_pack",
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.lineup_visual_map[5].color_use",
+      "current_value": "actual edible trace only on the individual cup; no recipe-color locator, band, foil cue or package accent",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.lineup_visual_map[5].primary_image_job",
+      "current_value": "explain the savory meal-adjacent endpoint without changing the shared yogurt cup architecture",
+      "required_rules": [
+        "replace_physical_geometry"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.supporting_product_series.fixed_invariants[0]",
+      "current_value": "same low-wide 150 g transparent food-contact candidate vessel, one black direct-print hierarchy and matte removable foil",
+      "required_rules": [
+        "replace_physical_geometry",
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.supporting_product_series.fixed_invariants[2]",
+      "current_value": "same square crop, cup scale, removed-flat-foil position, spoon position, camera family and warm neutral set",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.supporting_product_series.fixed_invariants[3]",
+      "current_value": "only product name, actual food visible through the transparent sidewall, edible trace and one restrained ingredient/use cue change",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.supporting_product_series.controlled_variables[1]",
+      "current_value": "actual edible color visible through the transparent sidewall; no printed recipe-color locator",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.supporting_product_series.qa[3]",
+      "current_value": "Ingredient color remains in the actual edible trace visible through the transparent sidewall rather than becoming a global brand accent.",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.supporting_product_series.qa[4]",
+      "current_value": "All six portraits show one continuous transparent primary vessel, direct black print and fully removed flat foil; no paper label, collar, sleeve, sticker or opaque backing field.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.supporting_product_series.qa[5]",
+      "current_value": "The transparent primary-vessel and direct-print treatment is directional and does not claim validated barrier, ink, seal or shelf-life performance.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.design_token_direction.key_insight",
+      "current_value": "MORA의 토큰은 중립 구조라는 소스의 역할만 이어받고, 베이지 종이 표면으로 물성을 평준화하지 않는다. UI 중립, actual food color, transparent primary vessel, matte foil와 direct black factual ink를 서로 다른 역할층으로 분리한다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.design_token_direction.material_color_policy.priority_order[1]",
+      "current_value": "physical package-material response: transparent molded vessel, matte silver foil and direct black ink",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.design_token_direction.material_color_policy.package_rule",
+      "current_value": "The current six portraits use actual food through a transparent sidewall. The individual cup uses black direct print only; no printed recipe locator, color band, paper label, fiber collar, sleeve, sticker or opaque backing field.",
+      "required_rules": [
+        "preserve_direct_print",
+        "preserve_external_fiber_only"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.design_token_direction.material_color_policy.material_rule",
+      "current_value": "Transparent polymer reveals, silver foil seals, black ink records and outer fiber only restrains multiple cups. None is marketed as natural, sustainable, recyclable or premium merely from appearance.",
+      "required_rules": [
+        "replace_polymer_primary_pack",
+        "rebuild_closure_stack",
+        "preserve_external_fiber_only"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.design_token_direction.spacing[3].target_direction",
+      "current_value": "desktop_px: 48–72 · tablet_px: 32–48 · mobile_px: 20–24 · rule: 컵이 가장자리와 접하지 않도록 최소 한 컵 반경 확보",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.sections.design_token_direction.shape[0].target_direction",
+      "current_value": "diameter_height_ratio: approximately 1.55:1 · primary wall: transparent food-contact candidate with light taper, restrained refraction and one black direct-print hierarchy · transitions: food-safe radiused rim and foot · seal: thin full-perimeter matte foil with one asymmetrical pull tab · unit label: none",
+      "required_rules": [
+        "replace_physical_geometry",
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.moodboard_inputs.brand_mood_images[0]",
+      "current_value": "Final Check, Two Axes — already direct-printed, filled and foil-sealed clear cup을 확인하는 동일 maker의 strict frontal declaration",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.moodboard_inputs.brand_mood_images[1]",
+      "current_value": "Final Check, Two Axes — 같은 final-check phase를 보여 주는 strict right-side clear-wall·foil-contact proof",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.moodboard_inputs.brand_mood_images[2]",
+      "current_value": "두 장 모두 차콜 앞치마, cool mineral wall, brushed stainless packing table, compact idle cup sealer, actual food, clear vessel, black direct print, matte foil와 dramatic motivated daylight",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.moodboard_inputs.brand_mood_images[3]",
+      "current_value": "Package Anatomy — transparent direct-print cup, matte foil, spoon, outer molded-fiber carrier의 분리된 material-role proof",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print",
+        "preserve_external_fiber_only"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.moodboard_inputs.product_description[0]",
+      "current_value": "150 g 방향성 규격의 낮고 넓은 transparent food-contact primary vessel, exterior black direct print와 full-perimeter matte peelable foil",
+      "required_rules": [
+        "replace_physical_geometry",
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.moodboard_inputs.product_image_generation[6]",
+      "current_value": "Clear Food, Fixed Facts — six square frontal product portraits with fixed transparent direct-print cup geometry, open yogurt surface, fully removed flat foil, spoon and actual food visible through the clear wall",
+      "required_rules": [
+        "replace_physical_geometry",
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "outputs/extended-brand-anatomy.json",
+      "json_path": "$.boundaries.assumptions[11]",
+      "current_value": "개별 컵에는 paper label, fiber sleeve/collar, adhesive sticker 또는 recipe-color ink를 쓰지 않는다. 외면 검정 direct print, foil, variable code와 외부 multipack의 재료·잉크·접착·barrier·recovery·recycling·freshness·tamper·leak·cold claims는 실제 사양과 지역 검증 전 확정하지 않는다.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print",
+        "preserve_external_fiber_only"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "asset-registry.json",
+      "json_path": "$.assets[0].communication_job",
+      "current_value": "한 장에서 MORA의 열린 음식, transparent food-contact vessel, direct black print, one-time peelable foil와 카피 안전 영역을 분리해 설명한다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "asset-registry.json",
+      "json_path": "$.assets[0].subject",
+      "current_value": "MORA Thyme Honey Clear Witness hero with open and sealed transparent direct-print Greek-yogurt cups",
+      "required_rules": [
+        "rename_clear_witness_system",
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "asset-registry.json",
+      "json_path": "$.assets[0].generation_provenance",
+      "current_value": "OpenAI built-in image generation edit; generated 2026-08-25 from the revision 6 hero while preserving food, composition, foil, light and props and changing only both unit packs to transparent direct-print cups. Original preserved under .work/revision7_hero_anatomy_assets/generated-originals/.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "asset-registry.json",
+      "json_path": "$.assets[0].invariants[0]",
+      "current_value": "low-wide transparent food-native primary vessel with credible wall, rim, refraction and complete contact shadow",
+      "required_rules": [
+        "replace_physical_geometry"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "asset-registry.json",
+      "json_path": "$.assets[0].invariants[4]",
+      "current_value": "MORA and THYME HONEY are printed directly in black on both clear walls without backing fields",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "asset-registry.json",
+      "json_path": "$.assets[0].invariants[5]",
+      "current_value": "matte foil is a separate one-time seal; no individual paper label, sleeve, fiber collar or sticker exists",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_external_fiber_only"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "asset-registry.json",
+      "json_path": "$.assets[0].invariants[6]",
+      "current_value": "transparent vessel and direct print are directional and do not claim validated material, ink, barrier or shelf-life performance",
+      "required_rules": [
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "asset-registry.json",
+      "json_path": "$.assets[1].communication_job",
+      "current_value": "동일 제작자가 이미 인쇄·충전·밀봉된 투명 컵의 print placement, fill level, foil edge와 clarity를 마지막으로 확인하는 순간을 100% 정면에서 보여 준다.",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "asset-registry.json",
+      "json_path": "$.assets[1].subject",
+      "current_value": "Same food maker in charcoal apron, strictly frontal, visually inspecting an already-filled and foil-sealed transparent direct-print yogurt cup",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "asset-registry.json",
+      "json_path": "$.assets[1].generation_provenance",
+      "current_value": "OpenAI built-in image generation edit; generated 2026-08-26 from the prior frontal maker image while preserving identity, wardrobe, workspace, camera and light and replacing the paper-collar assembly with final inspection of a transparent direct-print sealed cup.",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "asset-registry.json",
+      "json_path": "$.assets[1].invariants[0]",
+      "current_value": "same maker, charcoal apron, transparent direct-print sealed cup, cup sealer and workspace as the side companion",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "asset-registry.json",
+      "json_path": "$.assets[1].invariants[1]",
+      "current_value": "strict 100% frontal sensor, wall, workbench and body geometry",
+      "required_rules": [
+        "replace_physical_vessel_semantics"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "asset-registry.json",
+      "json_path": "$.assets[1].invariants[2]",
+      "current_value": "maker, hands, direct print, fill and foil edge organized around one central frontal axis",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "asset-registry.json",
+      "json_path": "$.assets[1].invariants[3]",
+      "current_value": "one action only: visually inspect an already printed, filled and foil-sealed cup",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "asset-registry.json",
+      "json_path": "$.assets[1].invariants[4]",
+      "current_value": "no individual paper component exists and the matte foil tab remains visible",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "asset-registry.json",
+      "json_path": "$.assets[1].invariants[5]",
+      "current_value": "dramatic motivated daylight with preserved skin, cotton, clear wall, food, foil, black ink and steel detail",
+      "required_rules": [
+        "rebuild_closure_stack"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    },
+    {
+      "source": "asset-registry.json",
+      "json_path": "$.assets[1].allowed_variation[0]",
+      "current_value": "responsive crops that preserve head, both hands, sealed cup, direct print and foil tab",
+      "required_rules": [
+        "rebuild_closure_stack",
+        "preserve_direct_print"
+      ],
+      "replacement_contract": "Apply only the context-matched rules listed here: use MORA Glass Vessel Record and a heavy clear-glass wide-mouth primary vessel where this text describes packaging; keep a thin cap at 4–6% of closed-vessel height, a real peelable foil seal beneath the cap, and direct print on glass. Do not rewrite ordinary serving-language 한 컵 or external fiber multipack language unless this exact sentence also defines the primary package."
+    }
+  ],
+  "protected_ordinary_one_cup_locations": [
+    {
+      "json_path": "$.target.use_contexts[0]",
+      "current_value": "집에서 천천히 시작하는 아침 한 컵"
+    },
+    {
+      "json_path": "$.editorial_structure.key_insight",
+      "current_value": "MORA는 향수 공방의 외형을 빌린 요거트가 아니라, 재료가 한 컵 안에서 어떻게 변하고 남는지를 보이게 만드는 프리미엄 그릭요거트 브랜드다."
+    },
+    {
+      "json_path": "$.editorial_structure.concept_snapshot.verbal_premise",
+      "current_value": "한 컵 안에, 재료가 머문 결."
+    },
+    {
+      "json_path": "$.sections.source_grammar_application.key_insight",
+      "current_value": "MORA의 큰 이야기는 재료의 이름을 붙이는 데서 끝나지 않고, 한 컵 안에서 재료가 어떻게 변하고 남는지를 보이게 만드는 데 있다. Le Labo에서는 이 과정을 반복 구조와 제작 행동으로 증명하는 원리만 가져온다."
+    },
+    {
+      "json_path": "$.sections.source_grammar_application.summary",
+      "current_value": "각 레시피는 같은 한 컵 구조와 정보 순서를 공유하고, 실제 재료 흔적·한 가지 사용 동작·검증된 사실만 통제해 바꾼다. 향수의 이름이나 표면을 모사하지 않고 food reveals, clear vessel discloses, direct ink records, tools act, trace proves라는 의미 역할을 식품 고유 구조로 옮긴다."
+    },
+    {
+      "json_path": "$.sections.landing_product_concept.one_line_definition",
+      "current_value": "천연 재료의 향·색·입자·여운을 되직한 그릭요거트 한 컵 안에 겹쳐 보여 주는 150 g 인퓨전 요거트 여섯 종."
+    },
+    {
+      "json_path": "$.sections.landing_product_concept.user_and_use_situation",
+      "current_value": "재료의 출처와 질감, 과하지 않은 단맛, 정돈된 일상 리추얼을 중시하는 25–44세 도시 생활자 — 집에서 천천히 시작하는 아침, 책상 위 오후 간식, 가벼운 식사 뒤 작은 디저트로 뚜껑을 벗기고 바로 떠먹는 한 컵 — 첫 숟갈에서 그릭요거트의 밀도와 선택한 재료의 감각적 차이를 순서대로 발견한다."
+    },
+    {
+      "json_path": "$.sections.landing_product_concept.landing_features[3].name",
+      "current_value": "한 컵의 완결된 사용"
+    },
+    {
+      "json_path": "$.sections.landing_product_concept.product_family.promise",
+      "current_value": "같은 밀도 안에서 재료마다 다른 흔적과 여운을 발견하는 한 컵."
+    },
+    {
+      "json_path": "$.sections.landing_product_concept.product_lineup[0].product_usp",
+      "current_value": "익숙한 꿀의 둥근 단맛 사이로 타임의 가는 허브 결이 이어지는, 가족의 인퓨전 방식을 가장 분명하게 보여 주는 한 컵."
+    },
+    {
+      "json_path": "$.sections.landing_product_concept.product_lineup[1].landing_message",
+      "current_value": "과일보다 먼저, 잎의 조용한 향을 한 컵에."
+    },
+    {
+      "json_path": "$.sections.landing_product_concept.product_lineup[1].development_story.product_question",
+      "current_value": "과일의 단맛 없이 잎의 향만으로 한 컵의 선택 이유를 만들 수 있을까?"
+    },
+    {
+      "json_path": "$.sections.landing_product_concept.product_lineup[3].product_usp",
+      "current_value": "감귤 껍질의 가는 선과 향의 밝은 방향을 요거트 안쪽까지 이어 주는, 가장 선명한 한 컵."
+    },
+    {
+      "json_path": "$.sections.landing_product_concept.product_lineup[5].product_usp",
+      "current_value": "얇은 올리브 오일 리본과 소금의 짧은 대비를 되직한 요거트 안에 겹쳐, 같은 한 컵 구조를 식사 곁의 세이보리 순간까지 넓히는 라인업의 여섯 번째 끝점."
+    },
+    {
+      "json_path": "$.sections.landing_product_concept.product_lineup[5].landing_message",
+      "current_value": "올리브 오일의 얇은 결과 소금의 짧은 대비. 한 컵이 식사 곁으로 갑니다."
+    },
+    {
+      "json_path": "$.sections.landing_product_concept.product_lineup[5].development_story.product_question",
+      "current_value": "요거트의 떠먹는 한 컵 구조를 유지하면서 dip이 아닌 세이보리 제품으로 확장할 수 있을까?"
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.brand_message",
+      "current_value": "한 컵 안에, 재료가 머문 결."
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.brand_values[2].statement",
+      "current_value": "한 컵과 한 번의 스푼 동작으로 일상에 작지만 또렷한 감각의 구간을 만든다."
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.family_usp",
+      "current_value": "같은 한 컵 구조에서, 재료마다 다른 향과 질감, 여운을 비교하는 인퓨전 그릭요거트 패밀리."
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.product_usps[2].usp",
+      "current_value": "메밀을 볶은 고소한 향과 곡물의 입자감으로 한 컵의 포만한 인상을 만드는 방향."
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.product_usps[5].usp",
+      "current_value": "올리브 오일의 둥근 질감과 바다소금의 짧은 대비로, 단맛 중심이 아닌 세이보리 선택지를 여는 한 컵."
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.vocabulary.preferred_nouns[0]",
+      "current_value": "한 컵"
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.message_hierarchy[0].message",
+      "current_value": "한 컵 안에, 재료가 머문 결."
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.headline_direction[0]",
+      "current_value": "한 컵 안에, 재료가 머문 결."
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.headline_direction[1]",
+      "current_value": "한 컵의 구조, 재료마다 다른 결."
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.narrative_routes[0].opening_copy",
+      "current_value": "한 컵 안에, 재료가 머문 결."
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.narrative_routes[1].opening_copy",
+      "current_value": "오늘의 시간에 맞는 한 컵."
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.narrative_routes[2].opening_copy",
+      "current_value": "같은 한 컵 구조에서 시작해, 재료마다 다른 여운으로."
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.message_visual_map.brand_values_to_brand_mood[2]",
+      "current_value": "짧은 머묾 → 아침·책상·식후의 한 사람 한 컵 장면"
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.brand_world_platform.world_statement",
+      "current_value": "한 컵의 밀도는 발효와 거름에서, 한 컵의 개성은 재료의 중간 상태에서 시작됩니다."
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.brand_world_platform.value_system[4]",
+      "current_value": "선택의 한계 — 개인화는 안전하게 승인된 한 컵의 마감 상태에만 적용한다."
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.personalization_and_service_world.principle",
+      "current_value": "레시피·투입량·식품안전 기준은 고정하고, 고객은 승인된 베이스가 한 컵 안에서 보이는 마지막 상태만 선택한다."
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.process_copy_bank[5]",
+      "current_value": "레시피는 고정하고, 한 컵의 마지막 표정만 고릅니다."
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.founder_story_direction.role",
+      "current_value": "완성된 답을 가진 천재 셰프나 과학자가 아니라, 평범한 한 컵에서 풀리지 않던 질문을 발견하고 한 번에 한 변수씩 비교해 제품의 기준을 세우는 관찰자이자 기록자."
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.founder_story_direction.one_sentence_spine",
+      "current_value": "재료 이름은 선명한데 한입의 차이는 흐릿했던 요거트 경험에서 질문이 시작되고, 같은 밀도의 바탕에 한 재료씩 다른 방식으로 남기는 비교를 거쳐, 누구나 재료의 변화를 보고 고를 수 있는 한 컵을 만들겠다는 미션으로 이어진다."
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.founder_story_direction.journey[3].story",
+      "current_value": "통일해야 할 것은 재료를 같은 액체로 만드는 방식이 아니라 한 컵을 비교하는 구조라는 원칙에 도달한다."
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.founder_story_direction.journey[4].title",
+      "current_value": "보고 고를 수 있는 한 컵을 만듭니다"
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.founder_story_direction.journey[4].story",
+      "current_value": "재료의 이름, 요거트의 밀도, 중간 상태와 마지막 흔적을 감추지 않아 효능이나 토핑의 양 없이도 자신의 한 컵을 고르게 한다."
+    },
+    {
+      "json_path": "$.sections.verbal_branding_and_copy_hierarchy.founder_story_direction.public_safe_non_biographical_origin.body",
+      "current_value": "MORA는 한 컵의 맛이 무엇을 더 얹었는가로만 설명되는 데서 질문을 시작합니다. 요거트의 밀도를 먼저 보고, 재료마다 다른 향과 입자, 여운이 안쪽까지 어떻게 이어지는지 살핍니다. 같은 구조 안에서 서로 다른 재료의 결을 보고 고를 수 있는 것. 그것이 MORA가 만들고 싶은 한 컵입니다."
+    },
+    {
+      "json_path": "$.sections.visual_branding_and_key_visual.series_rule_spec.acceptance_test",
+      "current_value": "제품명을 가려도 요거트 한 컵과 농도가 먼저 읽히고, 제품명을 보이면 여섯 레시피의 차이가 3초 안에 비교된다."
+    },
+    {
+      "json_path": "$.sections.brand_mood_and_brand_imagery.supporting_series[2].communication_job",
+      "current_value": "대표 레시피의 꿀 리본, 타임 입자, 되직한 한 컵 사용을 정면 비교 규칙 안에서 보여 준다."
+    },
+    {
+      "json_path": "$.sections.brand_mood_and_brand_imagery.brand_world_and_craft_system.narrative_sequence[4]",
+      "current_value": "CUP → FINISH — 고정된 배합 위에서 한 컵의 마지막 상태만 선택한다."
+    },
+    {
+      "json_path": "$.sections.product_visual_traits_and_product_imagery.process_storytelling_series.image_roles[3].proof",
+      "current_value": "한 컵과 한 정량, 세 가지 마감 상태가 개인화의 범위를 명확히 한다."
+    },
+    {
+      "json_path": "$.sections.design_token_direction.typography[1].sample",
+      "current_value": "한 컵 안에, 재료가 머문 결."
+    },
+    {
+      "json_path": "$.sections.design_token_direction.typography[2].sample",
+      "current_value": "한 컵의 구조, 재료마다 다른 결"
+    },
+    {
+      "json_path": "$.moodboard_inputs.copywriting.primary_message",
+      "current_value": "한 컵 안에, 재료가 머문 결."
+    },
+    {
+      "json_path": "$.moodboard_inputs.copywriting.family_usp",
+      "current_value": "한 컵의 구조, 재료마다 다른 결."
+    },
+    {
+      "json_path": "$.moodboard_inputs.copywriting.lineup_headline",
+      "current_value": "같은 한 컵 구조, 여섯 가지 재료의 질문."
+    },
+    {
+      "json_path": "$.moodboard_inputs.brand_mood_images[4]",
+      "current_value": "도시 창가의 아침 한 컵"
+    },
+    {
+      "json_path": "$.moodboard_inputs.landing_story_sequence[0].message",
+      "current_value": "한 컵 안에, 재료가 머문 결."
+    },
+    {
+      "json_path": "$.moodboard_inputs.landing_story_sequence[0].proof",
+      "current_value": "150 g 한 컵 형식과 제품 내부 흔적"
+    },
+    {
+      "json_path": "$.moodboard_inputs.landing_story_sequence[4].message",
+      "current_value": "같은 한 컵 구조, 여섯 가지 재료의 방향."
+    },
+    {
+      "json_path": "$.moodboard_inputs.landing_story_sequence[4].transition",
+      "current_value": "한 컵씩 존재 이유 보기"
+    },
+    {
+      "json_path": "$.moodboard_inputs.landing_story_sequence[6].transition",
+      "current_value": "검증된 한 컵의 사실"
+    },
+    {
+      "json_path": "$.moodboard_inputs.landing_story_sequence[7].message",
+      "current_value": "확인된 것만, 한 컵의 사실로."
+    }
+  ],
+  "integration_order": [
+    "Register or copy ready Stage3 R2 references into the declared Stage2 destinations; do not overwrite old rasters.",
+    "Resolve the overloaded ST2-BRAND-MOOD-01 binding by separating the Why MORA anchor from the final-inspection support frame.",
+    "Apply copy rules by exact JSON location, reviewing the full sentence rather than replacing isolated tokens.",
+    "Preserve append-only historical provenance: archive legacy cup-generation facts as history instead of rewriting them as if those old rasters were glass.",
+    "Re-run file-existence, asset-ID uniqueness, forbidden-term, and visual-reference audits before canonical or registry integration."
+  ]
+}
+

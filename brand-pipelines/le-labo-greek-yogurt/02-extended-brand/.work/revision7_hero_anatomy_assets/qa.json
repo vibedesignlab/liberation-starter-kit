@@ -1,0 +1,91 @@
+{
+  "artifact_type": "revision7_clear_witness_visual_qa",
+  "schema_version": "1.0.0",
+  "qa_method": "Original-resolution view_image inspection of both final workspace PNG files; no browser automation.",
+  "status": "pass_directional_visual_qa",
+  "assets": [
+    {
+      "asset_id": "mora-thyme-honey-clear-witness-hero-v3",
+      "path": "assets/product-hero/mora-thyme-honey-clear-witness-hero-v3.png",
+      "web_role": "landing_page_hero_copy_safe_left",
+      "checks": [
+        {
+          "check": "all individual paper collars, labels and sleeves removed",
+          "status": "pass",
+          "observation": "Both unit cups have uninterrupted transparent walls with no paper component or opaque backing."
+        },
+        {
+          "check": "one open and one sealed clear cup preserved",
+          "status": "pass",
+          "observation": "Foreground cup remains open; rear cup retains a flat full-perimeter foil and asymmetric tab."
+        },
+        {
+          "check": "direct black copy exact and minimal",
+          "status": "pass",
+          "observation": "Both cups visibly read MORA and THYME HONEY in black, with no surrounding panel, color marker or extra package copy."
+        },
+        {
+          "check": "food and use props preserved",
+          "status": "pass",
+          "observation": "Dense ivory yogurt, amber honey ribbon, thyme flecks, spoonful and thyme sprig remain coherent."
+        },
+        {
+          "check": "copy-safe left region",
+          "status": "pass",
+          "observation": "Left half remains a continuous low-detail gray field without product, prop, strong cast shadow or high-contrast edge."
+        },
+        {
+          "check": "clear-wall and shadow physics",
+          "status": "pass",
+          "observation": "Wall thickness, rim highlights, food-wall contact, foil contact and upper-left single-source shadows are visually plausible."
+        }
+      ],
+      "known_limits": [
+        "Direct print is a generated visual, not evidence of ink registration, adhesion, migration or condensation-rub performance.",
+        "Transparent packaging is not evidence of validated light or barrier performance."
+      ]
+    },
+    {
+      "asset_id": "mora-clear-witness-anatomy-v2",
+      "path": "assets/packaging-system/mora-clear-witness-anatomy-v2.png",
+      "web_role": "packaging_feature_explainer",
+      "checks": [
+        {
+          "check": "exactly four object groups",
+          "status": "pass",
+          "observation": "The frame contains one food-filled transparent cup, one separate foil, one spoon and one outer two-cup carrier."
+        },
+        {
+          "check": "individual collar completely deleted",
+          "status": "pass",
+          "observation": "No collar ring, panel, window, seam, lock tab, sleeve fragment or collar shadow remains."
+        },
+        {
+          "check": "direct black print on clear cup",
+          "status": "pass",
+          "observation": "MORA and THYME HONEY appear directly on the clear wall with food visible behind and no backing."
+        },
+        {
+          "check": "material separation legible",
+          "status": "pass",
+          "observation": "Clear polymer, flat foil, metal spoon and molded fiber are spatially separated with air and distinct surface responses."
+        },
+        {
+          "check": "outer fiber remains multipack only",
+          "status": "pass",
+          "observation": "Right-side pulp component has two wells and does not touch or wrap the individual cup."
+        },
+        {
+          "check": "physical coherence",
+          "status": "pass",
+          "observation": "Object scale, contact shadows, foil thickness, clear rim and carrier pulp relief align under one upper-left light."
+        }
+      ],
+      "known_limits": [
+        "The anatomy image demonstrates conceptual separation only; it does not prove dimensional fit, seal, drop, cold-chain or sorting performance.",
+        "The molded-fiber carrier does not imply recyclable, certified, insulating or sustainable performance."
+      ]
+    }
+  ],
+  "release_boundary": "Suitable as Stage 2 directional image assets after canonical and registry owners perform their own merge and validation. Not suitable as manufacturing, regulatory or environmental evidence."
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.1.0",
+  "asset_id": "ST3-MOOD-MEASURED-TABLE-AERIAL-09",
+  "brand": "MORA",
+  "status": "selected_directional_generated_visual",
+  "created_at": "2026-08-26T06:13:31+09:00",
+  "generation_mode": "built_in_imagegen",
+  "commercial_photo_mode": "Series",
+  "use_case": "product-mockup",
+  "web_role": "landing_hero_and_brand_mood_overview",
+  "communication_job": "여섯 preparation form과 투명 직접 인쇄 컵을 정수직 한 장면에 놓아 Measured Transformation의 재료별 중간 상태를 설명하고 왼쪽에 제목·CTA 여백을 제공한다.",
+  "output": {
+    "file_path": "assets/product-renders/mora-measured-table-aerial.png",
+    "absolute_path": "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/product-renders/mora-measured-table-aerial.png",
+    "mime_type": "image/png",
+    "width_px": 1672,
+    "height_px": 941,
+    "aspect_ratio": 1.7768331562,
+    "sha256": "bd7db02ab1612ec6361277c3a8e9c5a2e3f1804e14f42d649e61037c3750d832",
+    "bytes": 2373026
+  },
+  "prompt_path": ".work/stage3_launch_narrative/prompts/ST3-MOOD-MEASURED-TABLE-AERIAL-09.md",
+  "reference_lineage": [
+    "02-extended-brand/outputs/extended-brand-anatomy.json",
+    "03-landing-materials/.work/stage3-direction-lock.json",
+    "Stage 2 NR-01 — 재료가 머문 결",
+    "Stage 2 Measured Transformation and direct-print packaging locks"
+  ],
+  "generation_history": [
+    {
+      "attempt": 1,
+      "source_output": "/Users/ddd/.codex/generated_images/01a03849-e2e6-76c3-986a-26102a53074d/exec-e245bd1d-6973-4125-b460-d914ec0f9e53.png",
+      "sha256": "96fc651d63146bd6afcb0281919091bcc268a8fd6e0522af7315513824963fa9",
+      "result": "rejected",
+      "reason": "dish, foil and spoon were overhead but the cup showed an impossible eye-level front face"
+    },
+    {
+      "attempt": 2,
+      "operation": "single_axis_image_edit",
+      "source_output": "/Users/ddd/.codex/generated_images/01a03849-e2e6-76c3-986a-26102a53074d/exec-637125c8-2f61-42d7-a7a1-ef14d3ed3c33.png",
+      "result": "selected",
+      "change": "cup only changed to true overhead rim while all series locks were preserved"
+    }
+  ],
+  "series_lock": {
+    "product": "one transparent low-wide direct-print yogurt cup, one removed matte foil and one stainless spoon",
+    "environment": "pale cool mineral slab plus brushed stainless food workspace",
+    "capture": "true 90-degree overhead, deep readable focus, wide 16:9 hero composition",
+    "light": "one upper-left hard-but-diffused source with unified lower-right shadows",
+    "color_and_retouch": "neutral cool response, restrained contrast, retained midtones and natural surface variation",
+    "copy_safety": "continuous low-detail left field, free of objects, strong shadows, reflections and seams",
+    "protected_boundaries": "no person, paper unit label, numeric text, perfume, spirits, apothecary or unsupported claim"
+  },
+  "allowed_variation": "camera viewpoint is the only changed axis for this aerial series frame",
+  "invariant_check": "pass",
+  "claim_boundary": "Directional commercial visualization only. It is not evidence of an actual founder, facility, recipe, edible suitability, SOP, food-contact compliance, package performance or production run."
+}
+

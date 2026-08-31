@@ -1,0 +1,405 @@
+{
+  "artifact_type": "stage2_lineup_portfolio_story_shard",
+  "schema_version": "1.0.0",
+  "status": "directional_open_concept",
+  "scope": "Six-product portfolio story, assortment logic, launch tiers, product-development charter and future-lineup admission rules only.",
+  "source_basis": [
+    "outputs/extended-brand-anatomy.json",
+    "extended-brand-anatomy.md",
+    "transfer-input.json",
+    ".work/revision4_process_world/shard.json",
+    ".work/revision4_process_visuals/shard.json",
+    ".work/revision4_craft_world/shard.json"
+  ],
+  "portfolio_thesis": {
+    "story": "MORA의 여섯 컵은 맛을 늘어놓은 목록이 아니라, 같은 농축 요거트가 재료의 서로 다른 물성을 만날 때 아침의 익숙한 입구에서 식사 곁의 세이보리 끝점까지 어떻게 달라지는지를 보여 주는 포트폴리오다.",
+    "choice_question": "지금 필요한 순간과 감각의 방향은 무엇이며, 그 재료는 요거트 안에 어떤 실제 흔적으로 남는가?",
+    "shared_start": "동일한 방향성의 150 g 낮고 넓은 컵, 농축 요거트의 공통 밀도, 한 번의 스푼 홈, 검증된 한 가지 preparation base.",
+    "range_progression": [
+      "Thyme Honey: 익숙한 sweet-herbal 입구",
+      "Fig Leaf: 가장 절제된 green-aromatic 탐색",
+      "Roasted Buckwheat: 촉각적인 toasted-grain 중심",
+      "Citrus Peel: 식후를 여는 bright-peel 전환",
+      "Black Sesame: 깊은 roasted-seed 디저트 끝점",
+      "Olive Oil & Sea Salt: 식사 곁으로 넓어지는 savory endpoint"
+    ],
+    "truth_rule": "각 제품은 이름·색·소품이 아니라 서로 다른 식용 중간 형태, 감각 진행, 사용 순간과 완제품 안의 실제 흔적으로 존재 이유를 증명해야 한다."
+  },
+  "products": [
+    {
+      "product_name": "Thyme Honey",
+      "why_it_exists": "가장 익숙한 꿀을 입구로 삼아, MORA가 단순 가향 요거트가 아니라 재료의 흔적과 순서를 설계하는 패밀리임을 첫 컵에서 이해시키기 위해 존재한다.",
+      "human_use_moment": "집에서 커피나 차와 함께 천천히 시작하는 아침. 뚜껑을 열고 많아야 한 번만 가볍게 움직인 뒤 컵에서 바로 떠먹는 순간.",
+      "food_native_preparation_base": {
+        "direction": "syrup_or_honey_led_infusion",
+        "intermediate": "승인된 꿀과 식용·규격화된 타임으로 만든 옅은 호박색의 점성 preparation",
+        "physical_truth": "천천히 흐르는 시럽상과 미세한 허브 흔적을 보이되 생 타임 줄기, 향수용 추출액 또는 장식용 잎을 완제품에 넣지 않는다."
+      },
+      "intended_sensory_sequence": [
+        "입구: 꿀이 주는 익숙하고 둥근 단맛의 방향",
+        "중간: 농축 요거트의 밀도 안에서 보이는 얇은 honey ribbon",
+        "마무리: 타임의 가는 herbal trace가 짧게 남는 방향"
+      ],
+      "lineup_role": "Hero, family decoder and lowest-friction entry point.",
+      "proof_scene": {
+        "primary": "45도 열린 컵에서 한 숟갈이 올라오고, 남은 깊은 홈 안쪽까지 amber ribbon과 fine thyme trace가 이어지는 hero-use 장면.",
+        "process_pair": "The Folding Bench에서 계량한 honey-led preparation이 넓은 패들 한 번으로 농축 베이스 안에 얇은 리본으로 접히는 장면.",
+        "must_prove": "낮고 넓은 한 컵 사용, 공통 밀도, 표면 토핑이 아닌 내부 흔적, sweet-herbal 두 단계가 동시에 읽힌다."
+      },
+      "claim_and_rnd_gate": {
+        "status": "directional_pending_recipe_and_sensory_validation",
+        "must_validate": [
+          "타임의 정확한 종·식용 부위·공급자 규격과 투입 안전성",
+          "꿀과 preparation의 수분활성, 열처리 필요성, 미생물, 결정화와 최종 당도",
+          "요거트 밀도 보존, ribbon 지속성, 허브 향과 단맛의 관능 균형"
+        ],
+        "public_claim_boundary": "타임·꿀의 원산지, slow-infused, 수제, 영양·건강 효능, 정확한 배합과 시간을 검증 전 주장하지 않는다."
+      },
+      "redundancy_trigger": "타임이 관능적으로 구분되지 않아 평범한 honey yogurt로 읽히거나, 꿀의 단맛이 허브 흔적과 공통 요거트 밀도를 가려 패밀리의 방식을 설명하지 못하면 hero로서 중복이다."
+    },
+    {
+      "product_name": "Fig Leaf",
+      "why_it_exists": "과일의 단맛이 아니라 잎에서 시작하는 가장 조용한 green-aromatic 방향을 열어, 패밀리가 달콤한 inclusion의 변주에만 머물지 않게 하기 위해 존재한다.",
+      "human_use_moment": "늦은 오전이나 점심 뒤, 디저트보다 덜 달게 느껴지는 방향을 찾을 때 컵에서 바로 떠먹는 조용한 한 번의 휴식.",
+      "food_native_preparation_base": {
+        "direction": "clear_or_pale_aqueous_infusion",
+        "intermediate": "식용 적합성이 확인된 정확한 무화과 잎 원료로만 만드는 매우 옅은 green-beige filtered aqueous preparation",
+        "physical_truth": "맑거나 미세하게 탁한 수상 베이스를 사용하며, 생잎 조각·진한 녹색 염색·약초 추출물 연출을 금지한다."
+      },
+      "intended_sensory_sequence": [
+        "입구: 강한 과일 향이 아닌 옅은 leaf-led aromatic 방향",
+        "중간: 거의 ivory에 가까운 요거트 밀도와 희미한 infusion veil",
+        "마무리: 단맛의 크기보다 차분한 green trace가 남는 방향"
+      ],
+      "lineup_role": "Green aromatic outlier and conditional exploration slot.",
+      "proof_scene": {
+        "primary": "동일한 열린 컵과 spoon cut 안에 과포화되지 않은 pale sage vein이 이어지는 infusion-veil macro.",
+        "process_pair": "The Infusion Pantry에서 검증된 식용 잎 원료와 filtered aqueous preparation이 원인-결과로 나란히 보이는 장면.",
+        "must_prove": "원료 안전성 문서와 실제 샘플이 먼저 존재하고, Thyme Honey의 herb fleck 및 Olive Oil의 warm ribbon과 다른 거의 무색의 veil이 사실적으로 보인다."
+      },
+      "claim_and_rnd_gate": {
+        "status": "highest_risk_conditional_concept",
+        "must_validate": [
+          "정확한 종·부위·수확 상태·공급 배치와 해당 시장의 식용 합법성",
+          "latex와 furanocoumarin을 포함한 독성학·노출·잔류물·미생물 위해",
+          "추출 시간·온도·열처리·여과와 유제품 내 안정성",
+          "green-aromatic 방향이 소비자에게 식품으로 명료하고 수용 가능한지"
+        ],
+        "public_claim_boundary": "안전·법규 게이트 통과 전에는 원료·완제품 proof 촬영이나 소비자 효능·전통·원산지 서사를 만들지 않는다.",
+        "kill_or_replace_condition": "식용 적합성이나 지역 합법성을 입증하지 못하면 레시피를 진행하지 않고 같은 역할을 맡을 수 있는 검증 가능한 식용 원료로 교체한다."
+      },
+      "redundancy_trigger": "실제 감각과 희미한 veil이 Thyme Honey의 botanical 방향 또는 Olive Oil & Sea Salt의 green-adjacent 인상과 구별되지 않거나, 안전 게이트 때문에 증명 가능한 제품 장면을 만들 수 없으면 라인업에서 중복이다."
+    },
+    {
+      "product_name": "Roasted Buckwheat",
+      "why_it_exists": "라인업에 볶은 곡물의 따뜻함과 미세 입자의 촉각을 더해, 밝은 향이나 단맛 대신 차분하고 grounded한 오후 선택을 만들기 위해 존재한다.",
+      "human_use_moment": "책상 위 오후 간식. 과일의 밝음이나 디저트의 깊이보다 볶은 곡물의 차분한 방향을 원할 때 한 숟갈씩 먹는 순간.",
+      "food_native_preparation_base": {
+        "direction": "roasted_grain_infusion_or_fine_slurry",
+        "preferred_development_route": "촉각적 역할을 살리는 규격화된 roasted-buckwheat fine slurry를 우선 시험한다.",
+        "decision_boundary": "입자가 공통 밀도나 안정성을 해치면 filtered roasted-grain infusion으로 전환한다. 두 공정을 동시에 확정된 방식처럼 주장하지 않는다.",
+        "physical_truth": "따뜻한 갈색, 옅은 탁도와 자연스러운 미세 침전 또는 실제 크기의 고운 입자를 보이고 굵은 토핑 더미로 바꾸지 않는다."
+      },
+      "intended_sensory_sequence": [
+        "입구: 볶은 곡물의 warm toasted 방향",
+        "중간: 농축 요거트 안에 분산된 미세 입자와 matte density",
+        "마무리: 단맛보다 고소하고 차분한 grain trace가 이어지는 방향"
+      ],
+      "lineup_role": "Toasted, tactile anchor and desk-time core choice.",
+      "proof_scene": {
+        "primary": "표면과 spoon cut 두 깊이에서 fine buckwheat particles가 실제 크기로 보이고 컵의 능선이 유지되는 particle-depth macro.",
+        "process_pair": "볶은 메밀과 선택된 수상 인퓨전 또는 fine slurry를 나란히 두고, 계량 후 넓은 패들로 한 번 접는 장면.",
+        "must_prove": "입자가 토핑이 아니라 내부에 분산되고, 공통 요거트 밀도는 무너지지 않으며, Black Sesame의 paste-marble과 다른 grain-fleck 구조가 보인다."
+      },
+      "claim_and_rnd_gate": {
+        "status": "directional_pending_route_selection",
+        "must_validate": [
+          "메밀 원료 규격, 로스팅 프로파일, 열처리와 교차오염 관리",
+          "관할 시장의 알레르겐 표시 요구",
+          "입자 크기, 침전, 유청분리, 점도와 냉장 관능",
+          "fine slurry와 filtered infusion 중 제품 역할을 더 분명히 하는 단일 공정 선택"
+        ],
+        "public_claim_boundary": "메밀 원산지, 수제 로스팅, 영양·포만·저당 효능과 정확한 로스팅 조건을 검증 전 주장하지 않는다."
+      },
+      "redundancy_trigger": "소비자가 Black Sesame와 동일한 '짙고 고소한 디저트'로만 인식하거나, 선택된 preparation이 grain-fleck의 촉각을 증명하지 못하면 별도 SKU가 아니라 toasted 역할의 중복이다."
+    },
+    {
+      "product_name": "Citrus Peel",
+      "why_it_exists": "패밀리에 가장 밝고 빠른 전환을 만들어, 식후나 늦은 오후에 한 컵을 가볍게 여는 이유를 제공하기 위해 존재한다.",
+      "human_use_moment": "가벼운 식사 뒤의 작은 디저트 또는 늦은 오후의 짧은 reset. 반쯤 벗긴 리드 사이로 바로 숟갈을 넣는 순간.",
+      "food_native_preparation_base": {
+        "direction": "filtered_aqueous_peel_preparation",
+        "intermediate": "식용 등급과 잔류농약 기준을 충족한 특정 감귤류 껍질로 만든 밝은 golden aqueous preparation; 검증된 경우에만 미세 peel thread를 함께 사용",
+        "physical_truth": "체에 남은 가는 peel과 아래의 여과액을 실제 관계로 보이며, marmalade topping, 증류 장치, essential-oil 효능 연출을 피한다."
+      },
+      "intended_sensory_sequence": [
+        "입구: peel에서 오는 밝은 aromatic lift",
+        "중간: 차갑고 농축된 요거트 안으로 이어지는 가는 thread 또는 검증된 zest point",
+        "마무리: 쓴맛과 향의 세기는 관능 시험으로 조정되는 짧은 peel finish"
+      ],
+      "lineup_role": "Bright lift and post-meal transition.",
+      "proof_scene": {
+        "primary": "반쯤 벗긴 리드와 들어가는 숟갈, 표면에서 spoon cut 안쪽까지 이어지는 하나의 실제 peel thread를 함께 보여 주는 peel-and-scoop 장면.",
+        "process_pair": "The Infusion Pantry에서 식용 peel, fine mesh와 golden filtered preparation의 여과 관계가 보이는 장면.",
+        "must_prove": "밝음이 주황색 장식에서가 아니라 실제 peel preparation과 내부 thread에서 나오고, Thyme Honey의 sweet ribbon과 다른 post-meal 역할이 읽힌다."
+      },
+      "claim_and_rnd_gate": {
+        "status": "directional_pending_species_and_stability_validation",
+        "must_validate": [
+          "사용 감귤의 정확한 종·식용 부위·공급자 규격과 잔류농약",
+          "쓴맛, 휘발 향, peel oil 농도와 유제품 안정성",
+          "열처리·미생물·pH·냉장 보관 중 향과 thread의 유지",
+          "미세 peel thread의 안전한 크기와 관능 수용성"
+        ],
+        "public_claim_boundary": "특정 산지, vitamin·항산화·해독 효능, cold-pressed 또는 essential-oil 관련 표현을 자료 없이 사용하지 않는다."
+      },
+      "redundancy_trigger": "peel 특유의 밝은 향과 thread가 검증되지 않아 일반 citrus-sweet yogurt로 수렴하거나, Thyme Honey와 같은 달콤한 간식 이유만 남으면 포트폴리오에서 중복이다."
+    },
+    {
+      "product_name": "Black Sesame",
+      "why_it_exists": "라인업의 가장 짙은 시각·감각 대비와 저녁의 작은 디저트 끝점을 맡아, 밝은 미색 베이스 안에서 seed paste가 만드는 깊이를 보여 주기 위해 존재한다.",
+      "human_use_moment": "저녁 식사 뒤, 더 밝은 과일 방향보다 깊은 볶음 결을 원할 때 한 컵을 천천히 떠먹는 작은 디저트 순간.",
+      "food_native_preparation_base": {
+        "direction": "seed_slurry_or_paste",
+        "intermediate": "규격화하고 필요한 안전 공정을 거친 검은깨로 만든 불투명한 fine slurry 또는 paste",
+        "physical_truth": "낮은 식품용 볼에서 흐르는 회흑색의 고운 입자와 오일 성분을 보이며, 투명한 검정 추출액이나 굵은 씨앗 토핑으로 연출하지 않는다."
+      },
+      "intended_sensory_sequence": [
+        "입구: 검은깨의 deep roasted-seed 방향",
+        "중간: ivory와 stone-grey marble 안에 남는 고운 입자와 농축된 body",
+        "마무리: 밝은 요거트와 짙은 seed trace의 대비가 이어지는 디저트 방향"
+      ],
+      "lineup_role": "Deep dessert endpoint and strongest tonal contrast.",
+      "proof_scene": {
+        "primary": "ivory와 stone-grey 경계를 가로질러 뜬 한 숟갈에서 두 색 영역 모두에 sesame particle이 박힌 marble-hero와 cross-spoon macro.",
+        "process_pair": "The Infusion Pantry의 opaque seed paste와 완성 컵의 marble을 나란히 두어 중간 상태와 최종 흔적의 연결을 보여 주는 장면.",
+        "must_prove": "검정 패키지나 럭셔리 소품 없이도 seed-paste의 실제 마블과 입자가 깊이를 만들고, Roasted Buckwheat의 grain fleck과 구별된다."
+      },
+      "claim_and_rnd_gate": {
+        "status": "directional_pending_allergen_and_oxidation_validation",
+        "must_validate": [
+          "참깨 알레르겐 표시와 교차접촉 통제",
+          "로스팅·살균, 산패, 오일 분리와 냉장 관능",
+          "입자 크기, paste 투입량, 점도와 마블 안정성",
+          "실제 샘플 색이 ivory base와 식품답게 대비되는지"
+        ],
+        "public_claim_boundary": "참깨 원산지, 전통 제법, 고칼슘·건강·영양 효능, 장시간 로스팅을 자료 없이 주장하지 않는다."
+      },
+      "redundancy_trigger": "Roasted Buckwheat와 다른 것은 색뿐이고 roasted-seed의 관능·paste 물성·저녁 디저트 역할이 독립적으로 확인되지 않으면 toasted 계열 내 중복이다."
+    },
+    {
+      "product_name": "Olive Oil & Sea Salt",
+      "why_it_exists": "같은 한 컵 구조를 아침·간식·디저트 바깥의 식사 곁으로 확장하고, 수상 인퓨전이 아닌 오일상의 정직한 물성을 패밀리에 추가하기 위해 존재한다.",
+      "human_use_moment": "가벼운 점심 곁의 작은 savory cup. 컵에서 바로 떠먹거나, 실제 사용자·관능 시험이 명료성을 확인한 경우에만 단순한 빵 또는 채소 한 가지와 곁들이는 순간.",
+      "food_native_preparation_base": {
+        "direction": "oil_phase_or_validated_micro_emulsion",
+        "intermediate": "규격화한 식용 올리브오일과 식품용 소금으로 만든 계량 oil phase; 안정성 시험이 통과한 경우에만 좁은 micro-emulsion interface 또는 별도 염수 preparation 사용",
+        "physical_truth": "얇은 translucent oil ribbon과 pearly interface를 보이되 기름 웅덩이, 짙은 초록 보정, 금속성 광택, 실제로 남지 않는 장식용 소금 결정을 만들지 않는다."
+      },
+      "intended_sensory_sequence": [
+        "입구: 올리브오일의 aromatic 방향과 얇은 oil ribbon",
+        "중간: 농축 요거트와 오일이 만나는 dense-creamy interface",
+        "마무리: 검증된 염도에서만 표현하는 짧은 savory salt contrast"
+      ],
+      "lineup_role": "Savory, meal-adjacent endpoint and context-expansion slot.",
+      "proof_scene": {
+        "primary": "45도 열린 컵에서 spoon이 얇은 oil ribbon을 가로지르고, spoon cut 안쪽에 실제 micro-emulsion 또는 oil-yogurt interface가 이어지는 savory hero.",
+        "process_pair": "The Infusion Pantry에서 oil phase와 검증 대상 emulsion 또는 brine portion을 구분해 보여 주고, 실제 크기의 salt cue 또는 계량 seasoning action을 연결한다.",
+        "must_prove": "Fig Leaf의 cool pale veil과 다른 warm oil physics, 공통 요거트 밀도, 식사 대체가 아닌 meal-adjacent 사용, 사실적인 소금 표현을 모두 설명한다."
+      },
+      "claim_and_rnd_gate": {
+        "status": "directional_pending_emulsion_and_context_validation",
+        "must_validate": [
+          "오일 품질 규격, 산화와 냉장 관능",
+          "오일상 또는 유화 route의 상분리·점도·실링·보관 안정성",
+          "염 농도, 용해 상태, 영양·sodium 표시와 실제 salt visual",
+          "소비자가 이해하는 대표 섭취 맥락과 간단한 pairing의 필요성"
+        ],
+        "public_claim_boundary": "오일 grade·cultivar·산지, 특정 소금 산지, heart-health·영양 효능, meal replacement 또는 안정된 유화 상태를 검증 전 주장하지 않는다."
+      },
+      "redundancy_trigger": "meal-adjacent 사용이 소비자에게 명료하지 않거나 oil interface가 냉장 유통에서 안정적으로 증명되지 않으며, 결과가 Fig Leaf와 비슷한 green-adjacent 한 컵으로만 읽히면 확장 SKU로서 중복이다."
+    }
+  ],
+  "family_assortment_logic": {
+    "primary_matrix": {
+      "human_moment": [
+        "slow breakfast",
+        "quiet late-morning or post-lunch pause",
+        "desk-side afternoon snack",
+        "post-meal or late-afternoon reset",
+        "small evening dessert",
+        "meal-adjacent savory side"
+      ],
+      "sensory_role": [
+        "sweet-herbal",
+        "green-aromatic",
+        "toasted-grain",
+        "bright-peel",
+        "deep roasted-seed",
+        "savory oil-mineral"
+      ],
+      "preparation_physics": [
+        "honey-led syrup",
+        "pale aqueous infusion",
+        "roasted-grain fine slurry or selected filtered infusion",
+        "filtered peel preparation",
+        "seed slurry or paste",
+        "oil phase or validated micro-emulsion"
+      ],
+      "visible_trace": [
+        "ribbon plus fine herb trace",
+        "near-ivory veil",
+        "fine grain fleck",
+        "peel thread",
+        "ivory-grey marble",
+        "oil ribbon plus truthful interface or salt cue"
+      ]
+    },
+    "selection_rule": "고객이 use moment와 sensory role로 먼저 좁히고, 열린 컵의 actual trace와 preparation proof로 선택을 확인하게 한다.",
+    "balance_rule": "core는 익숙한 입구, toasted 촉각, bright 전환, deep 디저트를 담당하고, extension은 green-aromatic과 savory처럼 새로운 감각·사용 맥락을 시험한다.",
+    "anti_overlap_rule": "두 제품이 human moment, sensory role, preparation physics, visible trace 중 세 항목 이상에서 겹치면 별도 SKU로 유지하지 않는다. 실제 관능·사용자 테스트에서 독립 이유가 확인되지 않으면 하나를 reformulate, seasonal test 또는 replacement로 돌린다.",
+    "comparison_story": "같은 컵과 같은 spoon-cut 촬영을 고정해 패키지색이 아니라 syrup, aqueous veil, grain fleck, peel thread, seed marble, oil interface의 차이가 선택 구조가 되게 한다."
+  },
+  "launch_architecture": {
+    "principle": "공개 출시 순서와 R&D 위험 검토 순서를 분리한다. 고위험 원료는 일찍 검토하되, 소비자에게는 패밀리 개념을 가장 쉽게 증명하는 제품부터 보여 준다.",
+    "development_sequence": [
+      {
+        "step": 1,
+        "focus": "Shared yogurt base",
+        "products": [],
+        "gate": "공통 밀도, 산도, 냉장 거름 또는 선택 농축 route, low-shear handling과 150 g cup feasibility를 먼저 고정한다."
+      },
+      {
+        "step": 2,
+        "focus": "Ingredient safety and route triage",
+        "products": [
+          "Fig Leaf",
+          "Black Sesame",
+          "Roasted Buckwheat",
+          "Citrus Peel",
+          "Thyme Honey",
+          "Olive Oil & Sea Salt"
+        ],
+        "gate": "원료 식용 적합성·알레르겐·supplier specification과 각 preparation route의 go, reformulate 또는 stop을 결정한다. Fig Leaf는 이 단계에서 가장 먼저 kill-or-replace 결정을 받는다."
+      },
+      {
+        "step": 3,
+        "focus": "Prototype range calibration",
+        "products": [
+          "Thyme Honey",
+          "Roasted Buckwheat",
+          "Citrus Peel",
+          "Black Sesame"
+        ],
+        "gate": "sweet-herbal, toasted, bright, deep 네 core pole이 공통 베이스 안에서 관능·질감·시각적으로 구별되는지 확인한다."
+      },
+      {
+        "step": 4,
+        "focus": "Extension validation",
+        "products": [
+          "Olive Oil & Sea Salt",
+          "Fig Leaf"
+        ],
+        "gate": "savory use context와 oil stability, green-aromatic 안전성과 독립성을 각각 확인한 뒤 core와 같은 shelf-life 기준을 통과시킨다."
+      }
+    ],
+    "consumer_launch_tiers": [
+      {
+        "tier": "Tier 1 — Core proof range",
+        "launch_order": [
+          "Thyme Honey",
+          "Roasted Buckwheat",
+          "Citrus Peel",
+          "Black Sesame"
+        ],
+        "job": "한 컵의 방식을 가장 낮은 설명 부담으로 보여 주면서 breakfast, desk snack, post-meal, evening dessert와 sweet-herbal, toasted, bright, deep 네 축을 만든다.",
+        "release_gate": "네 제품 모두 공통 밀도와 서로 다른 내부 흔적을 실제 샘플·관능·보관 시험으로 증명한다."
+      },
+      {
+        "tier": "Tier 2 — Context expansion",
+        "launch_order": [
+          "Olive Oil & Sea Salt"
+        ],
+        "job": "패밀리를 meal-adjacent savory 순간과 oil-phase 물성으로 확장한다.",
+        "release_gate": "안정적인 oil interface, 검증된 염도, 명료한 serving context와 shelf-life를 통과한다."
+      },
+      {
+        "tier": "Tier 3 — Conditional exploration",
+        "launch_order": [
+          "Fig Leaf"
+        ],
+        "job": "가장 절제된 green-aromatic 방향을 제한적으로 시험한다.",
+        "release_gate": "식용·독성학·법규 검증을 먼저 통과하고, core 또는 savory SKU와 다른 사용 이유와 관능이 확인될 때만 공개한다."
+      }
+    ],
+    "launch_status": "Directional recommendation, not a commercial forecast or approved roadmap."
+  },
+  "product_development_charter": {
+    "purpose": "한 개의 공통 요거트 몸을 지키면서, 재료별 물성·감각·사용 이유가 다른 여섯 레시피를 사실로 증명한다.",
+    "non_negotiables": [
+      "공통 yogurt base와 target density를 먼저 정의하고 제품별 preparation이 그 구조를 무너뜨리는 정도를 같은 방법으로 비교한다.",
+      "각 SKU는 한 개의 primary preparation route를 선택한다. 모든 재료를 투명 인퓨전으로 통일하거나 복수 route를 동시에 확정된 제법처럼 말하지 않는다.",
+      "재료 흔적은 토핑이 아니라 spoon cut 안쪽까지 이어져야 하며, 실제 샘플에서 보이지 않는 ribbon, crystal, fleck, thread 또는 marble을 촬영용으로 만들지 않는다.",
+      "감각 목표는 aroma 또는 first impression, yogurt body, finish의 세 단계로 기록하고 훈련된 관능·소비자 확인 전에는 방향성 언어로만 사용한다.",
+      "원료 specification, 식용 적합성, 알레르겐, 열처리, pH, 미생물, 점도, syneresis, phase separation, oxidation, 포장과 냉장 shelf-life를 SKU별로 검증한다.",
+      "제품명·원료명·공정·이미지·카피는 같은 승인 샘플과 batch evidence를 가리켜야 한다.",
+      "영양, 건강, 기능성, 원산지, 지속가능성, handmade, artisan, small-batch 또는 slow-infused는 해당 증거와 법무 승인 전 금지한다.",
+      "공정·proof 이미지의 lock은 실제 R&D 샘플과 물성 확인 뒤에만 진행한다. 현재 생성 이미지는 방향성 콘셉트이지 제조 증거가 아니다."
+    ],
+    "per_sku_decision_record": [
+      "why this product earns a distinct human moment",
+      "selected preparation base and rejected alternatives",
+      "intended versus observed sensory sequence",
+      "common-density impact and internal-trace evidence",
+      "food-safety, allergen, stability and legal gates",
+      "proof scene that an actual production sample can support",
+      "redundancy comparison against the nearest lineup neighbor",
+      "go, reformulate, hold, replace or stop decision"
+    ],
+    "portfolio_review_cadence": "Review the full matrix at every prototype and shelf-life decision point; an individual recipe does not pass merely because it tastes acceptable if it does not add a distinct portfolio job."
+  },
+  "future_lineup_admission_rules": {
+    "principle": "새 제품은 새로운 재료명이 아니라 아직 비어 있는 인간의 순간, 감각 역할 또는 식품 물성을 추가해야 한다.",
+    "hard_gates": [
+      "정확한 원재료와 식용 부위가 법적·독성학적으로 허용되고 supplier specification과 allergen plan을 확보한다.",
+      "공통 요거트 베이스와 냉장 포장 안에서 preparation, 미생물, 점도, syneresis, 상분리, 산화와 shelf-life가 검증 가능하다.",
+      "실제 샘플이 한 문장의 sensory sequence와 한 개의 내부 trace를 지지한다.",
+      "영양·기능·원산지·지속가능성 서사 없이도 제품의 존재 이유가 성립한다.",
+      "제품을 증명하는 한 개의 food-native process scene와 한 개의 human-use scene를 실제로 촬영할 수 있다."
+    ],
+    "admission_test": [
+      "어떤 구체적인 사람의 순간을 새로 여는가?",
+      "현재 six-pole map에 없는 sensory role을 추가하는가?",
+      "기존 제품과 다른 preparation physics 또는 실제 trace를 보여 주는가?",
+      "가장 가까운 기존 SKU와 blind sensory 및 use-context test에서 구분되는가?",
+      "공통 cup, information hierarchy, density와 truth rules를 지키는가?",
+      "검증 실패 시 reformulate 또는 stop 조건이 사전에 쓰여 있는가?"
+    ],
+    "portfolio_action_rule": "human moment, sensory role, preparation physics, visible trace 중 세 항목 이상이 기존 SKU와 겹치면 add하지 않는다. 독립 이유를 검증하면 기존 SKU를 replace하거나 제한된 seasonal test로 시작하고, 검증하지 못하면 후보를 중단한다.",
+    "core_and_exploration_policy": "Core proof range는 이해가 쉬운 네 역할을 유지하고, extension 또는 exploration slot은 새로운 맥락을 시험한다. 실험 SKU가 core와 같은 안전·품질 기준을 통과하지 못하면 희소성이나 스토리만으로 출시하지 않는다.",
+    "automatic_rejection_conditions": [
+      "색이나 이름만 다르고 preparation·감각·사용 순간이 기존 제품과 같다.",
+      "가짜 토핑, 과포화 색, 장식용 결정 또는 향수형 도구가 있어야 차이가 보인다.",
+      "원료 origin, 전통, 건강 효능 또는 지속가능성 주장을 증거 없이 전제한다.",
+      "공통 밀도를 유지하려면 과도한 증점, 고속 혼합 또는 사실과 다른 사진 보정이 필요하다.",
+      "식용·알레르겐·법규·냉장 안정성의 중대한 gate를 해결할 현실적 검증 경로가 없다."
+    ]
+  },
+  "global_boundaries": [
+    "MORA, family name and all six recipe names are directional working names pending trademark and linguistic clearance.",
+    "The 150 g format, common base, recipes, sensory sequences, ingredient treatments, package, storage and shelf life are unvalidated directions.",
+    "No ingredient origin, supplier provenance, nutrition, health, probiotic, functional, sustainability or manufacturing-time claim is introduced by this shard.",
+    "Process-world images are concept visuals and must not be presented as actual MORA facilities, SOPs, production batches or finished-product evidence.",
+    "Fig Leaf remains replaceable unless explicit food-safety and regulatory review passes; Olive Oil & Sea Salt remains meal-adjacent and non-prescriptive until use testing passes."
+  ],
+  "merge_intent": {
+    "primary_target": "sections.landing_product_concept",
+    "supporting_targets": [
+      "sections.brand_positioning",
+      "sections.verbal_branding_and_copy_hierarchy",
+      "sections.product_visual_traits_and_product_imagery",
+      "boundaries.factual_limits"
+    ],
+    "note": "Use as editorial and product-direction input only; preserve the canonical eight-section Stage 2 structure."
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "stage3_wave_a_package_shard",
+  "revision": "stage3_revision3_vessel_folios",
+  "owner": "glass_product_masters",
+  "status": "ready_for_parent_registration",
+  "system": {
+    "name": "MORA Vessel Record",
+    "intent": "A batch-recorded cultured-food vessel, not a logo-only pantry jar and not a perfume replica.",
+    "dual_authority": {
+      "photo": "The raster master is authoritative for vessel identity, material realism, front-view character, light, background and the visible presence of one direct-print record column.",
+      "vector": "The SVG is authoritative for exact copy, typographic hierarchy, directional dimensions, print construction and rear Material Plate placement. Generated-photo text never overrides the vector specification."
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "ST3-REF-GLASS-PACKAGE-MASTER-17",
+      "product_name": "MORA Vessel Record / Thyme Honey 01",
+      "role": "reference_package_master",
+      "file_path": "assets/reference-system/mora-glass-package-master-front.png",
+      "prompt_path": "prompts/ST3-REF-GLASS-PACKAGE-MASTER-17.md",
+      "aspect_ratio": "1:1",
+      "dimensions": "1536x1536",
+      "sha256": "91da87546aa2670fe147dc868e773b0275acffcd2fea99804e5868636ee37d8e",
+      "generation_provenance": "OpenAI built-in image generation on 2026-08-29. Image 1 was the accepted MORA glass master and edit authority. Four local Stage 1 source images supplied geometry, practical record hierarchy, batch-record ritual, broad fill visibility and heavy-base logic only. The generated master was resampled from the selected 1254x1254 result to 1536x1536 with Lanczos filtering and inspected at original resolution.",
+      "communication_job": "한 개의 투명 중량 유리 용기, 실제 요거트와 앰버 trace, 유리 위 단일 검정 direct-print 기록 열을 통해 MORA를 로고 병이 아닌 배치 기록형 수제 그릭요거트 시스템으로 보이게 한다.",
+      "invariants": [
+        "one centered food-vessel candidate on plain Cultured Cream #F5F1E8",
+        "68–72 mm body and 105–115 mm height directional form translated as a broad spoonable cultured-food jar",
+        "visible 12–15% shoulder and 8–10% heavy clear-glass base",
+        "low plain unpatterned graphite metal overcap with no exposed perfume hardware",
+        "natural ivory strained yogurt and one restrained amber thyme-honey trace visible through glass",
+        "one neutral-black left-aligned record column printed directly on clear glass",
+        "MORA subordinate to THYME HONEY / 01",
+        "no paper label, opaque backing, personalization or source-brand trade dress"
+      ],
+      "allowed_variation": [
+        "none before Wave B master freeze",
+        "later SKUs may change only verified recipe identity, ingredient trace, weight when real, and actual batch data after using the vector authority"
+      ],
+      "source_distance_boundary": {
+        "translated": [
+          "cylindrical glass and shoulder/base proportion logic",
+          "raw material visibility through glass",
+          "practical record hierarchy and deliberate batch ritual"
+        ],
+        "excluded": [
+          "LE LABO or SANTAL wording",
+          "paper label and rectangular formula grid",
+          "scent-number naming",
+          "narrow perfume neck, stopper, sprayer or candle wick",
+          "city, customer name, personal name, date or fake customization",
+          "exact source typography and trade dress"
+        ]
+      },
+      "qa": {
+        "inspection": "pass — final 1536x1536 workspace image inspected with view_image at original resolution",
+        "identity_and_copy": "pass — MORA, THYME HONEY / 01, category, PREP, TRACE, 150 g and BATCH / 24A01 are visibly coherent; no source-brand wording or personalization",
+        "direct_print": "pass — neutral-black record column follows the glass surface with no paper edge, white backing, sticker, sleeve or enclosing grid",
+        "glass_and_food": "pass — thick clear walls, physically legible base/refraction, natural cultured texture and amber ribbon; no disposable plastic cues",
+        "closure": "pass — low smooth graphite metal overcap with no motif, rib, logo or exposed perfume hardware",
+        "camera_light_background": "pass — authoritative front, slight top control, restrained short-tele perspective, plain warm-cream field, coherent upper-left key and grounded down-right shadow",
+        "observed_outer_bbox_percent": {"left": 29.8, "top": 19.7, "right": 69.7, "bottom": 82.8},
+        "geometry_precedence_note": "The locked photo bbox x34–66/y18–82 has a 2.0 height-to-width ratio, while the locked physical vessel ratio is 1.50–1.65. Both cannot be true in an undistorted front photograph. The selected master preserves the physically plausible approximately 1.59 vessel proportion and the locked vertical occupancy; later series must use this image as the pixel-overlay form authority rather than squeezing it to the contradictory width target.",
+        "claim_boundary": "pass — no food-contact, regulatory, leak, sustainability, shelf-life or production-feasibility claim"
+      },
+      "status": "ready_for_registration"
+    },
+    {
+      "asset_id": "ST3-PACKAGING-VESSEL-RECORD-SPEC-25",
+      "product_name": "MORA Vessel Record Print & Form Specification",
+      "role": "packaging_technical_specification",
+      "file_path": "assets/reference-system/mora-vessel-record-print-spec.svg",
+      "prompt_path": "prompts/ST3-PACKAGING-VESSEL-RECORD-SPEC-25.md",
+      "aspect_ratio": "1:1",
+      "dimensions": "1536x1536 viewBox",
+      "sha256": "231ff1a99b0b09029540ea1dfc59f3118d27c4cc355bc76bca728678bc56f94b",
+      "generation_provenance": "Deterministic SVG authored with apply_patch on 2026-08-29. Parsed with xmllint and statically rendered with rsvg-convert at 1536x1536 for visual inspection; no browser automation was used.",
+      "communication_job": "생성 사진이 틀릴 수 있는 작은 활자와 인쇄 배열을 정확한 벡터 권위본으로 고정하고, 용기 실루엣·치수·front direct-print·rear micro-mark·생산 경계를 한 장에서 설명한다.",
+      "invariants": [
+        "1536x1536 Cultured Cream technical sheet with Record Black information",
+        "front vessel elevation with 70 mm body, 110 mm total height and 55 mm wide mouth",
+        "visible shoulder 14% H and heavy base 9% H",
+        "exact live SVG text for every front record field",
+        "one 0.5 pt vertical rule and short functional baselines, no enclosing pharmacy grid",
+        "one neutral-black direct print on clear glass and no paper or opaque backing",
+        "16 mm rear-lower recipe-specific Material Plate micro-mark concept",
+        "supplier, regulatory, food-contact and real-lot verification gates"
+      ],
+      "exact_front_copy": [
+        "MORA",
+        "THYME HONEY / 01",
+        "INFUSED GREEK YOGURT",
+        "PREP / HONEY–THYME SYRUP",
+        "TRACE / AMBER RIBBON",
+        "150 g",
+        "BATCH / 24A01"
+      ],
+      "source_distance_boundary": {
+        "translated": [
+          "disciplined practical record hierarchy",
+          "one-ink information economy",
+          "material visibility and batch ritual"
+        ],
+        "excluded": [
+          "source-brand wording",
+          "paper label rectangle or exact grid",
+          "scent-number system",
+          "source typography",
+          "city, customer, personal name or date fields",
+          "perfume, candle or apothecary trade dress"
+        ]
+      },
+      "qa": {
+        "xml": "pass — xmllint parsed without error",
+        "static_render": "pass — rsvg-convert produced a 1536x1536 RGB PNG and the complete sheet was visually inspected",
+        "copy": "pass — all required strings are exact live SVG text; 24A01 is explicitly marked as a sample format requiring replacement with a verified lot code",
+        "form": "pass — actual vessel silhouette, centerline, cap, mouth, shoulder, body, heavy base and directional dimension arrows are present",
+        "print_hierarchy": "pass — product leads, MORA is subordinate, fields are monospaced, one vertical rule and short baselines remain outside an enclosing grid",
+        "rear_mark": "pass — 16 mm Material Plate is lower-rear, recipe-specific and explicitly subordinate",
+        "boundary": "pass — no source-brand wording, paper-label trade dress, personalization or unsupported performance claim"
+      },
+      "status": "ready_for_registration"
+    }
+  ],
+  "registration_notes": [
+    "Register the photo and vector together; do not present the photo as the exact typography production file.",
+    "Wave B package and SKU imagery must attach the revised photo as the form/material reference and the SVG as the exact front-copy reference.",
+    "Do not populate any city, customer, personal-name, date or unverified batch field.",
+    "Replace 24A01 with a verified real lot code before any production or launch claim."
+  ]
+}

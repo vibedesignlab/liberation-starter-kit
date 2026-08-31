@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "supplemental_visual_research_run",
+  "requested_by_user": true,
+  "scope": "Additional official Le Labo visual evidence across product-packaging, space-service, and editorial-craft lanes",
+  "started_at": "2026-08-24T15:26:07Z",
+  "stopped_at": "2026-08-24T15:30:54Z",
+  "elapsed_seconds": 287,
+  "timebox_seconds": 300,
+  "stop_reason": "user_timebox_reached",
+  "browser_automation_used": false
+}

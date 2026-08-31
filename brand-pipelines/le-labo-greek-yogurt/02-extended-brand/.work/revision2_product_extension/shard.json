@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "stage_2_revision_product_extension_shard",
+  "revision": 2,
+  "status": "directional_open_concept",
+  "source_inputs": {
+    "transfer_input": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/transfer-input.json",
+    "canonical_stage_2": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/outputs/extended-brand-anatomy.json",
+    "canonical_lineup_before_revision": [
+      "Thyme Honey",
+      "Fig Leaf",
+      "Roasted Buckwheat",
+      "Citrus Peel",
+      "Black Sesame"
+    ],
+    "requested_addition": "Olive Oil & Sea Salt"
+  },
+  "new_product": {
+    "product_name": "Olive Oil & Sea Salt",
+    "product_type": "150 g olive-oil-and-sea-salt infused Greek yogurt; directional savory recipe concept pending emulsion, seasoning and serving-context validation",
+    "lineup_role": "Savory and meal-adjacent endpoint — extends the family beyond breakfast, snack and small dessert moments while preserving the same ready-to-open, spoonable 150 g cup.",
+    "use_case": "A small savory cup beside a light lunch, eaten directly with a spoon or paired with a simple bread or vegetable serving only after R&D and user testing confirm the clearest context; it is not positioned as a meal replacement.",
+    "differentiator": "A thin translucent olive-gold oil ribbon, a pearly micro-emulsion trace inside the spoon cut and sparse fine salt crystals create a savory material signal distinct from Fig Leaf's muted sage veil and from the other products' flecks, peel threads or dark marble.",
+    "form_cues": {
+      "package": [
+        "The same warm-ivory, matte, low-wide 150 g cup and large peel tab used by the family.",
+        "One narrow muted olive-gold / mineral-straw identifier field, directionally #A18A57 pending food-color and print tests; it must not shift toward Fig Leaf's sage green (#68765F in the current directional map).",
+        "Two very small warm-white salt points may sit inside the identifier field as a functional recipe locator; they are not repeated as decoration across the pack.",
+        "The ingredient color is limited to the identifier field, comparison legend and recipe locator; it does not tint the full cup, background, typography, light or photography set."
+      ],
+      "edible_product": [
+        "Dense ivory Greek yogurt with the same deep spoon furrow and standing soft ridge as the family.",
+        "One thin, translucent olive-gold ribbon folded across part of the surface and continuing visibly into the spoon cut; no deep green tint and no pooled oil lake.",
+        "A narrow pearly emulsion halo and a few fine oil microdroplets at the ribbon edge show that oil meets the yogurt rather than sitting only as a top garnish.",
+        "Sparse, fine, irregular salt crystals remain visible on one ridge and at one spoon-cut edge only if the validated recipe actually retains them at serving; crystals must not be enlarged, multiplied or replaced with decorative flakes for photography.",
+        "If validated salt dissolves completely, salt proof moves to an R&D-approved measured seasoning action and factual ingredient disclosure rather than fabricated visible crystals."
+      ],
+      "use_signal": "A 45-degree open-cup frame keeps the full cup and peel-back lid visible while one spoon crosses the oil ribbon; a single modest bread or vegetable element may enter the far edge only after serving-context validation, never becoming a styled meal spread.",
+      "ingredient_infusion_signal": "A macro pair shows the translucent oil ribbon and pearly micro-emulsion continuing through the yogurt mass, plus an actual-scale salt cue on the ridge or a validated measured-salt action when crystals are not truthfully visible.",
+      "color_function_boundary": "Olive-gold identifies the oil-led recipe and connects closed pack to edible oil color. It is not a premium metallic, grade cue, origin cue, health cue or ambient brand accent.",
+      "distinct_from_fig_leaf": "Fig Leaf remains desaturated sage and nearly ivory in the food; Olive Oil & Sea Salt uses a warmer, yellower mineral-straw identifier and a translucent ribbon/emulsion/crystal food pattern, never a green leaf veil."
+    },
+    "allowed_variation": "The oil ribbon may move from one thin crescent to two short broken threads when validated stability naturally changes its path; cup form, identifier field, emulsion proof and truthful salt cue remain fixed.",
+    "product_usp": "얇은 올리브 오일 리본과 소금의 짧은 대비를 되직한 요거트 안에 겹쳐, 같은 한 컵 구조를 식사 곁의 세이보리 순간까지 넓히는 라인업의 여섯 번째 끝점.",
+    "landing_message": "올리브 오일의 얇은 결과 소금의 짧은 대비. 한 컵이 식사 곁으로 갑니다.",
+    "image_roles": [
+      {
+        "role": "savory-meal-adjacent-hero",
+        "brief": "45도 열린 컵, 깊은 스푼 자국, 오일 리본을 가로질러 들어 올린 한 숟갈을 중심에 둔다. 검증된 경우에만 프레임 가장자리에 단순한 bread 또는 vegetable cue 하나를 두어 meal-adjacent임을 설명하고, 완성 식사나 meal-replacement 장면은 만들지 않는다."
+      },
+      {
+        "role": "oil-emulsion-spoon-cut-macro",
+        "brief": "표면의 얇은 translucent ribbon이 숟갈 단면 안쪽의 pearly emulsion halo와 microdroplets로 이어지는 실제 R&D 샘플 근접 증거. 기름 웅덩이, 합성 광택, green color cast는 금지한다."
+      },
+      {
+        "role": "salt-truth-proof",
+        "brief": "실제 레시피에 남는 미세 salt crystal을 컵 가장자리 또는 spoon tip과 함께 실제 크기로 보여 준다. 완전 용해형이면 정량 수치를 주장하지 않는 measured seasoning action으로 대체하고 가짜 결정은 만들지 않는다."
+      },
+      {
+        "role": "closed-open-color-correspondence",
+        "brief": "닫힌 미색 컵의 좁은 olive-gold identifier와 열린 컵의 실제 translucent oil ribbon을 나란히 놓아 색이 장식이 아니라 내용물 locator임을 증명한다."
+      },
+      {
+        "role": "six-product-open-cup-matrix",
+        "brief": "같은 각도와 spoon cut에서 Thyme Honey ribbon/fleck, Fig Leaf veil, Roasted Buckwheat fleck, Citrus Peel thread, Black Sesame marble, Olive Oil & Sea Salt emulsion/crystal의 차이를 비교한다."
+      }
+    ]
+  },
+  "minimal_family_updates": {
+    "change_principle": "Keep the existing four landing features, five shared invariants, four cognitive invariants, cup architecture and Thyme Honey hero. Replace only five-product language and extend the food-pattern and use-context logic enough to admit one savory endpoint.",
+    "one_line_definition": {
+      "change": "replace",
+      "from": "천연 재료의 향·색·입자·여운을 되직한 그릭요거트 한 컵 안에 겹쳐 보여 주는 150 g 인퓨전 요거트 다섯 종.",
+      "to": "천연 재료의 향·색·입자·여운을 되직한 그릭요거트 한 컵 안에 겹쳐 보여 주며, 아침과 간식·작은 디저트에서 식사 곁의 세이보리 순간까지 이어지는 150 g 인퓨전 요거트 여섯 종."
+    },
+    "shared_architecture": {
+      "change": "replace",
+      "from": "150 g 낮고 넓은 1회용 컵을 고정하고, 각 레시피는 하나의 주재료 조합, 하나의 감각 방향, 하나의 대표 사용 순간, 하나의 식용 표면 패턴으로 구분한다. 랜딩에서는 모든 제품을 closed pack, open cup, spoon cut의 같은 세 상태로 반복한다.",
+      "to": "150 g 낮고 넓은 1회용 컵을 고정하고, 각 레시피는 하나의 주재료 조합, 하나의 감각 방향, 하나의 대표 사용 순간, 하나의 식용 표면 패턴으로 구분한다. 다섯 제품이 아침·간식·작은 디저트 안에서 차이를 만들고 Olive Oil & Sea Salt가 동일 구조를 식사 곁의 세이보리 순간까지 확장한다. 랜딩에서는 여섯 제품 모두를 closed pack, open cup, spoon cut의 같은 세 상태로 반복한다."
+    },
+    "shared_invariants": {
+      "change": "replace_one_of_five",
+      "target_index_zero_based": 2,
+      "unchanged_indices_zero_based": [0, 1, 3, 4],
+      "replacement": "모든 제품은 토핑을 위에 쌓지 않고 색 번짐, 얇은 리본, 미세 입자, 필 스레드, 마블링, 유화 흔적 또는 검증된 미세 결정 중 하나가 요거트 안쪽까지 이어져 인퓨전 방향을 드러낸다. 소금이 완전히 녹는 레시피에서는 가시 결정을 꾸미지 않고 검증된 재료 행동과 정보로 증명한다.",
+      "resulting_count": 5
+    },
+    "cognitive_invariants": {
+      "change": "replace_one_of_four",
+      "target_index_zero_based": 2,
+      "unchanged_indices_zero_based": [0, 1, 3],
+      "replacement": "여섯 제품은 같은 정보 순서와 같은 촬영 상태로 비교되어 차이가 용기 장식이 아니라 veil, fleck, thread, marble, ribbon/emulsion/crystal 같은 실제 재료 흔적과 대표 사용 순간에서 발생함을 보여 준다.",
+      "resulting_count": 4
+    },
+    "differentiation_logic": {
+      "fixed": {
+        "change": "none",
+        "value": "컵 비례, 필 탭, 정보 순서, 미색 바탕, 스푼 자국, 촬영 각도"
+      },
+      "variable": {
+        "change": "extend_food_pattern_only",
+        "value": "한 가지 기능적 재료 식별색, 식용 표면 패턴, 감각 단어, 대표 섭취 순간"
+      },
+      "decision_rule": {
+        "change": "replace",
+        "value": "색은 포장 장식이 아니라 실제 내용물 예고에만 쓰며, 각 제품은 다른 식용 패턴을 가져 여섯 종을 흑백으로 보아도 veil, fleck, thread, marble, ribbon/emulsion/crystal의 차이로 구분되어야 한다. Olive Oil & Sea Salt의 olive-gold는 좁은 locator에만 쓰고 Fig Leaf의 sage-green과 음식 흔적 양쪽에서 분리한다."
+      },
+      "hero_logic": {
+        "change": "replace",
+        "value": "Thyme Honey가 '익숙한 단맛 + 낯선 허브 흔적'으로 가족의 개념을 가장 빠르게 설명하고, Fig Leaf, Roasted Buckwheat, Citrus Peel, Black Sesame가 green, toasted, bright, deep 방향을 확장한다. Olive Oil & Sea Salt는 translucent oil ribbon, emulsion and truthful salt cue로 savory / meal-adjacent endpoint를 맡는다."
+      }
+    },
+    "landing_features": {
+      "change": "replace_one_of_four",
+      "target_feature_name": "다섯 가지 감각 좌표",
+      "replacement": {
+        "name": "여섯 가지 감각 좌표",
+        "message": "herbal, green, toasted, bright, deep, savory의 서로 다른 선택 이유를 동일한 정보 순서로 비교하고, Olive Oil & Sea Salt만 식사 곁의 meal-adjacent 순간을 연다.",
+        "proof": "같은 각도·같은 양·같은 스푼 동작으로 촬영한 6종 비교와 savory serving-context 한 장"
+      },
+      "unchanged_feature_names": ["보이는 밀도", "안에 머문 재료", "한 컵의 완결된 사용"],
+      "resulting_count": 4
+    },
+    "necessary_variants": {
+      "change": "append_one",
+      "resulting_value": [
+        "Fig Leaf",
+        "Roasted Buckwheat",
+        "Citrus Peel",
+        "Black Sesame",
+        "Olive Oil & Sea Salt"
+      ]
+    },
+    "proof_image_roles": {
+      "change": "rename_two_extend_one_add_one",
+      "resulting_value": [
+        {
+          "role": "representative-product-hero",
+          "product": "Thyme Honey",
+          "communication_job": "낮고 넓은 150 g 컵, 깊은 spoon furrow, 들어 올린 한 숟갈, honey ribbon과 thyme fleck를 한 장에 보여 제품 정의를 즉시 이해시킨다."
+        },
+        {
+          "role": "six-product-closed-pack-lineup",
+          "communication_job": "동일한 컵과 정보 구조 속에서 실제 재료색 한 영역만 바뀌는 여섯 제품 가족 구조를 증명하며, Fig Leaf sage와 Olive Oil & Sea Salt olive-gold가 명확히 분리되어야 한다."
+        },
+        {
+          "role": "six-product-open-cup-matrix",
+          "communication_job": "동일 각도와 동일 spoon cut으로 ribbon/fleck, veil, grain fleck, peel thread, dark marble, oil emulsion/crystal의 차이를 비교한다."
+        },
+        {
+          "role": "infusion-detail-series",
+          "communication_job": "각 제품에서 재료 흔적이 표면이 아니라 숟갈 단면 안쪽까지 이어짐을 macro로 증명하고, Olive Oil & Sea Salt는 실제 oil/emulsion과 truthful salt cue를 함께 보여 준다."
+        },
+        {
+          "role": "use-sequence",
+          "communication_job": "closed cup → peel → scoop 세 상태로 150 g 한 컵의 실제 사용을 설명한다."
+        },
+        {
+          "role": "savory-meal-adjacent-context",
+          "product": "Olive Oil & Sea Salt",
+          "communication_job": "컵을 주역으로 유지한 채 검증된 단일 serving cue만 더해 snack/dessert family가 meal-adjacent endpoint까지 확장됨을 보여 주고, meal replacement나 건강 식단을 암시하지 않는다."
+        }
+      ]
+    },
+    "necessary_product_visual_map_entry": {
+      "product": "Olive Oil & Sea Salt",
+      "identifier_color": "#A18A57 directional muted olive-gold / mineral-straw; print and food-match validation required",
+      "color_use": "narrow identifier field, comparison legend and recipe locator only",
+      "color_exclusions": "not full-pack color, ambient light, set color, metallic premium cue, grade cue or origin cue",
+      "distinct_from_fig_leaf": "warmer and yellower than Fig Leaf #68765F sage; never leaf-green",
+      "food_truth_to_verify": "oil ribbon path, emulsion stability, separation behavior, salt dissolution/crystal visibility and the actual serving state",
+      "hero_trace": "thin translucent olive-gold ribbon, narrow pearly emulsion halo, actual-scale salt cue only when present in the validated recipe",
+      "primary_image_job": "explain the savory meal-adjacent endpoint without changing the shared yogurt cup architecture",
+      "use_moment": "light-lunch side or direct savory spooning, pending serving-context validation"
+    }
+  },
+  "r_and_d_checks": [
+    {
+      "check": "oil_separation_and_emulsion",
+      "questions": [
+        "Does the intended olive-oil inclusion remain as a thin readable ribbon plus micro-emulsion at serving temperature, or does it pool, soak into the lid, migrate to the cup wall or read as greasy separation?",
+        "How do mixing order, droplet size, holding time, transport vibration and temperature change the visible ribbon and spoon-cut trace?",
+        "Can the photographed hero state be reproduced by the actual product without styling oil added only for camera?"
+      ],
+      "acceptance_boundary": "Lock the ribbon/emulsion visual only after an actual stable R&D sample produces it. If pooling is intrinsic, revise the form cue rather than hiding separation in retouching."
+    },
+    {
+      "check": "salt_level_and_visible_truth",
+      "questions": [
+        "What salt level supports the intended savory contrast without making a quantified nutrition or better-for-you claim?",
+        "Does the selected salt particle size dissolve fully, remain as a few perceptible crystals or create uneven bites during the expected serving window?",
+        "Does any visible crystal in photography match the actual formulation, size and distribution rather than a camera-only garnish?"
+      ],
+      "acceptance_boundary": "Do not specify a grade, origin or proprietary salt story. Do not enlarge crystals or increase their count for visibility; use measured ingredient action and factual disclosure when salt is not visually present."
+    },
+    {
+      "check": "serving_context_and_lineup_comprehension",
+      "questions": [
+        "Do users understand the product as a spoonable savory yogurt cup, a meal-side accompaniment or a dip, and which one context should the landing page lead with?",
+        "Which single modest serving cue — direct spoon, plain bread or vegetable — clarifies use without turning the image into a recipe, full meal or meal-replacement claim?",
+        "Does adding a meal-adjacent endpoint strengthen the six-product choice system without confusing the existing breakfast, snack and dessert roles?"
+      ],
+      "acceptance_boundary": "Choose one leading context only after user and sensory testing. Until then, retain 'meal-adjacent directional concept' and avoid prescriptive meal, health or nutrition language."
+    }
+  ],
+  "claim_and_trade_dress_boundaries": [
+    "Do not claim olive-oil grade, cultivar, harvest, cold pressing, region, origin, traceability, antioxidant content or other unverified quality markers.",
+    "Do not claim salt grade, mineral profile, region, health benefit, reduced sodium or precise level before formulation and legal validation.",
+    "Do not imply probiotic, high-protein, low-sugar, digestive, medical, sustainability, recycling or meal-replacement benefits.",
+    "Keep MORA's food-native low-wide cup, broad matte ivory field and function-only ingredient locator; do not introduce Le Labo labels, name-plus-number architecture, perfume vessels, individualized production labels or laboratory trade dress."
+  ]
+}

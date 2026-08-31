@@ -1,0 +1,650 @@
+{
+  "revision_id": "revision10_female_craft",
+  "owned_sections": {
+    "visual_branding_and_key_visual": {
+      "key_insight": "MORA의 키 비주얼은 아름다운 완성 컵을 먼저 장식하지 않는다. 한 여성 메이커가 원료를 고르고, 도구로 상태를 바꾸고, 중간 결과를 보고 멈춘 뒤 기록하는 원인–행동–결과를 사진 한 장 안에서 읽게 해 마지막 한 컵의 책임을 브랜드 권위로 만든다.",
+      "communication_job": "사진 기반 시리즈 ‘Material Under Care’는 매 프레임에 하나의 input, 하나의 tool, 하나의 action, 하나의 intermediate output, 하나의 record를 연결해 MORA의 크래프트가 감성적 수사보다 관찰 가능한 선택·변환·중단·기록임을 증명한다. 제품 사실 레이어는 이 어두운 세계와 분리해 내용물의 실제 색, 용기 투명도, 라벨 가독성을 정확하게 보여 준다.",
+      "premise": "재료는 돌봄 아래에서 상태가 바뀌고, 메이커는 가장 좋은 상태에서 멈추며, 기록은 그 판단을 다음 배치로 이어 준다. 완성품은 그 연쇄의 마지막 증거이지 장식용 정물이 아니다.",
+      "focal_actor": "카메라를 보지 않는 한 명의 여성 메이커가 재료 두 상태를 비교해 하나를 선택하거나, 넓은 스테인리스 도구로 한 번 변환하고, 결과를 확인해 멈춘 뒤 부분 종이 batch record의 실제 maker check field에 이니셜 또는 한 개의 확인 표시를 남기는 손과 판단",
+      "series_rule": "각 프레임은 ① 이름 붙은 실제 식품 input 하나, ② 기능이 분명한 식품 도구 하나, ③ 선택·계량·거름·폴딩·중단 중 행동 하나, ④ cultured gel·acid whey·strained base·aqueous infusion·syrup·grain slurry·seed paste·oil phase/validated emulsion·folded batch 중 중간 결과 하나, ⑤ batch sheet·time/temperature log·maker check 중 기록 하나를 반드시 인과적으로 연결한다. 같은 3:2 프레임, graphite 암부, 국소 작업등, 기록 위치를 반복하고 레시피·도구·중간상태·행동만 바꾼다.",
+      "series_rule_spec": {
+        "name": "Material Under Care",
+        "sequence": [
+          "THE SELECTION — 재료 두 상태를 비교하고 하나를 제외한다.",
+          "THE CULTURE — 시간·온도 기록 옆에서 cultured gel의 상태를 확인하고 멈춘다.",
+          "THE SEPARATION — 천 위 strained base와 아래 acid whey를 한 프레임에 보존한다.",
+          "THE INTERMEDIATE ARCHIVE — 수상 인퓨전·시럽·슬러리·페이스트·오일상 또는 검증된 에멀전을 서로 다른 물성으로 기록한다.",
+          "THE LAST FOLD — 넓은 패들로 한 번 접고 folded batch의 능선과 재료 흔적을 확인한다.",
+          "THE FINAL RECORD — wide-mouth jar의 내용물·밀봉·부분 batch record를 확인하고 제한된 maker mark를 남긴다."
+        ],
+        "fixed_invariants": [
+          "실제 input, tool, action, intermediate output, record가 모두 보인다.",
+          "여성 메이커는 선택·비교·멈춤·기록 중 하나의 실제 판단을 수행하며 포즈를 취하지 않는다.",
+          "빛은 재료의 점도와 작업 접점만 선택적으로 드러내고 암부 디테일을 보존한다.",
+          "고정 인쇄 정보와 실제 가변 maker mark의 역할을 분리한다.",
+          "음식 접촉면은 밀봉·세척 가능한 표면으로 읽히고 벽돌·노후 표면은 비접촉 외피에만 남는다."
+        ],
+        "controlled_variables": [
+          "여섯 레시피에 맞는 실제 식품 원료",
+          "공정별 도구와 중간상태",
+          "선택·계량·거름·폴딩·중단·기록 행동",
+          "가로 3:2, 세로 4:5, 정사각 1:1 크롭",
+          "실제 배치에서 확인된 음식색과 점도"
+        ],
+        "acceptance_test": "설명 문장을 가려도 관찰자는 5초 안에 무엇이 입력이고, 어떤 도구가 무엇을 바꾸며, 어떤 중간상태에서 메이커가 멈추고, 무엇을 기록했는지 순서대로 말할 수 있다.",
+        "rejection_test": "여성 메이커가 제품을 들고 카메라를 보거나, 장식적 원료 산개·연기·입자·스플래시가 공정을 대신하거나, 중간상태와 기록의 인과가 보이지 않거나, 거친 공간이 비위생적 식품 접촉면으로 읽힌다."
+      },
+      "identity_behavior": [
+        "MORA 표식은 독자적인 넓은 grotesk 방향으로 개발하고 Le Labo 워드마크, 압축 대문자 조형, 스텐실, 타자기 질감, 라벨형 락업을 복제하지 않는다.",
+        "큰 레시피명보다 배치 상태와 공정 사실이 먼저 읽히는 밀도 높은 기록 위계를 사용하되 Le Labo의 약국형 격자와 ingredient-plus-number 명명은 사용하지 않는다.",
+        "부분 무코팅 종이 라벨은 장식면이 아니라 batch record다. 고정 정보는 정밀 인쇄하고 손으로 남기는 영역은 maker initials·final check·batch condition처럼 실제 가변 사실로 제한한다.",
+        "여성성은 색·꽃·곡선·필기체가 아니라 선택, 기억, 제외, 중단, 마지막 확인이라는 행동의 연속으로 드러낸다.",
+        "벽돌·콘크리트·산화 금속의 거친 외피와 투명 식품 용기·밀봉된 작업면·표준화 정보의 정밀성을 한 화면 안에서 긴장시킨다."
+      ],
+      "type_message_image_product_ui_relationship": [
+        "사진이 input → action → intermediate output → record의 원인 사슬을 맡고, 글자는 공정명·배치 상태·검증 경계를 분류한다.",
+        "대표 카피는 재료·손·기록 위에 겹치지 않는 graphite 음영의 연속 여백에 둔다.",
+        "고정 규격 정보는 단정한 grotesk와 tabular numerals로, maker mark는 실제 현장에서 남긴 제한된 원본 필체로 구분한다. 손글씨 폰트로 수제 분위기를 연출하지 않는다.",
+        "랜딩의 공정 UI는 한 장면마다 input, tool, action, output, record의 다섯 캡션을 같은 순서로 반복한다.",
+        "제품 비교에서는 실제 음식색과 질감이 SKU 차이를 만들고, graphite UI와 무코팅 종이색은 전역 구조만 담당한다.",
+        "어두운 브랜드 사진 다음에는 중립광의 제품 proof를 배치해 분위기와 제품 사실을 혼동하지 않는다."
+      ],
+      "visual_layers": [
+        {
+          "layer": "process_key_visual",
+          "job": "여성 메이커의 선택과 변환을 사진 기반 인과 장면으로 증명",
+          "exposure": "low-key task light with retained shadow detail",
+          "truth_boundary": "실제 SOP·수치·배합으로 오인될 세부는 검증 전 placeholder로 표시"
+        },
+        {
+          "layer": "product_truth",
+          "job": "낮고 넓은 wide-mouth jar, 60–70% 이상 내용물 가시 영역, 부분 종이 batch record와 실제 음식 상태를 정확하게 설명",
+          "exposure": "neutral 4500–5000 K, color reference and legible label",
+          "truth_boundary": "용기·라벨·인쇄·밀봉 사양은 생산 시험 전 방향성 후보"
+        },
+        {
+          "layer": "record_graphics",
+          "job": "배치 기록을 랜딩의 캡션·표·비교 구조로 확장",
+          "exposure": "flat, sharp, readable",
+          "truth_boundary": "법정 표시사항과 허구의 배치 수치를 만들지 않음"
+        }
+      ],
+      "surface_translation": {
+        "landing_hero": "Material Under Care의 THE LAST FOLD 또는 THE FINAL RECORD를 넓은 사진으로 사용하고, 반대편 음영 여백에 마지막 확인의 브랜드 문장을 둔다. 이어지는 첫 proof frame에서 열린 wide-mouth jar와 부분 batch record를 중립광으로 보여 제품 정의를 즉시 확정한다.",
+        "process_chapter": "여섯 공정 사진을 input, tool, action, intermediate output, record의 동일한 다섯 캡션으로 읽게 한다.",
+        "lineup_grid": "같은 wide-mouth jar·부분 batch record 구조와 같은 색 정확도 아래 실제 음식 흔적만 바꾼다.",
+        "ingredient_archive": "원물과 해당 중간상태를 한 쌍으로 놓고, 제외된 재료 또는 보류된 상태도 판단의 증거로 한정해 보여 준다.",
+        "record_moments": "batch sheet와 라벨의 가변 표시를 확대하되 실제 확인된 필드만 사용하고 필수 식품 정보는 표준 인쇄 영역으로 분리한다.",
+        "responsive": "input–tool–action–output–record의 연결선이 중앙 70%에 남도록 3:2 master와 4:5 crop을 함께 정의한다. 모바일에서는 사진 다음에 다섯 캡션을 같은 순서로 쌓는다."
+      },
+      "repeatable_variables": [
+        "여섯 레시피의 실제 원료와 식품색",
+        "발효·거름·인퓨전·폴딩·검수 단계",
+        "중간상태의 점도·입자·분리 양상",
+        "선택·비교·멈춤·기록 행동",
+        "검증된 배치 필드와 실제 maker mark",
+        "3:2·4:5·1:1 크롭"
+      ],
+      "anchor_image_briefs": {
+        "product_hero": {
+          "asset_id": "ST2-PRODUCT-HERO-01",
+          "status": "replacement_brief_only_not_generated",
+          "communication_job": "대표 Thyme Honey 한 컵이 떠먹는 프리미엄 그릭요거트이며, 내용물·wide-mouth 사용성·부분 batch record·마지막 spoon action이 하나의 제품 구조임을 색 정확하게 증명한다.",
+          "required_content": [
+            "낮고 넓은 투명 wide-mouth jar와 개봉 상태",
+            "용기 면적의 60–70% 이상에서 보이는 실제 cultured-milk white와 검증된 thyme/honey trace",
+            "전체를 감싸지 않는 무코팅 부분 종이 batch record와 별도 표준 법정 정보 영역",
+            "한 번 떠낸 spoon furrow와 사용된 스테인리스 스푼",
+            "중립광, 회색 기준 또는 컬러 레퍼런스를 사용한 식품색 정확성"
+          ],
+          "composition": "30–35도 제품 시점, jar가 화면의 주역, 라벨과 내용물 경계가 모두 보이며 카피는 음식과 겹치지 않는 별도 여백에 둔다.",
+          "do_not_show": "향수병 비율, 전면 wrap label, 약국형 격자, city/date ritual, 장식적 손글씨, CGI처럼 매끈한 흰 스월, 어두운 조명으로 변색된 음식"
+        },
+        "mood_relationship": "제품 히어로는 color-accurate product truth이고 브랜드 무드 앵커는 선택·비교·중단·기록의 low-key process truth다. 같은 장면으로 두 역할을 겸하지 않는다."
+      },
+      "source_lineage": [
+        {
+          "source_evidence_title": "Sandalwood Harvest film poster",
+          "retained_job": "완성품 포즈보다 실제 만드는 일을 장인성의 증거로 사용",
+          "target_translation": "여성 메이커의 원료 선택과 공정 판단",
+          "protected_boundary": "원 장면·작업자·수확 미학을 재연하지 않음"
+        },
+        {
+          "source_evidence_title": "Rose Harvest film poster",
+          "retained_job": "손과 원재료 접촉이 럭셔리 포즈를 대체",
+          "target_translation": "재료 비교·제외·중단을 수행하는 손",
+          "protected_boundary": "원 캠페인 구도와 장면을 모사하지 않음"
+        },
+        {
+          "source_evidence_title": "Fresh formulation / refill pour",
+          "retained_job": "도구·계량·변환·기록을 한 작업 순간에 연결",
+          "target_translation": "식품 input·도구·중간상태·batch record의 인과 사진",
+          "protected_boundary": "비커·향수병·조제 서비스·Le Labo 라벨을 복제하지 않음"
+        },
+        {
+          "source_evidence_title": "Personalized label application",
+          "retained_job": "개인화를 물리적 기록 행동으로 증명",
+          "target_translation": "실제 final check 뒤 제한된 maker mark 부여",
+          "protected_boundary": "개인명·도시·날짜 의식과 원 라벨 레이아웃을 복제하지 않음"
+        }
+      ],
+      "avoid": [
+        "Le Labo 워드마크, ingredient-plus-number naming, 사각 약국 라벨 격자, 향수 실루엣, 도시·날짜 의식, 선언문 cadence, Le Journal 판형",
+        "핑크·파스텔·꽃·리본·캘리그래피·둥근 장식으로 여성성을 신호하기",
+        "여성 메이커의 카메라 응시, 제품 과시, 돌봄 노동의 감상적 연기, 엄마·아내 역할의 규범화",
+        "원료 산개, 공중 입자, 향수식 연기, splash, decorative gradient, CGI gel, 예쁜 정물로 공정을 대체하기",
+        "벽돌·녹·얼룩이 음식 접촉면에 닿아 비위생으로 읽히는 장면",
+        "필수 표시사항을 손글씨로 처리하거나 허구의 batch 수치·창업자 사실을 넣기",
+        "브랜드 무드의 어두운 색보정을 제품 proof에 적용해 음식색·투명도·라벨 가독성을 훼손하기"
+      ],
+      "status": "directional_revision10_replacement"
+    },
+    "brand_mood_and_brand_imagery": {
+      "key_insight": "MORA의 세계는 정갈한 아이보리 쿠킹 스튜디오가 아니라, 오래 사용된 벽돌·콘크리트 외피와 위생적으로 밀봉된 식품 작업면이 공존하는 어두운 크래프트 제조실이다. 여성 메이커의 권위는 외모가 아니라 무엇을 고르고, 버리고, 어디서 멈추고, 무엇을 기록하는지로 보인다.",
+      "communication_job": "‘The Keeper’s Manufactory’는 기능적 재고, 중간 산출물, 국소 작업등, 여성 메이커의 판단 행동을 하나의 지속적인 장소로 묶어 MORA의 마지막 집요함을 보여 준다. 별도의 color-accurate proof layer는 어두운 분위기가 완제품 사실을 왜곡하지 않게 한다.",
+      "emotional_and_cultural_register": [
+        "화사한 환대보다 집중된 책임감과 조용한 긴장",
+        "무결점 부티크보다 사용·검수·축적이 보이는 프리미엄",
+        "장식적 여성성보다 기억·선택·배제·마지막 확인이 만드는 여성 메이커의 권위",
+        "신비로운 장인 서사보다 눈으로 확인 가능한 상태 차이와 기록",
+        "시골풍 향수보다 도시형 식품 제조의 기능적 밀도",
+        "거칠지만 더럽지 않고, 어둡지만 제품 사실을 숨기지 않는 양면성"
+      ],
+      "world_setting_people": [
+        "한 명의 성인 여성 메이커가 같은 제조실 안에서 선택·비교·중단·기록을 이어 간다. 실제 창업자 신원과 외형이 확인되기 전에는 특정 인물의 전기나 초상으로 주장하지 않는다.",
+        "메이커는 카메라를 보지 않고 재료 두 상태, 떨어지는 유청, folded batch의 능선, batch record 중 하나를 응시한다.",
+        "표정·메이크업·헤어·체형·의상으로 여성성을 과장하지 않는다. 로고 없는 graphite 작업복과 위생에 맞는 머리·손 관리만 기능적으로 적용한다.",
+        "엄마·아내·주방의 주인은 가족 미식에 대한 책임의 상징적 기원이며, 소비자에게 성 역할을 요구하거나 가사 장면을 재연하지 않는다.",
+        "한 프레임에는 주도 메이커 한 명만 두고 보조 인력은 공정 설명에 꼭 필요한 경우 배경의 비식별 작업자로 제한한다."
+      ],
+      "space_and_hygiene_zones": {
+        "shell": "노출 벽돌, 봉인된 콘크리트, 패치 흔적, graphite 도장 철제 프레임, 오래된 기능 선반은 비접촉 외피와 저장 영역에 사용한다.",
+        "food_contact": "스테인리스 작업대, 식품용 용기, 세척 가능한 벽체, 배수·세척 설비, 밀봉된 접촉면은 깨끗하고 손상 없이 보인다.",
+        "inventory": "천, 체, 스테인리스 볼·패들, batch sheet, 원물, 중간 베이스를 공정 순서대로 기능적으로 쌓고 장식용 빈티지 소품을 두지 않는다.",
+        "light": "천장 전면광보다 국소 task light가 판단 지점을 밝히고 주변 graphite 암부에는 공간 구조와 재고의 윤곽이 남는다.",
+        "safety_boundary": "거칠음은 외피의 시간과 도구 사용 흔적으로만 만든다. 음식 주변의 오염, 녹슨 접촉 도구, 흘린 재료, 비위생적 손, 연출된 먼지를 사용하지 않는다."
+      },
+      "materials_and_sensory_cues": [
+        "sealed concrete and aged brick shell",
+        "brushed stainless work islands, mesh strainer, broad paddle and scale",
+        "cultured-milk white gel, translucent acid whey, dense strained base",
+        "aqueous infusion, syrup, grain slurry, seed paste, oil phase or validated emulsion",
+        "low wide transparent wide-mouth jar and partial uncoated paper batch record",
+        "graphite workwear, neutral black factual ink and limited genuine maker marks",
+        "functional shelving, batch binders and labeled intermediate-state containers without perfume-lab glassware"
+      ],
+      "camera_light_color": [
+        "35–50 mm 환산의 가까운 환경 프레임과 70–100 mm 매크로를 사용해 공간 맥락과 재료 상태를 분리한다.",
+        "카메라는 손 높이 또는 작업대보다 약간 높은 20–35도 시점을 기본으로 하며 과장된 overhead flat lay를 반복하지 않는다.",
+        "3800–4400 K 국소 작업등과 큰 negative fill로 3–4 stop의 명암 구조를 만들되 피부·종이·우유빛 음식의 암부 정보를 보존한다.",
+        "graphite·concrete·steel이 환경 팔레트를 맡고 cultured-milk white와 실제 재료색만 선택적으로 드러난다.",
+        "브랜드 무드 컷은 낮은 채도와 깊은 암부를 허용하지만 음식색을 갈색·회색으로 오염시키는 세피아·청록 그레이딩은 금지한다.",
+        "제품 proof 컷은 4500–5000 K 중립광, 회색 기준, 일관된 노출과 white balance로 별도 촬영한다."
+      ],
+      "image_series_roles": [
+        {
+          "role": "selection-proof",
+          "communication_job": "메이커가 같은 재료의 두 상태를 비교하고 하나를 제외함으로써 엄선이 실제 판단임을 보여 준다.",
+          "required_content": "female maker, two comparable ingredient states, one selection or rejection gesture, shallow stainless tray, selection note, no product pose"
+        },
+        {
+          "role": "culture-stop-proof",
+          "communication_job": "발효를 시작하는 장면보다 어떤 상태에서 멈추고 기록하는지가 MORA의 책임임을 보여 준다.",
+          "required_content": "cultured gel surface, food-safe probe or validated observation tool, time/temperature record with unverified values obscured or marked placeholder, maker stop decision"
+        },
+        {
+          "role": "separation-proof",
+          "communication_job": "strained base와 acid whey가 동시에 보이게 해 농축의 물리적 결과를 설명한다.",
+          "required_content": "food-safe cloth or straining system, dense upper phase, translucent lower whey, stainless frame, batch record"
+        },
+        {
+          "role": "intermediate-archive",
+          "communication_job": "여섯 재료가 같은 투명 액체가 아니라 서로 다른 식품 운반상과 점도를 가진다는 사실을 비교한다.",
+          "required_content": "aqueous infusion, syrup, grain slurry, seed paste, oil phase or validated emulsion in food-safe containers, standardized factual labels, material-accurate color"
+        },
+        {
+          "role": "last-fold-proof",
+          "communication_job": "한 번의 저전단 폴딩과 멈춤이 능선·리본·입자를 보존함을 보여 준다.",
+          "required_content": "broad stainless paddle, one fold phase, preserved yogurt ridge, visible ingredient trace, maker observing result, batch note"
+        },
+        {
+          "role": "final-record-proof",
+          "communication_job": "완성 wide-mouth jar의 내용물·밀봉·부분 batch record를 확인하고 제한된 maker mark를 남기는 마지막 책임을 보여 준다.",
+          "required_content": "low wide transparent jar, at least 60–70% content visibility, partial uncoated paper record, separate legal information zone, genuine initials or check only"
+        },
+        {
+          "role": "color-accurate-product-proof",
+          "communication_job": "어두운 브랜드 세계와 분리해 여섯 완제품의 실제 음식색·질감·용기·라벨 가독성을 공정하게 비교한다.",
+          "required_content": "neutral light, fixed camera and exposure, color reference workflow, identical jar scale, no mood grade"
+        }
+      ],
+      "series_rule": "동일 여성 메이커, 동일 제조실, 동일 graphite 작업복과 기록 시스템을 고정하고 Selection → Culture Stop → Separation → Intermediate Archive → Last Fold → Final Record를 이어 간다. 각 장면은 input·tool·action·intermediate output·record를 하나씩 보여 주며, 선택과 멈춤의 손동작만 바뀐다. 제품 proof 시리즈는 인물을 제외하고 중립광·고정 시점·동일 노출로 별도 운영한다.",
+      "process_storytelling_series": {
+        "name": "The Keeper’s Manufactory",
+        "chapters": [
+          {
+            "chapter": "The Selection Shelf",
+            "setting": "sealed concrete wall, graphite steel shelf, stainless comparison tray",
+            "maker_action": "compare and exclude",
+            "record": "selection note"
+          },
+          {
+            "chapter": "The Culture Room",
+            "setting": "cleanable wall zone, stainless vessel station, local task light",
+            "maker_action": "observe and stop",
+            "record": "time/temperature condition record"
+          },
+          {
+            "chapter": "The Straining Table",
+            "setting": "sealed food-contact island inside aged brick shell",
+            "maker_action": "separate and inspect",
+            "record": "yield/state record"
+          },
+          {
+            "chapter": "The Intermediate Archive",
+            "setting": "functional dark shelving with food-safe intermediate containers",
+            "maker_action": "compare viscosity and color",
+            "record": "carrier-state label"
+          },
+          {
+            "chapter": "The Folding Bench",
+            "setting": "brushed stainless bench and broad paddle under single task light",
+            "maker_action": "fold once and stop",
+            "record": "final condition check"
+          },
+          {
+            "chapter": "The Finish Counter",
+            "setting": "clean packing station at the edge of the manufactory",
+            "maker_action": "inspect jar and add genuine maker mark",
+            "record": "partial batch record"
+          }
+        ]
+      },
+      "anchor_image_brief": {
+        "asset_id": "ST2-BRAND-MOOD-01",
+        "status": "replacement_brief_only_not_generated",
+        "communication_job": "여성 메이커가 The Straining Table에서 두 중간상태를 비교하고 멈춤을 결정한 뒤 기록하는 장면으로, 거친 제조실 외피·위생적 작업면·재료의 물성·판단의 책임을 한 프레임에 묶는다.",
+        "required_content": [
+          "노출 벽돌과 sealed concrete로 된 어두운 비접촉 외피",
+          "깨끗한 brushed stainless food-contact island",
+          "동일 배치의 dense strained base와 translucent acid whey",
+          "카메라를 보지 않는 한 명의 여성 메이커가 두 상태를 비교하는 손동작",
+          "기능적 도구와 batch record, 실제 check를 남기기 직전 또는 직후의 한 순간",
+          "graphite 암부 속 국소 작업등, 피부·종이·음식의 디테일 보존"
+        ],
+        "composition": "가로 3:2 환경 초상. 작업대가 하단 40%, 메이커의 손과 두 상태가 중앙 판단축, 우측 또는 좌측 25%는 짧은 카피를 위한 연속 graphite 여백. 얼굴보다 손·도구·상태·기록의 인과가 먼저 읽힌다.",
+        "do_not_show": "정면 제품 포즈, 미소 짓는 라이프스타일 모델, 핑크·플로럴 styling, 가정 주방 클리셰, 녹슨 음식 접촉면, 비커·피펫·향수병, 세피아 빈티지 필터, 장식적 손글씨"
+      },
+      "source_lineage": [
+        {
+          "source_evidence_title": "Le Labo laboratory-store interior",
+          "retained_job": "매장을 기능적 재고와 작업이 보이는 장소로 구성",
+          "target_translation": "식품 제조와 고객 경험이 연결된 dark manufactory",
+          "protected_boundary": "Le Labo 고유 랩 세트와 트레이드 드레스를 재현하지 않음"
+        },
+        {
+          "source_evidence_title": "About-page lab workwall banner",
+          "retained_job": "거친 외피·도구·재고·기록을 환경 그래픽으로 사용",
+          "target_translation": "식품 중간상태 archive와 batch wall",
+          "protected_boundary": "원래 파우치·병·스탬프·라벨 조합을 복제하지 않음"
+        },
+        {
+          "source_evidence_title": "Concrete Candle craft motion poster, Charleston",
+          "retained_job": "낮은 빛이 다공성 표면·질량·사용 편차를 보존",
+          "target_translation": "sealed concrete shell과 점도 높은 식품 표면의 물성 대비",
+          "protected_boundary": "캔들 제품·구도·타이포를 모사하지 않음"
+        },
+        {
+          "source_evidence_title": "Souls & Labs: New York storefront motion poster",
+          "retained_job": "낡은 도시 건축을 무결점 럭셔리 외관보다 우선",
+          "target_translation": "도시형 식품 제조실 외피의 축적된 시간",
+          "protected_boundary": "특정 매장 파사드와 도시 캠페인 프레임을 복제하지 않음"
+        }
+      ],
+      "avoid": [
+        "밝고 무결점인 미장 벽, cream-on-cream 부티크 키친, 둥근 세라믹과 린넨으로만 만든 정갈한 여성 미감",
+        "거친 표면을 음식 접촉 구역에 사용하거나 오염·먼지·녹·흘림을 장인성으로 연출하기",
+        "여성 메이커를 엄마·아내 역할로 연기시키거나 카메라를 보는 라이프스타일 모델로 소비하기",
+        "전문 셰프의 권위적 유니폼, 흰 가운 연구원, 퍼퓨머, 농장 낭만, 빈티지 약국 소품",
+        "전 중간재를 동일한 맑은 액체로 만들기, 검증되지 않은 pH·온도·시간·수율을 사실처럼 쓰기",
+        "암부 crush, 과도한 grain, 세피아·청록 grade, 음식색 변형, 반사로 가려진 라벨",
+        "Le Labo 라벨, 병, 스탬프, 도시·날짜 의식, Le Journal 구도, 원 캠페인 손 포즈"
+      ],
+      "status": "directional_revision10_replacement"
+    },
+    "design_token_direction": {
+      "key_insight": "MORA의 토큰은 ‘여성스러운 부드러움’을 장식으로 만들지 않는다. graphite 제조 환경, concrete 구조, cultured-milk white 제품, oxidized-steel 외피, uncoated-paper 기록, 실제 ingredient color의 역할을 분리하고 낮은 radius와 밀도 높은 기록 위계로 여성 메이커의 판단을 시스템화한다.",
+      "material_color_policy": {
+        "priority_order": [
+          "actual edible color and texture in color-accurate photography",
+          "cultured-milk white as product fact, not a global cream wash",
+          "graphite and concrete as environment and information structure",
+          "stainless and oxidized-steel response according to contact zone",
+          "uncoated paper only where a batch record performs a real information job"
+        ],
+        "food_rule": "레시피별 색은 승인된 음식 샘플과 중립광 사진에서 먼저 존재한다. hex는 컬러 보정·비교 메타데이터이며 CTA, 배경, 세트 조명, 전면 패키지 틴트로 승격하지 않는다.",
+        "paper_rule": "무코팅 종이는 개별 jar의 30–40% 이하를 가리는 부분 batch record로만 사용하고, 내용물 가시 영역 60–70% 이상을 유지한다. 결로·접착·냉장 마찰·잉크 번짐 시험 전 사양으로 확정하지 않는다.",
+        "metal_rule": "음식 접촉 도구는 깨끗한 stainless, 비접촉 프레임과 외피는 절제된 oxidized-steel로 구분한다. 녹과 오염을 접촉면의 미감으로 사용하지 않는다.",
+        "handwriting_rule": "손글씨는 maker initials·final check·batch condition의 실제 가변 표시 원본에만 허용한다. 손글씨 폰트, 반복 인쇄된 가짜 체크, 필수 법정 정보의 필기 처리를 금지한다.",
+        "precedence": "이 정책은 이전의 밝은 ivory field, 개별 컵 direct-print-only, 16 px rounded card, soft boutique-kitchen 방향을 대체한다.",
+        "status": "revision10_override"
+      },
+      "color": [
+        {
+          "token": "color.field.graphite",
+          "role": "제조실 암부, 대표 섹션 배경, 1차 정보 잉크의 집중 구조",
+          "value": "#252624",
+          "relationship": "tune",
+          "source_basis": "S1 ‘About-page lab workwall banner’의 muted gray·black·task-light 대비와 GK-04의 정보 매체 역할",
+          "target_direction": "중성 graphite를 넓은 환경 암부와 진한 텍스트에 사용하되 순수 검정으로 디테일을 압살하지 않는다. 실제 음식과 부분 종이 기록이 그 위에서 분리된다.",
+          "landing_use": "hero/process 배경, dark section, 기본 텍스트, 기록 헤더",
+          "status": "directional_revision10"
+        },
+        {
+          "token": "color.field.sealed-concrete",
+          "role": "제조 환경의 중간 명도와 구조적 분할",
+          "value": "#666660",
+          "relationship": "tune",
+          "source_basis": "S1의 aged functional space가 완벽한 salon보다 작업의 시간을 드러낸다는 관찰",
+          "target_direction": "warm/cool 어느 쪽으로도 과장되지 않은 회색. 사진 배경과 얇은 구분면에 사용하고 음식 영역에는 오버레이하지 않는다.",
+          "landing_use": "process chapter 구분, image caption rail, neutral secondary field",
+          "status": "directional_revision10"
+        },
+        {
+          "token": "color.product.cultured-milk-white",
+          "role": "요거트의 실제 밀도와 내용물 사실",
+          "value": "#F3F0E7",
+          "relationship": "new",
+          "source_basis": "MORA 고유 식품의 실제 cultured base와 사용자의 재료 순수성 요구",
+          "target_direction": "샘플 촬영의 기준 근사치일 뿐 실제 음식색을 이 hex로 강제 보정하지 않는다. 전역 cream 배경이나 여성성 신호로 사용하지 않는다.",
+          "landing_use": "제품색 기준 설명, color-accurate proof의 highlight reference, 제한된 light text field",
+          "status": "directional_pending_sample_validation"
+        },
+        {
+          "token": "color.material.oxidized-steel",
+          "role": "비접촉 프레임·선반·경계의 사용감",
+          "value": "#77756E",
+          "relationship": "new",
+          "source_basis": "MORA의 dark food manufactory에 필요한 target-native material distinction",
+          "target_direction": "비접촉 구조에만 낮은 채도의 산화 금속색을 사용하고 음식 접촉 도구는 깨끗한 stainless로 분리한다.",
+          "landing_use": "비접촉 공간 사진, 얇은 rule, process index metadata",
+          "status": "directional_revision10"
+        },
+        {
+          "token": "color.material.uncoated-paper",
+          "role": "batch record의 물리적 정보면",
+          "value": "#C9BDA5",
+          "relationship": "tune",
+          "source_basis": "S1 GK-04의 촉각적 정보 매체 역할과 ‘Personalized label application’의 기록 행동을 식품 라벨로 번역",
+          "target_direction": "황갈색 vintage kraft가 아니라 회색기가 있는 무코팅 stock. 전체 wrap이 아닌 부분 record에만 사용하며 결로 시험 전 후보로 둔다.",
+          "landing_use": "batch record close-up, process caption card, packaging fact diagram",
+          "status": "directional_pending_material_test"
+        },
+        {
+          "token": "color.ingredient.actual",
+          "role": "여섯 레시피의 차이와 중간상태를 증명하는 유일한 SKU 색",
+          "value": "sample-derived; no global hex",
+          "relationship": "new",
+          "source_basis": "MORA 고유의 actual-food-first 원칙과 color-accurate proof 요구",
+          "target_direction": "Thyme Honey amber, Fig Leaf green-beige, Roasted Buckwheat grain brown, Citrus Peel orange, Black Sesame charcoal, Olive Oil olive-gold는 승인 샘플에서 채취하고 사진·썸네일·범례에만 연결한다.",
+          "landing_use": "실제 음식 사진, 중간상태 archive, 제품 비교 썸네일과 작은 캡션 범례",
+          "status": "directional_pending_recipe_validation"
+        }
+      ],
+      "typography": [
+        {
+          "token": "type.family.workhorse-grotesk",
+          "role": "국문·라틴의 제품 사실과 브랜드 서사를 하나의 절제된 산업 정보 질감으로 통합",
+          "relationship": "tune",
+          "source_basis": "S1의 display/body/label 역할 분리만 유지하고 Le Labo의 고유 압축·타자기 표면은 폐기",
+          "target_direction": "SUIT Variable 또는 동급의 독자 라이선스 grotesk를 사용한다. 국문·라틴·tabular numerals가 일관되고, condensed·stencil·typewriter 인상을 피한다.",
+          "landing_use": "표시 제목, 본문, 제품명, 공정 캡션, batch record 고정 정보",
+          "status": "directional_font_license_pending"
+        },
+        {
+          "token": "type.display.declarative",
+          "role": "마지막 확인의 브랜드 문장과 공정 장 제목",
+          "relationship": "tune",
+          "source_basis": "S1 GK-02의 장면에서 사실로 이동하는 위계를 유지하되 선언문 cadence는 복제하지 않음",
+          "target_direction": "desktop 64/68 px, mobile 40/44 px, weight 650–720, tracking -0.02em, 2–3줄 이내. 둥글고 우아한 boutique display나 과도한 condensed uppercase를 피한다.",
+          "landing_use": "hero statement, The Selection·The Last Fold 같은 장 제목",
+          "status": "directional_revision10"
+        },
+        {
+          "token": "type.record.specification",
+          "role": "공정명·배치 상태·시간·용량·법정 정보의 고밀도 분류",
+          "relationship": "new",
+          "source_basis": "MORA의 식품 고유 batch record와 표준 정보 가독성 필요",
+          "target_direction": "11–14 px, line-height 15–19 px, weight 560–650, tracking 0.015–0.04em, tabular numerals. 선보다 정렬·거리·명도 차로 그룹화하고 약국형 칸막이 격자를 만들지 않는다.",
+          "landing_use": "process metadata rail, product fact table, batch record fixed fields, image captions",
+          "status": "directional_legibility_test_pending"
+        },
+        {
+          "token": "type.record.authentic-variable-mark",
+          "role": "maker initials·final check·batch condition의 실제 개체 차이",
+          "relationship": "new",
+          "source_basis": "S1의 controlled record가 individuality를 만든다는 역할을 MORA의 실제 final check로 전환",
+          "target_direction": "폰트를 지정하지 않는다. 승인된 기록 도구로 현장에서 남긴 실제 이니셜·체크·짧은 상태 표시의 원본만 스캔 또는 촬영한다. 동일 필체를 장식적으로 반복하지 않는다.",
+          "landing_use": "batch record macro, final-record process frame, 고객용 batch card의 진짜 maker field",
+          "status": "directional_requires_operational_workflow"
+        },
+        {
+          "token": "type.body.reading",
+          "role": "창업 방향성·공정 설명·검증 경계를 명료하게 읽기",
+          "relationship": "tune",
+          "source_basis": "S1의 정보 정확성과 MORA의 사실 우선 서사",
+          "target_direction": "desktop 17/29 px, mobile 16/27 px, weight 400–450, max 34–40 Korean characters. 시적 문장과 기술 사실을 문단으로 분리한다.",
+          "landing_use": "브랜드 이야기, 공정 설명, 생산·식품안전 boundary",
+          "status": "directional_revision10"
+        }
+      ],
+      "spacing": [
+        {
+          "token": "space.dense-record-scale",
+          "role": "기록 내부와 공정 메타데이터의 치밀한 리듬",
+          "relationship": "tune",
+          "source_basis": "S1의 정보 그룹 내부·그룹 사이 거리 관계를 고밀도 식품 기록으로 조정",
+          "target_direction": "4, 8, 12, 16, 24, 32 px. 4–8은 field 내부, 12–16은 관련 field 묶음, 24–32는 기록 그룹 전환에 사용한다.",
+          "landing_use": "batch record, process caption rail, product fact table",
+          "status": "directional_revision10"
+        },
+        {
+          "token": "space.section-industrial",
+          "role": "어두운 사진 장과 밝은 제품 proof 사이의 명확한 전환",
+          "relationship": "tune",
+          "source_basis": "S1 GK-02의 scene-to-fact disclosure rhythm",
+          "target_direction": "desktop 88–120 px, mobile 56–72 px. process scene 다음 proof block은 더 큰 간격과 명도 전환을 함께 사용한다.",
+          "landing_use": "hero-to-proof, process chapters, lineup transition",
+          "status": "directional_revision10"
+        },
+        {
+          "token": "space.image-record-gap",
+          "role": "사진의 인과 장면과 다섯 record caption을 한 단위로 묶기",
+          "relationship": "new",
+          "source_basis": "Material Under Care의 input·tool·action·output·record 반복 규칙",
+          "target_direction": "desktop 16–24 px, mobile 12–16 px. 캡션은 이미지에서 떨어지지 않되 음식과 손 위에 겹치지 않는다.",
+          "landing_use": "process key visual cards and chapter modules",
+          "status": "directional_revision10"
+        },
+        {
+          "token": "space.page-edge",
+          "role": "환경 사진의 규모와 기록 가독성을 동시에 보존",
+          "relationship": "tune",
+          "source_basis": "S1의 한 주역 집중과 넓은 환경 맥락",
+          "target_direction": "desktop 40–64 px, tablet 28–40 px, mobile 18–24 px. 제품 proof에서는 jar 한 반경, process image에서는 hand–tool–record chain을 crop safe area로 확보한다.",
+          "landing_use": "full-width mood frames, product proof, record panels",
+          "status": "directional_revision10"
+        }
+      ],
+      "layout": [
+        {
+          "token": "layout.manufactory-grid",
+          "role": "큰 환경 사진과 고밀도 기록 rail을 함께 정렬",
+          "relationship": "tune",
+          "source_basis": "S1의 물체·정보 역할 분리와 반복 재고의 정렬 원리",
+          "target_direction": "desktop 12 columns / 20 px gutter, tablet 6 / 16 px, mobile 4 / 12 px. 그리드는 보이지 않는 정렬 도구이며 약국 라벨 같은 외곽 칸막이를 만들지 않는다.",
+          "landing_use": "hero, process sequence, ingredient archive, lineup",
+          "status": "directional_revision10"
+        },
+        {
+          "token": "layout.process-five-part",
+          "role": "input·tool·action·intermediate output·record의 동일 순서를 반복",
+          "relationship": "new",
+          "source_basis": "MORA Revision 10의 photography-led process contract",
+          "target_direction": "이미지 아래 5개 동일 폭 caption 또는 모바일 세로 순서. 각 field는 label 1줄과 fact 1–2줄만 갖고 빈 field를 장식 문장으로 채우지 않는다.",
+          "landing_use": "Material Under Care 전 시리즈",
+          "status": "directional_revision10"
+        },
+        {
+          "token": "layout.hero-process-first",
+          "role": "첫 화면에서 여성 메이커의 판단과 실제 제품 정의를 순차적으로 공개",
+          "relationship": "new",
+          "source_basis": "사용자의 여성 장인·제조 과정·키 비주얼 우선 요구",
+          "target_direction": "desktop은 mood image 8 columns + copy 3 columns + breathing column, 다음 viewport에 color-accurate product proof. mobile은 process image → message → product proof 순서다.",
+          "landing_use": "landing hero and first proof sequence",
+          "status": "directional_revision10"
+        },
+        {
+          "token": "layout.record-strip",
+          "role": "배치 정보와 실제 maker mark를 사진 옆에서 독립적으로 읽기",
+          "relationship": "new",
+          "source_basis": "S1 GK-04 정보 매체 역할을 MORA의 batch record로 전환",
+          "target_direction": "사진 면적의 20–28%를 넘지 않는 세로 또는 하단 strip. 고정 정보와 가변 mark를 명도·간격으로 분리하며 사각 약국형 label grid를 피한다.",
+          "landing_use": "process detail, final record, packaging anatomy",
+          "status": "directional_revision10"
+        },
+        {
+          "token": "layout.product-proof",
+          "role": "여섯 jar의 실제 색·질감·정보를 동일 조건에서 비교",
+          "relationship": "tune",
+          "source_basis": "S1 GK-05의 반복 가족을 한 행동으로 활성화하는 원리",
+          "target_direction": "동일 camera, exposure, jar scale, open state, spoon position. desktop 3×2, mobile single vertical sequence. dark mood grade를 적용하지 않는다.",
+          "landing_use": "product lineup and recipe comparison",
+          "status": "directional_revision10"
+        }
+      ],
+      "shape": [
+        {
+          "token": "shape.surface-radius",
+          "role": "산업적 기록면과 사진 프레임의 절제된 모서리",
+          "relationship": "tune",
+          "source_basis": "이전 boutique card의 큰 radius를 폐기하고 MORA의 기능적 제조 환경에 맞춤",
+          "target_direction": "cards 0–4 px, media 0–2 px, buttons 2–4 px. pill·stamp·tag silhouette를 반복하지 않는다.",
+          "landing_use": "process cards, record panels, buttons, image frames",
+          "status": "directional_revision10"
+        },
+        {
+          "token": "shape.rule-and-border",
+          "role": "고밀도 정보 그룹의 경계를 장식 없이 표시",
+          "relationship": "new",
+          "source_basis": "MORA의 dense record hierarchy와 약국형 라벨 격자 회피",
+          "target_direction": "1 px graphite-on-paper 또는 steel-on-graphite rule을 필요한 축에만 사용한다. 모든 field를 사각형으로 감싸지 않고 alignment와 spacing을 우선한다.",
+          "landing_use": "batch record, specifications, process captions",
+          "status": "directional_revision10"
+        },
+        {
+          "token": "shape.jar-record-relationship",
+          "role": "낮고 넓은 spoon jar와 부분 종이 기록의 식품 고유 실루엣",
+          "relationship": "new",
+          "source_basis": "MORA 고유 wide-mouth 사용성과 사용자의 내용물 가시·종이 기록 요구",
+          "target_direction": "jar diameter:height 약 1.45–1.65:1 후보, 내용물 가시 면적 60–70% 이상, label coverage 30–40% 이하. 입구·rim은 식품 안전을 위한 기능 radius만 사용한다.",
+          "landing_use": "product hero, lineup, packaging anatomy, final record imagery",
+          "status": "directional_pending_packaging_engineering"
+        }
+      ],
+      "motion": [
+        {
+          "token": "motion.process-step",
+          "role": "공정의 한 행동과 멈춤을 과장 없이 보여 줌",
+          "relationship": "new",
+          "source_basis": "S1 GK-03의 관찰 가능한 제작 행동을 MORA의 식품 공정으로 전환",
+          "target_direction": "실시간 600–1400 ms 단일 동작, reverse·infinite loop·dramatic slow motion 금지. reduced-motion에서는 action 직후의 정지 프레임과 record caption을 표시한다.",
+          "landing_use": "selection, whey separation, single fold, final mark micro-sequences",
+          "status": "directional_revision10"
+        },
+        {
+          "token": "motion.record-reveal",
+          "role": "사진 장면 뒤에 input·tool·action·output·record 사실을 순서대로 공개",
+          "relationship": "new",
+          "source_basis": "Material Under Care의 five-part communication rule",
+          "target_direction": "opacity + 8 px 이동, 각 120–160 ms stagger, 총 700 ms 이하. 손글씨 stroke animation이나 가짜 서명 연출은 금지한다.",
+          "landing_use": "process caption rail and chapter transitions",
+          "status": "directional_revision10"
+        }
+      ],
+      "implementation_boundary": "이 토큰은 Stage 2 랜딩·무드보드 방향값이며 완성된 컴포넌트 시스템이나 생산 사양이 아니다. 실제 음식 샘플, 접근성 contrast, 폰트 라이선스, 인쇄 가독성, 냉장 결로·접착·마찰, 식품접촉·밀봉·유통 시험 후 확정한다."
+    }
+  },
+  "transfer_input_additions": {
+    "visual_priority": "여성 메이커의 선택·비교·중단·기록을 photography-led process key visual로 먼저 보여 주고, 낮고 넓은 투명 wide-mouth jar와 부분 무코팅 batch record는 별도의 color-accurate product proof로 확정한다.",
+    "token_preferences": {
+      "color": "tune",
+      "typography": "tune",
+      "spacing": "tune",
+      "layout": "tune",
+      "shape": "new",
+      "motion": "new"
+    },
+    "source_qualities_to_apply": [
+      "관찰 가능한 노동이 craft를 증명",
+      "기능적 재고와 오래 사용된 비접촉 외피가 premium tension을 생성",
+      "정보를 담는 물리 매체가 그래픽 장치가 됨",
+      "통제된 가변 기록이 제품 개체성을 만듦",
+      "반복 제품 가족을 한 사람의 실제 행동이 활성화"
+    ],
+    "source_traits_to_avoid": [
+      "Le Labo wordmark, ingredient-plus-number naming, exact pharmacy label grid, perfume silhouette",
+      "city/date/personal-name ritual, manifesto cadence, trade dress, Le Journal format",
+      "원 캠페인의 손 포즈·랩 세트·조제 도구와 향수 서비스 재연"
+    ],
+    "replacement_decisions": [
+      "bright immaculate ivory atelier를 dark graphite food manufactory로 교체",
+      "individual direct-print-only package를 partial uncoated paper batch record + standardized legal zone + visible food 구조로 교체",
+      "ambient abstract material field를 photography-led Material Under Care로 교체",
+      "generic maker continuity를 symbolic female craft stewardship로 교체",
+      "16 px rounded boutique cards를 0–4 px restrained industrial surfaces로 교체"
+    ]
+  },
+  "boundary_additions": [
+    {
+      "boundary": "female-founder facts",
+      "rule": "여성 메이커는 방향성 브랜드 원형이다. 창업자 이름·경력·가족 관계·최초 실험·기록·인용·초상권이 확인되기 전 실제 전기로 제시하지 않는다."
+    },
+    {
+      "boundary": "symbolic gender meaning",
+      "rule": "엄마·아내·주방의 주인은 미식 책임의 상징적 기원이며 성 역할 규범, 소비자 타깃 고정, 장식적 여성성으로 사용하지 않는다."
+    },
+    {
+      "boundary": "food safety and process",
+      "rule": "발효 수치, pH, 온도, 시간, 수율, 인퓨전 배합, 유통기한은 R&D·HACCP·법무 검증 전 공개 사실로 쓰지 않는다. 거친 재료는 음식 비접촉 외피에만 사용한다."
+    },
+    {
+      "boundary": "packaging production",
+      "rule": "wide-mouth 투명 용기와 부분 무코팅 종이 record는 barrier·migration·seal·condensation·adhesion·rub·legibility·cold-chain 시험 전 방향성 후보다. 필수 법정 정보는 표준 인쇄로 유지한다."
+    },
+    {
+      "boundary": "source protection",
+      "rule": "Le Labo의 워드마크, ingredient-plus-number naming, exact pharmacy label grid, perfume silhouette, city/date ritual, manifesto cadence, trade dress, Le Journal format, 고유 손 포즈와 랩 장면을 복제하지 않는다."
+    },
+    {
+      "boundary": "image truth",
+      "rule": "어두운 mood imagery와 color-accurate product proof를 분리한다. 생성 또는 연출 이미지는 실제 제품·SOP·창업자 증거로 표시하지 않는다."
+    }
+  ],
+  "handoff_notes": {
+    "integration": [
+      "현재 canonical S2의 direct-print-only, warm bright atelier, ambient field, rounded card 규칙과 정면 충돌하므로 root가 관련 transfer-input 문구와 다른 섹션의 패키지·이미지 설명을 함께 교체해야 한다.",
+      "등록된 기존 product-hero와 brand-mood 이미지는 Revision 10 brief와 맞지 않는다. 두 asset ID는 유지 가능하지만 실제 파일·registry·prompt·invariant는 downstream production wave에서 새 brief로 재생성·교체해야 한다.",
+      "product visual shard와 low-wide transparent jar, 60–70% content visibility, partial paper record coverage, legal zone, color-accurate proof lighting을 동일하게 맞춰야 한다.",
+      "verbal shard의 마지막 확인·여성 craft stewardship 언어와 Material Under Care / The Keeper’s Manufactory 명칭을 교차 점검해야 한다."
+    ],
+    "unresolved_risks": [
+      "실제 창업자·여성 메이커 캐스팅과 초상권 미확정",
+      "무코팅 라벨 stock·접착제·가변 marking 방식의 냉장 결로 및 식품 포장 적합성 미검증",
+      "투명 wide-mouth jar의 barrier·seal·유통 성능과 내용물 가시 면적 미검증",
+      "여섯 레시피의 실제 색·점도·중간상태 샘플 미확정",
+      "어두운 작업 공간 촬영에서 위생성과 음식색 정확성을 동시에 보존할 조명·후반 workflow 필요"
+    ],
+    "asset_generation": "이 샤드에서는 이미지를 생성하지 않았으며 anchor_image_briefs만 제공한다."
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "stage3_reference_asset_registry_shard",
+  "shard_id": "revision2-ingredient-references-b",
+  "generated_at": "2026-08-28T10:24:53Z",
+  "direction_lock_path": ".work/revision2_glass_reference/direction-lock.json",
+  "generation_mode": "built-in imagegen; one distinct call per asset; scale-only delta edits; deterministic center coordinate normalization",
+  "scope": [
+    "ST3-REF-INGREDIENT-CITRUS-PEEL-22",
+    "ST3-REF-INGREDIENT-BLACK-SESAME-23",
+    "ST3-REF-INGREDIENT-OLIVE-OIL-SEA-SALT-24"
+  ],
+  "assets": [
+    {
+      "asset_id": "ST3-REF-INGREDIENT-CITRUS-PEEL-22",
+      "product_name": "Citrus Peel",
+      "role": "ingredient_reference_aerial",
+      "communication_job": "Citrus Peel 원재료만 독립 프레임으로 식별시키고, 모든 원재료 레퍼런스가 같은 접시·중심·점유율로 비교되게 하는 고정 기준 컷이다.",
+      "file_path": "assets/reference-system/mora-ingredient-citrus-peel-aerial.png",
+      "prompt_path": "prompts/ST3-REF-INGREDIENT-CITRUS-PEEL-22.md",
+      "subject": "individual fresh citrus-peel ribbons in one low circular optically-clear glass specimen dish",
+      "aspect_ratio": "1:1",
+      "generation_provenance": "Built-in imagegen distinct generate call, followed by scale-only delta edits and centered coordinate normalization; final 1536 x 1536 workspace PNG sha256 7f56064ce1638e5c998141c4e4efd733ff63a429097317de654c58ad400115c7.",
+      "reference_lineage": [
+        "stage3_revision2_glass_reference direction lock",
+        "ingredient_reference_lock",
+        "ST3-REF-INGREDIENT-CITRUS-PEEL-22 prompt"
+      ],
+      "invariants": [
+        "plain Cultured Cream #F5F1E8 seamless matte background",
+        "true 90-degree aerial camera and circular dish geometry",
+        "one identical low circular optically-clear glass specimen dish",
+        "subject center x/y 50% and normalized outer dish bounding box approximately 28-72%",
+        "only citrus peel; no whole fruit, group atlas, unrelated prop, text or packaging",
+        "single upper-left soft source with plausible glass edge, refraction and down-right contact shadow"
+      ],
+      "allowed_variation": [
+        "none after reference freeze",
+        "future SKU frames may change only ingredient identity while repeating the full series lock"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-REF-INGREDIENT-BLACK-SESAME-23",
+      "product_name": "Black Sesame",
+      "role": "ingredient_reference_aerial",
+      "communication_job": "Black Sesame 원재료만 독립 프레임으로 식별시키고, 모든 원재료 레퍼런스가 같은 접시·중심·점유율로 비교되게 하는 고정 기준 컷이다.",
+      "file_path": "assets/reference-system/mora-ingredient-black-sesame-aerial.png",
+      "prompt_path": "prompts/ST3-REF-INGREDIENT-BLACK-SESAME-23.md",
+      "subject": "individual raw black sesame seeds in one low circular optically-clear glass specimen dish",
+      "aspect_ratio": "1:1",
+      "generation_provenance": "Built-in imagegen distinct generate call, followed by scale-only delta edits and centered coordinate normalization; final 1536 x 1536 workspace PNG sha256 bf889f21ee77ee43779baccf2eebaff576a773f94aa6bdf0fce5b462cab41ae0.",
+      "reference_lineage": [
+        "stage3_revision2_glass_reference direction lock",
+        "ingredient_reference_lock",
+        "ST3-REF-INGREDIENT-BLACK-SESAME-23 prompt"
+      ],
+      "invariants": [
+        "plain Cultured Cream #F5F1E8 seamless matte background",
+        "true 90-degree aerial camera and circular dish geometry",
+        "one identical low circular optically-clear glass specimen dish",
+        "subject center x/y 50% and normalized outer dish bounding box approximately 28-72%",
+        "only black sesame seeds; no white sesame, paste, group atlas, unrelated prop, text or packaging",
+        "individual seed texture remains legible without crushed-black loss",
+        "single upper-left soft source with plausible glass edge, refraction and down-right contact shadow"
+      ],
+      "allowed_variation": [
+        "none after reference freeze",
+        "future SKU frames may change only ingredient identity while repeating the full series lock"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-REF-INGREDIENT-OLIVE-OIL-SEA-SALT-24",
+      "product_name": "Olive Oil & Sea Salt",
+      "role": "ingredient_reference_aerial",
+      "communication_job": "Olive Oil & Sea Salt를 하나의 의도된 레시피 페어로 독립 식별시키고, 모든 원재료 레퍼런스가 같은 접시·중심·점유율로 비교되게 하는 고정 기준 컷이다.",
+      "file_path": "assets/reference-system/mora-ingredient-olive-oil-sea-salt-aerial.png",
+      "prompt_path": "prompts/ST3-REF-INGREDIENT-OLIVE-OIL-SEA-SALT-24.md",
+      "subject": "raw green-gold olive oil and a restrained crescent of coarse sea salt in one low circular optically-clear glass specimen dish",
+      "aspect_ratio": "1:1",
+      "generation_provenance": "Built-in imagegen distinct generate call, followed by scale-only delta edits and centered coordinate normalization; final 1536 x 1536 workspace PNG sha256 45092cce842ab222f4ab075b5f4cb3b12b13b95f06b46ae972120d7a48de5b10.",
+      "reference_lineage": [
+        "stage3_revision2_glass_reference direction lock",
+        "ingredient_reference_lock",
+        "ST3-REF-INGREDIENT-OLIVE-OIL-SEA-SALT-24 prompt"
+      ],
+      "invariants": [
+        "plain Cultured Cream #F5F1E8 seamless matte background",
+        "true 90-degree aerial camera and circular dish geometry",
+        "one identical low circular optically-clear glass specimen dish",
+        "subject center x/y 50% and normalized outer dish bounding box approximately 28-72%",
+        "only raw olive oil and coarse sea salt as one recipe pair; no olives, herbs, group atlas, compartments, unrelated prop, text or packaging",
+        "oil and coarse salt both remain unambiguously visible in the same single dish",
+        "single upper-left soft source with plausible glass/liquid reflection, refraction and down-right contact shadow"
+      ],
+      "allowed_variation": [
+        "none after reference freeze",
+        "future SKU frames may change only ingredient identity while repeating the full series lock"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    }
+  ],
+  "qa_summary": {
+    "method": "original-resolution view_image review after every generation round, followed by exact 1536 x 1536 dimension and SHA-256 checks",
+    "initial_generation": {
+      "shared_passes": [
+        "ingredient identity",
+        "single dish",
+        "plain Cultured Cream background",
+        "true aerial reading",
+        "clear-glass material",
+        "single-source shadow logic"
+      ],
+      "shared_failure": "outer dish occupancy exceeded the locked 28-72% box"
+    },
+    "delta_round_1": {
+      "change_axis": "subject scale only",
+      "result": "material and composition identity preserved, but imagegen over-reduced the subject"
+    },
+    "delta_round_2": {
+      "change_axis": "subject scale only with per-frame enlargement factors",
+      "result": "imagegen remained numerically non-linear; content quality passed, occupancy still varied"
+    },
+    "final_coordinate_normalization": {
+      "change_axis": "centered framing scale only",
+      "method": "center crop and 1536 x 1536 resampling of the approved delta-round-1 frames",
+      "result": "all three dishes visually align at x/y 50% with approximately 28-72% outer-rim occupancy; no content replacement"
+    },
+    "final_asset_checks": {
+      "canvas_1536_square": "pass",
+      "true_90_degree_aerial": "pass",
+      "single_identical_clear_glass_dish": "pass",
+      "center_and_occupancy_lock": "pass",
+      "plain_cultured_cream_background": "pass",
+      "one_ingredient_or_one_declared_recipe_pair": "pass",
+      "no_unrelated_props_or_text": "pass",
+      "glass_shadow_and_reflection_physics": "pass"
+    }
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "artifact_type": "stage3_wave_a_meta_commercial_photo_source_shard",
+  "schema_version": "1.1.0",
+  "status": "generated_and_qa_passed_with_claim_gates",
+  "scope": "Five Stage 3 meta/process commercial-photo assets and non-canonical landing-section mapping recommendations for the accepted NR-01 route.",
+  "selected_narrative_route": "NR-01 — 재료가 머문 결",
+  "series_mode_plan": {
+    "series_name": "From Material to Retained Trace",
+    "information_sequence": [
+      "raw ingredient identity",
+      "honest preparation form",
+      "raw-to-base-to-finished causality",
+      "concentration by straining",
+      "trace retention by one low-shear fold"
+    ],
+    "fixed_invariants": [
+      "contemporary pale-mineral and brushed-stainless refrigerated-food world",
+      "off-white food-work ceramic, visible material thickness and grounded contact",
+      "broad upper-left soft-directional source, gentle frontal fill, warm-neutral 4300-4800K grade",
+      "ingredient color only in actual raw, preparation or yogurt states",
+      "one tool and one observable state change per process frame",
+      "no generated text, packaging, apothecary, perfume, spirits, labware, rustic styling or unsupported claim"
+    ],
+    "permitted_variation_axis": "viewpoint and evidence state only: true overhead atlas, strict frontal base library, elevated-oblique matrix, strict side straining, tight 3/4 folding",
+    "maker_boundary": "Use the accepted Stage 2 maker only for straining and folding continuity; she is a generic production-role depiction and never founder or employee evidence."
+  },
+  "asset_records": [
+    {
+      "asset_id": "ST3-INGREDIENT-SIGNATURE-ATLAS-10",
+      "role": "ingredient_atlas",
+      "product_name": "MORA Ingredient Library",
+      "file_path": "assets/product-renders/mora-signature-ingredient-atlas.png",
+      "media_type": "image/png",
+      "dimensions": "1448x1086",
+      "aspect_ratio": "4:3",
+      "sha256": "ba3fc7d39f2e4846f72126243abebef96098cc04654e6eab7121a4c26787f174",
+      "communication_job": "True overhead에서 여섯 signature raw material station을 label 없이 비교해, 제품군의 색이 포장 잉크가 아니라 실제 재료에서 시작함을 보여 준다.",
+      "reference_lineage": [
+        "accepted Stage2 canonical process_storytelling_series",
+        "stage3-direction-lock.meta_story",
+        "ST2-PROCESS-INFUSION-LIBRARY-02",
+        "mora-infusion-library.png"
+      ],
+      "allowed_variation": "Only actual R&D-approved ingredient appearance, natural batch variation and safe Fig Leaf replacement may change; 2x3 station count, overhead axis, neutral set and no-label rule remain fixed.",
+      "invariant_check": "pass",
+      "prompt_id": "ST3-META-PROMPT-ATLAS-10",
+      "prompt_provenance": ".work/stage3_meta_photo_series/prompts.json",
+      "status": "generated_and_qa_passed",
+      "claim_gate_ids": [
+        "CG-01",
+        "CG-02",
+        "CG-03"
+      ]
+    },
+    {
+      "asset_id": "ST3-INFUSION-BASE-LIBRARY-11",
+      "role": "infusion_base_library",
+      "product_name": "MORA Ingredient Library",
+      "file_path": "assets/product-renders/mora-infusion-base-library-front.png",
+      "media_type": "image/png",
+      "dimensions": "1536x1024",
+      "aspect_ratio": "3:2",
+      "sha256": "eaf12137da8e3e36292d78bd50148fc1e387a0bf0b0e4482eee8a0ad0ce94190",
+      "communication_job": "Strict frontal six-bowl comparison으로 syrup, aqueous preparation, slurry, filtered preparation, paste and oil phase가 재료마다 다른 중간 물성임을 설명한다.",
+      "reference_lineage": [
+        "accepted Stage2 canonical process_storytelling_series",
+        "stage3-direction-lock.Ingredient Library",
+        "ST2-PROCESS-INFUSION-LIBRARY-02",
+        "ST3-INGREDIENT-SIGNATURE-ATLAS-10"
+      ],
+      "allowed_variation": "Actual R&D-approved viscosity, opacity, particle, phase and safe Fig Leaf preparation may change; strict front, six positions, ceramic vessels, shared baseline and no glass/label rule remain fixed.",
+      "invariant_check": "pass",
+      "prompt_id": "ST3-META-PROMPT-BASES-11",
+      "prompt_provenance": ".work/stage3_meta_photo_series/prompts.json",
+      "status": "generated_and_qa_passed",
+      "claim_gate_ids": [
+        "CG-01",
+        "CG-02",
+        "CG-04"
+      ]
+    },
+    {
+      "asset_id": "ST3-INTERMEDIATE-TRACE-MATRIX-12",
+      "role": "intermediate_matrix",
+      "product_name": "MORA Ingredient Library",
+      "file_path": "assets/product-renders/mora-intermediate-trace-matrix.png",
+      "media_type": "image/png",
+      "dimensions": "1448x1086",
+      "aspect_ratio": "4:3",
+      "sha256": "2a913a3bbeecde4b48d169cde34bea08cea3c2cff28d7ab3886369b197a6c9f7",
+      "communication_job": "Elevated-oblique exact 3x3 arrangement으로 Thyme Honey, Citrus Peel and Black Sesame의 raw → base → finished trace 인과를 텍스트 없이 연결한다.",
+      "reference_lineage": [
+        "accepted Stage2 causal process rule",
+        "stage3-direction-lock.Measured Transformation",
+        "ST3-INGREDIENT-SIGNATURE-ATLAS-10",
+        "ST3-INFUSION-BASE-LIBRARY-11"
+      ],
+      "allowed_variation": "Representative recipe rows may be replaced only by accepted lineup recipes with approved R&D states; exact 3x3 causality, column meaning, no text and shared world remain fixed.",
+      "invariant_check": "pass",
+      "prompt_id": "ST3-META-PROMPT-MATRIX-12",
+      "prompt_provenance": ".work/stage3_meta_photo_series/prompts.json",
+      "status": "generated_and_qa_passed",
+      "claim_gate_ids": [
+        "CG-01",
+        "CG-04",
+        "CG-05"
+      ]
+    },
+    {
+      "asset_id": "ST3-PROCESS-STRAINING-13",
+      "role": "manufacturing_process",
+      "product_name": "MORA Process",
+      "file_path": "assets/product-renders/mora-process-straining-side.png",
+      "media_type": "image/png",
+      "dimensions": "1536x1024",
+      "aspect_ratio": "3:2",
+      "sha256": "f1ac5f4c780899e2c71762c1eed2428aa48e12762205752f55dc9e8627678c5b",
+      "communication_job": "Strict side에서 concentrated yogurt → muslin/perforated frame → pale acid whey의 수직 관계와 gravity contact를 보여 density origin을 설명한다.",
+      "reference_lineage": [
+        "accepted Stage2 canonical process_storytelling_series",
+        "ST2-PROCESS-STRAINING-01",
+        "mora-straining-whey.png",
+        "mora-low-shear-fold.png maker continuity"
+      ],
+      "allowed_variation": "Approved physical equipment, actual concentrate, whey color and maker releases may replace the generated depiction; strict side evidence axis, one gravity state and no numeric SOP remain fixed.",
+      "invariant_check": "pass",
+      "prompt_id": "ST3-META-PROMPT-STRAIN-13",
+      "prompt_provenance": ".work/stage3_meta_photo_series/prompts.json",
+      "status": "generated_and_qa_passed",
+      "claim_gate_ids": [
+        "CG-01",
+        "CG-05",
+        "CG-06",
+        "CG-07"
+      ]
+    },
+    {
+      "asset_id": "ST3-PROCESS-FOLDING-14",
+      "role": "manufacturing_process",
+      "product_name": "MORA Process",
+      "file_path": "assets/product-renders/mora-process-folding-detail.png",
+      "media_type": "image/png",
+      "dimensions": "1536x1024",
+      "aspect_ratio": "3:2",
+      "sha256": "1448166100ac9a52dbe2258af8f8a9fdf1f7f2166d66e475124d9ba8bc881615",
+      "communication_job": "Tight 3/4 detail에서 measured preparation, broad paddle, dense ridge and one retained trace를 같은 접점에 두어 low-shear directional logic를 설명한다.",
+      "reference_lineage": [
+        "accepted Stage2 canonical process_storytelling_series",
+        "ST2-PROCESS-FOLDING-03",
+        "mora-low-shear-fold.png",
+        "ST3-INFUSION-BASE-LIBRARY-11",
+        "ST3-INTERMEDIATE-TRACE-MATRIX-12"
+      ],
+      "allowed_variation": "Actual approved base, tool, bowl, food trace and maker hands may replace generated values; one fold, measured-cup evidence, dense ridge and no numeric dose remain fixed.",
+      "invariant_check": "pass",
+      "prompt_id": "ST3-META-PROMPT-FOLD-14",
+      "prompt_provenance": ".work/stage3_meta_photo_series/prompts.json",
+      "status": "generated_and_qa_passed",
+      "claim_gate_ids": [
+        "CG-01",
+        "CG-04",
+        "CG-05",
+        "CG-07"
+      ]
+    }
+  ],
+  "section_mapping_recommendations": [
+    {
+      "section": "brand-value",
+      "communication_job": "‘가치는 관찰 가능해야 한다’는 방향을 실제 state change와 tool contact로 보여 준다.",
+      "primary_assets": [
+        "ST3-PROCESS-STRAINING-13",
+        "ST3-PROCESS-FOLDING-14"
+      ],
+      "proof_of": "concentrate/whey separation and one retained fold trace",
+      "copy_boundary": "관찰 가능한 장면만 설명하고 slow, handmade, small-batch, exact method or performance claim을 붙이지 않는다."
+    },
+    {
+      "section": "brand-story",
+      "communication_job": "비전기적 origin에서 Measured Transformation으로 이동하는 중간을 raw → base → trace 인과로 연결한다.",
+      "primary_assets": [
+        "ST3-INTERMEDIATE-TRACE-MATRIX-12"
+      ],
+      "supporting_assets": [
+        "ST3-PROCESS-STRAINING-13",
+        "ST3-PROCESS-FOLDING-14"
+      ],
+      "proof_of": "three representative material chains plus density and folding transitions",
+      "copy_boundary": "생성 maker를 founder로 부르거나 biography, facility, first batch and quote를 발명하지 않는다."
+    },
+    {
+      "section": "product-family",
+      "communication_job": "One Base, Six Directions 전에 여섯 원재료와 여섯 preparation form을 같은 비교 문법으로 소개한다.",
+      "primary_assets": [
+        "ST3-INGREDIENT-SIGNATURE-ATLAS-10",
+        "ST3-INFUSION-BASE-LIBRARY-11"
+      ],
+      "supporting_assets": [
+        "ST3-INTERMEDIATE-TRACE-MATRIX-12"
+      ],
+      "proof_of": "six raw identities, six materially distinct directional bases and three causal examples",
+      "copy_boundary": "Fig Leaf를 edible-approved로 말하지 않고 six recipes의 실제 배합·점도·색을 확정하지 않는다."
+    },
+    {
+      "section": "product-assets-and-map",
+      "communication_job": "Five meta/process images를 communication role, provenance, allowed variation and claim gate와 함께 등록 후보로 제시한다.",
+      "primary_assets": [
+        "ST3-INGREDIENT-SIGNATURE-ATLAS-10",
+        "ST3-INFUSION-BASE-LIBRARY-11",
+        "ST3-INTERMEDIATE-TRACE-MATRIX-12",
+        "ST3-PROCESS-STRAINING-13",
+        "ST3-PROCESS-FOLDING-14"
+      ],
+      "proof_of": "complete raw-to-process meta-series coverage",
+      "copy_boundary": "Canonical registration and section assignment remain owned by the root Stage 3 merge; this shard is recommendation only."
+    }
+  ],
+  "exact_prompts": {
+    "ST3-META-PROMPT-ATLAS-10": "True overhead 4:3, exact 2x3 six raw stations on brushed stainless: thyme+honey, isolated directional Fig Leaf, roasted buckwheat, citrus peel, black sesame, olive oil+actual-scale salt; off-white ceramic, upper-left neutral daylight, no labels/text/glass/labware/spirits/rustic styling or claims.",
+    "ST3-META-PROMPT-BASES-11": "Edit Stage2 frontal library only at lower counter: exact six aligned off-white ceramic bowls containing viscous thyme-honey syrup, pale aqueous Fig Leaf directional prep, fine buckwheat slurry, filtered citrus prep, opaque sesame paste and olive-oil phase, each with one subordinate raw cue; preserve room/camera/light; remove glass, strainer and cloth; no text, spirits, labware or claims.",
+    "ST3-META-PROMPT-MATRIX-12": "Elevated-oblique native 4:3 exact 3x3 matrix, columns raw/base/finished yogurt, rows Thyme Honey/Citrus Peel/Black Sesame; ceramic on stainless, no text/arrows/grid/person/package; show causal material continuity, not validated recipe, with no spirits/lab/apothecary/rustic cues.",
+    "ST3-META-PROMPT-STRAIN-13": "Strict maker-right side native 3:2: same charcoal maker lightly steadies a level perforated stainless frame; dense yogurt above food-grade muslin, three-to-five gravity drips, pale straw-yellow acid whey in stainless pan below; same pale-mineral/stainless world, no squeezing/equipment/text/numbers/lab/rustic styling or SOP claim; maker not founder.",
+    "ST3-META-PROMPT-FOLD-14": "Tight 3/4 native 3:2 hands-only process detail: measured-base stainless cup beside bowl, broad paddle performs exactly one low-shear fold, dense yogurt holds one ridge and retained thin amber-thyme trace; face cropped, same world/light, no simultaneous pour, mixer, text, package, lab/apothecary/rustic cue, numeric dose or validated method claim."
+  },
+  "exact_prompt_source": ".work/stage3_meta_photo_series/prompts.json contains the complete exact ordered prompt lines and input-image roles used for generation.",
+  "claim_gates": [
+    {
+      "gate_id": "CG-01",
+      "gate": "generated_visual_boundary",
+      "rule": "Generated photographs are directional visualization, never evidence of actual founder, employee, facility, production run, food safety, recipe or SOP."
+    },
+    {
+      "gate_id": "CG-02",
+      "gate": "fig_leaf",
+      "rule": "Do not publish Fig Leaf as edible-approved until species, plant part, supplier batch, preparation, latex/furanocoumarin risk and applicable-market legality pass explicit review."
+    },
+    {
+      "gate_id": "CG-03",
+      "gate": "ingredient_identity",
+      "rule": "Origins, grades, suppliers, harvest stories and quality benefits remain unknown; raw images may identify working ingredients only."
+    },
+    {
+      "gate_id": "CG-04",
+      "gate": "food_state",
+      "rule": "Color, opacity, viscosity, particles, emulsion, separation and finished trace require approved production-tolerant R&D samples before factual caption or final lock."
+    },
+    {
+      "gate_id": "CG-05",
+      "gate": "process_parameters",
+      "rule": "No generated duration, temperature, pH, dose, yield, shear rate, batch size, equipment tolerance or sanitation claim."
+    },
+    {
+      "gate_id": "CG-06",
+      "gate": "whey_disposition",
+      "rule": "Acid whey appearance does not support nutrition, reuse, upcycling, zero-waste or environmental claims; actual food-safety disposition plan is required."
+    },
+    {
+      "gate_id": "CG-07",
+      "gate": "maker_identity_and_craft",
+      "rule": "Generated maker cannot be called founder or employee and does not substantiate handmade, artisan, slow or small-batch claims."
+    }
+  ],
+  "handoff": {
+    "canonical_write_authority": "root Stage 3 merge only",
+    "recommended_action": "Use the asset records and mapping recommendations when composing canonical landing materials; preserve claim gates verbatim or stronger.",
+    "forbidden_from_this_shard": [
+      "canonical landing JSON or Markdown edit",
+      "asset registry edit",
+      "review or pipeline state edit",
+      "public report or generated story edit"
+    ]
+  }
+}

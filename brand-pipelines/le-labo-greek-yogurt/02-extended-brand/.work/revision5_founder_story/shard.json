@@ -1,0 +1,368 @@
+{
+  "artifact_type": "stage2_founder_story_shard",
+  "schema_version": "1.0",
+  "brand": "MORA",
+  "status": "directional_requires_founder_confirmation",
+  "scope": "Founder-story architecture for Stage 2 and Stage 3 handoff; no biographical fact is asserted.",
+  "story_safety_rule": "이 문서는 개연성 있는 창업 서사의 방향을 설계한 것이며 실제 창업자의 전기, 직접 인용, 경력 또는 실제 제조 이력을 증명하지 않는다. 사람·사건·장소·날짜·횟수·성과는 인터뷰와 자료 확인 전 공개 사실로 바꾸지 않는다.",
+  "central_human_problem": {
+    "problem": "좋은 재료를 고르고 싶어도 많은 플레이버 요거트가 단맛, 토핑의 양, 효능 문구로 먼저 설명되어 재료가 요거트 안에서 실제로 어떻게 향·질감·여운을 만드는지 비교하기 어렵다.",
+    "human_tension": "조용하고 분명한 한 컵을 원하지만 선택지는 더 많이 얹은 제품과 더 크게 말하는 문구 사이에 놓여 있다.",
+    "founder_question": "맛을 더 많이 얹지 않고도, 한 재료가 요거트 안에 남기는 차이를 보고 고를 수 있게 만들 수 있을까?",
+    "emotional_stake": "좋은 한 컵의 기준을 과장된 프리미엄이나 건강 수행이 아니라, 직접 보고 이해할 수 있는 재료의 변화로 되돌리는 일.",
+    "brand_answer": "요거트의 밀도를 먼저 만들고, 재료마다 정직한 중간 상태를 찾은 뒤, 가장 적은 동작으로 한 줄의 흔적을 남긴다.",
+    "claim_status": "public-safe as a brand problem and intent after brand-owner approval; not evidence of a founder's lived experience"
+  },
+  "founder_role_and_persona": {
+    "working_archetype": "관찰하고 기록하는 식품 실천가",
+    "story_role": "완성된 답을 가진 천재 장인이 아니라, 평범한 한 컵에서 풀리지 않던 질문을 발견하고 비교 가능한 작은 실험을 반복해 브랜드의 기준을 세우는 사람.",
+    "operating_behaviors": [
+      "한 번에 한 변수와 한 재료만 비교한다.",
+      "원재료, 중간 상태, 완성 컵을 같은 기록 안에 둔다.",
+      "맛의 수사보다 보이는 밀도와 실제 재료 행동을 먼저 확인한다.",
+      "혼자 만든 신화를 피하고 식품 R&D, 생산, 안전, 디자인 기여를 정확히 나눈다.",
+      "확인되지 않은 공정과 효능은 공개 문장에서 빼거나 방향성으로 표시한다."
+    ],
+    "voice": [
+      "차분한 1인칭",
+      "구체적이되 과학자처럼 권위를 연기하지 않음",
+      "감정은 질문과 집요함에서, 신뢰는 관찰과 한계 공개에서 만듦",
+      "한 문장에 한 주장"
+    ],
+    "not_assumed": [
+      "성별, 나이, 국적, 가족 배경",
+      "셰프·영양사·미생물학자·식품공학자 경력",
+      "그리스 체류 또는 전통 요거트 수련",
+      "농장 소유, 직접 재배, 원료 산지와의 개인 인연",
+      "현재 무드·공정 이미지 속 maker와 동일 인물이라는 사실"
+    ],
+    "visual_identity_boundary": "현재 등록된 maker 이미지는 일관된 브랜드 공정 주체를 위한 방향성 캐스팅이다. 실제 창업자 본인이라는 확인과 초상 사용 동의가 없으면 founder portrait 또는 founder at work로 캡션하지 않는다."
+  },
+  "directional_founder_narrative": {
+    "label": "DIRECTIONAL NARRATIVE — NOT A VERIFIED BIOGRAPHY",
+    "working_route_name": "무엇을 더할지보다, 무엇을 남길지",
+    "one_sentence_spine": "재료 이름은 선명한데 한입의 차이는 흐릿했던 평범한 요거트 경험에서 질문이 시작되고, 같은 밀도의 바탕에 한 재료씩 다른 방식으로 남기는 비교 실험을 거쳐, 누구나 재료의 변화를 보고 고를 수 있는 한 컵을 만들겠다는 미션으로 이어진다.",
+    "journey": [
+      {
+        "order": 1,
+        "phase": "trigger",
+        "title": "이름은 다른데, 한입은 비슷했습니다",
+        "directional_event": "창업자는 일상의 아침 또는 오후에 플레이버 요거트를 먹으며 재료명은 달라도 단맛과 토핑이 경험을 먼저 덮는다는 불편을 발견한다.",
+        "human_meaning": "더 강한 맛이 아니라 더 분명한 차이를 원했다.",
+        "observable_anchor": "열린 한 컵, 한 번 떠낸 스푼, 재료명이 가려진 두 개의 평범한 시식 상태",
+        "confirmation_needed": "실제 계기, 당시 상황, 제품 범주, 기억에 남은 감각, 날짜·장소와 공개 가능 범위",
+        "public_status": "placeholder_until_founder_interview"
+      },
+      {
+        "order": 2,
+        "phase": "first_experiment",
+        "title": "같은 바탕에, 한 가지 차이만 두었습니다",
+        "directional_event": "첫 실험은 같은 농도의 플레인 그릭요거트를 나누고 대표 후보 재료 한 가지를 표면 토핑, 완전 혼합, 한 번 접은 흔적처럼 서로 다른 방식으로 비교하는 작은 주방 테스트로 설계한다. Thyme Honey는 현재 대표 비주얼과 연결 가능한 후보일 뿐 실제 최초 재료로 단정하지 않는다.",
+        "human_meaning": "좋은 차이는 재료를 많이 넣는 데서가 아니라 어떻게 만나게 하는지에서 생길 수 있다는 가설.",
+        "observable_anchor": "같은 크기의 세 볼, 한 재료, 넓은 스푼, 손글씨가 아닌 중립적인 A/B/C 비교 카드",
+        "confirmation_needed": "실제 첫 재료, 베이스 조달 방식, 도구, 비교 방법, 실패와 결과, 함께한 사람, 사진·메모 존재 여부",
+        "public_status": "placeholder_until_founder_and_rnd_confirmation"
+      },
+      {
+        "order": 3,
+        "phase": "repeated_practice",
+        "title": "한 번에 하나씩, 남는 상태를 기록했습니다",
+        "directional_event": "창업자는 각 실험에서 재료 하나, 중간 상태 하나, 폴딩 방식 하나만 바꾸고 원재료 → preparation base → 스푼 단면을 함께 기록하는 반복 규칙을 만든다.",
+        "human_meaning": "직감은 출발점이지만 반복 가능한 기준이 되어야 한 컵의 약속이 된다.",
+        "observable_anchor": "저울, 넓은 식품용 용기, 재료별로 다른 시럽·수상 베이스·슬러리·페이스트·오일상, 결과 컵의 같은 각도 기록",
+        "confirmation_needed": "실제 반복 기간·횟수, 변수, 기록 양식, 실패 샘플, R&D·생산 파트너의 역할, 안전 검토 시점",
+        "public_status": "placeholder_until_records_and_team_credit_are_confirmed"
+      },
+      {
+        "order": 4,
+        "phase": "insight",
+        "title": "재료마다, 머무는 방식이 달랐습니다",
+        "directional_event": "반복 비교 끝에 모든 재료를 같은 향료나 투명한 액체로 다루지 않고, 꿀은 점성 베이스로, 곡물은 인퓨전 또는 고운 슬러리로, 씨앗은 페이스트로, 오일은 오일상 또는 검증된 유화로 다뤄야 한다는 원칙에 도달한다.",
+        "human_meaning": "통일해야 할 것은 재료의 모습이 아니라 한 컵을 비교하는 구조다.",
+        "observable_anchor": "Infusion Pantry의 서로 다른 여섯 중간 상태와 동일한 컵 구조",
+        "confirmation_needed": "실제로 어떤 실험이 이 통찰을 만들었는지, 제품별 확정 형태, 실패하거나 교체한 재료, 창업자와 기술팀의 공동 기여",
+        "public_status": "brand_principle_public_safe; founder_attribution_pending"
+      },
+      {
+        "order": 5,
+        "phase": "mission",
+        "title": "보고 고를 수 있는 한 컵을 만듭니다",
+        "directional_event": "MORA의 미션은 재료의 이름, 요거트의 밀도, 중간 상태와 마지막 흔적을 감추지 않아 고객이 과장된 효능이나 토핑의 양 없이도 자신의 한 컵을 고르게 하는 것으로 정리한다.",
+        "human_meaning": "신비한 창업자보다 이해 가능한 제품이 앞에 서야 한다.",
+        "observable_anchor": "열린 컵의 스푼 자국, 제품별 흔적, 검증된 사실 카드, 여섯 컵 비교",
+        "confirmation_needed": "창업자가 실제로 승인한 미션 문장과 우선순위, 공개 가능한 직접 인용, 브랜드 팀 공동 승인",
+        "public_status": "public_safe_as_brand_mission_after_owner_approval"
+      }
+    ]
+  },
+  "scene_level_visual_beats": [
+    {
+      "scene_id": "FS-01",
+      "journey_phase": "trigger",
+      "title": "흐릿한 차이",
+      "beat": "아침 또는 오후의 실제 식탁. 두 개의 상표 없는 플레이버 요거트 컵을 번갈아 맛본 뒤, 인물은 재료명 카드와 비슷하게 남은 단맛·토핑을 조용히 바라본다.",
+      "must_show": [
+        "열린 컵과 실제 스푼 사용 흔적",
+        "과장된 표정이 아닌 멈춘 관찰",
+        "경쟁사 식별 정보가 없는 중립 소품"
+      ],
+      "avoid": [
+        "브랜드 비방",
+        "건강 문제 또는 질병 계기",
+        "어린 시절 회상 클리셰",
+        "카메라를 보는 영웅 포즈"
+      ],
+      "evidence_gate": "실제 창업 계기와 유사하다는 founder confirmation 필요"
+    },
+    {
+      "scene_id": "FS-02",
+      "journey_phase": "first_experiment",
+      "title": "첫 비교",
+      "beat": "같은 플레인 요거트를 담은 세 개의 낮은 볼에 한 재료를 각각 얹고, 섞고, 한 번 접은 상태로 나누어 스푼 단면을 비교한다.",
+      "must_show": [
+        "같은 베이스와 같은 양",
+        "한 재료만 달리 다루는 A/B/C 구조",
+        "넓은 식품용 스푼과 실제 음식 물성"
+      ],
+      "avoid": [
+        "비커·피펫·향수병",
+        "검증 전 수치와 날짜",
+        "Thyme Honey가 실제 최초 레시피였다는 암시"
+      ],
+      "evidence_gate": "실제 첫 실험 확인 전 reenactment 또는 directional visualization으로 명시"
+    },
+    {
+      "scene_id": "FS-03",
+      "journey_phase": "repeated_practice",
+      "title": "같은 질문을 반복하는 테이블",
+      "beat": "동일한 정면 구도에서 원재료, 재료별 중간 베이스, 완성 컵이 세 열로 반복된다. 사람의 손은 한 샘플을 저울에 놓는 한 동작만 수행한다.",
+      "must_show": [
+        "재료별로 다른 점도와 불투명도",
+        "저울과 결과 컵의 기능적 연결",
+        "팀 기록으로 읽히는 중립 체크 항목"
+      ],
+      "avoid": [
+        "여섯 개의 동일한 호박색 병",
+        "가짜 배치번호와 가짜 실험 결과",
+        "혼자 모든 것을 발명한 인상"
+      ],
+      "existing_world_link": "ST2-PROCESS-INFUSION-LIBRARY-02와 연결 가능하나 기존 이미지를 founder evidence로 재캡션하지 않는다."
+    },
+    {
+      "scene_id": "FS-04",
+      "journey_phase": "insight",
+      "title": "한 번만 접는 순간",
+      "beat": "농축 요거트 아래로 넓은 패들이 들어가 한 덩어리를 들어 올리고, 재료 베이스가 완전 혼합되지 않은 한 줄의 내부 흔적으로 남는다.",
+      "must_show": [
+        "무너지지 않는 요거트 능선",
+        "패들·손·리본의 물리적 연결",
+        "적은 동작이 만든 차이"
+      ],
+      "avoid": [
+        "스플래시와 고속 휘핑",
+        "장인·수제·저전단을 검증된 생산 사실처럼 캡션",
+        "maker를 founder로 무단 동일시"
+      ],
+      "existing_world_link": "ST2-PROCESS-FOLDING-03의 시각 문법을 사용하되 founder likeness와 실제 공정 여부를 별도 확인한다."
+    },
+    {
+      "scene_id": "FS-05",
+      "journey_phase": "mission",
+      "title": "제품이 사람 앞에 서는 장면",
+      "beat": "창업자 또는 승인된 maker의 얼굴보다 열린 MORA 컵과 고객의 첫 스푼이 전경에 있고, 뒤에는 서로 다른 흔적을 가진 여섯 컵이 같은 구조로 놓인다.",
+      "must_show": [
+        "제품이 인물보다 먼저 읽히는 위계",
+        "한 고객, 한 컵, 한 번의 사용",
+        "검증된 사실만 담는 짧은 정보 카드 공간"
+      ],
+      "avoid": [
+        "창업자 숭배형 단독 초상",
+        "고객 치유·변화 전후",
+        "가짜 리뷰, 가짜 로트 또는 추적 가능 주장"
+      ],
+      "evidence_gate": "인물 공개 시 신원·초상권·역할 캡션 승인 필요"
+    }
+  ],
+  "claim_matrix": {
+    "public_ready_statements": [
+      {
+        "statement": "MORA는 한 컵의 맛이 무엇을 더 얹었는가로만 설명되는 데서 질문을 시작합니다.",
+        "use": "비전기적 브랜드 오리진 오프너",
+        "basis": "현재 positioning tension과 brand intent",
+        "limit": "특정 창업자의 실제 경험으로 귀속하지 않음"
+      },
+      {
+        "statement": "좋은 한 컵은 더 많이 더하는 대신, 무엇을 남길지 정확히 고르는 데서 시작됩니다.",
+        "use": "브랜드 belief",
+        "basis": "현재 craft-world 방향",
+        "limit": "실제 제조 우수성 또는 영양 효능 주장이 아님"
+      },
+      {
+        "statement": "재료마다, 머무는 방식이 다릅니다.",
+        "use": "ingredient-system headline",
+        "basis": "재료별 중간 상태를 구분하는 방향성 원칙",
+        "limit": "제품별 공정은 R&D 확인 전 세부 묘사하지 않음"
+      },
+      {
+        "statement": "MORA가 만들고 싶은 것은 재료의 이름과 한입의 차이가 함께 읽히는 한 컵입니다.",
+        "use": "mission statement",
+        "basis": "현재 Stage 2 positioning과 verbal system",
+        "limit": "브랜드 의도로만 사용"
+      },
+      {
+        "statement": "한 컵 안에, 재료가 머문 결.",
+        "use": "master message",
+        "basis": "현재 선택된 NR-01",
+        "limit": "‘머문’이 특정 인퓨전 시간이나 제조법을 뜻하지 않도록 사실 블록과 분리"
+      }
+    ],
+    "founder_confirmation_placeholders": [
+      {
+        "field": "founder_identity",
+        "placeholder": "{{founder_name}} / {{public_title}} / {{pronouns_if_relevant}}",
+        "needed_for": "이름이 붙은 창업자 소개와 초상 캡션"
+      },
+      {
+        "field": "actual_trigger",
+        "placeholder": "{{actual_trigger_situation}} / {{approximate_date_and_place}} / {{why_it_mattered}}",
+        "needed_for": "trigger 장면과 첫 문단"
+      },
+      {
+        "field": "first_experiment",
+        "placeholder": "{{first_ingredient}} / {{base_and_method}} / {{what_changed_or_failed}} / {{who_was_present}}",
+        "needed_for": "first experiment 장면"
+      },
+      {
+        "field": "repeated_practice",
+        "placeholder": "{{iteration_period}} / {{documented_variables}} / {{records_available}}",
+        "needed_for": "반복과 집요함을 사실로 말하는 문단"
+      },
+      {
+        "field": "decisive_insight",
+        "placeholder": "{{founder_words_for_the_insight}} / {{specific_test_that_supports_it}}",
+        "needed_for": "직접 인용과 insight 전환"
+      },
+      {
+        "field": "team_credit",
+        "placeholder": "{{cofounders}} / {{food_rnd}} / {{production}} / {{design}} / {{advisors}}",
+        "needed_for": "아이디어·레시피·안전·제조 기여의 정확한 귀속"
+      },
+      {
+        "field": "mission_quote",
+        "placeholder": "{{approved_verbatim_mission_quote}}",
+        "needed_for": "따옴표가 있는 founder quote"
+      },
+      {
+        "field": "portrait_and_reenactment",
+        "placeholder": "{{likeness_release}} / {{actual_founder_or_casting}} / {{reenactment_disclosure}}",
+        "needed_for": "창업자 이미지, maker 이미지와 모든 재연 캡션"
+      }
+    ],
+    "prohibited_inventions": [
+      "창업자의 성별·나이·국적·가족관계·성장 지역을 추정하거나 캐릭터 편의를 위해 만들지 않는다.",
+      "어린 시절 할머니의 레시피, 가족 농장, 대대로 내려온 발효법 같은 헤리티지를 자료 없이 만들지 않는다.",
+      "질병, 소화 문제, 다이어트, 번아웃 또는 건강 회복을 창업 계기로 만들지 않는다.",
+      "셰프, 영양사, 미생물학자, 식품공학자, 미슐랭 경력 또는 그리스 수련을 확인 없이 부여하지 않는다.",
+      "몇 년의 연구, 수백 번의 실험, 정확한 첫 배치 날짜, 차고·원룸 주방·새벽 시장 같은 디테일을 증거 없이 쓰지 않는다.",
+      "Thyme Honey가 실제 첫 레시피였거나 여섯 제품을 한 사람이 단독 발명했다고 단정하지 않는다.",
+      "비밀 레시피, 독점 균주, 고대 방식, 특허 공정, 단일 산지, 직접 재배, 수제·소량 생산을 검증 없이 주장하지 않는다.",
+      "투자 거절, 퇴사, 생계 희생, 성공 전환점, 완판, 고객 치유 같은 드라마를 만들지 않는다.",
+      "현재 생성된 maker 또는 공정 이미지를 실제 창업자, 실제 시설, 실제 최초 실험의 기록으로 표시하지 않는다.",
+      "창업자의 직접 발언처럼 보이는 따옴표 문장을 인터뷰 녹취 없이 작성하지 않는다."
+    ]
+  },
+  "interview_evidence_checklist": [
+    {
+      "check": "신원과 역할",
+      "ask": "공개할 정확한 이름·표기·직함은 무엇이며, 공동창업자와 현재 역할은 어떻게 나뉘나요?",
+      "evidence": "본인 서면 승인과 공식 표기"
+    },
+    {
+      "check": "실제 계기",
+      "ask": "MORA를 생각하게 된 가장 구체적인 한 장면은 무엇이며 언제·어디서·누구와 있었나요?",
+      "evidence": "당시 메모·메시지·사진 또는 일관된 구술 확인"
+    },
+    {
+      "check": "첫 실험",
+      "ask": "처음 비교한 요거트, 재료, 도구, 방식과 실패는 무엇이었나요? Thyme Honey가 실제 첫 재료였나요?",
+      "evidence": "레시피 메모·사진·구매 기록·공동 참여자 확인"
+    },
+    {
+      "check": "반복의 증거",
+      "ask": "무엇을 얼마나 반복했고 한 번에 어떤 변수를 바꿨나요? 공개 가능한 기록은 무엇인가요?",
+      "evidence": "날짜가 남은 테스트 로그·샘플 사진·파일 이력"
+    },
+    {
+      "check": "통찰과 미션",
+      "ask": "재료마다 다른 중간 상태가 필요하다고 느낀 결정적 테스트와, 본인이 실제로 쓰는 미션 문장은 무엇인가요?",
+      "evidence": "승인된 녹취와 해당 테스트 기록"
+    },
+    {
+      "check": "기여와 권리",
+      "ask": "레시피·식품안전·생산·브랜드 작업에 누가 기여했고, 이름·초상·작업 장면을 어디까지 공개할 수 있나요?",
+      "evidence": "팀 크레딧, 초상·공간·자료 사용 동의, 재연 표시 합의"
+    }
+  ],
+  "korean_working_copy": {
+    "usage_note": "아래 founder-specific 문안은 사실 확인 전 공개 금지다. non_biographical_origin만 브랜드 의도 문안으로 우선 사용할 수 있다.",
+    "non_biographical_origin": {
+      "status": "public-safe after brand-owner approval",
+      "headline": "무엇을 더할지보다, 무엇을 남길지.",
+      "body": "MORA는 한 컵의 맛이 무엇을 더 얹었는가로만 설명되는 데서 질문을 시작합니다. 요거트의 밀도를 먼저 보고, 재료마다 다른 향과 입자, 여운이 안쪽까지 어떻게 이어지는지 살핍니다. 같은 구조 안에서 서로 다른 재료의 결을 보고 고를 수 있는 것. 그것이 MORA가 만들고 싶은 한 컵입니다."
+    },
+    "founder_story_draft": {
+      "status": "placeholder_do_not_publish",
+      "eyebrow": "MORA Founder Story",
+      "headline": "이름은 달라도 한입이 비슷했던 순간에서 시작했습니다.",
+      "body": "{{founder_name}}은 {{actual_trigger_situation}}에서 재료의 이름은 선명하지만 한입의 차이는 단맛과 토핑 뒤에 흐려진다는 질문을 만났습니다. 첫 비교는 {{first_ingredient}}와 같은 농도의 요거트, 그리고 {{actual_first_method}}에서 시작했습니다. {{documented_iteration}}을 거치며 얻은 답은 모든 재료를 같은 방식으로 다루지 않는 것이었습니다. 재료마다 맞는 중간 상태를 찾고, 요거트의 밀도를 지키며 가장 적은 동작으로 만나게 하는 것. MORA는 그 차이를 누구나 보고 고를 수 있는 한 컵으로 만들기 위해 존재합니다.",
+      "required_disclosure": "재연 이미지 사용 시 ‘창업 과정의 방향성 재연’ 또는 이에 준하는 명확한 표시를 붙인다."
+    },
+    "founder_quote_placeholder": {
+      "status": "verbatim_only_after_recorded_approval",
+      "copy": "{{approved_verbatim_mission_quote}}"
+    },
+    "journey_headlines": [
+      "이름은 다른데, 한입은 비슷했습니다.",
+      "같은 바탕에, 한 가지 차이만 두었습니다.",
+      "한 번에 하나씩, 남는 상태를 기록했습니다.",
+      "재료마다, 머무는 방식이 달랐습니다.",
+      "보고 고를 수 있는 한 컵을 만듭니다."
+    ],
+    "short_caption_bank": [
+      "첫 재료와 첫 실패는 창업자 인터뷰 확인 후 공개합니다.",
+      "모든 재료를 같은 액체로 만들지 않습니다.",
+      "통일하는 것은 컵의 구조, 지키는 것은 재료의 물성입니다.",
+      "만든 사람의 신비보다, 만들어진 상태의 증거를 남깁니다."
+    ]
+  },
+  "stage3_handoff": {
+    "recommended_brand_story_route": "question_to_practice_to_principle",
+    "landing_role": "제품 이해 뒤, 공정 세계관 앞에 놓이는 짧은 brand-story bridge",
+    "sequence": [
+      "central human problem",
+      "directional trigger",
+      "first comparison experiment",
+      "repeated one-variable practice",
+      "ingredient-specific-state insight",
+      "public mission",
+      "process proof and product family"
+    ],
+    "default_if_unconfirmed": "실제 창업자 확인이 끝나지 않으면 인명·직접 인용·날짜·최초 실험을 모두 빼고 korean_working_copy.non_biographical_origin만 사용한다.",
+    "unlock_conditions_for_named_story": [
+      "founder identity and role approval",
+      "actual trigger and first experiment corroboration",
+      "team contribution approval",
+      "verbatim quote approval",
+      "portrait, location and reenactment rights"
+    ],
+    "merge_targets": [
+      "sections.brand_positioning",
+      "sections.verbal_branding_and_copy_hierarchy",
+      "sections.brand_mood_and_brand_imagery",
+      "moodboard_inputs.copywriting",
+      "moodboard_inputs.brand_mood_images",
+      "boundaries.factual_limits"
+    ],
+    "do_not_merge_as_fact": "directional_founder_narrative의 사건 문장, placeholder, 직접 인용과 scene reenactment는 evidence checklist가 충족되기 전 canonical public fact로 병합하지 않는다."
+  }
+}

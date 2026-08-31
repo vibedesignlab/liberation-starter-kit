@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "stage3_reference_direction_lock",
+  "revision": "stage3_revision2_glass_reference",
+  "status": "locked_for_reference_generation",
+  "source_distance_boundary": {
+    "preserve": [
+      "cylindrical pharmacy-bottle proportion",
+      "short shoulder transition",
+      "heavy optically clear glass base",
+      "restrained dark closure",
+      "minimal direct printing"
+    ],
+    "translate_for_food_use": [
+      "wide mouth equal to 70–75% of body diameter",
+      "no atomizer, spray tube, dropper or narrow perfume neck",
+      "food-visible filled glass jar with removable full-perimeter seal"
+    ],
+    "prohibit": [
+      "LE LABO wordmark or label copy",
+      "perfume formula grid",
+      "paper label, paper collar, sleeve or sticker",
+      "plastic cup appearance",
+      "whiskey, tincture, apothecary or laboratory styling"
+    ]
+  },
+  "series_lock": {
+    "canvas": "1536 × 1536, 1:1",
+    "background": "Cultured Cream #F5F1E8, plain seamless matte cyclorama",
+    "camera": "0° azimuth, 12° downward elevation, 85 mm full-frame equivalent, vertical sensor plane, no perspective drift",
+    "lighting": "one large soft key upper-left at 4500 K, controlled frontal fill, two black flags for glass edges, soft contact shadow down-right",
+    "package_bbox_percent": {"left": 35, "top": 18, "right": 65, "bottom": 80},
+    "package_center_percent": {"x": 50, "y": 49},
+    "baseline_percent": 80,
+    "closure_or_foil_center_percent": {"x": 19, "y": 75},
+    "spoon_center_percent": {"x": 80, "y": 74},
+    "ingredient_cue_center_percent": {"x": 82, "y": 64},
+    "allowed_coordinate_tolerance_percent": 2,
+    "allowed_scale_tolerance_percent": 3,
+    "glass_requirements": [
+      "physically plausible refraction",
+      "bright controlled edge highlights",
+      "visible thick base and clean wall thickness",
+      "no acrylic haze, molded plastic seam or disposable-cup rim"
+    ]
+  },
+  "ingredient_reference_lock": {
+    "canvas": "1536 × 1536, 1:1",
+    "background": "Cultured Cream #F5F1E8, plain seamless matte surface",
+    "camera": "true 90° aerial, 100 mm macro equivalent",
+    "subject_center_percent": {"x": 50, "y": 50},
+    "subject_bbox_percent": {"left": 28, "top": 28, "right": 72, "bottom": 72},
+    "allowed_coordinate_tolerance_percent": 2,
+    "allowed_scale_tolerance_percent": 4,
+    "container": "one identical low circular optically clear glass specimen dish",
+    "rule": "one recipe ingredient per frame; no group atlas and no unrelated props"
+  },
+  "reference_assets": [
+    "ST3-REF-GLASS-PACKAGE-MASTER-17",
+    "ST3-REF-PRODUCT-COMPOSITION-MASTER-18",
+    "ST3-REF-INGREDIENT-THYME-HONEY-19",
+    "ST3-REF-INGREDIENT-FIG-LEAF-20",
+    "ST3-REF-INGREDIENT-ROASTED-BUCKWHEAT-21",
+    "ST3-REF-INGREDIENT-CITRUS-PEEL-22",
+    "ST3-REF-INGREDIENT-BLACK-SESAME-23",
+    "ST3-REF-INGREDIENT-OLIVE-OIL-SEA-SALT-24"
+  ],
+  "variation_order": [
+    "approve glass package master",
+    "approve product composition master",
+    "freeze reference images and prompt modules",
+    "generate one SKU variation by changing only recipe identity and food trace",
+    "overlay against golden master and score geometry, scale, background and glass material",
+    "delta-regenerate only the failed causal axis",
+    "approve the SKU before starting the next SKU"
+  ]
+}

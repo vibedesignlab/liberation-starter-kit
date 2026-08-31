@@ -1,0 +1,71 @@
+{
+  "revision": "revision_9_ambient_material_field",
+  "series_name": "The Background Is the Batch",
+  "brand": "MORA",
+  "purpose": "Stage 2 ambient key-visual system showing ingredient texture and manufacturing logic as a background-integrated material field rather than a framed photograph.",
+  "master_format": "3:2 landscape, full-bleed web and Storybook image",
+  "series_lock": {
+    "base_field": "warm mineral ivory yogurt field with restrained low-frequency tonal variation",
+    "medium": "hybrid image: real photographic food and fiber microtexture integrated into a minimal matte graphic field",
+    "composition": "no bounded photo rectangle, no conventional tabletop scene, no people, no package, no typography, broad quiet negative space",
+    "light": "one soft directional source with preserved midtone and shadow detail; no dramatic rays or crushed blacks",
+    "palette": "mineral ivory, soft graphite, natural thyme green and honey amber only",
+    "material_truth": "actual yogurt density, cloth fiber, translucent whey, honey viscosity and thyme micro-fibers remain physically legible",
+    "edge_behavior": "all material textures emerge from and dissolve back into the background with no cutout edge",
+    "retouching": "natural asymmetry, small thickness variation and imperfect food texture; no uniform CGI gloss",
+    "text_policy": "no text, logo, label or watermark"
+  },
+  "frames": [
+    {
+      "asset_id": "ST2-AMBIENT-STRAINED-FIELD-09",
+      "file_name": "mora-ambient-strained-field-r9.png",
+      "concept": "Strained Field",
+      "operation": "separation",
+      "observable_result": "cloth fibers rise inside an ivory yogurt field while a thin translucent whey layer drains downward and the remaining field becomes denser"
+    },
+    {
+      "asset_id": "ST2-AMBIENT-INFUSION-BLOOM-09",
+      "file_name": "mora-ambient-infusion-bloom-r9.png",
+      "concept": "Infusion Bloom",
+      "operation": "controlled infusion",
+      "observable_result": "thyme micro-fibers and honey viscosity surface from within the ivory field as a restrained amber-green subsurface bloom"
+    },
+    {
+      "asset_id": "ST2-AMBIENT-SINGLE-FOLD-09",
+      "file_name": "mora-ambient-single-fold-r9.png",
+      "concept": "The Single Fold",
+      "operation": "minimal folding",
+      "observable_result": "one broad fold moves across the dense field and drags a limited amber-green ingredient ribbon without homogenizing it"
+    },
+    {
+      "asset_id": "ST2-AMBIENT-PERSISTENT-TRACE-09",
+      "file_name": "mora-ambient-persistent-trace-r9.png",
+      "concept": "Persistent Trace",
+      "operation": "layered taste and long finish",
+      "observable_result": "a single furrow leaves one sharp ingredient trace, one translucent middle trace and one fading deep trace that continues into negative space"
+    }
+  ],
+  "avoid": [
+    "floating whole herbs or ingredients",
+    "particle explosions",
+    "liquid splash advertising",
+    "perfume smoke or scent trails",
+    "decorative gradient mesh",
+    "3D jelly blobs",
+    "marble swirls or fully mixed marbling",
+    "literal laboratory equipment",
+    "rustic craft styling",
+    "rectangular photo edges",
+    "ingredient color used as a full background"
+  ],
+  "document_integration": {
+    "canonical_sections": [
+      "visual_branding_and_key_visual",
+      "brand_mood_and_brand_imagery",
+      "design_token_direction"
+    ],
+    "evidence_boundary": "These are directional ambient concept visuals. They explain separation, infusion, minimal folding and persistent trace; they are not evidence of a production recipe, SOP, sensory panel or finished food appearance.",
+    "registry_owner": "root",
+    "canonical_json_owner": "root"
+  }
+}

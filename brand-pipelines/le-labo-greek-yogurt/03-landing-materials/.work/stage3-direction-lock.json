@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "locked_at": "2026-08-26T12:10:00+09:00",
+  "stage": "stage_3",
+  "selected_narrative_route": "NR-01 — 재료가 머문 결",
+  "brand_message": "한 컵 안에, 재료가 머문 결.",
+  "launch_story_spine": [
+    "Hero — 실제 음식의 차이를 한 컵에서 먼저 보여 준다",
+    "Why MORA — 토핑과 효능이 가리던 재료의 상태를 선택 기준으로 바꾼다",
+    "Origin — 확인되지 않은 창립자 전기 대신 무엇을 남길지라는 브랜드의 출발 질문을 공개한다",
+    "Measured Transformation — 배양·스트레이닝·재료 준비·저전단 폴딩·충전·밀봉·최종 검사의 인과를 보여 준다",
+    "Ingredient Library — 원재료마다 syrup, aqueous preparation, slurry, paste, oil phase라는 다른 중간 형태를 쓴다",
+    "One Base, Six Directions — herbal, green, toasted, bright, deep, savory를 동일 컵 구조로 비교한다",
+    "Clear Witness Experience — 투명 용기, 검정 직접 인쇄, foil 개봉, 한 번의 spoon trace로 제품을 이해한다",
+    "Product Truth — 검증된 원재료·알레르겐·영양·중량·보관·소비기한만 공개한다"
+  ],
+  "founder_story_rule": "실명, 연도, 장소, 경력, 최초 배치와 인용이 검증되지 않았으므로 공개본은 비전기적 brand origin으로 작성한다. 생성 maker는 founder로 캡션하지 않는다.",
+  "packaging_lock": [
+    "transparent low-wide food-contact candidate vessel",
+    "minimal neutral-black direct print with MORA small and exact recipe name larger",
+    "flat full-perimeter peelable foil with asymmetric tab",
+    "no individual paper label, sleeve, collar, sticker, opaque backing or recipe-color ink",
+    "outer molded-fiber carrier is permitted only as an external multipack function",
+    "food, material, print and performance claims remain directional until physical validation"
+  ],
+  "series_locks": {
+    "product_fronts": "six separate 1:1 strict-frontal portraits; same clear cup geometry, 0-degree azimuth, 15-18-degree elevation, pale-mineral set, baseline, occupancy, broad upper-left light, flat removed foil and spoon; exact recipe name and actual food trace only variables",
+    "brand_mood_axes": "same maker, charcoal wardrobe, modern stainless food workspace, direct-print sealed cup and hard-but-broad daylight; strict 0-degree front, exact 90-degree side and true 90-degree overhead aerial are separate files",
+    "meta_story": "raw ingredient, preparation base, intermediate and finished trace must remain causally adjacent; one tool and one changed state per frame; no perfume, spirits, apothecary or invented equipment"
+  },
+  "shot_plan": [
+    {"asset_id":"ST3-PRODUCT-THYME-HONEY-01","role":"product_front","product_name":"Thyme Honey","view":"strict frontal 1:1","landing_job":"hero and lineup decoder"},
+    {"asset_id":"ST3-PRODUCT-FIG-LEAF-02","role":"product_front","product_name":"Fig Leaf","view":"strict frontal 1:1","landing_job":"conditional green recipe"},
+    {"asset_id":"ST3-PRODUCT-ROASTED-BUCKWHEAT-03","role":"product_front","product_name":"Roasted Buckwheat","view":"strict frontal 1:1","landing_job":"toasted textural anchor"},
+    {"asset_id":"ST3-PRODUCT-CITRUS-PEEL-04","role":"product_front","product_name":"Citrus Peel","view":"strict frontal 1:1","landing_job":"bright post-meal recipe"},
+    {"asset_id":"ST3-PRODUCT-BLACK-SESAME-05","role":"product_front","product_name":"Black Sesame","view":"strict frontal 1:1","landing_job":"deep dessert endpoint"},
+    {"asset_id":"ST3-PRODUCT-OLIVE-OIL-SEA-SALT-06","role":"product_front","product_name":"Olive Oil & Sea Salt","view":"strict frontal 1:1","landing_job":"savory expansion"},
+    {"asset_id":"ST3-MOOD-FINAL-CHECK-FRONT-07","role":"brand_mood_front","product_name":"MORA Brand World","view":"strict 0-degree frontal 3:2","landing_job":"process authorship and final-check alignment"},
+    {"asset_id":"ST3-MOOD-FINAL-CHECK-SIDE-08","role":"brand_mood_side","product_name":"MORA Brand World","view":"exact 90-degree side 3:2","landing_job":"clear-wall and foil contact proof"},
+    {"asset_id":"ST3-MOOD-MEASURED-TABLE-AERIAL-09","role":"brand_mood_aerial","product_name":"MORA Brand World","view":"true 90-degree overhead 16:9","landing_job":"hero-capable negative space and process system overview"},
+    {"asset_id":"ST3-INGREDIENT-SIGNATURE-ATLAS-10","role":"ingredient_atlas","product_name":"MORA Ingredient Library","view":"true overhead 4:3","landing_job":"six signature raw materials"},
+    {"asset_id":"ST3-INFUSION-BASE-LIBRARY-11","role":"infusion_base_library","product_name":"MORA Ingredient Library","view":"strict frontal 3:2","landing_job":"six honest preparation forms"},
+    {"asset_id":"ST3-INTERMEDIATE-TRACE-MATRIX-12","role":"intermediate_matrix","product_name":"MORA Ingredient Library","view":"elevated oblique 4:3","landing_job":"raw-to-base-to-finished causal metadata"},
+    {"asset_id":"ST3-PROCESS-STRAINING-13","role":"manufacturing_process","product_name":"MORA Process","view":"strict side 3:2","landing_job":"set-to-whey-and-concentrate proof"},
+    {"asset_id":"ST3-PROCESS-FOLDING-14","role":"manufacturing_process","product_name":"MORA Process","view":"tight 3/4 detail 3:2","landing_job":"measured base-to-trace proof"},
+    {"asset_id":"ST3-PACKAGING-ANATOMY-15","role":"packaging_metadata","product_name":"MORA Packaging","view":"elevated oblique 16:9","landing_job":"clear cup, foil, spoon and outer carrier roles"},
+    {"asset_id":"ST3-CUSTOMER-OPEN-SPOON-16","role":"customer_experience","product_name":"MORA Customer Experience","view":"strict frontal 3:2","landing_job":"open, inspect, spoon experience"}
+  ],
+  "image_claim_gates": [
+    "Every generated photograph is a directional commercial-visualization, not evidence of an actual founder, facility, SOP or production run.",
+    "No image may imply validated food contact, barrier, freshness, leak-proof, sustainability, handmade, small-batch, nutritional, health or origin performance.",
+    "Fig Leaf remains safety- and regulation-gated; its frame may show a directional leaf-led preparation but cannot claim edible suitability.",
+    "No generated numeric readout, batch code, legal panel, barcode, date, duration, temperature, pH, dose or tolerance."
+  ]
+}

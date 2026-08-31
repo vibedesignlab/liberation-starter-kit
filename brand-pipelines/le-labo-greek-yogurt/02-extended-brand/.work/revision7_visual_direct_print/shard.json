@@ -1,0 +1,729 @@
+{
+  "artifact_type": "stage2_revision7_web_first_visual_direct_print_shard",
+  "schema_version": "1.0.0",
+  "status": "directional_generation_plan_requires_physical_pack_food_print_and_legal_validation",
+  "scope": "Web-first commercial-photography system for MORA Clear Witness Cup: one packaging hero, a strict frontal and strict 90-degree final-check pair, one clear-cup anatomy image, and six matched frontal product portraits composed as a collection grid.",
+  "source_basis": [
+    "outputs/extended-brand-anatomy.json",
+    "extended-brand-anatomy.md",
+    ".work/revision6_source_material/shard.json",
+    ".work/revision7_pack_direct_print/shard.json"
+  ],
+  "revision7_decision": "개별 컵의 종이 라벨, fiber sleeve, collar, adhesive label과 recipe-color print를 모두 제거한다. 실제 음식이 색을 만들고, 검증 대기 중인 투명 식품 접촉 용기가 상태를 드러내며, 외면의 최소 검정 direct print가 사실을 분류한다. flat peelable foil은 밀봉을 맡고, 제작자의 손과 stainless tool은 실제 검사 동작만 수행한다.",
+  "web_first_visual_system": {
+    "system_name": "Clear Food, Fixed Facts",
+    "truth_model": {
+      "L0": "Approved actual yogurt supplies density, color and recipe trace.",
+      "L1": "A transparent low-wide food-contact vessel candidate reveals the food while performing containment; its structure remains unvalidated.",
+      "L2": "Minimal black exterior direct print fixes identity and facts; direct print is classification, not evidence of craft.",
+      "L3": "A flat full-perimeter peelable foil with one asymmetric tab provides the directional first-open witness; it is completely removed when opened.",
+      "L4": "Paper or board may appear only as an outer multipack or operational record, never attached to an individual cup and never as barrier or refrigeration theater."
+    },
+    "global_series_locks": {
+      "cup": "Same low-wide transparent yogurt-cup geometry in every frame: directional diameter-to-height ratio about 1.55:1, light taper, wide opening, continuous molded flange, modest stable foot, no shoulder, neck, pedestal or heavy glass base.",
+      "cup_material": "Neutral clear food-contact polymer or validated equivalent, not glass; plausible wall thickness, molded edge, light scuff tolerance and refraction must remain visible. Do not assert a resin, barrier, recycled content or recovery route.",
+      "print": "One neutral-black exterior direct-print system only. No white flood, opaque panel, varnish effect, metallic ink, flavor-color ink, paper simulation, border or ruled grid. Fixed consumer artwork and variable bottom/lower-back code remain separate.",
+      "foil": "Same low-glare flat foil, continuous seal edge and one asymmetric tab. Sealed frames keep it flat; open frames remove it completely and place it flat on the surface.",
+      "food": "Same common yogurt density and production-tolerant fill discipline. SKU identity comes only from approved actual food trace, never colored light, prop tint, printed marker, garnish theater or retouching.",
+      "maker": "Same adult female maker model with tied-back dark hair, charcoal cotton shirt and apron in both table frames; she is a production-role depiction, never the founder and never source evidence.",
+      "workspace": "Same contemporary refrigerated-food final-check station: cool pale-mineral wall, brushed stainless worktable, calibrated stainless scale, and a generic shallow tapered-cup indexing/registration fixture. No visible proprietary printer mechanism.",
+      "grade": "Warm-neutral daylight/room-light balance around 4300-4800 K, neutral whites, truthful black ink, low-to-moderate contrast, no sepia, teal-orange, green cast or recipe-colored ambient light.",
+      "reflection": "Use one broad vertical white reflection to describe each clear sidewall plus narrow black flags for edge definition. Partial polarization may control glare but must not erase all reflections or contact shadows.",
+      "refraction": "Retain plausible double edges at wall, fill line, rim and base; keep food hue stable through the wall. No crystal-glass caustics, rainbow dispersion, mirror-plastic sheen or invisible container.",
+      "crop_family": "Master at native editorial aspect, with clean safe crops for 16:9, 4:5 and 1:1 only where specified. Never crop through the rim, asymmetric tab, front recipe name, spoon trace or hand-to-tool contact that carries the image's proof.",
+      "series_failure": "If the transparent structure, text contrast, seal, food stability or optical truth cannot be shown without falsification, stop the image lane and revise the pack or shot; do not hide the failure with paper, frost, colored ink or grading."
+    },
+    "exact_text_system": {
+      "front_hierarchy": [
+        "MORA — quiet, small orientation mark",
+        "Exact working recipe name — largest line",
+        "Legally approved category wording — smaller",
+        "Validated net quantity — smaller"
+      ],
+      "front_geometry": "Unframed centered hierarchy on the front arc, occupying the minimum production-legible area. Directional artwork zone is 65-75 degrees of the cup circumference centered at 0 degrees; final arc, distortion compensation and type size come from physical print trials.",
+      "back_geometry": "One narrow neutral-black fact column with legal grouping and barcode quiet area, kept away from maximum curvature and grip pressure; no pharmacy table, manifesto or decorative batch field.",
+      "bottom_geometry": "Reserved variable lot/date/line zone plus a verified material identifier only when accurate and required. It is separate from fixed front/back artwork.",
+      "generation_text_rule": "The image model may render only the large identity strings MORA and the exact working recipe name. Category, quantity, mandatory facts, barcode and variable codes are inserted from approved vector artwork in post or photographed from an approved physical prototype; the model must not invent microcopy, numbers, dates, barcodes or technical data.",
+      "six_exact_recipe_names": [
+        "THYME HONEY",
+        "FIG LEAF",
+        "ROASTED BUCKWHEAT",
+        "CITRUS PEEL",
+        "BLACK SESAME",
+        "OLIVE OIL & SEA SALT"
+      ],
+      "type_character": "Contemporary open sans serif, quiet wordmark, clear recipe-first hierarchy and generous spacing; never monospaced, typewriter, Bell Gothic mimic, stencil, condensed apothecary microtype or faux handwriting.",
+      "legibility_gate": "Validate print against every approved fill at dry, chilled, condensed, scuffed and gripped states and at frontal plus 30-degree viewing. For Black Sesame, change zone, type size or geometry first; a narrow integrated non-paper information rail is allowed only after direct-print tests fail and the new structure is fully revalidated."
+    },
+    "food_trace_lock": [
+      {
+        "product": "Thyme Honey",
+        "exact_front_text": "MORA / THYME HONEY",
+        "food_witness": "Ivory dense yogurt with a validated pale amber internal ribbon and sparse fine thyme trace visible at multiple depths.",
+        "prohibited_substitute": "No amber ink, green herb marker, honey pool, botanical garnish or golden grade."
+      },
+      {
+        "product": "Fig Leaf",
+        "exact_front_text": "MORA / FIG LEAF",
+        "food_witness": "Near-ivory yogurt with a restrained validated green-beige internal vein.",
+        "prohibited_substitute": "No sage ink, leaf silhouette, leaf garnish, green vessel tint or saturation used to force distinction."
+      },
+      {
+        "product": "Roasted Buckwheat",
+        "exact_front_text": "MORA / ROASTED BUCKWHEAT",
+        "food_witness": "Warm cream yogurt with validated fine roasted-grain flecks suspended at multiple depths.",
+        "prohibited_substitute": "No brown band, kraft effect, cereal pile, rustic crumbs or printed speckle."
+      },
+      {
+        "product": "Citrus Peel",
+        "exact_front_text": "MORA / CITRUS PEEL",
+        "food_witness": "Cool ivory yogurt with validated short yellow-orange peel threads or zest points continuing below the surface.",
+        "prohibited_substitute": "No orange ink, fruit photograph, neon freshness cue, oversized peel garnish or jam layer."
+      },
+      {
+        "product": "Black Sesame",
+        "exact_front_text": "MORA / BLACK SESAME",
+        "food_witness": "Ivory and stone-grey yogurt marble with validated fine sesame particles and retained dairy density.",
+        "prohibited_substitute": "No charcoal package field, black luxury panel, sesame-dot print or lightened food solely to rescue copy contrast."
+      },
+      {
+        "product": "Olive Oil & Sea Salt",
+        "exact_front_text": "MORA / OLIVE OIL & SEA SALT",
+        "food_witness": "Ivory yogurt with a validated thin translucent olive-gold internal ribbon and truthful interface; salt is visible only if the approved recipe actually retains visible crystals.",
+        "prohibited_substitute": "No olive-green ink, metallic gold, oil-grade cue, origin prop, dramatic pooling or decorative salt crystals."
+      }
+    ],
+    "assets": [
+      {
+        "asset_id": "ST2-R7-CLEAR-HERO-01",
+        "role": "landing_hero_packaging_system",
+        "information_goal": "Within three seconds, show that MORA is a refrigerated yogurt in a transparent direct-printed cup: actual food is the color field, black text names it, the foil was a removable seal, and no paper belongs to the individual cup.",
+        "camera_view": "Horizontal 16:9 master, natural product perspective, 60-70 mm full-frame equivalent, 25-30 degree azimuth toward the front-right cup, 15-18 degree downward elevation, moderate f/8-like depth so print, wall, spoon cut and removed foil remain credible.",
+        "occupancy_copy_safe": "One open Thyme Honey cup occupies about 46-50% of frame width and 62-68% of frame height in the right half. Preserve a continuous low-detail left 42-45% for web headline and CTA; no prop, foil, reflection or ingredient trace enters that zone. Keep 8% safe margin around cup and 10% bottom allowance for responsive crop.",
+        "material_light_reflection_refraction": "Broad upper-left soft daylight plus white front fill and narrow black right flag; soft contact shadow on pale mineral surface. Transparent polymer rim, flange, wall thickness, fill line and base double edge remain readable. Front black print uses opaque yogurt as its natural backdrop; back print is rotated out or removed from the sightline so it does not ghost through the front. Condensation is absent or limited to a few irregular cold droplets outside the copy zone. Removed foil is low-glare and lies flat.",
+        "exact_text_strategy": "Render only MORA and THYME HONEY on the front. Reserve but do not synthesize category and net-quantity microcopy; add approved vector text later. No label-shaped backer, flavor color, numbered formula, date, city, customer name or barcode is visible.",
+        "series_locks": "Uses the same cup, front arc, black density, foil geometry, pale-mineral ground, grade and Thyme Honey food witness as the frontal collection portrait. Open state is exactly: foil fully removed and flat, untouched surface partly retained, one clean spoon cut and one stainless spoon; no propped lid.",
+        "human_tool_action": "No person. One small stainless spoon has completed a single pull through the yogurt and rests with a physically coherent contact point; no hovering utensil and no simultaneous pour, garnish or peel action.",
+        "avoid": [
+          "paper label, sleeve, collar, paper lid or frosted wrap illusion",
+          "clear perfume bottle, heavy glass foot, cosmetic jar, cream pot or laboratory beaker silhouette",
+          "floating cup, invisible rim, impossible fill line, doubled front text or reverse back text",
+          "propped foil, reclosable lid implication, foil blocking the print or a decorative foil stamp",
+          "honey drizzle from above, styled thyme sprig, ingredient pile or syrup exaggeration",
+          "kraft, wood, linen, twine, sepia, patina, apothecary shelf or black-steel lab"
+        ],
+        "qa": [
+          "Left 42-45% remains measurably low detail at desktop and mobile-safe crop; text would not cross food or reflections.",
+          "Silhouette reads as a low-wide yogurt cup before it reads as a transparent object.",
+          "MORA and THYME HONEY are correct, undoubled and exterior-printed; no invented microcopy is present.",
+          "Clear wall, opaque yogurt, front print and completely removed flat foil are four distinguishable physical states.",
+          "One spoon cut reveals dense food and the amber/thymed trace continues inside, not as a surface garnish.",
+          "No paper component appears on or under the individual cup and no unsupported packaging or food claim is implied."
+        ],
+        "generation_ready_prompt_skeleton": {
+          "purpose": "Web landing hero commercial food photograph with restrained editorial clarity and a large left copy-safe field.",
+          "scene": "Pale cool-mineral seamless surface and background, one low-wide chilled MORA yogurt cup on the right, no lifestyle props, warm-neutral daylight, contemporary refrigerated-food studio.",
+          "subject": "Transparent lightly tapered food-contact polymer cup, approx 1.55:1 diameter-to-height, wide molded flange and modest foot, filled with dense ivory Thyme Honey yogurt; front exterior single black direct print. Foil completely removed and lying flat behind-right, one asymmetric tab visible. One clean spoon cut and a small stainless spoon.",
+          "food_detail": "A truthful pale amber ribbon and sparse fine thyme trace at multiple depths through the yogurt and spoon cut, restrained and production-tolerant, no garnish.",
+          "camera_and_composition": "16:9, 60-70 mm equivalent, 25-30 degree front-right azimuth, 15-18 degree downward elevation, cup occupies right 46-50% width and 62-68% height, continuous empty low-detail left 42-45%, full rim and base, moderate depth.",
+          "light_and_optics": "One broad upper-left source, white frontal fill, narrow black edge flag, soft grounded shadow; clear polymer reflections and plausible refraction visible, no crystal caustics, no ghosted back print, no condensation over text.",
+          "exact_text": "Render exactly MORA in a quiet small line and THYME HONEY as the largest line, crisp neutral black, modern open sans serif, no other legible text.",
+          "constraints": "No individual paper label, sleeve, collar, sticker, frosted panel or printed flavor color; no propped lid, cosmetic jar, perfume bottle, lab glass, apothecary grid, kraft, rustic props, sepia, invented barcode, number, date or health claim; photoreal commercial food photography."
+        }
+      },
+      {
+        "asset_id": "ST2-R7-PRINT-CHECK-FRONT-02",
+        "role": "brand_mood_anchor_strict_frontal_final_check",
+        "information_goal": "Show, without inventing a print mechanism or SOP, how a filled, foil-sealed, already direct-printed cup is indexed and inspected for front-print placement, food level, seal edge and overall clarity.",
+        "camera_view": "Strict 0-degree frontal orthographic-feeling photograph, sensor plane parallel to table edge and cup front, 50 mm full-frame equivalent, medium-wide 3:2 horizontal, camera at maker lower-chest/cup-front height, f/8-like depth. No three-quarter cheat and no visible side plane of the face beyond natural frontal anatomy.",
+        "occupancy_copy_safe": "Maker centered in upper two-thirds; cup, fixture and scale centered on the lower vertical axis. Cup occupies about 13-16% of frame width and remains large enough to read MORA / THYME HONEY. Preserve 12-15% quiet pale wall at both lateral edges for crop breathing, but place no web copy over the image; caption belongs outside the frame.",
+        "material_light_reflection_refraction": "One hard-but-broad high-left room source reveals brushed stainless scale, shallow indexing fixture, low-glare foil plane, clear cup wall and black print without cinematic gloss. Use black flags to keep cup edges legible. Yogurt remains opaque ivory through the wall; reflections do not cover the front text. No uniform condensation and no color cast.",
+        "exact_text_strategy": "Only MORA and THYME HONEY need be readable. Approved category/quantity is a post-production vector zone if required; scale display, gauge, bottom code and registration marks must be blank, occluded, non-numeric or physically approved. No generated reading, tolerance, batch, date or SOP label.",
+        "series_locks": "Same maker, sealed Thyme Honey cup, exact fill, foil-tab orientation, front art, calibrated scale body, shallow generic indexing fixture, workspace, action phase, camera radius, height, lens, baseline, light and grade as ST2-R7-PRINT-CHECK-SIDE-03; only camera azimuth changes from 0 to exact 90 degrees.",
+        "human_tool_action": "The already printed and sealed cup is seated in a generic tapered-container indexing/registration fixture on the stainless scale. Maker lightly indexes the cup with one hand and steadies its base with the other while visually checking print placement, fill level, foil edge and clarity. No printing, filling, sealing, coding or wiping occurs in this frame.",
+        "avoid": [
+          "visible inkjet head, print roller, screen, pad, invented industrial printer or implied chosen print method",
+          "label application, sleeve fitting, collar seam, paper card or handwritten record attached to cup",
+          "fabricated scale number, registration tolerance, batch ID, date or technical readout",
+          "crooked front axis, three-quarter camera, tilted sensor, Dutch angle or decorative shallow focus",
+          "maker presented as founder, heroic artisan portrait, posed eye contact or staged signature",
+          "apothecary bench, amber bottle, beaker, pipette, cosmetic lab, kraft, wood, patina or black-steel workshop"
+        ],
+        "qa": [
+          "Table edge, cup centerline, front print and maker sternum share a measurable frontal axis; verticals remain vertical.",
+          "Cup is filled, already black-printed and foil-sealed before the visible action; no step suggests paper or printing is being applied.",
+          "Fixture is a shallow generic indexing aid, not a fictional print machine; scale is identifiable but shows no generated number.",
+          "Hands have coherent anatomy and real contact with cup/base/fixture; no hovering or tool penetration.",
+          "Front print, fill level and continuous foil edge are all visible without retouching away the clear wall.",
+          "Maker identity, cup, tab orientation, hand phase, baseline and lighting match the strict side companion."
+        ],
+        "generation_ready_prompt_skeleton": {
+          "purpose": "Contemporary refrigerated-food brand-mood anchor documenting a final visual inspection, strict frontal evidence frame, not a founder portrait and not a printing-process claim.",
+          "scene": "Cool pale-mineral wall, brushed stainless packing table, calibrated stainless scale with blank or unreadable display, shallow generic tapered-cup indexing fixture, no other equipment or paper.",
+          "subject": "Same adult female maker, tied-back dark hair, charcoal cotton shirt and apron, neutral focused expression. Centered low-wide transparent MORA yogurt cup, filled, exterior black print already applied, flat full-perimeter foil already sealed with one asymmetric tab.",
+          "action": "Cup indexed in fixture on scale; one hand lightly aligns the cup, the other steadies the base; maker checks front print placement, fill level, foil edge and clarity only. No printing, filling, sealing, coding, label fitting or wiping.",
+          "camera_and_composition": "3:2 horizontal, exact 0-degree frontal axis, sensor parallel to wall and table, 50 mm equivalent, camera at cup-front/lower-chest height, maker centered, cup-scale axis centered, moderate f/8-like depth, no three-quarter angle.",
+          "light_and_optics": "One hard-but-broad high-left room source, white bounce and narrow black flags; truthful stainless response, clear-polymer reflection/refraction, opaque ivory food, low-glare foil, grounded contact shadows, warm-neutral 4300-4800 K.",
+          "exact_text": "On cup render exactly MORA small and THYME HONEY largest, neutral black modern sans; no other legible numbers, dates, barcodes or technical text anywhere.",
+          "constraints": "No paper label, sleeve, collar, sticker, colored ink, printer head, roller, screen, pad, label applicator, lab glass, perfume, cosmetics, apothecary grid, amber bottle, kraft, rustic workshop, heroic artisan patina or claimed SOP; photoreal commercial editorial photography."
+        }
+      },
+      {
+        "asset_id": "ST2-R7-PRINT-CHECK-SIDE-03",
+        "role": "brand_mood_strict_90_degree_side_companion",
+        "information_goal": "Prove the same final-check moment from a strict physical side axis: hand-to-cup-to-scale contact, transparent wall and fill, foil edge, flange, base and print wrapping around the tapered cup remain materially coherent.",
+        "camera_view": "Exact maker-right 90-degree side profile at the same radius, height and 50 mm equivalent as the frontal anchor, 3:2 horizontal, sensor plane parallel to maker sagittal plane and cup diameter, f/8-like moderate depth. Face shows one eye, one nostril edge and one cheek contour only; no 70-degree near-profile.",
+        "occupancy_copy_safe": "Match maker head, shoulder, elbow, table and cup baseline to the frontal frame. Cup/fixture/scale remain lower-center with about 13-16% frame-width cup occupancy. Preserve matched lateral wall breathing but no over-image copy; pair sits beside or below the frontal frame in UI.",
+        "material_light_reflection_refraction": "Identical physical room light to the frontal frame; screen direction changes only because camera moved. Sidewall uses a broad white strip and thin black edge flag to reveal wall thickness, fill line, curved print arc and the foil-over-flange relationship. Retain contact shadows at fingers, cup foot, fixture and scale; no backlit glass glow.",
+        "exact_text_strategy": "Do not force a full readable front hierarchy in side view. A physically wrapped fragment of MORA or THYME HONEY may be visible on the forward arc but must not be duplicated or face the camera unnaturally. No readable scale number, code, gauge or process label.",
+        "series_locks": "This is not a second scene. It repeats the exact maker, sealed cup, print, food fill, foil-tab orientation, scale, fixture, hand positions, inspection phase, table baseline, lighting and grade of ST2-R7-PRINT-CHECK-FRONT-02; only the camera moves exactly 90 degrees around the same axis.",
+        "human_tool_action": "Same final inspection phase: one hand provides light rotational/indexing contact at the cup, the other steadies the base; no completed turn between frames. The visible proof is force/contact and geometry, not an asserted production procedure.",
+        "avoid": [
+          "three-quarter near-profile, two visible eyes, front-facing nose or inconsistent maker identity",
+          "different cup fill, foil tab, hand phase, tool position, scale, workspace, light or wardrobe from frontal anchor",
+          "full front label magically facing side camera, doubled text, ghosted reverse print or opaque paper-like panel",
+          "invented printer, gauge numbers, scale readout, sealing jaws, filling nozzle or simultaneous operations",
+          "glass-bottle highlights, cosmetic jar foot, invisible wall, impossible flange, floating fingers or crushed cup",
+          "apothecary, lab, perfume, kraft, wood, sepia, heroic craft theater"
+        ],
+        "qa": [
+          "Maker is an exact 90-degree right profile with only one eye and one facial edge; camera height and radius match the front.",
+          "Cup baseline, scale platform, tab orientation, action phase and hand contacts reconstruct as the same instant.",
+          "Transparent sidewall, yogurt fill line, flange, flat foil edge, print arc and stable foot are simultaneously legible.",
+          "Any print fragment follows curvature and is not duplicated, mirrored or converted into a label panel.",
+          "No process beyond indexing and inspection is implied and no numeric evidence is invented.",
+          "Pair reads as precise current food production, not a lab, perfume counter, cosmetic studio or rustic craft room."
+        ],
+        "generation_ready_prompt_skeleton": {
+          "purpose": "Strict 90-degree side companion to the MORA final-inspection anchor, documenting physical contact and clear-cup anatomy without claiming a print method.",
+          "scene": "Exact same pale-mineral wall, brushed stainless table, calibrated scale with blank or unreadable display, and shallow generic tapered-cup indexing fixture as the frontal frame.",
+          "subject": "Exact same female maker, wardrobe, sealed transparent low-wide Thyme Honey cup, black exterior direct print, ivory fill, flat foil and asymmetric tab as the frontal frame.",
+          "action": "Exact same instant: one hand lightly indexes the cup, other steadies base, checking print placement, fill, foil edge and clarity; no printing or other operation.",
+          "camera_and_composition": "3:2 horizontal, camera moved exactly 90 degrees to maker-right side at identical radius and height, 50 mm equivalent, true single-eye facial profile, cup and table baseline matched to front, moderate f/8-like depth.",
+          "light_and_optics": "Same fixed hard-but-broad high-left room source, white bounce, thin black flag; broad white strip on sidewall, plausible clear-polymer double edges and food refraction, grounded finger/cup/fixture shadows, no glowing glass.",
+          "exact_text": "Only a physically curved partial fragment of MORA or THYME HONEY may appear; no other legible text, numbers, dates, barcodes or readouts.",
+          "constraints": "No paper, sleeve, collar, sticker, flavor ink, printer head, rollers, sealing machine, filling nozzle, labware, perfume, cosmetics, apothecary, kraft, wood, sepia; no second eye, near-profile or inconsistent action; photoreal commercial editorial photography."
+        }
+      },
+      {
+        "asset_id": "ST2-R7-CLEAR-ANATOMY-04",
+        "role": "packaging_detail_clear_cup_anatomy",
+        "information_goal": "Let a web viewer understand the package chain from one physically plausible object: actual food inside, transparent molded vessel, exterior black print, continuous flange, flat foil and asymmetric tab, with bottom code area reserved and no paper layer.",
+        "camera_view": "Vertical 4:5 detail master with safe 3:2 crop, 80-85 mm full-frame equivalent, 20-25 degree front-right azimuth, 22-28 degree downward elevation, f/8-f/11-like depth. One sealed filled cup only; no exploded or cutaway rendering.",
+        "occupancy_copy_safe": "Cup occupies 70-76% of image height and 62-68% width, centered slightly left so the asymmetric tab and right-side wall remain clear. Keep 12-15% clean pale ground at upper-right for optional external annotation leaders; no prose or anatomy labels are generated inside the photo.",
+        "material_light_reflection_refraction": "Broad rear-left white strip describes the wall and foil edge, front white fill keeps black print readable, two narrow black flags expose wall thickness and base. Slight rotation prevents back information from ghosting through the front. Clear polymer has modest molded distortion, not glass brilliance. Yogurt presses naturally to wall with a plausible top fill line; no air gaps, levitation or artificial translucency.",
+        "exact_text_strategy": "Render only MORA and THYME HONEY on the front. The photo reserves visual space for later vector callouts naming food, exterior direct print, clear wall, flange, peelable foil, asymmetric tab and bottom code zone. Do not generate arrows, measurements, resin codes, barrier claims or microcopy.",
+        "series_locks": "Same Thyme Honey sample, cup geometry, front print position, black ink density, foil/tab, grade and pale-mineral ground as hero and collection. This frame is sealed to show foil-to-flange contact; the hero is open to show complete removal.",
+        "human_tool_action": "None. Package rests on its true foot with full contact shadow. No hand holds, peels, squeezes or points; anatomy comes from camera and light, not a staged exploded diagram.",
+        "avoid": [
+          "exploded floating layers, transparent cutaway, x-ray wall or impossible section view",
+          "empty cup styled as premium glass, cosmetic jar, fragrance vessel, specimen pot or beaker",
+          "paper label, sleeve, collar, sticker, frosted panel, white underbase or ingredient-color ink",
+          "invisible rim, foil fused into plastic, thick metal lid, rigid overcap or reclosure implication",
+          "invented resin, recyclable, barrier, leak-proof, freshness, migration or net-quantity claim",
+          "ruler, technical numbers, pharmacy grid, rustic paper, wood, linen or lab prop"
+        ],
+        "qa": [
+          "A single non-exploded object reveals food, clear wall, exterior print, flange, foil edge/tab and foot through real perspective.",
+          "Cup reads as molded polymer yogurt packaging, never thick glass; base has no decorative pedestal.",
+          "Front print remains exterior, black and unbacked; back print does not ghost through it.",
+          "Foil is flat and continuously aligned to the flange with one asymmetric graspable tab.",
+          "No paper layer appears and no callout or model-generated text invents specifications.",
+          "Later vector annotation can point to each visible part without crossing the cup silhouette or relying on hidden geometry."
+        ],
+        "generation_ready_prompt_skeleton": {
+          "purpose": "High-resolution web packaging-detail photograph that makes a transparent direct-printed yogurt cup physically understandable without an exploded diagram.",
+          "scene": "Pale cool-mineral seamless ground, one sealed low-wide MORA cup, no hands, tools, ingredients or props.",
+          "subject": "Filled transparent lightly tapered food-contact polymer yogurt cup, approx 1.55:1 diameter-to-height, continuous molded flange, modest stable foot, black exterior direct print, flat low-glare full-perimeter foil, one asymmetric tab; dense ivory Thyme Honey yogurt with a restrained pale amber ribbon and fine thyme trace through the wall.",
+          "camera_and_composition": "4:5 vertical master safe for 3:2, 80-85 mm equivalent, 20-25 degree front-right azimuth, 22-28 degree downward elevation, f/8-f/11-like depth, cup 70-76% height, slight left offset, clear upper-right annotation space.",
+          "light_and_optics": "Broad rear-left vertical white strip, soft front fill, two narrow black flags, plausible clear-polymer wall thickness and double edges, accurate food fill, low-glare foil, soft full-foot contact shadow, no crystal caustics or ghosted back print.",
+          "exact_text": "Render exactly MORA small and THYME HONEY largest on the front, neutral black modern sans; no other legible text, arrows, codes, measurements or claims.",
+          "constraints": "No paper label, sleeve, collar, sticker, frosted panel, colored ink, exploded parts, cutaway, glass perfume bottle, cosmetic jar, lab vessel, rigid overcap, ruler, apothecary grid, kraft or rustic styling; photoreal commercial packaging photography."
+        }
+      },
+      {
+        "asset_id": "ST2-R7-SIX-CUP-GRID-05",
+        "role": "six_product_frontal_collection_grid",
+        "information_goal": "Enable immediate comparison of six recipes while proving family continuity: one transparent cup, one black information order, one foil/opening grammar, six different actual food states and exact recipe names.",
+        "camera_view": "Generate six separate matched 1:1 portraits, never one AI-generated six-panel image. Each is strict 0-degree front azimuth with 15-18 degree downward elevation to reveal the top food surface, 65-75 mm full-frame equivalent, f/8-like depth, same camera distance and baseline. Compose approved portraits in UI as a 3-by-2 desktop grid and 1-column or 2-column mobile grid.",
+        "occupancy_copy_safe": "Each cup occupies 72-78% of square height and 68-74% width, centered on a shared baseline with identical top/bottom/side margins. No internal copy-safe field; product name is on cup and all description/price/CTA sits in the UI below each image. Do not crop recipe text, rim, spoon cut or foot.",
+        "material_light_reflection_refraction": "Identical broad upper-left strip, white frontal fill, right black flag, pale-mineral ground, shadow density and white balance in all six portraits. Wall clarity, refraction and print opacity are constant; only actual food trace changes. Keep the back fact column outside the front sightline. Use no condensation in the canonical grid so contrast is comparable; maintain a separate condensed-legibility test off-camera.",
+        "exact_text_strategy": "Each portrait renders only MORA and its one exact working recipe name. Category, quantity and legal microcopy are added from one approved vector template after packaging approval. Black ink remains identical across all SKUs; no flavor-colored ink, marker, tab or background.",
+        "series_locks": "Cup geometry, open state, removed flat foil position, one stainless spoon and one spoon-cut geometry, camera, occupancy, baseline, light, grade, print position, font behavior and background are fixed. Only recipe name and approved actual food witness vary. If a spoon or removed foil cannot be matched exactly, omit the spoon from every portrait and use the same untouched open state across all six rather than mix states.",
+        "human_tool_action": "No person. Preferred state is foil completely removed and placed flat at the same rear-right coordinates, with one matched stainless spoon after one clean pull. It must remain a product-comparison action, not a garnish or serving ritual.",
+        "avoid": [
+          "generating all six cups in one image, which causes geometry, text and food drift",
+          "different cup sizes, camera angles, foil positions, spoon shapes, crop margins, backgrounds or shadow directions",
+          "printed SKU colors, flavor bands, tinted cups, colored foil tabs, ingredient illustrations or prop-coded backgrounds",
+          "surface-only toppings that fail to continue through the clear sidewall and spoon cut",
+          "making Black Sesame lighter, Fig Leaf greener or Olive Oil more golden solely for screen distinction",
+          "paper, frosted panels, cosmetic styling, perfume glass, labware, kraft, rustic crumbs or apothecary grids"
+        ],
+        "qa": [
+          "Overlay test: rim, front print origin, cup sides, foot, baseline, foil and spoon align within the agreed tolerance across all six portraits.",
+          "Desaturation test: family cup, black hierarchy and open-state grammar remain coherent without product color.",
+          "Name-hidden test: approved food witnesses remain directionally distinguishable without garnish, tint or exaggerated grading; failures return to R&D/role revision.",
+          "Name-visible test: MORA and each exact recipe name are correct, crisp and never backed by a label-like field.",
+          "Black Sesame direct-print contrast passes on the darkest production-tolerant physical sample; model lightening does not count as evidence.",
+          "All six remain plausible refrigerated yogurt with shared density, truthful internal traces and no unsupported recipe or pack claim."
+        ],
+        "generation_ready_prompt_skeleton": {
+          "purpose": "One of six matched square e-commerce/editorial product portraits for a UI-composed MORA collection grid; generate exactly one cup per image.",
+          "scene": "Identical pale cool-mineral seamless set, no lifestyle props, one open low-wide chilled MORA yogurt cup centered, removed foil flat at fixed rear-right coordinates, one matched small stainless spoon after one clean pull.",
+          "subject_template": "Transparent lightly tapered food-contact polymer cup, approx 1.55:1 diameter-to-height, wide molded rim and modest foot, identical exterior black direct print and no paper. Dense yogurt with {{approved_food_witness}} visible at multiple depths through sidewall and spoon cut.",
+          "camera_and_composition": "1:1, strict 0-degree front azimuth, 15-18 degree downward elevation, 65-75 mm equivalent, f/8-like depth, cup 72-78% image height and 68-74% width, identical baseline and margins to reference portrait.",
+          "light_and_optics": "Identical broad upper-left strip, white front fill, narrow right black flag, warm-neutral 4300-4800 K, clear-polymer reflections and refraction, no back-print ghost, no condensation, soft full-foot contact shadow.",
+          "exact_text_template": "Render exactly MORA small and {{EXACT_RECIPE_NAME}} largest, neutral black modern sans; no other legible text.",
+          "constraints": "No paper label, sleeve, collar, sticker, frosted or opaque panel, flavor-color ink, colored tab, ingredient illustration, topping theater, tinted background, perfume glass, cosmetic jar, labware, kraft, rustic or apothecary styling; no geometry or lighting drift; photoreal commercial food photography.",
+          "six_runs": [
+            {
+              "EXACT_RECIPE_NAME": "THYME HONEY",
+              "approved_food_witness": "ivory dense yogurt with a restrained pale amber internal ribbon and sparse fine thyme trace"
+            },
+            {
+              "EXACT_RECIPE_NAME": "FIG LEAF",
+              "approved_food_witness": "near-ivory yogurt with a restrained green-beige internal vein"
+            },
+            {
+              "EXACT_RECIPE_NAME": "ROASTED BUCKWHEAT",
+              "approved_food_witness": "warm cream yogurt with fine roasted-grain flecks suspended at multiple depths"
+            },
+            {
+              "EXACT_RECIPE_NAME": "CITRUS PEEL",
+              "approved_food_witness": "cool ivory yogurt with short yellow-orange peel threads or zest points continuing below the surface"
+            },
+            {
+              "EXACT_RECIPE_NAME": "BLACK SESAME",
+              "approved_food_witness": "ivory and stone-grey yogurt marble with fine sesame particles and retained dense dairy body"
+            },
+            {
+              "EXACT_RECIPE_NAME": "OLIVE OIL & SEA SALT",
+              "approved_food_witness": "ivory yogurt with a thin translucent olive-gold internal ribbon and truthful interface, with no visible salt unless recipe-validated"
+            }
+          ]
+        }
+      }
+    ],
+    "pair_continuity_protocol": {
+      "pair": [
+        "ST2-R7-PRINT-CHECK-FRONT-02",
+        "ST2-R7-PRINT-CHECK-SIDE-03"
+      ],
+      "capture_order": "Lock maker, cup, fill, print, foil tab, fixture, scale, hand contact and light first. Capture or generate the frontal master, then move only the camera to exact maker-right 90 degrees without advancing the action.",
+      "identity_controls": "Use the accepted frontal frame as the sole continuity reference for the side companion. Do not infer a founder biography or identify the generated maker as a real person.",
+      "geometry_controls": "Record camera height, subject radius, lens, cup baseline, table line, cup center, hand landmarks, foil tab clock position and light position. The side frame must reconstruct the same 3D contacts.",
+      "release_test": "When shown side by side without captions, reviewers must identify the same person, cup, action phase, workspace and batch moment; only the camera axis may differ."
+    },
+    "global_avoid": [
+      "Any paper, fiber, sleeve, collar, adhesive label, hangtag or frosted-label illusion on an individual cup",
+      "Any ingredient-color ink, full-pack tint, colored foil cue, white flood, opaque front panel or decorative varnish",
+      "Perfume bottle shoulder/neck, heavy glass base, cosmetic cream jar, amber vessel, beaker, pipette or specimen container",
+      "Le Labo-like ruled label geometry, ingredient-plus-number name, city/date/name personalization, pharmacy microtype, Bell Gothic, mono or typewriter styling",
+      "Specific printer mechanism, fictional print head, roller, screen, pad, sealer or claimed inspection number before production selection",
+      "Kraft, deckle, wood, linen, twine, wax, sepia, stains, wear, newsprint, apothecary shelves, black-steel lab or heroic artisan patina",
+      "Artificially colored yogurt, recipe-color grade, excessive garnish, topping piles, dramatic syrup, oil pooling or fake visible salt",
+      "Generated legal facts, barcodes, batch/date/line codes, resin marks, net quantity, process tolerance, health, origin, freshness, barrier or sustainability claims"
+    ]
+  },
+  "claim_and_release_gates": [
+    {
+      "gate": "approved_food_samples",
+      "required_before": "Final generation, photography and public product imagery",
+      "evidence": "R&D-approved production-tolerant samples for all six recipes, including natural batch range, fill level, surface, sidewall trace, spoon response, separation and shelf-life appearance.",
+      "failure_action": "Keep traces directional or revise recipe/image role; do not compensate with garnish, saturation, color ink or retouching."
+    },
+    {
+      "gate": "clear_pack_protection",
+      "required_before": "Calling the transparent cup production-ready or depicting final retail shelf life",
+      "evidence": "Validated complete cup-plus-foil structure for food contact, light, oxygen, aroma, moisture, seal, migration, sensory neutrality, distribution and recipe-specific shelf life.",
+      "failure_action": "Stop the Clear Witness direction or materially revise the pack; never hide the risk with paper or frosting."
+    },
+    {
+      "gate": "direct_print",
+      "required_before": "Treating generated print as executable packaging artwork",
+      "evidence": "Selected method, ink/primer/coating/cure, nested set-off, migration/taint, adhesion, taper registration, scuff, dry/cold/wet rub, condensation, barcode and legal-copy tests.",
+      "failure_action": "Revise zone, type or structure. Do not depict a production method until selected."
+    },
+    {
+      "gate": "black_sesame_contrast",
+      "required_before": "Collection-grid approval and unit-pack release",
+      "evidence": "Direct black print remains legible on darkest approved production-tolerant Black Sesame fills under retail/home light and chilled condensation.",
+      "failure_action": "Change print zone, scale or geometry first. Use a minimal integrated non-paper information rail only after failure is documented and the new structure is fully validated."
+    },
+    {
+      "gate": "copy_and_identity",
+      "required_before": "Publishing any category, quantity, recipe, barcode, lot/date or mandatory text",
+      "evidence": "Trademark, recipe, translation, applicable-market labeling and approved vector-artwork review.",
+      "failure_action": "Keep only MORA and working recipe names as clearly directional; no model-generated facts."
+    },
+    {
+      "gate": "generated_image_boundary",
+      "required_before": "Using any visual as manufacturing, founder, material or sustainability evidence",
+      "evidence": "Approved physical prototypes, production records, component specifications, test reports and separately authorized real-person imagery.",
+      "failure_action": "Caption as generated visual direction only; never claim it proves the founder, facility, SOP, material, food safety, freshness, recyclability or environmental benefit."
+    }
+  ],
+  "canonical_replacement_map": [
+    {
+      "op": "replace",
+      "path": "/boundaries/assumptions/10",
+      "value": "revision 7의 투명 primary vessel은 실제 음식 상태를 드러내는 방향성 후보이며, complete food-contact structure, light·oxygen·aroma·moisture barrier, migration, seal, recipe stability, distribution and shelf-life 검증을 통과하기 전 production-ready 또는 food-safe 주장이 아니다.",
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/boundaries/assumptions/11",
+      "value": "개별 컵에는 paper label, fiber sleeve/collar, adhesive sticker 또는 recipe-color ink를 쓰지 않는다. 외면 검정 direct print, foil, variable code와 외부 multipack의 재료·잉크·접착·barrier·recovery·recycling·freshness·tamper·leak·cold claims는 실제 사양과 지역 검증 전 확정하지 않는다.",
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/visual_branding_and_key_visual/key_insight",
+      "value": "음식은 색을 만들고, 투명 용기는 상태를 드러내며, 검정 잉크는 사실을 고정한다. flat foil은 최초 개봉을, 실제 spoon trace와 final-check contact는 음식과 과정의 증거를 맡는다. Direct print는 craft가 아니라 분류다.",
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/visual_branding_and_key_visual/communication_job",
+      "value": "대표 key visual은 actual food → transparent food-contact vessel → exterior black direct print → completely removed foil의 관계를 한 장에서 읽히게 하고, 직교 mood pair는 이미 인쇄·충전·밀봉된 컵의 print placement, fill level, foil edge와 clarity를 같은 검사 순간의 두 축에서 보여 준다.",
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/visual_branding_and_key_visual/premise",
+      "value": "한 컵의 가장 큰 색 면은 실제 음식이고, 투명 벽은 그 상태를 숨기지 않으며, 최소 검정 글자는 이름과 사실만 분류한다. Premium tension은 종이 장식이 아니라 정확한 molded geometry, print registration, clean peel edge와 edible trace에서 나온다.",
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/visual_branding_and_key_visual/focal_actor",
+      "value": "낮고 넓은 투명 direct-printed cup 안의 실제 요거트와, clear wall·black print·molded flange·flat foil·spoon trace가 만드는 서로 다른 물리적 경계",
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/visual_branding_and_key_visual/series_rule",
+      "value": "여섯 제품은 같은 투명 컵, 정면 direct-print origin, open state, 카메라·광원·occupancy·baseline을 고정한 별도 1:1 portrait로 만든 뒤 UI에서 3x2 grid로 조립한다. MORA와 exact recipe name, 승인된 actual food trace만 바뀌며 flavor-color ink, prop color와 배경색은 바뀌지 않는다.",
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/visual_branding_and_key_visual/series_rule_spec",
+      "value": {
+        "name": "Clear Food, Fixed Facts — Six Fronts",
+        "when": "레시피를 개별 카드 또는 collection grid에서 비교할 때",
+        "do": "제품마다 정확히 한 컵을 별도로 생성·촬영한다. strict frontal cup, 15-18도 top visibility, 동일 open state·foil·spoon·baseline·black print hierarchy를 반복하고 exact recipe name과 승인된 내부 음식 trace만 바꾼다.",
+        "because": "용기·정보·촬영 구조를 고정하면 실제 음식의 색과 질감만이 제품 선택 신호가 되고 transparent direct-print system이 즉시 이해된다.",
+        "fixed_invariants": [
+          "transparent low-wide cup, exterior black direct print, completely removed flat foil",
+          "strict 0-degree front azimuth, 15-18-degree downward elevation, 65-75 mm equivalent",
+          "1:1 portrait, cup 72-78% height, shared baseline and margins",
+          "same pale-mineral set, broad upper-left light, white fill, right black flag, warm-neutral grade",
+          "MORA small, exact recipe name largest, no model-generated microcopy",
+          "no individual paper, flavor-color ink, opaque panel or SKU-coded background"
+        ],
+        "controlled_variables": [
+          "exact working recipe name",
+          "R&D-approved internal food color, particle, ribbon, vein, thread or marble",
+          "only after validation, category and net quantity from approved vector artwork"
+        ],
+        "acceptance_test": "Overlay에서 cup, rim, print origin, foot, foil, spoon and shadow align; 이름을 가리면 실제 음식 상태가 과장 없이 방향성 차이를 만들고, 이름을 보이면 six recipes가 즉시 비교된다.",
+        "rejection_test": "한 장에 six cups를 생성해 형상·텍스트가 흔들리거나, Black Sesame를 밝히고 Fig Leaf를 초록색으로 보정하거나, flavor color·paper·garnish가 차이를 대신한다."
+      },
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/visual_branding_and_key_visual/identity_behavior",
+      "value": [
+        "전면은 small quiet MORA → largest working recipe name → approved category → validated net quantity의 unframed black hierarchy다.",
+        "검정 한 색만 투명 용기 외면에 직접 인쇄하고 white flood, opaque field, paper illusion, rule grid, flavor-color ink를 쓰지 않는다.",
+        "후면은 하나의 narrow fact column과 barcode quiet area, 하단은 fixed art와 분리된 lot/date/line code 및 검증된 material ID만 허용한다.",
+        "모델이 생성할 수 있는 글자는 MORA와 exact recipe name뿐이며 category, quantity, mandatory facts, barcode와 variable code는 승인된 vector artwork 또는 physical prototype에서 온다.",
+        "Black Sesame 대비 실패는 배경 패널로 숨기지 않고 zone·type·geometry를 먼저 수정하며, integrated non-paper information rail은 시험 실패 뒤에만 조건부 검토한다."
+      ],
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/visual_branding_and_key_visual/type_message_image_product_ui_relationship",
+      "value": [
+        "이미지는 실제 음식 상태와 transparent wall을 보여 주고, black direct print는 brand·recipe·approved category·quantity를 분류한다.",
+        "hero copy는 왼쪽 42-45% 연속 저정보 여백에만 놓고 컵·음식·foil 위에 겹치지 않는다.",
+        "collection UI는 별도로 만든 six matched 1:1 portraits를 3x2로 조립하고 description·price·CTA는 이미지 아래에 둔다.",
+        "brand mood pair는 한 섹션에서 동일 높이로 짝지으며 이미지 위 copy를 금지한다; front는 alignment, side는 contact와 wall/foil geometry를 설명한다.",
+        "ingredient color는 사진 속 actual food에만 존재하며 package ink, foil, background, CTA, wall, light or prop로 연결하지 않는다.",
+        "anatomy image의 callout은 승인된 vector UI layer로 바깥 여백에 추가하며 사진 모델이 수치·재료·claims를 만들지 않는다."
+      ],
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/visual_branding_and_key_visual/surface_translation",
+      "value": {
+        "landing_hero": "오른쪽 46-50%에 open Thyme Honey clear cup을 두고 왼쪽 42-45%를 copy-safe로 비운다. foil은 완전히 제거되어 평평하게 놓이고, 한 spoon cut과 투명 벽의 내부 trace가 보인다.",
+        "lineup_grid": "six separate strict-frontal 1:1 portraits를 승인 후 UI에서 3x2로 조립한다. cup, open state, black hierarchy, camera, light, occupancy and baseline은 고정하고 exact recipe name과 actual food만 바꾼다.",
+        "ingredient_story": "actual ingredient reference와 clear sidewall·spoon cut 속 production-tolerant trace를 짝지으며 garnish 또는 printed color로 차이를 만들지 않는다.",
+        "process_content": "거름·폴딩·충전·밀봉·final check를 각각 한 real tool과 한 행동으로 분리한다. Printing/Packing Table은 이미 direct-printed, filled and foil-sealed cup의 indexing과 visual inspection만 보여 준다.",
+        "packaging": "transparent low-wide food-contact vessel candidate, exterior black direct print, flat full-perimeter foil and actual food를 분리한다. Individual paper/fiber layer는 없다.",
+        "brand_mood_opener": "strict frontal final-check frame을 anchor로 사용해 fill, front print and seal alignment를 한 축에서 읽힌다.",
+        "process_pair": "strict frontal과 exact 90-degree side를 같은 maker, cup, fixture, hand phase and light로 연결한다; 인쇄 방식이나 검사 수치를 주장하지 않는다.",
+        "responsive": "desktop은 front/side paired panels, mobile은 front 다음 side로 쌓는다. 두 프레임에서 maker scale, cup baseline and action phase가 같아야 한다.",
+        "package_anatomy": "sealed filled cup 하나를 non-exploded 4:5 detail로 보여 food, clear wall, exterior ink, flange, foil edge/tab and foot를 실제 빛으로 구분하고 callout은 UI vector로 추가한다."
+      },
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/visual_branding_and_key_visual/mood_series_relationship",
+      "value": "Clear Food, Fixed Facts는 strict-frontal transparent cups에서 six actual food states를 비교한다. Final Check, Two Axes는 같은 maker·filled sealed direct-print cup·scale·generic indexing fixture·hand phase를 고정하고 카메라만 0도에서 exact 90도로 옮긴다. 제품 시리즈는 먹는 결과를, 무드 pair는 이미 만들어진 컵의 마지막 시각 검사를 맡는다.",
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/visual_branding_and_key_visual/material_witness_visual_system",
+      "value": {
+        "rule": "food colors; transparent vessel reveals state; black direct print fixes facts; foil marks first opening; real tools act; retained food and contact traces prove",
+        "hero_states": [
+          "open actual food with one spoon trace",
+          "transparent molded wall, flange, fill line and foot",
+          "minimal exterior black direct print with no opaque backer",
+          "foil completely removed and lying flat with asymmetric tab visible"
+        ],
+        "ingredient_color_behavior": "Recipe color exists only in approved actual food at multiple depths. It never becomes unit-pack ink, foil mark, wall, light, CTA, set or prop color.",
+        "material_contrast": "clear molded polymer · dense dairy body · neutral black exterior ink · thin low-glare foil · brushed stainless tool",
+        "modernity_rule": "Precision of molded radius, registration, clean peel, wall optics and actual food trace creates premium tension; paper decoration, rustic craft and cosmetic glass are prohibited.",
+        "candidate_boundary": "Transparent vessel, print, foil, 150 g geometry and all food appearances are directional until complete food-contact, barrier, light, migration, line, seal, cold-chain, legibility and shelf-life tests pass.",
+        "status": "directional_revision_7"
+      },
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/brand_mood_and_brand_imagery/key_insight",
+      "value": "Final Check, Two Axes는 craft를 장식하지 않는다. 같은 clear direct-print cup이 stainless scale과 generic indexing fixture에 실제 접촉하는 한 순간을 front와 exact side에서 보며 print placement, fill, foil edge and clarity를 확인한다.",
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/brand_mood_and_brand_imagery/communication_job",
+      "value": "brand mood는 이미 인쇄·충전·밀봉된 컵의 마지막 visual check를 현재적 식품 작업 환경에서 증명하되, specific printing method, SOP, numeric tolerance, founder biography 또는 paper assembly를 발명하지 않는다.",
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/brand_mood_and_brand_imagery/material_witness_mood_system",
+      "value": {
+        "series_name": "Final Check, Two Axes",
+        "verbal_premise": "같은 사람이 이미 direct-printed, filled and foil-sealed cup을 같은 검사 순간에 봅니다. 정면에서는 print·fill·seal alignment를, 측면에서는 wall·foil edge·hand-to-scale contact를 봅니다.",
+        "pair_caption": "같은 제작자, 같은 밀봉 컵, 같은 검사 순간. 카메라 축만 바뀝니다.",
+        "front_frame": {
+          "label": "FINAL CHECK — FRONT",
+          "headline": "음식과 정보와 밀봉이 한 축에 맞는지 봅니다.",
+          "communication_job": "strict 0-degree front로 MORA/recipe print origin, fill level, continuous foil edge, maker hands and cup-scale axis를 정렬한다.",
+          "asset_id": "ST2-R7-PRINT-CHECK-FRONT-02",
+          "file_path": "assets/brand-mood/mora-final-check-front.png"
+        },
+        "side_frame": {
+          "label": "FINAL CHECK — SIDE",
+          "headline": "측면에서 벽과 접점이 실제로 이어지는지 봅니다.",
+          "communication_job": "exact maker-right 90-degree profile로 clear wall thickness, fill, flange/foil edge, print arc and hand-cup-fixture-scale contact를 같은 focal plane에 둔다.",
+          "asset_id": "ST2-R7-PRINT-CHECK-SIDE-03",
+          "file_path": "assets/brand-mood/mora-final-check-side.png"
+        },
+        "series_lock": {
+          "maker": "same adult female maker model, tied-back dark hair, charcoal cotton shirt and apron; production-role depiction, not founder evidence",
+          "action": "same already printed, filled and foil-sealed Thyme Honey cup is lightly indexed in a generic fixture and visually checked; one hand indexes, one steadies base; no printing, filling, sealing, coding, wiping or paper fitting",
+          "package": "same transparent low-wide cup, actual fill, exterior black art, foil-tab clock position and bottom code reservation",
+          "workspace": "same pale-mineral wall, brushed stainless table, calibrated scale with no generated readout, shallow generic tapered-cup indexing fixture",
+          "camera_pair": "3:2 horizontal, 50 mm equivalent, same radius, height, subject scale, baseline and f/8-like depth; azimuth only changes 0 to exact 90 degrees",
+          "light": "one fixed hard-but-broad room source with white bounce and narrow black flags; no recipe-colored light",
+          "material_truth": "clear wall, food, exterior black ink, foil and stainless each retain a distinct response; no paper and no claimed print method or numeric SOP"
+        },
+        "physical_qa": [
+          "front is measurably square; side is exact one-eye 90-degree profile",
+          "same maker, cup, fill, tab, hands, fixture, baseline, action phase and light across both",
+          "front shows print/fill/seal alignment; side shows wall/fill/foil/contact without ghost text",
+          "fixture reads as generic registration aid, not an invented printing machine",
+          "scene reads as current refrigerated-food final check, never founder theater, lab, perfume, cosmetics, apothecary or rustic craft"
+        ],
+        "package_anatomy_support": {
+          "asset_id": "ST2-R7-CLEAR-ANATOMY-04",
+          "file_path": "assets/packaging-system/mora-clear-cup-anatomy.png",
+          "communication_job": "one sealed filled non-exploded cup shows actual food, clear molded wall, exterior black ink, flange, flat foil/tab and foot through real light; callouts are added in UI",
+          "boundary": "generated packaging direction; exact material, print, foil, barrier, code, food contact, recyclability and production feasibility remain unverified"
+        },
+        "status": "directional_revision_7"
+      },
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/brand_mood_and_brand_imagery/image_series_roles",
+      "value": [
+        "ST2-R7-PRINT-CHECK-FRONT-02 is the brand-mood opener and alignment proof.",
+        "ST2-R7-PRINT-CHECK-SIDE-03 is the strict physical-contact and package-wall companion.",
+        "ST2-R7-CLEAR-ANATOMY-04 is a packaging-detail support frame, not a mood replacement or manufacturing diagram.",
+        "The pair must be shown together or front-first; neither may be captioned as founder, printing, hand-labeling or an approved SOP."
+      ],
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/product_visual_traits_and_product_imagery/key_insight",
+      "value": "MORA의 제품군은 동일한 투명 low-wide cup과 최소 black direct print 안에서 actual yogurt color, internal trace and spoon response만 바꾼다. 투명성은 음식 증거를 보이는 수단이며 barrier·freshness·premium claim이 아니다.",
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/product_visual_traits_and_product_imagery/communication_job",
+      "value": "hero는 clear direct-print pack architecture를, anatomy는 visible parts를, six matched front portraits는 recipe choice를 설명한다. 모든 이미지는 paper-free individual cup, black-only fixed facts and actual-food differentiation를 같은 촬영 문법으로 유지한다.",
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/product_visual_traits_and_product_imagery/product_visual_traits",
+      "value": {
+        "silhouette_or_screen_anatomy": [
+          "방향성 비례는 지름:높이 약 1.55:1의 낮고 넓은 single-serve yogurt cup이다.",
+          "측벽은 가볍게 taper되고 넓은 opening, continuous molded flange, spoon-reachable internal radius와 modest stable foot를 가진다.",
+          "neutral-clear food-contact polymer candidate로 보이며 shoulder, neck, pump, heavy glass foot, pedestal and cosmetic overcap을 금지한다.",
+          "closure는 flat full-perimeter foil과 one asymmetric tab이며 open state에서는 완전히 분리되어 평평하게 놓인다."
+        ],
+        "proportion_hierarchy_density": [
+          "front black direct print는 small MORA, largest recipe name, approved category, validated net quantity 순서로 최소 면적에 놓인다.",
+          "back는 one narrow fact column and barcode quiet area, bottom/lower-back는 fixed art와 분리된 variable lot/date/line zone이다.",
+          "no frame, ruled grid, white flood, opaque panel, flavor color, customer name, city, decorative date or batch theater.",
+          "actual food remains the largest visible color field and recipe difference."
+        ],
+        "material_surface_or_component_character": [
+          "clear molded wall은 modest thickness, plausible double edge and neutral refraction을 유지하고 glass sparkle, rainbow caustic or invisible-wall retouching을 피한다.",
+          "single black exterior ink remains crisp yet physically wrapped on taper; front/back ghosting, double text and paper-like underbase are defects.",
+          "foil은 thin low-glare one-time seal이고 vessel과 다른 반사 응답을 가지며 rigid lid 또는 reclosure처럼 보이지 않는다.",
+          "food는 opaque dense dairy body와 actual recipe trace를 multiple depths에 보이며 printed tint, garnish and global grading으로 차이를 만들지 않는다.",
+          "individual cup에는 paper, fiber, sleeve, collar, sticker or flavor-color print가 없다."
+        ],
+        "controls_states_feedback_visible_in_imagery": [
+          "sealed: clear sidewall, black front hierarchy, actual fill, flat foil plane, asymmetric tab and continuous flange relationship",
+          "opened: foil completely removed and lying flat, untouched top surface aligned with sidewall food state",
+          "first_spoon: one clean pull reveals density and trace continuing inside rather than surface topping",
+          "final_check: already printed, filled and sealed cup contacts generic indexing fixture and calibrated scale; no claimed number or method",
+          "collection: six separate strict-frontal portraits share geometry, print, light and state; only name and actual food vary"
+        ]
+      },
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/product_visual_traits_and_product_imagery/truth_boundaries",
+      "value": [
+        "Transparent cup, 150 g geometry, resin/barrier structure, direct-print method, ink, foil, category, quantity and recipe appearance remain directional until physical validation.",
+        "Generated imagery cannot prove food safety, recipe stability, shelf life, freshness, transparency benefit, print durability, seal integrity, tamper evidence, recyclability or sustainability.",
+        "Only approved production-tolerant food samples can lock color, particle, ribbon, vein, thread, marble, oil interface, separation and spoon response.",
+        "Black Sesame and every actual food background must pass dry/chilled/condensed/scuffed print contrast; image grading is not evidence.",
+        "The table pair depicts a generic visual check only and does not select dry-offset, rotary screen, digital direct-to-container or any industrial SOP.",
+        "The generated maker is not the founder, an employee claim, source evidence or biographical proof."
+      ],
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/product_visual_traits_and_product_imagery/product_image_direction",
+      "value": "Build a five-role web system: right-anchored open Thyme Honey hero with left copy-safe field; strict frontal final-check mood anchor; exact 90-degree same-moment side companion; sealed non-exploded clear-cup anatomy detail; and six separate matched strict-frontal 1:1 product portraits composed in UI. Use real clear-polymer optics, black-only print, actual-food color and completely removed flat foil; no individual paper or cosmetic/lab/rustic mimic.",
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/product_visual_traits_and_product_imagery/supporting_product_series",
+      "value": {
+        "series_name": "Clear Food, Fixed Facts — Six Fronts",
+        "asset_id": "ST2-R7-SIX-CUP-GRID-05",
+        "production_rule": "Generate or photograph exactly one SKU per 1:1 image, approve each, then compose in UI; never create the six-cup grid as one generative frame.",
+        "fixed": [
+          "transparent low-wide cup geometry and exterior black-print origin",
+          "strict front azimuth, 15-18-degree top visibility, 65-75 mm equivalent",
+          "72-78% cup height, baseline, margins, pale-mineral ground, light, optics and grade",
+          "same open state, completely removed flat foil, one spoon and one spoon cut or same untouched state across all six",
+          "MORA small, exact recipe name largest, no model-generated microcopy"
+        ],
+        "variable": [
+          "THYME HONEY — pale amber ribbon and fine thyme trace",
+          "FIG LEAF — near-ivory green-beige internal vein",
+          "ROASTED BUCKWHEAT — warm fine grain flecks at depth",
+          "CITRUS PEEL — short peel threads or zest points below surface",
+          "BLACK SESAME — ivory/stone-grey marble and fine particles",
+          "OLIVE OIL & SEA SALT — thin translucent oil ribbon and truthful interface"
+        ],
+        "ui_behavior": "3x2 desktop, 2-column tablet and 1-column or 2-column mobile. Description, price and CTA sit below the image; no copy overlays product, foil or food.",
+        "qa": "Overlay geometry and shadow first, then name accuracy, then food truth and contrast. A failed SKU returns to physical sample/pack testing rather than receiving color ink, label backer, garnish or grade compensation."
+      },
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/design_token_direction/shape/0/target_direction",
+      "value": "diameter_height_ratio: approximately 1.55:1 directional · primary wall: neutral transparent food-contact candidate with light taper, wide opening, molded flange and modest stable foot · print: minimal neutral-black exterior direct print with no white flood or paper field · seal: flat full-perimeter low-glare foil with one asymmetrical pull tab · individual secondary layer: none",
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/design_token_direction/shape/2/target_direction",
+      "value": "default: no printed ingredient-color marker anywhere on unit cup or foil · differentiation: actual food state plus exact black recipe name · conditional fallback after failed direct-print legibility tests only: minimum-width integrated non-paper information rail, fully revalidated · rule: no flavor ink, sticker, shrink sleeve, paper field or decorative repetition",
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/moodboard_inputs/brand_mood_images",
+      "value": "Final Check, Two Axes: same female maker and same already direct-printed, filled, foil-sealed transparent Thyme Honey cup on the same calibrated stainless scale and shallow generic indexing fixture. Frame A exact 0-degree front shows print/fill/seal alignment; Frame B exact maker-right 90-degree side shows wall/fill/foil/contact. No paper, printing mechanism, generated readout, founder claim, lab, perfume, cosmetics or rustic craft.",
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/moodboard_inputs/product_image_generation",
+      "value": "Five-role web series: (1) open Thyme Honey hero right 46-50% with left 42-45% copy-safe; (2) strict frontal final-check; (3) exact 90-degree same-moment side; (4) sealed non-exploded clear-cup anatomy; (5) six separate strict-frontal 1:1 SKU portraits composed in UI. Neutral clear polymer, single black exterior print, actual food color, flat completely removed foil in open frames, broad controlled reflections, plausible refraction, no paper/frost/color ink/apothecary/cosmetic/lab/kraft/rustic mimic.",
+      "apply_when": "revision7 canonical merge"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/visual_branding_and_key_visual/anchor_asset",
+      "value": "ST2-R7-CLEAR-HERO-01",
+      "apply_when": "only after the generated file exists, is QA-approved and is registered"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/brand_mood_and_brand_imagery/anchor_asset",
+      "value": "ST2-R7-PRINT-CHECK-FRONT-02",
+      "apply_when": "only after the generated file exists, is QA-approved and is registered"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/brand_mood_and_brand_imagery/supporting_asset",
+      "value": "ST2-R7-PRINT-CHECK-SIDE-03",
+      "apply_when": "only after the generated file exists, is QA-approved and is registered"
+    },
+    {
+      "op": "replace",
+      "path": "/sections/product_visual_traits_and_product_imagery/registered_product_anchor",
+      "value": "ST2-R7-CLEAR-HERO-01",
+      "apply_when": "only after the generated file exists, is QA-approved and is registered"
+    },
+    {
+      "op": "replace",
+      "path": "/registered_anchor_assets/0",
+      "value": "ST2-R7-CLEAR-HERO-01",
+      "apply_when": "only after the generated file exists, its exact file path is registered and the fixed Storybook reader resolves it"
+    },
+    {
+      "op": "replace",
+      "path": "/registered_anchor_assets/1",
+      "value": "ST2-R7-PRINT-CHECK-FRONT-02",
+      "apply_when": "only after the generated file exists, its exact file path is registered and the fixed Storybook reader resolves it"
+    }
+  ],
+  "merge_notes": [
+    "This shard is a source packet only. It does not create or approve canonical content, images, prompts, registry entries, review state or Storybook changes.",
+    "Revision 7 supersedes revision 6 visual references to an opaque/translucent candidate plus dry fiber collar. Keep revision 6 safety, seal, cold-chain and unsupported-claim discipline where it does not depend on the removed individual paper layer.",
+    "Asset IDs and paths are directional future replacements. Do not patch anchor or registry fields until matching files exist, pass QA and are registered.",
+    "Use the exact per-asset prompt skeletons as generation inputs only after approved food samples and current pack direction are supplied; generated output never closes a release gate."
+  ]
+}

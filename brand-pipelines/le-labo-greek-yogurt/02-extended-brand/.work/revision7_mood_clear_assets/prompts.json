@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "tool_mode": "built_in_imagegen",
+  "taxonomy": [
+    "precise-object-edit",
+    "text-localization"
+  ],
+  "front_edit": {
+    "selected_output": "assets/brand-mood/mora-direct-print-inspection-front-v2.png",
+    "input_images": [
+      {
+        "path": "assets/brand-mood/mora-packing-table-front.png",
+        "role": "edit target and absolute composition/identity reference"
+      },
+      {
+        "path": "assets/product-hero/mora-thyme-honey-clear-witness-hero-v3.png",
+        "role": "packaging-form reference only"
+      }
+    ],
+    "prompt_lines": [
+      "Use case: precise-object-edit",
+      "Asset type: Stage 2 brand-mood commercial food photograph, strict frontal anchor",
+      "Primary request: Edit the base image so the same maker performs a careful final visual inspection of the alignment and adhesion of minimal black direct print on one already-filled and already-foil-sealed transparent low-wide yogurt cup. Change only the cup, her minimal hand-to-cup contact as needed, and remove all loose packaging parts from the foreground.",
+      "Identity and scene invariants: Preserve the exact same adult woman—face, facial proportions, skin texture, freckles, hair, hairline, expression, downward gaze, charcoal T-shirt, charcoal apron, body scale and centered pose. Preserve the strict 0-degree frontal camera, 3:2 horizontal framing, table edges, wall, diagonal daylight, stainless furniture, idle cup sealer at frame right, small closed metal scale at rear left, exposure, color grade and shadows. Do not redesign or beautify the person or room.",
+      "Package: One transparent food-contact polymer yogurt cup, clearly a low-wide tapered yogurt cup about 1.55:1 diameter-to-height, wide molded rim/flange, modest stable foot, filled with dense ivory yogurt visible through the clear wall. A flat full-perimeter low-glare foil is already sealed to the rim with one asymmetric pull tab. No paper component of any kind. The cup exterior has minimal neutral-black direct print with no backing panel.",
+      "Action: Keep the maker looking down at the cup. One hand lightly steadies the cup at its clear side/base and the other lightly indexes the opposite side, visually checking that the front print is centered, adhered and clear relative to fill and foil edge. This is inspection only: no printing, labeling, sleeving, sealing, filling, coding, wiping or peeling.",
+      "Text verbatim: MORA as a quiet small first line and THYME HONEY as the larger recipe line, crisp neutral black directly on the transparent cup wall. No other legible text, numbers, dates, barcodes or marks.",
+      "Material and optics: Make the clear molded polymer unmistakable but restrained—plausible sidewall thickness, rim double edge, food fill and one broad white reflection plus narrow dark edge; no glass brilliance or cosmetic gloss. The black print sits on the outside of the clear wall without white underprint or opaque/frosted panel. Yogurt is the natural pale background behind the text. Foil is thin, flat, low-glare and continuously sealed.",
+      "Remove completely: the white fiber collar/sleeve around the cup, its window cutouts and seam, the loose paper ring/collar at lower left, the loose round lid/foil disk at lower center, every label, paper card, paper scrap and spare packaging part on the table.",
+      "Constraints: Absolutely no individual paper label, sleeve, collar, adhesive sticker, loose paper ring, frosted label illusion, colored ink or flavor marker. No printer head, roller, screen, pad, label applicator, registration numbers, gauge, invented mechanism or claimed SOP. No amber bottle, apothecary grid, labware, cosmetic jar, perfume bottle, kraft, wood, twine, rustic styling, text elsewhere or watermark. Preserve photoreal commercial-editorial realism, hand anatomy and real contact shadows."
+    ]
+  },
+  "side_edit": {
+    "selected_output": "assets/brand-mood/mora-direct-print-inspection-side-v2.png",
+    "input_images": [
+      {
+        "path": "assets/brand-mood/mora-packing-table-side.png",
+        "role": "side edit target and absolute side-camera/identity/room reference"
+      },
+      {
+        "path": "assets/brand-mood/mora-direct-print-inspection-front-v2.png",
+        "role": "approved frontal continuity reference"
+      },
+      {
+        "path": "assets/product-hero/mora-thyme-honey-clear-witness-hero-v3.png",
+        "role": "packaging-form reference only"
+      }
+    ],
+    "base_edit_prompt_lines": [
+      "Use case: precise-object-edit",
+      "Asset type: Stage 2 brand-mood commercial food photograph, strict 90-degree side companion",
+      "Primary request: Edit the side base into the same final-inspection action as the approved frontal companion, viewed from the existing strict maker-right 90-degree side camera. The same maker inspects alignment and adhesion of minimal black direct print on the same already-filled and already-foil-sealed transparent low-wide yogurt cup. Change only the cup, her minimal hand-to-cup contact as required for continuity, and remove all loose packaging parts.",
+      "Identity and scene invariants: Preserve the exact same adult woman—facial identity and proportions, freckles, skin texture, tied-back dark hair and bun, charcoal T-shirt, charcoal apron, neutral focused expression and downward gaze. Preserve the side target's true one-eye right-side profile, body scale and pose, 3:2 horizontal framing, camera height and side axis, pale wall, diagonal daylight, stainless work surfaces, idle cup sealer at frame left, exposure, grade and shadows. Do not redesign or beautify person or room.",
+      "Pair continuity: Reproduce the frontal companion cup: same low-wide clear tapered polymer body, dense ivory fill, black exterior direct print, flat sealed foil, asymmetric tab clock position, cup size and hand contact phase.",
+      "Package: One transparent food-contact polymer yogurt cup, clearly low-wide about 1.55:1 diameter-to-height, wide molded rim/flange, modest stable foot, filled with dense ivory yogurt visible through the clear wall. Flat full-perimeter low-glare foil already sealed to rim with one asymmetric pull tab. No paper component. Minimal neutral-black direct print sits directly on clear exterior with no backing.",
+      "Action: Same final visual inspection phase as the frontal companion. Maker looks down; one hand lightly steadies the clear side/base and the other lightly indexes the opposite side, checking print centering, adhesion and clarity relative to fill and foil edge. Inspection only: no printing, labeling, sleeving, sealing, filling, coding, wiping or peeling.",
+      "Text verbatim: MORA and THYME HONEY, crisp neutral black directly on clear wall, correctly oriented and physically attached; no mirror text or opaque backing. No other legible text, numbers, dates, barcodes or marks.",
+      "Material and optics: Plausible clear molded polymer sidewall thickness, rim double edge, fill line and broad white reflection with narrow dark edge; no glass brilliance. Yogurt is opaque and naturally backs the exterior black print. Thin flat foil remains sealed. Maintain coherent finger, cup-foot and table contact shadows.",
+      "Remove completely: the white fiber collar/sleeve around the cup, window cutouts and seam, the loose round foil/lid disk at lower left, every loose paper ring, label, paper card, paper scrap and spare packaging part.",
+      "Constraints: Absolutely no individual paper label, sleeve, collar, sticker, loose paper ring, frosted label illusion, colored ink or flavor marker. No printer head, roller, screen, pad, label applicator, registration numbers, gauge, invented mechanism or claimed SOP. No extra eye or near-three-quarter face. No amber bottle, apothecary grid, labware, cosmetic jar, perfume bottle, kraft, wood, twine, rustic styling, text elsewhere or watermark. Preserve photoreal commercial-editorial realism, exact identity, strict 90-degree side profile, hand anatomy and real contacts."
+    ],
+    "selected_typography_correction_prompt_lines": [
+      "Use case: text-localization",
+      "Asset type: final Stage 2 side companion typography correction",
+      "Primary request: Change only the two-line black direct-print typography on the transparent cup. Preserve every other visual element exactly: same woman and facial identity, one-eye strict 90-degree side profile, hair, skin, clothes, gaze, pose, hands and contacts, cup shape and position, transparent wall, yogurt fill, sealed foil and tab, stainless table and sealer, wall, diagonal daylight, camera, crop, exposure, shadows and color grade.",
+      "Text verbatim: MORA as a quiet smaller first line and THYME HONEY as the clearly larger recipe line beneath it, matching the frontal companion's recipe-first size hierarchy. Crisp neutral black, directly printed on the clear exterior wall, no white or opaque backing, no border, no label shape. No other legible text.",
+      "Constraints: Typography-only edit. Do not alter package geometry, make it opaque, add paper, add a label, add a sleeve/collar/sticker/frosted panel, add color ink, change foil, change hand anatomy, add objects, change the room or create text elsewhere. No watermark."
+    ]
+  }
+}

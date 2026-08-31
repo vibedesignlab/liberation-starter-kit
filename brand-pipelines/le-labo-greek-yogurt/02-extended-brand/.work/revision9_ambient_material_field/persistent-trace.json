@@ -1,0 +1,22 @@
+{
+  "asset_id": "ST2-AMBIENT-PERSISTENT-TRACE-09",
+  "concept": "Persistent Trace",
+  "file_path": "assets/ambient-system/mora-ambient-persistent-trace-r9.png",
+  "prompt_path": "prompts/ST2-AMBIENT-PERSISTENT-TRACE-09.md",
+  "generation_mode": "built-in image generation",
+  "generated_source": "/Users/ddd/.codex/generated_images/01a0569d-3333-7831-a137-5117ddccac41/exec-9be947a7-46c5-4462-b3f2-bb050fe96bad.png",
+  "dimensions": "1536x1024",
+  "sha256": "8340ba4312910c24a817bb3ba5d5a4f9dd88e3d6ed68fd9bbfffbbb55c5bc0d6",
+  "qa": {
+    "background_is_material": "pass",
+    "single_furrow": "pass",
+    "sharp_middle_deep_trace_sequence": "pass",
+    "broad_negative_space": "pass",
+    "no_bounded_photo": "pass",
+    "no_people_package_text_logo": "pass",
+    "physical_food_texture": "pass",
+    "series_palette": "pass",
+    "note": "The result leans more photographic at close range than a flat graphic, but its edge-free full-field composition and low-frequency negative space satisfy the ambient integration requirement."
+  },
+  "status": "generated_and_qa_passed"
+}

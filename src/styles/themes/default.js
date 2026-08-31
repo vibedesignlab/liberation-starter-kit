@@ -1,35 +1,35 @@
 /**
- * Default Theme
+ * Default Theme — MORA Cultured Cream
  *
- * 프로젝트의 기본 디자인 토큰을 정의하는 표준 테마입니다.
- * 피그마의 Design Tokens / Variables와 동일한 역할입니다.
+ * MORA 브랜드 랜딩페이지의 디자인 토큰.
+ * S3 Landing Materials + Niksen 에디토리얼 레이아웃 기준.
  *
  * ## 핵심 철학
- * - **Sharp Corners**: borderRadius 0 (날카로운 모서리)
- * - **Dimmed Shadow**: offset 없이 blur만 사용하는 은은한 그림자
- * - **Pure White**: 깔끔한 흰색 배경
- * - **Brand Blue**: Primary 색상 #0000FF
+ * - **Sharp Corners**: borderRadius 0
+ * - **Dimmed Shadow**: offset 없이 blur만 사용
+ * - **Cultured Cream**: 배경 #F5F1E8
+ * - **Carbon**: 텍스트/강조 #171714
  */
 
 import { createTheme } from '@mui/material/styles';
-import { blueGrey, grey } from '@mui/material/colors';
+import { grey } from '@mui/material/colors';
 
 // ============================================================
 // 1. Color Tokens (색상 토큰)
 // ============================================================
 const palette = {
   mode: 'light',
-  // 브랜드 색상
+  // 브랜드 색상 — MORA
   primary: {
-    light: '#6666FF',
-    main: '#0000FF',
-    dark: '#0000B2',
-    contrastText: '#FFFFFF',
+    light: '#8A8780',
+    main: '#171714',       // Carbon
+    dark: '#0D0D0B',
+    contrastText: '#F5F1E8', // Cultured Cream
   },
   secondary: {
-    light: blueGrey[700],
-    main: blueGrey[900],
-    dark: '#1a252b',
+    light: '#D4AD5A',
+    main: '#C6973B',       // Amber accent
+    dark: '#A07A2E',
     contrastText: '#FFFFFF',
   },
 
@@ -59,21 +59,21 @@ const palette = {
     contrastText: '#FFFFFF',
   },
 
-  // 텍스트 색상
+  // 텍스트 색상 — MORA
   text: {
-    primary: 'rgba(0, 0, 0, 0.87)',
-    secondary: 'rgba(0, 0, 0, 0.6)',
-    disabled: 'rgba(0, 0, 0, 0.38)',
+    primary: '#171714',       // Carbon
+    secondary: '#8A8780',     // Mid tone
+    disabled: 'rgba(23, 23, 20, 0.38)',
   },
 
-  // 배경 색상
+  // 배경 색상 — MORA
   background: {
-    default: '#FFFFFF',
-    paper: '#FFFFFF',
+    default: '#F5F1E8',       // Cultured Cream
+    paper: '#FDFCF9',
   },
 
-  // 구분선
-  divider: 'rgba(0, 0, 0, 0.12)',
+  // 구분선 — MORA
+  divider: '#D6D2C9',
 
   // 액션 상태
   action: {
@@ -123,8 +123,8 @@ const typography = {
     'sans-serif',
   ].join(','),
 
-  // 헤딩 폰트 패밀리
-  headingFontFamily: '"Outfit", "Pretendard Variable", Pretendard, sans-serif',
+  // 헤딩 폰트 패밀리 — Geist Sans (Suisse Intl 대안, Swiss neo-grotesk)
+  headingFontFamily: '"Geist Sans", "Pretendard Variable", Pretendard, sans-serif',
 
   // 폰트 크기 기준
   fontSize: 14,
@@ -138,51 +138,51 @@ const typography = {
 
   // 헤딩 스타일
   h1: {
-    fontFamily: '"Outfit", "Pretendard Variable", Pretendard, sans-serif',
-    fontWeight: 900,
-    fontSize: '2.5rem',      // 40px
-    lineHeight: 1.2,
-    letterSpacing: '-0.02em',
+    fontFamily: '"Geist Sans", "Pretendard Variable", Pretendard, sans-serif',
+    fontWeight: 400,
+    fontSize: '4.5rem',      // 72px — brutal editorial
+    lineHeight: 0.95,
+    letterSpacing: '-0.04em',
   },
   h2: {
-    fontFamily: '"Outfit", "Pretendard Variable", Pretendard, sans-serif',
-    fontWeight: 900,
-    fontSize: '2rem',        // 32px
-    lineHeight: 1.2,
-    letterSpacing: '-0.02em',
+    fontFamily: '"Geist Sans", "Pretendard Variable", Pretendard, sans-serif',
+    fontWeight: 400,
+    fontSize: '3rem',        // 48px — section heads
+    lineHeight: 1.0,
+    letterSpacing: '-0.03em',
   },
   h3: {
-    fontFamily: '"Outfit", "Pretendard Variable", Pretendard, sans-serif',
-    fontWeight: 800,
-    fontSize: '1.75rem',     // 28px
+    fontFamily: '"Geist Sans", "Pretendard Variable", Pretendard, sans-serif',
+    fontWeight: 400,
+    fontSize: '1.125rem',    // 18px — 제품명
     lineHeight: 1.3,
     letterSpacing: '-0.01em',
   },
   h4: {
-    fontFamily: '"Outfit", "Pretendard Variable", Pretendard, sans-serif',
-    fontWeight: 700,
-    fontSize: '1.5rem',      // 24px
+    fontFamily: '"Geist Sans", "Pretendard Variable", Pretendard, sans-serif',
+    fontWeight: 400,
+    fontSize: '1.125rem',    // 18px
     lineHeight: 1.3,
     letterSpacing: '-0.01em',
   },
   h5: {
-    fontFamily: '"Outfit", "Pretendard Variable", Pretendard, sans-serif',
-    fontWeight: 700,
-    fontSize: '1.25rem',     // 20px
+    fontFamily: '"Geist Sans", "Pretendard Variable", Pretendard, sans-serif',
+    fontWeight: 400,
+    fontSize: '1rem',        // 16px
     lineHeight: 1.4,
     letterSpacing: '0',
   },
   h6: {
-    fontFamily: '"Outfit", "Pretendard Variable", Pretendard, sans-serif',
-    fontWeight: 600,
-    fontSize: '1.125rem',    // 18px
+    fontFamily: '"Geist Sans", "Pretendard Variable", Pretendard, sans-serif',
+    fontWeight: 500,
+    fontSize: '0.875rem',    // 14px
     lineHeight: 1.4,
     letterSpacing: '0',
   },
 
   // 본문 스타일
   body1: {
-    fontSize: '1rem',        // 16px
+    fontSize: '1rem',        // 16px — Niksen 실측
     lineHeight: 1.6,
     letterSpacing: '0',
   },
@@ -220,10 +220,10 @@ const typography = {
     letterSpacing: '0.02em',
   },
   overline: {
-    fontSize: '0.75rem',     // 12px
-    fontWeight: 600,
+    fontSize: '0.6875rem',   // 11px — Niksen 실측
+    fontWeight: 500,          // Niksen 실측
     lineHeight: 2,
-    letterSpacing: '0.08em',
+    letterSpacing: '0.06em',  // Niksen은 좁은 tracking
     textTransform: 'uppercase',
   },
 };
@@ -382,20 +382,20 @@ defaultTheme.dashboard = {
   iconWeight: 400,
   cardBorderRadius: 0,
   cardColors: [
-    'linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 100%)',
-    'linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 100%)',
-    'linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 100%)',
-    'linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 100%)',
-    'linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 100%)',
-    'linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 100%)',
+    'linear-gradient(to bottom, #FDFCF9 0%, #FDFCF9 100%)',
+    'linear-gradient(to bottom, #FDFCF9 0%, #FDFCF9 100%)',
+    'linear-gradient(to bottom, #FDFCF9 0%, #FDFCF9 100%)',
+    'linear-gradient(to bottom, #FDFCF9 0%, #FDFCF9 100%)',
+    'linear-gradient(to bottom, #FDFCF9 0%, #FDFCF9 100%)',
+    'linear-gradient(to bottom, #FDFCF9 0%, #FDFCF9 100%)',
   ],
   subCardColors: [
-    'linear-gradient(to bottom, #FAFAFA 0%, #FAFAFA 100%)',
-    'linear-gradient(to bottom, #FAFAFA 0%, #FAFAFA 100%)',
-    'linear-gradient(to bottom, #FAFAFA 0%, #FAFAFA 100%)',
-    'linear-gradient(to bottom, #FAFAFA 0%, #FAFAFA 100%)',
-    'linear-gradient(to bottom, #FAFAFA 0%, #FAFAFA 100%)',
-    'linear-gradient(to bottom, #FAFAFA 0%, #FAFAFA 100%)',
+    'linear-gradient(to bottom, #F5F1E8 0%, #F5F1E8 100%)',
+    'linear-gradient(to bottom, #F5F1E8 0%, #F5F1E8 100%)',
+    'linear-gradient(to bottom, #F5F1E8 0%, #F5F1E8 100%)',
+    'linear-gradient(to bottom, #F5F1E8 0%, #F5F1E8 100%)',
+    'linear-gradient(to bottom, #F5F1E8 0%, #F5F1E8 100%)',
+    'linear-gradient(to bottom, #F5F1E8 0%, #F5F1E8 100%)',
   ],
   textColor: palette.text.primary,
   textSecondary: palette.text.secondary,
@@ -409,14 +409,14 @@ defaultTheme.dashboard = {
   subShadow: '0 0 0 rgba(0, 0, 0, 0)',
   subBackdropFilter: 'blur(0px)',
   subBorderRadius: 0,
-  dividerColor: 'rgba(0, 0, 0, 0.12)',
+  dividerColor: '#D6D2C9',
   progressHeight: 6,
   progressTrackColor: 'rgba(0, 0, 0, 0.08)',
   progressBarColor: palette.primary.main,
   progressGradient: false,
   progressBorderRadius: 0,
-  background: '#FFFFFF',
-  atmosphere: 'linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 100%)',
+  background: '#F5F1E8',
+  atmosphere: 'linear-gradient(to bottom, #F5F1E8 0%, #F5F1E8 100%)',
   atmosphereOpacity: 0,
   accentColor: palette.primary.main,
   accentColors: {

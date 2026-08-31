@@ -1,0 +1,362 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "stage_2_visual_token_shard",
+  "generated_at": "2026-08-25T00:00:00+09:00",
+  "status": "directional",
+  "inputs": {
+    "source_json": "../01-source-brand/outputs/source-brand-analysis.json",
+    "source_review_status": "accepted",
+    "transfer_input": "transfer-input.json",
+    "target_working_name": "MORA",
+    "target_category": "다양한 천연 재료를 인퓨징한 프리미엄 그릭요거트",
+    "source_grammar_ids_used": ["GK-01", "GK-02", "GK-03", "GK-05"],
+    "source_grammar_explicitly_not_transferred": ["GK-04의 라벨·신문·판화 표면 표현"]
+  },
+  "direction_summary": {
+    "statement": "MORA는 약국이나 조제소를 닮은 식품이 아니라, 한 컵 안에서 그릭요거트의 밀도와 실제 재료의 흔적을 차분하게 발견하게 하는 현대적 인퓨전 요거트 브랜드다.",
+    "premium_mechanism": "광택 장식이나 빈티지 공예 연출이 아니라 실제 요거트의 농도, 재료별 미세한 질감 차이, 정돈된 정보 위계, 넉넉한 여백으로 고급감을 만든다.",
+    "food_native_test": "첫 화면에서 150 g 떠먹는 요거트, 열린 컵, 스푼 자국, 실제 식재료의 흔적이 향수·화장품·실험실보다 먼저 읽혀야 한다.",
+    "ingredient_color_rule": "재료색은 오직 제품 식별과 내용물 예고에만 사용한다. 전역 CTA, 장식 배경, 브랜드 포인트, 상태색으로 사용하지 않는다."
+  },
+  "visual_layer_jobs": {
+    "key_visual": "한 프레임에서 제품 카테고리, 한 컵 분량, 농도, 인퓨전 흔적, 레시피 차이를 동시에 이해시킨다.",
+    "brand_mood": "도시 생활자의 차분한 아침·오후·식후 순간 속에서 감각을 늦추는 짧은 식사 리추얼을 보여 준다.",
+    "product_visual_traits": "낮고 넓은 150 g 컵, 열기 쉬운 리드, 큰 레시피명, 하나의 재료 식별 영역, 일정한 정보 순서로 제품군을 인지시킨다.",
+    "product_imagery": "제품 형태·질감·사용·비교·공정의 사실을 각각 다른 사진 역할로 증명하고, 검증되지 않은 영양·원산지·기능성 주장을 만들지 않는다."
+  },
+  "sections": {
+    "visual_branding_and_key_visual": {
+      "key_insight": "MORA의 대표 이미지는 열린 한 컵과 한 번의 스푼 자국을 고정하고, 실제 재료의 흔적만 바꾸어 다섯 레시피를 하나의 식품 시리즈로 만든다.",
+      "communication_job": "한 프레임에서 제품 카테고리, 1회 섭취 분량, 요거트의 밀도, 실제 재료의 인퓨전 흔적, 레시피 식별을 설명한다.",
+      "premise": "열린 컵 안의 밀도와 한 번의 스푼 동작이 가장 큰 그래픽 장치가 된다. 활자와 재료색은 사진을 장식하지 않고 어떤 레시피인지 분류한다.",
+      "focal_actor": "열린 150 g 컵의 요거트 표면과 그 위에 남은 하나의 초승달형 스푼 자국",
+      "series_rule": "모든 레시피에서 같은 낮고 넓은 열린 컵을 30–35도 시점과 같은 화면 비율로 보여 주고, 한 번의 스푼 당김으로 초승달형 골을 만든다. 실제 배합에서 확인된 재료의 입자·리본·결만 골 안팎에 남기고, 원재료 한 묶음을 화면 가장자리 한 곳에 둔다. 카메라·광원·컵 크기·활자 위치는 고정하고 레시피명, 실제 흔적, 사용 순간만 바꾼다. 재료색 표식은 음식 영역 밖의 좁은 식별 마커에만 쓴다.",
+      "series_rule_spec": {
+        "name": "One Cup, One Trace",
+        "when": "다섯 레시피를 개별 대표 이미지나 비교 카드로 제시할 때",
+        "do": "열린 컵 하나, 초승달형 스푼 자국 하나, 검증된 재료 흔적 하나, 가장자리 원재료 묶음 하나를 같은 촬영 구조로 반복한다.",
+        "because": "반복되는 컵과 시점은 제품군을 묶고, 달라지는 재료 흔적은 맛·질감 선택 이유를 즉시 비교하게 한다.",
+        "fixed_invariants": [
+          "낮고 넓은 150 g 컵이 화면의 주역이다.",
+          "요거트 표면과 한 번의 스푼 자국이 모두 보인다.",
+          "카메라는 30–35도, 50–70 mm 환산의 자연스러운 제품 원근을 유지한다.",
+          "좌측 또는 후측의 넓고 부드러운 창광과 흰색 반사판만 사용한다.",
+          "타입 블록은 사진과 겹치지 않는 별도 여백에 놓는다.",
+          "재료색은 식별 마커와 재료 미리보기 캡션에만 나타난다."
+        ],
+        "controlled_variables": [
+          "레시피명과 해당 재료 식별색",
+          "R&D로 확인된 입자, 리본, 결, 색 변화",
+          "원재료 묶음과 스푼의 재질",
+          "아침, 책상 간식, 식후 디저트 중 한 사용 순간",
+          "세로 4:5, 가로 16:9, 정사각 1:1 크롭"
+        ],
+        "ingredient_color_boundary": "식별색은 최대 화면 또는 카드 면적의 8% 안에서 마커·얇은 밴드·탭·미리보기 배경으로만 사용한다. 요거트를 인위적으로 착색하거나 CTA·링크·섹션 배경에 재사용하지 않는다.",
+        "acceptance_test": "제품명을 가려도 요거트 한 컵과 농도가 먼저 읽히고, 제품명을 보이면 다섯 레시피의 차이가 3초 안에 비교된다.",
+        "rejection_test": "컵보다 재료 소품이 크거나, 재료색이 장식 배경으로 확장되거나, 향수·크림·조제 샘플처럼 보인다."
+      },
+      "identity_behavior": [
+        "MORA 워드마크는 짧고 넓은 독자 조형으로 개발하되 Le Labo의 압축 대문자, 스텐실, 타자기, 라벨형 락업을 피한다.",
+        "브랜드 표식은 식품명과 레시피보다 먼저 과시하지 않고 컵 상단과 랜딩 헤더에서 조용한 방향 표식 역할을 한다.",
+        "레시피명은 크게, 제품 형식과 용량은 작고 명확하게 배치하되 사각 약국 라벨의 선·칸·개인화 필드는 쓰지 않는다.",
+        "용기와 UI는 동일한 따뜻한 중립 바탕, 짙은 잉크색, 재료별 식별 마커를 공유한다."
+      ],
+      "type_message_image_product_ui_relationship": [
+        "이미지는 농도와 재료의 사실을 보여 주고, 글자는 레시피명·제품 형식·용량·섭취 상황을 분류한다.",
+        "대표 문장은 컵 옆 여백에 두고 음식 위에 올리지 않는다.",
+        "제품 비교 UI는 같은 컵 크롭과 같은 정보 순서를 반복해 이미지 자체가 비교표가 되게 한다.",
+        "재료색은 패키지 마커, 비교 탭, 재료 미리보기 썸네일에 동일하게 연결하지만 전역 인터랙션 색으로 승격하지 않는다.",
+        "첫 장면은 감각적 질감, 다음 장면은 레시피·150 g·실제 재료·보관 정보 순으로 사실을 공개한다."
+      ],
+      "surface_translation": {
+        "landing_hero": "대표 Thyme Honey 컵을 크게 보여 주고, 우측 또는 하단 별도 여백에 한 문장과 제품 형식·용량을 둔다.",
+        "lineup_grid": "다섯 컵을 같은 크기와 각도로 반복하고 식별 마커, 재료명, 예상 질감 설명만 바꾼다.",
+        "ingredient_story": "원재료 매크로와 실제 요거트 내부 흔적을 1:1로 짝지어 원료색이 어디서 왔는지 설명한다.",
+        "process_content": "한 번의 붓기·섞기·스푼 당김처럼 관찰 가능한 한 동작을 보여 주며 제조 현장을 연출된 실험실로 만들지 않는다.",
+        "packaging": "넓은 무구획 표면, 큰 레시피명, 좁은 재료 마커, 간결한 식품 정보를 사용한다."
+      },
+      "repeatable_variables": [
+        "다섯 재료 조합",
+        "실제 배합으로 확인된 재료 흔적",
+        "세 사용 순간",
+        "4:5·1:1·16:9 크롭",
+        "국문 중심과 영문 보조 정보량"
+      ],
+      "avoid": [
+        "Le Labo 워드마크, 향명+숫자, 약국형 격자 라벨, 날짜·개인명 기입란",
+        "신문 판형, 흑백 판화, 타자기 문법, 스텐실, 실험실 도구, 갈색 약병",
+        "향수병처럼 세운 투명 용기, 화장품 크림처럼 보이는 매끈한 흰 스월",
+        "식재료와 무관한 임의 포인트 컬러, 다섯 재료색의 무지개식 동시 사용",
+        "여러 손·소품·토핑이 컵과 실제 질감을 가리는 장면",
+        "건강 효능, 장인성, 원산지 또는 제조 공정을 시각적 분위기만으로 암시하는 장면"
+      ]
+    },
+    "brand_mood_and_brand_imagery": {
+      "key_insight": "MORA의 무드는 거친 작업실이 아니라 빛이 잘 드는 도시의 식탁과 책상에서 실제 재료의 촉감과 짧은 섭취 행동이 만드는 조용한 집중이다.",
+      "communication_job": "아침, 오후 간식, 식후 디저트의 짧은 순간에 MORA가 과시 없는 프리미엄 식경험으로 자리 잡는 모습을 보여 준다.",
+      "emotional_and_cultural_register": [
+        "차분하지만 냉정하지 않은 현대적 온도",
+        "달콤함의 과장보다 재료를 천천히 알아차리는 집중",
+        "웰니스 클리셰보다 실제로 먹는 즐거움과 편안한 포만감",
+        "완벽한 미니멀리즘보다 한 번 사용한 스푼, 접힌 린넨, 남은 재료 부스러기 같은 생활 흔적"
+      ],
+      "world_setting_people": [
+        "배경은 현대적인 도시 주거의 창가 식탁, 정돈된 작업 책상, 작은 식후 테이블이다.",
+        "25–44세 도시 생활자를 손과 상반신 중심으로 보여 주되 모델 포즈보다 리드 열기, 떠먹기, 컵 놓기 같은 실제 행동을 우선한다.",
+        "전문 셰프, 흰 가운 연구원, 농장 체험, 빈티지 약방 주인은 등장시키지 않는다.",
+        "사람은 제품을 들고 과시하지 않고 자기 일상 안에서 먹고, 읽고, 잠시 쉬는 주체다.",
+        "한국 도시 생활 환경을 기본으로 하되 국적을 장식 소품으로 표상하지 않는다."
+      ],
+      "materials_and_sensory_cues": [
+        "문화된 유제품의 부드러운 무광 표면과 스푼 자국",
+        "유광이 과하지 않은 백자 또는 스톤웨어, 브러시드 스테인리스 스푼",
+        "밝은 애시 우드, 혼드 스톤, 워시드 린넨, 맑은 유리 물컵",
+        "실제 꿀의 얇은 점도, 잎의 섬유, 볶은 곡물의 입자, 필의 결, 참깨의 미세한 점",
+        "크라프트 박스, 녹슨 금속, 콘크리트 분진, 앰버 유리, 낡은 작업대는 사용하지 않는다."
+      ],
+      "camera_light_color": [
+        "환경 장면은 35–50 mm 환산, 눈높이 또는 테이블 높이에서 공간과 행동을 함께 담는다.",
+        "제품 장면은 50–70 mm 환산 30–35도, 질감 매크로는 85–100 mm 환산으로 왜곡을 줄인다.",
+        "5000–5600 K에 가까운 부드러운 측면 자연광과 흰색 바운스를 기본으로 하고 과도한 역광·주황색 필터를 피한다.",
+        "하이라이트가 날아가지 않아 흰 요거트의 결이 보이고, 그림자는 완전히 지우지 않아 컵 깊이와 재료 입자를 유지한다.",
+        "사진의 색은 실제 음식·재료·피부·공간에서 나오며 패키지 식별색을 세트 조명으로 번지게 하지 않는다.",
+        "리터칭은 먼지·우발적 얼룩만 정리하고 요거트의 결, 재료 입자, 스푼 흔적은 보존한다."
+      ],
+      "image_series_roles": [
+        {"role":"ritual-opener","communication_job":"사용 순간을 여는 장면","required_content":"창가 또는 책상에서 리드를 여는 한 손과 열린 컵"},
+        {"role":"ingredient-origin","communication_job":"레시피 선택 이유를 설명","required_content":"원재료 매크로와 배합 후 실제 흔적을 나란히 보여 주는 두 장"},
+        {"role":"quiet-portrait","communication_job":"도시 생활자와 제품의 거리 설정","required_content":"먹는 행동 중인 부분 인물, 자연스러운 옷, 실제 공간"},
+        {"role":"after-moment","communication_job":"짧은 만족과 리추얼의 끝을 표현","required_content":"몇 번 떠먹은 컵, 놓인 스푼, 계속되는 일상"},
+        {"role":"material-still-life","communication_job":"프리미엄의 물질 근거 제공","required_content":"컵, 스푼, 원재료, 린넨 또는 스톤 한두 개만 사용한 절제된 정물"}
+      ],
+      "avoid": [
+        "어두운 향수 광고, 필름 그레인 과장, 차가운 실험실 광원",
+        "빈티지 약방, 낡은 공방, 크라프트·검정 금속 중심의 거친 럭셔리",
+        "신문·판화·초현실 향수 은유",
+        "농장·목초지·요리사로 출처를 증명한 듯 보이는 연출",
+        "완벽하게 매끈한 CGI 요거트, 과도한 드립·스플래시·토핑 폭발",
+        "모든 제품색을 한 프레임에 뿌리는 장식적 컬러 스타일링"
+      ]
+    },
+    "product_visual_traits_and_product_imagery": {
+      "key_insight": "MORA의 제품 고유성은 낮고 넓은 한 컵, 크게 읽히는 레시피명, 열린 뒤 드러나는 실제 질감, 좁고 기능적인 재료 식별 영역에서 생긴다.",
+      "communication_job": "제품이 떠먹는 150 g 그릭요거트임을 즉시 밝히고, 다섯 레시피의 실제 질감 차이와 한 컵 사용성을 비교·검증한다.",
+      "product_visual_traits": {
+        "silhouette_or_screen_anatomy": [
+          "방향성 비례는 지름:높이 약 1.55:1의 낮고 넓은 150 g 컵이다.",
+          "측벽은 약하게 테이퍼지고 하단과 상단 전이에는 부드러운 반경을 두어 식품 용기로 읽히게 한다.",
+          "상단 리드는 한 손으로 잡을 수 있는 명확한 탭을 가지며 개봉 상태가 사진에서 즉시 구분된다.",
+          "투명 향수병, 펌프, 드로퍼, 튜브, 앰버 유리 실루엣은 금지한다."
+        ],
+        "proportion_hierarchy_density": [
+          "컵 전면의 60–70%는 따뜻한 중립 면으로 남기고 레시피명 하나를 가장 크게 둔다.",
+          "MORA, 레시피명, 그릭요거트/150 g, 필수 식품 정보의 순서를 유지한다.",
+          "개인명·날짜·배치 번호를 전면 장식으로 사용하지 않고 법정 표시는 별도 정보 면에서 처리한다.",
+          "재료 식별 영역은 전체 인쇄 면의 5–8%를 넘지 않는 좁은 밴드·탭·점으로 제한한다."
+        ],
+        "material_surface_or_component_character": [
+          "컵과 리드는 따뜻한 유백색의 낮은 광택을 기본으로 하되 실제 생산 소재는 공급망 검증 전 방향성이다.",
+          "표면은 화장품 크림 용기의 두꺼운 코팅이나 소프트터치 고무보다 식품 접촉 용기로 자연스럽게 읽혀야 한다.",
+          "인쇄는 넓은 무구획 면과 선명한 큰 글자를 사용하고 약국식 사각 테이블·세로 구분선·도장 질감을 피한다.",
+          "제품별 차이는 용기 색을 전부 바꾸지 않고 식별 마커와 실제 내용물 미리보기에서 만든다."
+        ],
+        "controls_states_feedback_visible_in_imagery": [
+          "sealed: 리드 탭과 레시피명이 명확한 미개봉 상태",
+          "opened: 리드를 제거하고 평평한 초기 요거트 표면이 보이는 상태",
+          "first_spoon: 한 번의 스푼 당김으로 농도와 재료 흔적이 보이는 상태",
+          "in_use: 컵 깊이와 1회 분량이 이해되는 2–3회 섭취 상태",
+          "empty/end: 효능이나 포만을 과장하지 않고 짧은 식사 순간의 끝을 보여 주는 상태"
+        ]
+      },
+      "truth_boundaries": [
+        "요거트의 기본색, 입자, 점도, 재료 흔적은 실제 R&D 샘플 촬영 후 확정한다.",
+        "식별색 때문에 요거트를 인위적으로 동일 색으로 보정하거나 재료가 더 많이 든 것처럼 합성하지 않는다.",
+        "리사이클·퇴비화·고단백·저당·프로바이오틱스·원산지·장시간 인퓨전 주장은 검증 전 사용하지 않는다.",
+        "포장 소재와 개봉 구조는 제조 가능성·식품 안전·유통 테스트 전 방향성이다."
+      ],
+      "product_image_direction": {
+        "hero_form": [
+          "대표 Thyme Honey 컵을 열어 30–35도에서 완전한 컵, 요거트 표면, 초승달 스푼 자국을 함께 보여 준다.",
+          "4:5 마스터에서 컵이 높이의 55–65%를 차지하고 우측 또는 상단에 카피 안전 여백을 둔다.",
+          "꿀 리본과 타임 흔적은 실제 배합 샘플에서 보이는 정도만 표현한다."
+        ],
+        "feature_detail": [
+          "각 레시피마다 원재료 매크로 한 장과 요거트 내부 흔적 매크로 한 장을 짝지어 보여 준다.",
+          "리드 탭, 컵 곡면, 인쇄 가장자리, 스푼이 지나간 단면을 사실적으로 기록한다.",
+          "모든 매크로는 크기 기준이 느껴지도록 스푼 끝 또는 컵 가장자리 일부를 포함한다."
+        ],
+        "use_interaction": [
+          "한 손이 리드를 열거나 한 번 떠먹는 장면만 사용해 제품을 가리지 않는다.",
+          "아침·책상 간식·식후 디저트 각각 한 장에서 주변 소품은 최대 두 개로 제한한다.",
+          "여러 손이 토핑을 붓거나 조제하는 장면은 피하고, 이미 완성된 식품을 먹는 행위를 우선한다."
+        ],
+        "state_proof": [
+          "sealed → opened → first spoon의 세 상태를 같은 각도와 배경에서 촬영한다.",
+          "다섯 컵 비교는 같은 노출·크기·카메라 높이로 촬영해 식별색보다 실제 질감 차이를 우선한다.",
+          "공정 근거는 재료 투입 또는 혼합 중 한 동작만 보여 주며, 검증된 제조 단계에 한해서 캡션을 붙인다."
+        ],
+        "camera_light_background_crop_retouching": [
+          "제품은 50–70 mm 환산, 30–35도; 비교 그리드는 70–85도 준탑뷰; 질감은 85–100 mm 매크로를 기본으로 한다.",
+          "큰 창광 또는 120×180 cm 소프트 소스를 좌후측에 두고 흰 바운스로 대비를 조절한다.",
+          "배경은 #FFFDF7 또는 #F5F1E8에 가까운 무광 식품 표면과 밝은 애시 우드·혼드 스톤만 사용한다.",
+          "세로 4:5를 마스터로 촬영하고 1:1 및 16:9 크롭에서 컵과 스푼 자국이 보이도록 안전 영역을 확보한다.",
+          "흰색 균형은 중립적으로 유지하고 피부·요거트·원재료의 실제 색과 질감을 보존한다."
+        ],
+        "avoid": [
+          "화장품 크림 스월, 향수 정물, 약병·비커·피펫·금속 트레이",
+          "완성품보다 토핑을 크게 보여 주는 디저트 광고",
+          "제품 식별색을 음식·세트 전체에 투사하는 조명",
+          "식별을 방해하는 얕은 심도, 강한 반사, 과도한 그림자",
+          "근거 없는 원재료 양, 기능성, 제조 시간, 장인성을 암시하는 합성"
+        ]
+      },
+      "lineup_visual_map": [
+        {"product":"Thyme Honey","identifier_color":"#B9832F","food_truth_to_verify":"꿀의 실제 리본 점도와 타임 입자 가시성","hero_trace":"얇은 황금빛 접힘과 드문 녹색 점","primary_image_job":"대표 제품으로 농도와 인퓨전 개념 설명","use_moment":"창가의 아침"},
+        {"product":"Fig Leaf","identifier_color":"#68765F","food_truth_to_verify":"잎 인퓨전이 실제 색·입자에 미치는 영향","hero_trace":"기본 유백색을 보존하고 검증된 미세 잎 흔적만 표현","primary_image_job":"향보다 식용 재료의 섬세한 여운과 질감 설명","use_moment":"조용한 오후 간식"},
+        {"product":"Roasted Buckwheat","identifier_color":"#8A684C","food_truth_to_verify":"볶은 메밀 입자 크기와 분포","hero_trace":"토스트색 미세 입자와 작은 고소한 결","primary_image_job":"곡물의 입자와 요거트 밀도 대비 설명","use_moment":"책상에서 먹는 간식"},
+        {"product":"Citrus Peel","identifier_color":"#C96B3C","food_truth_to_verify":"필 조각의 크기·분포·색 유지","hero_trace":"얇고 짧은 필 결 또는 미세한 제스트 점","primary_image_job":"밝은 산미 인상을 실제 필 질감으로 예고","use_moment":"가벼운 식사 뒤"},
+        {"product":"Black Sesame","identifier_color":"#4B4A4D","food_truth_to_verify":"참깨 분쇄도와 실제 회색도","hero_trace":"검정·회색의 미세 점과 짧은 리본","primary_image_job":"가장 높은 시각 대비로 제품군 변주 폭 설명","use_moment":"작은 식후 디저트"}
+      ]
+    },
+    "design_token_direction": {
+      "key_insight": "MORA의 토큰은 중립 구조라는 소스의 역할만 이어받고, 차가운 실험실 표면을 따뜻한 유제품 바탕·넓은 한글 위계·부드러운 식품 형상으로 바꾼다.",
+      "color": [
+        {"token_id":"color.canvas.cultured-cream","role":"전역 브랜드 캔버스","relationship":"tune","source_basis":"Le Labo의 중립 캔버스 관계와 GK-01; 정확한 #F6F8F6은 채널 한정이며 직접 복제하지 않음","target_direction":{"value":"#F5F1E8","name":"Cultured Cream","usage_rule":"랜딩의 기본 배경과 넓은 여백"},"landing_use":"헤더, 대표 섹션, 브랜드 스토리 배경","status":"directional"},
+        {"token_id":"color.surface.fresh-white","role":"음식과 정보의 가장 밝은 표면","relationship":"new","source_basis":"흰 요거트의 실제 명도와 식품 위생 가독성 필요","target_direction":{"value":"#FFFDF7","name":"Fresh White","usage_rule":"제품 사진 배경, 카드, 비교표"},"landing_use":"제품 카드, 라인업 비교, 영양·보관 정보 면","status":"directional"},
+        {"token_id":"color.ink.primary","role":"주요 글자와 단색 브랜드 표식","relationship":"tune","source_basis":"소스의 짙은 중립 잉크와 명확한 정보 위계; Le Labo #333333 표면은 직접 복제하지 않음","target_direction":{"value":"#20231F","name":"Cultured Ink","usage_rule":"본문과 제목의 기본색; 약한 녹색 기운은 재료색이 아니라 중립 잉크 범위"},"landing_use":"제목, 본문, 워드마크 방향, 기본 아이콘","status":"directional"},
+        {"token_id":"color.ink.secondary","role":"보조 설명과 메타데이터","relationship":"tune","source_basis":"소스의 제목·본문·보조 정보 분리 관계","target_direction":{"value":"#66685F","name":"Quiet Olive Gray","usage_rule":"필수 정보보다 한 단계 낮은 대비"},"landing_use":"캡션, 용량, 보조 설명, 이미지 크레딧","status":"directional"},
+        {"token_id":"color.line.soft","role":"구획 없는 구조를 보조하는 선","relationship":"tune","source_basis":"소스의 얇은 구분선과 정보 그룹 관계를 식품 방향으로 완화","target_direction":{"value":"#D7D2C7","name":"Soft Oat Line","usage_rule":"1 px 구분선; 라벨 격자로 확장 금지"},"landing_use":"비교 행, 카드 경계, 상세 정보 구분","status":"directional"},
+        {"token_id":"color.surface.oat","role":"두 번째 중립 섹션 표면","relationship":"new","source_basis":"따뜻한 유제품·곡물 세계를 위한 타깃 고유 표면","target_direction":{"value":"#E9E2D5","name":"Oat Surface","usage_rule":"전체 페이지의 20% 이내 보조 면"},"landing_use":"재료 설명, 공정 근거, 인용 없는 사실 블록","status":"directional"},
+        {"token_id":"color.action.primary","role":"주요 CTA와 키보드 포커스의 기반","relationship":"tune","source_basis":"소스의 기능색을 정체성 색과 분리하는 원칙; #595959 버튼은 복제하지 않음","target_direction":{"value":"#20231F","on_value":"#FFFDF7","focus_ring":"#8D9188","usage_rule":"CTA는 중립 잉크만 사용; 재료색 금지"},"landing_use":"구매·라인업 보기 CTA, 포커스 상태","status":"directional"},
+        {"token_id":"color.ingredient.thyme-honey","role":"Thyme Honey 제품 식별과 내용물 예고","relationship":"new","source_basis":"transfer-input의 재료색 기능 제한","target_direction":{"value":"#B9832F","name":"Thyme Honey","usage_rule":"마커·탭·재료 미리보기 최대 8%; CTA·전역 배경 금지"},"landing_use":"해당 제품 카드 마커, 패키지 좁은 밴드, 원재료 캡션","status":"directional"},
+        {"token_id":"color.ingredient.fig-leaf","role":"Fig Leaf 제품 식별과 내용물 예고","relationship":"new","source_basis":"transfer-input의 재료색 기능 제한","target_direction":{"value":"#68765F","name":"Fig Leaf","usage_rule":"마커·탭·재료 미리보기 최대 8%; CTA·전역 배경 금지"},"landing_use":"해당 제품 카드 마커, 패키지 좁은 밴드, 원재료 캡션","status":"directional"},
+        {"token_id":"color.ingredient.roasted-buckwheat","role":"Roasted Buckwheat 제품 식별과 내용물 예고","relationship":"new","source_basis":"transfer-input의 재료색 기능 제한","target_direction":{"value":"#8A684C","name":"Roasted Buckwheat","usage_rule":"마커·탭·재료 미리보기 최대 8%; CTA·전역 배경 금지"},"landing_use":"해당 제품 카드 마커, 패키지 좁은 밴드, 원재료 캡션","status":"directional"},
+        {"token_id":"color.ingredient.citrus-peel","role":"Citrus Peel 제품 식별과 내용물 예고","relationship":"new","source_basis":"transfer-input의 재료색 기능 제한","target_direction":{"value":"#C96B3C","name":"Citrus Peel","usage_rule":"마커·탭·재료 미리보기 최대 8%; CTA·전역 배경 금지"},"landing_use":"해당 제품 카드 마커, 패키지 좁은 밴드, 원재료 캡션","status":"directional"},
+        {"token_id":"color.ingredient.black-sesame","role":"Black Sesame 제품 식별과 내용물 예고","relationship":"new","source_basis":"transfer-input의 재료색 기능 제한","target_direction":{"value":"#4B4A4D","name":"Black Sesame","usage_rule":"마커·탭·재료 미리보기 최대 8%; CTA·전역 배경 금지"},"landing_use":"해당 제품 카드 마커, 패키지 좁은 밴드, 원재료 캡션","status":"directional"}
+      ],
+      "typography": [
+        {"token_id":"type.family.primary","role":"국문·라틴을 하나의 현대적 정보 질감으로 통합","relationship":"tune","source_basis":"소스의 분류형 제목과 읽기용 본문 역할 분리만 유지하고 Bell Gothic·Magda 표면은 폐기","target_direction":{"family":"SUIT Variable","fallback":"Pretendard Variable, Noto Sans KR, system-ui, sans-serif","scripts":"Korean and Latin","license_note":"실제 배포 전 폰트 파일·라이선스·서브셋 확인"},"landing_use":"표시·제목·본문·라벨·숫자 전체","status":"directional"},
+        {"token_id":"type.hero","role":"대표 문장과 큰 레시피명","relationship":"new","source_basis":"MORA의 식품 고유 첫인상과 큰 재료명 우선순위","target_direction":{"family":"SUIT Variable","weight":700,"desktop":"72/76 px","mobile":"44/48 px","tracking":"-0.025em","max_line_length":"8–12 Korean characters or 14–20 Latin characters"},"landing_use":"대표 문장, 대표 레시피명","status":"directional"},
+        {"token_id":"type.section-title","role":"섹션 전환과 제품 비교 제목","relationship":"tune","source_basis":"소스의 명확한 분류 위계를 유지하되 압축 대문자와 실험실 인상을 제거","target_direction":{"family":"SUIT Variable","weight":650,"desktop":"48/54 px","mobile":"32/38 px","tracking":"-0.02em"},"landing_use":"브랜드 가치, 재료, 라인업, 질감 섹션 제목","status":"directional"},
+        {"token_id":"type.body","role":"감각 서사와 제품 사실을 읽는 본문","relationship":"tune","source_basis":"GK-02의 장면에서 사실로 이동하는 메시지 순서","target_direction":{"family":"SUIT Variable","weight":400,"desktop":"18/30 px","mobile":"17/28 px","tracking":"-0.005em","max_width":"32–38 Korean characters"},"landing_use":"브랜드 설명, 레시피 설명, 공정·보관 사실","status":"directional"},
+        {"token_id":"type.label","role":"제품 형식·용량·탭·짧은 메타데이터","relationship":"tune","source_basis":"소스의 라벨 정확성은 유지하되 약국식 격자와 초압축 활자를 제거","target_direction":{"family":"SUIT Variable","weight":600,"size_line_height":"13/18 px","tracking":"0.025em","case_rule":"국문은 원문, 영문은 Title Case; 전면 대문자 남용 금지"},"landing_use":"Greek Yogurt, 150 g, 카드 탭, 이미지 역할 캡션","status":"directional"},
+        {"token_id":"type.numeric","role":"중량·비교 수치·검증된 제품 사실","relationship":"new","source_basis":"식품 정보의 빠른 비교 필요","target_direction":{"family":"SUIT Variable","weight":550,"size_line_height":"14/20 px","feature":"tabular-nums when supported"},"landing_use":"150 g, 검증 후 표시되는 영양·보관 수치","status":"directional"},
+        {"token_id":"type.wordmark","role":"MORA 고유 브랜드 표식","relationship":"new","source_basis":"Le Labo 워드마크가 보호 표현이므로 독자 조형 필요","target_direction":{"style":"custom wide sans wordmark with open counters and soft terminal transitions","case":"MORA uppercase","prohibited":"condensed grotesk, stencil, monospaced, typewriter, label-lockup imitation"},"landing_use":"헤더, 컵 상단, 리드","status":"directional"}
+      ],
+      "spacing": [
+        {"token_id":"space.scale","role":"인라인부터 섹션까지 일관된 간격","relationship":"tune","source_basis":"소스의 정보 내부·그룹 사이·오브젝트 주변 거리 관계","target_direction":{"values_px":[4,8,12,16,24,32,48,72,96,128],"rule":"4–16은 정보 내부, 24–48은 그룹, 72–128은 섹션"},"landing_use":"전체 랜딩 리듬","status":"directional"},
+        {"token_id":"space.product-info","role":"제품명·형식·용량을 한 그룹으로 묶기","relationship":"keep","source_basis":"GK-01과 source spacing의 이름·형식·용량 그룹 불변항","target_direction":{"within_group_px":[8,12],"after_group_px":[24,32],"rule":"약국식 선으로 나누지 않고 거리로 묶음"},"landing_use":"제품 카드, 상세 정보, 패키지 전면","status":"directional"},
+        {"token_id":"space.section","role":"감각 장면과 사실 블록의 전환","relationship":"tune","source_basis":"GK-02와 소스의 한 번에 한 단계 공개 관계","target_direction":{"desktop_y_px":[96,128],"mobile_y_px":[64,80],"rule":"이미지 시리즈 다음 정보 블록에 더 큰 간격"},"landing_use":"대표·재료·공정·라인업 섹션 경계","status":"directional"},
+        {"token_id":"space.page-edge","role":"제품 주위의 호흡과 카피 안전 영역","relationship":"tune","source_basis":"소스의 한 개 주역과 넓은 여백을 식품 사진에 적용","target_direction":{"desktop_px":"48–72","tablet_px":"32–48","mobile_px":"20–24","rule":"컵이 가장자리와 접하지 않도록 최소 한 컵 반경 확보"},"landing_use":"대표 이미지, 제품 카드, 정물 사진","status":"directional"}
+      ],
+      "layout": [
+        {"token_id":"layout.container","role":"넓은 이미지와 읽기 폭을 동시에 제어","relationship":"tune","source_basis":"소스의 넓은 중립 여백과 한 주역 집중","target_direction":{"max_width_px":1440,"content_width_px":1200,"text_measure_px":"520–620","rule":"전체 폭보다 제품·본문의 읽기 폭을 우선"},"landing_use":"모든 랜딩 섹션","status":"directional"},
+        {"token_id":"layout.grid","role":"이미지·카피·제품 비교 정렬","relationship":"tune","source_basis":"소스의 분류·물체 역할 분리와 반복 제품군 비교","target_direction":{"desktop":"12 columns / 24 px gutter","tablet":"6 columns / 20 px gutter","mobile":"4 columns / 16 px gutter","rule":"그리드는 보이지 않게 정렬만 제공; 라벨 격자 금지"},"landing_use":"대표, 라인업, 재료 비교, 정보 블록","status":"directional"},
+        {"token_id":"layout.hero","role":"첫 화면에서 제품 사실 우선","relationship":"new","source_basis":"transfer-input의 열린 컵·농도·1회 용도 우선순위","target_direction":{"desktop":"image 7 columns, copy 4 columns, 1-column breathing gap","mobile":"image first, copy second","image_ratio":"4:5 master with 16:9 crop-safe zone","rule":"카피를 음식 위에 올리지 않음"},"landing_use":"대표 섹션","status":"directional"},
+        {"token_id":"layout.lineup","role":"다섯 레시피를 공정하게 비교","relationship":"keep","source_basis":"GK-05의 반복 제품군과 한 번의 행동, source family view","target_direction":{"desktop":"5 equal cards in one row at wide widths or 3+2 without scale hierarchy","mobile":"single horizontal sequence with persistent recipe label","rule":"모든 컵의 크기·각도·노출 고정"},"landing_use":"제품 라인업 비교","status":"directional"},
+        {"token_id":"layout.message-sequence","role":"감각에서 사실로 이동","relationship":"keep","source_basis":"GK-02 approved grammar","target_direction":{"order":["opened-cup texture","one-sentence promise","recipe and 150 g fact","ingredient-source preview","verified process action","five-product comparison","use moments and purchase action"],"rule":"건강·기능성 근거가 없으면 해당 단계 생략"},"landing_use":"페이지 전체 서사 순서","status":"directional"}
+      ],
+      "shape": [
+        {"token_id":"shape.product-cup","role":"MORA 제품군의 식품 고유 실루엣","relationship":"new","source_basis":"target 150 g 떠먹는 요거트의 사용성과 화장품·향수 회피","target_direction":{"diameter_height_ratio":"approximately 1.55:1","wall":"light taper","transitions":"soft radiused rim and foot","lid":"single clear pull tab"},"landing_use":"제품 콘셉트, 대표·라인업 이미지 생성","status":"directional"},
+        {"token_id":"shape.card","role":"사진·정보를 담는 부드러운 프레임","relationship":"new","source_basis":"식품 친화적 현대성; 소스의 직각 약국 라벨과 거리 두기","target_direction":{"radius_px":16,"border":"1 px #D7D2C7","shadow":"0 12px 40px rgba(32,35,31,0.08)","rule":"제품 사진 카드에만 약한 깊이; 본문은 평면"},"landing_use":"제품 카드, 재료 미리보기, 구매 패널","status":"directional"},
+        {"token_id":"shape.ingredient-marker","role":"레시피 식별과 내용물 예고","relationship":"new","source_basis":"transfer-input의 단 하나 재료 식별 영역","target_direction":{"form":"one narrow vertical bar, short underline, or 12 px dot","area_limit":"5–8% of the local card or package face","rule":"한 표면에 한 레시피색만 사용; 장식 반복 금지"},"landing_use":"제품 카드, 패키지, 비교 탭, 재료 캡션","status":"directional"},
+        {"token_id":"shape.control","role":"CTA와 필터의 기능 형태","relationship":"new","source_basis":"상호작용을 재료색과 분리하고 식품 브랜드의 부드러운 촉감을 유지","target_direction":{"button_radius_px":12,"height_px":[48,52],"chip_radius_px":8,"rule":"과도한 pill·stamp·label 모양 금지"},"landing_use":"CTA, 라인업 필터, 수량 선택","status":"directional"}
+      ],
+      "motion": [
+        {"token_id":"motion.ui","role":"정보 공개와 제품 전환 피드백","relationship":"new","source_basis":"소스 영상 문법은 미확정이므로 target-native behavior 필요","target_direction":{"duration_ms":{"micro":180,"standard":240,"image_transition":320},"easing":"cubic-bezier(0.2, 0.8, 0.2, 1)","rule":"opacity와 8–16 px 이동만 사용; reduced-motion에서는 즉시 전환"},"landing_use":"탭, 아코디언, 라인업 이미지 전환","status":"directional"},
+        {"token_id":"motion.texture-reveal","role":"스푼 자국으로 농도와 재료 흔적 설명","relationship":"new","source_basis":"GK-03의 관찰 가능한 한 동작을 식품 사용 행동으로 교체","target_direction":{"duration_ms":"800–1200","action":"one continuous spoon pull, no reverse loop","rule":"실제 촬영 속도를 유지하고 슬로모션 과장·무한 루프 금지"},"landing_use":"대표 영상, 질감 설명, 제품 카드 hover 대체 영상","status":"directional"},
+        {"token_id":"motion.ingredient-continuity","role":"원재료에서 컵 내부 흔적으로 시선 연결","relationship":"new","source_basis":"MORA의 인퓨전 개념과 재료색 기능 제한","target_direction":{"duration_ms":480,"action":"crossfade or matched crop from ingredient macro to verified yogurt trace","rule":"입자가 날아들거나 색이 번지는 합성 금지"},"landing_use":"재료 스토리 전환","status":"directional"}
+      ],
+      "implementation_boundary": "이 값들은 Stage 2 랜딩·무드보드 방향값이다. 접근성, 인쇄, 식품 포장 생산, 실제 사진 테스트 후 확정하며 완성된 컴포넌트 시스템으로 취급하지 않는다."
+    }
+  },
+  "anchor_image_requirements": {
+    "product_hero": {
+      "asset_role": "representative-product-hero",
+      "working_product": "Thyme Honey",
+      "communication_job": "한 장에서 150 g 떠먹는 그릭요거트, 농도, 초승달형 스푼 자국, 실제 재료 흔적, 프리미엄 식품성을 설명한다.",
+      "master_format": "4:5 portrait, minimum 2048 × 2560 px",
+      "crop_derivatives": ["1:1", "16:9"],
+      "required_subject": [
+        "낮고 넓은 열린 MORA 컵 하나",
+        "실제 샘플과 일치하는 유백색 그릭요거트",
+        "한 번의 스푼 자국과 스푼 한 개",
+        "실제 배합에서 확인된 얇은 꿀 리본·타임 흔적",
+        "컵 또는 손을 통해 이해되는 1회 분량"
+      ],
+      "camera_light_set": "50–70 mm 환산, 30–35도, 좌후측 넓은 자연광, 흰 바운스, #FFFDF7 무광 배경과 밝은 애시 우드 또는 혼드 스톤 한 면",
+      "composition": "컵은 프레임 높이의 55–65%; 식별 마커는 컵 패키지에만; 카피를 위한 우측 또는 상단 25–30% 안전 여백",
+      "must_preserve": [
+        "요거트 결의 하이라이트 디테일",
+        "컵 전체 실루엣과 리드 탭 인지",
+        "재료보다 컵이 먼저 보이는 시선 순서",
+        "4:5·1:1·16:9에서 스푼 자국 유지"
+      ],
+      "must_avoid": [
+        "향수·화장품 크림·실험실 샘플 인상",
+        "비커·피펫·갈색 병·금속 트레이·신문·약국 라벨",
+        "과도한 꿀 드립, 토핑 폭발, 인위적 색보정",
+        "검증되지 않은 재료량·농도·영양 효능"
+      ],
+      "validation_checks": [
+        "R&D 샘플과 요거트 색·입자·점도가 일치한다.",
+        "제품명 없이도 요거트 한 컵으로 인식된다.",
+        "식별색이 음식이나 배경의 장식색으로 번지지 않는다.",
+        "컵 구조와 라벨이 생산 방향과 충돌하지 않는다."
+      ],
+      "asset_status": "required_not_generated_in_this_shard"
+    },
+    "brand_mood": {
+      "asset_role": "brand-mood-anchor",
+      "communication_job": "현대 도시 생활자의 조용한 아침에 MORA가 감각을 늦추는 실제 식사 리추얼임을 보여 준다.",
+      "master_format": "3:2 landscape, minimum 3000 × 2000 px",
+      "crop_derivatives": ["4:5", "1:1", "16:9"],
+      "required_subject": [
+        "밝은 도시 주거의 창가 식탁",
+        "리드를 막 열었거나 첫 숟갈을 뜨는 한 사람의 손과 부분 인물",
+        "MORA 컵, 브러시드 스테인리스 스푼, 물컵",
+        "해당 레시피 원재료의 절제된 한 묶음",
+        "읽던 책 또는 노트 중 하나만 보조 소품으로 사용"
+      ],
+      "camera_light_set": "35–50 mm 환산, 테이블 높이, 5000–5600 K 부드러운 창광, 흰색 바운스, 밝은 애시 우드·워시드 린넨·맑은 유리",
+      "composition": "사람은 화면의 25–35%, 제품은 작지만 완전하게 인지; 포즈가 아니라 실제 개봉·섭취 동작; 도시 환경은 힌트만 남김",
+      "must_preserve": [
+        "먹는 행동과 제품의 거리",
+        "생활 흔적이 있지만 정돈된 현대성",
+        "자연스러운 피부·음식·공간색",
+        "카피를 위한 한쪽 여백"
+      ],
+      "must_avoid": [
+        "공방·실험실·농장·약방·빈티지 카페",
+        "어두운 향수 광고와 필름 그레인 모사",
+        "모델의 카메라 응시, 셰프 연출, 웰니스 운동복 클리셰",
+        "여러 레시피색을 장식적으로 동시에 사용"
+      ],
+      "validation_checks": [
+        "프리미엄 그릭요거트의 실제 섭취 장면으로 읽힌다.",
+        "Le Labo 공간·신문·향수·라벨을 연상시키는 보호 표현이 없다.",
+        "제품이 소품으로 묻히지 않고 컵·스푼·내용물이 식별된다.",
+        "4:5·1:1·16:9 크롭에서 행동과 제품이 함께 남는다."
+      ],
+      "asset_status": "required_not_generated_in_this_shard"
+    }
+  },
+  "source_lineage_and_boundaries": [
+    {"source_signal":"중립 구조가 반복 제품군을 묶음","semantic_job":"다섯 레시피 비교","relationship":"tune","target_direction":"따뜻한 유제품 중립색, 동일 컵·각도·정보 순서","boundary":"Le Labo #F6F8F6, 약국 라벨, 향수병 실루엣은 복제하지 않음"},
+    {"source_signal":"감각 장면 뒤에 제품 사실 공개","semantic_job":"감각과 구매 판단 연결","relationship":"keep","target_direction":"질감 대표 이미지 뒤 레시피·150 g·재료·검증 공정 순서","boundary":"향수 서사와 We believe 선언문은 사용하지 않음"},
+    {"source_signal":"손·도구·재료의 한 행동이 품질 근거","semantic_job":"관찰 가능한 증명","relationship":"tune","target_direction":"리드 열기, 한 번의 스푼 당김, 검증된 재료 투입 중 하나","boundary":"공방·랩·장인 다큐멘터리 장면을 재연하지 않음"},
+    {"source_signal":"반복 제품군을 한 손동작이 깨움","semantic_job":"가족성과 사용 관계 동시 전달","relationship":"keep","target_direction":"같은 컵 시리즈에서 스푼 자국 또는 선택 손 하나만 변화","boundary":"Le Labo의 특정 손 포즈·제품 배열을 복제하지 않음"},
+    {"source_signal":"신문·라벨·판화를 그래픽 장치로 사용","semantic_job":"물성과 커뮤니케이션 연결","relationship":"new","target_direction":"요거트 표면·스푼 흔적·원재료 매크로가 그래픽 장치","boundary":"Le Journal, 판화, 초현실 향수 은유, 타자기·격자 라벨은 전부 금지"}
+  ],
+  "gaps": [
+    "150 g 컵의 실제 지름·높이·테이퍼·리드 탭·재질·인쇄 공법은 제조 검증 전이다.",
+    "다섯 레시피의 실제 요거트 색, 점도, 입자 크기, 재료 분포는 R&D 샘플 촬영 전이므로 이미지 생성에서 사실로 확정할 수 없다.",
+    "MORA와 레시피명은 상표·법무 검토 전 작업명이다.",
+    "SUIT Variable의 실제 배포 방식, 라이선스, 서브셋, 모든 국문·라틴 조판은 구현 전 확인이 필요하다.",
+    "정확한 팔레트는 화면 대비, 식품 포장 인쇄, 소재 백색도, 실제 재료색 테스트 후 보정해야 한다.",
+    "재료 식별색을 작은 텍스트나 컨트롤에 사용할 경우 별도의 WCAG 대비 검증이 필요하며, 기본안에서는 컨트롤 색으로 사용하지 않는다.",
+    "영양, 저당, 고단백, 유산균, 원산지, 지속가능 포장, 제조 시간, 보관기한 주장은 검증 자료가 없어 시각·카피에서 제외한다.",
+    "제품 대표 이미지와 브랜드 무드 앵커는 이 shard에서 생성·등록하지 않았으며, 실제 샘플과 승인된 제품 형상을 기반으로 별도 제작해야 한다.",
+    "모바일 실기기에서 5제품 비교 순서, 긴 국문 레시피명, 4:5·1:1·16:9 크롭 안전성은 구현 단계 검증이 필요하다."
+  ]
+}

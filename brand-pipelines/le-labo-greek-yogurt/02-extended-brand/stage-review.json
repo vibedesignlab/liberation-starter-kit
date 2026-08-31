@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "stage_review",
+  "stage": "extended_brand_anatomy",
+  "status": "accepted",
+  "pipeline_state_path": "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/pipeline-state.json",
+  "review_targets": [
+    "Revision 16 Brand Mood Image Series가 Selection → Process → Last Measure 세 장으로 압축되어 시작·변환·판단의 실제 이야기를 만들고, 같은 여성 메이커·도시형 발효 공방·시간대·혼합광·35 mm ISO 800 필름 응답을 일관되게 유지하는지",
+    "Revision 17 Raw Ingredient UI Series 여섯 장이 동일한 strict-front REF-07 배경과 실제 조리 규모를 유지하면서 Thyme & Honey, Fig Leaf, Roasted Buckwheat, Citrus Peel, Black Sesame, Olive Oil & Sea Salt의 원물만 완제품·중간액과 분리해 보여 주는지",
+    "Revision 18 Raw Ingredient Aerial Series 여섯 장이 1:1 true-aerial 카메라, 완전한 용기, 실제 조리 규모와 넓은 스테인리스 여백을 유지하며 정면 원재료 증거를 보완하는지",
+    "Revision 18 Plain UI Product Master가 물리 세트가 아닌 실제 런타임 `theme.palette.background.default` Cultured Cream #F5F1E8 위에서 strict-front 제품·부분 Batch Record·실제 내용물만 보여 주는지",
+    "SPACE-01~03 Reusable Spatial Masters가 100% front/strict-side 카메라, 실제 store-to-workshop 연결, side production bay, Batch Archive workwall을 서로 다른 역할로 고정하고 기존 REF-01~03의 방송 세트 인상을 현행 기준에서 제거했는지",
+    "Revision 11 빠른 무드 이미지 다섯 장이 사용자 피드백 1–5를 각각 한 장씩 직접적으로 보여 주는지",
+    "여성 메이커가 장식적 여성성이 아니라 선택·비교·중단·기록의 권한을 가진 The Keeper of Taste로 읽히는지",
+    "보수된 회벽·유틸리티 타일·문턱·목재·비접촉 철제의 축적된 사용감과 깨끗한 스테인리스 식품 접촉부가 동시에 성립하는지",
+    "150 g low-wide wide-mouth jar, 60–70% 이상의 내용물 노출, 부분 Batch Record가 향수병·르라보 라벨 복제가 아닌 식품 고유 체계로 읽히는지",
+    "Material Under Care의 input–tool–action–intermediate output–record 인과와 여섯 제품의 실제 재료 차이가 명확한지"
+  ],
+  "adjustment_prompts": [
+    "R16 브랜드 무드 세 장 또는 R17 원재료 여섯 장 중 장면 내용·스케일·필름 응답을 추가 조정할 프레임을 지정해 주세요."
+  ],
+  "user_feedback": [
+    {
+      "decision": "revision_requested",
+      "message": "브랜드 무드와 제품 기획을 확장하고, 브랜드 무드를 드라마틱한 100% 정면 샷과 엄격한 측면 샷으로 재구성해 달라는 요청",
+      "recorded_at": "2026-08-24T16:18:58.164320+00:00"
+    },
+    {
+      "decision": "revision_requested",
+      "message": "제품 기획뿐 아니라 실제 제품 사진도 브랜드 리포트에 추가해야 한다는 누락 지적",
+      "recorded_at": "2026-08-25T06:56:03.551333+00:00"
+    },
+    {
+      "decision": "revision_requested",
+      "message": "2번 문서의 브랜드 세계관 강화: 실제 프리미엄 수제 그릭요거트 제조 과정, 사용 도구, 원재료 인퓨징과 식품에 맞는 중간 산출물, 크래프트맨십·커스텀·개인화를 연결한 비주얼 스토리텔링으로 재구성.",
+      "recorded_at": "2026-08-25T08:27:53.477466+00:00"
+    },
+    {
+      "decision": "revision_requested",
+      "message": "3단계에서 최종 브랜드 스토리·창립자 이야기·제품 기획·라인업이 현실적으로 파생되도록, 2단계에 더 구체적인 원인–행동–결과형 스토리텔링과 사실성 게이트를 추가해 달라는 요청.",
+      "recorded_at": "2026-08-25T09:39:01.413749+00:00"
+    },
+    {
+      "decision": "revision_requested",
+      "message": "현재 MORA 종이 패키지가 재료의 원초적 색감과 텍스처, 장인정신을 죽이고 일반적인 미니멀 식품 패키지처럼 보임. 르라보의 버벌·철학·비주얼 브랜딩 연결성을 더 깊게 번역하고 패키징 및 무드 이미지를 재구성할 것.",
+      "recorded_at": "2026-08-25T14:39:12.986010+00:00"
+    },
+    {
+      "decision": "revision_requested",
+      "message": "개별 컵의 종이 라벨과 fiber collar를 제거하고, 투명 식품용기에 최소 검정 단색 정보를 직접 인쇄하는 구조로 재설계. 이전의 원재료 색·질감·최소 형태 피드백을 패키지와 전체 무드 이미지에 일관되게 반영하고 병렬 진행할 것.",
+      "recorded_at": "2026-08-25T16:46:27.247983+00:00"
+    },
+    {
+      "decision": "accepted",
+      "message": "사용자는 투명 직접 인쇄 제품·무드 사진이 조건에 부합하면 3번째 landing page material 문서를 바로 병렬 진행하라고 조건부 승인했다. 생성된 six clear product portraits, clear hero, package anatomy, frontal and strict-side final-check pair를 원본 크기로 검수했고 종이 라벨·슬리브·collar 없이 transparent vessel, black direct print, actual food and foil 구조가 일관되므로 조건을 충족한다.",
+      "recorded_at": "2026-08-25T20:03:34.303275+00:00"
+    },
+    {
+      "decision": "editorial_restructure_completed",
+      "message": "사용자 피드백에 따라 Stage 2 독서 구조를 전체 브랜드 스토리와 제품 컨셉 → 버벌 스토리 → 비주얼 컨셉과 무드 → 제품·공정·패키징·토큰·검증 상세 순서로 재편함. 고정된 8개 섹션 ID와 승인된 전략·제품·이미지는 유지하고 표현 순서만 개선함.",
+      "recorded_at": "2026-08-29T14:20:02+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "8개 피드백을 반영해 Hero를 무인 제조실로, Why MORA를 한 명의 메이커 장면으로 분리하고, 추상 에칭을 물리적 제조 공정으로 교체했다. Material Method의 여백과 실험성을 키웠으며, 모든 활성 제품 패키지를 얇은 캡·foil-under-cap·직접 인쇄의 무거운 유리 용기로 전환했다.",
+      "recorded_at": "2026-08-29T16:50:00+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "사용자 요청에 따라 100% photography에 의존하지 않는 ambient material-field 시스템을 추가했다. Strained Field, Infusion Bloom, The Single Fold, Persistent Trace 네 이미지를 생성·검수·등록하고, 실제 제품·공정 사진과 메타포 이미지의 증거 경계를 2번 문서에 분리해 기록했다.",
+      "recorded_at": "2026-08-31T16:30:00+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "사용자 피드백에 따라 큰 컨셉·스토리·ambient 이미지 네 장을 첫 섹션에 통합하고, 반복되던 촬영·제품·공정·카피·QA 자료를 제거하거나 7–8장 제작 참조로 내렸다. 고정 리더의 화면 블록을 약 140개에서 32개로 축소했다.",
+      "recorded_at": "2026-08-31T16:44:11+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "르라보의 재료·노동·기록 문법을 MORA의 여성 메이커 책임으로 전환했다. 정갈하고 여성적인 미감을 버리고 dark graphite brick/concrete food manufactory, 위생적 stainless contact zone, low-wide transparent 150 g spoon jar, 부분 무코팅 Batch Record, 과학적·장인적 제조 과정, Material Under Care 키 비주얼과 제품·무드 앵커 두 장으로 Revision 10을 재구성했다. 여성 메이커는 엄마·아내·주방의 주인이라는 미식 책임의 상징이며 실제 창업자 전기나 성 역할 규범으로 제시하지 않는다.",
+      "recorded_at": "2026-08-31T17:20:15+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "사용자 피드백에 따라 최종 무드·UI 이미지를 다시 만들기 전에 반복 조립용 레퍼런스 마스터 일곱 장을 생성했다. 100% front/strict side 제조실, 인물 스케일, 오브젝트 키트, 제품 마스터, 재료 상태 라이브러리, UI 배경을 카메라·비율 기준과 함께 Stage 2 Storybook 별도 Reference Masters 블록에 등록한다.",
+      "recorded_at": "2026-08-31T18:07:37+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "사용자 지적에 따라 REF-03을 계측 이미지로 잘못 분류한 결정을 철회했다. 숫자 치수는 내부 프롬프트·QA 제약으로 이동하고, Storybook 시각 레퍼런스는 strict-front 여성 메이커가 용기에 부착된 부분 Batch Record에 실제 final check를 남기는 장면으로 교체했다. 라벨은 장식 스티커나 빈 카드가 아니라 고정 식품 공정 필드와 제한된 maker check를 연결하는 책임 기록이며 음식의 60–70% 이상을 노출한다.",
+      "recorded_at": "2026-08-31T18:25:27+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "사용자 지적에 따라 장면 속 작은 라벨만으로는 반복 시각 기준이 되지 않는 누락을 수정했다. exact field names와 정보 위계가 필요한 REF-08 Batch Record Label Master를 100% 정면 결정론적 SVG와 PNG로 추가했다. 고정 공정 필드, 제한된 maker-check 영역, 무코팅 종이, 부분 부착과 음식 60–70% 이상 노출 규칙을 분리된 시각 레퍼런스로 Storybook에 등록한다.",
+      "recorded_at": "2026-08-31T18:34:31+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "사용자 피드백에 따라 레퍼런스 단계에 불필요한 REF-08 SVG를 활성 자산과 Storybook에서 제거했다. REF-08은 이미지 생성에 사용할 PNG 시각 레퍼런스로만 유지하며, R13 제품 이미지 계획에서도 SKU별 SVG 제작과 결정론적 라벨 합성 단계를 사용하지 않는다.",
+      "recorded_at": "2026-08-31T18:43:03+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "사용자 승인 계획에 따라 Revision 13의 첫 병렬 웨이브를 실행했다. 브랜드 무드 The Keeper / Final Check, UI 제품 Thyme Honey, UI 재료 Thyme & Honey 마스터를 REF-01~08의 역할을 분리해 생성하고 각각 한 번의 계약 허용 단일축 보정만 수행했다. 세 마스터를 Stage 2 Storybook의 브랜드 무드 및 제품·재료 블록에 등록하며, 나머지 15장은 사용자 방향 확인 뒤 확장한다.",
+      "recorded_at": "2026-08-31T18:57:14+09:00"
+    },
+    {
+      "decision": "revision_requested",
+      "message": "사용자는 브랜드 무드 시리즈를 BM01 마스터 한 장에서 멈춘 것을 지적하고, 기존 레퍼런스 이미지의 공간·인물·오브젝트·식품 상태 역할을 분리해 적용하면서 front/side 구도, 히어로 여백과 실제 비율을 지킨 BM01–BM06 전체 시리즈를 즉시 생성·등록하라고 요청했다.",
+      "recorded_at": "2026-08-31T19:04:04+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "Revision 13 Brand Mood Image Series를 BM01–BM06 여섯 장으로 완성했다. The Keeper / Final Check, The Selection, Culture Stop, The Separation, Intermediate Archive, The Last Fold를 REF-01~08의 공간·메이커·실물 비율·식품 상태·Batch Record 역할을 분리해 생성하고, front/side 카메라와 좌측 히어로 카피 필드를 고정했다. 이전의 중복 Brand mood image series 노출은 제거하고 새 여섯 장 시리즈만 Storybook의 현행 생산 블록으로 표시한다.",
+      "recorded_at": "2026-08-31T19:13:18+09:00"
+    },
+    {
+      "decision": "revision_requested",
+      "message": "사용자는 Revision 13 결과가 기존 브랜드 무드 이미지의 구도·프레임·비율을 레퍼런스로 교정한 것이 아니라 REF 제조실과 인물 배치를 거의 복제한 새 장면이라고 지적했다. 기존 Storybook 여섯 장의 서사와 장면을 원본 권위로 유지하고, REF는 카메라·여백·스케일 측정 기준으로만 사용하도록 전면 교체를 요청했다.",
+      "recorded_at": "2026-08-31T19:14:00+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "잘못 만든 Revision 13 새 서사 여섯 장을 현행 정본에서 제거하고, 기존 Keeper Last Measure와 Revision 11 피드백 이미지 다섯 장을 직접 편집한 Revision 14 시리즈로 교체했다. 원래 인물·행동·재료·공정·아카이브·물성 사건은 유지하며, 01–04는 strict-front 히어로, 05는 strict-side 공정 히어로, 06은 의도적 material macro로 재프레이밍했다. REF 장면은 복제하지 않고 카메라 축·환경 거리·좌측 여백·실물 비율·부분 Batch Record 역할만 적용했다.",
+      "recorded_at": "2026-08-31T19:31:12+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "사용자는 R14 제조실이 빈 graphite 벽·동일한 스테인리스 모듈·균일한 조명 때문에 방송국 세트처럼 보인다고 지적했다. S1의 Roots first lab, Le Labo laboratory-store interior, About-page lab workwall banner, Fresh formulation / refill pour에서 실제 거리 연결, 기능 재고, 노후 외피, 불균일한 자연광과 작업등의 원리를 추출해 SPACE-01~03을 병렬 생성했다. 이어 R14 여섯 장을 각각 편집 대상으로 고정하고 기존 인물·행동·재료·공정·제품 관계를 보존한 채 공간 외피와 조명만 lived-in urban store-workshop으로 병렬 교체한 Revision 15를 현행 Storybook 시리즈로 등록한다.",
+      "recorded_at": "2026-08-31T20:10:00+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "사용자 요청에 따라 브랜드 무드 현행 제작본을 여섯 장에서 Selection, Process, Last Measure 세 장으로 줄였다. 세 기존 장면을 독립 병렬 편집하며 인물·행동·재료·카메라·공간은 보존하고, 공통 계약으로 불규칙한 35 mm ISO 800 컬러 네거티브 그레인, 들린 블랙, 부드러운 하이라이트 숄더와 제한적인 할레이션만 적용해 실제 아날로그 매거진 스토리의 통일성을 높였다. 별도의 엄격한 2차 검수나 추가 재생성 없이 세 장을 현행 Storybook 제작본으로 등록한다.",
+      "recorded_at": "2026-08-31T20:21:49+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "사용자 지적에 따라 원재료와 중간액이 섞인 Thyme Honey 한 장을 현행 UI material master에서 제거하고, 여섯 SKU 각각의 raw ingredient만 보여 주는 Revision 17 시리즈로 교체했다. REF-07의 strict-front 배경·지평선·스테인리스 접지면을 공통으로 고정하고, 원재료와 용기를 프레임 높이 18–24%의 실제 조리 규모로 제한했다. 제품·요거트·중간액·라벨·텍스트는 배제하고, 중립적인 색 증거와 미세한 35 mm 질감만 적용했다.",
+      "recorded_at": "2026-08-31T20:32:58+09:00"
+    },
+    {
+      "decision": "revision_completed_pending_review",
+      "message": "사용자 요청에 따라 여섯 raw ingredient를 각각 strict 90° aerial·1:1로 추가하고, 실제 런타임 UI 배경 토큰 Cultured Cream #F5F1E8 위의 plain Thyme Honey 제품 마스터 한 장을 제작·등록했다. 불필요한 2차 미감 검수는 생략했으며 Fig Leaf aerial의 좌우 여백이 목표 14%보다 작은 약 10–11%라는 편차는 숨기지 않고 provenance에 남겼다.",
+      "recorded_at": "2026-08-31T20:55:01+09:00"
+    },
+    {
+      "decision": "accepted",
+      "message": "사용자가 Revision 18 작업 완료 뒤 변경된 2번 문서를 기준으로 3번 브랜드 문서를 즉시 업데이트하라고 지시했다. 이를 현재 Stage 2의 Stage 3 transfer 승인으로 기록하며, R16 브랜드 무드·R17 strict-front 원재료·R18 aerial 원재료·plain UI 제품과 Revision 10 전략·부분 Batch Record 체계를 Stage 3 입력 권위로 고정한다.",
+      "recorded_at": "2026-08-31T20:55:01+09:00"
+    }
+  ],
+  "updated_at": "2026-08-31T20:55:01+09:00"
+}

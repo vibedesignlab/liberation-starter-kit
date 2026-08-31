@@ -12,11 +12,15 @@ import { BrandDocumentValue } from './BrandDocumentValue.jsx';
 export function BrandTypographySpecimen({ item }) {
   const fontSize = item.fontSize ?? item.size ?? 'clamp(1.75rem, 4vw, 3.5rem)';
   const meta = item.meta ?? [
+    item.token,
     item.fontFamily,
+    fontSize ? `Size ${ fontSize }` : null,
     item.fontWeight ? `Weight ${ item.fontWeight }` : null,
     item.fontStyle,
     item.lineHeight ? `Leading ${ item.lineHeight }` : null,
+    item.letterSpacing ? `Tracking ${ item.letterSpacing }` : null,
   ].filter(Boolean).join(' · ');
+  const details = Array.isArray(item.details) ? item.details : [];
 
   return (
     <Box sx={ { display: 'grid', gap: 2, p: { xs: 2, md: 3 }, border: '1px solid', borderColor: 'divider' } }>
@@ -58,6 +62,40 @@ export function BrandTypographySpecimen({ item }) {
       >
         { item.sample ?? item.text ?? 'Aa 가나 0123' }
       </Typography>
+      { details.length > 0 && (
+        <Box
+          component="dl"
+          sx={ {
+            display: 'grid',
+            gridTemplateColumns: { xs: 'minmax(6.5rem, 0.55fr) minmax(0, 1.45fr)', md: 'repeat(4, minmax(0, auto))' },
+            gap: '0.5rem 1rem',
+            m: 0,
+            pt: 2,
+            borderTop: '1px solid',
+            borderColor: 'divider',
+          } }
+        >
+          { details.map(({ label, value }) => (
+            <Box key={ label } sx={ { display: 'contents' } }>
+              <Typography
+                component="dt"
+                variant="caption"
+                color="text.secondary"
+                sx={ { m: 0, fontWeight: 600 } }
+              >
+                { label }
+              </Typography>
+              <Typography
+                component="dd"
+                variant="caption"
+                sx={ { m: 0, lineHeight: 1.55, overflowWrap: 'anywhere' } }
+              >
+                <BrandDocumentValue value={ value } />
+              </Typography>
+            </Box>
+          )) }
+        </Box>
+      ) }
       { item.description && (
         <Typography
           variant="caption"

@@ -74,7 +74,20 @@ def main() -> int:
     stage2_names = {str(item.get("product_name", "")).strip() for item in stage2_lineup if isinstance(item, dict)}
     lineup_copy = model.get("product_lineup_copy") if isinstance(model.get("product_lineup_copy"), list) else []
     copy_names = {str(item.get("product_name", "")).strip() for item in lineup_copy if isinstance(item, dict)}
-    if stage2_names != copy_names:
+    extension = landing_input.get("lineup_extension") if isinstance(landing_input.get("lineup_extension"), dict) else {}
+    extension_authorized = extension.get("authorized") is True
+    if extension_authorized:
+        if extension.get("preserve_stage_2_products") is not True:
+            errors.append("authorized Stage 3 lineup extension must preserve Stage 2 products")
+        if not stage2_names.issubset(copy_names):
+            errors.append("authorized Stage 3 lineup extension is missing a Stage 2 product")
+        try:
+            target_lineup_count = int(extension.get("target_lineup_count", 0))
+        except (TypeError, ValueError):
+            target_lineup_count = 0
+        if target_lineup_count < len(stage2_names) or len(copy_names) != target_lineup_count:
+            errors.append("authorized Stage 3 lineup extension does not match target_lineup_count")
+    elif stage2_names != copy_names:
         errors.append("landing product-lineup copy does not match Stage 2 lineup")
     for item in lineup_copy:
         if not isinstance(item, dict):
@@ -85,13 +98,19 @@ def main() -> int:
                 errors.append(f"landing lineup item {item.get('product_name', '?')} has blank {field}")
         if model_v11 and not nonempty(item.get("product_usp")):
             errors.append(f"Stage 3 schema 1.1 lineup item {item.get('product_name', '?')} has blank product_usp")
+        if extension_authorized:
+            product_name = str(item.get("product_name", "")).strip()
+            expected_group = "individual_product" if product_name in stage2_names else "workspace_template_module"
+            if item.get("lineup_group") != expected_group:
+                errors.append(f"authorized Stage 3 lineup item {product_name or '?'} must use lineup_group {expected_group}")
 
     registry = object_at(case / "asset-registry.json")
     registry_v11 = str(registry.get("schema_version", "")).startswith("1.1")
     assets = registry.get("assets") if isinstance(registry.get("assets"), list) else []
-    if len(assets) < len(stage2_names):
+    if len(assets) < len(copy_names):
         errors.append("landing product renders must cover every lineup product")
     registered_ids: set[str] = set()
+    rendered_product_names: set[str] = set()
     for item in assets:
         if not isinstance(item, dict):
             errors.append("landing asset registry contains a non-object")
@@ -114,6 +133,11 @@ def main() -> int:
         asset_id = str(item.get("asset_id", "")).strip()
         if asset_id:
             registered_ids.add(asset_id)
+        product_name = str(item.get("product_name", "")).strip()
+        if product_name:
+            rendered_product_names.add(product_name)
+    if not copy_names.issubset(rendered_product_names):
+        errors.append("landing product renders do not cover every landing lineup entry")
     if set(model.get("registered_product_assets", [])) != registered_ids:
         errors.append("landing JSON registered_product_assets does not match registry")
     mapped_ids: set[str] = set()

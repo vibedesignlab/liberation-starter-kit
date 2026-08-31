@@ -1,0 +1,53 @@
+{
+  "artifact_type": "revision7_clear_witness_image_provenance",
+  "schema_version": "1.0.0",
+  "generated_at": "2026-08-25T16:57:00Z",
+  "generation_mode": "built_in_imagegen_edit",
+  "model_interface": "Codex built-in image generation tool",
+  "source_policy": "Each source image was inspected with view_image before editing. Generated originals remain in the Codex generated-images directory and are additionally copied into this work package.",
+  "assets": [
+    {
+      "asset_id": "mora-thyme-honey-clear-witness-hero-v3",
+      "source": {
+        "path": "assets/product-hero/mora-thyme-honey-material-hero-v2.png",
+        "sha256": "81c17393015089dff939bac4b534f499fe7f7563d5c4ac5311b80096ca2d0822",
+        "role": "edit target and authority for composition, food, light, foil and props"
+      },
+      "generated_original": {
+        "codex_path": "/Users/ddd/.codex/generated_images/01a0384a-155d-7aa3-976e-415e1c5cc092/exec-c94d3dea-2259-49ad-bf2c-3560ebf8908f.png",
+        "work_copy": ".work/revision7_hero_anatomy_assets/generated-originals/mora-thyme-honey-clear-witness-hero-v3-generated.png",
+        "sha256": "ae774fbbb50242ca4d42f3bab6dd2230fed515597b7243a6bb575244dfe19ccf"
+      },
+      "final": {
+        "path": "assets/product-hero/mora-thyme-honey-clear-witness-hero-v3.png",
+        "sha256": "ae774fbbb50242ca4d42f3bab6dd2230fed515597b7243a6bb575244dfe19ccf",
+        "pixel_width": 1672,
+        "pixel_height": 941,
+        "format": "PNG"
+      },
+      "edit_delta": "Removed both unit-level paper collars and replaced them with two transparent direct-black-print cups while retaining open and sealed product states."
+    },
+    {
+      "asset_id": "mora-clear-witness-anatomy-v2",
+      "source": {
+        "path": "assets/packaging-system/mora-package-anatomy.png",
+        "sha256": "61e8c169e8d446f1a50fa3ae9f88f0731593da09d6d8c67bf3365fe1d11bf07b",
+        "role": "edit target and authority for anatomy composition, cup food, foil, spoon, carrier and light"
+      },
+      "generated_original": {
+        "codex_path": "/Users/ddd/.codex/generated_images/01a0384a-155d-7aa3-976e-415e1c5cc092/exec-97dda319-539d-495c-ad9e-d4e34382923c.png",
+        "work_copy": ".work/revision7_hero_anatomy_assets/generated-originals/mora-clear-witness-anatomy-v2-generated.png",
+        "sha256": "403fcd8a438d7d00a24306ef2329a6a1b475d46512a23447426cc4c5264f1fa2"
+      },
+      "final": {
+        "path": "assets/packaging-system/mora-clear-witness-anatomy-v2.png",
+        "sha256": "403fcd8a438d7d00a24306ef2329a6a1b475d46512a23447426cc4c5264f1fa2",
+        "pixel_width": 1672,
+        "pixel_height": 941,
+        "format": "PNG"
+      },
+      "edit_delta": "Deleted the individual fiber collar and retained exactly the transparent printed cup, separate foil, spoon and outer two-cup fiber carrier."
+    }
+  ],
+  "claim_boundary": "These are directional generated visuals. They do not prove food-contact compliance, barrier performance, migration, seal integrity, cold-chain durability, shelf life, recycling or manufacturing feasibility."
+}

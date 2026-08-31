@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0.0",
+  "mode": "commercial-photo-prompting_series_then_builtin_imagegen",
+  "series_lock": {
+    "world": "contemporary pale-mineral and brushed-stainless refrigerated-food workspace",
+    "light": "one broad upper-left soft-directional source, gentle frontal fill, 4300-4800K warm-neutral grade, restrained contrast",
+    "materials": "off-white food-work ceramic, brushed stainless, actual food textures, plausible thickness, meniscus, weight and contact shadows",
+    "food_rule": "ingredient color appears only in actual raw, preparation or yogurt states; no colored light, garnish theater or decorative food tint",
+    "people_rule": "same Stage 2 maker continuity only where action needs hands; generic production role, never founder evidence",
+    "text_rule": "no generated text, labels, numbers, arrows, packaging, barcodes, gauges or watermarks",
+    "avoid": "no apothecary, perfume, cosmetics, whiskey/spirits, labware, amber bottle, rustic wood, kraft, twine, sepia, invented equipment or unsupported claims"
+  },
+  "prompts": [
+    {
+      "prompt_id": "ST3-META-PROMPT-ATLAS-10",
+      "asset_id": "ST3-INGREDIENT-SIGNATURE-ATLAS-10",
+      "input_images": [
+        {
+          "path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/process-world/mora-infusion-library.png",
+          "role": "Stage 2 pale-mineral, stainless, light and grade reference only"
+        }
+      ],
+      "exact_prompt_lines": [
+        "Use case: product-mockup. Asset type: Stage 3 web feature explainer, signature raw ingredient atlas.",
+        "Create a photorealistic true-overhead raw ingredient atlas with exactly six clearly separated stations and no labels. This establishes raw materials before preparation, not a recipe claim.",
+        "Scene: clean contemporary brushed stainless food-work surface in the Stage 2 pale-mineral world; no horizon, wall or shelf; camera exactly 90 degrees overhead and sensor parallel to table.",
+        "Layout: exact 4:3 centered composition, two rows of three, equal rhythm, clean outer margins, no grid lines, no overlaps and no seventh object group.",
+        "Top row: thyme sprig plus spoon-size pale amber honey dollop in a low off-white ceramic dish; one clean uncut directional fig leaf in an off-white tray, isolated and not presented as ready-to-eat; small roasted buckwheat groats in an off-white tray.",
+        "Bottom row: few short yellow-orange citrus peel strips; small actual-scale black sesame mound; shallow olive-gold oil dish plus very small actual-scale coarse sea-salt pinch.",
+        "Lighting: broad upper-left soft-directional source with gentle fill, 4300-4800K warm-neutral grade, soft contact shadows, retained stainless grain and ceramic edge thickness; all six stations sharp.",
+        "No text, labels, arrows, logo, packaging or watermark. Fig Leaf remains directional; no edible-safety, species, origin or benefit implication.",
+        "Avoid glass bottles, beakers, droppers, apothecary dishes, perfume, whiskey/spirit cues, cosmetics, wood, kraft, linen, twine, rustic patina, flowers, garnish theater, oversized salt, whole citrus, extra herbs, paper labels, colored light and unsupported claims."
+      ]
+    },
+    {
+      "prompt_id": "ST3-META-PROMPT-BASES-11",
+      "asset_id": "ST3-INFUSION-BASE-LIBRARY-11",
+      "input_images": [
+        {
+          "path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/process-world/mora-infusion-library.png",
+          "role": "edit target and room/camera/light reference"
+        },
+        {
+          "path": "assets/product-renders/mora-signature-ingredient-atlas.png",
+          "role": "approved ingredient color, ceramic and restraint reference"
+        }
+      ],
+      "exact_prompt_lines": [
+        "Use case: precise-object-edit. Asset type: Stage 3 web feature explainer, six-form preparation-base library.",
+        "Change only the preparation display across the lower stainless counter of the Stage 2 target. Preserve the pale-mineral wall, shelf, sparse shelf bowls, stainless counter, strict frontal 3:2 camera, diagonal daylight and grade.",
+        "Replace clear drinking-glass liquids, extra straining basket and folded cloth with exactly six matching low off-white ceramic food-work bowls in one straight frontal line on a shared baseline.",
+        "Left to right: viscous pale amber thyme-honey syrup holding one slow ribbon; pale near-clear aqueous Fig Leaf directional preparation with slight haze and restrained green-beige cast; warm beige fine roasted-buckwheat slurry; filtered light yellow-orange citrus preparation with few suspended peel traces; opaque matte charcoal sesame paste; separate neutral olive-gold oil phase.",
+        "Place only one tiny raw cue directly before each bowl: thyme, uncut Fig Leaf segment, few buckwheat groats, two citrus threads, black sesame pinch and tiny sea-salt pinch.",
+        "Use plausible ceramic thickness, meniscus, paste ridge, particles, stainless reflections and grounded shadows. Differences come from viscosity, opacity, particle and phase behavior, not colored light.",
+        "No text, labels, arrows, logo, packaging or watermark. Fig Leaf remains safety-gated.",
+        "No drinking glasses, jars, bottles, decanters, whiskey/spirit appearance, laboratory glassware, beakers, droppers, apothecary, perfume, cosmetics, cloth, strainer, basket, paper, wood, kraft, twine, rustic patina, garnish theater, invented equipment or unsupported dose/time/process claims."
+      ]
+    },
+    {
+      "prompt_id": "ST3-META-PROMPT-MATRIX-12",
+      "asset_id": "ST3-INTERMEDIATE-TRACE-MATRIX-12",
+      "input_images": [
+        {
+          "path": "assets/product-renders/mora-signature-ingredient-atlas.png",
+          "role": "approved raw ingredient and ceramic reference"
+        },
+        {
+          "path": "assets/product-renders/mora-infusion-base-library-front.png",
+          "role": "approved preparation form, world, light and grade reference"
+        }
+      ],
+      "exact_prompt_lines": [
+        "Use case: product-mockup. Asset type: Stage 3 web feature explainer, causal raw-to-base-to-finished trace matrix.",
+        "Create a photorealistic elevated-oblique exact 3-by-3 matrix with nine stations. Each row reads left to right as raw ingredient, prepared base, finished yogurt trace without text or arrows.",
+        "Scene: brushed stainless food-work table, pale-mineral background, no shelf, person or packaging; 35-40 degree elevation, 60-70mm natural perspective, exact 4:3 centered composition, moderate depth.",
+        "Column 1 uses low oval off-white ingredient trays; column 2 small round prep bowls; column 3 low open yogurt bowls. Exactly three rows and columns, no printed grid and no tenth group.",
+        "Row 1 Thyme Honey: thyme plus honey; viscous amber base; dense ivory yogurt with one thin amber ribbon and sparse thyme through a ridge.",
+        "Row 2 Citrus Peel: short peel threads; filtered light yellow-orange prep; dense ivory yogurt with short embedded threads at two depths.",
+        "Row 3 Black Sesame: small seed mound; opaque matte charcoal paste; dense ivory/stone-grey yogurt with one retained marble and fine particles.",
+        "Use the series upper-left source, gentle fill, 4300-4800K grade, restrained contrast, ceramic thickness, plausible meniscus/paste/yogurt density and coherent contact shadows.",
+        "No text, labels, arrows, logo, packaging or watermark. No glass drinks, spirits, labware, apothecary, perfume, cosmetics, paper, retail cups, foil, rustic materials, colored light, garnish theater or unsupported recipe/SOP claims."
+      ]
+    },
+    {
+      "prompt_id": "ST3-META-PROMPT-STRAIN-13",
+      "asset_id": "ST3-PROCESS-STRAINING-13",
+      "input_images": [
+        {
+          "path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/process-world/mora-straining-whey.png",
+          "role": "apparatus, muslin, concentrate, whey, room and daylight reference"
+        },
+        {
+          "path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/process-world/mora-low-shear-fold.png",
+          "role": "same maker right-profile identity, wardrobe and grade reference"
+        }
+      ],
+      "exact_prompt_lines": [
+        "Use case: photorealistic-natural. Asset type: Stage 3 web detail proof, strict-side yogurt straining process.",
+        "Create a strict 90-degree side photograph of one vertical system: dense concentrate above, food-grade muslin on a perforated stainless frame, pale acid whey collecting below.",
+        "Same pale-mineral and stainless workspace. Same adult female maker at frame right in one-eye side profile, tied-back dark hair, charcoal shirt/apron, focused downward gaze; generic maker, not founder.",
+        "Apparatus already drains. Both hands lightly steady opposite outer frame edges without lifting, squeezing or twisting. Three to five natural gravity drips connect cloth underside to whey pan. One action only.",
+        "Dense ivory yogurt has uneven weight-bearing ridges; muslin is wet only at contact and shows woven thickness; level rectangular perforated frame rests on simple legs; shallow stainless pan holds pale translucent straw-yellow whey, not neon green.",
+        "Native 3:2, sensor parallel to apparatus side, 55-70mm perspective, camera at frame height, apparatus fully visible from yogurt top to pan base, f/8-like depth. No three-quarter or overhead cheat.",
+        "Use broad upper-left daylight, gentle fill, 4300-4800K grade, retained stainless highlights, muslin weave, dense dairy texture, whey translucency and grounded shadows.",
+        "No text, gauges, thermometer, batch record, packaging or watermark. No invented equipment, press, pump, nozzle, tubing, labware, apothecary, perfume, cosmetics, spirits, paper labels, rustic styling or claims of time, yield, temperature, pH, nutrition, upcycling, handmade, small batch or SOP."
+      ]
+    },
+    {
+      "prompt_id": "ST3-META-PROMPT-FOLD-14",
+      "asset_id": "ST3-PROCESS-FOLDING-14",
+      "input_images": [
+        {
+          "path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/process-world/mora-low-shear-fold.png",
+          "role": "same maker, wardrobe, paddle, bowl, room, action and daylight reference"
+        },
+        {
+          "path": "assets/product-renders/mora-infusion-base-library-front.png",
+          "role": "approved preparation-base viscosity and grade reference"
+        },
+        {
+          "path": "assets/product-renders/mora-intermediate-trace-matrix.png",
+          "role": "approved Thyme Honey finished-trace reference"
+        }
+      ],
+      "exact_prompt_lines": [
+        "Use case: photorealistic-natural. Asset type: Stage 3 web detail proof, low-shear folding action.",
+        "Create a tight three-quarter process detail showing one low-shear fold of a measured Thyme Honey base into dense strained yogurt. Evidence: measured base cup, broad paddle, standing yogurt ridge and one retained pale amber trace with sparse thyme.",
+        "Same pale-mineral/stainless workspace. Show only charcoal-apron torso, natural forearms and hands from lower chest down; crop face so it cannot read as founder portrait. One low off-white ceramic bowl grounded on stainless.",
+        "Dominant hand draws one broad stainless paddle slowly up and over, forming one heavy ridge. Other hand steadies bowl wall. Small plain stainless measuring cup sits beside bowl with thin residual amber coating; do not pour and fold simultaneously.",
+        "Dense ivory yogurt deforms around paddle and retains a broad ridge, not decorative whipped swirl. One thin amber internal ribbon with sparse actual-scale thyme remains along fold and continues into depth; no surface drizzle or garnish.",
+        "Native 3:2, tight 3/4 at 25-30 degree downward elevation, 25-35 degree azimuth, 70-85mm close perspective, bowl/hands 72-78% occupancy, measure/paddle/ridge/trace legible, no cropped fingertips, paddle contact or bowl base.",
+        "Use broad upper-left daylight, gentle fill, 4300-4800K grade, natural skin pressure, stainless reflection, ceramic thickness, yogurt weight and grounded shadows.",
+        "No text, measuring marks, recipe card, packaging or watermark. No whisk, mixer, blender, pouring stream, multiple actions, labware, apothecary, perfume, cosmetics, spirits, paper labels, foil, cloth, rustic styling, garnish theater or claims of dose, time, temperature, shear, batch, handmade, small batch, founder authorship, recipe or SOP."
+      ]
+    }
+  ]
+}

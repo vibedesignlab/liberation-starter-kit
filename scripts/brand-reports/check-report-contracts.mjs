@@ -78,6 +78,44 @@ const reviewByType = {
   landing_materials: 'landing_materials',
 };
 
+fixtures.extended_brand_anatomy.sections.design_token_direction = {
+  key_insight: 'Rendered token insight.',
+  color: [{
+    token: 'color.canvas',
+    role: 'Canvas',
+    relationship: 'new',
+    source_basis: 'Source basis.',
+    target_direction: 'Target direction.',
+    landing_use: 'Landing background.',
+    status: 'directional',
+    value: '#F2EFE8',
+    on_color: '#242522',
+  }],
+  typography: [{
+    token: 'type.display',
+    role: 'Display',
+    relationship: 'new',
+    source_basis: 'Source basis.',
+    target_direction: 'Target direction.',
+    landing_use: 'Hero headline.',
+    status: 'directional',
+    font_family: 'Outfit, sans-serif',
+    font_size: '5.5rem',
+    font_weight: 700,
+    line_height: 0.95,
+    sample: 'Live type specimen.',
+  }],
+};
+
+fixtures.extended_brand_anatomy.sections.brand_mood_and_brand_imagery = {
+  key_insight: 'Rendered mood insight.',
+  supporting_series: [{
+    asset_id: 'ST2-AMBIENT-CONTRACT-01',
+    role: 'ambient_key_visual',
+    local_path: '/brand-reports/contract-fixture/assets/ambient-contract.png',
+  }],
+};
+
 for (const [artifactType, fixture] of Object.entries(fixtures)) {
   const report = normalizeBrandReport(fixture, {
     review: {
@@ -93,6 +131,24 @@ for (const [artifactType, fixture] of Object.entries(fixtures)) {
   const actualIds = report.sections.map(({ id }) => id);
   if (JSON.stringify(expectedIds) !== JSON.stringify(actualIds)) {
     throw new Error(`${artifactType} section contract drifted.`);
+  }
+  if (artifactType === 'extended_brand_anatomy') {
+    const tokenSection = report.sections.find(({ id }) => id === 'design-token-direction');
+    const tokenBlockTypes = tokenSection?.blocks.map(({ type }) => type) ?? [];
+    if (!tokenBlockTypes.includes('color-tokens')) {
+      throw new Error('Extended report must render directional colors as swatches.');
+    }
+    if (!tokenBlockTypes.includes('typography-specimens')) {
+      throw new Error('Extended report must render directional typography as live specimens.');
+    }
+    const conceptSection = report.sections.find(({ id }) => id === 'source-grammar-application');
+    const ambientEvidence = conceptSection?.blocks.find((block) => (
+      block.type === 'evidence-grid'
+      && block.items?.some(({ id }) => id === 'ST2-AMBIENT-CONTRACT-01')
+    ));
+    if (!ambientEvidence) {
+      throw new Error('Extended report must lead with ambient key visuals as image evidence.');
+    }
   }
 }
 

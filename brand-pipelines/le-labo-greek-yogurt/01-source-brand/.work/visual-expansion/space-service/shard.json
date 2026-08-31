@@ -1,0 +1,228 @@
+{
+  "shard_id": "visual-expansion-space-service",
+  "brand": "Le Labo Fragrances",
+  "capture_date": "2026-08-25",
+  "scope": "Current official masterbrand imagery for labs, space, formulation, refill and service ceremony; source-only.",
+  "method": {
+    "browser_automation_used": false,
+    "acquisition": "Direct HTTPS downloads from official Le Labo and Estée Lauder Companies pages/CDNs.",
+    "verification": "Local file signature, dimensions and SHA-256; visual inspection of downloaded files.",
+    "rights_baseline": "Research reference only; copyright remains with Le Labo / The Estée Lauder Companies or their licensors. No reuse license inferred."
+  },
+  "images": [
+    {
+      "id": "SS-01",
+      "title": "Le Labo laboratory-store interior",
+      "source_page_title": "Le Labo – The Estée Lauder Companies Inc.",
+      "source_page_url": "https://www.elcompanies.com/en/our-brands/le-labo",
+      "asset_url": "https://media.elcompanies.com/images/e/estee-lauder-companies/global/our-brands/le-labo/hero-image-lelabo.jpg",
+      "local_path": "evidence/visual-expansion/space-service/SS-01-parent-brand-hero.jpg",
+      "mime": "image/jpeg",
+      "width": 2000,
+      "height": 1313,
+      "sha256": "0ea1323ee36e62207175c5660d3735b89f7cc34abedb4dc592af84cab3be7d02",
+      "layer": "space-and-service",
+      "role": "laboratory-store system overview",
+      "credit": "The Estée Lauder Companies / Le Labo",
+      "rights": "Official parent-company asset; research use only; copyrighted.",
+      "visual_observations": [
+        "Wide interior establishes the boutique as a working laboratory rather than a polished salon.",
+        "Black steel glazing reveals a back-room work zone while retaining physical separation.",
+        "Weathered plaster, white tile, dark timber, worn leather and industrial lamps make age and use visible.",
+        "Repeated labeled bottles and kraft drawers turn stock organization into a graphic wall system.",
+        "Small LE LABO wall signage is subordinate to the environment and apparatus."
+      ]
+    },
+    {
+      "id": "SS-02",
+      "title": "About-page lab workwall banner",
+      "source_page_title": "ABOUT US | Le Labo Fragrances",
+      "source_page_url": "https://www.lelabofragrances.com/about-us.html",
+      "asset_url": "https://lelabo.ips.photos/lelabo-java/images/cms/7_ONE_SIZE_IMAGE_01_7809_344429774.jpg",
+      "local_path": "evidence/visual-expansion/space-service/SS-02-about-lab-banner.jpg",
+      "mime": "image/jpeg",
+      "width": 2800,
+      "height": 740,
+      "sha256": "f5d0168d56ca36f40d9140175c63cfd4a4dd12f12ef6906c29f3d9d5d80e0e5f",
+      "layer": "space-and-service",
+      "role": "material environment and working inventory",
+      "credit": "Le Labo official website",
+      "rights": "Official first-party CDN asset; research use only; copyrighted.",
+      "visual_observations": [
+        "Panoramic composition reads as a catalog of work materials: bundled kraft sleeves, dark bottles, boxes, a candle and tools.",
+        "A magnifying task lamp and manual press-like device signal inspection and hand operations.",
+        "Rough exposed tile and patched wall surfaces resist pristine luxury finishing.",
+        "LE LABO INC. stamps appear on utilitarian pouches and boxes rather than as ornamental signage.",
+        "Muted gray, kraft brown, black and warm task light form the environmental palette."
+      ]
+    },
+    {
+      "id": "SS-03",
+      "title": "Fresh formulation / refill pour",
+      "source_page_title": "ABOUT US | Le Labo Fragrances",
+      "source_page_url": "https://www.lelabofragrances.com/about-us.html",
+      "asset_url": "https://lelabo.ips.photos/lelabo-java/images/content/1635_ONE_SIZE_IMAGE_01_15414_-14777587.jpg",
+      "local_path": "evidence/visual-expansion/space-service/SS-03-refill-navigation.jpg",
+      "mime": "image/jpeg",
+      "width": 1500,
+      "height": 1500,
+      "sha256": "a8e93fb6c03853a0e33880f2c1fd009a7071f63df7518461aaca4a3d498a4a96",
+      "layer": "space-and-service",
+      "role": "technician action, fresh formulation and personalized object",
+      "credit": "Le Labo official website",
+      "rights": "Official first-party CDN asset; research use only; copyrighted.",
+      "visual_observations": [
+        "Tight crop centers two hands pouring clear liquid from a beaker into an AMBRETTE 9 bottle beside a digital scale.",
+        "The visible paper label carries scent, formula-style information, formulation date and personalization fields.",
+        "Hands, vessel and scale make precision service legible without showing a posed employee portrait.",
+        "Window mesh, worn equipment and low natural light keep the action embedded in a working lab.",
+        "The image connects refill/formulation, measurement and personalization in one service moment."
+      ]
+    },
+    {
+      "id": "SS-04",
+      "title": "Online refill return — cap bottle",
+      "source_page_title": "Refill Program | FAQ | Le Labo Fragrances",
+      "source_page_url": "https://www.lelabofragrances.com/faq/refill-program.html",
+      "asset_url": "https://s3.amazonaws.com/lelabo-java/images/cms/539_IMG_360_IMAGE_01_15433_-1664222520.png",
+      "local_path": "evidence/visual-expansion/space-service/SS-04-refill-step-1.png",
+      "mime": "image/png",
+      "width": 341,
+      "height": 341,
+      "sha256": "0739623178b1ba395a8714541b56f4cf6ffbe21f858bbc5e1fa265d86f9ed25b",
+      "layer": "service-behavior",
+      "role": "refill ceremony opening action",
+      "credit": "Le Labo official FAQ",
+      "rights": "Official first-party service illustration; research use only; copyrighted.",
+      "visual_observations": [
+        "Sparse monoline drawing isolates hands securing the bottle cap.",
+        "The customer is depicted as an active participant preparing the existing object for return.",
+        "Black line on transparency echoes instructional and workshop notation rather than lifestyle illustration."
+      ]
+    },
+    {
+      "id": "SS-05",
+      "title": "Online refill return — place bottle in platform",
+      "source_page_title": "Refill Program | FAQ | Le Labo Fragrances",
+      "source_page_url": "https://www.lelabofragrances.com/faq/refill-program.html",
+      "asset_url": "https://s3.amazonaws.com/lelabo-java/images/cms/539_IMG_360_IMAGE_03_15435_-1923547518.png",
+      "local_path": "evidence/visual-expansion/space-service/SS-05-refill-step-3.png",
+      "mime": "image/png",
+      "width": 325,
+      "height": 325,
+      "sha256": "82e454d760a13523cbcec2e1f2432024478c54a85dc24bd6a75e8fa14902cd33",
+      "layer": "service-behavior",
+      "role": "object retention and protective packing",
+      "credit": "Le Labo official FAQ",
+      "rights": "Official first-party service illustration; research use only; copyrighted.",
+      "visual_observations": [
+        "Bottle silhouette is centered inside a hatched cardboard platform while hands guide it into place.",
+        "The existing bottle remains the hero object; the package is designed around its safe return.",
+        "Hatching communicates humble paperboard material without color or decorative styling."
+      ]
+    },
+    {
+      "id": "SS-06",
+      "title": "Online refill return — review invoice",
+      "source_page_title": "Refill Program | FAQ | Le Labo Fragrances",
+      "source_page_url": "https://www.lelabofragrances.com/faq/refill-program.html",
+      "asset_url": "https://s3.amazonaws.com/lelabo-java/images/cms/539_IMG_360_IMAGE_05_15437_-164326601.png",
+      "local_path": "evidence/visual-expansion/space-service/SS-06-refill-step-5.png",
+      "mime": "image/png",
+      "width": 432,
+      "height": 388,
+      "sha256": "a17ec6d76a3fcdf1a48f353265c42f4fadeee547b7f7675d8708173caa617b92",
+      "layer": "service-behavior",
+      "role": "documentation and identity checkpoint",
+      "credit": "Le Labo official FAQ",
+      "rights": "Official first-party service illustration; research use only; copyrighted.",
+      "visual_observations": [
+        "Two hands hold an invoice marked with the Le Labo wordmark.",
+        "Paperwork is treated as a visible step in the ceremony, reinforcing record-keeping and traceability.",
+        "The restrained line drawing places brand authorship on a functional document."
+      ]
+    },
+    {
+      "id": "SS-07",
+      "title": "Online refill return — place invoice in platform",
+      "source_page_title": "Refill Program | FAQ | Le Labo Fragrances",
+      "source_page_url": "https://www.lelabofragrances.com/faq/refill-program.html",
+      "asset_url": "https://s3.amazonaws.com/lelabo-java/images/cms/539_IMG_360_IMAGE_06_15438_-665847798.png",
+      "local_path": "evidence/visual-expansion/space-service/SS-07-refill-step-6.png",
+      "mime": "image/png",
+      "width": 394,
+      "height": 386,
+      "sha256": "674ccdaa99c685d0e66703af37bfa93a2f5f75e21aba1f0dd7980d5cd3d0235f",
+      "layer": "service-behavior",
+      "role": "documentation joined to physical object",
+      "credit": "Le Labo official FAQ",
+      "rights": "Official first-party service illustration; research use only; copyrighted.",
+      "visual_observations": [
+        "A directional arrow shows the branded invoice entering the same protective platform as the bottle.",
+        "The service system binds identity data and physical vessel before shipment.",
+        "Hand-drawn instructional style makes an operational action feel deliberately human."
+      ]
+    },
+    {
+      "id": "SS-08",
+      "title": "Online refill return — carrier handoff",
+      "source_page_title": "Refill Program | FAQ | Le Labo Fragrances",
+      "source_page_url": "https://www.lelabofragrances.com/faq/refill-program.html",
+      "asset_url": "https://s3.amazonaws.com/lelabo-java/images/cms/539_IMG_360_IMAGE_07_15439_1777631720.png",
+      "local_path": "evidence/visual-expansion/space-service/SS-08-refill-step-7.png",
+      "mime": "image/png",
+      "width": 364,
+      "height": 330,
+      "sha256": "c6eea11bfb907ae1d7bae5dbc6eee8736a0378695748f660305fc71df77ec3fc",
+      "layer": "service-behavior",
+      "role": "service handoff and circulation",
+      "credit": "Le Labo official FAQ",
+      "rights": "Official first-party service illustration; research use only; copyrighted.",
+      "visual_observations": [
+        "A hand places the hatched return parcel at a carrier counter.",
+        "The final selected frame makes product circulation, rather than disposal, the closure of the customer-side ritual.",
+        "Generic carrier architecture keeps attention on the reusable vessel's journey."
+      ]
+    }
+  ],
+  "cross_image_observations": [
+    "Space is authored through functional repetition, visible inventory and work zones rather than decorative abundance.",
+    "Rough mineral surfaces, blackened steel, dark timber, kraft paper, clear glass and worn leather make material age and touch legible.",
+    "Service evidence privileges hands, tools, measurement, documents and existing vessels over smiling retail portraits.",
+    "The same laboratory logic scales from architecture to label fields to the refill-return diagram sequence.",
+    "Brand signage is typically small and embedded in working surfaces, packaging stamps, labels or documents."
+  ],
+  "duplicate_check": {
+    "status": "passed",
+    "method": "Compared SHA-256 values against all pre-existing files under 01-source-brand/evidence; no exact matches among the eight included assets.",
+    "included_sha256_unique": true
+  },
+  "exclusions": [
+    {
+      "asset_url": "https://lelabo.ips.photos/lelabo-java/images/cms/7_ONE_SIZE_IMAGE_02_12241_-354847209.jpg",
+      "reason": "Already present as evidence/visuals/EV-LL-004-roots-first-lab.jpg; excluded as existing evidence."
+    },
+    {
+      "asset_url": "https://media.elcompanies.com/images/e/estee-lauder-companies/global/our-brands/le-labo/banner-image-mobile-lelabo.jpg",
+      "reason": "Mobile derivative of the included parent-company hero; excluded to avoid crop duplication."
+    },
+    {
+      "asset_url": "https://s3.amazonaws.com/lelabo-java/images/cms/539_IMG_360_IMAGE_02_15434_1925800292.png",
+      "reason": "Refill step 2 is a near-adjacent platform-opening frame; omitted to keep the sequence compact."
+    },
+    {
+      "asset_url": "https://s3.amazonaws.com/lelabo-java/images/cms/539_IMG_360_IMAGE_04_15436_-1180784463.png",
+      "reason": "Refill step 4 is a near-adjacent bottle-securing frame; omitted in favor of the more legible placement frame."
+    },
+    {
+      "asset_url": "https://lelabo.ips.photos/lelabo-java/images/cms/450_SMALL_IMAGE_01_12295_2116627810.jpg",
+      "reason": "Already present as evidence/visuals/EV-LL-007-neon-sign-film-poster.jpg."
+    }
+  ],
+  "limitations": [
+    "The parent-company interior image is official but its precise store location and shoot date are not stated on the page.",
+    "The About banner and refill navigation image have no named photographer credit in page markup.",
+    "The refill diagrams document the online return path; they do not depict the in-store refill interaction.",
+    "Visual observations describe only the downloaded frames and do not claim every global lab uses identical architecture."
+  ]
+}

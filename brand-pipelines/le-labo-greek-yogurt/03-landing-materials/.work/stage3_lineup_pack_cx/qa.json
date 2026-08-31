@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.1.0",
+  "job_id": "stage3_lineup_pack_cx",
+  "decision": "pass",
+  "method": [
+    "Accepted Stage 2 canonical and acceptance status used as the visual approval basis for the seven copied renders.",
+    "Source/output SHA-256 equality used to verify that the six product portraits and package anatomy were copied without visual alteration.",
+    "Thyme Honey source and package anatomy inspected at original detail before reference use.",
+    "New customer-experience output inspected at original detail with local view_image; 1535x1024 PNG confirmed with sips.",
+    "All JSON validated with jq and all new asset/prompt paths checked locally; no browser automation used."
+  ],
+  "asset_checks": [
+    {
+      "asset_id": "ST3-PRODUCT-THYME-HONEY-01",
+      "check": "accepted source identity and copy integrity",
+      "evidence": "1254x1254 output SHA-256 equals accepted Stage 2 source; transparent direct-print cup, foil, spoon and Thyme Honey trace are unchanged.",
+      "result": "pass"
+    },
+    {
+      "asset_id": "ST3-PRODUCT-FIG-LEAF-02",
+      "check": "accepted source identity, copy integrity and conditional boundary",
+      "evidence": "1254x1254 output SHA-256 equals accepted Stage 2 source; prompt preserves species/edible-part/toxicology/regulatory gate.",
+      "result": "pass"
+    },
+    {
+      "asset_id": "ST3-PRODUCT-ROASTED-BUCKWHEAT-03",
+      "check": "accepted source identity and copy integrity",
+      "evidence": "1254x1254 output SHA-256 equals accepted Stage 2 source; no visual alteration or topping rewrite.",
+      "result": "pass"
+    },
+    {
+      "asset_id": "ST3-PRODUCT-CITRUS-PEEL-04",
+      "check": "accepted source identity and copy integrity",
+      "evidence": "1254x1254 output SHA-256 equals accepted Stage 2 source; no visual alteration or marmalade claim.",
+      "result": "pass"
+    },
+    {
+      "asset_id": "ST3-PRODUCT-BLACK-SESAME-05",
+      "check": "accepted source identity and copy integrity",
+      "evidence": "1254x1254 output SHA-256 equals accepted Stage 2 source; bright yogurt body and stone-grey marble remain unchanged.",
+      "result": "pass"
+    },
+    {
+      "asset_id": "ST3-PRODUCT-OLIVE-OIL-SEA-SALT-06",
+      "check": "accepted source identity, copy integrity and claim boundary",
+      "evidence": "1254x1254 output SHA-256 equals accepted Stage 2 source; prompt forbids unsupported grade, origin, mineral, sodium and health claims.",
+      "result": "pass"
+    },
+    {
+      "asset_id": "ST3-PACKAGING-ANATOMY-15",
+      "check": "accepted source identity, copy integrity and component separation",
+      "evidence": "1672x941 output SHA-256 equals accepted Stage 2 source; clear cup, separate foil, spoon and external carrier remain physically distinct, with no individual collar.",
+      "result": "pass"
+    },
+    {
+      "asset_id": "ST3-CUSTOMER-OPEN-SPOON-16",
+      "check": "strict-front customer action and package invariants",
+      "evidence": "Original-resolution inspection shows a 1535x1024 frontal 3:2 frame, exactly one adult hand and no face, one partially lifted foil, exactly one spoon with a spoonful/furrow, a transparent low-wide cup, readable MORA/THYME HONEY direct print, pale mineral setting and no unit paper or extra claim text.",
+      "result": "pass"
+    }
+  ],
+  "copy_checks": [
+    {
+      "check": "six-product contract completeness",
+      "evidence": "Exactly six unique product objects each contain product_name, product_usp, eyebrow, headline, description, feature_copy, proof_copy and cta plus ingredient/preparation/trace/use/status/gates.",
+      "result": "pass"
+    },
+    {
+      "check": "portfolio and release logic",
+      "evidence": "Core four, second-wave savory and conditional Fig Leaf tiers match the accepted Stage 2 commercial hypothesis and do not imply simultaneous six-SKU production.",
+      "result": "pass"
+    },
+    {
+      "check": "Clear Witness and customer journey",
+      "evidence": "L0–L4 architecture and recognition→peel→inspect→spoon→truth_panel sequence preserve direct print, external-only fiber and physical/legal validation gates.",
+      "result": "pass"
+    },
+    {
+      "check": "claim safety",
+      "evidence": "No nutrition, health, origin, packaging-performance or sustainability claim is asserted; all unknown material, recipe and release facts remain directional or gated.",
+      "result": "pass"
+    }
+  ],
+  "known_directional_limits": [
+    "The customer image compresses active foil peel and visible first-spoon evidence into one truthful sequential-use frame; it is not usability-test evidence.",
+    "All food colors, ingredient distributions and package materials must be replaced or confirmed with approved physical R&D prototypes before consumer factual use.",
+    "The generated cup artwork contains only MORA and THYME HONEY; actual market-specific legal artwork remains outside this visual and requires validation."
+  ],
+  "final_status": "ready_for_root_merge"
+}

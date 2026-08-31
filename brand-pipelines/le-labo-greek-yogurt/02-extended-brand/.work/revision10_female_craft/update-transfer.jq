@@ -1,0 +1,81 @@
+.recorded_at = "2026-08-31T08:04:05Z"
+| .product.audience = "재료의 출처와 변환 과정을 보고 판단하며, 누군가에게 내놓는 음식의 마지막 상태까지 책임지는 미식 태도에 공감하는 성인 고객"
+| .product.desired_outcome = "여성 메이커의 엄선·발효·거름·재료별 준비·마지막 폴딩과 검수 과정을 통해, 한 컵 안에 남은 재료의 상태와 만든 사람의 판단을 함께 이해하는 프리미엄 식경험"
+| .product.priorities = [
+    "여성 메이커를 장식적 모델이 아니라 재료 선택·공정 중단·기록·최종 제공을 결정하는 브랜드 권위의 주체로 세우기",
+    "엄마·아내·주방의 주인이라는 상징을 역할 규범이나 소비자 클리셰가 아니라 가족의 미식에 대한 축적된 관찰과 마지막 책임으로 번역하기",
+    "벽돌·콘크리트 외피, 노화된 기능 재료, 밀도 높은 재고와 저조도 작업등을 가진 food manufactory를 만들되 식품 접촉 구역은 밀봉 표면·스테인리스·위생 설비로 사실적으로 구분하기",
+    "발효·거름·유청 분리·재료별 인퓨전 베이스·저전단 폴딩·충전·밀봉·마지막 검수를 입력→도구→행동→중간 결과→기록의 인과 구조로 보여 주기",
+    "cultured gel, acid whey, strained base, aqueous infusion, syrup, grain slurry, seed paste, oil phase 또는 검증된 emulsion, folded batch를 중간 산출물 아카이브로 구성하기",
+    "150 g 떠먹는 용도가 즉시 읽히는 낮고 넓은 투명 wide-mouth jar를 사용하고 실제 음식이 외면의 60–70% 이상에서 보이게 하기",
+    "부분 uncoated paper Batch Record label에 고정된 식품 규격 정보와 제한된 maker initials·final check만 결합하고 법정 식품 정보는 표준화된 인쇄로 유지하기",
+    "정확한 Le Labo 약국 격자, 향명+숫자, 도시·날짜 의식, 향수병 실루엣, 워드마크와 트레이드 드레스는 복제하지 않기",
+    "프리미엄을 광택·파스텔·꽃·부드러운 곡선이 아니라 실제 재료 편차, 사용 흔적, 반복 기록과 마지막 판단으로 만들기",
+    "브랜드 무드의 어두운 로우키 사진과 제품 사실을 위한 색 정확한 증거 사진을 명확히 분리하기",
+    "여섯 레시피가 같은 jar·라벨 위계·공정 기록을 공유하고 실제 음식의 ribbon·fleck·thread·marble·oil interface와 사용 순간만 통제해 바꾸기",
+    "창립자 이름·경력·가족사·최초 배치·직접 인용은 인터뷰와 기록 확인 전 공개 사실로 만들지 않기"
+  ]
+| .source_relationship.qualities_to_apply = [
+    "작업 흔적과 재료가 광택보다 먼저 프리미엄을 만드는 관계",
+    "손·도구·원료의 관찰 가능한 행동이 장인성을 증명하는 이미지 문법",
+    "기능적 재고·작업대·노화된 재료와 도시 건축이 함께 만드는 working lab 공간 문법",
+    "중립 용기와 분류형 정보 위계가 반복 제품군의 비교와 개체 기록을 동시에 지지하는 구조",
+    "종이·유리·잉크·금속·내용물이 서로 다른 기능을 수행하는 물성 관계",
+    "개인화가 라벨 출력·부착·계량·충전·기록이라는 실제 서비스 행동과 결합되는 원리",
+    "감각 장면에서 제품 사실로 이동하고 반복 제품군을 한 번의 인간 행동으로 깨우는 구성"
+  ]
+| .source_relationship.traits_to_avoid = [
+    "Le Labo 워드마크와 식별 가능한 약국형 라벨 레이아웃",
+    "원료명 또는 향명+숫자 명명 방식",
+    "향수병·앰버 약병·조향 기구 실루엣과 식별 가능한 Le Labo 랩·스토어 트레이드 드레스",
+    "We believe 선언문과 개인 이름·도시·날짜를 그대로 반복하는 라벨 의식",
+    "Le Journal 신문 판형·판화 구성·향수 광고의 직접적인 흑백 모사",
+    "여성성을 핑크·파스텔·꽃·곡선·미소 짓는 접객 인물로 환원하는 표현",
+    "위생과 실제 공정 원인 없이 먼지·녹·얼룩을 장인성으로 소비하는 가짜 빈티지"
+  ]
+| .understood_direction = [
+    "MORA는 재료의 이름을 붙이는 브랜드가 아니라, 한 여성 메이커가 재료를 엄선하고 변화의 마지막 상태까지 책임지는 프리미엄 크래프트 그릭요거트다.",
+    "여성은 타깃 성별이나 장식 미감이 아니라 선택하고 기억하고 비교하고 멈추고 기록하는 미식 권위의 원형이다.",
+    "엄마·아내·주방의 주인이라는 상징은 누군가에게 내놓는 음식의 마지막 상태를 책임지는 태도로 번역하며 확인되지 않은 실제 창립자 가족사는 만들지 않는다.",
+    "Le Labo에서 가져오는 것은 작업 흔적, 기능적 랩, 기록 라벨, 물성 대비, 실제 개인화 행동의 의미 구조이며 정확한 표면과 트레이드 드레스는 복제하지 않는다.",
+    "브랜드 인간 원형은 The Keeper of Taste / 끝까지 보는 사람이고, 제조 방법론은 Measured Transformation, 인간적 브랜드 정신은 The Last Measure / 마지막 확인이다.",
+    "공간은 어두운 graphite brick·concrete shell, sealed hygienic food-contact surface, brushed stainless island, 기능적 재고와 국소 작업등으로 구성한다.",
+    "거칠음은 먼지나 불결함이 아니라 수선, 사용, 재고 밀도, 재료 편차, 손자국과 반복 기록에서 나온다.",
+    "제조 서사는 Selection → Culture → Separation → Infusion Archive → Last Fold → Fill·Seal·Final Check의 원인–행동–결과 순서다.",
+    "중간 산출물은 cultured gel, acid whey, strained base와 재료별 aqueous infusion·syrup·slurry·paste·oil phase 또는 검증된 emulsion으로 사실적으로 구분한다.",
+    "패키지는 낮고 넓은 투명 150 g wide-mouth spoon jar, 부분 uncoated Batch Record label, 검증된 closure와 외부 냉장 운송 구조로 구성한다.",
+    "음식 가시 영역은 외면의 60–70% 이상을 유지하고 종이 라벨은 내용물을 숨기는 full wrap이나 Le Labo 약국 격자가 되지 않는다.",
+    "라벨의 고정 필드는 RECIPE·MILK LOT·CULTURED·STRAINED·FOLDED·PACKED·KEEP COLD·NET WT 같은 식품 고유 기록이며 손 표식은 maker initials와 실제 final check로 제한한다.",
+    "브랜드 무드는 저조도 task light 아래 한 여성 메이커가 고르고·비교하고·멈추고·기록하는 장면이며 패션 포즈나 모성 클리셰를 사용하지 않는다.",
+    "키 비주얼은 한 입력 재료·한 도구·한 행동·한 중간 결과·한 기록을 사진 한 장에서 인과적으로 연결한다.",
+    "어두운 mood photography와 식품·패키지 상태를 색 정확하게 보여 주는 product proof photography를 분리한다.",
+    "여섯 레시피는 같은 jar·라벨 정보 위계·공정 기록을 공유하고 실제 음식 흔적·중간 베이스·사용 순간만 통제해 바꾼다.",
+    "플래그십은 Ingredient Archive, Batch Wall, Infusion Library, Straining Table, Finish Table과 Personal Batch Card로 브랜드 세계를 실제 선택·기록 경험으로 만든다.",
+    "S2가 다시 승인되기 전에는 이 방향을 S3의 확정 공개 카피·제품 이미지로 승격하지 않는다."
+  ]
+| .visual_priority = "첫 인상은 dark graphite food manufactory 안에서 여성 메이커가 재료 또는 중간 상태를 비교하고 마지막 판단을 기록하는 사진이다. 제품 히어로는 낮고 넓은 투명 wide-mouth jar, 60–70% 이상의 내용물 가시 영역, 부분 uncoated Batch Record label, 열린 요거트 표면과 실제 재료 흔적을 함께 보여 준다. mood frame은 brick·concrete·stainless·기능 재고·저조도 task light를 사용하고, proof frame은 실제 음식색·라벨 가독성·wide-mouth 사용성을 중립적으로 증명한다."
+| .landing_goal = "여성 메이커의 엄선과 마지막 책임을 첫 장면에서 선언한 뒤, Selection → Culture → Separation → Infusion Archive → Last Fold → Final Check의 제조 인과, 중간 산출물 컬렉션, Batch Record Jar의 형태와 기록, 여섯 레시피의 존재 이유, 플래그십의 Personal Batch Card까지 연결해 MORA의 크래프트 정신을 이해시키고 선택으로 전환한다."
+| .narrative_preference = "끝까지 보는 사람 → 무엇을 고르고 무엇을 제외하는가 → 같은 요거트 베이스가 시간과 거름으로 몸을 얻는 과정 → 재료마다 다른 중간 형태 → 한 번의 마지막 폴딩 → 배치 기록과 제공 책임 → 한 컵의 선택. 실제 창립자 이름·가족사·경력·첫 실험·직접 인용은 확인 뒤에만 공개 카피로 전환한다."
+| .assumptions = [
+    "MORA와 모든 제품명은 상표·법무 검토 전 방향성 작업명이다.",
+    "여섯 레시피, 150 g 규격과 모든 식품 표시 문구는 R&D·관능·제조·법무 검토 전 오픈 콘셉트다.",
+    "여성 메이커는 승인된 브랜드 원형이지만 실제 창립자의 이름·경력·가족 관계·창업 계기·첫 실험·직접 인용·초상 권리는 아직 제공되지 않았다.",
+    "엄마·아내·주방의 주인은 가족의 미식에 대한 책임을 설명하는 상징이며 특정 성별의 의무나 소비자 역할을 주장하지 않는다.",
+    "벽돌·콘크리트는 비식품 접촉 shell과 촬영 세계관의 방향이며 실제 제조 시설의 위생 zoning, 세척성, 배수, 해충 관리와 HACCP 적합성을 대신하지 않는다.",
+    "투명 wide-mouth primary jar, closure, 부분 종이 라벨, 접착제, 잉크와 외부 carrier는 barrier·migration·seal·condensation·rub·cold-chain·shelf-life 시험 전 생산 사양이 아니다.",
+    "손글씨 maker initials와 final check는 실제 운영 절차가 확인될 때만 사용하며 법정 정보·serve-by·allergen·storage·lot traceability를 임의 필기로 대체하지 않는다.",
+    "가열 온도·시간, 접종 조건, 목표 pH, 거름 시간, 인퓨전 배합, 폴딩 조건, 충전·보관과 유통기한은 파일럿 제조·HACCP·challenge study 후 확정한다.",
+    "Fig Leaf의 종·부위·latex·furanocoumarin·식용 적합성과 Olive Oil & Sea Salt의 유화·염도·관능 안정성은 별도 검증 전이다.",
+    "영양·고단백·저당·프로바이오틱·소화·건강·원산지·지속가능성·handmade·small-batch 주장은 검증 없이 사용하지 않는다.",
+    "어두운 브랜드 사진은 실제 식품색과 위생 상태를 왜곡하는 제품 증거로 사용하지 않으며 별도의 color-accurate proof photography를 제작한다.",
+    "S2 revision 10은 기존 direct-print-only와 warm mineral-ivory 방향을 대체하며, S3는 새 S2가 승인된 뒤에만 동기화한다."
+  ]
+| .user_response_excerpts += [
+    "르라보가 남성 장인이 만든 크래프트 맨신, 수작업, 제조 과정과 재료를 그대로 드러낸 크래프트 향수 브랜드라면, 모라는 이 정신을 이어받되 대신 여성 장인이 만든 프리미엄 크래프트 그릭 요거트.",
+    "여성이라는 의미는 사회적 클리셰로 소비되는 여성이 아닌 주방의 주인, 엄선된 수집가, 엄마, 아내 등 가족의 미식에 책임감과 장인정신을 갖는 상징적인 인물.",
+    "벽돌, 콘크리트로 되어있는 제조실, 실험실. 중간재료를 회색의 어두운 조명에 배치.",
+    "향수보다는 입구가 넓어야 하고 내부 질감이 보이되 규격화된 스펙을 적은 종이와 손수 적은 느낌의 라벨이 필요.",
+    "제품의 개인 라벨, 브랜드 플래그십 스토어, 중간 산출물의 컬렉션과 제조 과정을 과학적·장인적 관점에서 시각화.",
+    "재료의 순수성과 MORA만의 정제·발효·제조 과정에 기반한 ambient photography key visual이 필요.",
+    "$design-parallel-orchestration 여태까지 정리했던 내 요구사항들 진행시켜"
+  ]

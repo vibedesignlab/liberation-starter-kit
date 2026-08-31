@@ -1,0 +1,111 @@
+{
+  "asset_role": "representative_product_hero",
+  "status": "selected_after_targeted_label_correction",
+  "final_path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/revision-r10/product-hero/mora-thyme-honey-batch-record-jar-r10.png",
+  "pre_edit_backup_path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/.work/revision10_female_craft/qa/product-anchor-pre-record-fix.png",
+  "dimensions": {
+    "width_px": 1536,
+    "height_px": 1024,
+    "aspect_ratio": "3:2",
+    "format": "PNG",
+    "file_size_bytes": 2513143
+  },
+  "sha256": "70a679a094055471788b31621c39bdc07ae4d6f50bc33b1aea65bfba1328f18a",
+  "acceptance_checks": [
+    {
+      "id": "spoonable-yogurt-jar-first",
+      "status": "pass",
+      "finding": "The preserved low, straight-sided, neckless jar, very wide open mouth and active spoon make refrigerated spoonable yogurt legible before luxury packaging."
+    },
+    {
+      "id": "food-majority-and-color-truth",
+      "status": "pass",
+      "finding": "The edit preserves the majority transparent food-bearing area, neutral ivory yogurt, restrained amber honey fold and actual-scale thyme flecks. The 60–70% visibility result remains a visual estimate pending physical dieline measurement."
+    },
+    {
+      "id": "food-native-open-batch-record",
+      "status": "pass",
+      "finding": "The partial fibrous label now retains only MORA, THYME HONEY, GREEK YOGURT, 150 g and the seven requested food-process fields with simple open leader lines and one small check mark. Enclosing cells and dense pharmacy-like ruling are gone."
+    },
+    {
+      "id": "prohibited-pseudo-records-removed",
+      "status": "pass",
+      "finding": "Original-detail inspection confirms that the right regulatory column, circular GR/date emblem, fabricated dates and numbers, recycling icon, KJ initials, names, lot values, seals and certification-like marks are absent."
+    },
+    {
+      "id": "spoon-contact-and-density-furrow",
+      "status": "pass",
+      "finding": "The stainless spoon, rim overlap, yogurt contact and firm broken-edge furrow remain physically plausible after the label-only edit."
+    },
+    {
+      "id": "landing-copy-safe-zone",
+      "status": "partial",
+      "finding": "The upper-left 30–35% remains quiet, object-free graphite and can carry a headline. The preserved diagonal stainless work-surface edge still enters the lower-left zone, so CTA placement and responsive crops require layout testing."
+    },
+    {
+      "id": "partial-label-and-food-visibility-lock",
+      "status": "pass",
+      "finding": "The uncoated-looking label remains limited to the front-right portion and does not become a collar, sleeve or full wrap."
+    },
+    {
+      "id": "glass-paper-food-physicality",
+      "status": "pass",
+      "finding": "Glass wall thickness, rim highlights, base weight, paper fibers, spoon reflection and grounded contact shadow remain coherent; no unrelated scene redesign is visible."
+    },
+    {
+      "id": "neutral-product-proof-with-dark-room",
+      "status": "pass",
+      "finding": "The jar and food remain neutrally lit and readable while the graphite manufactory recedes into preserved shadow detail."
+    },
+    {
+      "id": "legal-and-production-data-boundary",
+      "status": "pass",
+      "finding": "No fabricated legal or traceability data remain in the hero. Final commercial packaging still requires a separate market-approved legal-information solution and real production records outside this conceptual image."
+    }
+  ],
+  "issues": [
+    {
+      "severity": "minor",
+      "issue": "The lower-left copy-safe field contains the preserved edge and tonal transition of the stainless work surface.",
+      "action": "Keep headline in the upper-left zone and test CTA placement at desktop and responsive crops."
+    },
+    {
+      "severity": "verification",
+      "issue": "The 60–70% edible-visibility result is a visual estimate from the generated perspective.",
+      "action": "Measure label coverage and edible witness area on the final dieline and physical prototype."
+    },
+    {
+      "severity": "required_before_packaging_production",
+      "issue": "The simplified hero label intentionally omits market-specific legal data and real lot values.",
+      "action": "Develop and validate the legal-information surface, traceability workflow, maker check governance, refrigerated label stock and print production separately."
+    }
+  ],
+  "generation_provenance": {
+    "mode": "built_in_imagegen",
+    "use_case": "precise-object-edit",
+    "operation": "single_controlled_label_edit",
+    "edit_target": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/revision-r10/product-hero/mora-thyme-honey-batch-record-jar-r10.png",
+    "pre_edit_backup_path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/.work/revision10_female_craft/qa/product-anchor-pre-record-fix.png",
+    "pre_edit_sha256": "4893d2bd24538480ef6367d33042b40b397170f5b17d0f3bf8ccdcfc9f4b5123",
+    "referenced_image_paths": [
+      "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/revision-r10/product-hero/mora-thyme-honey-batch-record-jar-r10.png"
+    ],
+    "candidate_count": 1,
+    "selected_candidate": 1,
+    "source_output_path": "/Users/ddd/.codex/generated_images/01a056d8-6f45-7dc1-9dde-52a29a971d4f/exec-6e0de569-118d-4e2e-a7e9-cad025009a6a.png",
+    "edited_at": "2026-08-31T08:21:05Z",
+    "inspection_method": "view_image original-detail inspection plus sips dimension check",
+    "browser_or_web_used": false,
+    "new_concept_or_second_edit_used": false,
+    "preserved_axes": [
+      "composition and right-third placement",
+      "jar silhouette and wide mouth",
+      "yogurt, honey and thyme food texture",
+      "glass geometry and refraction",
+      "spoon, contact and furrow",
+      "lighting, shadows and dark manufactory",
+      "left copy zone"
+    ],
+    "changed_axis": "partial paper label artwork only"
+  }
+}

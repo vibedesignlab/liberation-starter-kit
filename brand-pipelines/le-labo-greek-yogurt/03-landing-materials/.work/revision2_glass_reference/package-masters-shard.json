@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "stage3_reference_asset_shard",
+  "revision": "stage3_revision2_glass_reference",
+  "owner": "glass_product_masters",
+  "status": "ready_for_parent_registration",
+  "authority": {
+    "direction_lock": ".work/revision2_glass_reference/direction-lock.json",
+    "rule": "The registered reference image is the pixel-overlay authority for every later SKU. Prompt percentages are production targets; no SKU may drift from the approved master image even when a generator interprets numeric coordinates loosely."
+  },
+  "assets": [
+    {
+      "asset_id": "ST3-REF-GLASS-PACKAGE-MASTER-17",
+      "product_name": "MORA Glass Package Golden Master",
+      "role": "reference_package_master",
+      "communication_job": "르라보 병에서 원통형 비례·짧은 숄더·두꺼운 유리 바닥만 추출해 넓은 입구의 수저 사용형 프리미엄 그릭요거트 유리 용기로 번역하고, 이후 모든 SKU의 형상·재질·정렬 기준을 고정한다.",
+      "file_path": "assets/reference-system/mora-glass-package-master-front.png",
+      "prompt_path": "prompts/ST3-REF-GLASS-PACKAGE-MASTER-17.md",
+      "subject": "Sealed MORA premium clear-glass wide-mouth Greek-yogurt jar, locked front master on plain Cultured Cream background",
+      "aspect_ratio": "1:1",
+      "dimensions": "1536x1536",
+      "sha256": "23fb071287456cf7d7a101fae5cecd446ad3bf736ee94357bf6df73bd995936d",
+      "generation_provenance": "OpenAI built-in image generation on 2026-08-28 using the local Le Labo Santal 33 bottle photograph as geometry-only reference and the accepted MORA Thyme Honey render as food/typography-only reference. Iterated by single-axis geometry, framing, background-continuity and closure-finish edits; final plain-cap surface received restrained localized smoothing and the selected frame was resampled to 1536x1536. No source-brand wording or label was retained.",
+      "reference_lineage": [
+        "01-source-brand/evidence/visual-expansion/product-packaging/EV-PP-01-santal33-50ml-neutral.jpg — geometry role only",
+        "assets/product-renders/mora-thyme-honey-front.png — food texture and MORA restraint only",
+        "stage3_revision2_glass_reference direction lock",
+        "commercial-photo collection-grid and PDP-primary series lock"
+      ],
+      "invariants": [
+        "tall cylindrical body, short shoulder, wide food mouth and heavy optically clear glass base",
+        "premium transparent glass with plausible refraction and controlled edge highlights",
+        "plain low matte charcoal-black metal food closure with no motif or plastic grain",
+        "direct black MORA only; no paper label, sleeve, sticker or source-brand trade dress",
+        "0-degree front azimuth, 12-degree downward-elevation intent and centered authoritative face",
+        "plain Cultured Cream #F5F1E8 studio family with one upper-left soft source and grounded down-right shadow"
+      ],
+      "allowed_variation": [
+        "none in the master",
+        "later SKU frames may change only exact recipe name, internal food trace and the locked recipe cue after pixel-overlay QA"
+      ],
+      "invariant_check": "pass",
+      "status": "ready_for_registration"
+    },
+    {
+      "asset_id": "ST3-REF-PRODUCT-COMPOSITION-MASTER-18",
+      "product_name": "MORA Thyme Honey Composition Golden Master",
+      "role": "reference_product_composition_master",
+      "communication_job": "열린 유리 병, 분리형 전면 실링, 한 스푼의 제품, 타임과 꿀 레시피 단서를 하나의 고정 좌표 템플릿으로 보여 이후 모든 제품 카드가 같은 사용법과 스케일로 읽히게 한다.",
+      "file_path": "assets/reference-system/mora-product-composition-master-front.png",
+      "prompt_path": "prompts/ST3-REF-PRODUCT-COMPOSITION-MASTER-18.md",
+      "subject": "Opened MORA Thyme Honey clear-glass jar with detached food seal, spoonful and thyme-honey cue in a locked plain-background product composition",
+      "aspect_ratio": "1:1",
+      "dimensions": "1536x1536",
+      "sha256": "05d0f01850380a3e7a1a9d48c3460e42a0fd588787829193f8f3745ca9c3db3f",
+      "generation_provenance": "OpenAI built-in image generation on 2026-08-28 using the new glass-package candidate as identity/geometry reference and the accepted MORA Thyme Honey render as food-use reference. The selected frame preserved the clearest four-object usage scenario and direct-print identity, then was resampled to 1536x1536. The image itself is the golden pixel-overlay authority for later SKU placement.",
+      "reference_lineage": [
+        "ST3-REF-GLASS-PACKAGE-MASTER-17 candidate — package identity and glass geometry",
+        "assets/product-renders/mora-thyme-honey-front.png — yogurt, spoon and recipe-trace role only",
+        "stage3_revision2_glass_reference direction lock",
+        "commercial-photo collection-grid series lock"
+      ],
+      "invariants": [
+        "one opened tall clear-glass MORA jar with wide spoonable mouth and heavy base",
+        "one detached circular full-perimeter food seal at left",
+        "one stainless spoon holding one serving at lower right",
+        "one small thyme-and-honey recipe cue at upper right",
+        "every object separate, legible and non-overlapping",
+        "direct black MORA and THYME HONEY only; no paper label or source-brand trade dress",
+        "plain Cultured Cream #F5F1E8 background with unified upper-left light and down-right contact shadows"
+      ],
+      "allowed_variation": [
+        "later SKU frames may change recipe name, internal infusion trace, spoon trace and one recipe cue only",
+        "no camera, crop, object-count, object-scale, centerline, background, light-direction or prop-location variation"
+      ],
+      "invariant_check": "pass_with_pixel_master_authority",
+      "status": "ready_for_registration"
+    }
+  ],
+  "qa": {
+    "inspection_method": "Original-resolution visual inspection after every generation; final 1536x1536 workspace assets inspected with view_image original. Percent measurements are estimated against the 1254x1254 selected generation before lossless-ratio resampling.",
+    "package_master": {
+      "observed_bbox_percent": {
+        "left": 35.2,
+        "top": 17.9,
+        "right": 64.1,
+        "bottom": 80.4
+      },
+      "observed_center_percent": {
+        "x": 49.7,
+        "y": 49.2
+      },
+      "target_comparison": "pass within the locked ±2% coordinate and ±3% scale tolerances",
+      "material": "pass — thick optically clear glass wall and base, plausible edge highlights/refraction, no disposable-plastic seam or rim",
+      "closure": "pass after closure-only refinement — low, plain matte charcoal-black metal reading; decorative motif suppressed and plastic pebbled finish removed",
+      "identity": "pass — exact direct black MORA only; no paper label, LE LABO wording, perfume grid or fragrance hardware",
+      "background_and_physics": "pass — plain warm brand-ground family, coherent upper-left source and grounded down-right contact shadow"
+    },
+    "composition_master": {
+      "observed_jar_bbox_percent": {
+        "left": 35.0,
+        "top": 14.2,
+        "right": 64.5,
+        "bottom": 77.2
+      },
+      "observed_object_centers_percent": {
+        "food_seal": {"x": 17.5, "y": 75.5},
+        "spoon": {"x": 79.8, "y": 74.8},
+        "thyme_honey_cue": {"x": 84.3, "y": 64.0}
+      },
+      "coordinate_note": "The selected generative frame is visually stronger than later position-only edits but the open-mouth top and cue x-position sit slightly outside the numeric target. Therefore the approved image, not a fresh numeric interpretation, is the authoritative overlay master. The first SKU rollout must use pixel overlay and delta correction before approval.",
+      "usage_legibility": "pass — opened product, removed seal, spooned serving and recipe cue communicate a single unambiguous consumer-use scenario",
+      "object_count_and_separation": "pass — exactly one jar, one food seal, one spoon and one combined thyme-honey cue; no overlaps or unrelated props",
+      "material_and_identity": "pass — clear heavy glass, direct MORA / THYME HONEY, no paper label, plastic tub, perfume hardware or source-brand trade dress",
+      "background_and_physics": "pass — plain warm brand-ground family with coherent soft shadows and plausible glass/metal response"
+    },
+    "release_gate": [
+      "Do not generate the full SKU family until both masters are treated as immutable reference inputs.",
+      "For every SKU, attach the package master and composition master; repeat all series locks in the prompt.",
+      "Overlay the candidate against the golden image and score bbox, baseline, prop centers, background, glass response and direct-print placement.",
+      "If a check fails, edit only that causal axis and preserve every passed region.",
+      "Approve one SKU completely before starting the next SKU."
+    ]
+  }
+}

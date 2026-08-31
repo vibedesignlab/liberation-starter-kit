@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "stage3_wave_a_material_folios_style_master_shard",
+  "status": "generated_and_qa_passed",
+  "scope": "Wave A visual golden master for MORA Material Folios only. Canonical JSON, asset registry, stage review, pipeline state, public registration and generated stories remain root-owned.",
+  "direction_lock": ".work/revision3_vessel_folios/direction-lock.json#material_folios",
+  "asset_record": {
+    "asset_id": "ST3-ETCH-BRAND-TRACE-MASTER-26",
+    "name": "The Trace That Remains",
+    "product_name": "MORA Material Folios",
+    "role": "material_folios_style_golden_master",
+    "communication_job": "접힌 스트레이닝 천과 중력 방향 응유가 하나의 가는 trace로 변한 뒤 한 스푼 분량의 농축 요거트 주름으로 귀결되는 단일 연속 장면으로 process → trace → density 브랜드 명제를 문장 없이 전달한다.",
+    "file_path": "assets/editorial-etchings/mora-etching-brand-trace-master.png",
+    "prompt_path": "prompts/ST3-ETCH-BRAND-TRACE-MASTER-26.md",
+    "media_type": "image/png",
+    "dimensions": "1536x1024",
+    "aspect_ratio": "3:2",
+    "file_size_bytes": 1373435,
+    "sha256": "93506744d8ddef7e2933bf5fb3c97add2803984ff887eb85142cc9dc3f79b45b",
+    "subject": "one continuous etched material transition from folded straining cloth and gravity-held curd through a fine trace and three droplets into one smooth spoon-size concentrated-yogurt furrow",
+    "generation_provenance": "Generated once on 2026-08-29 with Codex built-in imagegen using the two inspected Stage 1 Le Journal images as style-behavior references only. The first output passed original-detail QA; no delta edit or deterministic resample was required.",
+    "reference_lineage": [
+      ".work/revision3_vessel_folios/direction-lock.json#material_folios",
+      "01-source-brand/evidence/visual-expansion/editorial-craft/VE-EC-014-le-journal-house-rules.png",
+      "01-source-brand/evidence/visual-expansion/editorial-craft/VE-EC-015-le-journal-wish-you-wore-here.png",
+      "prompts/ST3-ETCH-BRAND-TRACE-MASTER-26.md"
+    ],
+    "source_distance_boundary": {
+      "translated": [
+        "fine engraving contour discipline",
+        "restrained cross-hatching and stipple",
+        "large clean negative-space field",
+        "one surreal transition connecting real material states"
+      ],
+      "not_reproduced": [
+        "house, bottle, doorway, travel scene or suitcase composition",
+        "source-brand characters, wording, label structure or trade dress",
+        "bottle-as-doorway or house-plus-bottle collage logic"
+      ]
+    },
+    "invariants": [
+      "clean contemporary warm-cream field aligned to Cultured Cream #F5F1E8",
+      "fine near-black #171714 copperplate contour, restrained cross-hatch and stipple",
+      "landscape 3:2 with approximately 68% negative space by the occupied visual envelope",
+      "exactly one continuous impossible material transition",
+      "left-to-right reading: process → retained trace → concentrated density",
+      "three restrained gravity droplets below the cloth transition",
+      "no artwork text, logo, frame, border or source-brand object"
+    ],
+    "allowed_variation": [
+      "future folios may replace the dominant real MORA tool or material state",
+      "future folios may change the single impossible transition only",
+      "natural line-density and material-asymmetry variation within the locked etching behavior"
+    ],
+    "invariant_check": "pass",
+    "status": "generated_and_qa_passed"
+  },
+  "generation": {
+    "mode": "Codex built-in imagegen",
+    "intent": "generate with style-behavior references",
+    "use_case": "illustration-story",
+    "input_roles": {
+      "Image 1": "line-density and cross-hatch behavior only; house/bottle/suitcase arrangement explicitly prohibited",
+      "Image 2": "stipple, contour restraint and negative-space confidence only; bottle/door/landscape composition explicitly prohibited"
+    },
+    "exact_prompt_source": "prompts/ST3-ETCH-BRAND-TRACE-MASTER-26.md#exact-generation-prompt",
+    "iteration": "first generation accepted; no single-axis repair required"
+  },
+  "qa": {
+    "inspection_method": "view_image at original detail after copying the built-in output into the project-owned final path, plus file, dimension, size and SHA verification.",
+    "checks": [
+      {
+        "gate": "delivery_geometry",
+        "result": "pass",
+        "evidence": "1536x1024 RGB PNG, landscape 3:2, complete artwork uncut"
+      },
+      {
+        "gate": "negative_space",
+        "result": "pass",
+        "evidence": "the full continuum occupies a low horizontal envelope of roughly 90% width by 35% height; the surrounding uninterrupted cream field is approximately 68% of the canvas envelope"
+      },
+      {
+        "gate": "single_transition",
+        "result": "pass",
+        "evidence": "folded cloth/curd narrows into the same continuous line and that line broadens into one finished yogurt furrow; no panel or second transformation"
+      },
+      {
+        "gate": "process_trace_density_read",
+        "result": "pass",
+        "evidence": "cloth weave, curd weight and gravity droplets establish process; the quiet center line establishes trace; the held right-hand fold establishes concentrated body"
+      },
+      {
+        "gate": "line_and_material_behavior",
+        "result": "pass",
+        "evidence": "fine contours, breathable cross-hatching, restrained stipple and visible midtone material detail; no heavy woodcut black mass"
+      },
+      {
+        "gate": "palette_and_surface",
+        "result": "pass",
+        "evidence": "clean near-#F5F1E8 warm cream field with fine near-#171714 monochrome ink; no sepia, stain, paper edge, foxing or rustic substrate"
+      },
+      {
+        "gate": "artwork_text_and_frame",
+        "result": "pass",
+        "evidence": "no text, letter, numeral, label, logo, signature, watermark, frame or border"
+      },
+      {
+        "gate": "source_distance",
+        "result": "pass",
+        "evidence": "no house, perfume bottle, door, portal, suitcase, travel landscape, character or source composition is present"
+      },
+      {
+        "gate": "prohibited_tone",
+        "result": "pass",
+        "evidence": "no Victorian crest, apothecary label, dense botanical plate, heavy woodcut mass, rustic nostalgia, occult symbol or antique bookplate cue"
+      }
+    ],
+    "decision": "approve_as_wave_a_style_master",
+    "delta_edit": "not_required"
+  },
+  "wave_b_series_lock_recommendation": {
+    "freeze": [
+      "1536x1024 landscape 3:2",
+      "clean Cultured Cream ground and near-black engraving ink",
+      "65–70% negative space",
+      "fine contour, cross-hatch and stipple density",
+      "one dominant real MORA tool/material group",
+      "exactly one continuous impossible material transition",
+      "no artwork text or frame",
+      "source-distance exclusions"
+    ],
+    "permit": "change only the real MORA tool/material and the single transition outcome named by each dependent Folio brief"
+  },
+  "handoff": {
+    "canonical_write_authority": "root Stage 3 merge only",
+    "recommended_action": "Use this asset as the Wave A visual style master before generating Folios 27–35. Register only after root cross-lane review.",
+    "forbidden_from_this_shard": [
+      "canonical landing JSON edit",
+      "asset-registry edit",
+      "stage-review or pipeline-state edit",
+      "public registration or generated story edit"
+    ]
+  }
+}

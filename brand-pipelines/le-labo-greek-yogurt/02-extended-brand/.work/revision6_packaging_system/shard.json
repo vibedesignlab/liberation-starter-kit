@@ -1,0 +1,464 @@
+{
+  "artifact_type": "stage2_target_native_packaging_system_shard",
+  "schema_version": "1.0.0",
+  "status": "directional_requires_food_contact_packaging_cold_chain_and_legal_validation",
+  "scope": "Target-native MORA refrigerated Greek-yogurt packaging architecture, material truth, assembly, use, graphics and claim gates only.",
+  "source_basis": [
+    "outputs/extended-brand-anatomy.json",
+    "extended-brand-anatomy.md",
+    "transfer-input.json",
+    ".work/revision4_process_world/shard.json",
+    ".work/revision4_process_visuals/shard.json",
+    ".work/revision4_craft_world/shard.json",
+    ".work/revision5_lineup_story/shard.json"
+  ],
+  "key_decision": "MORA의 프리미엄은 베이지 종이 질감을 입힌 통짜 컵이 아니라, 음식-식품접촉 용기-필오프 실링-분리 가능한 건식 섬유 슬리브-냉장 운송용 멀티팩이 각자의 실제 기능을 드러내는 층 구조에서 생긴다.",
+  "generic_beige_paper_cup_failure": {
+    "diagnosis": "기존 이미지는 따뜻한 미색과 paper-fiber texture를 한 컵 전체에 적용하고, 열려 있는 음식 뒤에 두꺼운 원판형 리드를 세워 두었다. 그 결과 식품접촉 배리어, 실제 필오프 seal, 조립 이음, 냉장 결로와 분리 구조가 보이지 않아 premium yogurt보다 generic ice-cream tub 또는 cosmetic cream jar에 가까워졌다.",
+    "failure_causes": [
+      "종이 외관 하나에 식품 접촉, 수분·지방·산 배리어, 구조, 그래픽과 지속가능성 인상까지 모두 맡겨 실제 기능층이 사라졌다.",
+      "bare paper가 냉장 유제품과 직접 닿아도 되는 것처럼 보이지만 liner, coating, migration, seal compatibility와 shelf-life 근거가 없다.",
+      "뒤에 세운 두꺼운 원판형 lid는 full-perimeter foil seal도 재밀폐 closure도 아니어서 tamper evidence와 실제 개봉 동작을 설명하지 못한다.",
+      "림, 필오프 edge, sleeve seam과 lot/date zone 같은 물질 접점이 숨겨져 어디서 밀봉되고 무엇을 분리하는지 알 수 없다.",
+      "beige, fibrous, matte라는 표면만으로 craft·natural·eco를 암시해 검증되지 않은 지속가능성과 rustic handmade 인상을 만든다.",
+      "모든 SKU가 같은 beige cylinder와 작은 색 막대만 공유해 재료 차이가 실제 내용물보다 텍스트와 장식색에 의존한다.",
+      "냉장 충전·실링·seal check·chill·결로·cold-chain distribution을 고려한 assembly sequence가 없다.",
+      "법정 식품 정보, 알레르겐, storage, lot/date와 소비기한을 지속적으로 남길 정보 면이 설계되지 않았다."
+    ],
+    "correction": "종이는 음식과 닿지 않는 탈착식 정보·그립 층으로 후퇴시키고, 실제 refrigerated-dairy primary vessel과 matched foil seal이 containment와 tamper evidence를 맡게 한다. 사진에서도 foil edge, molded rim, sleeve lock과 개봉 후 음식 증거를 구분해 보여 준다."
+  },
+  "material_witness_rule": {
+    "definition": "보이는 모든 재료와 이음은 자신이 실제로 수행하는 한 가지 기능의 증인이어야 한다. appearance는 performance의 증거가 아니며, 성능이 다른 지점에서는 재료와 접합 방식도 눈에 보이게 바뀌어야 한다.",
+    "rules": [
+      "요거트와 내부 trace는 레시피의 증거이고, primary vessel과 foil은 식품 보호의 증거이며, fiber sleeve는 정보·그립·분리의 증거다. 서로의 역할을 시각적으로 대체하지 않는다.",
+      "molded rim, foil peel edge, sleeve seam 또는 tongue-and-slot, multipack restraint처럼 기능이 바뀌는 접점을 숨기지 않는다.",
+      "fiber texture를 보인다고 moisture barrier, insulation, recyclability 또는 sustainability를 주장하지 않는다.",
+      "foil을 보인다고 freshness, oxygen barrier, tamper evidence 또는 shelf life를 주장하지 않는다. 실제 laminate, seal window, integrity와 product study가 필요하다.",
+      "ingredient color는 실제 edible trace를 찾는 locator일 뿐 flavor intensity, origin, grade, nutrition 또는 premium metallic의 증거가 아니다.",
+      "열린 제품 사진에는 제거된 실제 foil 또는 깨끗한 peel edge를 보여 주고, 존재하지 않는 hinged paper lid를 세우지 않는다.",
+      "기능을 설명하지 못하거나 분리·검증할 수 없는 장식 layer, faux seam, wax seal, string, stamp와 cosmetic overcap은 추가하지 않는다."
+    ],
+    "visual_test": "브랜드명과 카피를 가려도 viewer가 음식, sealed food-contact cup, peelable barrier, removable dry information layer와 multipack restraint의 차이를 순서대로 설명할 수 있어야 한다."
+  },
+  "packaging_thesis": {
+    "system_name": "MORA Material Witness Pack",
+    "product_native_read": "낮고 넓은 refrigerated yogurt vessel을 정확히 밀봉하고, 개봉 순간에만 edible evidence를 드러내며, 바깥의 dry fiber sleeve가 정보와 손의 접점을 만든다.",
+    "fixed_family_invariants": [
+      "공통의 낮고 넓은 primary vessel과 넓은 입구; 지름:높이 약 1.55:1은 공급·fill·seal·stack 시험 전 방향성 비례다.",
+      "전 둘레가 실제로 밀봉되는 one-time peelable foil-based seal과 한 손으로 잡히는 비대칭 pull tab.",
+      "foil과 rim을 가리지 않는 탈착식 dry secondary fiber band 또는 sleeve; 음식과 직접 접촉하지 않는다.",
+      "필수 식별·lot/date·storage 정보는 sleeve가 벗겨져도 applicable-market 요건에 따라 primary 또는 foil에 남는다.",
+      "한 SKU당 좁은 ingredient-color locator 하나와 실제 food trace 하나; full-pack flavor color와 metallic premium finish는 금지한다.",
+      "sealed, foil-peel, opened, first-spoon, separated-for-disposal의 다섯 상태가 실제 물질과 손동작으로 이어진다."
+    ],
+    "excluded_by_default": [
+      "bare paper food-contact wall",
+      "glued paper skin pretending to be the barrier cup",
+      "rigid cosmetic jar lid or paper disc presented as a reclosure",
+      "transparent side window before actual light and shelf-life testing",
+      "waxed kraft, deckled paper, twine, stamp, faux handwritten batch label",
+      "soft-touch rubber coating, foil stamping, metallic ink and fragrance-like varnish",
+      "unverified reusable, recyclable, compostable, biodegradable, plastic-free or insulating claims"
+    ]
+  },
+  "layer_architecture": [
+    {
+      "layer_id": "L0",
+      "name": "Edible evidence",
+      "job": "개봉 후 공통 요거트 밀도와 recipe-specific internal trace가 제품 차이를 직접 증명한다.",
+      "direction": "실제 R&D sample의 ivory base, spoon furrow와 ribbon, veil, fleck, thread, marble 또는 oil interface만 사용한다.",
+      "visible_witness": "foil을 완전히 벗긴 넓은 개구부, 첫 숟갈 뒤에도 서 있는 ridge, 표면에서 spoon cut 안쪽까지 이어지는 검증된 trace.",
+      "interface": "음식은 validated food-contact primary vessel의 내부 면과만 접촉한다. sleeve, exterior ink와 multipack은 음식 접촉을 전제로 하지 않는다.",
+      "must_validate": [
+        "실제 recipe와 공통 density",
+        "fat, acid, salt, ingredient oil과 primary/lidding material compatibility",
+        "fill, seal, chilled storage와 소비기한 동안 trace·syneresis·phase behavior"
+      ]
+    },
+    {
+      "layer_id": "L1",
+      "name": "Sealed primary food-contact vessel",
+      "job": "요거트를 직접 담고 충전·실링·저온 보관·운송·한 손 섭취 동안 치수와 위생적 containment를 유지한다.",
+      "material_direction": "불투명 mineral-white의 heat-sealable food-contact polymer vessel을 우선 검토한다. PP는 방향성 후보일 뿐이며, 실제 유제품·레시피·fill/seal 조건에 맞는 검증된 동등 소재 또는 필요한 barrier structure로 교체할 수 있다.",
+      "form_direction": [
+        "낮고 넓은 tapered body와 스푼이 닿는 rounded internal floor-wall transition",
+        "foil sealant와 맞는 평탄하고 연속적인 flange; seal land의 실제 폭과 공차는 supplier와 sealer 시험으로 결정",
+        "컵을 잡을 때 찌그러지지 않고 과도하게 cosmetic-thick하지 않은 wall",
+        "바닥 또는 외측의 lot/date code zone, sleeve removal notch와 맞는 exterior datum",
+        "molded primary는 warm beige paper texture를 인쇄하지 않고 낮은 natural polymer sheen과 실제 성형 흔적을 허용"
+      ],
+      "visible_witness": "얇고 정확한 molded rim, 균일한 low-wide body, sleeve 위아래에 남는 작은 mineral-white edge와 실제 lot/date zone.",
+      "graphics_boundary": "food-contact interior, flange seal land와 cup rim에는 ink, adhesive 또는 decorative coating을 두지 않는다. mandatory information의 direct print 또는 coding 위치는 migration·rub·legibility 검증 뒤 확정한다.",
+      "must_validate": [
+        "applicable-market food-contact compliance와 complete component declaration",
+        "overall/specific migration under actual fat, acid, salt, time and temperature conditions",
+        "fill temperature, drop, top-load, sidewall compression, stack and transport performance",
+        "lidding seal compatibility, rim contamination tolerance and leak behavior",
+        "light/oxygen/moisture barrier needed for the real recipe and shelf life",
+        "odor/taste neutrality, pigment and additive suitability",
+        "cold-chain condensation, scuffing and code legibility",
+        "actual gram weight and local recovery route before any environmental comparison"
+      ],
+      "claim_boundary": "food-safe, barrier, mono-material, recyclable, reduced plastic, reusable 또는 protects freshness를 시험·법무 승인 전 소비자 카피로 사용하지 않는다."
+    },
+    {
+      "layer_id": "L2",
+      "name": "Peelable foil seal",
+      "job": "primary vessel을 전 둘레 밀봉하고 최초 개봉 여부와 peel action을 명확히 만든다.",
+      "material_direction": "primary vessel의 sealant와 실제로 맞는 aluminum-foil-based lidding laminate 또는 검증된 동등 peelable foil structure. foil gauge, polymer sealant, lacquer, primer와 인쇄 구조는 공급사 declaration과 product test 뒤 lock한다.",
+      "form_direction": [
+        "rim 전체를 덮는 flat seal과 하나의 크고 비대칭인 pull tab",
+        "seal land 바깥에서 시작해 손가락으로 실제 집을 수 있는 tab geometry",
+        "부분 접착이나 장식용 원형 disc가 아닌 continuous perimeter seal",
+        "single-serve를 전제로 완전히 제거되는 one-time opening; 재밀폐 lid로 보이게 hinge하거나 세워 두지 않음"
+      ],
+      "visible_witness": "sealed 상태의 평평한 foil plane, 명확한 pull tab, 개봉 후 rim에 남지 않는 clean peel과 손에 들린 실제 foil.",
+      "print_direction": "non-food-contact face에 MORA, recipe name, ingredient-color locator와 verified open cue만 간결하게 인쇄한다. seal land에는 heavy ink·varnish를 두지 않고, mandatory identity/lot/date/storage의 foil 배치 여부는 관할 표시 검토로 결정한다.",
+      "must_validate": [
+        "seal temperature-pressure-dwell operating window and line speed",
+        "peel force distribution, fiber tear or delamination, tab usability with cold or wet hands",
+        "seal integrity, dye/vacuum/burst or appropriate leak method, drop and distribution vibration",
+        "rim product contamination tolerance and seal inspection method",
+        "oxygen, moisture, light and aroma barrier needed by each recipe",
+        "ink, coating, adhesive and set-off migration",
+        "tamper-evidence interpretation and consumer comprehension",
+        "actual laminate separation/recovery route before recycling copy"
+      ],
+      "claim_boundary": "sealed for freshness, tamper-proof, easy-peel, leak-proof, aroma-lock, preserves probiotics 또는 recyclable foil을 validation 전 사용하지 않는다. Tamper-evident도 actual pack system과 market review 뒤에만 쓴다."
+    },
+    {
+      "layer_id": "L3",
+      "name": "Dry secondary fiber band or sleeve",
+      "job": "food-contact·barrier 역할을 맡지 않고, 브랜드·recipe 정보, 손의 grip zone와 사용 후 material separation cue를 제공한다.",
+      "material_direction": "high-white 또는 pale mineral tone의 crisp folding board/fiber stock. 통갈색 kraft, 거친 재생섬유 연출, deckle edge와 faux handmade texture는 피한다. 정확한 fiber source, caliper, coating과 wet-strength는 공급·cold-chain 시험 뒤 결정한다.",
+      "construction_direction": [
+        "cup flange 아래에 놓이고 foil edge와 tamper inspection을 가리지 않는 낮은 wrap band 또는 tapered sleeve",
+        "접착제 없이 tongue-and-slot 또는 검증된 friction/interlock seam을 우선 검토",
+        "컵의 tapered datum에 맞아 아래로 미끄러지거나 rim을 밀어 올리지 않는 구조",
+        "사용 후 열거나 밀어 빼는 한 개의 separation notch; tear strip은 실제 clean tear 시험을 통과할 때만 사용",
+        "sealed cup의 seal-integrity check와 exterior dry-down 뒤 조립하며 food-contact interior 또는 seal land에 닿지 않음"
+      ],
+      "visible_witness": "정밀한 die-cut edge, 한 개의 interlock seam, sleeve 위아래의 molded vessel edge, 분리 notch와 넓은 무구획 정보 면.",
+      "information_hierarchy": [
+        "MORA",
+        "recipe name",
+        "approved category name and net quantity",
+        "one-sentence sensory direction after panel validation",
+        "ingredients, allergen, nutrition, storage, producer, lot/date and other mandatory facts in applicable-market order",
+        "verified separation instruction only after material and local-system review"
+      ],
+      "must_validate": [
+        "condensation, refrigerated humidity, rub, curl, delamination, ink set-off and legibility",
+        "assembly tolerance, line speed, slip, grip, consumer removal and accidental detachment",
+        "board/fiber and coating supplier documentation",
+        "ink, varnish and any adhesive migration risk under intended use",
+        "all mandatory-copy area and font-size requirements",
+        "local sortability and fiber recovery before paper/recyclable claims"
+      ],
+      "claim_boundary": "dry secondary는 intended non-food-contact function을 뜻할 뿐 실제 유통 중 항상 건조함, insulation 또는 moisture resistance를 보증하지 않는다. paper, recyclable, FSC, responsibly sourced, plastic-free 또는 compostable 표기는 서류와 지역 검토 전 금지한다."
+    },
+    {
+      "layer_id": "L4",
+      "name": "Cold-chain multipack",
+      "job": "여러 sealed cups를 냉장 운송·진열 중 서로 부딪히거나 눌리지 않게 배열하고 recipe comparison과 바코드·물류 정보를 제공한다.",
+      "material_direction": "dry folding board 또는 corrugated board의 tested carrier/tray and restraint. Core four는 2x2, full discovery six는 2x3 방향을 검토하되 cup dimensions와 물류 시험 전 확정하지 않는다.",
+      "construction_direction": [
+        "cup base와 sidewall을 기계적으로 지지하고 foil tab·date code·seal inspection을 눌러 가리지 않는 die-cut wells 또는 dividers",
+        "transparent plastic window, glue-heavy laminated box와 decorative magnetic closure 없이 컵 실루엣과 recipe edge locator가 보이는 open restraint",
+        "retail carrier와 insulated e-commerce shipper를 분리한다. 이 board multipack 자체를 냉장·보냉 장치로 취급하지 않는다.",
+        "손잡이는 full-load lift, tear, wet-humidity와 drop 시험을 통과할 때만 추가한다.",
+        "냉장 airflow, case packing, pallet compression와 barcode scan을 막지 않는 구조"
+      ],
+      "visible_witness": "컵을 실제로 붙드는 cut geometry, 4개 또는 6개 recipe locator의 정렬, 열린 측면의 molded vessel과 foil edge, 과장 없는 logistics panel.",
+      "must_validate": [
+        "full-load drop, vibration, compression, handle and carry tests",
+        "refrigerated humidity, condensation, board strength and ink rub",
+        "case/pallet fit, airflow and cold-room handling",
+        "barcode readability and required outer-pack labeling",
+        "actual board composition, coatings, adhesives and local recovery route"
+      ],
+      "claim_boundary": "keeps cold, insulated, curbside recyclable, zero-plastic, plastic-free, compostable, low-carbon 또는 sustainable multipack을 데이터 없이 주장하지 않는다. Cold chain은 validated refrigeration operation이 만들며 multipack 외관이 만들지 않는다."
+    }
+  ],
+  "factual_ink_and_finish_system": {
+    "principle": "finish는 premium 장식이 아니라 정보의 지속성, 재료 구분과 실제 생산 공정 적합성을 증명해야 한다.",
+    "primary_vessel": {
+      "direction": "mineral-white molded substrate의 actual low sheen을 유지하고 paper grain, speckle, stone, ceramic 또는 soft-touch coating을 인쇄로 모사하지 않는다.",
+      "ink": "direct print가 필요하면 exterior non-food-contact zone의 low-migration system과 validated cure를 사용하며 interior, rim과 seal land에는 두지 않는다.",
+      "finish": "natural molded finish; heavy matte varnish, rubberized coating, metallic ink와 cosmetic lacquer 금지."
+    },
+    "foil": {
+      "direction": "flat metallic material edge를 숨기지 않되 luxury foil-stamp 효과로 과장하지 않는다.",
+      "ink": "Cultured Ink 계열 한 색 + 해당 SKU의 좁은 ingredient locator를 기본으로 하고 reverse white type은 실제 contrast·registration 시험 뒤 사용한다.",
+      "finish": "seal performance와 migration을 방해하지 않는 supplier-approved lacquer/print construction only."
+    },
+    "fiber_sleeve": {
+      "direction": "high-white/pale-mineral board 위 큰 recipe name, 넓은 negative space, crisp fold와 한 개의 seam으로 현대성을 만든다.",
+      "ink": "neutral dark ink + one ingredient spot or process equivalent; ingredient color 면적은 local visible surface의 방향성 5-8% 이내이며 필수 작은 글자의 유일한 구분 수단으로 쓰지 않는다.",
+      "finish": "uncoated 또는 minimum functional aqueous/dispersion coating을 비교 시험한다. foil stamp, emboss-as-craft, debossed batch mark, wax, string, scented varnish와 distressed print 금지."
+    },
+    "production_checks": [
+      "substrate white point and ingredient-color shift",
+      "cold rub, condensation transfer, scuff and barcode grade",
+      "ink cure, set-off, odor/taint and migration",
+      "foil print-to-seal registration and sleeve die-cut registration",
+      "lot/date code contrast and permanence through stated shelf life"
+    ]
+  },
+  "ingredient_color_behavior": {
+    "system_rule": "색은 recipe를 찾고 foil-sleeve-multipack을 연결하는 작은 locator다. actual ingredient color를 과장하거나 vessel 전체를 flavor color로 바꾸지 않으며, text label과 edible trace 없이 단독으로 의미를 맡기지 않는다.",
+    "placements": [
+      "foil pull tab 또는 tab에 인접한 한 개의 short mark",
+      "fiber sleeve seam 또는 하단 edge의 한 개 narrow locator",
+      "multipack의 cup-position index 또는 recipe list의 한 개 marker"
+    ],
+    "prohibited_placements": [
+      "primary vessel full-body tint",
+      "foil 전체 flood color",
+      "CTA, storage warning, allergen warning or regulatory text",
+      "photography lighting, set wall, prop and yogurt color grading",
+      "metallic premium simulation or ingredient-grade cue"
+    ],
+    "sku_directions": [
+      {
+        "product": "Thyme Honey",
+        "directional_color": "#B9832F",
+        "behavior": "muted amber locator only; green herb is food evidence, not a second decorative pack color."
+      },
+      {
+        "product": "Fig Leaf",
+        "directional_color": "#68765F",
+        "behavior": "cool grey-green locator only; release only after ingredient safety and actual near-ivory food trace validation."
+      },
+      {
+        "product": "Roasted Buckwheat",
+        "directional_color": "#8A684C",
+        "behavior": "warm grain-brown locator without kraft-paper or roasted-origin symbolism."
+      },
+      {
+        "product": "Citrus Peel",
+        "directional_color": "#C96B3C",
+        "behavior": "muted peel-orange locator, not a neon freshness or vitamin cue."
+      },
+      {
+        "product": "Black Sesame",
+        "directional_color": "#4B4A4D",
+        "behavior": "charcoal locator within the shared pale system; no all-black luxury pack."
+      },
+      {
+        "product": "Olive Oil & Sea Salt",
+        "directional_color": "#7A7040",
+        "behavior": "warm olive-ochre locator distinct from Fig Leaf; no metallic gold, oil grade, cultivar or origin cue."
+      }
+    ],
+    "validation": "모든 색은 actual substrate, ink system, cold scuff, foil registration, color-vision diversity, text contrast와 R&D food sample 옆에서 조정한다. Current hex values are screen directions, not print specifications."
+  },
+  "assembly_and_use_scenarios": {
+    "sealed_retail_assembly": [
+      "1. Validate, sanitize and inspect the empty food-contact primary vessel; keep rim and seal land clean.",
+      "2. Fill the approved yogurt batch at the validated temperature and dose with minimum structure damage.",
+      "3. Apply the matched foil-based lidding under the validated temperature-pressure-dwell window.",
+      "4. Perform weight, seal-integrity, code and required product checks; reject contaminated rims, channel leaks, wrinkles or incomplete seals.",
+      "5. Chill and hold within the validated process; dry or control the exterior condition required for later sleeve assembly.",
+      "6. Fit the non-food-contact fiber sleeve below the flange without hiding foil edge, tamper inspection, lot/date or storage facts.",
+      "7. Place sealed cups in the tested multipack restraint and transfer through monitored refrigerated storage and distribution."
+    ],
+    "consumer_use": [
+      "1. Recipe name and ingredient locator align on multipack, sleeve and foil, while mandatory identity and code remain visible on the sealed unit.",
+      "2. The consumer removes the cup from refrigeration and inspects an intact flat foil seal; the fiber sleeve acts only as the dry information/grip layer.",
+      "3. One hand holds the sleeve zone while the other lifts the asymmetrical foil tab; the foil peels off completely rather than hinging behind the cup.",
+      "4. The opened cup reveals the untouched edible surface; the first spoon exposes density and internal ingredient trace.",
+      "5. After use, the consumer opens or slides off the fiber sleeve and follows only the locally verified sorting instruction for sleeve, vessel and foil."
+    ],
+    "cold_chain_truth": [
+      "The package contains and identifies the refrigerated food; it does not create refrigeration.",
+      "Fill temperature, cooling curve, storage range, transport limit, retail display and consumer shelf life require plant and challenge-study validation.",
+      "Condensation is an expected test condition, not a rustic texture device. Fiber curl, ink rub, sleeve slip, code loss and weakened multipack must be tested under it.",
+      "Retail multipack and e-commerce insulated shipper are separate systems. No board carrier is called insulated or cold-retaining without measured performance."
+    ],
+    "finish_counter_boundary": "One Cup Finish is a separate immediate-consumption service format. Staff do not open or rework sealed retail cups. If the same primary vessel is used at the counter, service packaging, food-safety SOP, allergen control and finish mode require separate validation and labeling."
+  },
+  "modern_non_rustic_visual_grammar": {
+    "form": [
+      "low-wide concentric geometry, thin controlled flange and a single asymmetric peel vector",
+      "precise tapered sleeve with one legible seam rather than a full faux-paper cup skin",
+      "visible transitions among molded vessel, foil plane, fiber edge and edible surface",
+      "quiet industrial tolerances and actual production marks instead of perfect cosmetic CGI"
+    ],
+    "surface": [
+      "mineral white molded vessel, high-white or pale mineral fiber and neutral dark ink",
+      "actual low sheen, foil edge, crisp score and die-cut fiber rather than beige wash or distressed texture",
+      "ingredient color confined to a narrow functional locator"
+    ],
+    "typography": [
+      "large Korean-first recipe name, MORA, approved food category and net quantity in a clear distance-based hierarchy",
+      "no condensed apothecary type, monospaced formula texture, typewriter copy, ruled label grid or decorative microtext",
+      "mandatory facts remain readable under condensation, curvature and sleeve seam conditions"
+    ],
+    "photography": [
+      "hard-but-broad controlled daylight or clean cold-room light that preserves white food, molded rim, foil and fiber edge",
+      "sealed hero shows flat foil and tab; opened hero shows removed foil and real edible surface",
+      "Packing Table shows food vessel, matched foil, seal check, dry sleeve fitting and multipack restraint as a causal chain",
+      "stainless, pale mineral surfaces and exact shadows; no weathered wood, linen, burlap, herbs scattered as craft props, sepia, farmhouse or cosmetic pedestal"
+    ]
+  },
+  "copy_system_and_le_labo_boundary": {
+    "food_native_hierarchy": {
+      "front_or_primary_view": [
+        "MORA",
+        "working recipe name",
+        "legally approved product category wording",
+        "verified net quantity"
+      ],
+      "fact_panel": [
+        "ingredients and allergen information",
+        "nutrition and net quantity where required",
+        "validated storage and date marking",
+        "producer, lot and legally required traceability",
+        "verified separation instruction if approved"
+      ],
+      "story_layer": "한 컵의 use moment, intended sensory sequence와 food-native preparation은 실제 recipe·panel·process validation 뒤 sleeve의 별도 짧은 문장으로만 쓴다."
+    },
+    "do_not_copy_from_le_labo": [
+      "ingredient name plus number naming",
+      "apothecary ruled label or prescription grid",
+      "customer name, city and hand-filled date ritual",
+      "formula, essence, elixir, tincture, spirit, compound, blend-for-you or made-to-order fragrance vocabulary",
+      "perfumer signature, mysterious laboratory maker and handwritten batch theater",
+      "Le Journal newspaper layout, manifesto cadence, squeezed uppercase wordmark and amber-bottle cues"
+    ],
+    "target_native_replacements": [
+      "formula number -> working recipe name plus approved food category",
+      "personal label -> mandatory lot/date and factual production traceability",
+      "apothecary grid -> open hierarchy grouped by distance",
+      "custom compounding -> fixed sealed recipe; separate validated immediate-service finish only",
+      "mysterious craft claim -> visible seal, ingredient preparation and actual edible trace",
+      "paper-premium rhetoric -> material layer and validation facts"
+    ],
+    "copy_gate": "Do not print a sensory, process, origin, environmental or protection claim merely because the pack visually suggests it. Packaging text must point to an approved recipe, component specification, production record or test."
+  },
+  "exact_claims_to_validate": [
+    {
+      "claim": "그릭요거트 / Greek Yogurt",
+      "status": "hold_for_category_and_composition_review",
+      "required_evidence": "actual formulation, concentration route, applicable fermented-milk category and market-specific naming review"
+    },
+    {
+      "claim": "인퓨즈드 / 인퓨징 / Infused",
+      "status": "hold_for_recipe_process_and_consumer_understanding_review",
+      "required_evidence": "selected ingredient preparation route, actual finished recipe, legal naming review and evidence that the term does not imply extraction, alcohol or unperformed process"
+    },
+    {
+      "claim": "150 g",
+      "status": "validate_before_print_lock",
+      "required_evidence": "approved nominal fill, net-content control plan, line capability, tolerances and applicable quantity labeling"
+    },
+    {
+      "claim": "냉장 보관 [validated range] / 소비기한 [validated date]",
+      "status": "mandatory_facts_pending_validation",
+      "required_evidence": "cooling and cold-chain process, microbiological and sensory shelf-life/challenge study, packaging integrity and market-specific date/storage rules"
+    },
+    {
+      "claim": "밀봉으로 신선함을 지킵니다 / Sealed for freshness",
+      "status": "do_not_use_without_product_protection_study",
+      "required_evidence": "matched cup-lidding specification, barrier need, seal-integrity results, shelf-life comparison and legal substantiation"
+    },
+    {
+      "claim": "개봉 여부를 확인할 수 있는 seal / Tamper-evident seal",
+      "status": "do_not_use_until_system_and_market_review",
+      "required_evidence": "actual opening evidence, seal failure modes, consumer comprehension, line controls and applicable tamper-evidence requirements"
+    },
+    {
+      "claim": "한 손으로 쉽게 열리는 easy-peel tab",
+      "status": "do_not_use_until_usability_and_peel_force_validation",
+      "required_evidence": "peel-force window across shelf life, cold/wet hand usability, tab geometry, accessibility and no-tear/delamination results"
+    },
+    {
+      "claim": "누수 방지 / Leak-proof",
+      "status": "avoid_absolute_claim",
+      "required_evidence": "defined performance wording, integrity method, drop/vibration/pressure testing, cold-chain distribution and production sampling plan"
+    },
+    {
+      "claim": "food-safe / 식품용 안전 소재",
+      "status": "regulatory_requirement_not_premium_marketing_shortcut",
+      "required_evidence": "complete BOM, declarations of compliance, actual-use migration, ink/coating/adhesive assessment, GMP and applicable food-contact review"
+    },
+    {
+      "claim": "저이행 잉크 / low-migration ink",
+      "status": "technical_claim_pending_complete_print_system_test",
+      "required_evidence": "ink, substrate, coating, cure, set-off and intended-use migration data; the ink name alone is insufficient"
+    },
+    {
+      "claim": "종이 슬리브 / paper sleeve",
+      "status": "validate_component_description",
+      "required_evidence": "actual fiber composition, coatings, laminates, adhesives and legally accurate material naming"
+    },
+    {
+      "claim": "FSC 또는 responsibly sourced fiber",
+      "status": "do_not_use_without_certified_chain_of_custody",
+      "required_evidence": "valid supplier certification, chain-of-custody scope, logo authorization and SKU-specific purchased material records"
+    },
+    {
+      "claim": "분리배출 가능 / recyclable / mono-material",
+      "status": "do_not_use_as_system_wide_claim",
+      "required_evidence": "component-level material specification, consumer separation success, coatings/adhesives, local collection-sort-reprocessing route and market claim review"
+    },
+    {
+      "claim": "플라스틱 사용량 X% 절감",
+      "status": "do_not_use_without_like_for_like_baseline",
+      "required_evidence": "locked pack weights, functional baseline, same product volume and performance, calculation boundary and independent/legal review"
+    },
+    {
+      "claim": "plastic-free / compostable / biodegradable / zero-waste / sustainable packaging",
+      "status": "prohibited_without_component_complete_evidence_and_local_pathway",
+      "required_evidence": "all components including sealants, coatings, inks and adhesives; applicable test standards, real collection or compost pathway and qualified non-misleading language"
+    },
+    {
+      "claim": "멀티팩이 차갑게 유지합니다 / insulated or keeps cold",
+      "status": "not_a_claim_for_the_dry_board_multipack",
+      "required_evidence": "separately designed insulated system, time-temperature performance under defined ambient profiles and complete delivery validation"
+    },
+    {
+      "claim": "재밀폐 가능 / reclosable",
+      "status": "not_supported_by_one_time_foil_architecture",
+      "required_evidence": "a separately designed food-safe closure, repeated-use hygiene, fit and shelf-life study; absent this, never imply reclosure"
+    },
+    {
+      "claim": "수제 / artisan / small-batch / slow-infused",
+      "status": "outside_pack_material_and_pending_operational_evidence",
+      "required_evidence": "documented real production method, batch size, labor/process records, recipe-specific preparation and legal review"
+    }
+  ],
+  "package_release_gates": [
+    "Lock the real recipe, fill process and intended shelf life before selecting final primary and foil barrier structure.",
+    "Complete food-contact BOM, declarations, migration and taint review for vessel, foil, inks, coatings and any adhesive.",
+    "Validate fill-seal operating window, rim contamination controls, integrity inspection and reject criteria on the intended line.",
+    "Pass chilled shelf-life/challenge, syneresis, phase, oxidation and sensory studies for every recipe or justified worst case.",
+    "Pass drop, vibration, compression, cold-humidity, condensation, rub, code, sleeve and multipack tests.",
+    "Run cold/wet-hand peel and serving usability, including sleeve slip and full foil removal.",
+    "Complete applicable-market category, mandatory label, allergen, net quantity, storage, date, environmental and trademark review.",
+    "Photograph an approved physical prototype at sealed, peeled, opened, first-spoon and separated states; generated images do not close a release gate."
+  ],
+  "global_boundaries": [
+    "All materials, dimensions, colors, ink systems, seal structures, storage conditions and claim wordings are directional until manufacturing, food-contact, cold-chain and legal validation.",
+    "The secondary fiber layer never substitutes for a validated primary food-contact barrier.",
+    "The foil is a one-time seal, not a reclosure; no rigid overcap is included unless distribution or consumer testing creates a validated need.",
+    "The multipack restrains sealed cups but does not refrigerate them; cold-chain control remains operational.",
+    "No sustainability, recyclability, compostability, origin, health, nutrition, probiotic, freshness or shelf-life benefit is claimed by this shard.",
+    "MORA and all recipe names remain working names pending trademark, linguistic and food-label review."
+  ],
+  "merge_intent": {
+    "primary_targets": [
+      "sections.landing_product_concept.product_family",
+      "sections.product_visual_traits_and_product_imagery.product_visual_traits",
+      "sections.design_token_direction.shape"
+    ],
+    "supporting_targets": [
+      "sections.visual_branding_and_key_visual",
+      "sections.verbal_branding_and_copy_hierarchy",
+      "boundaries.assumptions",
+      "boundaries.factual_limits"
+    ],
+    "note": "Preserve the canonical eight-section Stage 2 structure. This shard replaces the generic beige paper-cup fiction with a directional layered system; it does not approve materials, packaging claims or production specifications."
+  }
+}

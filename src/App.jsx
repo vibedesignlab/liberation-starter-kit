@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
 import { defaultTheme as theme } from './styles/themes';
+import MoraLandingPage from './pages/MoraLandingPage';
 
 function HomePage() {
   return (
@@ -32,7 +33,8 @@ function App() {
       <CssBaseline />
       <BrowserRouter>
         <Routes>
-          <Route index element={<HomePage />} />
+          <Route index element={<MoraLandingPage />} />
+          <Route path="/mora" element={<MoraLandingPage />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

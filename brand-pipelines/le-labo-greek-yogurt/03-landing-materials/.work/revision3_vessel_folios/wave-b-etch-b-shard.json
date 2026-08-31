@@ -1,0 +1,314 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "stage3_wave_b_material_folios_lane_b_shard",
+  "revision": "stage3_revision3_vessel_folios",
+  "owner": "wave_b_material_folios_lane_b",
+  "status": "ready_for_parent_registration",
+  "scope": "Four final Material Folios PNGs and their prompt records only. Canonical JSON, asset registry, stage review, pipeline state, public registration and generated stories remain root-owned.",
+  "direction_lock": ".work/revision3_vessel_folios/direction-lock.json#material_folios",
+  "prompt_modules": [
+    "prompts/modules/MATERIAL-FOLIOS-SERIES-LOCK.md",
+    "prompts/modules/MATERIAL-PLATE-TEMPLATE.md",
+    "prompts/modules/NARRATIVE-ETCHING-TEMPLATE.md"
+  ],
+  "assets": [
+    {
+      "asset_id": "ST3-ETCH-PROCESS-CLOTH-TO-BODY-29",
+      "product_name": "MORA Process / Cloth to Body",
+      "role": "editorial_etching_process",
+      "communication_job": "유청이 빠지고 농축된 몸이 남는 거름의 역할을 하나의 물성 전환으로 설명하되 실제 SOP 수치나 시설 증거로 오인되지 않게 한다.",
+      "file_path": "assets/editorial-etchings/mora-etch-process-cloth-to-body-3x2.png",
+      "prompt_path": "prompts/ST3-ETCH-PROCESS-CLOTH-TO-BODY-29.md",
+      "media_type": "image/png",
+      "dimensions": "1536x1024",
+      "aspect_ratio": "3:2",
+      "file_size_bytes": 2175505,
+      "sha256": "74d09dbd900078f769184447ed85f5b2266ae5ab299293a7d4e0ddffffed3f9d",
+      "prompt_sha256": "62824923c14656a3975439b41c567cd8597db93bad21a8f6b1320989f6175776",
+      "subject": "a factual food-grade filter cloth and cultured gel becoming one restrained topographic weave, with one whey line descending and the concentrated body retained above",
+      "storyboard": {
+        "raw_or_start": "food-grade woven filter cloth carrying cultured gel",
+        "single_transition": "the same cloth weave rises into one topographic landform and channels one whey line downward",
+        "resulting_trace": "retained concentrated yogurt body above the cloth plane",
+        "factual_boundary": "directional explanation only; no facility evidence, SOP, temperature, time, yield, batch quantity or performance claim"
+      },
+      "reference_order": [
+        {
+          "image": 1,
+          "asset_id": "ST3-ETCH-BRAND-TRACE-MASTER-26",
+          "path": "assets/editorial-etchings/mora-etching-brand-trace-master.png",
+          "authority": "paper, Carbon line, copperplate hatch/stipple, negative-space confidence and one-transition restraint only"
+        }
+      ],
+      "generation_provenance": {
+        "generator": "Codex built-in imagegen",
+        "date": "2026-08-29",
+        "distinct_call": true,
+        "source_output": "/Users/ddd/.codex/generated_images/01a047d3-6c71-7b40-ae77-3278577fb8e5/exec-c4eeca9f-61f8-40f8-bf7e-78e4d36b00f5.png",
+        "source_dimensions": "1536x1024",
+        "normalization": "none; copied to the project-owned final path without destructive source cleanup",
+        "delta_rounds": []
+      },
+      "invariants": [
+        "Cultured Cream #F5F1E8 field with Carbon #171714 fine engraving behavior",
+        "one compact factual process group with approximately 65–70% negative space",
+        "exactly one cloth-to-topography material transition",
+        "whey reads below while concentrated body remains above",
+        "no text, numeric process cue, person, facility or second vignette"
+      ],
+      "allowed_variation": "none before root registration",
+      "qa": {
+        "inspection": "pass — final workspace PNG inspected with view_image at original detail",
+        "geometry": "pass — 1536x1024 landscape 3:2, complete contours inside the frame",
+        "negative_space": "pass — compact low process group leaves a dominant uninterrupted cream field, especially upper-right",
+        "causal_read": "pass — cloth mesh, retained gel topography and one downward whey line form a single causal group",
+        "line_palette": "pass — fine breathable engraving line and restrained stipple; monochrome warm-cream/near-black treatment",
+        "factual_gate": "pass — no written or numeric SOP, no worker, no facility and no validation claim",
+        "text_artifact": "pass — no letter, numeral, logo, label, caption, signature or watermark",
+        "delta_edit": "not_required"
+      },
+      "status": "ready_for_registration"
+    },
+    {
+      "asset_id": "ST3-ETCH-MATERIAL-CITRUS-PEEL-33",
+      "product_name": "Citrus Peel",
+      "role": "editorial_etching_material_plate",
+      "communication_job": "감귤 껍질의 가는 선이 여과된 수상 preparation을 거쳐 spoon cut 안쪽의 밝은 thread로 이어지는 경로를 보여 준다.",
+      "file_path": "assets/editorial-etchings/mora-etch-material-citrus-peel-square.png",
+      "prompt_path": "prompts/ST3-ETCH-MATERIAL-CITRUS-PEEL-33.md",
+      "media_type": "image/png",
+      "dimensions": "1536x1536",
+      "aspect_ratio": "1:1",
+      "file_size_bytes": 1726104,
+      "sha256": "040ae570c70ebf5defa54b118d28856f6ac32c5fba1c44bd145723f2b2090818",
+      "prompt_sha256": "077ea2b12957fde65c2ab0ec16987bece4766b6e78a9f7ed01c8e17ff8008eaf",
+      "subject": "fresh citrus peel ribbons narrowing into a filtered aqueous preparation and continuing as a fine peel thread with zest points in dense yogurt",
+      "storyboard": {
+        "raw_identity": "fresh peel ribbons with a textured zest face and pale pith edge",
+        "preparation": "filtered directional aqueous peel preparation without invented heat, time or dose",
+        "resulting_trace": "one fine peel thread with restrained zest points in dense yogurt",
+        "tint_scope": "one Image-2 yellow-gold at a visually low 6% translucent treatment, preparation and finished trace only"
+      },
+      "reference_order": [
+        {
+          "image": 1,
+          "asset_id": "ST3-ETCH-BRAND-TRACE-MASTER-26",
+          "path": "assets/editorial-etchings/mora-etching-brand-trace-master.png",
+          "authority": "paper, line, hatch/stipple, negative space and one-transition restraint only"
+        },
+        {
+          "image": 2,
+          "asset_id": "ST3-REF-INGREDIENT-CITRUS-PEEL-22",
+          "path": "assets/reference-system/mora-ingredient-citrus-peel-aerial.png",
+          "authority": "fresh peel identity, zest/pith structure and the one actual ingredient tint source only"
+        }
+      ],
+      "generation_provenance": {
+        "generator": "Codex built-in imagegen",
+        "date": "2026-08-29",
+        "distinct_call": true,
+        "initial_output": "/Users/ddd/.codex/generated_images/01a047d3-6c71-7b40-ae77-3278577fb8e5/exec-2a48c9ad-b334-4860-85f4-b579ea3f6221.png",
+        "selected_output": "/Users/ddd/.codex/generated_images/01a047d3-6c71-7b40-ae77-3278577fb8e5/exec-9cf09762-9d12-4712-b666-149cd3b98fe6.png",
+        "source_dimensions": "1254x1254",
+        "normalization": "selected square output deterministically resampled to 1536x1536 with macOS sips; source retained",
+        "delta_rounds": [
+          {
+            "round": 1,
+            "single_causal_axis": "tint_opacity",
+            "instruction": "reduce the yellow-gold treatment to a nearly imperceptible 6% translucent wash while preserving every passing geometry, transition, line, crop and negative-space axis",
+            "result": "pass"
+          }
+        ]
+      },
+      "invariants": [
+        "lower-left to upper-right single continuous peel-to-preparation-to-trace path",
+        "approximately 65–70% uninterrupted Cultured Cream negative space",
+        "fine Carbon copperplate line with raw peel fully monochrome",
+        "one yellow-gold tint confined to preparation and finished trace at 5–8% visual opacity",
+        "no glass dish, whole fruit, text, panel, extra sample or unsupported process claim"
+      ],
+      "allowed_variation": "none before root registration",
+      "qa": {
+        "inspection": "pass — corrected final workspace PNG inspected with view_image at original detail",
+        "geometry": "pass — 1536x1536 square, continuous diagonal group complete and inside safe margins",
+        "negative_space": "pass — compact diagonal morph leaves the dominant cream field clear",
+        "ingredient_identity": "pass — zest texture, pith edge and ribbon geometry make the raw peel legible without a dish or fruit prop",
+        "preparation_and_trace": "pass — the same peel contour becomes one aqueous preparation flow and resolves as a fine thread through yogurt",
+        "tint_scope": "pass after one-axis repair — pale yellow-gold is subdued and limited to preparation/trace; raw peel, paper and outline remain monochrome",
+        "text_artifact": "pass — no letter, numeral, logo, label, caption, signature or watermark",
+        "delta_edit": "one round; tint_opacity only"
+      },
+      "status": "ready_for_registration"
+    },
+    {
+      "asset_id": "ST3-ETCH-MATERIAL-BLACK-SESAME-34",
+      "product_name": "Black Sesame",
+      "role": "editorial_etching_material_plate",
+      "communication_job": "검은깨 씨앗이 불투명 페이스트와 밝은 요거트 안의 stone-grey 마블로 변하는 깊이를 보여 준다.",
+      "file_path": "assets/editorial-etchings/mora-etch-material-black-sesame-square.png",
+      "prompt_path": "prompts/ST3-ETCH-MATERIAL-BLACK-SESAME-34.md",
+      "media_type": "image/png",
+      "dimensions": "1536x1536",
+      "aspect_ratio": "1:1",
+      "file_size_bytes": 2447459,
+      "sha256": "c54d8083440cfb3b7c7ba4dc98fd405d64824ad01c6a1fdd1c74c108923b0c3a",
+      "prompt_sha256": "c58a52a8b22ef02e2ca07e5d5232f94f84976b304faa3c43a540594ad1eba906",
+      "subject": "individually legible black sesame seeds compressing into a fine paste band that opens into an ivory-to-stone-grey yogurt marble carrying the same particles",
+      "storyboard": {
+        "raw_identity": "small matte oval black sesame seeds with natural variation",
+        "preparation": "directional fine slurry or paste without an invented mill, particle size or separation performance",
+        "resulting_trace": "one ivory-to-stone-grey yogurt marble carrying fine sesame particles",
+        "tint_scope": "one Image-2 cool-charcoal tint at 6% translucent treatment, preparation and finished marble only"
+      },
+      "reference_order": [
+        {
+          "image": 1,
+          "asset_id": "ST3-ETCH-BRAND-TRACE-MASTER-26",
+          "path": "assets/editorial-etchings/mora-etching-brand-trace-master.png",
+          "authority": "paper, line, hatch/stipple, negative space and one-transition restraint only"
+        },
+        {
+          "image": 2,
+          "asset_id": "ST3-REF-INGREDIENT-BLACK-SESAME-23",
+          "path": "assets/reference-system/mora-ingredient-black-sesame-aerial.png",
+          "authority": "individual seed identity, natural variation and the one actual cool-charcoal tint source only"
+        }
+      ],
+      "generation_provenance": {
+        "generator": "Codex built-in imagegen",
+        "date": "2026-08-29",
+        "distinct_call": true,
+        "source_output": "/Users/ddd/.codex/generated_images/01a047d3-6c71-7b40-ae77-3278577fb8e5/exec-2120655f-acb6-4a16-b2af-31c06c5c684b.png",
+        "source_dimensions": "1254x1254",
+        "normalization": "selected square output deterministically resampled to 1536x1536 with macOS sips; source retained",
+        "delta_rounds": []
+      },
+      "invariants": [
+        "lower-left to upper-right single continuous seed-to-paste-to-marble path",
+        "approximately 65–70% uninterrupted Cultured Cream negative space",
+        "fine Carbon copperplate line with individually legible raw seeds",
+        "one cool-charcoal tint confined to preparation and trace at 5–8% visual opacity",
+        "no crushed black mass, dish, text, panel, invented tool or performance claim"
+      ],
+      "allowed_variation": "none before root registration",
+      "qa": {
+        "inspection": "pass — final workspace PNG inspected with view_image at original detail",
+        "geometry": "pass — 1536x1536 square, complete lower-left-to-upper-right transition inside the frame",
+        "negative_space": "pass — compact diagonal morph leaves the dominant cream field uninterrupted",
+        "ingredient_identity": "pass — raw sesame seeds are individually separated, oval and readable without crushed-black loss",
+        "preparation_and_trace": "pass — seed cluster compresses into one paste continuum and broadens into one retained-particle yogurt furrow",
+        "tint_scope": "pass — preparation/marble carry a restrained cool-charcoal treatment while raw seeds and paper stay in the monochrome line system",
+        "text_artifact": "pass — no letter, numeral, logo, label, caption, signature or watermark",
+        "delta_edit": "not_required"
+      },
+      "status": "ready_for_registration"
+    },
+    {
+      "asset_id": "ST3-ETCH-MATERIAL-OLIVE-OIL-SEA-SALT-35",
+      "product_name": "Olive Oil & Sea Salt",
+      "role": "editorial_etching_material_plate_conditional_wave_2",
+      "communication_job": "올리브 오일과 굵은 바다 소금의 recipe pair가 조건부 오일상 방향을 거쳐 얇은 리본과 짧은 mineral cue로 이어지는 경로를 보여 주되 검증된 상·염도·성능을 주장하지 않는다.",
+      "file_path": "assets/editorial-etchings/mora-etch-material-olive-oil-sea-salt-square.png",
+      "prompt_path": "prompts/ST3-ETCH-MATERIAL-OLIVE-OIL-SEA-SALT-35.md",
+      "media_type": "image/png",
+      "dimensions": "1536x1536",
+      "aspect_ratio": "1:1",
+      "file_size_bytes": 2134558,
+      "sha256": "bb956f8c6f82078e9d2877e9a9903280bc55f5ef4a31e61c1758b6597f3d2aa2",
+      "prompt_sha256": "b626c8b77bac1e014a540f54b53771468b75f56b2485ac362c5e78d83ed35a9a",
+      "subject": "a raw olive-oil meniscus and distinct coarse sea-salt crystals continuing through one conditional interface into a thin olive-gold yogurt ribbon with a short mineral cue",
+      "storyboard": {
+        "raw_identity": "raw olive oil and irregular coarse sea-salt crystals as one recipe pair",
+        "preparation": "directional conditional oil-phase interface; not proof of validated phase behavior or micro-emulsion",
+        "resulting_trace": "one thin yogurt ribbon with a restrained, distinct salt cue",
+        "tint_scope": "one Image-2 green-gold at a visually low 6% translucent treatment, conditional preparation and finished trace only"
+      },
+      "reference_order": [
+        {
+          "image": 1,
+          "asset_id": "ST3-ETCH-BRAND-TRACE-MASTER-26",
+          "path": "assets/editorial-etchings/mora-etching-brand-trace-master.png",
+          "authority": "paper, line, hatch/stipple, negative space and one-transition restraint only"
+        },
+        {
+          "image": 2,
+          "asset_id": "ST3-REF-INGREDIENT-OLIVE-OIL-SEA-SALT-24",
+          "path": "assets/reference-system/mora-ingredient-olive-oil-sea-salt-aerial.png",
+          "authority": "raw oil meniscus, coarse salt identity and the one actual green-gold tint source only"
+        }
+      ],
+      "generation_provenance": {
+        "generator": "Codex built-in imagegen",
+        "date": "2026-08-29",
+        "distinct_call": true,
+        "initial_output": "/Users/ddd/.codex/generated_images/01a047d3-6c71-7b40-ae77-3278577fb8e5/exec-9cca7547-defe-4495-af3a-3a82711a59af.png",
+        "selected_output": "/Users/ddd/.codex/generated_images/01a047d3-6c71-7b40-ae77-3278577fb8e5/exec-a3fa72cd-7c2b-4124-a395-e4644c45f0b5.png",
+        "source_dimensions": "1254x1254",
+        "normalization": "selected square output deterministically resampled to 1536x1536 with macOS sips; source retained",
+        "delta_rounds": [
+          {
+            "round": 1,
+            "single_causal_axis": "tint_opacity",
+            "instruction": "reduce the green-gold treatment to a nearly imperceptible 6% translucent wash while preserving every passing geometry, pairing, transition, line, crop and negative-space axis",
+            "result": "pass"
+          }
+        ]
+      },
+      "invariants": [
+        "lower-left to upper-right single continuous raw-pair-to-conditional-interface-to-trace path",
+        "approximately 65–70% uninterrupted Cultured Cream negative space",
+        "fine Carbon copperplate line with raw oil and raw salt fully monochrome",
+        "one green-gold tint confined to conditional preparation and trace at 5–8% visual opacity",
+        "no dish, olive garnish, text, panel, validated phase, salinity or performance implication"
+      ],
+      "allowed_variation": "conditional Wave 2 direction only; not approved as a launch or performance claim",
+      "qa": {
+        "inspection": "pass — corrected final workspace PNG inspected with view_image at original detail",
+        "geometry": "pass — 1536x1536 square, complete diagonal continuum inside safe margins",
+        "negative_space": "pass — compact diagonal morph leaves the dominant cream field clear",
+        "ingredient_pair": "pass — the oil meniscus and multiple irregular coarse salt crystals are both immediately legible at the lower-left start",
+        "preparation_and_trace": "pass — shared oil/salt contour becomes one conditional interface and resolves as one thin yogurt ribbon with a separate mineral cue",
+        "tint_scope": "pass after one-axis repair — pale green-gold is subdued and limited to interface/trace; raw oil, raw salt, paper and outline remain monochrome",
+        "claim_gate": "pass — no text or visual apparatus implies validated micro-emulsion, phase stability, salinity, oxidation control, sensory or use performance",
+        "text_artifact": "pass — no letter, numeral, logo, label, caption, signature or watermark",
+        "delta_edit": "one round; tint_opacity only"
+      },
+      "status": "ready_for_registration"
+    }
+  ],
+  "series_qa": {
+    "reference_priority": "pass — every generation used the approved Material Folios style master as Image 1; each material plate used only its matching ingredient reference as Image 2; no Le Labo Journal original was supplied to imagegen",
+    "series_consistency": "pass — all four use the same warm-cream field, fine near-black copperplate line, breathable hatch/stipple, one impossible transition and dominant editorial negative space",
+    "material_plate_direction": "pass — Citrus Peel, Black Sesame and Olive Oil & Sea Salt all read lower-left to upper-right",
+    "single_transition": "pass — each artwork contains one unbroken causal material continuum rather than a triptych, atlas or process panel",
+    "tint_rule": "pass — plates use one ingredient-derived tint only in preparation/finished trace; raw identity, paper and outlines remain in the monochrome system",
+    "artwork_text": "pass — no artwork contains text, letters, numerals, logo, label, caption, signature or watermark",
+    "delivery": "pass — process is 1536x1024; three material plates are 1536x1536; all are PNGs at project-owned final paths"
+  },
+  "source_distance_boundary": {
+    "system_principles_translated": [
+      "fine contour, copperplate hatch and restrained stipple",
+      "large contemporary negative-space field",
+      "one editorially surreal transition connecting factual MORA material states"
+    ],
+    "not_used_as_generation_reference": [
+      "all original Le Labo Journal images"
+    ],
+    "not_reproduced": [
+      "source Journal compositions, house, doorway, travel landscape, suitcase, perfume bottle or character",
+      "LE LABO wording, source typography, label structure, trade dress or formula grid",
+      "apothecary, tincture, fragrance, botanical-label or antique-bookplate system"
+    ],
+    "result": "pass"
+  },
+  "handoff": {
+    "canonical_write_authority": "root Stage 3 merge only",
+    "recommended_action": "Cross-lane review the four ready candidates, then register their records from this shard without changing their reference order or factual/conditional gates.",
+    "forbidden_from_this_shard": [
+      "canonical landing JSON edit",
+      "asset-registry edit",
+      "stage-review or pipeline-state edit",
+      "public registration or generated story edit"
+    ]
+  }
+}

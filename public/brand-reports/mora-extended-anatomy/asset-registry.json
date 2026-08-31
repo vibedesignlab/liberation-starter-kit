@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.1.0",
+  "artifact_type": "brand_asset_registry",
+  "stage": "extended_brand_anatomy",
+  "assets": [
+    {
+      "asset_id": "ST2-PRODUCT-HERO-01",
+      "role": "representative_product_hero",
+      "communication_job": "Thyme Honey 한 컵이 떠먹는 프리미엄 그릭요거트이며, 실제 내용물·wide-mouth 사용성·부분 Batch Record·마지막 spoon action이 하나의 제품 구조임을 색 정확하게 증명한다.",
+      "file_path": "/brand-reports/mora-extended-anatomy/assets/mora-thyme-honey-batch-record-jar-r10-70a679a094055471788b31621c39bdc07ae4d6f50bc33b1aea65bfba1328f18a.png",
+      "prompt_path": "prompts/revision-r10/ST2-PRODUCT-HERO-BATCH-RECORD-R10.md",
+      "subject": "MORA Thyme Honey low-wide transparent wide-mouth Batch Record jar",
+      "aspect_ratio": "3:2 landscape",
+      "generation_provenance": "Built-in image generation on 2026-08-31 from the Revision 10 product-truth prompt; one controlled image edit removed fabricated dates, circular codes, initials and pharmacy-like record boxes while preserving the accepted vessel, food, spoon, lighting and composition. Final SHA-256 70a679a094055471788b31621c39bdc07ae4d6f50bc33b1aea65bfba1328f18a.",
+      "reference_lineage": [
+        "S1 GK-01 controlled repeated records",
+        "S1 GK-03 observable labor",
+        "S1 GK-04 information-bearing material",
+        "S1 GK-05 one human action",
+        "MORA-TG-01 food-native responsibility system",
+        "Revision 10 Material Under Care contract"
+      ],
+      "invariants": [
+        "low-wide transparent 150 g vessel with a very wide spoonable mouth and no perfume silhouette",
+        "at least 60–70% of the edible yogurt and its real thyme-honey trace remain visible",
+        "partial uncoated food-native Batch Record with standardized fields and at most one genuine check",
+        "neutral color-accurate food light, physical spoon contact and dense spoon furrow"
+      ],
+      "allowed_variation": [
+        "responsive crop preserving the entire jar, wide mouth, label edge, food visibility and left copy-safe field"
+      ],
+      "invariant_check": "pass",
+      "status": "registered",
+      "qa_path": ".work/revision10_female_craft/qa/product-anchor.json"
+    },
+    {
+      "asset_id": "ST2-BRAND-MOOD-01",
+      "role": "brand_mood",
+      "communication_job": "Selection → Process → Last Measure 세 장의 아날로그 에디토리얼을 닫는 장면이다. The Keeper of Taste가 같은 배치의 농밀한 요거트와 산성 유청을 확인하고 최종 기록을 남기며 판단 책임을 보여 준다.",
+      "file_path": "/brand-reports/mora-extended-anatomy/assets/r16-03-last-measure-analog-editorial-front-d3a2e480f2c1fb5d00beac358a9f77980d34928017ef4e4b3aca2f6f570c8832.png",
+      "prompt_path": "prompts/revision-r16-film-editorial/r16-03-last-measure-analog-editorial-front.md",
+      "subject": "The same woman maker writing the final decision beside dense yogurt and separated whey, ending a three-frame analog magazine story",
+      "aspect_ratio": "3:2 landscape",
+      "generation_provenance": "Built-in image edit, one pass, on 2026-08-31. R15-01 remained the sole authority for the woman, action, yogurt, whey, record, scale and strict-front composition; Revision 16 changed only capture, scan and print response. Final 1536 × 1024. SHA-256 d3a2e480f2c1fb5d00beac358a9f77980d34928017ef4e4b3aca2f6f570c8832.",
+      "reference_lineage": [
+        "S1 GK-02 scene-to-fact narrative",
+        "S1 GK-03 observable labor",
+        "S1 GK-04 information-bearing material",
+        "S1 GK-05 one human action",
+        "MORA-TG-01 The Keeper of Taste",
+        "Revision 10 The Keeper's Manufactory contract",
+        "Revision 15 Last Measure scene authority",
+        "Revision 16 Three-frame Analog Editorial Story Contract"
+      ],
+      "invariants": [
+        "exactly one adult woman shown as decision authority rather than decorative femininity",
+        "repaired plaster, irregular utility tile, old threshold and visible back-room circulation with a clean stainless food-contact island",
+        "dense strained yogurt, translucent acid whey, one tool, one final-check action and one record",
+        "mixed available/task light and a continuous left copy-safe field made from real low-contrast architecture",
+        "visibly irregular 35 mm ISO 800 color-negative grain, lifted open blacks, soft highlight shoulder and restrained local halation"
+      ],
+      "allowed_variation": [
+        "responsive crop preserving the maker's hands, both food states, Batch Record and a usable graphite copy-safe zone"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    }
+  ]
+}

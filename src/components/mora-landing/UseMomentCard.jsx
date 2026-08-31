@@ -1,0 +1,18 @@
+import Typography from '@mui/material/Typography';
+import FullBleedSection from './FullBleedSection';
+
+/**
+ * Full-bleed moment image with sticky bottom label.
+ */
+export default function UseMomentCard({ image, label, productName }) {
+  return (
+    <FullBleedSection image={image} alt={`${productName} — ${label}`} aspectRatio="3 / 2">
+      <Typography variant="h2" sx={{ color: 'background.default' }}>
+        {label}
+      </Typography>
+      <Typography sx={{ fontSize: '16px', color: 'background.default', opacity: 0.8 }}>
+        {productName}
+      </Typography>
+    </FullBleedSection>
+  );
+}

@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "stage3_revision_integration_map",
+  "revision": "stage3_revision3_vessel_folios",
+  "revised_assets": [
+    {
+      "asset_id": "ST3-REF-GLASS-PACKAGE-MASTER-17",
+      "system": "MORA Vessel Record",
+      "landing_section": "Reference system — Vessel Record package master"
+    },
+    {
+      "asset_id": "ST3-REF-PRODUCT-COMPOSITION-MASTER-18",
+      "system": "MORA Vessel Record",
+      "landing_section": "Reference system — Vessel Record composition master"
+    }
+  ],
+  "new_assets": [
+    {
+      "asset_id": "ST3-PACKAGING-VESSEL-RECORD-SPEC-25",
+      "product_name": "MORA Vessel Record",
+      "role": "packaging_design_specification",
+      "file_path": "assets/reference-system/mora-vessel-record-print-spec.svg",
+      "prompt_path": "prompts/ST3-PACKAGING-VESSEL-RECORD-SPEC-25.md",
+      "aspect_ratio": "1:1",
+      "landing_section": "Packaging — Vessel Record",
+      "communication_job": "사진 생성의 문자 오차와 무관하게 유리 용기 비례, 전면 직접 인쇄 기록 열, 후면 Material Plate micro-mark와 실제 데이터 gate를 정확한 벡터 기준으로 고정한다.",
+      "copy": "라벨 대신, 한 컵의 기록을 유리에 남깁니다.",
+      "proof_of": "exact vessel dimensions, one-color direct print hierarchy, real batch-data gate and rear micro-mark"
+    },
+    {
+      "asset_id": "ST3-ETCH-BRAND-TRACE-MASTER-26",
+      "product_name": "MORA Brand World",
+      "role": "editorial_etching_style_master",
+      "file_path": "assets/editorial-etchings/mora-etching-brand-trace-master.png",
+      "prompt_path": "prompts/ST3-ETCH-BRAND-TRACE-MASTER-26.md",
+      "aspect_ratio": "3:2 landscape",
+      "landing_section": "Brand world — The Trace That Remains",
+      "communication_job": "거름 천에서 시작한 물성이 흔적을 거쳐 한 스푼의 밀도로 귀결되는 한 번의 초현실 전환으로 MORA의 핵심 명제를 설명하고 Material Folios 전체의 선·여백 기준을 고정한다.",
+      "copy": "무엇을 더했는지보다, 무엇이 남았는지.",
+      "proof_of": "one cloth-to-trace-to-yogurt transformation in fine black etching with 65–70% negative space"
+    },
+    {
+      "asset_id": "ST3-ETCH-BRAND-FIRST-FURROW-27",
+      "product_name": "MORA Brand World",
+      "role": "editorial_etching_brand_origin",
+      "file_path": "assets/editorial-etchings/mora-etch-brand-first-furrow-3x2.png",
+      "prompt_path": "prompts/ST3-ETCH-BRAND-FIRST-FURROW-27.md",
+      "aspect_ratio": "3:2 landscape",
+      "landing_section": "Brand story — The First Furrow",
+      "communication_job": "토핑으로 가려진 한 컵을 다시 한 줄의 재료 경로로 정리한다는 브랜드의 출발 질문을 인물 전기 없이 시각화한다.",
+      "copy": "한 컵을 다시, 재료의 경로로 읽기 시작했습니다.",
+      "proof_of": "one crowded topping surface becoming a measured single furrow without an invented founder scene"
+    },
+    {
+      "asset_id": "ST3-ETCH-FOUNDER-TABLE-28",
+      "product_name": "MORA Founder Story",
+      "role": "editorial_etching_founder_placeholder",
+      "file_path": "assets/editorial-etchings/mora-etch-founder-table-3x2.png",
+      "prompt_path": "prompts/ST3-ETCH-FOUNDER-TABLE-28.md",
+      "aspect_ratio": "3:2 landscape",
+      "landing_section": "Founder story — The Unclaimed Table",
+      "communication_job": "실제 창립자 사실이 승인되기 전에는 얼굴과 전기를 만들지 않고, 빈 의자·작업 노트·도구가 한 스푼의 결과로 이어지는 검증 대기 상태를 정직하게 보여 준다.",
+      "copy": "사람의 이야기는, 사실이 확인된 뒤에만 이름을 얻습니다.",
+      "proof_of": "unoccupied maker table and evidence objects; no invented portrait, quote, date or biography"
+    },
+    {
+      "asset_id": "ST3-ETCH-PROCESS-CLOTH-TO-BODY-29",
+      "product_name": "MORA Process",
+      "role": "editorial_etching_process",
+      "file_path": "assets/editorial-etchings/mora-etch-process-cloth-to-body-3x2.png",
+      "prompt_path": "prompts/ST3-ETCH-PROCESS-CLOTH-TO-BODY-29.md",
+      "aspect_ratio": "3:2 landscape",
+      "landing_section": "Measured Transformation — Cloth to Body",
+      "communication_job": "유청이 빠지고 농축된 몸이 남는 거름의 역할을 하나의 물성 전환으로 설명하되 실제 SOP 수치나 시설 증거로 오인되지 않게 한다.",
+      "copy": "유청을 놓아, 요거트의 몸을 남깁니다.",
+      "proof_of": "one cloth plane separating whey droplets from a dense yogurt fold; no numeric SOP"
+    },
+    {
+      "asset_id": "ST3-ETCH-MATERIAL-THYME-HONEY-30",
+      "product_name": "Thyme Honey",
+      "role": "editorial_etching_material_plate",
+      "file_path": "assets/editorial-etchings/mora-etch-material-thyme-honey-square.png",
+      "prompt_path": "prompts/ST3-ETCH-MATERIAL-THYME-HONEY-30.md",
+      "aspect_ratio": "1:1",
+      "landing_section": "Material Folios — Thyme Honey",
+      "communication_job": "타임과 꿀이 점성 시럽을 거쳐 호박색 리본과 작은 허브 결로 남는 경로를 한 장에 연결한다.",
+      "copy": "허브와 꿀은, 점성 있는 한 줄로 머뭅니다.",
+      "proof_of": "thyme plus honey → viscous preparation → amber ribbon and fine green flecks"
+    },
+    {
+      "asset_id": "ST3-ETCH-MATERIAL-FIG-LEAF-31",
+      "product_name": "Fig Leaf",
+      "role": "editorial_etching_material_plate",
+      "file_path": "assets/editorial-etchings/mora-etch-material-fig-leaf-square.png",
+      "prompt_path": "prompts/ST3-ETCH-MATERIAL-FIG-LEAF-31.md",
+      "aspect_ratio": "1:1",
+      "landing_section": "Material Folios — Fig Leaf",
+      "communication_job": "무화과 잎 방향을 옅은 수상 preparation과 절제된 green-beige vein으로 연결하되 식용 승인 주장을 만들지 않는다.",
+      "copy": "잎의 방향은, 검증을 통과한 뒤에만 한 컵이 됩니다.",
+      "proof_of": "fig leaf direction → conditional pale aqueous preparation → restrained vein, with explicit factual gate"
+    },
+    {
+      "asset_id": "ST3-ETCH-MATERIAL-ROASTED-BUCKWHEAT-32",
+      "product_name": "Roasted Buckwheat",
+      "role": "editorial_etching_material_plate",
+      "file_path": "assets/editorial-etchings/mora-etch-material-roasted-buckwheat-square.png",
+      "prompt_path": "prompts/ST3-ETCH-MATERIAL-ROASTED-BUCKWHEAT-32.md",
+      "aspect_ratio": "1:1",
+      "landing_section": "Material Folios — Roasted Buckwheat",
+      "communication_job": "볶은 메밀알이 미세 슬러리와 두 깊이의 토스티드 입자로 이어지는 촉각적 경로를 보여 준다.",
+      "copy": "볶은 결은, 두 깊이의 입자로 남습니다.",
+      "proof_of": "roasted groat → fine slurry → warm beige body and particles at two depths"
+    },
+    {
+      "asset_id": "ST3-ETCH-MATERIAL-CITRUS-PEEL-33",
+      "product_name": "Citrus Peel",
+      "role": "editorial_etching_material_plate",
+      "file_path": "assets/editorial-etchings/mora-etch-material-citrus-peel-square.png",
+      "prompt_path": "prompts/ST3-ETCH-MATERIAL-CITRUS-PEEL-33.md",
+      "aspect_ratio": "1:1",
+      "landing_section": "Material Folios — Citrus Peel",
+      "communication_job": "감귤 껍질의 가는 선이 여과된 수상 preparation을 거쳐 spoon cut 안쪽의 밝은 thread로 이어지는 경로를 보여 준다.",
+      "copy": "껍질의 선은, 밝은 실처럼 안쪽까지 이어집니다.",
+      "proof_of": "peel ribbon → filtered aqueous preparation → fine yellow-orange thread"
+    },
+    {
+      "asset_id": "ST3-ETCH-MATERIAL-BLACK-SESAME-34",
+      "product_name": "Black Sesame",
+      "role": "editorial_etching_material_plate",
+      "file_path": "assets/editorial-etchings/mora-etch-material-black-sesame-square.png",
+      "prompt_path": "prompts/ST3-ETCH-MATERIAL-BLACK-SESAME-34.md",
+      "aspect_ratio": "1:1",
+      "landing_section": "Material Folios — Black Sesame",
+      "communication_job": "검은깨 씨앗이 불투명 페이스트와 밝은 요거트 안의 stone-grey 마블로 변하는 깊이를 보여 준다.",
+      "copy": "검은 입자는, 밝은 몸 안에서 마블이 됩니다.",
+      "proof_of": "black sesame seed → opaque paste → ivory and stone-grey marble"
+    },
+    {
+      "asset_id": "ST3-ETCH-MATERIAL-OLIVE-OIL-SEA-SALT-35",
+      "product_name": "Olive Oil & Sea Salt",
+      "role": "editorial_etching_material_plate",
+      "file_path": "assets/editorial-etchings/mora-etch-material-olive-oil-sea-salt-square.png",
+      "prompt_path": "prompts/ST3-ETCH-MATERIAL-OLIVE-OIL-SEA-SALT-35.md",
+      "aspect_ratio": "1:1",
+      "landing_section": "Material Folios — Olive Oil & Sea Salt",
+      "communication_job": "올리브 오일과 소금이 오일상 또는 검증된 미세 에멀전과 pearly interface로 이어지는 세이보리 경로를 설명한다.",
+      "copy": "오일과 소금은, 한 컵을 식사의 곁으로 옮깁니다.",
+      "proof_of": "olive oil plus sea salt → oil phase or validated micro-emulsion → olive-gold ribbon and pearly interface"
+    }
+  ],
+  "global_invariants": [
+    "MORA Material Folios uses #171714 linework on clean #F5F1E8 with 65–70% negative space.",
+    "Each illustration has exactly one impossible material transition and no text inside the art.",
+    "Le Labo source is used only to infer system principles; no original Journal composition or packaging trade dress is reproduced.",
+    "Generated illustrations and photos are directional, not proof of a real founder, facility, recipe, SOP, food-contact performance or launch fact."
+  ]
+}

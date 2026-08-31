@@ -1,0 +1,4106 @@
+{
+  "schema_version": "1.2.0",
+  "artifact_type": "source_brand_analysis",
+  "generated_at": "2026-08-31T18:13:29+09:00",
+  "brand": {
+    "name": "Le Labo Fragrances",
+    "entity_scope": "Current global masterbrand and owned US English expression; fine fragrance, home fragrance, body-hair-face, discovery and refill service",
+    "markets": [
+      "Global",
+      "United States"
+    ],
+    "languages": [
+      "English"
+    ],
+    "channels": [
+      "official website",
+      "product and packaging",
+      "store and lab service",
+      "official editorial and photography"
+    ],
+    "era_start": "2024",
+    "era_end": "2026-08-24",
+    "product_mode": "physical\" # physical | digital | hybrid | mixed"
+  },
+  "report_identity": {
+    "background_color": "#F6F8F6",
+    "foreground_color": "#333333",
+    "color_layer": "identity",
+    "identity_scope": "Current official US owned-digital masterbrand header; the cool off-white field is a persistent channel canvas rather than a published universal standard.",
+    "logo": {
+      "evidence_id": "EV-005",
+      "local_path": "evidence/visuals/EV-LL-001-masterbrand-wordmark.png",
+      "source_url": "https://www.lelabofragrances.com/css/images/logonew.png",
+      "credit": "Le Labo official owned website",
+      "rights_note": "First-party copyrighted brand asset retained locally for research evidence only.",
+      "variant": "Current black transparent header wordmark",
+      "render_treatment": "none\" # none | invert(1) | brightness(0)"
+    }
+  },
+  "handoff": {
+    "status": "USER_DIRECTION_REQUIRED",
+    "package_version": "1.2.0",
+    "target_direction": null,
+    "approved_grammar_ids": [
+      "GK-01",
+      "GK-02",
+      "GK-03",
+      "GK-04",
+      "GK-05"
+    ],
+    "protected_surface_families": [
+      "Le Labo wordmark and exact laboratory-style label construction",
+      "Ingredient-or-scent name plus number naming architecture",
+      "We believe manifesto and same bottle same scent same perfume copy",
+      "Le Journal newspaper format and identifiable lab/store trade dress"
+    ],
+    "unresolved_gaps": [
+      "No public formal identity manual; exact global logo, palette, spacing, and print rules remain unverified.",
+      "Film motion, edit rhythm, and sound were not captured; motion posters support framing only.",
+      "Five city-lab posters and one interior image broaden the sample but cannot prove the complete global retail system.",
+      "Font licensing and full non-Latin glyph coverage remain unverified.",
+      "The three user-supplied mood references EV-042–EV-044 have no embedded source URL, creator, or rights metadata and therefore remain contextual references rather than first-party evidence."
+    ]
+  },
+  "decision_index": {
+    "strategy": [
+      {
+        "claim_id": "CL-001",
+        "domain": "Strategy",
+        "epistemic_status": "Observed",
+        "claim": "Observed: 장인정신과 준비의 주의를 가치 근거로 선언한다.",
+        "semantic_function": "포지셔닝",
+        "evidence_ids": [
+          "EV-001"
+        ],
+        "confidence": "high",
+        "alternative_explanation": "선언적 마케팅일 수 있음",
+        "scope_or_exception": "manifesto",
+        "falsifier": "속도·대량성이 핵심으로 전환"
+      }
+    ],
+    "product_interface_service": [
+      {
+        "claim_id": "CL-002",
+        "domain": "Service",
+        "epistemic_status": "Observed",
+        "claim": "Observed: 리필은 동일 병·향·크기를 유지하고 새 날짜를 더한다.",
+        "semantic_function": "지속성",
+        "evidence_ids": [
+          "EV-003"
+        ],
+        "confidence": "high",
+        "alternative_explanation": "운영 효율일 수 있음",
+        "scope_or_exception": "대상 제품·시장",
+        "falsifier": "다른 향 리필이 기본화"
+      },
+      {
+        "claim_id": "CL-013",
+        "domain": "Service",
+        "epistemic_status": "Observed",
+        "claim": "Observed: 온라인 리필은 병·보호재·송장·운송의 상태를 순서화한 역물류 절차로 설명된다.",
+        "semantic_function": "서비스 신뢰",
+        "evidence_ids": [
+          "EV-025",
+          "EV-026",
+          "EV-027",
+          "EV-028",
+          "EV-029"
+        ],
+        "confidence": "high",
+        "alternative_explanation": "운영 안내에 한정될 수 있음",
+        "scope_or_exception": "US 온라인 리필",
+        "falsifier": "절차 없는 즉시 교환이 기본화"
+      }
+    ],
+    "verbal_system": [
+      {
+        "claim_id": "CL-003",
+        "domain": "Verbal",
+        "epistemic_status": "Inferred",
+        "claim": "Inferred: 감각 장면 뒤에 성분·명세를 공개한다.",
+        "semantic_function": "메시지 순서",
+        "evidence_ids": [
+          "EV-001",
+          "EV-002"
+        ],
+        "confidence": "high",
+        "alternative_explanation": "카테고리 관습일 수 있음",
+        "scope_or_exception": "manifesto와 PDP",
+        "falsifier": "대부분 명세부터 시작"
+      }
+    ],
+    "identity_and_tokens": [
+      {
+        "claim_id": "CL-004",
+        "domain": "Identity",
+        "epistemic_status": "Inferred",
+        "claim": "Inferred: 중립 구조와 분류형 활자가 물성과 개인 표식을 지지한다.",
+        "semantic_function": "시각 위계",
+        "evidence_ids": [
+          "EV-005",
+          "EV-011",
+          "EV-012"
+        ],
+        "confidence": "high",
+        "alternative_explanation": "웹 사용성 결과일 수 있음",
+        "scope_or_exception": "웹·포장",
+        "falsifier": "장식형 정체성이 기본화"
+      }
+    ],
+    "key_visual": [
+      {
+        "claim_id": "CL-005",
+        "domain": "Key visual",
+        "epistemic_status": "Inferred",
+        "claim": "Inferred: 실제 정보 물체가 그래픽 장치 역할을 한다.",
+        "semantic_function": "교차 채널 문법",
+        "evidence_ids": [
+          "EV-006",
+          "EV-011",
+          "EV-012"
+        ],
+        "confidence": "high",
+        "alternative_explanation": "표본 편향일 수 있음",
+        "scope_or_exception": "메뉴·제품·포장",
+        "falsifier": "장식 그래픽이 기본화"
+      }
+    ],
+    "brand_mood": [
+      {
+        "claim_id": "CL-006",
+        "domain": "Mood",
+        "epistemic_status": "Inferred",
+        "claim": "Inferred: 고급감은 광택보다 작업 흔적과 재료에서 발생한다.",
+        "semantic_function": "정서 원인",
+        "evidence_ids": [
+          "EV-007",
+          "EV-008",
+          "EV-009"
+        ],
+        "confidence": "medium",
+        "alternative_explanation": "기록 사진 특성일 수 있음",
+        "scope_or_exception": "roots·craft",
+        "falsifier": "모두 무결점 스튜디오로 전환"
+      }
+    ],
+    "photography_and_film": [
+      {
+        "claim_id": "CL-007",
+        "domain": "Photography",
+        "epistemic_status": "Observed",
+        "claim": "Observed: 장인 이미지는 손·도구·원료의 행동을 보여 준다.",
+        "semantic_function": "근거 이미지",
+        "evidence_ids": [
+          "EV-008",
+          "EV-009",
+          "EV-010"
+        ],
+        "confidence": "high",
+        "alternative_explanation": "포스터 한정일 수 있음",
+        "scope_or_exception": "film posters",
+        "falsifier": "전체 영상이 포즈 중심"
+      }
+    ],
+    "product_representation": [
+      {
+        "claim_id": "CL-008",
+        "domain": "Product image",
+        "epistemic_status": "Inferred",
+        "claim": "Inferred: 손 하나가 제품 사실성을 보존하며 사용 관계를 더한다.",
+        "semantic_function": "사용 설명",
+        "evidence_ids": [
+          "EV-009",
+          "EV-011"
+        ],
+        "confidence": "medium",
+        "alternative_explanation": "컬렉션 타일 스타일",
+        "scope_or_exception": "공식 편집",
+        "falsifier": "제품이 대부분 가려짐"
+      }
+    ],
+    "product_native_language": [
+      {
+        "claim_id": "CL-009",
+        "domain": "Product native",
+        "epistemic_status": "Inferred",
+        "claim": "Inferred: 라벨 정보·날짜·개인화가 상태와 개체성을 구분한다.",
+        "semantic_function": "제품 인지",
+        "evidence_ids": [
+          "EV-003",
+          "EV-011",
+          "EV-012"
+        ],
+        "confidence": "high",
+        "alternative_explanation": "라벨 장식일 수 있음",
+        "scope_or_exception": "fragrance·discovery",
+        "falsifier": "라벨 없는 체계로 교체"
+      },
+      {
+        "claim_id": "CL-011",
+        "domain": "Product native",
+        "epistemic_status": "Inferred",
+        "claim": "Inferred: 제품군의 가장 강한 가족 불변항은 단일 병 실루엣보다 라벨의 정보 위계와 중립 재료 대비다.",
+        "semantic_function": "제품군 인지",
+        "evidence_ids": [
+          "EV-013",
+          "EV-014",
+          "EV-015",
+          "EV-018",
+          "EV-020",
+          "EV-021"
+        ],
+        "confidence": "high",
+        "alternative_explanation": "전자상거래 템플릿 효과일 수 있음",
+        "scope_or_exception": "공식 PDP 표본",
+        "falsifier": "카테고리마다 라벨 위계가 해체됨"
+      }
+    ],
+    "composition": [
+      {
+        "claim_id": "CL-010",
+        "domain": "Composition",
+        "epistemic_status": "Inferred",
+        "claim": "Inferred: 한 화면에 한 주역을 두고 반복 또는 손 하나로 리듬을 만든다.",
+        "semantic_function": "집중 구조",
+        "evidence_ids": [
+          "EV-006",
+          "EV-011",
+          "EV-012"
+        ],
+        "confidence": "medium",
+        "alternative_explanation": "표본 제한",
+        "scope_or_exception": "web roles",
+        "falsifier": "다중 초점 콜라주가 기본화"
+      }
+    ],
+    "system_and_other": [
+      {
+        "claim_id": "CL-012",
+        "domain": "Space",
+        "epistemic_status": "Inferred",
+        "claim": "Inferred: 랩 공간은 복제된 빈티지 장식보다 기능적 재고·작업대·노화된 재료를 유지하고 도시 맥락을 변수로 남긴다.",
+        "semantic_function": "공간 문법",
+        "evidence_ids": [
+          "EV-022",
+          "EV-023",
+          "EV-031",
+          "EV-032",
+          "EV-033",
+          "EV-034",
+          "EV-035"
+        ],
+        "confidence": "medium",
+        "alternative_explanation": "공식 포스터 큐레이션 효과일 수 있음",
+        "scope_or_exception": "다섯 도시와 한 내부 표본",
+        "falsifier": "다수 랩이 맥락 없는 동일 세트로 확인됨"
+      },
+      {
+        "claim_id": "CL-014",
+        "domain": "Editorial",
+        "epistemic_status": "Observed",
+        "claim": "Observed: Le Journal은 흑백 판화와 초현실적 제품 은유를 사용해 다큐멘터리 사진과 다른 편집 언어를 만든다.",
+        "semantic_function": "편집 저자성",
+        "evidence_ids": [
+          "EV-040",
+          "EV-041"
+        ],
+        "confidence": "high",
+        "alternative_explanation": "특정 호의 예외일 수 있음",
+        "scope_or_exception": "두 공식 Journal 이미지",
+        "falsifier": "향후 Journal이 사진만으로 일관됨"
+      }
+    ]
+  },
+  "analysis_layers": {
+    "source_synthesis": {
+      "title": "Executive source synthesis",
+      "topics": [
+        {
+          "title": "Source positioning",
+          "notes": [
+            "Le Labo는 향을 완성품으로만 판매하지 않고 의도, 손작업, 시간, 개인 표식을 거친 물건으로 제시한다. 선언문의 장인정신은 조제, 개인 라벨, 리필 날짜라는 서비스 행동으로 이어진다. EV-001 EV-003 EV-012"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-001",
+            "EV-003",
+            "EV-012"
+          ]
+        },
+        {
+          "title": "Core causal model",
+          "notes": [
+            "익숙하고 절제된 용기·정보 구조를 고정하고 향, 장소, 사람, 날짜를 통제해 바꾼다. 반복 가능한 체계가 개인 흔적을 수용해 표준성과 개체성을 함께 만든다. EV-002 EV-003 EV-011 EV-012"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-002",
+            "EV-003",
+            "EV-011",
+            "EV-012"
+          ]
+        },
+        {
+          "title": "Contrasting qualities that stay together",
+          "notes": [
+            "실험실의 정확성/시적 모호성, 산업적 반복/개인 표식, 거친 현장/절제된 고급감이 공존한다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        },
+        {
+          "title": "What this analysis does not claim",
+          "notes": [
+            "공개 브랜드 가이드, 전체 글로벌 매장, 실제 영상 편집·사운드, 모든 지역 언어를 확인하지 않았다. 웹 CSS 값은 현재 채널 참고값이지 보편 규정이 아니다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        }
+      ],
+      "evidence_ids": [
+        "EV-001",
+        "EV-002",
+        "EV-003",
+        "EV-011",
+        "EV-012"
+      ]
+    },
+    "evidence_and_authorship": {
+      "title": "Evidence, strata, and authorship",
+      "topics": [
+        {
+          "title": "Source-tier and channel coverage",
+          "notes": [
+            "About, SANTAL 33, Discovery, Refill의 공식 페이지에 더해 워드마크, 내비게이션, 제품 크기·카테고리, 라벨 적용, 랩 작업대, 리필 단계, 도시별 랩, 장인 포스터, Le Journal 판화 자산을 사용했다. EV-001–EV-041은 공식·공식 모회사 자료이고, EV-042–EV-044는 사용자가 제공한 출처 미확인 무드 레퍼런스다."
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-001",
+            "EV-041",
+            "EV-042",
+            "EV-044"
+          ]
+        },
+        {
+          "title": "Era, region, product-line, campaign, and collaborator strata",
+          "notes": [
+            "현재 US 영문 채널과 Classic, Discovery, refill 중심이다. Shanghai, Chicago, Mexico City, Tokyo, New York의 공식 `Souls & Labs` 포스터를 추가해 지역 표현 폭을 넓혔지만, 전 세계 매장 전수 비교나 개별 이미지 제작자 확인은 하지 않았다. EV-031 EV-032 EV-033 EV-034 EV-035"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-031",
+            "EV-032",
+            "EV-033",
+            "EV-034",
+            "EV-035"
+          ]
+        },
+        {
+          "title": "Visual corpus and contact sheets",
+          "notes": [
+            "`contact-sheets/overview.jpg`, 기존 세 레이어 시트, 추가 조사 시트 네 장은 비교용 파생물이다. 보고서에는 `visual-corpus.csv`에 등록된 37개 1차 시각 근거와 별도 표시한 사용자 제공 무드 레퍼런스 3개를 직접 노출한다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        },
+        {
+          "title": "Biases, contradictions, and gaps",
+          "notes": [
+            "온라인 PDP가 중립 제품 사진을 과대표집할 수 있다. 다섯 도시 랩 포스터는 지역 차이를 보여 주지만 전체 매장 시스템을 대표하지 않는다. 모션 포스터는 프레임의 촬영 언어를 보여 줄 뿐 실제 편집 리듬·사운드를 증명하지 않는다. EV-042–EV-044는 원 출처·제작자·제작 방식을 확인할 수 없어 공식 역사나 브랜드 규칙의 근거로 사용하지 않고, 사용자가 선택한 무드 방향을 보여 주는 참고 이미지로만 다룬다."
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-042",
+            "EV-044"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "EV-001",
+        "EV-031",
+        "EV-032",
+        "EV-033",
+        "EV-034",
+        "EV-035",
+        "EV-041",
+        "EV-042",
+        "EV-044"
+      ]
+    },
+    "strategy": {
+      "title": "Strategic and cultural anatomy",
+      "topics": [
+        {
+          "title": "Category definition",
+          "notes": [
+            "Observed: fine fragrance를 중심으로 candle, home, body, hair, face, discovery와 refill을 `creations` 포트폴리오로 묶는다. EV-001 EV-002 EV-004"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-001",
+            "EV-002",
+            "EV-004"
+          ]
+        },
+        {
+          "title": "Audience identity, situation, and anxieties",
+          "notes": [
+            "Inferred: 익명적 기성 럭셔리와 성급한 선택을 경계하고 선택·사용 이력을 자기 경험으로 만들고 싶은 고객을 상정한다. EV-001 EV-003 EV-004"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-001",
+            "EV-003",
+            "EV-004"
+          ]
+        },
+        {
+          "title": "Tension or enemy",
+          "notes": [
+            "Inferred: 적은 제품 수가 아니라 영혼 없는 기성품과 설명만 많은 럭셔리다. 대안은 손으로 준비하고 천천히 발견하며 다시 채우는 경험이다. EV-001 EV-003"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-001",
+            "EV-003"
+          ]
+        },
+        {
+          "title": "Functional, emotional, and social promise",
+          "notes": [
+            "선택·개인화·리필이라는 기능, 친숙함 속 낯선 감각, 과시보다 취향과 제작 흔적을 공유하는 사회적 약속을 겹친다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        },
+        {
+          "title": "Reasons to believe",
+          "notes": [
+            "랩 조제, 개인 라벨, 리필 날짜, 14일 이상 숙성 안내, 원료와 제작 현장 기록이 근거다. EV-003 EV-008 EV-009 EV-012"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-003",
+            "EV-008",
+            "EV-009",
+            "EV-012"
+          ]
+        },
+        {
+          "title": "Competitive and cultural posture",
+          "notes": [
+            "뉴욕의 직설성, wabi-sabi, 문학, 아날로그 인쇄·작업 문화를 결합해 장식적 향수 럭셔리와 거리를 둔다. EV-001 EV-007"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-001",
+            "EV-007"
+          ]
+        },
+        {
+          "title": "Portfolio, endorsement, and authorship logic",
+          "notes": [
+            "향 이름+숫자의 반복 체계가 제품군을 묶고 도시·원료·형식이 변주한다. 숫자의 의미는 공식 근거가 없어 성분 수라고 주장하지 않는다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        }
+      ],
+      "evidence_ids": [
+        "EV-001",
+        "EV-002",
+        "EV-003",
+        "EV-004",
+        "EV-007",
+        "EV-008",
+        "EV-009",
+        "EV-012"
+      ]
+    },
+    "verbal_system": {
+      "title": "Verbal anatomy",
+      "topics": [
+        {
+          "title": "Lexicon and semantic territories",
+          "notes": [
+            "`creations`, `souls`, `labs`, `craftspeople`, `slow perfumery`, `freshly formulated`처럼 사람과 작업을 뜻하는 단어가 반복된다. EV-001 EV-003"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-001",
+            "EV-003"
+          ]
+        },
+        {
+          "title": "Syntax, rhetoric, cadence, and emotional temperature",
+          "notes": [
+            "Observed: “We believe” 선언을 반복하고 제품은 장면에서 시작해 성분으로 이동한다. 짧은 문장, 괄호, 생략 부호와 농담이 권위를 누그러뜨린다. EV-001 EV-002"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-001",
+            "EV-002"
+          ]
+        },
+        {
+          "title": "Message hierarchy",
+          "notes": [
+            "신념·감각 장면 → 제품명·형식 → 향의 구성 → 용량·개인화 → 성분·배송·관리 순서다. EV-001 EV-002 EV-004"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-001",
+            "EV-002",
+            "EV-004"
+          ]
+        },
+        {
+          "title": "Naming behavior",
+          "notes": [
+            "Observed: 대문자 원료·감각 명칭 뒤에 숫자를 붙인다. City 계열은 장소를 더한다. 정확한 숫자 의미는 확인 공백이다. EV-002"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-002"
+          ]
+        },
+        {
+          "title": "Campaign, product, UI, transactional, support, and error modulation",
+          "notes": [
+            "PDP는 감각 서사와 명세를 병치하고 FAQ는 “same bottle, same scent, same perfume”처럼 반복과 절차로 명확성을 높인다. EV-002 EV-003"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-002",
+            "EV-003"
+          ]
+        },
+        {
+          "title": "Verbal exceptions and proprietary language",
+          "notes": [
+            "관리·오류·리필 문구는 낭만보다 자격, 사이즈, 배송, 숙성 시간을 먼저 밝힌다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        }
+      ],
+      "evidence_ids": [
+        "EV-001",
+        "EV-002",
+        "EV-003",
+        "EV-004"
+      ]
+    },
+    "identity_and_channel_tokens": {
+      "title": "Identity and channel-token anatomy",
+      "topics": [
+        {
+          "title": "Mark behavior",
+          "notes": [
+            "현재 공식 웹은 투명 배경의 작고 수평적인 짙은 회색 워드마크를 쓴다. EV-005"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-005"
+          ]
+        },
+        {
+          "title": "Typography roles and relationships",
+          "notes": [
+            "2026-08-24 공식 CSS는 Bell Gothic Std를 대문자 제목·내비게이션·액션에, Magda/Magda Pro를 본문·폼·메타데이터에, Helvetica Condensed를 가격·보조 정보에 배치한다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        },
+        {
+          "title": "Color roles, value structure, concentrated accent use, and image relationship",
+          "notes": [
+            "#333333 워드마크와 #F6F8F6 웹 바탕이 직접 관찰된다. #595959 버튼과 #BF0000 오류는 상호작용 색이며 정체성 색으로 확대하지 않는다. 사진의 원료색·네온은 이미지 안에 제한된다. EV-005 EV-008 EV-010"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-005",
+            "EV-008",
+            "EV-010"
+          ]
+        },
+        {
+          "title": "Spacing, grid, containers, density, and responsive behavior",
+          "notes": [
+            "넓은 중립 여백 속에 대문자 분류와 얇은 구분선을 두고 한 영역에 한 제품군이나 한 오브젝트를 집중한다. 실제 반응형 순서는 미확정이다. EV-006 EV-012"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-006",
+            "EV-012"
+          ]
+        },
+        {
+          "title": "Shape, surface, depth, icon, illustration, and motion primitives",
+          "notes": [
+            "장식 도형보다 라벨 사각형, 박스, 신문, 투명 병 같은 실제 물체가 그래픽 장치 역할을 한다. 다만 Le Journal은 실물 정보지 위에 흑백 판화와 초현실적 제품 은유를 허용한다. 즉 그래픽은 반드시 사실 사진일 필요는 없지만, 촉각적 인쇄물과 정보 구조에 묶인다. EV-006 EV-012 EV-040 EV-041"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-006",
+            "EV-012",
+            "EV-040",
+            "EV-041"
+          ]
+        },
+        {
+          "title": "Owned-digital implementation versus cross-channel invariants",
+          "notes": [
+            "정확한 CSS 값은 채널 구현이다. 반복 관계는 중립 기반, 분류형 글자, 물질적 오브젝트, 손의 개입이다. EV-005 EV-007 EV-011 EV-012"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-005",
+            "EV-007",
+            "EV-011",
+            "EV-012"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "EV-005",
+        "EV-006",
+        "EV-007",
+        "EV-008",
+        "EV-010",
+        "EV-011",
+        "EV-012",
+        "EV-040",
+        "EV-041"
+      ]
+    },
+    "key_visual_system": {
+      "title": "Key-visual system",
+      "topics": [
+        {
+          "title": "Cross-surface visual operating model",
+          "notes": [],
+          "tables": [
+            {
+              "columns": [
+                "Field",
+                "Observed relationship",
+                "Invariant",
+                "Variable / exception",
+                "Evidence IDs"
+              ],
+              "rows": [
+                {
+                  "Field": "Core visual premise",
+                  "Observed relationship": "작업 기록형 활자와 손에 닿은 물체를 병치",
+                  "Invariant": "물체·정보·흔적이 함께 보임",
+                  "Variable / exception": "Films는 서정적이고 Journal은 판화적",
+                  "Evidence IDs": "EV-005 EV-012 EV-030 EV-040"
+                },
+                {
+                  "Field": "Semantic focal actor",
+                  "Observed relationship": "병·라벨·신문·손 중 하나",
+                  "Invariant": "중심 행동 하나",
+                  "Variable / exception": "가족 사진은 반복 허용",
+                  "Evidence IDs": "EV-006 EV-011"
+                },
+                {
+                  "Field": "Type-message-image",
+                  "Observed relationship": "활자는 분류하고 이미지는 물성과 행위를 보여 줌",
+                  "Invariant": "역할 분리",
+                  "Variable / exception": "PDP는 정보 증가",
+                  "Evidence IDs": "EV-002 EV-006"
+                },
+                {
+                  "Field": "Color roles",
+                  "Observed relationship": "중립 구조와 국소 사진색 분리",
+                  "Invariant": "선명색은 좁게",
+                  "Variable / exception": "네온 장면 예외",
+                  "Evidence IDs": "EV-005 EV-010"
+                },
+                {
+                  "Field": "Graphic device",
+                  "Observed relationship": "라벨·박스·신문 자체가 프레임",
+                  "Invariant": "촉각적 정보 매체 우선",
+                  "Variable / exception": "Journal은 판화·초현실 은유 허용",
+                  "Evidence IDs": "EV-006 EV-012 EV-040 EV-041"
+                },
+                {
+                  "Field": "Layout",
+                  "Observed relationship": "넓은 여백과 한 개 주역",
+                  "Invariant": "시선 분산 억제",
+                  "Variable / exception": "컬렉션은 반복",
+                  "Evidence IDs": "EV-006 EV-011"
+                },
+                {
+                  "Field": "UI translation",
+                  "Observed relationship": "사각 사진이 메뉴 분류 표지",
+                  "Invariant": "기능 링크 유지",
+                  "Variable / exception": "반응형 미확인",
+                  "Evidence IDs": "EV-006 EV-012"
+                },
+                {
+                  "Field": "Content translation",
+                  "Observed relationship": "물리 인쇄물을 브랜드 오브젝트화",
+                  "Invariant": "정보 물체 중심",
+                  "Variable / exception": "편집호별 판화·은유 변화",
+                  "Evidence IDs": "EV-006 EV-040 EV-041"
+                },
+                {
+                  "Field": "Imagery role",
+                  "Observed relationship": "제작 과정 또는 제품 사실 제시",
+                  "Invariant": "손·도구·표면",
+                  "Variable / exception": "PDP는 사람 없음",
+                  "Evidence IDs": "EV-008 EV-011 EV-012"
+                },
+                {
+                  "Field": "Motion",
+                  "Observed relationship": "포스터는 도시·과정의 한 장면을 선택",
+                  "Invariant": "현장과 행위 중심",
+                  "Variable / exception": "편집·사운드 공백",
+                  "Evidence IDs": "EV-008 EV-030 EV-034 EV-036"
+                },
+                {
+                  "Field": "Channel adaptation",
+                  "Observed relationship": "메뉴·라벨·공간에 기록 관계 반복",
+                  "Invariant": "분류와 물성",
+                  "Variable / exception": "폰트값 변동",
+                  "Evidence IDs": "EV-005 EV-006 EV-007"
+                }
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "EV-002",
+            "EV-005",
+            "EV-006",
+            "EV-007",
+            "EV-008",
+            "EV-010",
+            "EV-011",
+            "EV-012",
+            "EV-030",
+            "EV-034",
+            "EV-036",
+            "EV-040",
+            "EV-041"
+          ]
+        },
+        {
+          "title": "Cross-surface evidence map",
+          "notes": [],
+          "tables": [
+            {
+              "columns": [
+                "Surface",
+                "Application",
+                "What remains from the operating model",
+                "Evidence ID",
+                "Scope / exception"
+              ],
+              "rows": [
+                {
+                  "Surface": "Identity",
+                  "Application": "공식 워드마크",
+                  "What remains from the operating model": "작은 짙은 기록형 표식",
+                  "Evidence ID": "EV-005",
+                  "Scope / exception": "웹 헤더"
+                },
+                {
+                  "Surface": "UI",
+                  "Application": "About 메뉴 타일",
+                  "What remains from the operating model": "한 이미지와 기능 링크",
+                  "Evidence ID": "EV-006",
+                  "Scope / exception": "정적 데스크톱 소스"
+                },
+                {
+                  "Surface": "Space",
+                  "Application": "첫 랩",
+                  "What remains from the operating model": "실제 거리와 작업 공간",
+                  "Evidence ID": "EV-007",
+                  "Scope / exception": "한 장소"
+                },
+                {
+                  "Surface": "Space",
+                  "Application": "도시별 랩",
+                  "What remains from the operating model": "기능적 재고·재료 노화는 유지하고 지역 맥락은 남김",
+                  "Evidence ID": "EV-022 EV-023 EV-031 EV-032 EV-033 EV-034 EV-035",
+                  "Scope / exception": "공식 포스터 표본"
+                },
+                {
+                  "Surface": "Imagery",
+                  "Application": "장인 포스터",
+                  "What remains from the operating model": "손·재료·행동",
+                  "Evidence ID": "EV-008",
+                  "Scope / exception": "전체 필름 미확인"
+                },
+                {
+                  "Surface": "Product",
+                  "Application": "Classic family",
+                  "What remains from the operating model": "반복 용기와 선택 손짓",
+                  "Evidence ID": "EV-011",
+                  "Scope / exception": "컬렉션 타일"
+                },
+                {
+                  "Surface": "Packaging",
+                  "Application": "크기·카테고리 변주",
+                  "What remains from the operating model": "용기보다 라벨의 정보 위계가 가족성을 유지",
+                  "Evidence ID": "EV-013 EV-014 EV-015 EV-018 EV-020 EV-021",
+                  "Scope / exception": "공식 PDP 표본"
+                },
+                {
+                  "Surface": "Packaging",
+                  "Application": "개인 라벨·Discovery box",
+                  "What remains from the operating model": "라벨 정렬과 내부 배열을 손의 절차로 제시",
+                  "Evidence ID": "EV-016 EV-017",
+                  "Scope / exception": "개인화·샘플 제품"
+                },
+                {
+                  "Surface": "Service",
+                  "Application": "온라인 리필",
+                  "What remains from the operating model": "병·보호재·문서·운송을 연속 동작으로 설명",
+                  "Evidence ID": "EV-024 EV-025 EV-026 EV-027 EV-028 EV-029",
+                  "Scope / exception": "US 온라인 흐름"
+                },
+                {
+                  "Surface": "Editorial",
+                  "Application": "Le Journal",
+                  "What remains from the operating model": "신문 물성 위에 흑백 판화와 초현실 제품 은유",
+                  "Evidence ID": "EV-040 EV-041",
+                  "Scope / exception": "두 개 공식 편집 이미지"
+                }
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "EV-005",
+            "EV-006",
+            "EV-007",
+            "EV-008",
+            "EV-011",
+            "EV-013",
+            "EV-014",
+            "EV-015",
+            "EV-016",
+            "EV-017",
+            "EV-018",
+            "EV-020",
+            "EV-021",
+            "EV-022",
+            "EV-023",
+            "EV-024",
+            "EV-025",
+            "EV-026",
+            "EV-027",
+            "EV-028",
+            "EV-029",
+            "EV-031",
+            "EV-032",
+            "EV-033",
+            "EV-034",
+            "EV-035",
+            "EV-040",
+            "EV-041"
+          ]
+        },
+        {
+          "title": "Typography, color, form, layout, and material relationship",
+          "notes": [
+            "압축된 정보 글자는 유리, 종이, 콘크리트 같은 재료를 정돈한다. 중립색은 정보 바탕이고 원료·도시색은 사진 안에서 감각을 만든다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        },
+        {
+          "title": "UI, content-template, imagery, and motion translation",
+          "notes": [
+            "UI는 사진을 분류 입구로, 이미지는 제작 행위를 근거로, 패키지는 라벨을 서비스 기록으로 쓴다. 모션은 포스터만으로 확정하지 않는다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        },
+        {
+          "title": "Masterbrand versus campaign/collaborator/season authorship",
+          "notes": [
+            "워드마크·라벨·분류 문법은 마스터브랜드에 가깝고, 도시·원료 장면은 컬렉션·편집 저자성이 더 강하다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        },
+        {
+          "title": "Invariants, variables, and prohibited generalizations",
+          "notes": [
+            "중립 구조, 한 개 주역, 분류형 정보, 실제 물성, 인간 행동이 반복된다. 모든 사진을 어둡게 만들거나 모든 채널에 같은 CSS 값을 적용하는 것은 근거가 없다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        }
+      ],
+      "evidence_ids": [
+        "EV-002",
+        "EV-005",
+        "EV-006",
+        "EV-007",
+        "EV-008",
+        "EV-010",
+        "EV-011",
+        "EV-012",
+        "EV-013",
+        "EV-014",
+        "EV-015",
+        "EV-016",
+        "EV-017",
+        "EV-018",
+        "EV-020",
+        "EV-021",
+        "EV-022",
+        "EV-023",
+        "EV-024",
+        "EV-025",
+        "EV-026",
+        "EV-027",
+        "EV-028",
+        "EV-029",
+        "EV-030",
+        "EV-031",
+        "EV-032",
+        "EV-033",
+        "EV-034",
+        "EV-035",
+        "EV-036",
+        "EV-040",
+        "EV-041"
+      ]
+    },
+    "brand_mood_and_world": {
+      "title": "Brand mood and world",
+      "topics": [
+        {
+          "title": "Cultural and emotional register",
+          "notes": [
+            "차갑게 정돈된 실험실과 인간적인 농담, 도시의 거침과 느린 손작업이 공존한다. 랩의 분위기는 빈티지 소품 장식보다 실제 재고, 도구, 작업대, 마모된 재료가 만드는 사용 밀도에 가깝다. EV-001 EV-022 EV-023 EV-034 EV-038"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-001",
+            "EV-022",
+            "EV-023",
+            "EV-034",
+            "EV-038"
+          ]
+        },
+        {
+          "title": "Reality versus fiction",
+          "notes": [
+            "제품 글은 영화적이지만 시각 자료는 실제 거리, 작업자, 도구, 포장으로 되돌아온다. EV-002 EV-007 EV-009"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-002",
+            "EV-007",
+            "EV-009"
+          ]
+        },
+        {
+          "title": "Settings, environments, material imagination, and sensory register",
+          "notes": [
+            "콘크리트, 금속, 유리, 크라프트, 나무, 식물 원료가 반복된다. 광택 장식보다 마모·섬유·종이결·콘크리트 기공과 도구 접촉이 감각을 만든다. EV-007 EV-012 EV-036 EV-037 EV-038 EV-039"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-007",
+            "EV-012",
+            "EV-036",
+            "EV-037",
+            "EV-038",
+            "EV-039"
+          ]
+        },
+        {
+          "title": "Human role and social distance",
+          "notes": [
+            "완성된 모델보다 손·작업자·부분 인물이 등장하며, 인물은 소비하기보다 만들고 고르고 다룬다. EV-008 EV-009 EV-011"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-008",
+            "EV-009",
+            "EV-011"
+          ]
+        },
+        {
+          "title": "Production causes that create the mood",
+          "notes": [
+            "현장 광원, 가까운 거리, 자연스러운 입자, 중립색, 실제 재료, 불완전한 표면이 제작자의 존재감을 만든다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        },
+        {
+          "title": "User-curated mood references and evidence limit",
+          "notes": [
+            "Observed: 사용자 제공 이미지 세 장은 제품·크라프트 패키지·식물 원료·나무·금속·유리를 표본처럼 평면 배열한다. EV-042는 검은 바탕과 낮은 조명으로 어두운 원료실의 밀도를, EV-043은 차가운 회색 바탕과 넓은 간격으로 밝은 실험실의 정돈감을, EV-044는 여섯 개 제품군과 원료의 반복으로 도시·향별 변주 체계를 시각화한다. 다만 세 파일 모두 원 출처와 제작자가 확인되지 않으므로 공식 르라보 표현을 새로 증명하지 않으며, 이 문서에서 합의된 무드 방향을 구체화하는 참고 이미지로만 사용한다. EV-042 EV-043 EV-044"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-042",
+            "EV-043",
+            "EV-044"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "EV-001",
+        "EV-002",
+        "EV-007",
+        "EV-008",
+        "EV-009",
+        "EV-011",
+        "EV-012",
+        "EV-022",
+        "EV-023",
+        "EV-034",
+        "EV-036",
+        "EV-037",
+        "EV-038",
+        "EV-039",
+        "EV-042",
+        "EV-043",
+        "EV-044"
+      ]
+    },
+    "photography_and_film": {
+      "title": "Photography and film language",
+      "topics": [
+        {
+          "title": "Subjects, casting, gaze, gesture, wardrobe, and styling",
+          "notes": [
+            "제작자, 손, 원료, 도구가 주제다. 카메라를 보는 표정 대신 수확, 재봉, 성형, 조립, 조제 중인 동작을 포착한다. EV-008 EV-009 EV-036 EV-037 EV-038 EV-039"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-008",
+            "EV-009",
+            "EV-036",
+            "EV-037",
+            "EV-038",
+            "EV-039"
+          ]
+        },
+        {
+          "title": "Location, set, props, and environmental realism",
+          "notes": [
+            "수확지·워크숍·거리·랩이 세트처럼 정리되지 않은 실제 환경으로 남는다. 도시별 랩도 하나의 복제된 인테리어보다 기존 건물과 거리 맥락을 보존한다. EV-007 EV-022 EV-031 EV-032 EV-033 EV-034 EV-035 EV-036"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-007",
+            "EV-022",
+            "EV-031",
+            "EV-032",
+            "EV-033",
+            "EV-034",
+            "EV-035",
+            "EV-036"
+          ]
+        },
+        {
+          "title": "Framing, camera distance/height, perspective, and lens character",
+          "notes": [
+            "공정은 손과 표면에 가까운 프레임, 공간은 넓은 환경 프레임, 제품은 비교적 정면인 사실 프레임을 쓴다. Films의 도시 프레임은 전경 가림, 원경 스카이라인, 입자를 허용한다. EV-007 EV-012 EV-030 EV-036 EV-038"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-007",
+            "EV-012",
+            "EV-030",
+            "EV-036",
+            "EV-038"
+          ]
+        },
+        {
+          "title": "Light, exposure, reflection, shadow, palette, and time",
+          "notes": [
+            "자연광과 낮은 작업광을 허용하며 유리 반사와 어두운 그림자를 완전히 제거하지 않는다. EV-008 EV-010 EV-011"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-008",
+            "EV-010",
+            "EV-011"
+          ]
+        },
+        {
+          "title": "Texture, imperfection, retouching, compositing, and typography in image",
+          "notes": [
+            "입자·마모·종이결을 보존한다. 제품 사실 사진은 더 깨끗하지만 라벨과 재료결을 없애지 않는다. EV-009 EV-011 EV-012"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-009",
+            "EV-011",
+            "EV-012"
+          ]
+        },
+        {
+          "title": "Motion, cuts, transitions, loops, and sound",
+          "notes": [
+            "직접 영상 프레임과 음향을 확보하지 못해 미확정이다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        },
+        {
+          "title": "Channel variants and exceptions",
+          "notes": [
+            "PDP는 균일 조명과 완전한 실루엣, 편집 이미지는 현장성·입자·부분 인물을 우선한다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        }
+      ],
+      "evidence_ids": [
+        "EV-007",
+        "EV-008",
+        "EV-009",
+        "EV-010",
+        "EV-011",
+        "EV-012",
+        "EV-022",
+        "EV-030",
+        "EV-031",
+        "EV-032",
+        "EV-033",
+        "EV-034",
+        "EV-035",
+        "EV-036",
+        "EV-037",
+        "EV-038",
+        "EV-039"
+      ]
+    },
+    "product_representation": {
+      "title": "Product representation",
+      "topics": [
+        {
+          "title": "Physical-product photography and neutral views",
+          "notes": [
+            "제품 사실 사진은 정면에 가깝고 완전한 실루엣과 라벨을 보여 준다. 15 ml, 50 ml, 500 ml와 candle, shower gel, hand pomade처럼 형상과 비례가 달라도 정보 라벨의 위계가 반복된다. EV-012 EV-013 EV-014 EV-015 EV-018 EV-020 EV-021"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-012",
+            "EV-013",
+            "EV-014",
+            "EV-015",
+            "EV-018",
+            "EV-020",
+            "EV-021"
+          ]
+        },
+        {
+          "title": "Digital-product mockups, screenshots, and screen recordings",
+          "notes": [
+            "물리 제품 브랜드이므로 비적용. 웹 UI는 판매·분류 채널이며 제품 자체가 아니다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        },
+        {
+          "title": "Family views, detail, scale, and material fidelity",
+          "notes": [
+            "향수에서는 같은 병과 라벨을 반복하지만, 전체 카테고리 가족성은 병 실루엣 하나보다 흰 정보 라벨, 짙은 캡·타입, 절제된 재료 대비에서 더 강하게 유지된다. EV-013 EV-014 EV-015 EV-018 EV-020 EV-021"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-013",
+            "EV-014",
+            "EV-015",
+            "EV-018",
+            "EV-020",
+            "EV-021"
+          ]
+        },
+        {
+          "title": "Product in use and human relationship",
+          "notes": [
+            "손 하나의 선택·라벨링·조제 행동이 제품 설명을 보완하되 제품과 핵심 정보를 가리지 않는다. EV-011 EV-016 EV-024"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-011",
+            "EV-016",
+            "EV-024"
+          ]
+        },
+        {
+          "title": "Operation, performance, and factual demonstration",
+          "notes": [
+            "성능보다 선택·개인화·리필 절차를 보여 준다. 특히 리필은 병 닫기, 보호, 송장 확인, 문서 동봉, 운송 인계로 이어지는 역물류를 이미지 단계로 구체화한다. EV-002 EV-003 EV-025 EV-026 EV-027 EV-028 EV-029"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-002",
+            "EV-003",
+            "EV-025",
+            "EV-026",
+            "EV-027",
+            "EV-028",
+            "EV-029"
+          ]
+        },
+        {
+          "title": "Packaging, onboarding, care, support, failure, and recovery representation",
+          "notes": [
+            "Discovery는 열린 박스 안의 샘플 배열로 비교·선택의 순서를 만들고, refill은 기존 병을 같은 향과 크기로 돌려받는 회복 경로를 제공한다. EV-003 EV-004 EV-012 EV-017 EV-025 EV-026 EV-027 EV-028 EV-029"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-003",
+            "EV-004",
+            "EV-012",
+            "EV-017",
+            "EV-025",
+            "EV-026",
+            "EV-027",
+            "EV-028",
+            "EV-029"
+          ]
+        },
+        {
+          "title": "Camera, device frame, capture, retouching, compositing, and channel limits",
+          "notes": [
+            "제품 사실 사진과 편집 사진의 배경·조명을 제품 고유 속성과 혼동하지 않는다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        }
+      ],
+      "evidence_ids": [
+        "EV-002",
+        "EV-003",
+        "EV-004",
+        "EV-011",
+        "EV-012",
+        "EV-013",
+        "EV-014",
+        "EV-015",
+        "EV-016",
+        "EV-017",
+        "EV-018",
+        "EV-020",
+        "EV-021",
+        "EV-024",
+        "EV-025",
+        "EV-026",
+        "EV-027",
+        "EV-028",
+        "EV-029"
+      ]
+    },
+    "product_native_visual_and_cognitive_language": {
+      "title": "Product-native visual and cognitive language",
+      "topics": [
+        {
+          "title": "Shared product model: category archetype or mental model",
+          "notes": [
+            "약국·실험실의 보관 용기와 작업 라벨을 연상시키는 체계다. 카테고리마다 용기 원형은 달라지지만 라벨은 이름·형식·용량·개체 정보를 기록하는 공통 인터페이스로 남는다. EV-013 EV-014 EV-015 EV-018 EV-020 EV-021"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-013",
+            "EV-014",
+            "EV-015",
+            "EV-018",
+            "EV-020",
+            "EV-021"
+          ]
+        },
+        {
+          "title": "Shared hierarchy, structure, boundaries, controls, states, and feedback",
+          "notes": [
+            "라벨의 이름, 숫자, 용량, 개인 표식이 상태를 구분하며 리필은 새 날짜를 더한다. EV-003 EV-011 EV-012"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-003",
+            "EV-011",
+            "EV-012"
+          ]
+        },
+        {
+          "title": "Physical branch: silhouette, proportion, geometry, CMF, seams, joints, and movement",
+          "notes": [
+            "투명·앰버 용기, 검정 캡, 흰 정보 라벨, 크라프트 박스가 가족성을 만든다. EV-011 EV-012"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-011",
+            "EV-012"
+          ]
+        },
+        {
+          "title": "Physical branch: care, storage, repair, wear, and failure",
+          "notes": [
+            "실온·차광 보관과 동일 향·동일 크기 리필이 안내된다. 숙성 중 변화는 오류가 아니라 시간 상태로 설명된다. EV-003"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-003"
+          ]
+        },
+        {
+          "title": "Digital branch: information architecture, navigation, and screen anatomy",
+          "notes": [
+            "비적용. 웹은 물리 제품을 선택·개인화·회수하는 서비스 인터페이스다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        },
+        {
+          "title": "Digital branch: component geometry, density, content framing, and state model",
+          "notes": [
+            "비적용. 폼은 용량·수량·개인화·배송 상태를 순차 공개한다. EV-002 EV-004"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-002",
+            "EV-004"
+          ]
+        },
+        {
+          "title": "Digital branch: motion, feedback, personalization, accessibility, and localization",
+          "notes": [
+            "개인화 글자 수와 입력 필드가 제약을 보여 준다. 접근성·전체 지역화는 확인 공백이다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        },
+        {
+          "title": "Product-family invariants and controlled variants",
+          "notes": [
+            "정보 라벨, 절제된 재료 대비, 명칭 체계가 고정되고 용기 실루엣·향·크기·도시·형식이 통제된 범위에서 변한다. EV-013 EV-014 EV-015 EV-018 EV-020 EV-021"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-013",
+            "EV-014",
+            "EV-015",
+            "EV-018",
+            "EV-020",
+            "EV-021"
+          ]
+        },
+        {
+          "title": "Hybrid branch: physical control, digital state, service, and feedback continuity",
+          "notes": [
+            "웹에서 리필을 주문하고 기존 병과 송장을 정해진 순서로 보내면 같은 향을 채워 새 날짜 라벨과 함께 돌려보낸다. 서비스 인터페이스의 상태가 병·문서·포장·운송의 물리 상태와 연결된다. EV-003 EV-025 EV-026 EV-027 EV-028 EV-029"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-003",
+            "EV-025",
+            "EV-026",
+            "EV-027",
+            "EV-028",
+            "EV-029"
+          ]
+        },
+        {
+          "title": "Product truth versus photography, mockup, screenshot, and campaign construction",
+          "notes": [
+            "PDP 용기·라벨·포장을 제품 사실 근거로 삼고 현장 사진의 거친 조명은 제품 CMF로 일반화하지 않는다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        }
+      ],
+      "evidence_ids": [
+        "EV-002",
+        "EV-003",
+        "EV-004",
+        "EV-011",
+        "EV-012",
+        "EV-013",
+        "EV-014",
+        "EV-015",
+        "EV-018",
+        "EV-020",
+        "EV-021",
+        "EV-025",
+        "EV-026",
+        "EV-027",
+        "EV-028",
+        "EV-029"
+      ]
+    },
+    "composition_and_cross_channel_grammar": {
+      "title": "Composition and cross-channel grammar",
+      "topics": [
+        {
+          "title": "Grid, anchoring, grouping, density, and whitespace",
+          "notes": [
+            "한 개 중심 오브젝트와 넓은 중립 여백을 기본으로 하고 가족 사진만 반복 밀도를 높인다. EV-006 EV-011 EV-012"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-006",
+            "EV-011",
+            "EV-012"
+          ]
+        },
+        {
+          "title": "Scale, crop, overlap, repetition, and interruption",
+          "notes": [
+            "라벨과 병을 반복해 체계를 만들고 손 또는 거친 표면 하나가 반복을 끊는다. EV-011 EV-012"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-011",
+            "EV-012"
+          ]
+        },
+        {
+          "title": "Relationships among type, image, object, product, and space",
+          "notes": [
+            "글자는 분류와 기록, 이미지는 재료와 행위, 공간은 제작 맥락을 담당한다. Le Journal의 판화는 예외적 장식이 아니라 제품·장소·감각을 압축하는 편집 은유로 작동한다. EV-005 EV-007 EV-012 EV-040 EV-041"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-005",
+            "EV-007",
+            "EV-012",
+            "EV-040",
+            "EV-041"
+          ]
+        },
+        {
+          "title": "Responsive and format adaptation",
+          "notes": [
+            "정사각 메뉴, 세로 포스터, 가로 환경 사진에서도 한 개 주역과 중립 구조를 유지한다. 실제 반응형 순서는 미확정이다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        }
+      ],
+      "evidence_ids": [
+        "EV-005",
+        "EV-006",
+        "EV-007",
+        "EV-011",
+        "EV-012",
+        "EV-040",
+        "EV-041"
+      ]
+    },
+    "product_interface_and_service_behavior": {
+      "title": "Product, interface, and service behavior",
+      "topics": [
+        {
+          "title": "Information architecture and disclosure rhythm",
+          "notes": [
+            "컬렉션→제품→크기→개인화→성분·배송·관리 순으로 선택 부담을 나눈다. EV-002 EV-004"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-002",
+            "EV-004"
+          ]
+        },
+        {
+          "title": "Defaults, permissions, guidance, tempo, and feedback",
+          "notes": [
+            "개인화는 글자 수를 제한하고 Discovery는 피부에서 시간을 두고 비교하도록 유도한다. EV-004 EV-012"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-004",
+            "EV-012"
+          ]
+        },
+        {
+          "title": "Error, recovery, and service escalation",
+          "notes": [
+            "향 변화는 숙성 과정으로 설명하고 리필은 동일 향·크기 원칙, 송장 확인, 보호 포장, 참여 랩 확인으로 오류를 줄인다. EV-003 EV-025 EV-026 EV-027 EV-028 EV-029"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-003",
+            "EV-025",
+            "EV-026",
+            "EV-027",
+            "EV-028",
+            "EV-029"
+          ]
+        },
+        {
+          "title": "Product ceremony, onboarding, use, care, repair, and post-purchase",
+          "notes": [
+            "열린 Discovery 배열로 발견→선택→손으로 개인 라벨 적용→사용→병과 문서 회수→동일 병 리필→새 날짜 기록이 지속적 의식으로 연결된다. EV-003 EV-004 EV-016 EV-017 EV-025 EV-026 EV-027 EV-028 EV-029"
+          ],
+          "tables": [],
+          "evidence_ids": [
+            "EV-003",
+            "EV-004",
+            "EV-016",
+            "EV-017",
+            "EV-025",
+            "EV-026",
+            "EV-027",
+            "EV-028",
+            "EV-029"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "EV-002",
+        "EV-003",
+        "EV-004",
+        "EV-012",
+        "EV-016",
+        "EV-017",
+        "EV-025",
+        "EV-026",
+        "EV-027",
+        "EV-028",
+        "EV-029"
+      ]
+    },
+    "system_synthesis": {
+      "title": "System synthesis",
+      "topics": [
+        {
+          "title": "Approved grammar candidates",
+          "notes": [
+            "GK-01–GK-05를 `grammar-kernel.md`에 기록했다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        },
+        {
+          "title": "Contrasting qualities that stay together",
+          "notes": [
+            "정확성/모호성, 반복/개인 표식, 거친 현장/절제된 고급감이다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        },
+        {
+          "title": "Source expressions not to copy directly",
+          "notes": [
+            "Le Labo 워드마크, 향명+숫자, 약국형 라벨, “We believe”, “same bottle…” 문구, 고유 랩과 트레이드 드레스를 복제하지 않는다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        },
+        {
+          "title": "Scope exceptions and falsification conditions",
+          "notes": [
+            "공개 가이드가 다른 정체성 체계를 제시하거나 광범위한 채널에서 장식적 이미지가 기본으로 확인되면 중립·기록 중심 규칙을 수정한다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        }
+      ],
+      "evidence_ids": []
+    },
+    "global_brand_system": {
+      "title": "Global brand-system framework",
+      "topics": [
+        {
+          "title": "Overview",
+          "notes": [
+            "> 원본 관계의 요약이며 구현 토큰이 아니다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        },
+        {
+          "title": "Brand color scheme",
+          "notes": [
+            "Identity color field:",
+            "Interaction and status color references:",
+            "Product, campaign, and photographic color boundaries:"
+          ],
+          "tables": [
+            {
+              "columns": [
+                "Observed value",
+                "Color layer",
+                "Source role",
+                "Channel / market / date",
+                "Evidence and scope"
+              ],
+              "rows": [
+                {
+                  "Observed value": "#333333",
+                  "Color layer": "Identity",
+                  "Source role": "공식 투명 워드마크의 가시색",
+                  "Channel / market / date": "US web / 2026-08-24",
+                  "Evidence and scope": "EV-005; 현재 헤더"
+                },
+                {
+                  "Observed value": "#F6F8F6",
+                  "Color layer": "Identity",
+                  "Source role": "지속적 쿨 오프화이트 바탕",
+                  "Channel / market / date": "US web / 2026-08-24",
+                  "Evidence and scope": "EV-005 EV-006; 채널 범위"
+                }
+              ]
+            },
+            {
+              "columns": [
+                "Observed value",
+                "Color layer",
+                "Source role",
+                "Channel / market / date",
+                "Evidence and scope"
+              ],
+              "rows": [
+                {
+                  "Observed value": "#595959",
+                  "Color layer": "Interaction / status",
+                  "Source role": "주요 회색 버튼",
+                  "Channel / market / date": "US web / 2026-08-24",
+                  "Evidence and scope": "공식 CSS; 정체성 색 아님"
+                },
+                {
+                  "Observed value": "#BF0000",
+                  "Color layer": "Interaction / status",
+                  "Source role": "폼 오류",
+                  "Channel / market / date": "US web / 2026-08-24",
+                  "Evidence and scope": "상태 한정"
+                }
+              ]
+            },
+            {
+              "columns": [
+                "Color layer",
+                "Observed value or explicit gap",
+                "Role",
+                "Evidence and scope"
+              ],
+              "rows": [
+                {
+                  "Color layer": "Product / campaign",
+                  "Observed value or explicit gap": "kraft, clear/amber, black, white",
+                  "Role": "카테고리가 달라도 라벨·재료 대비가 가족성 유지",
+                  "Evidence and scope": "EV-013 EV-014 EV-015 EV-018 EV-020 EV-021"
+                },
+                {
+                  "Color layer": "Photography",
+                  "Observed value or explicit gap": "earth, concrete, skin, localized neon",
+                  "Role": "현장 실제색",
+                  "Evidence and scope": "EV-008 EV-030 EV-034 EV-036 EV-038"
+                }
+              ]
+            },
+            {
+              "columns": [
+                "Role",
+                "Operating relationship",
+                "Invariant",
+                "Variable by channel / locale",
+                "Evidence and limits"
+              ],
+              "rows": [
+                {
+                  "Role": "Neutral infrastructure",
+                  "Operating relationship": "정보가 물성을 방해하지 않음",
+                  "Invariant": "중립 대비와 가독성",
+                  "Variable by channel / locale": "상태·사진색은 국소 변화",
+                  "Evidence and limits": "EV-005 EV-011 EV-012"
+                }
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "EV-005",
+            "EV-006",
+            "EV-008",
+            "EV-011",
+            "EV-012",
+            "EV-013",
+            "EV-014",
+            "EV-015",
+            "EV-018",
+            "EV-020",
+            "EV-021",
+            "EV-030",
+            "EV-034",
+            "EV-036",
+            "EV-038"
+          ]
+        },
+        {
+          "title": "Typography hierarchy",
+          "notes": [
+            "Observed reference values:",
+            "Verified webfont artifacts:"
+          ],
+          "tables": [
+            {
+              "columns": [
+                "Observed value",
+                "Source role",
+                "Channel / market / date",
+                "Evidence and scope"
+              ],
+              "rows": [
+                {
+                  "Observed value": "Bell Gothic Std 400/700",
+                  "Source role": "display, title, label, action",
+                  "Channel / market / date": "US web / 2026-08-24",
+                  "Evidence and scope": "공식 CSS; Latin"
+                },
+                {
+                  "Observed value": "Magda / Magda Pro 400/700",
+                  "Source role": "lead, body, metadata, form",
+                  "Channel / market / date": "US web / 2026-08-24",
+                  "Evidence and scope": "공식 CSS; Latin"
+                },
+                {
+                  "Observed value": "Helvetica Neue LT Std Light Condensed",
+                  "Source role": "price, caption, support",
+                  "Channel / market / date": "US web / 2026-08-24",
+                  "Evidence and scope": "공식 CSS"
+                }
+              ]
+            },
+            {
+              "columns": [
+                "Family",
+                "Weight / style",
+                "Format",
+                "First-party source URL",
+                "Channel / locale / date",
+                "Fallback and license boundary"
+              ],
+              "rows": [
+                {
+                  "Family": "Bell Gothic Std",
+                  "Weight / style": "400/700 normal",
+                  "Format": "WOFF",
+                  "First-party source URL": "https://www.lelabofragrances.com/css/fonts/bellgothicstd-black-webfont.woff",
+                  "Channel / locale / date": "US web / Latin / 2026-08-24",
+                  "Fallback and license boundary": "Arial/Helvetica; 원격 참고, 재배포 안 함"
+                },
+                {
+                  "Family": "Magda Pro",
+                  "Weight / style": "400 normal",
+                  "Format": "WOFF",
+                  "First-party source URL": "https://www.lelabofragrances.com/css/fonts/MagdaPro_400_normal_1447935989.woff",
+                  "Channel / locale / date": "US web / Latin / 2026-08-24",
+                  "Fallback and license boundary": "sans-serif; 원격 참고, 재배포 안 함"
+                }
+              ]
+            },
+            {
+              "columns": [
+                "Information role",
+                "Hierarchy relationship",
+                "Invariant",
+                "Variable by channel / locale",
+                "Evidence and limits"
+              ],
+              "rows": [
+                {
+                  "Information role": "Display/title",
+                  "Hierarchy relationship": "압축 대문자로 분류를 먼저 제시",
+                  "Invariant": "명확한 위계",
+                  "Variable by channel / locale": "스크립트별 대체",
+                  "Evidence and limits": "EV-005 EV-006"
+                },
+                {
+                  "Information role": "Body/lead",
+                  "Hierarchy relationship": "감각 서사와 절차를 연결",
+                  "Invariant": "제목보다 부드러운 리듬",
+                  "Variable by channel / locale": "언어 길이에 맞춤",
+                  "Evidence and limits": "EV-001 EV-002"
+                },
+                {
+                  "Information role": "Label/caption",
+                  "Hierarchy relationship": "이름·숫자·용량·날짜 기록",
+                  "Invariant": "제품 상태 정확성",
+                  "Variable by channel / locale": "크기·카테고리별 밀도 변화",
+                  "Evidence and limits": "EV-013 EV-014 EV-015 EV-018 EV-020 EV-021"
+                }
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "EV-001",
+            "EV-002",
+            "EV-005",
+            "EV-006",
+            "EV-013",
+            "EV-014",
+            "EV-015",
+            "EV-018",
+            "EV-020",
+            "EV-021"
+          ]
+        },
+        {
+          "title": "Spacing strategy",
+          "notes": [],
+          "tables": [
+            {
+              "columns": [
+                "Spacing role",
+                "Relationship",
+                "Invariant",
+                "Responsive / density variation",
+                "Evidence and limits"
+              ],
+              "rows": [
+                {
+                  "Spacing role": "정보 내부",
+                  "Relationship": "라벨 항목을 가깝게 묶음",
+                  "Invariant": "이름·형식·용량 그룹",
+                  "Responsive / density variation": "작은 용기에서 압축",
+                  "Evidence and limits": "EV-011 EV-012"
+                },
+                {
+                  "Spacing role": "그룹 사이",
+                  "Relationship": "분류와 서사 사이 여백",
+                  "Invariant": "한 번에 한 단계",
+                  "Responsive / density variation": "PDP에서 압축",
+                  "Evidence and limits": "EV-002 EV-006"
+                },
+                {
+                  "Spacing role": "화면 가장자리",
+                  "Relationship": "오브젝트 주위 넓은 공간",
+                  "Invariant": "한 개 주역 집중",
+                  "Responsive / density variation": "가족 사진에서 감소",
+                  "Evidence and limits": "EV-006 EV-011"
+                }
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "EV-002",
+            "EV-006",
+            "EV-011",
+            "EV-012"
+          ]
+        },
+        {
+          "title": "Layout strategy",
+          "notes": [],
+          "tables": [
+            {
+              "columns": [
+                "Layout role",
+                "Alignment and sequence",
+                "Invariant",
+                "Format variation",
+                "Evidence and limits"
+              ],
+              "rows": [
+                {
+                  "Layout role": "Product fact",
+                  "Alignment and sequence": "완전한 오브젝트 뒤에 설명",
+                  "Invariant": "라벨 가독성과 재료 사실 우선",
+                  "Format variation": "카테고리별 실루엣 변주",
+                  "Evidence and limits": "EV-013 EV-014 EV-015 EV-018 EV-020 EV-021"
+                },
+                {
+                  "Layout role": "Editorial",
+                  "Alignment and sequence": "정보 물체를 실제 재료 위에 배치",
+                  "Invariant": "물체가 메시지 중심",
+                  "Format variation": "판화·초현실 은유 허용",
+                  "Evidence and limits": "EV-006 EV-040 EV-041"
+                },
+                {
+                  "Layout role": "Service flow",
+                  "Alignment and sequence": "선택→개인화→포장·문서→배송·리필",
+                  "Invariant": "물리 상태를 단계별 공개",
+                  "Format variation": "시장별 옵션",
+                  "Evidence and limits": "EV-002 EV-003 EV-004 EV-025 EV-026 EV-027 EV-028 EV-029"
+                }
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "EV-002",
+            "EV-003",
+            "EV-004",
+            "EV-006",
+            "EV-013",
+            "EV-014",
+            "EV-015",
+            "EV-018",
+            "EV-020",
+            "EV-021",
+            "EV-025",
+            "EV-026",
+            "EV-027",
+            "EV-028",
+            "EV-029",
+            "EV-040",
+            "EV-041"
+          ]
+        },
+        {
+          "title": "Relationship to key visuals, imagery, and product form",
+          "notes": [
+            "중립 색과 압축 활자는 사진과 제품을 대신하지 않고 실제 재료, 손, 라벨의 관계를 정돈한다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        },
+        {
+          "title": "What this framework does not prescribe",
+          "notes": [
+            "고정 토큰명, CSS 변수, 전역 간격 배수, 브레이크포인트, 타깃 팔레트를 제안하지 않는다."
+          ],
+          "tables": [],
+          "evidence_ids": []
+        }
+      ],
+      "evidence_ids": [
+        "EV-001",
+        "EV-002",
+        "EV-003",
+        "EV-004",
+        "EV-005",
+        "EV-006",
+        "EV-008",
+        "EV-011",
+        "EV-012",
+        "EV-013",
+        "EV-014",
+        "EV-015",
+        "EV-018",
+        "EV-020",
+        "EV-021",
+        "EV-025",
+        "EV-026",
+        "EV-027",
+        "EV-028",
+        "EV-029",
+        "EV-030",
+        "EV-034",
+        "EV-036",
+        "EV-038",
+        "EV-040",
+        "EV-041"
+      ]
+    }
+  },
+  "design_system": {
+    "brand_color_scheme": {
+      "title": "Brand color scheme",
+      "roles": [
+        "공식 투명 워드마크의 가시색",
+        "Identity",
+        "지속적 쿨 오프화이트 바탕",
+        "주요 회색 버튼",
+        "Interaction / status",
+        "폼 오류",
+        "카테고리가 달라도 라벨·재료 대비가 가족성 유지",
+        "Product / campaign",
+        "현장 실제색",
+        "Photography",
+        "Neutral infrastructure"
+      ],
+      "relationships": [
+        "정보가 물성을 방해하지 않음"
+      ],
+      "invariants": [
+        "중립 대비와 가독성"
+      ],
+      "variables_and_exceptions": [
+        "상태·사진색은 국소 변화"
+      ],
+      "observed_references": [
+        {
+          "Observed value": "#333333",
+          "Color layer": "Identity",
+          "Source role": "공식 투명 워드마크의 가시색",
+          "Channel / market / date": "US web / 2026-08-24",
+          "Evidence and scope": "EV-005; 현재 헤더"
+        },
+        {
+          "Observed value": "#F6F8F6",
+          "Color layer": "Identity",
+          "Source role": "지속적 쿨 오프화이트 바탕",
+          "Channel / market / date": "US web / 2026-08-24",
+          "Evidence and scope": "EV-005 EV-006; 채널 범위"
+        },
+        {
+          "Observed value": "#595959",
+          "Color layer": "Interaction / status",
+          "Source role": "주요 회색 버튼",
+          "Channel / market / date": "US web / 2026-08-24",
+          "Evidence and scope": "공식 CSS; 정체성 색 아님"
+        },
+        {
+          "Observed value": "#BF0000",
+          "Color layer": "Interaction / status",
+          "Source role": "폼 오류",
+          "Channel / market / date": "US web / 2026-08-24",
+          "Evidence and scope": "상태 한정"
+        },
+        {
+          "Color layer": "Product / campaign",
+          "Observed value or explicit gap": "kraft, clear/amber, black, white",
+          "Role": "카테고리가 달라도 라벨·재료 대비가 가족성 유지",
+          "Evidence and scope": "EV-013 EV-014 EV-015 EV-018 EV-020 EV-021"
+        },
+        {
+          "Color layer": "Photography",
+          "Observed value or explicit gap": "earth, concrete, skin, localized neon",
+          "Role": "현장 실제색",
+          "Evidence and scope": "EV-008 EV-030 EV-034 EV-036 EV-038"
+        }
+      ],
+      "evidence_ids": [
+        "EV-005",
+        "EV-006",
+        "EV-008",
+        "EV-011",
+        "EV-012",
+        "EV-013",
+        "EV-014",
+        "EV-015",
+        "EV-018",
+        "EV-020",
+        "EV-021",
+        "EV-030",
+        "EV-034",
+        "EV-036",
+        "EV-038"
+      ],
+      "limits": [
+        "EV-005; 현재 헤더",
+        "EV-005 EV-006; 채널 범위",
+        "공식 CSS; 정체성 색 아님",
+        "상태 한정",
+        "EV-013 EV-014 EV-015 EV-018 EV-020 EV-021",
+        "EV-008 EV-030 EV-034 EV-036 EV-038",
+        "EV-005 EV-011 EV-012"
+      ],
+      "source_notes": [
+        "Identity color field:",
+        "Interaction and status color references:",
+        "Product, campaign, and photographic color boundaries:"
+      ],
+      "source_tables": [
+        {
+          "columns": [
+            "Observed value",
+            "Color layer",
+            "Source role",
+            "Channel / market / date",
+            "Evidence and scope"
+          ],
+          "rows": [
+            {
+              "Observed value": "#333333",
+              "Color layer": "Identity",
+              "Source role": "공식 투명 워드마크의 가시색",
+              "Channel / market / date": "US web / 2026-08-24",
+              "Evidence and scope": "EV-005; 현재 헤더"
+            },
+            {
+              "Observed value": "#F6F8F6",
+              "Color layer": "Identity",
+              "Source role": "지속적 쿨 오프화이트 바탕",
+              "Channel / market / date": "US web / 2026-08-24",
+              "Evidence and scope": "EV-005 EV-006; 채널 범위"
+            }
+          ]
+        },
+        {
+          "columns": [
+            "Observed value",
+            "Color layer",
+            "Source role",
+            "Channel / market / date",
+            "Evidence and scope"
+          ],
+          "rows": [
+            {
+              "Observed value": "#595959",
+              "Color layer": "Interaction / status",
+              "Source role": "주요 회색 버튼",
+              "Channel / market / date": "US web / 2026-08-24",
+              "Evidence and scope": "공식 CSS; 정체성 색 아님"
+            },
+            {
+              "Observed value": "#BF0000",
+              "Color layer": "Interaction / status",
+              "Source role": "폼 오류",
+              "Channel / market / date": "US web / 2026-08-24",
+              "Evidence and scope": "상태 한정"
+            }
+          ]
+        },
+        {
+          "columns": [
+            "Color layer",
+            "Observed value or explicit gap",
+            "Role",
+            "Evidence and scope"
+          ],
+          "rows": [
+            {
+              "Color layer": "Product / campaign",
+              "Observed value or explicit gap": "kraft, clear/amber, black, white",
+              "Role": "카테고리가 달라도 라벨·재료 대비가 가족성 유지",
+              "Evidence and scope": "EV-013 EV-014 EV-015 EV-018 EV-020 EV-021"
+            },
+            {
+              "Color layer": "Photography",
+              "Observed value or explicit gap": "earth, concrete, skin, localized neon",
+              "Role": "현장 실제색",
+              "Evidence and scope": "EV-008 EV-030 EV-034 EV-036 EV-038"
+            }
+          ]
+        },
+        {
+          "columns": [
+            "Role",
+            "Operating relationship",
+            "Invariant",
+            "Variable by channel / locale",
+            "Evidence and limits"
+          ],
+          "rows": [
+            {
+              "Role": "Neutral infrastructure",
+              "Operating relationship": "정보가 물성을 방해하지 않음",
+              "Invariant": "중립 대비와 가독성",
+              "Variable by channel / locale": "상태·사진색은 국소 변화",
+              "Evidence and limits": "EV-005 EV-011 EV-012"
+            }
+          ]
+        }
+      ]
+    },
+    "typography_hierarchy": {
+      "title": "Typography hierarchy",
+      "roles": [
+        "display, title, label, action",
+        "lead, body, metadata, form",
+        "price, caption, support",
+        "Display/title",
+        "Body/lead",
+        "Label/caption"
+      ],
+      "relationships": [
+        "압축 대문자로 분류를 먼저 제시",
+        "감각 서사와 절차를 연결",
+        "이름·숫자·용량·날짜 기록"
+      ],
+      "invariants": [
+        "명확한 위계",
+        "제목보다 부드러운 리듬",
+        "제품 상태 정확성"
+      ],
+      "variables_and_exceptions": [
+        "스크립트별 대체",
+        "언어 길이에 맞춤",
+        "크기·카테고리별 밀도 변화"
+      ],
+      "observed_references": [
+        {
+          "Observed value": "Bell Gothic Std 400/700",
+          "Source role": "display, title, label, action",
+          "Channel / market / date": "US web / 2026-08-24",
+          "Evidence and scope": "공식 CSS; Latin"
+        },
+        {
+          "Observed value": "Magda / Magda Pro 400/700",
+          "Source role": "lead, body, metadata, form",
+          "Channel / market / date": "US web / 2026-08-24",
+          "Evidence and scope": "공식 CSS; Latin"
+        },
+        {
+          "Observed value": "Helvetica Neue LT Std Light Condensed",
+          "Source role": "price, caption, support",
+          "Channel / market / date": "US web / 2026-08-24",
+          "Evidence and scope": "공식 CSS"
+        }
+      ],
+      "evidence_ids": [
+        "EV-001",
+        "EV-002",
+        "EV-005",
+        "EV-006",
+        "EV-013",
+        "EV-014",
+        "EV-015",
+        "EV-018",
+        "EV-020",
+        "EV-021"
+      ],
+      "limits": [
+        "공식 CSS; Latin",
+        "공식 CSS",
+        "EV-005 EV-006",
+        "EV-001 EV-002",
+        "EV-013 EV-014 EV-015 EV-018 EV-020 EV-021"
+      ],
+      "source_notes": [
+        "Observed reference values:",
+        "Verified webfont artifacts:"
+      ],
+      "source_tables": [
+        {
+          "columns": [
+            "Observed value",
+            "Source role",
+            "Channel / market / date",
+            "Evidence and scope"
+          ],
+          "rows": [
+            {
+              "Observed value": "Bell Gothic Std 400/700",
+              "Source role": "display, title, label, action",
+              "Channel / market / date": "US web / 2026-08-24",
+              "Evidence and scope": "공식 CSS; Latin"
+            },
+            {
+              "Observed value": "Magda / Magda Pro 400/700",
+              "Source role": "lead, body, metadata, form",
+              "Channel / market / date": "US web / 2026-08-24",
+              "Evidence and scope": "공식 CSS; Latin"
+            },
+            {
+              "Observed value": "Helvetica Neue LT Std Light Condensed",
+              "Source role": "price, caption, support",
+              "Channel / market / date": "US web / 2026-08-24",
+              "Evidence and scope": "공식 CSS"
+            }
+          ]
+        },
+        {
+          "columns": [
+            "Family",
+            "Weight / style",
+            "Format",
+            "First-party source URL",
+            "Channel / locale / date",
+            "Fallback and license boundary"
+          ],
+          "rows": [
+            {
+              "Family": "Bell Gothic Std",
+              "Weight / style": "400/700 normal",
+              "Format": "WOFF",
+              "First-party source URL": "https://www.lelabofragrances.com/css/fonts/bellgothicstd-black-webfont.woff",
+              "Channel / locale / date": "US web / Latin / 2026-08-24",
+              "Fallback and license boundary": "Arial/Helvetica; 원격 참고, 재배포 안 함"
+            },
+            {
+              "Family": "Magda Pro",
+              "Weight / style": "400 normal",
+              "Format": "WOFF",
+              "First-party source URL": "https://www.lelabofragrances.com/css/fonts/MagdaPro_400_normal_1447935989.woff",
+              "Channel / locale / date": "US web / Latin / 2026-08-24",
+              "Fallback and license boundary": "sans-serif; 원격 참고, 재배포 안 함"
+            }
+          ]
+        },
+        {
+          "columns": [
+            "Information role",
+            "Hierarchy relationship",
+            "Invariant",
+            "Variable by channel / locale",
+            "Evidence and limits"
+          ],
+          "rows": [
+            {
+              "Information role": "Display/title",
+              "Hierarchy relationship": "압축 대문자로 분류를 먼저 제시",
+              "Invariant": "명확한 위계",
+              "Variable by channel / locale": "스크립트별 대체",
+              "Evidence and limits": "EV-005 EV-006"
+            },
+            {
+              "Information role": "Body/lead",
+              "Hierarchy relationship": "감각 서사와 절차를 연결",
+              "Invariant": "제목보다 부드러운 리듬",
+              "Variable by channel / locale": "언어 길이에 맞춤",
+              "Evidence and limits": "EV-001 EV-002"
+            },
+            {
+              "Information role": "Label/caption",
+              "Hierarchy relationship": "이름·숫자·용량·날짜 기록",
+              "Invariant": "제품 상태 정확성",
+              "Variable by channel / locale": "크기·카테고리별 밀도 변화",
+              "Evidence and limits": "EV-013 EV-014 EV-015 EV-018 EV-020 EV-021"
+            }
+          ]
+        }
+      ]
+    },
+    "spacing_strategy": {
+      "title": "Spacing strategy",
+      "roles": [
+        "정보 내부",
+        "그룹 사이",
+        "화면 가장자리"
+      ],
+      "relationships": [
+        "라벨 항목을 가깝게 묶음",
+        "분류와 서사 사이 여백",
+        "오브젝트 주위 넓은 공간"
+      ],
+      "invariants": [
+        "이름·형식·용량 그룹",
+        "한 번에 한 단계",
+        "한 개 주역 집중"
+      ],
+      "variables_and_exceptions": [
+        "작은 용기에서 압축",
+        "PDP에서 압축",
+        "가족 사진에서 감소"
+      ],
+      "observed_references": [],
+      "evidence_ids": [
+        "EV-002",
+        "EV-006",
+        "EV-011",
+        "EV-012"
+      ],
+      "limits": [
+        "EV-011 EV-012",
+        "EV-002 EV-006",
+        "EV-006 EV-011"
+      ],
+      "source_notes": [],
+      "source_tables": [
+        {
+          "columns": [
+            "Spacing role",
+            "Relationship",
+            "Invariant",
+            "Responsive / density variation",
+            "Evidence and limits"
+          ],
+          "rows": [
+            {
+              "Spacing role": "정보 내부",
+              "Relationship": "라벨 항목을 가깝게 묶음",
+              "Invariant": "이름·형식·용량 그룹",
+              "Responsive / density variation": "작은 용기에서 압축",
+              "Evidence and limits": "EV-011 EV-012"
+            },
+            {
+              "Spacing role": "그룹 사이",
+              "Relationship": "분류와 서사 사이 여백",
+              "Invariant": "한 번에 한 단계",
+              "Responsive / density variation": "PDP에서 압축",
+              "Evidence and limits": "EV-002 EV-006"
+            },
+            {
+              "Spacing role": "화면 가장자리",
+              "Relationship": "오브젝트 주위 넓은 공간",
+              "Invariant": "한 개 주역 집중",
+              "Responsive / density variation": "가족 사진에서 감소",
+              "Evidence and limits": "EV-006 EV-011"
+            }
+          ]
+        }
+      ]
+    },
+    "layout_strategy": {
+      "title": "Layout strategy",
+      "roles": [
+        "Product fact",
+        "Editorial",
+        "Service flow"
+      ],
+      "relationships": [
+        "완전한 오브젝트 뒤에 설명",
+        "정보 물체를 실제 재료 위에 배치",
+        "선택→개인화→포장·문서→배송·리필"
+      ],
+      "invariants": [
+        "라벨 가독성과 재료 사실 우선",
+        "물체가 메시지 중심",
+        "물리 상태를 단계별 공개"
+      ],
+      "variables_and_exceptions": [
+        "카테고리별 실루엣 변주",
+        "판화·초현실 은유 허용",
+        "시장별 옵션"
+      ],
+      "observed_references": [],
+      "evidence_ids": [
+        "EV-002",
+        "EV-003",
+        "EV-004",
+        "EV-006",
+        "EV-013",
+        "EV-014",
+        "EV-015",
+        "EV-018",
+        "EV-020",
+        "EV-021",
+        "EV-025",
+        "EV-026",
+        "EV-027",
+        "EV-028",
+        "EV-029",
+        "EV-040",
+        "EV-041"
+      ],
+      "limits": [
+        "EV-013 EV-014 EV-015 EV-018 EV-020 EV-021",
+        "EV-006 EV-040 EV-041",
+        "EV-002 EV-003 EV-004 EV-025 EV-026 EV-027 EV-028 EV-029"
+      ],
+      "source_notes": [],
+      "source_tables": [
+        {
+          "columns": [
+            "Layout role",
+            "Alignment and sequence",
+            "Invariant",
+            "Format variation",
+            "Evidence and limits"
+          ],
+          "rows": [
+            {
+              "Layout role": "Product fact",
+              "Alignment and sequence": "완전한 오브젝트 뒤에 설명",
+              "Invariant": "라벨 가독성과 재료 사실 우선",
+              "Format variation": "카테고리별 실루엣 변주",
+              "Evidence and limits": "EV-013 EV-014 EV-015 EV-018 EV-020 EV-021"
+            },
+            {
+              "Layout role": "Editorial",
+              "Alignment and sequence": "정보 물체를 실제 재료 위에 배치",
+              "Invariant": "물체가 메시지 중심",
+              "Format variation": "판화·초현실 은유 허용",
+              "Evidence and limits": "EV-006 EV-040 EV-041"
+            },
+            {
+              "Layout role": "Service flow",
+              "Alignment and sequence": "선택→개인화→포장·문서→배송·리필",
+              "Invariant": "물리 상태를 단계별 공개",
+              "Format variation": "시장별 옵션",
+              "Evidence and limits": "EV-002 EV-003 EV-004 EV-025 EV-026 EV-027 EV-028 EV-029"
+            }
+          ]
+        }
+      ]
+    },
+    "implementation_boundary": "Source observations and portable relationships only; not target-ready tokens, JSON variables, breakpoints, or component code."
+  },
+  "grammar_rules": [
+    {
+      "grammar_id": "GK-01",
+      "name": "기록 가능한 중립 구조",
+      "input_condition": "감각적이고 개인적인 제품을 하나의 가족으로 제시할 때",
+      "transformation": "중립 용기와 분류형 정보 구조를 고정하고 이름·숫자·날짜·개인 표식만 통제해 바꾼다.",
+      "intended_effect": "체계의 신뢰성과 개인 경험을 동시에 만든다.",
+      "evidence_ids": [
+        "EV-003",
+        "EV-013",
+        "EV-014",
+        "EV-015",
+        "EV-018",
+        "EV-020",
+        "EV-021"
+      ],
+      "connected_claim_ids": [
+        "CL-002",
+        "CL-004",
+        "CL-009",
+        "CL-011"
+      ],
+      "confidence": "high",
+      "alternative_explanation": "중립 구조는 전자상거래 가독성과 생산 효율의 결과일 수 있다.",
+      "exception_and_scope": "현재 fragrance, home, body, discovery, refill의 공식 표본 범위다. 용기 실루엣 자체는 불변항이 아니다.",
+      "protected_source_expression": "Le Labo 워드마크, 약국형 라벨, 향명+숫자는 직접 복제하지 않는다.",
+      "acceptance_test": "반복 제품에서도 상태와 개체 차이가 정보로 즉시 구분된다.",
+      "rejection_test": "장식 변주가 가족성을 무너뜨리거나 개인화가 임의 장식으로만 보인다."
+    },
+    {
+      "grammar_id": "GK-02",
+      "name": "장면에서 사실로 이동",
+      "input_condition": "감각을 설명하면서 구매 판단에 필요한 사실을 제공할 때",
+      "transformation": "장소·몸·기억의 장면으로 시작하고 구성·형식·용량·성분·관리 정보를 단계적으로 공개한다.",
+      "intended_effect": "상상과 신뢰를 한 흐름 안에 유지한다.",
+      "evidence_ids": [
+        "EV-001",
+        "EV-002",
+        "EV-004"
+      ],
+      "connected_claim_ids": [
+        "CL-001",
+        "CL-003"
+      ],
+      "confidence": "high",
+      "alternative_explanation": "일반적인 향수 카피 관습일 수 있다.",
+      "exception_and_scope": "FAQ와 오류·관리 문구는 사실을 먼저 제시한다.",
+      "protected_source_expression": "“We believe” 반복과 고유 향 서사는 복제하지 않는다.",
+      "acceptance_test": "감각 장면 뒤에도 필수 사실과 한계를 찾을 수 있다.",
+      "rejection_test": "시적 문장만 남거나 명세가 첫 인상을 모두 점유한다."
+    },
+    {
+      "grammar_id": "GK-03",
+      "name": "제작 행동을 가치의 근거로 사용",
+      "input_condition": "장인성 또는 재료 기원을 주장할 때",
+      "transformation": "완성된 포즈 대신 손·작업자·도구·원료가 실제 행동하는 장면을 보여 준다.",
+      "intended_effect": "고급감을 추상 형용사가 아니라 관찰 가능한 노동으로 바꾼다.",
+      "evidence_ids": [
+        "EV-007",
+        "EV-008",
+        "EV-009",
+        "EV-036",
+        "EV-037",
+        "EV-038",
+        "EV-039"
+      ],
+      "connected_claim_ids": [
+        "CL-006",
+        "CL-007"
+      ],
+      "confidence": "high",
+      "alternative_explanation": "About 페이지의 다큐멘터리 장르에 한정될 수 있다.",
+      "exception_and_scope": "PDP 사실 사진은 완전한 제품을 우선한다.",
+      "protected_source_expression": "고유 랩과 장인 다큐멘터리 장면은 재연하지 않는다.",
+      "acceptance_test": "누가 무엇을 어떻게 다루는지 한 장면에서 설명할 수 있다.",
+      "rejection_test": "작업자가 소품처럼 서 있거나 손과 도구가 제품을 가린다."
+    },
+    {
+      "grammar_id": "GK-04",
+      "name": "촉각적 정보 매체를 그래픽 장치로 전환",
+      "input_condition": "UI, 편집, 포장에 마스터브랜드 분위기를 연결할 때",
+      "transformation": "별도 장식보다 라벨·박스·신문·용기 자체의 활자와 물성을 중심 오브젝트로 쓴다. 편집 이미지는 인쇄물의 정보 구조를 유지하는 범위에서 흑백 판화와 초현실 은유를 허용한다.",
+      "intended_effect": "커뮤니케이션과 제품 세계가 같은 재료 논리를 공유한다.",
+      "evidence_ids": [
+        "EV-006",
+        "EV-012",
+        "EV-040",
+        "EV-041"
+      ],
+      "connected_claim_ids": [
+        "CL-005",
+        "CL-010",
+        "CL-014"
+      ],
+      "confidence": "high",
+      "alternative_explanation": "특정 콘텐츠 형식의 영향일 수 있다.",
+      "exception_and_scope": "상태·액션 UI는 평면 컨트롤을 사용하며, 편집 판화를 모든 제품 사실 사진에 적용하지 않는다.",
+      "protected_source_expression": "Le Journal 형식과 Le Labo 라벨 레이아웃은 복제하지 않는다.",
+      "acceptance_test": "오브젝트 또는 인쇄 은유가 메시지 기능과 촉각적 매체 논리를 함께 가진다.",
+      "rejection_test": "재료와 무관한 장식이 오브젝트보다 먼저 보인다."
+    },
+    {
+      "grammar_id": "GK-05",
+      "name": "반복을 한 번의 인간 행동으로 끊기",
+      "input_condition": "같은 제품군의 일관성을 보여 주면서 사용 관계를 더할 때",
+      "transformation": "반복 실루엣과 라벨을 유지하고 선택·도포·묶기 같은 손동작 하나만 더한다.",
+      "intended_effect": "체계를 보존하면서 화면에 시간과 목적을 만든다.",
+      "evidence_ids": [
+        "EV-011",
+        "EV-016",
+        "EV-024"
+      ],
+      "connected_claim_ids": [
+        "CL-008",
+        "CL-010"
+      ],
+      "confidence": "medium",
+      "alternative_explanation": "컬렉션 타일의 단기 사진 스타일일 수 있다.",
+      "exception_and_scope": "완전한 PDP는 사람 없이 제품 사실을 우선하며, 서비스 단계는 손 대신 물체 상태의 연속으로도 행동을 설명한다.",
+      "protected_source_expression": "특정 손 포즈와 Le Labo 세트는 복제하지 않는다.",
+      "acceptance_test": "제품군 차이와 한 사람의 행동이 동시에 읽힌다.",
+      "rejection_test": "여러 손·소품이 라벨과 실루엣을 가린다."
+    }
+  ],
+  "evidence_index": [
+    {
+      "evidence_id": "EV-001",
+      "title": "About Us and Manifesto",
+      "source_tier": "primary",
+      "content_type": "official_page",
+      "evidence_layer": "strategy-and-verbal",
+      "visual_category": "",
+      "source_url": "https://www.lelabofragrances.com/about-us.html",
+      "local_path": "",
+      "market": "Global",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo",
+      "rights_note": "",
+      "subject_role": "",
+      "human_casting": "",
+      "setting": "",
+      "composition": "",
+      "camera_and_perspective": "",
+      "lighting": "",
+      "palette": "",
+      "material_and_surface": "",
+      "postproduction": "",
+      "motion_or_sequence": "",
+      "product_representation_job": "",
+      "product_image_job": "",
+      "product_native_signals": "",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "",
+      "key_visual_surface": "",
+      "report_section": "",
+      "report_order": ""
+    },
+    {
+      "evidence_id": "EV-002",
+      "title": "SANTAL 33 Eau de Parfum",
+      "source_tier": "primary",
+      "content_type": "official_product_page",
+      "evidence_layer": "verbal-and-product",
+      "visual_category": "",
+      "source_url": "https://www.lelabofragrances.com/santal-33-147.html?size=50ml",
+      "local_path": "",
+      "market": "United States",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo",
+      "rights_note": "",
+      "subject_role": "",
+      "human_casting": "",
+      "setting": "",
+      "composition": "",
+      "camera_and_perspective": "",
+      "lighting": "",
+      "palette": "",
+      "material_and_surface": "",
+      "postproduction": "",
+      "motion_or_sequence": "",
+      "product_representation_job": "",
+      "product_image_job": "",
+      "product_native_signals": "",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "",
+      "key_visual_surface": "",
+      "report_section": "",
+      "report_order": ""
+    },
+    {
+      "evidence_id": "EV-003",
+      "title": "Refill Program FAQ",
+      "source_tier": "primary",
+      "content_type": "official_service_page",
+      "evidence_layer": "service-and-behavior",
+      "visual_category": "",
+      "source_url": "https://www.lelabofragrances.com/faq/refill-program.html",
+      "local_path": "",
+      "market": "United States and participating labs",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo",
+      "rights_note": "",
+      "subject_role": "",
+      "human_casting": "",
+      "setting": "",
+      "composition": "",
+      "camera_and_perspective": "",
+      "lighting": "",
+      "palette": "",
+      "material_and_surface": "",
+      "postproduction": "",
+      "motion_or_sequence": "",
+      "product_representation_job": "",
+      "product_image_job": "",
+      "product_native_signals": "",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "",
+      "key_visual_surface": "",
+      "report_section": "",
+      "report_order": ""
+    },
+    {
+      "evidence_id": "EV-004",
+      "title": "Classic Collection Discovery Set",
+      "source_tier": "primary",
+      "content_type": "official_product_page",
+      "evidence_layer": "portfolio-and-packaging",
+      "visual_category": "",
+      "source_url": "https://www.lelabofragrances.com/discovery-sets/classic-collection/discovery-set/17-8.html",
+      "local_path": "",
+      "market": "United States",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo",
+      "rights_note": "",
+      "subject_role": "",
+      "human_casting": "",
+      "setting": "",
+      "composition": "",
+      "camera_and_perspective": "",
+      "lighting": "",
+      "palette": "",
+      "material_and_surface": "",
+      "postproduction": "",
+      "motion_or_sequence": "",
+      "product_representation_job": "",
+      "product_image_job": "",
+      "product_native_signals": "",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "",
+      "key_visual_surface": "",
+      "report_section": "",
+      "report_order": ""
+    },
+    {
+      "evidence_id": "EV-005",
+      "title": "Official masterbrand wordmark",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "identity-and-channel-tokens",
+      "visual_category": "masterbrand-wordmark",
+      "source_url": "https://www.lelabofragrances.com/css/images/logonew.png",
+      "local_path": "evidence/visuals/EV-LL-001-masterbrand-wordmark.png",
+      "market": "United States",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo",
+      "rights_note": "Research use only; copyrighted",
+      "subject_role": "brand mark",
+      "human_casting": "none",
+      "setting": "transparent field",
+      "composition": "horizontal compact wordmark",
+      "camera_and_perspective": "not applicable",
+      "lighting": "not applicable",
+      "palette": "charcoal on transparency",
+      "material_and_surface": "raster wordmark",
+      "postproduction": "none",
+      "motion_or_sequence": "static",
+      "product_representation_job": "Identity reference; not product imagery",
+      "product_image_job": "",
+      "product_native_signals": "Identity only; no product-native claim",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Verified current header asset",
+      "key_visual_surface": "identity",
+      "report_section": "identity-channel-tokens",
+      "report_order": "1"
+    },
+    {
+      "evidence_id": "EV-006",
+      "title": "About navigation key visual",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "key-visual",
+      "visual_category": "digital-navigation-editorial-tile",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/content/1657_ONE_SIZE_IMAGE_01_15948_-1989191555.jpg",
+      "local_path": "evidence/visuals/EV-LL-002-about-navigation-key-visual.jpg",
+      "market": "United States",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo",
+      "rights_note": "Research use only; copyrighted",
+      "subject_role": "Le Journal object",
+      "human_casting": "no portrait",
+      "setting": "concrete urban surface",
+      "composition": "one square focal image",
+      "camera_and_perspective": "close normal view",
+      "lighting": "soft ambient",
+      "palette": "gray black paper",
+      "material_and_surface": "paper concrete",
+      "postproduction": "natural texture",
+      "motion_or_sequence": "static",
+      "product_representation_job": "Editorial object carries navigation",
+      "product_image_job": "",
+      "product_native_signals": "Broadsheet and print are visible",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Physical content translates into UI",
+      "key_visual_surface": "ui",
+      "report_section": "key-visual",
+      "report_order": "2"
+    },
+    {
+      "evidence_id": "EV-007",
+      "title": "Roots first lab",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "space-and-service",
+      "visual_category": "laboratory-store-origin",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/cms/7_ONE_SIZE_IMAGE_02_12241_-354847209.jpg",
+      "local_path": "evidence/visuals/EV-LL-004-roots-first-lab.jpg",
+      "market": "United States",
+      "era_or_date": "origin",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo",
+      "rights_note": "Research use only; copyrighted",
+      "subject_role": "first lab storefront",
+      "human_casting": "incidental people",
+      "setting": "Nolita street",
+      "composition": "wide environmental frame",
+      "camera_and_perspective": "eye-level documentary",
+      "lighting": "available light",
+      "palette": "weathered neutrals",
+      "material_and_surface": "glass metal concrete",
+      "postproduction": "documentary grain",
+      "motion_or_sequence": "static",
+      "product_representation_job": "Space explains service premise",
+      "product_image_job": "",
+      "product_native_signals": "Working-lab signage and modest materials",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "One location cannot prove global consistency",
+      "key_visual_surface": "additional-channel",
+      "report_section": "brand-mood",
+      "report_order": "3"
+    },
+    {
+      "evidence_id": "EV-008",
+      "title": "Sandalwood Harvest film poster",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "photography-and-film",
+      "visual_category": "craftsperson-environmental-portrait",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/cms/188_SMALL_IMAGE_01_12289_-987721857.jpg",
+      "local_path": "evidence/visuals/EV-LL-005-sandalwood-harvest-film-poster.jpg",
+      "market": "Australia",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo",
+      "rights_note": "Research use only; copyrighted",
+      "subject_role": "worker and material",
+      "human_casting": "craft worker",
+      "setting": "harvest environment",
+      "composition": "vertical process frame",
+      "camera_and_perspective": "documentary close-medium",
+      "lighting": "natural contrast",
+      "palette": "earth and skin",
+      "material_and_surface": "wood vegetation fabric",
+      "postproduction": "grain retained",
+      "motion_or_sequence": "film poster",
+      "product_representation_job": "Craft provenance rather than PDP",
+      "product_image_job": "",
+      "product_native_signals": "Source material and human action",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Making is lived work",
+      "key_visual_surface": "imagery",
+      "report_section": "photography-film",
+      "report_order": "4"
+    },
+    {
+      "evidence_id": "EV-009",
+      "title": "Rose Harvest film poster",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "photography-and-film",
+      "visual_category": "hands-ingredient-detail",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/cms/186_SMALL_IMAGE_01_13228_2003511354.jpg",
+      "local_path": "evidence/visuals/EV-LL-006-rose-harvest-film-poster.jpg",
+      "market": "France",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo",
+      "rights_note": "Research use only; copyrighted",
+      "subject_role": "hands and roses",
+      "human_casting": "worker hands",
+      "setting": "harvest field",
+      "composition": "tight tactile frame",
+      "camera_and_perspective": "close documentary",
+      "lighting": "natural light",
+      "palette": "plant and skin",
+      "material_and_surface": "petals hands fabric",
+      "postproduction": "grain retained",
+      "motion_or_sequence": "film poster",
+      "product_representation_job": "Ingredient and handwork evidence",
+      "product_image_job": "",
+      "product_native_signals": "Raw ingredient before product",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Hands replace luxury posing",
+      "key_visual_surface": "imagery",
+      "report_section": "photography-film",
+      "report_order": "5"
+    },
+    {
+      "evidence_id": "EV-010",
+      "title": "Neon Sign film poster",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "photography-and-film",
+      "visual_category": "craft-process-tool-detail",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/cms/450_SMALL_IMAGE_01_12295_2116627810.jpg",
+      "local_path": "evidence/visuals/EV-LL-007-neon-sign-film-poster.jpg",
+      "market": "United States",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo",
+      "rights_note": "Research use only; copyrighted",
+      "subject_role": "hands tools neon",
+      "human_casting": "craft worker",
+      "setting": "workshop",
+      "composition": "vertical low-light frame",
+      "camera_and_perspective": "close documentary",
+      "lighting": "workshop light",
+      "palette": "dark neutral localized glow",
+      "material_and_surface": "glass metal tools",
+      "postproduction": "grain and blur",
+      "motion_or_sequence": "film poster",
+      "product_representation_job": "Broadens craft beyond perfume",
+      "product_image_job": "",
+      "product_native_signals": "Tool action and sign fabrication",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Urban making joins harvest",
+      "key_visual_surface": "imagery",
+      "report_section": "photography-film",
+      "report_order": "6"
+    },
+    {
+      "evidence_id": "EV-011",
+      "title": "Classic Collection family tile",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "product-representation",
+      "visual_category": "product-family-selection-gesture",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/content/603_IMG_600_IMAGE_01_7824_93178760.jpg",
+      "local_path": "evidence/visuals/EV-LL-008-classic-collection-tile.jpg",
+      "market": "Global",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo",
+      "rights_note": "Research use only; copyrighted",
+      "subject_role": "fragrance family",
+      "human_casting": "one hand",
+      "setting": "neutral tactile surface",
+      "composition": "compact repeated family",
+      "camera_and_perspective": "close straight view",
+      "lighting": "soft directional",
+      "palette": "clear amber kraft black",
+      "material_and_surface": "glass paper liquid skin",
+      "postproduction": "tactile retouch",
+      "motion_or_sequence": "static",
+      "product_representation_job": "Family view communicates choice",
+      "product_image_job": "",
+      "product_native_signals": "Repeated bottle labels and caps",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "One hand activates factual family",
+      "key_visual_surface": "imagery",
+      "report_section": "product-representation",
+      "report_order": "7"
+    },
+    {
+      "evidence_id": "EV-012",
+      "title": "Discovery Set package",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "packaging-and-unboxing|product-native-visual-and-cognitive-language",
+      "visual_category": "neutral-packaging-view",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/skus/J2B001R000__PRODUCT_08--IMG_1200--DISCOVERYSET--2781293.jpg",
+      "local_path": "evidence/visuals/EV-LL-010-discovery-set-product.jpg",
+      "market": "United States",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo",
+      "rights_note": "Research use only; copyrighted",
+      "subject_role": "kraft box and label",
+      "human_casting": "none",
+      "setting": "neutral PDP field",
+      "composition": "centered complete package",
+      "camera_and_perspective": "straight factual view",
+      "lighting": "even studio",
+      "palette": "kraft black white",
+      "material_and_surface": "uncoated board adhesive label",
+      "postproduction": "clean factual",
+      "motion_or_sequence": "static",
+      "product_representation_job": "Package and label explain product",
+      "product_image_job": "",
+      "product_native_signals": "Box seal label vial and sampling system",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Utilitarian pack gains value through ritual",
+      "key_visual_surface": "content",
+      "report_section": "product-native-visual-language",
+      "report_order": "8"
+    },
+    {
+      "evidence_id": "EV-013",
+      "title": "SANTAL 33 50 ml neutral PDP",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "product-representation",
+      "visual_category": "neutral-pdp-primary",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/skus/050PS33100__PRODUCT_01--IMG_1200--SANTAL33-200129705.jpg",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-01-santal33-50ml-neutral.jpg",
+      "market": "United States",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo official product catalog / official CDN",
+      "rights_note": "Research reference only; copyrighted by Le Labo or its licensors; no redistribution license inferred.",
+      "subject_role": "neutral-pdp-primary",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official product, personalization, or discovery page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for neutral-pdp-primary; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Single clear cylindrical spray bottle isolated low in a square grey field. Thick clear glass foot, pale liquid, matte charcoal cylindrical cap and warm off-white wrap label. Long side shadow, visible paper texture and extensive negative space make the label legible without a white-background cutout.",
+      "key_visual_surface": "imagery",
+      "report_section": "product-representation",
+      "report_order": "9"
+    },
+    {
+      "evidence_id": "EV-014",
+      "title": "SANTAL 33 500 ml format",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "product-native-form",
+      "visual_category": "size-and-container-variant",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/skus/500PS33100__PRODUCT_01--IMG_1200--SANTAL33-1901642987.jpg",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-02-santal33-500ml-format.jpg",
+      "market": "United States",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo official product catalog / official CDN",
+      "rights_note": "Research reference only; copyrighted by Le Labo or its licensors; no redistribution license inferred.",
+      "subject_role": "size-and-container-variant",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official product, personalization, or discovery page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for size-and-container-variant; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Large apothecary/decanter silhouette replaces the small spray bottle. Broad cylindrical body, sloped shoulder, clear ground-glass-style neck and faceted transparent stopper. The same ruled information label preserves family identity across a materially different container.",
+      "key_visual_surface": "product",
+      "report_section": "product-native-visual-language",
+      "report_order": "10"
+    },
+    {
+      "evidence_id": "EV-015",
+      "title": "SANTAL 33 15 ml discovery size",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "product-native-form",
+      "visual_category": "discovery-size-variant",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/skus/015PS33100__PRODUCT_01--IMG_1200--SANTAL33--2048295810.jpg",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-03-santal33-15ml-sample.jpg",
+      "market": "United States",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo official product catalog / official CDN",
+      "rights_note": "Research reference only; copyrighted by Le Labo or its licensors; no redistribution license inferred.",
+      "subject_role": "discovery-size-variant",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official product, personalization, or discovery page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for discovery-size-variant; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Slim clear cylindrical travel/sample spray retains the charcoal cap and full wrap label. The oversized label consumes most of the small vessel, prioritizing identity and production fields over exposed glass. Framing and grey shadow treatment match the 50 ml and 500 ml family.",
+      "key_visual_surface": "product",
+      "report_section": "product-native-visual-language",
+      "report_order": "11"
+    },
+    {
+      "evidence_id": "EV-016",
+      "title": "Personalized label application",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "packaging-and-service-ceremony",
+      "visual_category": "personalized-label-process",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/cms/524_LARGE_IMAGE_01_13170_-879790025.jpg",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-04-personalized-label-hands.jpg",
+      "market": "United States",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo official Personalization page / official CDN",
+      "rights_note": "Research reference only; copyrighted by Le Labo or its licensors; no redistribution license inferred.",
+      "subject_role": "personalized-label-process",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official product, personalization, or discovery page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for personalized-label-process; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Two hands align a freshly printed SANTAL 33 label in front of the bottle. Dark workbench, machine/tool at left and open presentation box at right frame personalization as physical labor. Wide cinematic crop makes hands, label and bottle the operating sequence rather than a conventional beauty still life.",
+      "key_visual_surface": "additional-channel",
+      "report_section": "product-interface-service",
+      "report_order": "12"
+    },
+    {
+      "evidence_id": "EV-017",
+      "title": "Classic Collection discovery set open box",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "packaging-and-unboxing",
+      "visual_category": "discovery-unboxing-and-internal-organization",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/skus/J40X01R000__PRODUCT_01--IMG_1200--DISCOVERYSET--1016611150.jpg",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-05-discovery-open-box.jpg",
+      "market": "United States",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo official product catalog / official CDN",
+      "rights_note": "Research reference only; copyrighted by Le Labo or its licensors; no redistribution license inferred.",
+      "subject_role": "discovery-unboxing-and-internal-organization",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official product, personalization, or discovery page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for discovery-unboxing-and-internal-organization; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Open kraft hinged carton reveals 17 narrow vials arranged in two rows. Black die-cut foam sharply contrasts the clear vials, pale liquids and black caps. Three-quarter view exposes shell, lid, insert depth and vial organization in one factual frame.",
+      "key_visual_surface": "product",
+      "report_section": "product-native-visual-language",
+      "report_order": "13"
+    },
+    {
+      "evidence_id": "EV-018",
+      "title": "SANTAL 26 classic candle neutral PDP",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "product-native-form",
+      "visual_category": "home-format-neutral-pdp",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/skus/CNDCS26100__PRODUCT_01--IMG_1200--SANTAL26--886638108.jpg",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-06-santal26-candle-neutral.jpg",
+      "market": "United States",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo official product catalog / official CDN",
+      "rights_note": "Research reference only; copyrighted by Le Labo or its licensors; no redistribution license inferred.",
+      "subject_role": "home-format-neutral-pdp",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official product, personalization, or discovery page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for home-format-neutral-pdp; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Clear heavy-bottomed glass tumbler contains off-white wax and one natural-colored wick. The same ruled personalized label scales to the wider vessel and names weight, product form, city, date and recipient. Soft grey field and low side shadow match fragrance PDP representation.",
+      "key_visual_surface": "product",
+      "report_section": "product-native-visual-language",
+      "report_order": "14"
+    },
+    {
+      "evidence_id": "EV-019",
+      "title": "SANTAL 26 candle label detail",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "product-detail-and-service-ceremony",
+      "visual_category": "label-material-and-application-detail",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/skus/CNDCS26100__PRODUCT_07--IMG_1200--SANTAL26-1621790330.jpg",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-07-santal26-candle-detail.jpg",
+      "market": "United States",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo official product catalog / official CDN",
+      "rights_note": "Research reference only; copyrighted by Le Labo or its licensors; no redistribution license inferred.",
+      "subject_role": "label-material-and-application-detail",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official product, personalization, or discovery page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for label-material-and-application-detail; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Hands hold the un-applied paper label edge-to-edge against the candle vessel. Close crop makes paper grain, black rules, weight, bilingual product form, city/date fields and hand-crafted line readable. The image explicitly distinguishes the removable printed label from the glass and wax substrate.",
+      "key_visual_surface": "additional-channel",
+      "report_section": "product-interface-service",
+      "report_order": "15"
+    },
+    {
+      "evidence_id": "EV-020",
+      "title": "Hinoki shower gel 250 ml",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "product-native-form",
+      "visual_category": "body-format-bottle",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/skus/P016250100__PRODUCT_01--IMG_1200--SHOWERGEL--1883409868.jpg",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-08-hinoki-shower-gel.jpg",
+      "market": "United States",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo official product catalog / official CDN",
+      "rights_note": "Research reference only; copyrighted by Le Labo or its licensors; no redistribution license inferred.",
+      "subject_role": "body-format-bottle",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official product, personalization, or discovery page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for body-format-bottle; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Amber-brown product is visible through a translucent rounded-rectangle squeeze bottle. Clear dispensing cap and direct black grid typography replace the fragrance bottle's paper wrap label. Label hierarchy foregrounds function first, then volume, scent, freshness period and formula copy.",
+      "key_visual_surface": "product",
+      "report_section": "product-native-visual-language",
+      "report_order": "16"
+    },
+    {
+      "evidence_id": "EV-021",
+      "title": "Hinoki hand pomade 55 ml",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "product-native-form",
+      "visual_category": "body-format-tube",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/skus/P015075100__PRODUCT_01--IMG_1200--HANDPOMADE-1457772461.jpg",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-09-hinoki-hand-pomade.jpg",
+      "market": "United States",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo official product catalog / official CDN",
+      "rights_note": "Research reference only; copyrighted by Le Labo or its licensors; no redistribution license inferred.",
+      "subject_role": "body-format-tube",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official product, personalization, or discovery page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for body-format-tube; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Warm off-white collapsible squeeze tube stands on a small faceted cap. Dense black bilingual function, volume, scent, freshness and formula text is printed directly in a ruled vertical grid. The task-native tube changes silhouette and reading direction while preserving monochrome administrative typography.",
+      "key_visual_surface": "product",
+      "report_section": "product-native-visual-language",
+      "report_order": "17"
+    },
+    {
+      "evidence_id": "EV-022",
+      "title": "Le Labo laboratory-store interior",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "space-and-service",
+      "visual_category": "laboratory-store system overview",
+      "source_url": "https://media.elcompanies.com/images/e/estee-lauder-companies/global/our-brands/le-labo/hero-image-lelabo.jpg",
+      "local_path": "evidence/visual-expansion/space-service/SS-01-parent-brand-hero.jpg",
+      "market": "Global or United States as stated by source",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "The Estée Lauder Companies / Le Labo",
+      "rights_note": "Official parent-company asset; research use only; copyrighted.",
+      "subject_role": "laboratory-store system overview",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official brand, About, or refill service page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for laboratory-store system overview; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Wide interior establishes the boutique as a working laboratory rather than a polished salon. Black steel glazing reveals a back-room work zone while retaining physical separation. Weathered plaster, white tile, dark timber, worn leather and industrial lamps make age and use visible. Repeated labeled bottles and kraft drawers turn stock organization into a graphic wall system. Small LE LABO wall signage is subordinate to the environment and apparatus.",
+      "key_visual_surface": "additional-channel",
+      "report_section": "product-interface-service",
+      "report_order": "18"
+    },
+    {
+      "evidence_id": "EV-023",
+      "title": "About-page lab workwall banner",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "space-and-service",
+      "visual_category": "material environment and working inventory",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/cms/7_ONE_SIZE_IMAGE_01_7809_344429774.jpg",
+      "local_path": "evidence/visual-expansion/space-service/SS-02-about-lab-banner.jpg",
+      "market": "Global or United States as stated by source",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo official website",
+      "rights_note": "Official first-party CDN asset; research use only; copyrighted.",
+      "subject_role": "material environment and working inventory",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official brand, About, or refill service page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for material environment and working inventory; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Panoramic composition reads as a catalog of work materials: bundled kraft sleeves, dark bottles, boxes, a candle and tools. A magnifying task lamp and manual press-like device signal inspection and hand operations. Rough exposed tile and patched wall surfaces resist pristine luxury finishing. LE LABO INC. stamps appear on utilitarian pouches and boxes rather than as ornamental signage. Muted gray, kraft brown, black and warm task light form the environmental palette.",
+      "key_visual_surface": "additional-channel",
+      "report_section": "product-interface-service",
+      "report_order": "19"
+    },
+    {
+      "evidence_id": "EV-024",
+      "title": "Fresh formulation / refill pour",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "space-and-service",
+      "visual_category": "technician action, fresh formulation and personalized object",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/content/1635_ONE_SIZE_IMAGE_01_15414_-14777587.jpg",
+      "local_path": "evidence/visual-expansion/space-service/SS-03-refill-navigation.jpg",
+      "market": "Global or United States as stated by source",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo official website",
+      "rights_note": "Official first-party CDN asset; research use only; copyrighted.",
+      "subject_role": "technician action, fresh formulation and personalized object",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official brand, About, or refill service page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for technician action, fresh formulation and personalized object; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Tight crop centers two hands pouring clear liquid from a beaker into an AMBRETTE 9 bottle beside a digital scale. The visible paper label carries scent, formula-style information, formulation date and personalization fields. Hands, vessel and scale make precision service legible without showing a posed employee portrait. Window mesh, worn equipment and low natural light keep the action embedded in a working lab. The image connects refill/formulation, measurement and personalization in one service moment.",
+      "key_visual_surface": "additional-channel",
+      "report_section": "product-interface-service",
+      "report_order": "20"
+    },
+    {
+      "evidence_id": "EV-025",
+      "title": "Online refill return — cap bottle",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "service-behavior",
+      "visual_category": "refill ceremony opening action",
+      "source_url": "https://s3.amazonaws.com/lelabo-java/images/cms/539_IMG_360_IMAGE_01_15433_-1664222520.png",
+      "local_path": "evidence/visual-expansion/space-service/SS-04-refill-step-1.png",
+      "market": "Global or United States as stated by source",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo official FAQ",
+      "rights_note": "Official first-party service illustration; research use only; copyrighted.",
+      "subject_role": "refill ceremony opening action",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official brand, About, or refill service page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for refill ceremony opening action; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Sparse monoline drawing isolates hands securing the bottle cap. The customer is depicted as an active participant preparing the existing object for return. Black line on transparency echoes instructional and workshop notation rather than lifestyle illustration.",
+      "key_visual_surface": "additional-channel",
+      "report_section": "product-interface-service",
+      "report_order": "21"
+    },
+    {
+      "evidence_id": "EV-026",
+      "title": "Online refill return — place bottle in platform",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "service-behavior",
+      "visual_category": "object retention and protective packing",
+      "source_url": "https://s3.amazonaws.com/lelabo-java/images/cms/539_IMG_360_IMAGE_03_15435_-1923547518.png",
+      "local_path": "evidence/visual-expansion/space-service/SS-05-refill-step-3.png",
+      "market": "Global or United States as stated by source",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo official FAQ",
+      "rights_note": "Official first-party service illustration; research use only; copyrighted.",
+      "subject_role": "object retention and protective packing",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official brand, About, or refill service page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for object retention and protective packing; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Bottle silhouette is centered inside a hatched cardboard platform while hands guide it into place. The existing bottle remains the hero object; the package is designed around its safe return. Hatching communicates humble paperboard material without color or decorative styling.",
+      "key_visual_surface": "additional-channel",
+      "report_section": "product-interface-service",
+      "report_order": "22"
+    },
+    {
+      "evidence_id": "EV-027",
+      "title": "Online refill return — review invoice",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "service-behavior",
+      "visual_category": "documentation and identity checkpoint",
+      "source_url": "https://s3.amazonaws.com/lelabo-java/images/cms/539_IMG_360_IMAGE_05_15437_-164326601.png",
+      "local_path": "evidence/visual-expansion/space-service/SS-06-refill-step-5.png",
+      "market": "Global or United States as stated by source",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo official FAQ",
+      "rights_note": "Official first-party service illustration; research use only; copyrighted.",
+      "subject_role": "documentation and identity checkpoint",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official brand, About, or refill service page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for documentation and identity checkpoint; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Two hands hold an invoice marked with the Le Labo wordmark. Paperwork is treated as a visible step in the ceremony, reinforcing record-keeping and traceability. The restrained line drawing places brand authorship on a functional document.",
+      "key_visual_surface": "additional-channel",
+      "report_section": "product-interface-service",
+      "report_order": "23"
+    },
+    {
+      "evidence_id": "EV-028",
+      "title": "Online refill return — place invoice in platform",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "service-behavior",
+      "visual_category": "documentation joined to physical object",
+      "source_url": "https://s3.amazonaws.com/lelabo-java/images/cms/539_IMG_360_IMAGE_06_15438_-665847798.png",
+      "local_path": "evidence/visual-expansion/space-service/SS-07-refill-step-6.png",
+      "market": "Global or United States as stated by source",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo official FAQ",
+      "rights_note": "Official first-party service illustration; research use only; copyrighted.",
+      "subject_role": "documentation joined to physical object",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official brand, About, or refill service page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for documentation joined to physical object; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "A directional arrow shows the branded invoice entering the same protective platform as the bottle. The service system binds identity data and physical vessel before shipment. Hand-drawn instructional style makes an operational action feel deliberately human.",
+      "key_visual_surface": "additional-channel",
+      "report_section": "product-interface-service",
+      "report_order": "24"
+    },
+    {
+      "evidence_id": "EV-029",
+      "title": "Online refill return — carrier handoff",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "service-behavior",
+      "visual_category": "service handoff and circulation",
+      "source_url": "https://s3.amazonaws.com/lelabo-java/images/cms/539_IMG_360_IMAGE_07_15439_1777631720.png",
+      "local_path": "evidence/visual-expansion/space-service/SS-08-refill-step-7.png",
+      "market": "Global or United States as stated by source",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo official FAQ",
+      "rights_note": "Official first-party service illustration; research use only; copyrighted.",
+      "subject_role": "service handoff and circulation",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official brand, About, or refill service page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for service handoff and circulation; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "A hand places the hatched return parcel at a carrier counter. The final selected frame makes product circulation, rather than disposal, the closure of the customer-side ritual. Generic carrier architecture keeps attention on the reusable vessel's journey.",
+      "key_visual_surface": "additional-channel",
+      "report_section": "product-interface-service",
+      "report_order": "25"
+    },
+    {
+      "evidence_id": "EV-030",
+      "title": "Films hero motion poster: Williamsburg Bridge and New York skyline",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "key-visual-and-motion",
+      "visual_category": "films-landing-motion-poster",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/content/1468_LARGE_IMAGE_01_14557_434606852.jpg",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-001-films-hero-poster.jpg",
+      "market": "Global; city scope follows source title",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo / official Films page",
+      "rights_note": "First-party copyrighted still; research evidence only.",
+      "subject_role": "films-landing-motion-poster",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official Films, Souls & Labs, Craftspeople, or Le Journal page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for films-landing-motion-poster; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Cool, grainy city establishing frame uses partial foliage occlusion and low-contrast dusk light instead of polished skyline spectacle.",
+      "key_visual_surface": "content",
+      "report_section": "key-visual",
+      "report_order": "26"
+    },
+    {
+      "evidence_id": "EV-031",
+      "title": "Souls & Labs: Shanghai storefront motion poster",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "space-service-and-film",
+      "visual_category": "city-lab-exterior-poster",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/content/1294_SMALL_IMAGE_01_14148_1462631425.jpg",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-002-shanghai-souls-labs.jpg",
+      "market": "Global; city scope follows source title",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo / official Films page",
+      "rights_note": "First-party copyrighted still; research evidence only.",
+      "subject_role": "city-lab-exterior-poster",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official Films, Souls & Labs, Craftspeople, or Le Journal page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for city-lab-exterior-poster; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Tree trunks interrupt a dim brick facade; signage is small and embedded in the architecture.",
+      "key_visual_surface": "additional-channel",
+      "report_section": "product-interface-service",
+      "report_order": "27"
+    },
+    {
+      "evidence_id": "EV-032",
+      "title": "Souls & Labs: Chicago storefront motion poster",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "space-service-and-film",
+      "visual_category": "city-lab-signage-poster",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/content/1298_SMALL_IMAGE_01_13195_2141607551.jpg",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-003-chicago-souls-labs.jpg",
+      "market": "Global; city scope follows source title",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo / official Films page",
+      "rights_note": "First-party copyrighted still; research evidence only.",
+      "subject_role": "city-lab-signage-poster",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official Films, Souls & Labs, Craftspeople, or Le Journal page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for city-lab-signage-poster; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "A close, off-center street view emphasizes layered window lettering, masonry, reflection, and worn sidewalk.",
+      "key_visual_surface": "additional-channel",
+      "report_section": "product-interface-service",
+      "report_order": "28"
+    },
+    {
+      "evidence_id": "EV-033",
+      "title": "Souls & Labs: Mexico City storefront motion poster",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "space-service-and-film",
+      "visual_category": "city-lab-exterior-poster",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/content/1303_SMALL_IMAGE_01_13198_-2111879964.jpg",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-004-mexico-city-souls-labs.jpg",
+      "market": "Global; city scope follows source title",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo / official Films page",
+      "rights_note": "First-party copyrighted still; research evidence only.",
+      "subject_role": "city-lab-exterior-poster",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official Films, Souls & Labs, Craftspeople, or Le Journal page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for city-lab-exterior-poster; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Reflective glazing, raw concrete, dark timber and vegetation keep the lab tied to its street context.",
+      "key_visual_surface": "additional-channel",
+      "report_section": "product-interface-service",
+      "report_order": "29"
+    },
+    {
+      "evidence_id": "EV-034",
+      "title": "Souls & Labs: Tokyo technician at storefront",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "people-space-and-film",
+      "visual_category": "lab-technician-environmental-portrait",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/content/1307_SMALL_IMAGE_01_13201_703111243.jpg",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-005-tokyo-souls-labs.jpg",
+      "market": "Global; city scope follows source title",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo / official Films page",
+      "rights_note": "First-party copyrighted still; research evidence only.",
+      "subject_role": "lab-technician-environmental-portrait",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official Films, Souls & Labs, Craftspeople, or Le Journal page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for lab-technician-environmental-portrait; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "A technician is small within a wide glass-and-concrete storefront, joining human service to local architecture rather than isolating a portrait.",
+      "key_visual_surface": "additional-channel",
+      "report_section": "product-interface-service",
+      "report_order": "30"
+    },
+    {
+      "evidence_id": "EV-035",
+      "title": "Souls & Labs: New York storefront motion poster",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "brand-mood-and-space",
+      "visual_category": "origin-city-street-poster",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/content/1319_SMALL_IMAGE_01_13210_-369975810.jpg",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-007-new-york-souls-labs.jpg",
+      "market": "Global; city scope follows source title",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo / official Films page",
+      "rights_note": "First-party copyrighted still; research evidence only.",
+      "subject_role": "origin-city-street-poster",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official Films, Souls & Labs, Craftspeople, or Le Journal page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for origin-city-street-poster; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Muted, vignetted street imagery treats a worn narrow storefront as urban continuity rather than a pristine retail facade.",
+      "key_visual_surface": "additional-channel",
+      "report_section": "product-interface-service",
+      "report_order": "31"
+    },
+    {
+      "evidence_id": "EV-036",
+      "title": "Bergamot Harvest motion poster, Reggio Calabria",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "harvest-and-material-world",
+      "visual_category": "ingredient-close-up-motion-poster",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/content/1321_SMALL_IMAGE_01_14157_153555055.jpg",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-008-bergamot-harvest.jpg",
+      "market": "Global; city scope follows source title",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo / official Films page",
+      "rights_note": "First-party copyrighted still; research evidence only.",
+      "subject_role": "ingredient-close-up-motion-poster",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official Films, Souls & Labs, Craftspeople, or Le Journal page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for ingredient-close-up-motion-poster; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Tight fruit-and-leaf framing uses deep green shadows, direct sun and shallow depth to make raw material tactile.",
+      "key_visual_surface": "imagery",
+      "report_section": "photography-film",
+      "report_order": "32"
+    },
+    {
+      "evidence_id": "EV-037",
+      "title": "Denim Tote craft motion poster, Okayama",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "craft-and-material-world",
+      "visual_category": "material-and-print-detail",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/content/1329_SMALL_IMAGE_01_14153_-1606152754.jpg",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-009-denim-tote-craft.jpg",
+      "market": "Global; city scope follows source title",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo / official Films page",
+      "rights_note": "First-party copyrighted still; research evidence only.",
+      "subject_role": "material-and-print-detail",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official Films, Souls & Labs, Craftspeople, or Le Journal page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for material-and-print-detail; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Extreme shallow-focus crop lets woven denim texture and imperfect tan printing dominate over the finished object.",
+      "key_visual_surface": "imagery",
+      "report_section": "photography-film",
+      "report_order": "33"
+    },
+    {
+      "evidence_id": "EV-038",
+      "title": "Concrete Candle craft motion poster, Charleston",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "craft-and-material-world",
+      "visual_category": "handmade-surface-and-label-detail",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/content/1331_SMALL_IMAGE_01_13224_-353273146.jpg",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-010-concrete-candle-craft.jpg",
+      "market": "Global; city scope follows source title",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo / official Films page",
+      "rights_note": "First-party copyrighted still; research evidence only.",
+      "subject_role": "handmade-surface-and-label-detail",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official Films, Souls & Labs, Craftspeople, or Le Journal page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for handmade-surface-and-label-detail; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "A hand grips a porous vessel; soft low light preserves speckling, mass, imperfect surface and applied utility type.",
+      "key_visual_surface": "imagery",
+      "report_section": "photography-film",
+      "report_order": "34"
+    },
+    {
+      "evidence_id": "EV-039",
+      "title": "Diffuser craft motion poster, Brooklyn",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "craft-and-people",
+      "visual_category": "hands-tools-and-wood-assembly",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/content/1333_SMALL_IMAGE_01_13226_2138668803.jpg",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-011-diffuser-craft.jpg",
+      "market": "Global; city scope follows source title",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Le Labo / official Films page",
+      "rights_note": "First-party copyrighted still; research evidence only.",
+      "subject_role": "hands-tools-and-wood-assembly",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official Films, Souls & Labs, Craftspeople, or Le Journal page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for hands-tools-and-wood-assembly; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Hands, hammer, metal punch, end-grain wood and a scarred bench build a close observational making scene.",
+      "key_visual_surface": "imagery",
+      "report_section": "photography-film",
+      "report_order": "35"
+    },
+    {
+      "evidence_id": "EV-040",
+      "title": "Le Journal editorial engraving: house, bottle and travel case",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "editorial-key-visual",
+      "visual_category": "black-and-white-engraving-collage",
+      "source_url": "https://overheard-le-journal.imgix.net/House-Rules-Apply-1.png",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-014-le-journal-house-rules.png",
+      "market": "Global; city scope follows source title",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Overheard Le Labo / Le Journal Society",
+      "rights_note": "Official editorial copyrighted artwork; research evidence only.",
+      "subject_role": "black-and-white-engraving-collage",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official Films, Souls & Labs, Craftspeople, or Le Journal page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for black-and-white-engraving-collage; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "Dense monochrome hatch and stipple combine domestic architecture, fragrance bottle and travel ephemera as one newspaper-like cut-and-paste metaphor.",
+      "key_visual_surface": "content",
+      "report_section": "key-visual",
+      "report_order": "36"
+    },
+    {
+      "evidence_id": "EV-041",
+      "title": "Le Journal editorial engraving: bottle as doorway to the coast",
+      "source_tier": "primary",
+      "content_type": "image_candidate",
+      "evidence_layer": "editorial-key-visual",
+      "visual_category": "surreal-black-and-white-product-metaphor",
+      "source_url": "https://overheard-le-journal.imgix.net/Wish-You-Wore-Here-1.png",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-015-le-journal-wish-you-wore-here.png",
+      "market": "Global; city scope follows source title",
+      "era_or_date": "current",
+      "captured_at": "2026-08-24",
+      "credit": "Overheard Le Labo / Le Journal Society",
+      "rights_note": "Official editorial copyrighted artwork; research evidence only.",
+      "subject_role": "surreal-black-and-white-product-metaphor",
+      "human_casting": "Hands, technicians, workers, or incidental people only when visible; otherwise none.",
+      "setting": "official Films, Souls & Labs, Craftspeople, or Le Journal page",
+      "composition": "Direct source frame; observable arrangement recorded in analysis notes.",
+      "camera_and_perspective": "Source frame; lens and camera metadata unavailable.",
+      "lighting": "Observable source lighting; capture metadata unavailable.",
+      "palette": "Observed source color only; not promoted to an identity palette.",
+      "material_and_surface": "Visible product, package, ingredient, tool, print, or spatial surfaces recorded in notes.",
+      "postproduction": "Unknown; no unsupported retouching claim.",
+      "motion_or_sequence": "Poster or sequence role follows source; a still does not prove full motion grammar.",
+      "product_representation_job": "Evidence for surreal-black-and-white-product-metaphor; factual and atmospheric roles remain separated.",
+      "product_image_job": "",
+      "product_native_signals": "Visible form, label, package, service state, material, or spatial signal only.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "A finely engraved bottle becomes an architectural portal; sparse white ground makes the surreal object read like a clipped broadsheet illustration.",
+      "key_visual_surface": "content",
+      "report_section": "key-visual",
+      "report_order": "37"
+    },
+    {
+      "evidence_id": "EV-042",
+      "title": "User-curated Le Labo mood reference: SANTAL 33 dark material flat lay",
+      "source_tier": "contextual",
+      "content_type": "image_candidate",
+      "evidence_layer": "brand-mood-and-world",
+      "visual_category": "user-curated-dark-material-flatlay",
+      "source_url": "urn:user-supplied:kakaotalk:2026-08-31:le-labo-mood-01",
+      "local_path": "evidence/user-provided-mood/EV-LL-MOOD-001-santal33-dark-flatlay.png",
+      "market": "Not verified",
+      "era_or_date": "source date unknown; supplied 2026-08-31",
+      "captured_at": "2026-08-31",
+      "credit": "User-supplied; original creator unknown",
+      "rights_note": "User-provided reference for internal brand analysis; original rights holder and source URL unverified.",
+      "subject_role": "Product bottle package botanicals raw materials and lab tools as a mood ensemble.",
+      "human_casting": "none",
+      "setting": "Studio flat lay on a black tactile plane.",
+      "composition": "Wide modular specimen layout with the bottle near center and materials grouped by type.",
+      "camera_and_perspective": "Overhead or near-overhead view; source camera metadata unavailable.",
+      "lighting": "Low-key directional studio light with retained shadow and surface grain.",
+      "palette": "Black charcoal kraft brown wood green and localized violet.",
+      "material_and_surface": "Kraft paper glass wood botanical fragments resin metal and smoked glass.",
+      "postproduction": "Unknown; only visible image characteristics recorded.",
+      "motion_or_sequence": "Single still; no motion claim.",
+      "product_representation_job": "Mood reference only; does not replace PDP or factual product evidence.",
+      "product_image_job": "",
+      "product_native_signals": "Visible bottle box label cap and material props; image styling is not product-native proof.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "User-curated reference emphasizes dark laboratory tactility, specimen ordering, raw materials, and restrained color. Provenance is unverified, so it visualizes an accepted mood direction but does not establish official Le Labo history.",
+      "key_visual_surface": "imagery",
+      "report_section": "brand-mood",
+      "report_order": "38"
+    },
+    {
+      "evidence_id": "EV-043",
+      "title": "User-curated Le Labo mood reference: TUBEREUSE 40 light material flat lay",
+      "source_tier": "contextual",
+      "content_type": "image_candidate",
+      "evidence_layer": "brand-mood-and-world",
+      "visual_category": "user-curated-light-material-flatlay",
+      "source_url": "urn:user-supplied:kakaotalk:2026-08-31:le-labo-mood-02",
+      "local_path": "evidence/user-provided-mood/EV-LL-MOOD-002-tubereuse40-light-flatlay.png",
+      "market": "Not verified",
+      "era_or_date": "source date unknown; supplied 2026-08-31",
+      "captured_at": "2026-08-31",
+      "credit": "User-supplied; original creator unknown",
+      "rights_note": "User-provided reference for internal brand analysis; original rights holder and source URL unverified.",
+      "subject_role": "Product bottle package petals citrus wood metal lichen tags and lab vessels as a mood ensemble.",
+      "human_casting": "none",
+      "setting": "Studio flat lay on a cool light-gray work surface.",
+      "composition": "Wide horizontal specimen layout with progressive petal scale and grouped material families.",
+      "camera_and_perspective": "Overhead or near-overhead view; source camera metadata unavailable.",
+      "lighting": "Soft diffuse studio light with gentle object shadows.",
+      "palette": "Cool gray off-white kraft brown silver black and small citrus yellow accents.",
+      "material_and_surface": "Kraft paper glass raw wood petals citrus metal lichen and paper tags.",
+      "postproduction": "Unknown; only visible image characteristics recorded.",
+      "motion_or_sequence": "Single still; no motion claim.",
+      "product_representation_job": "Mood reference only; does not replace PDP or factual product evidence.",
+      "product_image_job": "",
+      "product_native_signals": "Visible bottle box label cap and material props; image styling is not product-native proof.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "User-curated reference emphasizes a brighter laboratory register, deliberate spacing, raw-to-refined material contrast, and quiet botanical color. Provenance is unverified, so it visualizes an accepted mood direction but does not establish official Le Labo history.",
+      "key_visual_surface": "imagery",
+      "report_section": "brand-mood",
+      "report_order": "39"
+    },
+    {
+      "evidence_id": "EV-044",
+      "title": "User-curated Le Labo mood reference: city exclusives and ingredients grid",
+      "source_tier": "contextual",
+      "content_type": "image_candidate",
+      "evidence_layer": "brand-mood-and-world",
+      "visual_category": "user-curated-city-exclusives-grid",
+      "source_url": "urn:user-supplied:kakaotalk:2026-08-31:le-labo-mood-03",
+      "local_path": "evidence/user-provided-mood/EV-LL-MOOD-003-city-exclusives-grid.png",
+      "market": "Not verified",
+      "era_or_date": "source date unknown; supplied 2026-08-31",
+      "captured_at": "2026-08-31",
+      "credit": "User-supplied; original creator unknown",
+      "rights_note": "User-provided reference for internal brand analysis; original rights holder and source URL unverified.",
+      "subject_role": "Six fragrance bottle and kraft package pairs with ingredient and city cues.",
+      "human_casting": "none",
+      "setting": "Six clean studio tiles on a cool light-gray surface.",
+      "composition": "Two-by-three modular matrix repeating product pair above a single ingredient line and city tag.",
+      "camera_and_perspective": "Composite grid of mostly frontal or slightly elevated product views; source camera metadata unavailable.",
+      "lighting": "Soft even studio light with controlled shadows.",
+      "palette": "Cool gray kraft white black pale fragrance liquid and restrained botanical accents.",
+      "material_and_surface": "Kraft paper glass printed labels citrus wood moss vanilla and tobacco fragments.",
+      "postproduction": "Unknown; visible as a compiled or composited six-panel image.",
+      "motion_or_sequence": "Six related still modules; no temporal motion claim.",
+      "product_representation_job": "Shows a product-family mood sequence but does not replace verified product lineup or city-exclusive documentation.",
+      "product_image_job": "",
+      "product_native_signals": "Repeated bottle label cap and kraft box suggest family invariants; unverified ingredient pairings and city labels are not product-native proof.",
+      "intrinsic_product_signals": "",
+      "analysis_notes": "User-curated reference emphasizes family repetition, controlled ingredient variation, and editorial sequencing across six city-labeled modules. Provenance is unverified, so it visualizes an accepted mood direction but does not establish official assortment facts.",
+      "key_visual_surface": "imagery",
+      "report_section": "brand-mood",
+      "report_order": "40"
+    }
+  ],
+  "downstream_contract": {
+    "read_with": "storybook_registered_report",
+    "transfer_plan_requires": [
+      "new user target direction",
+      "decision_index",
+      "design_system",
+      "grammar_rules",
+      "protected_surface_families",
+      "unresolved_gaps"
+    ],
+    "second_brand_model_must_add": [
+      "approved tuning operation and source lineage",
+      "target-category evidence and constraints",
+      "original positioning, verbal, identity, key visual, mood, photography, product representation, and product-native rules",
+      "implementation-ready semantic tokens and decision status"
+    ],
+    "product_photo_brief_requires_from_second_brand": [
+      "commercial brand image mood",
+      "product representation roles",
+      "camera, light, set, material, color, post-production, and sequence rules",
+      "product-native form or interface states that must remain truthful"
+    ],
+    "landing_page_brief_requires_from_second_brand": [
+      "positioning and message order",
+      "key-visual surface translation",
+      "brand color and typography roles",
+      "spacing and layout strategy",
+      "product or interface behavior, states, evidence, and CTA rules"
+    ]
+  }
+}

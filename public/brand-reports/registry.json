@@ -1,5 +1,45 @@
 {
   "schema_version": "1.0.0",
   "artifact_type": "brand_report_registry",
-  "reports": []
+  "reports": [
+    {
+      "id": "le-labo-fragrances-source-analysis",
+      "brand": "Le Labo Fragrances",
+      "stage": "source_brand_analysis",
+      "stage_label": "Stage 1 — Source Brand Analysis",
+      "artifact_type": "source_brand_analysis",
+      "schema_version": "1.2.0",
+      "report_url": "/brand-reports/le-labo-fragrances-source-analysis/report.json",
+      "review_url": "/brand-reports/le-labo-fragrances-source-analysis/review.json",
+      "asset_registry_url": null,
+      "story_path": "src/stories/brand-reports/generated/le-labo-fragrances-source-analysis.stories.jsx",
+      "package_sha256": "5c97622929072d53e4e3aabb0f65dd08c02bd3fb48de7119ab0ff33ed6c4b6e5"
+    },
+    {
+      "id": "mora-extended-anatomy",
+      "brand": "MORA",
+      "stage": "extended_brand_anatomy",
+      "stage_label": "Stage 2 — Extended Brand Anatomy",
+      "artifact_type": "extended_brand_anatomy",
+      "schema_version": "1.1.0",
+      "report_url": "/brand-reports/mora-extended-anatomy/report.json",
+      "review_url": "/brand-reports/mora-extended-anatomy/review.json",
+      "asset_registry_url": "/brand-reports/mora-extended-anatomy/asset-registry.json",
+      "story_path": "src/stories/brand-reports/generated/mora-extended-anatomy.stories.jsx",
+      "package_sha256": "8c37070285b00201db38b45f194a8e3f65fc8ba694c8d2a6a10ea73c805165f1"
+    },
+    {
+      "id": "mora-infused-greek-yogurt-landing-materials",
+      "brand": "MORA Craft Greek Yogurt",
+      "stage": "landing_materials",
+      "stage_label": "Stage 3 — Landing Materials",
+      "artifact_type": "landing_materials",
+      "schema_version": "1.1.0",
+      "report_url": "/brand-reports/mora-infused-greek-yogurt-landing-materials/report.json",
+      "review_url": "/brand-reports/mora-infused-greek-yogurt-landing-materials/review.json",
+      "asset_registry_url": "/brand-reports/mora-infused-greek-yogurt-landing-materials/asset-registry.json",
+      "story_path": "src/stories/brand-reports/generated/mora-infused-greek-yogurt-landing-materials.stories.jsx",
+      "package_sha256": "73cb7faea6992c09fd31ba1bce4aff4ffbef4e604ccfb7b0eb942fa469cc0c8e"
+    }
+  ]
 }

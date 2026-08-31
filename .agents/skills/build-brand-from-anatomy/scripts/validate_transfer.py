@@ -280,7 +280,7 @@ def direction_errors(case: Path) -> list[str]:
         expected_counts = {
             "single_product": range(1, 2),
             "focused_family": range(2, 4),
-            "exploratory_family": range(3, 6),
+            "exploratory_family": range(3, 7),
         }
         if lineup_mode not in expected_counts:
             errors.append("Stage 2 schema 1.1 landing product concept has invalid lineup_mode")

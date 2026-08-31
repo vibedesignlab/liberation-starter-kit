@@ -1,0 +1,182 @@
+{
+  "shard_id": "revision4_process_visuals",
+  "scope": "Stage 2 supporting process-world visual storytelling only",
+  "visual_premise": "MORA의 장인성은 신비한 조제 분위기가 아니라, 발효 뒤 생긴 물질이 농축되고 재료별 중간 베이스가 저전단으로 접힌 뒤 한 컵의 피니시가 되는 과정을 서로 다른 기능적 도구와 정확한 음식 물성으로 보여 줄 때 성립한다.",
+  "sequence": {
+    "series_name": "From Set to Finish",
+    "narrative_read": [
+      "SET → WHEY + CONCENTRATE: 발효된 겔에서 유청이 빠져나가 밀도가 생긴다.",
+      "INGREDIENT → BASE: 각 원재료는 성질에 맞는 서로 다른 중간 형태가 된다.",
+      "BASE → TRACE: 농축 요거트의 조직을 해치지 않도록 넓은 도구로 천천히 접는다.",
+      "CUP → FINISH: 검증된 정량과 레시피는 고정하고, 즉시 먹는 한 컵의 마무리 상태만 선택한다."
+    ],
+    "continuity_lock": {
+      "maker": "기존 무드 이미지와 같은 25–44세 여성 제작자, 같은 묶은 머리, 자연스러운 피부, 로고 없는 차콜 반소매 상의와 차콜 캔버스 앞치마",
+      "workspace": "동일한 웜그레이 미장 벽, 애시 우드 선반, 브러시드 스테인리스 작업대의 현대 식품 작업실",
+      "lighting": "왼쪽의 높은 창을 동기로 한 4300–4800 K 방향성 확산광, 반대편 네거티브 필, 흰 요거트와 암부의 결을 모두 보존",
+      "camera_language": "3:2 가로 마스터, 50–65 mm 환산, 정면은 벽·작업대와 완전 평행, 측면은 동작 평면에 정확히 90도",
+      "material_language": "웜화이트 세라믹, 투명하되 넓은 입구의 식품용 용기, 브러시드 스테인리스, 흰 모슬린, 실제 음식색만 사용",
+      "edge_rule": "강한 직교선, 넓은 음영 여백, 선명한 실루엣과 동작 벡터로 현대적 긴장을 만들되 복고 필터나 어두운 향수광고 톤은 사용하지 않는다."
+    },
+    "report_sequence": "Straining Table은 세계관 오프너, Infusion Pantry는 중간 산출물 분류표, Folding Bench는 제조 증거, Finish Counter는 제한된 개인화의 결론으로 배치한다."
+  },
+  "image_briefs": [
+    {
+      "asset_id": "ST2-PROCESS-STRAINING-01",
+      "title": "The Straining Table",
+      "communication_job": "발효된 요거트가 유청과 농축 베이스로 분리되며 그릭요거트의 밀도가 생기는 실제 원리를 한눈에 설명한다.",
+      "shot_and_angle": "strict 100% frontal, eye-level 3:2 landscape, 50 mm equivalent; maker·배수 프레임·유청 받이가 중앙 수직축에 정렬되고 작업대와 선반은 완전 수평",
+      "actors": "동일 maker 한 명. 카메라를 보지 않고 양손으로 모슬린 가장자리를 안정시키며 배수 상태를 확인한다.",
+      "functional_tools": [
+        "흰 이중 모슬린 또는 치즈클로스",
+        "낮고 넓은 천공 스테인리스 배수 프레임",
+        "프레임 아래의 깊고 투명한 광구 식품용 유청 받이",
+        "작업대 옆의 교정형 식품용 탐침 온도계와 식품용 pH 미터 — 실제 작업 대기 상태로만 배치"
+      ],
+      "exact_intermediate_state": "모슬린 안에는 숟갈 모양을 지지하는 유백색 발효 겔이 남고, 아래에는 옅은 황록색의 투명한 산성 유청이 가느다란 중력 방향 줄기로 떨어져 받이의 약 1/4을 채운 상태. 튀거나 마른 커드 덩어리는 없다.",
+      "composition": "배수 프레임과 받이는 프레임 높이의 30–62%에 완전 노출하고, maker의 양손·천·낙하 유청·받이를 한 연속 동작 사슬로 보여 준다. 좌우 벽에 각각 15% 이상의 음영 여백을 남긴다.",
+      "food_physics_checks": [
+        "유청은 모슬린의 최저점에서 시작해 아래 받이로 끊김 없이 수직 낙하한다.",
+        "흰 농축물은 천 위에 실제 부피와 무게를 가지며 천이 그 무게에 따라 처진다.",
+        "유청은 물처럼 완전 무색도, 꿀처럼 점성이 높지도 않은 옅고 반투명한 액체다.",
+        "천공 프레임, 모슬린, 받이의 상하 관계가 실제 배수 구조로 작동한다.",
+        "손가락은 천에 실제 접촉하고 각 손 다섯 손가락과 자연스러운 손목 하중을 유지한다."
+      ],
+      "negative_constraints": [
+        "비커, 시험관, 피펫, 메스실린더, 백의, 장갑, 앰버 병",
+        "행잉 자루만 있고 유청 받이가 없는 연출, 유청이 공중에서 시작하거나 옆으로 흐르는 오류",
+        "빈티지 농가, 1980년대 주방, 낡은 목재, 황갈색 세피아, 녹슨 금속",
+        "커드 치즈 제조처럼 거친 알갱이, 우유 스플래시, 과장된 증기",
+        "로고·라벨·읽을 수 없는 생성 텍스트, 향수·화장품 표면"
+      ],
+      "prompt_core": "Photorealistic modern food-craft editorial, the same MORA maker from the reference mood series in charcoal tee and apron, strict perfectly frontal view at eye level. She steadies white double muslin over a low perforated brushed-stainless draining frame; dense white cultured yogurt gel rests in the cloth while a thin continuous stream of pale yellow-green translucent acid whey falls into a clear wide-mouth food-safe catch vessel below. Every component of the working drainage system is visible. Warm-gray plaster, ash shelf, stainless bench, strong directional window light with preserved white-food texture, large clean negative space, contemporary geometry, natural skin and material imperfections.",
+      "report_placement": {
+        "section": "brand_mood_and_brand_imagery.brand_world_and_craft_system",
+        "role": "world opener and process proof",
+        "display": "full-width 3:2 image before the manufacturing sequence; pair with the caption ‘SET → WHEY + CONCENTRATE’"
+      }
+    },
+    {
+      "asset_id": "ST2-PROCESS-INFUSION-LIBRARY-02",
+      "title": "The Infusion Pantry",
+      "communication_job": "여섯 재료가 하나의 가짜 투명 스피릿으로 통일되지 않고, 재료 특성에 따라 맑은 인퓨전·시럽·슬러리·페이스트·오일상으로 달라지는 중간 산출물 체계를 보여 준다.",
+      "shot_and_angle": "strict 100% frontal still life, eye-level 3:2 landscape, 65 mm equivalent; 카메라는 작업대와 평행하고 여섯 베이스를 두 줄이 아니라 하나의 낮은 수평 리듬으로 정렬",
+      "actors": "인물 없음. 필요하면 프레임 가장자리에서 식품용 트레이를 놓는 동일 maker의 한 손만 허용하며 중간 산출물을 가리지 않는다.",
+      "functional_tools": [
+        "각 내용물의 점도에 맞는 투명 광구 식품용 피처와 낮은 웜화이트 볼",
+        "미세 체, 작은 스테인리스 메시 바스켓, 접힌 흰 모슬린 필터",
+        "교정형 저울 위의 한 용기",
+        "실제 원재료를 담은 작은 스테인리스 또는 세라믹 접시"
+      ],
+      "exact_intermediate_state": [
+        "Thyme Honey: 타임 잎의 미세한 자연 흔적이 남은 반투명 앰버색 점성 시럽 베이스",
+        "Fig Leaf: 식품 사용과 제조 검증 전 방향성으로만 제시되는 매우 옅은 녹색-베이지 수용성 베이스; 생잎 조각을 띄우지 않는다.",
+        "Roasted Buckwheat: 따뜻한 갈색의 불투명한 볶은 곡물 인퓨전 또는 고운 슬러리, 바닥에 자연스러운 미세 침전",
+        "Citrus Peel: 가는 필이 체에서 걸러지고 밝은 황금색을 띠는 수용성 시트러스 베이스",
+        "Black Sesame: 광택이 과하지 않은 짙은 회흑색의 고운 슬러리 또는 페이스트를 낮은 볼에 담은 상태",
+        "Olive Oil & Sea Salt: 투명한 올리브 골드 오일상과 검증 전 방향성의 옅은 진주빛 미세 에멀전 또는 염수 계량분을 서로 구분해 한 쌍으로 배치"
+      ],
+      "composition": "여섯 베이스는 동일한 병이 아니라 내용물 물성에 맞는 네 가지 용기 높이와 입구를 가진다. 각 베이스 뒤에는 해당 원재료 한 줌만 작은 증거로 두고, 투명도·불투명도·점도의 차이가 흑백에서도 형태로 구분되게 한다.",
+      "food_physics_checks": [
+        "모든 베이스가 동일한 투명도·색·점도를 갖지 않는다.",
+        "시럽은 벽면에 얇은 점성 막, 곡물 슬러리는 미세 침전, 참깨는 불투명한 고운 입자, 오일은 수상과 다른 굴절을 보인다.",
+        "체와 메시에는 실제로 대응하는 원재료 고형물이 소량 남고 액체와 물리적으로 연결된다.",
+        "용기는 안정된 평면 위에 서며 액면은 중력에 수평이다.",
+        "원재료 크기와 양은 주인공인 중간 베이스를 압도하지 않는다."
+      ],
+      "negative_constraints": [
+        "여섯 개의 동일한 위스키색 유리병, 술병 코르크, 디캔터, 향수병, 드로퍼",
+        "모든 내용물을 맑고 호박색인 ‘스피릿’으로 표현하는 가짜 연금술",
+        "약초 약방 선반, 라벨이 달린 표본병, 과학실 랙, 검은 배경의 향수 정물",
+        "원재료가 액체 안에서 중력 없이 떠다니거나 용기를 관통하는 오류",
+        "읽을 수 없는 생성 라벨, 제품 효능·원산지·장시간 인퓨전의 암시"
+      ],
+      "prompt_core": "Photorealistic front-on editorial still life in the same contemporary MORA food workspace. A horizontal library of six honest food intermediate forms, each in the vessel its viscosity requires: translucent amber thyme-honey syrup in a wide-mouth food pitcher; very pale green-beige aqueous fig-leaf direction; warm brown roasted-buckwheat infusion or fine slurry with natural sediment; clear golden citrus-peel aqueous preparation beside a fine mesh strainer; opaque charcoal black-sesame slurry or paste in a low ceramic bowl; olive-gold oil phase beside a small pearly emulsion or measured brine portion. Restrained raw ingredient evidence, one scale, one fine mesh basket, no labels. Strong controlled side light reveals viscosity and transparency differences; modern warm-gray plaster, ash and stainless; sharp orderly geometry, not a bottle collection.",
+      "report_placement": {
+        "section": "brand_mood_and_brand_imagery.brand_world_and_craft_system.infusion_form_matrix",
+        "role": "intermediate-output taxonomy and ingredient-world still life",
+        "display": "wide image followed by six factual captions; mark Fig Leaf and Olive emulsion directions as pending food-safety/R&D validation"
+      }
+    },
+    {
+      "asset_id": "ST2-PROCESS-FOLDING-03",
+      "title": "The Folding Bench",
+      "communication_job": "농축 요거트의 조직을 보존하면서 정량의 재료 베이스를 넓은 도구로 접어 한 줄의 실제 흔적을 만드는 제조 행동을 증명한다.",
+      "shot_and_angle": "strict 90-degree side profile, eye-level 3:2 landscape, 50 mm equivalent; maker의 얼굴·어깨·양팔, 피처, 패들, 볼 중심이 하나의 측면 동작 평면에 놓인다.",
+      "actors": "동일 maker 한 명. 카메라를 보지 않고 왼손으로 넓은 웜화이트 볼을 지지하고 오른손의 넓은 스테인리스 패들로 한 번의 낮고 느린 fold를 수행한다.",
+      "functional_tools": [
+        "넓고 얕은 웜화이트 스톤웨어 또는 식품용 스테인리스 믹싱 볼",
+        "폭이 넓고 모서리가 둥근 스테인리스 패들 또는 스파튤라",
+        "눈금 대신 실제 계량을 연상시키는 작은 투명 광구 식품용 피처",
+        "작업대에 평평하게 놓인 교정형 저울"
+      ],
+      "exact_intermediate_state": "흰 농축 요거트가 패들의 넓은 면에 의해 아래에서 위로 한 번 접히는 순간. 계량된 타임 허니 베이스가 완전히 혼합되지 않고 얇은 앰버 리본 한 줄로 접힘 단면에 남아 있으며, 거품·소용돌이·튀는 방울은 없다.",
+      "composition": "프레임 왼쪽에 동작 앞 여백 20%를 두고 maker는 오른쪽 55–80%에 측면 실루엣으로 둔다. 패들 끝·리본·볼 림과 지지 손이 겹치지 않아 저전단 fold의 방향이 읽힌다.",
+      "food_physics_checks": [
+        "패들은 요거트 아래로 들어가 넓은 덩어리를 들어 접으며 공중에서 젓지 않는다.",
+        "농축 요거트는 넓은 둔덕과 능선을 유지하고 액체처럼 흐르거나 휘핑 거품이 생기지 않는다.",
+        "앰버 베이스는 완전 균일 혼합도 표면 토핑도 아닌 얇은 내부 리본으로 이어진다.",
+        "손목과 팔꿈치는 무거운 고점도 식품을 접는 하중에 맞고 패들 손잡이를 실제로 잡는다.",
+        "피처에 남은 양과 볼의 리본 양이 모순되지 않는다."
+      ],
+      "negative_constraints": [
+        "고속 거품기, 전동 믹서, 블렌더, 셰이커, 휘핑크림 소용돌이",
+        "스플래시, 공중 드립, 완벽한 CGI 스월, 액체 요거트",
+        "3/4 얼굴이나 정면 몸통, 두 눈이 보이는 측면 실패",
+        "비커·피펫·앰버 병·약방 도구, 장갑 낀 실험실 작업자",
+        "낡은 나무 반죽대, 제빵 공방, 레스토랑 셰프, 신비한 조제 의식"
+      ],
+      "prompt_core": "Photorealistic commercial food-process photograph, same MORA maker and same modern food workspace, exact 90-degree side profile. She supports a wide warm-white bowl with one hand and uses a broad rounded stainless paddle to lift and fold dense strained Greek yogurt once, slowly and with low shear. A precisely measured thyme-honey base remains as one thin amber ribbon inside the lifted fold, not a topping and not fully homogenized. The dense yogurt holds broad matte ridges; no foam, whisking or splash. Keep paddle, ribbon, bowl rim and both hands separated and physically connected. Strong directional window light, deep but legible charcoal shadows, warm-gray wall, stainless bench, large negative space, contemporary editorial precision.",
+      "report_placement": {
+        "section": "product_visual_traits_and_product_imagery.process_storytelling_series",
+        "role": "manufacturing-action proof and low-shear texture evidence",
+        "display": "place after the infusion-form matrix with the caption ‘BASE → TRACE’; use a paired macro crop only if paddle, internal ribbon and yogurt ridge all remain visible"
+      }
+    },
+    {
+      "asset_id": "ST2-PROCESS-FINISH-04",
+      "title": "The Finish Counter",
+      "communication_job": "개인화를 레시피나 효능의 임의 변경이 아니라, 고정된 정량과 완성 제품 위에서 즉시 먹는 한 컵의 ‘마무리 상태’를 선택하는 서비스로 제한해 보여 준다.",
+      "shot_and_angle": "strict 90-degree side cross-counter view, eye-level 3:2 landscape, 50–65 mm equivalent; maker는 오른쪽 측면, 고객은 왼쪽의 손·팔 일부만 등장하고 한 컵이 두 사람 사이의 행동 중심이 된다.",
+      "actors": "동일 maker 한 명과 고객 한 명의 손·전완. maker는 승인된 작은 계량분을 한 컵에 마무리하고, 고객 손은 컵을 받기 직전 작업대에 자연스럽게 닿는다.",
+      "functional_tools": [
+        "열린 MORA 낮고 넓은 1회용 컵 또는 동일 비례의 무문자 프로토타입 컵",
+        "정량의 식품 베이스를 담은 작은 광구 식품용 포션 컵",
+        "브러시드 스테인리스 티스푼 또는 좁은 스파튤라",
+        "Soft Fold, Single Trace, On the Side를 텍스트 없이 형상으로만 구분하는 작은 세라믹 샘플 스푼 세 개"
+      ],
+      "exact_intermediate_state": "완성된 진한 요거트 컵에 승인된 타임 허니 베이스 한 정량이 Single Trace 형태의 얇은 앰버 곡선으로 막 놓인 순간. 용량과 배합은 고정되어 있고 고객은 레시피가 아니라 그 정량 베이스의 표현 방식만 선택한다.",
+      "composition": "maker의 포션 컵·재료 줄기·열린 컵이 한 사선 벡터를 만들고 고객 손은 그 반대편에서 컵 사용을 설명한다. 샘플 스푼 세 개는 뒤쪽 낮은 평면에 보조적으로 두며 글자는 생성하지 않는다.",
+      "food_physics_checks": [
+        "베이스는 포션 컵 가장자리에서 열린 요거트 표면까지 끊기지 않는 짧은 점성 줄기로 이어진다.",
+        "한 정량만 사용되며 컵이 넘치거나 과도한 토핑 더미가 생기지 않는다.",
+        "진한 요거트 표면은 얇은 trace 아래에서도 무너지지 않고 한 번의 스푼 능선을 유지한다.",
+        "maker와 고객의 손은 서로 합쳐지지 않고 각 손의 손가락 수와 관절이 자연스럽다.",
+        "즉시 섭취 서비스로 읽히며 미개봉 유통 제품을 다시 열어 제조하는 장면처럼 보이지 않는다."
+      ],
+      "negative_constraints": [
+        "고객 이름·날짜·도시를 쓰는 라벨, 처방 카드, 향수 카운터 의식",
+        "무제한 토핑 바, 뷔페, 여러 색 소스, 칵테일 제조, 바텐더 셰이커",
+        "액체를 주사기·피펫·드로퍼로 넣는 장면, 약병, 비커, 장갑",
+        "직원이 밀봉 소매컵을 임의로 재배합하거나 건강 효능을 맞춤 조제하는 암시",
+        "고객과 maker가 카메라를 보는 광고 포즈, 로고가 과도한 유니폼, 복고 카페"
+      ],
+      "prompt_core": "Photorealistic contemporary food-service editorial in the same MORA workspace, exact 90-degree cross-counter side view. The same charcoal-apron maker on the right places one approved measured portion of thyme-honey base onto a finished open low-wide Greek-yogurt cup as a single thin amber trace. A customer's hand and forearm enter naturally from the left, ready to receive the cup. Three small neutral ceramic sample spoons sit discreetly behind as visual choices, without any text. The service reads as an immediate-consumption finishing choice, not recipe compounding. Preserve dense yogurt ridges and the short continuous viscous stream. Modern stainless and warm-gray architecture, strong precise daylight, generous negative space, natural hands and materials.",
+      "report_placement": {
+        "section": "verbal_branding_and_copy_hierarchy.personalization_and_service_world",
+        "role": "controlled personalization conclusion",
+        "display": "close the process-world sequence with the caption ‘CUP → FINISH’; adjacent copy must state that formula, dose and food-safety controls stay fixed and sealed retail cups are not post-customized"
+      }
+    }
+  ],
+  "series_release_gates": [
+    "네 장 모두 첫 1초 안에 향수·실험실·약방이 아니라 실제 식품 제조 또는 서비스로 읽힌다.",
+    "Straining, Infusion, Folding, Finish의 주된 도구와 중간 상태가 서로 중복되지 않고 단계별 기능을 설명한다.",
+    "동일 maker의 얼굴·헤어·차콜 복장, 동일 공간·광원·재료 팔레트가 연속된 하루처럼 유지된다.",
+    "모든 액체의 시작점·끝점·중력·점도, 모든 손의 접촉과 하중이 물리적으로 믿을 수 있다.",
+    "Infusion Pantry의 여섯 베이스가 투명도·점도·용기 형태에서 식재료별로 구분된다.",
+    "Fig Leaf와 Olive Oil emulsion은 검증 전 방향성이라는 상태가 보고서 캡션에서 명시된다.",
+    "장인성은 오래된 분위기나 소품 수가 아니라 측정, 분리, 필터링, 저전단 fold, 정량 finish의 보이는 행동으로 증명된다."
+  ],
+  "status": "ready_for_prompt_compilation_and_generation"
+}

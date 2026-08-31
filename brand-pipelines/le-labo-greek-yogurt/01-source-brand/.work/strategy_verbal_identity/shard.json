@@ -1,0 +1,339 @@
+{
+  "shard_id": "strategy_verbal_identity",
+  "brand": "Le Labo Fragrances",
+  "capture_date": "2026-08-24",
+  "scope": {
+    "era": "current masterbrand, with emphasis on 2024-2026 expression",
+    "market": "global and United States",
+    "language": "English",
+    "source_only": true,
+    "browser_automation_used": false
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "tier": "first_party_brand",
+      "title": "ABOUT US | Le Labo Fragrances",
+      "url": "https://www.lelabofragrances.com/about-us.html",
+      "captured_at": "2026-08-24",
+      "short_quote": "We believe the future of luxury (hence of perfumery) lies in craftsmanship",
+      "observed_evidence": [
+        "Manifesto uses repeated 'We believe' declarations and combines soul, craft, irreverence, New York, Wabi-Sabi and literary references.",
+        "The page names labs, souls, craftspeople, collections and roots as masterbrand sections.",
+        "It says the brand was created in 2006 by two friends and opened its first lab at 233 Elizabeth Street in Nolita."
+      ]
+    },
+    {
+      "id": "S2",
+      "tier": "first_party_brand",
+      "title": "Le Labo Fragrances | Niche Perfumes and Candles",
+      "url": "https://www.lelabofragrances.com/",
+      "captured_at": "2026-08-24",
+      "short_quote": "freshly formulated and personalized since 2006",
+      "observed_evidence": [
+        "Homepage makes fresh formulation and personalization the compact About Le Labo proposition.",
+        "Current merchandising spans City Exclusives, home, body-hair-face, discovery and signature scented formats."
+      ]
+    },
+    {
+      "id": "S3",
+      "tier": "first_party_brand",
+      "title": "OUR CREATIONS | Le Labo Fragrances",
+      "url": "https://www.lelabofragrances.com/our-creations.html",
+      "captured_at": "2026-08-24",
+      "short_quote": "You. Are. Free.",
+      "observed_evidence": [
+        "Product names consistently appear as uppercase material or scent terms plus numbers; City Exclusives add a city in parentheses.",
+        "Descriptions lead with scenes, sensations or cultural frames before formula details.",
+        "Copy repeatedly uses opposing qualities, rhetorical questions, parentheses, ellipses and direct address."
+      ]
+    },
+    {
+      "id": "S4",
+      "tier": "first_party_brand",
+      "title": "Refill Program | FAQ | Le Labo Fragrances",
+      "url": "https://www.lelabofragrances.com/faq/refill-program.html",
+      "captured_at": "2026-08-24",
+      "short_quote": "Same bottle, same scent, same perfume.",
+      "observed_evidence": [
+        "Online and selected-lab refills are freshly blended by lab technicians.",
+        "A refill retains bottle, scent and size while adding a dated label and optional personalization.",
+        "The FAQ explains at least fourteen days of maceration after fresh compounding."
+      ]
+    },
+    {
+      "id": "S5",
+      "tier": "first_party_brand",
+      "title": "DISCOVERY SET | Classic Collection | 3 x 5ml | Le Labo Fragrances",
+      "url": "https://www.lelabofragrances.com/discovery-sets/classic-collection/discovery-set/3-5-2025?size=3x5ml",
+      "captured_at": "2026-08-24",
+      "short_quote": "sealed with a personalized label",
+      "observed_evidence": [
+        "The set offers label, box and engraving personalization controls.",
+        "Three fragrances are presented in a classic kraft box as an exploration format."
+      ]
+    },
+    {
+      "id": "S6",
+      "tier": "first_party_parent_company",
+      "title": "Le Labo – The Estée Lauder Companies Inc.",
+      "url": "https://www.elcompanies.com/en/our-brands/le-labo",
+      "captured_at": "2026-08-24",
+      "short_quote": "share soulful beauty as we scale the craft of slow perfumery",
+      "observed_evidence": [
+        "The corporate brand page describes Le Labo as born in Grasse and raised in New York.",
+        "It says fragrances are hand-blended and hand-assembled one at a time in front of clients.",
+        "It identifies Deborah Royer as Global Brand President and Creative Director and frames the current task as scaling slow perfumery without losing artisanal roots."
+      ]
+    },
+    {
+      "id": "S7",
+      "tier": "first_party_technical_asset",
+      "title": "Le Labo global site stylesheet",
+      "url": "https://www.lelabofragrances.com/css/style.css?pdk=25112",
+      "captured_at": "2026-08-24",
+      "short_quote": null,
+      "observed_evidence": [
+        "Body styling declares Bell Gothic Std with Arial/Helvetica fallbacks, black text and a #f6f8f6 background; mobile body changes to white.",
+        "Header styles use Magda; supporting text frequently uses Helvetica.",
+        "Interface colors repeatedly use white, black, #333333 and pale gray borders."
+      ]
+    },
+    {
+      "id": "S8",
+      "tier": "first_party_technical_asset",
+      "title": "Le Labo header wordmark PNG",
+      "url": "https://www.lelabofragrances.com/css/images/logonew.png",
+      "captured_at": "2026-08-24",
+      "short_quote": null,
+      "observed_evidence": [
+        "Official header asset is a 295 by 86 pixel RGBA PNG.",
+        "Programmatic pixel inspection found transparent background pixels and an opaque #333333 wordmark as the dominant visible color."
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "type": "observed",
+      "statement": "Le Labo explicitly positions craftsmanship as the future of luxury and treats intention and preparation as the source of a fragrance's soul.",
+      "source_ids": ["S1"],
+      "confidence": "high",
+      "scope": "official manifesto"
+    },
+    {
+      "id": "C2",
+      "type": "observed",
+      "statement": "Fresh formulation, visible hand assembly and label personalization are not secondary services; they are repeated masterbrand proof points.",
+      "source_ids": ["S2", "S4", "S5", "S6"],
+      "confidence": "high",
+      "scope": "homepage, commerce, refill service and parent-company description"
+    },
+    {
+      "id": "C3",
+      "type": "observed",
+      "statement": "The portfolio is anchored by genderless perfume and candles, then extended into home, body, hair, face, grooming, discovery and refill formats.",
+      "source_ids": ["S1", "S2", "S6"],
+      "confidence": "high",
+      "scope": "current global assortment architecture"
+    },
+    {
+      "id": "C4",
+      "type": "observed",
+      "statement": "Discovery formats lower commitment while retaining the kraft-packaging and personalized-label rituals of the full brand experience.",
+      "source_ids": ["S5"],
+      "confidence": "high",
+      "scope": "sample-set commerce"
+    },
+    {
+      "id": "C5",
+      "type": "observed",
+      "statement": "Refill is framed as continuity of a specific object and scent, with new date and personalization evidence marking renewed handwork.",
+      "source_ids": ["S4"],
+      "confidence": "high",
+      "scope": "eligible fragrances and markets stated by the current FAQ"
+    },
+    {
+      "id": "C6",
+      "type": "observed",
+      "statement": "Current creative authorship is institutionally identified with Deborah Royer; origin authorship remains narrated more mythically as two friends between Grasse and Nolita.",
+      "source_ids": ["S1", "S6"],
+      "confidence": "high",
+      "scope": "official current leadership and origin narrative"
+    },
+    {
+      "id": "C7",
+      "type": "inferred",
+      "statement": "The strategic opponent is readymade, conventional luxury; the answer is a slower, human-performed and personally marked purchase experience.",
+      "source_ids": ["S1", "S2", "S4", "S6"],
+      "confidence": "high",
+      "scope": "masterbrand positioning inference",
+      "alternative_explanations": [
+        "Fresh blending and personalization can also function as retail theater and differentiation without implying a wholesale rejection of luxury conventions.",
+        "The parent-company phrase 'scale the craft' indicates that slowness is a managed brand promise inside a global business, not literal small-batch scarcity everywhere."
+      ]
+    },
+    {
+      "id": "C8",
+      "type": "inferred",
+      "statement": "Controlled contradiction is a central meaning-making device: familiar/new, light/dark, traditional/progressive and pure/inscrutable tensions make products feel recognizable but non-generic.",
+      "source_ids": ["S1", "S3"],
+      "confidence": "high",
+      "scope": "manifesto and fragrance-description corpus",
+      "alternative_explanations": [
+        "Some contrast language may arise from the normal structure of perfume descriptions rather than a formally codified writing rule."
+      ]
+    },
+    {
+      "id": "C9",
+      "type": "inferred",
+      "statement": "City Exclusives convert geography into authorship, narrative and controlled availability, extending the Grasse-New York origin model into a global place-based collection.",
+      "source_ids": ["S1", "S3"],
+      "confidence": "medium_high",
+      "scope": "City Exclusive descriptions and availability statements",
+      "alternative_explanations": [
+        "City naming also serves assortment segmentation and destination retail demand."
+      ]
+    },
+    {
+      "id": "C10",
+      "type": "inferred",
+      "statement": "The masterbrand identity behaves like a working lab record: restrained neutral infrastructure carries dense names, dates, quantities, provenance and personal marks.",
+      "source_ids": ["S4", "S5", "S7", "S8"],
+      "confidence": "medium_high",
+      "scope": "digital implementation and packaging-language evidence",
+      "alternative_explanations": [
+        "The neutral digital palette may partly reflect ecommerce usability rather than a complete identity standard.",
+        "No formal public brand-guidelines document was located in this rapid pass."
+      ]
+    }
+  ],
+  "verbal_patterns": [
+    {
+      "id": "V1",
+      "pattern": "Belief-led anaphora",
+      "rule": "Use repeated first-person plural declarations to turn opinions into a collective manifesto.",
+      "markers": ["We believe", "we/you", "our"],
+      "source_ids": ["S1"]
+    },
+    {
+      "id": "V2",
+      "pattern": "Tension pairs",
+      "rule": "Describe a creation through two qualities held in unresolved opposition, often with 'yet', 'but' or paired nouns.",
+      "markers": ["new / intimately familiar", "depth / freshness", "traditional / progressive", "universal / inscrutable"],
+      "source_ids": ["S1", "S3"]
+    },
+    {
+      "id": "V3",
+      "pattern": "Scene before formula",
+      "rule": "Open with a cinematic place, bodily state or cultural image, then disclose ingredients and dry-down behavior.",
+      "markers": ["Imagine", "firelight", "city", "moment", "skin"],
+      "source_ids": ["S3"]
+    },
+    {
+      "id": "V4",
+      "pattern": "Conversational irreverence",
+      "rule": "Interrupt polished sensory prose with questions, parenthetical asides, ellipses, exaggeration or short staccato lines.",
+      "markers": ["Do you beg to differ?", "oops", "...", "You. Are. Free."],
+      "source_ids": ["S1", "S3"]
+    },
+    {
+      "id": "V5",
+      "pattern": "Systematic product naming",
+      "rule": "Render a French or ingredient/material-led name in uppercase plus a number; append city in parentheses for City Exclusives.",
+      "markers": ["SANTAL 33", "THÉ NOIR 29", "CEDRAT 37 (BERLIN)"],
+      "source_ids": ["S3"]
+    },
+    {
+      "id": "V6",
+      "pattern": "Craft as verbs and agents",
+      "rule": "Prove craftsmanship through performed actions and named workers rather than through luxury adjectives alone.",
+      "markers": ["hand-blending", "hand-assembling", "lab technician", "refill", "personalize"],
+      "source_ids": ["S1", "S4", "S6"]
+    },
+    {
+      "id": "V7",
+      "pattern": "Ownable lexicon",
+      "rule": "Prefer creations, souls, labs, craftspeople, slow perfumery and soulful beauty as recurring category language.",
+      "markers": ["creations", "souls", "lab", "craftspeople", "slow perfumery"],
+      "source_ids": ["S1", "S2", "S4", "S6"]
+    }
+  ],
+  "identity_observations": [
+    {
+      "id": "I1",
+      "type": "logo",
+      "observation": "The current official header uses a transparent raster wordmark whose dominant opaque pixel color is #333333.",
+      "source_ids": ["S8"],
+      "confidence": "high",
+      "scope_note": "Technical asset evidence, not a formal specification of every approved logo variant."
+    },
+    {
+      "id": "I2",
+      "type": "color",
+      "observation": "The site implementation is predominantly black and charcoal text on white or cool off-white #f6f8f6, with pale gray borders and little interface color.",
+      "source_ids": ["S7", "S8"],
+      "confidence": "high",
+      "scope_note": "Current ecommerce interface tokens only."
+    },
+    {
+      "id": "I3",
+      "type": "typography",
+      "observation": "Bell Gothic Std is the declared body/display workhorse, Magda is used prominently in header and utility contexts, and Helvetica supports secondary copy.",
+      "source_ids": ["S7"],
+      "confidence": "high",
+      "scope_note": "Observed CSS declarations; licensing, weights and print usage were not verified."
+    },
+    {
+      "id": "I4",
+      "type": "packaging",
+      "observation": "Classic kraft packaging, personalized labels, dated refill labels and optional engraving make identity partly variable and customer-specific.",
+      "source_ids": ["S4", "S5", "S6"],
+      "confidence": "high",
+      "scope_note": "Observed for cited discovery and fragrance-service surfaces."
+    },
+    {
+      "id": "I5",
+      "type": "hierarchy",
+      "observation": "Uppercase collection, format and product labels create a taxonomic, inventory-like hierarchy that complements the laboratory premise.",
+      "source_ids": ["S1", "S2", "S3", "S7"],
+      "confidence": "medium_high",
+      "scope_note": "Interpretation of consistent site casing and CSS text-transform rules."
+    },
+    {
+      "id": "I6",
+      "type": "provenance",
+      "observation": "The About system names crafts by action and place, including harvests and fabrication in Australia, France, Italy, the US and Japan.",
+      "source_ids": ["S1"],
+      "confidence": "high",
+      "scope_note": "Editorial identity evidence; imagery itself was not visually inspected in a browser."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "G1",
+      "gap": "No public formal masterbrand guideline was found, so logo clear space, official palette hierarchy and cross-channel typography rules remain unverified.",
+      "impact": "Treat S7-S8 as implementation evidence, not universal standards."
+    },
+    {
+      "id": "G2",
+      "gap": "The current official origin page names 'two friends' but not the founders individually.",
+      "impact": "Founder-name attribution should use a separately verified corporate archive if required."
+    },
+    {
+      "id": "G3",
+      "gap": "The numeric component of fragrance names is visibly systematic, but its semantic meaning was not stated in the current first-party pages reviewed.",
+      "impact": "Do not claim that the number counts ingredients without an additional primary source."
+    },
+    {
+      "id": "G4",
+      "gap": "This rapid direct-HTTP pass did not inspect stores, physical labels, film motion, audio voice or social captions visually.",
+      "impact": "Findings are strong for strategy, web verbal identity and web/packaging signals, but not a complete omnichannel identity audit."
+    },
+    {
+      "id": "G5",
+      "gap": "Refill eligibility and City Exclusive availability vary by size, channel, location and season.",
+      "impact": "Use service details only within the scope and capture date of S4."
+    }
+  ]
+}

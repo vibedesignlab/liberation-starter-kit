@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "cross_model_commercial_photo_prompt_contract",
+  "brand": "MORA",
+  "version": "stage3-reference-v1",
+  "reference_order": [
+    "ST3-REF-GLASS-PACKAGE-MASTER-17",
+    "ST3-REF-PRODUCT-COMPOSITION-MASTER-18",
+    "MATCHING_INDIVIDUAL_INGREDIENT_REFERENCE"
+  ],
+  "prompt_order": [
+    "subject",
+    "web_role",
+    "camera",
+    "composition",
+    "lighting",
+    "surface_background",
+    "atmosphere",
+    "color_grade",
+    "texture",
+    "output",
+    "continuity",
+    "negative_constraints"
+  ],
+  "frozen": {
+    "aspect_ratio": "1:1",
+    "target_pixels": [1536, 1536],
+    "background_hex": "#F5F1E8",
+    "camera_azimuth_degrees": 0,
+    "camera_downward_elevation_degrees": 12,
+    "full_frame_equivalent_mm": 85,
+    "package_bbox_percent": {"left": 35, "top": 18, "right": 65, "bottom": 80},
+    "package_center_percent": {"x": 50, "y": 49},
+    "baseline_y_percent": 80,
+    "closure_or_foil_center_percent": {"x": 19, "y": 75},
+    "spoon_center_percent": {"x": 80, "y": 74},
+    "ingredient_cue_center_percent": {"x": 82, "y": 64}
+  },
+  "variables": [
+    "exact_recipe_name",
+    "recipe_trace",
+    "ingredient_reference_id",
+    "direct_print_recipe_line"
+  ],
+  "tolerances": {
+    "center_percentage_points": 2,
+    "package_scale_percent": 3,
+    "product_ingredient_cue_scale_percent": 3,
+    "individual_ingredient_reference_scale_percent": 4,
+    "background_delta_e_2000": 5
+  },
+  "plain_background_scope": "Explicitly designated brand-mood images are the only exception; every other image role uses a plain seamless matte Cultured Cream #F5F1E8 background.",
+  "delta_axes": [
+    "geometry",
+    "scale",
+    "glass",
+    "background",
+    "ingredient_identity",
+    "food_trace",
+    "text"
+  ],
+  "approval_rule": "Every gate passes before checksum and the next SKU starts from the masters, never from the previous SKU.",
+  "stop_conditions": {
+    "after_two_same_axis_delta_failures": "Discard the edit chain and regenerate the SKU once from the golden masters with the unchanged universal prompt.",
+    "third_same_axis_model_failure": "If the fresh master-based regeneration fails the same axis, mark that model adapter incompatible for the asset role and route to a compatible model or deterministic post-production method."
+  }
+}

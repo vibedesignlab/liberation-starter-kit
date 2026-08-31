@@ -1,0 +1,931 @@
+{
+  "schema_version": "1.1.0",
+  "artifact_type": "landing_materials",
+  "generated_at": "2026-08-31T12:40:00Z",
+  "extended_brand_source": {
+    "package_path": "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/02-extended-brand",
+    "json_path": "outputs/extended-brand-anatomy.json",
+    "review_status": "accepted",
+    "report_id": "mora-extended-anatomy",
+    "accepted_revision": "Revision 10 strategy with Revision 16–18 active imagery",
+    "registered_anchor_assets": [
+      "ST2-PRODUCT-HERO-01",
+      "ST2-BRAND-MOOD-01"
+    ],
+    "transferred_supporting_assets": [
+      "ST2-R18-UI-PRODUCT-01",
+      "ST2-R18-RAW-AERIAL-01",
+      "ST2-R18-RAW-AERIAL-02",
+      "ST2-R18-RAW-AERIAL-03",
+      "ST2-R18-RAW-AERIAL-04",
+      "ST2-R18-RAW-AERIAL-05",
+      "ST2-R18-RAW-AERIAL-06"
+    ]
+  },
+  "selected_narrative_route": "NR-10-01 — 마지막까지 보는 사람",
+  "message_visual_map": {
+    "brand_message_to_key_visual": "‘좋은 재료를 고르는 데서 끝나지 않습니다’는 left-safe Hero에서 한 여성 메이커가 원재료를 승인·제외하는 행동으로 시작하고, true-aerial 분리, 1:2 last-fold 스크롤, partial Batch Record의 SEE–READ–OPEN–TASTE로 이어진다.",
+    "brand_values_to_brand_mood": [
+      "엄선하는 책임 → strict-front maker selection과 accepted / rejected material의 물리적 분리",
+      "보이는 변환 → true-aerial cloth–concentrate–whey, 여섯 intermediate state, one broad-paddle fold",
+      "마지막까지 보는 정확성 → 1:2 final-check story와 partial Batch Record의 실제 정보 위계·개봉·첫 스푼"
+    ],
+    "family_and_product_usp_to_product_imagery": [
+      "제품 6종은 실제 런타임 Cultured Cream #F5F1E8 위의 동일 1:1 strict-front jar로 먼저 비교한다.",
+      "원재료 6종은 true-aerial 1:1 evidence로, Material Folio 6종은 별도의 물리 인과 주석으로 짝지어 보여 준다.",
+      "dark analog process mood, color-accurate product proof, actual-scale ingredient proof는 서로의 색보정과 증거 역할을 침범하지 않는다.",
+      "generic landscape master를 square 또는 1:2 slot에 재사용하지 않는다."
+    ]
+  },
+  "landing_narrative": {
+    "key_insight": "현재 랜딩의 그리드와 sticky scroll은 유지하되, 각 사진이 실제 슬롯과 같은 비율로 만들어져야 선택→변환→마지막 확인의 증거가 crop 없이 이어진다.",
+    "brand_message": "좋은 재료를 고르는 데서 끝나지 않습니다.",
+    "hero_eyebrow": "MORA CRAFT GREEK YOGURT",
+    "hero_headline": "좋은 재료를 고르는 데서 끝나지 않습니다.",
+    "hero_support": "MORA의 메이커는 재료를 고르고, 변환의 중간을 살피고, 내놓기 전 마지막 한 컵까지 확인합니다.",
+    "section_sequence": [
+      "Hero — 3:2 left-center copy-safe 원재료 선택과 제외 행동.",
+      "Brand Trace — 전체가 보이는 3:2 물리 공정 에칭.",
+      "Straining Transition — 중앙 카피를 비운 3:2 true-aerial 분리 장면.",
+      "Why MORA — 3:2 maker selection과 First Furrow split.",
+      "Core Collection — dedicated 1:2 last-fold sticky story와 1:1 제품 4종.",
+      "Core Ingredient Folios — 1:1 aerial 원재료와 1:1 물리 인과 에칭 4쌍.",
+      "Studio Trials — dedicated 1:2 conditional-state sticky story와 1:1 제품 카드.",
+      "Trial Ingredient Folios — Fig Leaf와 Olive Oil & Sea Salt의 조건부 1:1 증거 2쌍.",
+      "Cloth to Body — crop 없는 공정 에칭 pause.",
+      "Material Method — 3:2 left-center copy-safe 여섯 중간 상태와 last fold.",
+      "Vessel Record — 3:2 bottom-left copy-safe SEE / READ / OPEN / TASTE.",
+      "Evening Use — 3:2 bottom-left copy-safe 사용 맥락 뒤 Product Truth CTA."
+    ],
+    "primary_cta": "여섯 레시피 비교하기",
+    "secondary_cta": "마지막 확인 보기"
+  },
+  "hero_craft_space_series": {
+    "key_insight": "첫 화면의 권위는 빈 제조실이 아니라 한 사람이 무엇을 승인하고 제외하는지에서 시작한다.",
+    "status": "final_selected_revision_r5_layout_aware",
+    "series_lock": {
+      "web_role": "exact 3:2 FullBleedSection landing hero",
+      "composition": "left 42% low-frequency copy-safe; maker and selection action in right 48%; all evidence inside inner 82%",
+      "space": "believable lived-in urban food workshop, never a studio set",
+      "people": "one accountable female maker performing one observable selection decision",
+      "capture": "strict-front 45–55 mm environmental editorial with restrained visible 35 mm grain"
+    },
+    "selected_version": {
+      "version": "R5",
+      "name": "Selection Before Claim",
+      "asset_id": "ST3-R5-HERO-SELECTION-76",
+      "action": "accepted and rejected raw materials are physically separated by one maker",
+      "selection_reason": "Stage 2 NR-10-01과 현재 left-center Hero 구도를 동시에 만족하고 기존 16:9 crop을 제거한다.",
+      "use": "final layout-aware landing hero"
+    }
+  },
+  "brand_value": {
+    "key_insight": "여성 메이커의 권위는 부드러운 스타일이 아니라 선택·중간 상태·마지막 확인의 공개된 기준에서 생긴다.",
+    "values": [
+      {
+        "name": "엄선하는 책임",
+        "statement": "좋은 재료를 모으는 것만큼 기준에 맞지 않는 것을 제외하고 선택의 이유를 남기는 일을 중요하게 본다.",
+        "behavior": "선택된 재료만 미화하지 않고 비교·제외·확인 행동과 승인된 원료 사실을 함께 제시한다.",
+        "proof": "Approved ingredient specification, supplier documentation and an observable selection or inspection step.",
+        "status": "directional_requires_supplier_validation"
+      },
+      {
+        "name": "보이는 변환",
+        "statement": "완제품만 보여 주지 않고 배양, 유청 분리, 농축 베이스, 재료별 중간 상태와 폴딩의 인과를 드러낸다.",
+        "behavior": "하나의 주장마다 입력 재료, 도구, 행동, 중간 결과, 기록을 연결하고 확인되지 않은 수치나 공정 우월성을 쓰지 않는다.",
+        "proof": "Pilot R&D records, food-safety review and color-accurate process documentation.",
+        "status": "directional_requires_process_validation"
+      },
+      {
+        "name": "마지막까지 보는 정확성",
+        "statement": "한 컵을 내놓기 전 실제 상태를 확인하고, 확인한 사람과 결과만 제한적으로 기록한다.",
+        "behavior": "maker initials, final check, batch condition은 실제 운영 행위가 있을 때만 수기로 남기고 필수 식품 정보와 분리한다.",
+        "proof": "Approved batch-control procedure, responsible role definition and auditable record practice.",
+        "status": "directional_requires_operations_validation"
+      }
+    ],
+    "statement": "MORA의 메이커는 재료를 고르고, 변환의 중간을 살피고, 내놓기 전 마지막 한 컵까지 확인합니다.",
+    "proof": [
+      "원재료 → cultured gel 또는 strained base → 재료별 aqueous infusion·syrup·grain slurry·seed paste·oil phase 또는 validated emulsion → folded batch의 인과가 보인다.",
+      "여성 메이커의 손과 도구는 하나의 실제 선택·계량·확인 행동을 수행하며 포즈나 장식 소품으로 남지 않는다.",
+      "낮고 넓은 투명 wide-mouth jar가 실제 음식 상태를 60–70% 이상 드러내고 부분 종이 Batch Record가 이를 가리지 않는다.",
+      "고정된 식품 규격과 제한된 실제 maker check가 같은 기록 안에서 일관성과 개별 배치 책임을 함께 만든다.",
+      "도시의 오래된 매장–작업실은 실제 문턱·수납·보수 흔적과 사용의 축적을 보이되 식품 접촉 표면과 작업 행동은 위생적으로 명확하다.",
+      "제품 사실 이미지는 저조도 무드와 분리되어 색·점도·입자·라벨 가독성을 정확하게 보여 준다."
+    ],
+    "short_variants": [
+      "좋은 재료를 고르는 데서 끝나지 않습니다.",
+      "마지막 한 컵까지 봅니다.",
+      "고른 것보다, 끝까지 본 것.",
+      "한 컵의 중간을 숨기지 않습니다."
+    ]
+  },
+  "brand_story": {
+    "key_insight": "MORA는 “여성이 만든 예쁜 요거트”가 아니라, 가족의 미식을 맡아 온 사람에게 요구되던 선택·기억·마지막 책임을 현대적인 여성 식품 장인의 공개된 판단 체계로 바꾼다.",
+    "headline": "마지막까지 보는 사람.",
+    "body": "주방의 주인, 엄선된 수집가, 엄마와 아내라는 계보는 고정된 역할이나 감상적인 희생을 뜻하지 않습니다. 먹을 사람을 생각하며 작은 차이를 기억하고, 기준 밖의 것을 제외하고, 내놓기 전 마지막 상태까지 확인해 온 책임의 상징입니다. MORA의 여성 메이커는 재료를 고르고, 배양과 거름의 중간을 살피고, 재료마다 다른 preparation을 비교하고, 한 번의 fold 뒤 실제 음식의 상태를 확인합니다. 좋은 재료라는 말보다 어떤 판단이 한 컵을 통과했는지를 보여 주는 것. 그것이 MORA의 마지막 집요함입니다.",
+    "product_connection": "Selection → Culturing → Separation → Ingredient Preparation → Last Fold → Packaging / Final Check의 각 장면은 one input, one tool, one action, one intermediate output, one record로 설명됩니다. 부분 Batch Record는 고정 제품 사실과 실제 maker check를 분리해 마지막 책임을 남기되, 검증되지 않은 이름·날짜·수치·서명을 만들어 내지 않습니다.",
+    "visual_storytelling": {
+      "system_name": "What She Checked / Material Under Care",
+      "principle": "한 프레임에 한 판단만 두고 input–tool–action–output–record의 인과를 남긴다.",
+      "hero": "원재료 승인과 제외",
+      "process": "true-aerial separation과 six intermediate states",
+      "last_measure": "1:2 last-fold / final-check scroll story",
+      "record": "partial Batch Record and SEE–READ–OPEN–TASTE sequence",
+      "use_moment_rule": "한 컵과 한 스푼, 최대 한 개의 보조 cue만 허용하며 가족 역할이나 여성성 클리셰를 연출하지 않는다."
+    },
+    "founder_release_gate": [
+      "공개 가능한 이름·정확한 직함·공동창립 여부·현재 역할",
+      "실제 창업 연도·장소·조직 상태",
+      "브랜드를 생각하게 된 구체적 장면과 승인된 직접 인용",
+      "문제 뒤 취한 첫 행동·첫 재료·실패·개발 이정표",
+      "스토리에 필요한 실제 경력·교육·기술과 기간",
+      "창립자·R&D·식품안전·생산·디자인 기여 구분",
+      "Measured Transformation으로 이어진 날짜 있는 기록",
+      "본문·인용·초상·작업 노트·아카이브의 상업적 사용 승인"
+    ]
+  },
+  "product_introduction": {
+    "key_insight": "같은 low-wide jar와 기록 구조 안에서 재료별 실제 preparation과 edible trace가 제품 선택 차이를 만든다.",
+    "family_name": "MORA Craft Greek Yogurt",
+    "headline": "여섯 재료, 여섯 중간 상태, 여섯 가지 마지막 결.",
+    "description": "MORA는 되직한 cultured base를 낮고 넓은 transparent wide-mouth jar에 담고, 재료마다 다른 preparation을 마지막 fold에서 실제 음식의 결로 남깁니다. 부분 Batch Record는 MORA, recipe와 승인된 식품 사실을 고정 인쇄하고, 실제 maker initials와 final check는 제한된 가변 영역에만 남깁니다. 종이가 기록을 맡아도 음식과 fill level이 가장 큰 시각 면적을 유지합니다.",
+    "shared_promise": "좋은 재료를 고르는 데서 멈추지 않고, 발효·거름·재료별 준비·폴딩·최종 확인을 거쳐 내놓기 직전의 한 컵까지 책임진다.",
+    "family_usp": "여성 메이커가 재료의 선택부터 중간 변환, 마지막 확인까지 책임지고 그 흔적을 Batch Record에 남기는 여섯 가지 크래프트 그릭요거트.",
+    "lineup_groups": [
+      {
+        "name": "Core Collection",
+        "description": "Thyme Honey, Roasted Buckwheat, Citrus Peel, Black Sesame. 실제 R&D와 출시 검증을 전제로 한 네 방향."
+      },
+      {
+        "name": "Studio Trials",
+        "description": "Fig Leaf, Olive Oil & Sea Salt. 안전성·안정성·사용 맥락이 확인된 경우에만 전환되는 두 조건부 방향."
+      }
+    ],
+    "packaging_architecture": "low-wide transparent 150 g wide-mouth spoon jar / edible witness area 60–70% minimum / partial uncoated-looking Batch Record 30–40% maximum / fixed printed food fields plus limited authentic maker-check area / validated full-perimeter food seal / optional functional low-profile overcap",
+    "customer_experience": [
+      "SEE — transparent wall과 wide mouth에서 실제 음식·fill level·recipe trace를 본다.",
+      "READ — 부분 Batch Record의 고정 사실과 제한된 maker-check 영역을 구분해 읽는다.",
+      "OPEN — food seal을 완전히 제거하고 깨끗한 rim과 untouched surface를 확인한다.",
+      "TASTE — 첫 스푼의 단면에서 density와 internal trace를 확인한다."
+    ],
+    "use_moments": [
+      {
+        "asset_id": "ST3-R5-CORE-STICKY-78",
+        "product_name": "Core Collection",
+        "moment": "last fold and final check",
+        "status": "directional process context"
+      },
+      {
+        "asset_id": "ST3-R5-TRIAL-STICKY-79",
+        "product_name": "Studio Trials",
+        "moment": "conditional intermediate-state check",
+        "status": "not release proof"
+      },
+      {
+        "asset_id": "ST3-R5-EVENING-USE-86",
+        "product_name": "MORA family",
+        "moment": "restrained evening table",
+        "status": "context only"
+      }
+    ]
+  },
+  "reference_system": {
+    "key_insight": "Stage 2 R16은 maker·workshop·film response를, R18은 true-aerial raw input과 plain UI product를 고정하며 R5는 이 정체성을 실제 landing slot 비율로 새로 조립한다.",
+    "status": "Revision 10 strategy / Revision 16 mood / Revision 18 product and ingredient references / Revision 5 layout-aware landing delivery",
+    "golden_masters": [
+      "ST3-R5-HERO-SELECTION-76",
+      "ST3-R5-CORE-STICKY-78",
+      "ST3-R5-TRIAL-STICKY-79",
+      "ST3-R5-PRODUCT-THYME-HONEY-87",
+      "ST3-R5-INGREDIENT-THYME-HONEY-93"
+    ],
+    "individual_ingredient_references": [
+      "ST3-R5-INGREDIENT-THYME-HONEY-93",
+      "ST3-R5-INGREDIENT-FIG-LEAF-94",
+      "ST3-R5-INGREDIENT-ROASTED-BUCKWHEAT-95",
+      "ST3-R5-INGREDIENT-CITRUS-PEEL-96",
+      "ST3-R5-INGREDIENT-BLACK-SESAME-97",
+      "ST3-R5-INGREDIENT-OLIVE-OIL-SEA-SALT-98"
+    ],
+    "prompt_modules": [
+      "prompts/revision-r5-layout-aware/ST3-R5-HERO-SELECTION-01.md",
+      "prompts/revision-r5-layout-aware/ingredients/ST3-R5-INGREDIENT-AERIAL-SERIES.md",
+      "prompts/revision-r5-layout-aware/products/ST3-R5-PRODUCT-THYME-HONEY-01.md",
+      ".work/revision-r5-layout-aware/stage3-image-production-contract.md",
+      ".work/revision-r5-layout-aware/landing-slot-contract.md"
+    ],
+    "series_lock": {
+      "runtime_ui_background": "#F5F1E8 theme.palette.background.default",
+      "product_camera": "strict front / exact 1:1 / identical centerline and baseline",
+      "ingredient_camera": "strict 90-degree aerial / exact 1:1 / complete group",
+      "fullbleed_camera": "exact 3:2 source with overlay-specific safe field",
+      "sticky_camera": "dedicated exact 1:2 portrait; no landscape reuse",
+      "object_fit_rule": "cover may remove only the declared sacrificial edge zone"
+    },
+    "qa_loop": [
+      "lock role and slot",
+      "generate once at maximum native size",
+      "correct only a wrong role/axis/crop/identity",
+      "preserve native",
+      "derive exact-ratio high-resolution delivery",
+      "record actual provenance"
+    ],
+    "dual_authority": "Stage 2 controls brand/product identity; current JSX controls frame ratio, copy-safe area and responsive crop tolerance."
+  },
+  "vessel_record_system": {
+    "name": "MORA Partial Batch Record",
+    "design_intent": "실제 음식과 fill level을 가장 크게 남기면서 승인된 고정 식품 사실과 한 배치의 실제 final check를 분리해 기록하는 떠먹는 식품 용기 체계.",
+    "physical_architecture": [
+      "low-wide transparent 150 g wide-mouth spoon jar; diameter:height candidate approximately 1.45–1.65:1",
+      "edible witness area at least 60–70%",
+      "partial tactile uncoated-looking paper Batch Record covering no more than 30–40% of the visible sidewall",
+      "functional full-perimeter food seal; optional low-profile overcap only after engineering validation"
+    ],
+    "print_rule": "MORA, recipe, approved category/weight and standardized food fields are fixed print. Real maker initials, final check and batch condition occupy only a small designated variable area. No full-wrap pharmacy grid, decorative signature, handwritten legal information or fabricated city/date ritual.",
+    "opening_sequence": "see food and record → read fixed facts and real check → peel validated food seal → inspect wide clean rim → take one spoon",
+    "variable_data_rule": "승인된 실제 production or inspection event에 해당하는 mark만 사용하며 가짜 개인화 기록은 만들지 않는다.",
+    "production_gate": "jar material, closure stack, wet-strength paper, adhesive, ink, coating, migration, condensation, rub, scan, line compatibility, food contact, seal and cold-chain performance remain directional until supplier and regulatory validation."
+  },
+  "material_folios_system": {
+    "name": "MORA Physical Process Etchings",
+    "style_lock": "uniform #F5F1E8 field, fine #171714 line, 65–80% negative space, identical background, no text inside artwork.",
+    "story_rule": "원재료 → 실제 도구와 처리 → 관찰 가능한 중간 산출물 → 최종 요거트 흔적의 인과가 물리적으로 설명되어야 한다. 추상 변형은 금지한다.",
+    "narrative_assets": [
+      "ST3-ETCH-R2-42",
+      "ST3-ETCH-R2-43",
+      "ST3-ETCH-R2-44",
+      "ST3-ETCH-R2-45"
+    ],
+    "material_plate_assets": [
+      "ST3-ETCH-R2-46",
+      "ST3-ETCH-R2-47",
+      "ST3-ETCH-R2-48",
+      "ST3-ETCH-R2-49",
+      "ST3-ETCH-R2-50",
+      "ST3-ETCH-R2-51"
+    ],
+    "material_plate_rule": "각 재료의 실제 식품 준비 형태와 요거트 흔적을 분리된 단계로 그린다.",
+    "source_distance": "Le Labo Journal의 세밀한 선, 큰 여백, 제조 기록 태도만 번역한다."
+  },
+  "product_lineup_key_insight": "각 제품은 하나의 사용 순간, 시그네처 원재료, 준비 방식, 눈에 보이는 흔적과 출시 상태가 한 문장 안에서 이어져야 독립적인 선택 이유를 가진다.",
+  "product_lineup_copy": [
+    {
+      "lineup_group": "individual_product",
+      "product_name": "Thyme Honey",
+      "product_usp": "익숙한 꿀을 타임의 절제된 식물성 흔적과 한 번의 내부 fold로 바꿔, MORA의 craft process를 가장 명확히 보여 주는 대표 한 컵.",
+      "eyebrow": "CORE / HERBAL",
+      "headline": "꿀을 얹는 대신, 타임과 함께 마지막 결 안에 남겼습니다.",
+      "description": "검증된 thyme preparation과 honey syrup이 짙은 요거트 안에 얇은 amber ribbon과 드문 herb fleck로 남아, 위에 부은 토핑이 아니라 내부까지 이어진 한 번의 fold를 보여 준다.",
+      "feature_copy": "집에서 천천히 시작하는 아침 또는 오후에 단맛이 과하지 않은 한 컵을 원할 때 바로 떠먹는다. / aqueous thyme infusion 또는 honey-herb syrup 중 실제 관능·안전·안정성 시험을 통과한 한 경로만 채택한다.",
+      "proof_copy": "방향성 레시피. honey viscosity, thyme preparation, particle scale, sweetness와 stability는 실제 R&D로 확인합니다.",
+      "cta": "Thyme Honey 보기",
+      "asset_id": "ST3-R5-PRODUCT-THYME-HONEY-87"
+    },
+    {
+      "lineup_group": "individual_product",
+      "product_name": "Fig Leaf",
+      "product_usp": "보여 주기 위한 초록색이 아니라, 식용 적합성이 확인된 잎의 가장 절제된 향과 기록으로 패밀리의 quiet green 좌표를 만드는 한 컵.",
+      "eyebrow": "STUDIO TRIAL / GREEN",
+      "headline": "보이는 초록보다, 확인된 잎의 조용한 여운.",
+      "description": "검증된 fig-leaf preparation이 near-ivory base에 거의 보이지 않는 green-beige vein 또는 aroma cue를 남겨, 재료가 많아 보이는 장식보다 선택과 절제를 드러낸다.",
+      "feature_copy": "달지 않은 green aromatic direction을 선호하는 사용자의 조용한 오후 간식으로 제안하되 실제 섭취 제안은 원료 안전 검증 뒤 확정한다. / aqueous infusion, filtered infusion 또는 다른 식품 적합 preparation 중 허용 부위·추출 조건·관능 안전을 검증한 형태만 사용한다.",
+      "proof_copy": "Studio Trial / release-blocked. edible part, jurisdiction, extraction route, safety와 allergen 검증 전에는 출시·섭취 사실로 말하지 않습니다.",
+      "cta": "Fig Leaf 검증 상태 보기",
+      "asset_id": "ST3-R5-PRODUCT-FIG-LEAF-88"
+    },
+    {
+      "lineup_group": "individual_product",
+      "product_name": "Roasted Buckwheat",
+      "product_usp": "볶은 메밀을 토핑이 아닌 내부 grain trace로 남겨, 되직한 요거트에 실제 촉각의 중간 좌표를 만드는 한 컵.",
+      "eyebrow": "CORE / TOASTED",
+      "headline": "볶은 곡물의 결이 표면이 아니라 한 숟갈 안쪽까지 이어집니다.",
+      "description": "roasted grain preparation이 warm-cream base 안에 actual-scale flecks와 짧은 toasted seam으로 남아, 표면 granola topping과 구분되는 내부 촉각을 만든다.",
+      "feature_copy": "책상 위 오후 간식에서 매끈한 요거트보다 고소한 입자와 씹는 결을 원할 때 떠먹는다. / roasted grain slurry, fine suspension 또는 validated fleck base 중 입자 분포·수분 이동·알레르겐 관리가 가능한 형태를 채택한다.",
+      "proof_copy": "방향성 레시피. roast state, grind size, hydration, distribution, allergen와 shelf stability를 확인합니다.",
+      "cta": "Roasted Buckwheat 보기",
+      "asset_id": "ST3-R5-PRODUCT-ROASTED-BUCKWHEAT-89"
+    },
+    {
+      "lineup_group": "individual_product",
+      "product_name": "Citrus Peel",
+      "product_usp": "감귤 껍질의 실제 thread 또는 검증된 infusion을 요거트 안에 남겨 패밀리의 가장 밝은 리셋을 만드는 한 컵.",
+      "eyebrow": "CORE / BRIGHT",
+      "headline": "껍질의 밝은 결과 산미가 한 숟갈을 짧게 깨웁니다.",
+      "description": "검증된 peel infusion 또는 syrup이 실제 yellow-orange thread와 fine zest point로 이어져, 인공적인 전체 색 틴트 없이 밝은 방향을 예고한다.",
+      "feature_copy": "가벼운 식사 뒤 또는 오후에 산뜻하고 짧은 여운의 작은 디저트를 원할 때 떠먹는다. / filtered aqueous infusion, peel syrup 또는 validated fine-peel preparation 중 bitterness·particle size·color stability를 통과한 형태를 사용한다.",
+      "proof_copy": "방향성 레시피. edible peel, bitterness, particle size, color stability와 distribution을 확인합니다.",
+      "cta": "Citrus Peel 보기",
+      "asset_id": "ST3-R5-PRODUCT-CITRUS-PEEL-90"
+    },
+    {
+      "lineup_group": "individual_product",
+      "product_name": "Black Sesame",
+      "product_usp": "검은깨의 seed paste와 오일성 깊이를 실제 입자·회색 마블로 드러내면서 요거트의 밝은 몸을 남기는 깊은 디저트 한 컵.",
+      "eyebrow": "CORE / DEEP",
+      "headline": "검은깨의 깊이와 요거트의 밝음이 마지막 fold에서 만납니다.",
+      "description": "validated black-sesame paste가 ivory와 stone-grey의 불균일한 marble과 actual-scale particles를 남겨, 균질한 검정 디저트나 화장품 charcoal cue와 구분된다.",
+      "feature_copy": "저녁에 더 짙고 볶은 인상과 조밀한 질감의 작은 디저트를 원할 때 떠먹는다. / opaque seed paste or fine slurry; 투명 infusion으로 연출하지 않으며 allergen과 oxidation stability를 기록한다.",
+      "proof_copy": "방향성 레시피. sesame allergen control, grind, oil migration, oxidation과 실제 grey value를 확인합니다.",
+      "cta": "Black Sesame 보기",
+      "asset_id": "ST3-R5-PRODUCT-BLACK-SESAME-91"
+    },
+    {
+      "lineup_group": "individual_product",
+      "product_name": "Olive Oil & Sea Salt",
+      "product_usp": "올리브 오일의 실제 phase와 소금의 검증된 상태로 요거트 한 컵을 식사 곁까지 넓히는 패밀리의 savory endpoint.",
+      "eyebrow": "STUDIO TRIAL / SAVORY",
+      "headline": "오일의 얇은 접면과 소금의 짧은 대비. 한 컵이 식사 곁으로 갑니다.",
+      "description": "actual olive-oil phase 또는 validated emulsion이 thin olive-gold ribbon과 pearly interface를 만들고, 소금은 실제 용해·결정 상태에 맞게만 증명한다.",
+      "feature_copy": "가벼운 점심 곁에서 직접 떠먹거나 검증된 단일 bread 또는 vegetable pairing과 함께 먹는다; meal replacement나 dip 전용 제품으로 약속하지 않는다. / oil phase 또는 validated emulsion을 사용하고, salt는 dissolved seasoning 또는 verified crystal state 중 실제 결과만 기록한다.",
+      "proof_copy": "Studio Trial. oil stability, emulsion, salt dissolution, sensory balance와 shelf life를 확인합니다.",
+      "cta": "Olive Oil & Sea Salt 검증 상태 보기",
+      "asset_id": "ST3-R5-PRODUCT-OLIVE-OIL-SEA-SALT-92"
+    }
+  ],
+  "landing_page_composition": [
+    {
+      "order": "01",
+      "section": "Hero",
+      "headline": "좋은 재료를 고르는 데서 끝나지 않습니다.",
+      "body": "MORA의 메이커는 재료를 고르고, 변환의 중간을 살피고, 내놓기 전 마지막 한 컵까지 확인합니다.",
+      "asset_layout": "FullBleedSection exact 3:2 / left-center / left 42% clear",
+      "asset_ids": [
+        "ST3-R5-HERO-SELECTION-76"
+      ],
+      "cta": "여섯 레시피 비교하기"
+    },
+    {
+      "order": "02",
+      "section": "Brand Trace",
+      "headline": "고른 것보다, 끝까지 본 것.",
+      "body": "선택·변환·마지막 확인의 인과를 물리적 에칭으로 짧게 남깁니다.",
+      "asset_layout": "intrinsic 3:2 narrative plate / no crop",
+      "asset_ids": [
+        "ST3-ETCH-R2-42"
+      ],
+      "cta": "제조의 중간 보기"
+    },
+    {
+      "order": "03",
+      "section": "Straining Transition",
+      "headline": "한 컵의 중간을 숨기지 않습니다.",
+      "body": "천에 남은 농축된 몸과 분리된 유청을 중앙 카피 주변의 실제 물성으로 보여 줍니다.",
+      "asset_layout": "FullBleedSection exact 3:2 / center / central 44%×42% clear",
+      "asset_ids": [
+        "ST3-R5-TRANSITION-CENTER-SAFE-81"
+      ],
+      "cta": "변환 보기"
+    },
+    {
+      "order": "04",
+      "section": "Why MORA",
+      "headline": "무엇을 남길지 판단하는 사람.",
+      "body": "한 명의 메이커가 기준 안과 밖의 재료를 직접 비교합니다.",
+      "asset_layout": "SplitEditorial 3:2 maker + 3:2 etching",
+      "asset_ids": [
+        "ST3-R5-WHY-MORA-SELECTION-77",
+        "ST3-ETCH-R2-43"
+      ],
+      "cta": "선택 기준 보기"
+    },
+    {
+      "order": "05",
+      "section": "Core Collection Sticky",
+      "headline": "Vol. 1 — Four Directions",
+      "body": "1:2 last-fold story가 고정되는 동안 네 1:1 제품을 비교합니다.",
+      "asset_layout": "StickyProductGrid exact 1:2 main + sticky 2×2 product cards",
+      "asset_ids": [
+        "ST3-R5-CORE-STICKY-78",
+        "ST3-R5-PRODUCT-THYME-HONEY-87",
+        "ST3-R5-PRODUCT-ROASTED-BUCKWHEAT-89",
+        "ST3-R5-PRODUCT-CITRUS-PEEL-90",
+        "ST3-R5-PRODUCT-BLACK-SESAME-91"
+      ],
+      "cta": "Core Collection 보기"
+    },
+    {
+      "order": "06",
+      "section": "Core Ingredient Folios",
+      "headline": "재료와 변환을 한 쌍으로.",
+      "body": "각 원재료 aerial과 Material Folio를 같은 1:1 규격으로 이어 봅니다.",
+      "asset_layout": "four SplitEditorial 1:1 aerial / 1:1 etching pairs",
+      "asset_ids": [
+        "ST3-R5-INGREDIENT-THYME-HONEY-93",
+        "ST3-ETCH-R2-46",
+        "ST3-R5-INGREDIENT-ROASTED-BUCKWHEAT-95",
+        "ST3-ETCH-R2-48",
+        "ST3-R5-INGREDIENT-CITRUS-PEEL-96",
+        "ST3-ETCH-R2-49",
+        "ST3-R5-INGREDIENT-BLACK-SESAME-97",
+        "ST3-ETCH-R2-50"
+      ],
+      "cta": "Core 재료 보기"
+    },
+    {
+      "order": "07",
+      "section": "Studio Trials Sticky",
+      "headline": "확인되기 전에는 출시하지 않습니다.",
+      "body": "Fig Leaf와 Olive Oil & Sea Salt를 조건부 중간 상태와 기록으로 분리합니다.",
+      "asset_layout": "reversed StickyProductGrid exact 1:2 main + sticky 2×2 product cards",
+      "asset_ids": [
+        "ST3-R5-TRIAL-STICKY-79",
+        "ST3-R5-PRODUCT-FIG-LEAF-88",
+        "ST3-R5-PRODUCT-OLIVE-OIL-SEA-SALT-92"
+      ],
+      "cta": "검증 기준 보기"
+    },
+    {
+      "order": "08",
+      "section": "Trial Ingredient Folios",
+      "headline": "조건부 재료도 같은 사실 규격으로.",
+      "body": "raw input과 방향성 process folio를 release proof와 분리합니다.",
+      "asset_layout": "two SplitEditorial 1:1 aerial / 1:1 etching pairs",
+      "asset_ids": [
+        "ST3-R5-INGREDIENT-FIG-LEAF-94",
+        "ST3-ETCH-R2-47",
+        "ST3-R5-INGREDIENT-OLIVE-OIL-SEA-SALT-98",
+        "ST3-ETCH-R2-51"
+      ],
+      "cta": "Trial 재료 보기"
+    },
+    {
+      "order": "09",
+      "section": "Cloth to Body",
+      "headline": "천에서 몸으로.",
+      "body": "거름의 물리적 인과를 crop 없는 3:2 에칭으로 보여 줍니다.",
+      "asset_layout": "intrinsic 3:2 narrative plate / no crop",
+      "asset_ids": [
+        "ST3-ETCH-R2-45"
+      ],
+      "cta": "공정 보기"
+    },
+    {
+      "order": "10",
+      "section": "Material Method",
+      "headline": "재료마다 다르게 준비하고, 한 번 접습니다.",
+      "body": "여섯 중간 상태와 하나의 broad-paddle action을 우측에 모읍니다.",
+      "asset_layout": "FullBleedSection exact 3:2 / left-center / left 42% clear",
+      "asset_ids": [
+        "ST3-R5-METHOD-LEFT-SAFE-80"
+      ],
+      "cta": "Batch Record 보기"
+    },
+    {
+      "order": "11",
+      "section": "Vessel SEE",
+      "headline": "SEE",
+      "body": "실제 음식과 부분 Batch Record를 함께 봅니다.",
+      "asset_layout": "FullBleedSection exact 3:2 / bottom-left clear",
+      "asset_ids": [
+        "ST3-R5-VESSEL-SEE-82"
+      ],
+      "cta": "다음 단계"
+    },
+    {
+      "order": "12",
+      "section": "Vessel READ",
+      "headline": "READ",
+      "body": "고정 식품 사실과 실제 maker-check 영역을 나눠 읽습니다.",
+      "asset_layout": "FullBleedSection exact 3:2 / bottom-left clear",
+      "asset_ids": [
+        "ST3-R5-VESSEL-READ-83"
+      ],
+      "cta": "다음 단계"
+    },
+    {
+      "order": "13",
+      "section": "Vessel OPEN",
+      "headline": "OPEN",
+      "body": "food seal을 제거하고 wide clean rim을 확인합니다.",
+      "asset_layout": "FullBleedSection exact 3:2 / bottom-left clear",
+      "asset_ids": [
+        "ST3-R5-VESSEL-OPEN-84"
+      ],
+      "cta": "다음 단계"
+    },
+    {
+      "order": "14",
+      "section": "Vessel TASTE",
+      "headline": "TASTE",
+      "body": "첫 스푼 단면에서 density와 internal trace를 확인합니다.",
+      "asset_layout": "FullBleedSection exact 3:2 / bottom-left clear",
+      "asset_ids": [
+        "ST3-R5-VESSEL-TASTE-85"
+      ],
+      "cta": "제품 사실 보기"
+    },
+    {
+      "order": "15",
+      "section": "Evening Use",
+      "headline": "한 컵이 놓이는 식탁.",
+      "body": "한 jar와 한 spoon만으로 절제된 사용 맥락을 남깁니다.",
+      "asset_layout": "FullBleedSection exact 3:2 / bottom-left clear",
+      "asset_ids": [
+        "ST3-R5-EVENING-USE-86"
+      ],
+      "cta": "출시 소식 받기"
+    },
+    {
+      "order": "16",
+      "section": "Product Truth / CTA",
+      "headline": "확인한 것만 기록합니다.",
+      "body": "창립자 전기·레시피 수치·효능·포장 성능·출시 정보는 실제 검증 뒤에만 공개합니다.",
+      "asset_layout": "text-only NewsletterCTA and footer; no new raster",
+      "asset_ids": [],
+      "cta": "출시 소식 받기"
+    }
+  ],
+  "production_reference_appendix": {
+    "key_insight": "R1–R4 자산은 삭제하지 않지만 R5 active registry와 공개 landing composition에서는 제외한다.",
+    "archived_registry_path": "asset-registry.json prior to R5 migration is recoverable from version control or working history",
+    "current_contracts": [
+      ".work/revision-r5-layout-aware/stage3-image-production-contract.md",
+      ".work/revision-r5-layout-aware/landing-slot-contract.md",
+      ".work/revision-r5-layout-aware/current-asset-fit-audit.md"
+    ]
+  },
+  "section_map_key_insight": "R2 제품·재료 시스템과 R4 Quiet Intensity 무드 자산은 각 랜딩 역할에 연결되며, 교체된 따뜻한 무드 이미지는 이전 버전 감사 역할로만 남는다.",
+  "section_map": [
+    {
+      "section": "Hero",
+      "communication_job": "원재료를 승인·제외하는 여성 메이커의 권위와 브랜드 메시지를 첫 화면에서 연결한다.",
+      "copy": "MORA의 메이커는 재료를 고르고, 변환의 중간을 살피고, 내놓기 전 마지막 한 컵까지 확인합니다.",
+      "proof_of": "selection and responsibility",
+      "asset_id": "ST3-R5-HERO-SELECTION-76",
+      "cta": "여섯 레시피 비교하기"
+    },
+    {
+      "section": "Brand Trace",
+      "communication_job": "선택부터 마지막 trace까지의 물리 인과를 작은 설명 이미지로 남긴다.",
+      "copy": "고른 것보다, 끝까지 본 것.",
+      "proof_of": "physical process lineage",
+      "asset_id": "ST3-ETCH-R2-42",
+      "cta": "제조의 중간 보기"
+    },
+    {
+      "section": "Straining Transition",
+      "communication_job": "농축된 몸과 유청의 분리를 centered-copy full bleed로 보여 준다.",
+      "copy": "한 컵의 중간을 숨기지 않습니다.",
+      "proof_of": "visible separation",
+      "asset_id": "ST3-R5-TRANSITION-CENTER-SAFE-81",
+      "cta": "변환 보기"
+    },
+    {
+      "section": "Why MORA",
+      "communication_job": "accepted/rejected 재료 비교로 maker judgment를 증명한다.",
+      "copy": "무엇을 남길지 판단하는 사람.",
+      "proof_of": "selection criteria",
+      "asset_id": "ST3-R5-WHY-MORA-SELECTION-77",
+      "cta": "선택 기준 보기"
+    },
+    {
+      "section": "Why MORA",
+      "communication_job": "첫 furrow와 one-fold의 차이를 물리 주석으로 보완한다.",
+      "copy": "한 번의 fold가 남긴 결과를 읽습니다.",
+      "proof_of": "one-fold causal annotation",
+      "asset_id": "ST3-ETCH-R2-43",
+      "cta": "선택 기준 보기"
+    },
+    {
+      "section": "Core Collection Sticky",
+      "communication_job": "Core scroll 동안 last fold와 final check의 한 행동을 유지한다.",
+      "copy": "네 방향을 한 번의 마지막 판단으로 묶습니다.",
+      "proof_of": "last-fold responsibility",
+      "asset_id": "ST3-R5-CORE-STICKY-78",
+      "cta": "Core Collection 보기"
+    },
+    {
+      "section": "Core Collection Sticky",
+      "communication_job": "Thyme Honey을 동일한 strict-front 제품 규격에서 비교한다.",
+      "copy": "Thyme Honey",
+      "proof_of": "product identity and edible trace",
+      "asset_id": "ST3-R5-PRODUCT-THYME-HONEY-87",
+      "cta": "Thyme Honey 보기"
+    },
+    {
+      "section": "Core Collection Sticky",
+      "communication_job": "Roasted Buckwheat을 동일한 strict-front 제품 규격에서 비교한다.",
+      "copy": "Roasted Buckwheat",
+      "proof_of": "product identity and edible trace",
+      "asset_id": "ST3-R5-PRODUCT-ROASTED-BUCKWHEAT-89",
+      "cta": "Roasted Buckwheat 보기"
+    },
+    {
+      "section": "Core Collection Sticky",
+      "communication_job": "Citrus Peel을 동일한 strict-front 제품 규격에서 비교한다.",
+      "copy": "Citrus Peel",
+      "proof_of": "product identity and edible trace",
+      "asset_id": "ST3-R5-PRODUCT-CITRUS-PEEL-90",
+      "cta": "Citrus Peel 보기"
+    },
+    {
+      "section": "Core Collection Sticky",
+      "communication_job": "Black Sesame을 동일한 strict-front 제품 규격에서 비교한다.",
+      "copy": "Black Sesame",
+      "proof_of": "product identity and edible trace",
+      "asset_id": "ST3-R5-PRODUCT-BLACK-SESAME-91",
+      "cta": "Black Sesame 보기"
+    },
+    {
+      "section": "Core Ingredient Folios",
+      "communication_job": "Thyme Honey raw input을 true-aerial로 분리한다.",
+      "copy": "Thyme Honey",
+      "proof_of": "raw ingredient identity",
+      "asset_id": "ST3-R5-INGREDIENT-THYME-HONEY-93",
+      "cta": "재료 보기"
+    },
+    {
+      "section": "Core Ingredient Folios",
+      "communication_job": "Thyme Honey preparation과 finished trace의 방향성 인과를 주석으로 보여 준다.",
+      "copy": "Thyme Honey",
+      "proof_of": "directional physical process",
+      "asset_id": "ST3-ETCH-R2-46",
+      "cta": "변환 보기"
+    },
+    {
+      "section": "Core Ingredient Folios",
+      "communication_job": "Roasted Buckwheat raw input을 true-aerial로 분리한다.",
+      "copy": "Roasted Buckwheat",
+      "proof_of": "raw ingredient identity",
+      "asset_id": "ST3-R5-INGREDIENT-ROASTED-BUCKWHEAT-95",
+      "cta": "재료 보기"
+    },
+    {
+      "section": "Core Ingredient Folios",
+      "communication_job": "Roasted Buckwheat preparation과 finished trace의 방향성 인과를 주석으로 보여 준다.",
+      "copy": "Roasted Buckwheat",
+      "proof_of": "directional physical process",
+      "asset_id": "ST3-ETCH-R2-48",
+      "cta": "변환 보기"
+    },
+    {
+      "section": "Core Ingredient Folios",
+      "communication_job": "Citrus Peel raw input을 true-aerial로 분리한다.",
+      "copy": "Citrus Peel",
+      "proof_of": "raw ingredient identity",
+      "asset_id": "ST3-R5-INGREDIENT-CITRUS-PEEL-96",
+      "cta": "재료 보기"
+    },
+    {
+      "section": "Core Ingredient Folios",
+      "communication_job": "Citrus Peel preparation과 finished trace의 방향성 인과를 주석으로 보여 준다.",
+      "copy": "Citrus Peel",
+      "proof_of": "directional physical process",
+      "asset_id": "ST3-ETCH-R2-49",
+      "cta": "변환 보기"
+    },
+    {
+      "section": "Core Ingredient Folios",
+      "communication_job": "Black Sesame raw input을 true-aerial로 분리한다.",
+      "copy": "Black Sesame",
+      "proof_of": "raw ingredient identity",
+      "asset_id": "ST3-R5-INGREDIENT-BLACK-SESAME-97",
+      "cta": "재료 보기"
+    },
+    {
+      "section": "Core Ingredient Folios",
+      "communication_job": "Black Sesame preparation과 finished trace의 방향성 인과를 주석으로 보여 준다.",
+      "copy": "Black Sesame",
+      "proof_of": "directional physical process",
+      "asset_id": "ST3-ETCH-R2-50",
+      "cta": "변환 보기"
+    },
+    {
+      "section": "Studio Trials Sticky",
+      "communication_job": "두 조건부 레시피의 중간 상태와 기록을 승인 제품과 분리한다.",
+      "copy": "확인되기 전에는 출시하지 않습니다.",
+      "proof_of": "conditional trial gate",
+      "asset_id": "ST3-R5-TRIAL-STICKY-79",
+      "cta": "검증 기준 보기"
+    },
+    {
+      "section": "Studio Trials Sticky",
+      "communication_job": "Fig Leaf의 조건부 제품 방향을 동일한 strict-front 규격으로 보여 준다.",
+      "copy": "Fig Leaf",
+      "proof_of": "directional product identity",
+      "asset_id": "ST3-R5-PRODUCT-FIG-LEAF-88",
+      "cta": "Fig Leaf 검증 상태 보기"
+    },
+    {
+      "section": "Studio Trials Sticky",
+      "communication_job": "Olive Oil & Sea Salt의 조건부 제품 방향을 동일한 strict-front 규격으로 보여 준다.",
+      "copy": "Olive Oil & Sea Salt",
+      "proof_of": "directional product identity",
+      "asset_id": "ST3-R5-PRODUCT-OLIVE-OIL-SEA-SALT-92",
+      "cta": "Olive Oil & Sea Salt 검증 상태 보기"
+    },
+    {
+      "section": "Trial Ingredient Folios",
+      "communication_job": "Fig Leaf raw input을 true-aerial로 분리한다.",
+      "copy": "Fig Leaf",
+      "proof_of": "raw ingredient identity, not release proof",
+      "asset_id": "ST3-R5-INGREDIENT-FIG-LEAF-94",
+      "cta": "재료 보기"
+    },
+    {
+      "section": "Trial Ingredient Folios",
+      "communication_job": "Fig Leaf process folio를 안전·출시 증명과 분리된 방향성 주석으로 보여 준다.",
+      "copy": "Fig Leaf",
+      "proof_of": "conditional physical process",
+      "asset_id": "ST3-ETCH-R2-47",
+      "cta": "검증 기준 보기"
+    },
+    {
+      "section": "Trial Ingredient Folios",
+      "communication_job": "Olive Oil & Sea Salt raw input을 true-aerial로 분리한다.",
+      "copy": "Olive Oil & Sea Salt",
+      "proof_of": "raw ingredient identity, not release proof",
+      "asset_id": "ST3-R5-INGREDIENT-OLIVE-OIL-SEA-SALT-98",
+      "cta": "재료 보기"
+    },
+    {
+      "section": "Trial Ingredient Folios",
+      "communication_job": "Olive Oil & Sea Salt process folio를 안전·출시 증명과 분리된 방향성 주석으로 보여 준다.",
+      "copy": "Olive Oil & Sea Salt",
+      "proof_of": "conditional physical process",
+      "asset_id": "ST3-ETCH-R2-51",
+      "cta": "검증 기준 보기"
+    },
+    {
+      "section": "Cloth to Body",
+      "communication_job": "cloth–whey–concentrate의 물리 인과를 crop 없이 설명한다.",
+      "copy": "천에서 몸으로.",
+      "proof_of": "straining causality",
+      "asset_id": "ST3-ETCH-R2-45",
+      "cta": "공정 보기"
+    },
+    {
+      "section": "Material Method",
+      "communication_job": "여섯 intermediate state와 one-fold action을 left-safe frame으로 보여 준다.",
+      "copy": "재료마다 다르게 준비하고, 한 번 접습니다.",
+      "proof_of": "measured transformation",
+      "asset_id": "ST3-R5-METHOD-LEFT-SAFE-80",
+      "cta": "Batch Record 보기"
+    },
+    {
+      "section": "Vessel SEE",
+      "communication_job": "음식과 partial Batch Record의 동시 가시성을 보여 준다.",
+      "copy": "SEE",
+      "proof_of": "edible witness area and record coverage",
+      "asset_id": "ST3-R5-VESSEL-SEE-82",
+      "cta": "다음 단계"
+    },
+    {
+      "section": "Vessel READ",
+      "communication_job": "fixed facts와 authentic-variable mark 영역을 분리한다.",
+      "copy": "READ",
+      "proof_of": "information hierarchy",
+      "asset_id": "ST3-R5-VESSEL-READ-83",
+      "cta": "다음 단계"
+    },
+    {
+      "section": "Vessel OPEN",
+      "communication_job": "food seal의 실제 opening sequence를 보여 준다.",
+      "copy": "OPEN",
+      "proof_of": "opening usability",
+      "asset_id": "ST3-R5-VESSEL-OPEN-84",
+      "cta": "다음 단계"
+    },
+    {
+      "section": "Vessel TASTE",
+      "communication_job": "첫 spoon section에서 density와 trace를 보여 준다.",
+      "copy": "TASTE",
+      "proof_of": "first-spoon product truth",
+      "asset_id": "ST3-R5-VESSEL-TASTE-85",
+      "cta": "제품 사실 보기"
+    },
+    {
+      "section": "Evening Use",
+      "communication_job": "한 컵과 한 스푼의 절제된 사용 맥락으로 닫는다.",
+      "copy": "한 컵이 놓이는 식탁.",
+      "proof_of": "context only",
+      "asset_id": "ST3-R5-EVENING-USE-86",
+      "cta": "출시 소식 받기"
+    }
+  ],
+  "registered_product_assets": [
+    "ST3-R5-HERO-SELECTION-76",
+    "ST3-R5-WHY-MORA-SELECTION-77",
+    "ST3-R5-CORE-STICKY-78",
+    "ST3-R5-TRIAL-STICKY-79",
+    "ST3-R5-METHOD-LEFT-SAFE-80",
+    "ST3-R5-TRANSITION-CENTER-SAFE-81",
+    "ST3-R5-VESSEL-SEE-82",
+    "ST3-R5-VESSEL-READ-83",
+    "ST3-R5-VESSEL-OPEN-84",
+    "ST3-R5-VESSEL-TASTE-85",
+    "ST3-R5-EVENING-USE-86",
+    "ST3-R5-PRODUCT-THYME-HONEY-87",
+    "ST3-R5-PRODUCT-FIG-LEAF-88",
+    "ST3-R5-PRODUCT-ROASTED-BUCKWHEAT-89",
+    "ST3-R5-PRODUCT-CITRUS-PEEL-90",
+    "ST3-R5-PRODUCT-BLACK-SESAME-91",
+    "ST3-R5-PRODUCT-OLIVE-OIL-SEA-SALT-92",
+    "ST3-R5-INGREDIENT-THYME-HONEY-93",
+    "ST3-R5-INGREDIENT-FIG-LEAF-94",
+    "ST3-R5-INGREDIENT-ROASTED-BUCKWHEAT-95",
+    "ST3-R5-INGREDIENT-CITRUS-PEEL-96",
+    "ST3-R5-INGREDIENT-BLACK-SESAME-97",
+    "ST3-R5-INGREDIENT-OLIVE-OIL-SEA-SALT-98",
+    "ST3-ETCH-R2-42",
+    "ST3-ETCH-R2-43",
+    "ST3-ETCH-R2-45",
+    "ST3-ETCH-R2-46",
+    "ST3-ETCH-R2-47",
+    "ST3-ETCH-R2-48",
+    "ST3-ETCH-R2-49",
+    "ST3-ETCH-R2-50",
+    "ST3-ETCH-R2-51"
+  ],
+  "previous_version_archive": {
+    "key_insight": "R5는 현재 landing DOM에 실제로 쓰이는 32 unique raster 역할만 active로 남긴다.",
+    "status": "archive_only_not_registered",
+    "items": [
+      {
+        "version": "R2/R3 product and vessel",
+        "name": "direct-print tall glass system",
+        "reason_archived": "Stage 2 Revision 10의 low-wide partial Batch Record와 충돌"
+      },
+      {
+        "version": "R2/R3 use moments",
+        "name": "generic 3:2 moments reused in 1:2 sticky slots",
+        "reason_archived": "source ratio mismatch causes 66.7% width loss"
+      },
+      {
+        "version": "R2/R4 fullbleed",
+        "name": "16:9 Hero / transition / method sources",
+        "reason_archived": "current FullBleedSection is exact 3:2"
+      },
+      {
+        "version": "Unused current assets",
+        "name": "six dormant raster keys",
+        "reason_archived": "not mounted by MoraLandingPage"
+      }
+    ],
+    "retention_rule": "Old files and prompts remain in their revision folders for lineage. They do not appear in active registry, section map, product lineup or landing composition."
+  },
+  "boundaries": {
+    "key_insight": "이 패키지는 현재 layout에 맞는 copy·photo direction·delivery master를 제공하지만 실제 창립자·레시피·공정·라벨·포장 성능·출시 상태를 증명하지 않는다.",
+    "unverified_claims": [
+      "founder name, biography, family role, career, first experiment, quote and current operational role",
+      "recipe quantities, culture/straining/folding conditions, pH, yield, shelf life, nutrition, benefit and sensory performance",
+      "Fig Leaf edible species/part, jurisdiction, toxicology, allergen and release suitability",
+      "jar, seal, paper, adhesive, ink, condensation, migration, rub, scan, line, cold-chain and legal-label performance",
+      "price, launch date, retail channel, inventory and purchase availability"
+    ],
+    "protected_brand_and_product_invariants": [
+      "좋은 재료를 고르는 데서 끝나지 않습니다.",
+      "female maker authority is observable selection, memory, measured care and final responsibility; never a stereotype",
+      "one input, one tool, one action, one intermediate output and one record per process frame",
+      "low-wide transparent 150 g wide-mouth jar, edible witness 60–70%, partial Batch Record 30–40% maximum",
+      "fixed printed facts and limited authentic-variable maker check remain separate",
+      "product 1:1, ingredient 1:1 true aerial, FullBleed 3:2 and sticky 1:2 remain distinct source masters",
+      "new delivery masters meet the recorded high-resolution pixel dimensions; resampling provenance remains explicit",
+      "generated maker is not captioned as founder; generated workshop is not captioned as actual facility",
+      "Fig Leaf and Olive Oil & Sea Salt remain conditional Studio Trials",
+      "no Le Labo wordmark, perfume silhouette, pharmacy label grid, ingredient-plus-number naming, city/date ritual or trade dress"
+    ],
+    "out_of_scope": [
+      "landing component or interaction redesign",
+      "browser visual QA",
+      "founder biography without factual intake",
+      "food R&D or HACCP approval",
+      "regulatory label approval",
+      "packaging engineering approval",
+      "e-commerce implementation"
+    ]
+  },
+  "layout_aware_image_system": {
+    "key_insight": "해상도보다 먼저 source master ratio를 실제 CSS slot ratio와 일치시켜야 crop이 사라진다.",
+    "preserved_implementation": [
+      "MoraLandingPage section order",
+      "FullBleedSection 3:2",
+      "SplitEditorial 2-column responsive stack",
+      "StickyProductGrid 1:2 main plus sticky 2×2 cards",
+      "VesselPhaseBlock sticky bottom-left copy"
+    ],
+    "slot_families": [
+      {
+        "role": "FullBleed",
+        "ratio": "3:2",
+        "delivery": "3072×2048 minimum",
+        "safe_area": "inner 82% plus overlay-specific left-center / center / bottom-left field"
+      },
+      {
+        "role": "Sticky main",
+        "ratio": "1:2",
+        "delivery": "2048×4096 minimum",
+        "safe_area": "center 68% width and inner 88% height before exact center crop"
+      },
+      {
+        "role": "Product and ingredient",
+        "ratio": "1:1",
+        "delivery": "2048×2048 minimum",
+        "safe_area": "complete subject with minimum 12% edge clearance; Fig Leaf aerial exception recorded"
+      }
+    ],
+    "high_resolution_truth": "Built-in native generations are preserved. Delivery masters are resampled to the required pixel dimensions when native output is smaller; the package does not claim that resampling created new optical detail.",
+    "no_reuse_rule": "A 3:2 environment is never reused for 1:2 sticky or 1:1 evidence. Only an identical product master may repeat in more than one ProductCard occurrence."
+  }
+}

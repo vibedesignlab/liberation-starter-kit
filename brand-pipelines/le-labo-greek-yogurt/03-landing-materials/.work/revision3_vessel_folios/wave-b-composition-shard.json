@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "stage3_wave_b_composition_shard",
+  "revision": "stage3_revision3_vessel_folios",
+  "owner": "glass_product_masters",
+  "status": "ready_for_parent_registration",
+  "asset": {
+    "asset_id": "ST3-REF-PRODUCT-COMPOSITION-MASTER-18",
+    "product_name": "MORA Vessel Record / Thyme Honey 01 Use Composition",
+    "role": "reference_product_composition_master",
+    "file_path": "assets/reference-system/mora-product-composition-master-front.png",
+    "prompt_path": "prompts/ST3-REF-PRODUCT-COMPOSITION-MASTER-18.md",
+    "aspect_ratio": "1:1",
+    "dimensions": "1536x1536",
+    "sha256": "8e8be48a20fd148b3d96870b5596bcf89fc4f20e00fc331677a58908149e09a2",
+    "generation_provenance": "One distinct OpenAI built-in image-generation call on 2026-08-29. The approved revised ST3-REF-GLASS-PACKAGE-MASTER-17 raster supplied form, material, light, background and record-print presence. The previous ST3-REF-PRODUCT-COMPOSITION-MASTER-18 supplied only the four-zone use layout. A deterministic 1536x1536 raster rendering of ST3-PACKAGING-VESSEL-RECORD-SPEC-25 supplied exact-copy hierarchy. The selected 1254x1254 result passed original-detail visual QA without a delta edit and was resampled to 1536x1536 with Lanczos filtering.",
+    "communication_job": "열린 Vessel Record, 완전히 분리된 실링, 한 스푼의 농축 요거트, 한 그룹의 thyme+honey cue를 서로 겹치지 않게 보여 제품 개봉·섭취·레시피 식별 순서를 한눈에 이해시킨다.",
+    "reference_lineage": [
+      {
+        "asset_id": "ST3-REF-GLASS-PACKAGE-MASTER-17",
+        "sha256": "91da87546aa2670fe147dc868e773b0275acffcd2fea99804e5868636ee37d8e",
+        "role": "approved form, material, light, background and direct-print presence authority"
+      },
+      {
+        "asset_id": "ST3-PACKAGING-VESSEL-RECORD-SPEC-25",
+        "sha256": "231ff1a99b0b09029540ea1dfc59f3118d27c4cc355bc76bca728678bc56f94b",
+        "role": "exact copy, print hierarchy and production-boundary authority"
+      },
+      {
+        "asset_id": "previous ST3-REF-PRODUCT-COMPOSITION-MASTER-18",
+        "role": "spatial-role reference only; old vessel geometry and logo system discarded"
+      }
+    ],
+    "authority_split": {
+      "photo": "authoritative for broad vessel form, open-use state, material response, food texture, relative object zones, light, background and contact shadows",
+      "vector": "authoritative for exact spelling, en dash, record typography, rule weight, baselines, regulatory-data boundary and production copy",
+      "rule": "Any generated-photo microtext difference must be corrected from the SVG in production artwork; it does not invalidate the photo as the form/material/use golden master."
+    },
+    "invariants": [
+      "one centered open MORA Thyme Honey / 01 Vessel Record jar",
+      "same broad 1.50–1.65 directional vessel ratio, short shoulder, wide mouth and heavy clear base as the approved package master",
+      "one neutral-black left-aligned direct-print record column with no paper or opaque backing",
+      "one fully detached circular full-perimeter seal at left",
+      "one complete stainless spoon with one dense yogurt serving and amber ribbon at lower right",
+      "one small grouped fresh-thyme and honey cue at upper right",
+      "plain Cultured Cream #F5F1E8 field and authoritative front with restrained 10-degree top control",
+      "all four zones separate, legible and non-overlapping",
+      "no graphite overcap anywhere in the composition"
+    ],
+    "allowed_variation": [
+      "none before this golden master is registered",
+      "later SKU frames may change only verified record copy, ingredient trace, spoon trace and the one recipe-specific cue while matching the same zones, camera, light, background and broad vessel form"
+    ],
+    "source_distance_boundary": {
+      "translated": [
+        "disciplined practical record behavior already approved in the Vessel Record master",
+        "raw material visibility through heavy glass",
+        "one-step serving ritual expressed as a clear four-zone composition"
+      ],
+      "excluded": [
+        "source-brand wording or exact typography",
+        "paper label, rectangular formula grid or scent-number system",
+        "perfume neck, atomizer, dropper, stopper or candle form",
+        "city, customer, personal name, date or fake personalization",
+        "apothecary, tincture, laboratory or fragrance styling"
+      ]
+    },
+    "qa": {
+      "inspection": "pass — final 1536x1536 workspace image inspected with view_image at original detail",
+      "observed_jar_bbox_percent": {"left": 32.8, "top": 17.3, "right": 66.3, "bottom": 75.5},
+      "observed_object_centers_percent": {
+        "detached_seal": {"x": 17.2, "y": 75.6},
+        "spoon_with_serving": {"x": 78.9, "y": 76.8},
+        "thyme_honey_cue": {"x": 83.3, "y": 61.1}
+      },
+      "layout_and_use": "pass — center/open product, left/removed seal, lower-right/serving and upper-right/recipe cue read in the intended sequence without caption",
+      "occlusion_and_count": "pass — exactly one jar, one seal, one spoon and one recipe-cue group; plain-background gaps separate all zones and no object covers the record column",
+      "vessel_identity": "pass — broad food-vessel form, wide open mouth, short shoulder, thick clear walls, heavy base and amber trace match the approved Vessel Record direction",
+      "direct_print": "pass for photographic authority — MORA, THYME HONEY / 01, category, PREP, TRACE, 150 g and BATCH / 24A01 are coherent and sit directly on glass; no paper, opaque backing or enclosing grid",
+      "microtext_note": "The photo renders HONEY-THYME with an ASCII hyphen while the vector authority specifies HONEY–THYME with an en dash. Production artwork must use the SVG exact copy.",
+      "material_physics": "pass — plausible glass refraction, visible heavy base, natural dense yogurt, viscous amber ribbon, coherent metal reflections and unified down-right contact shadows",
+      "camera_background": "pass — authoritative straight front with restrained top reveal, short-tele perspective and continuous plain warm-cream studio field",
+      "negative_check": "pass — no graphite overcap, plastic cup, paper label, perfume hardware, extra prop, person, environment, source wording, personalization or unsupported performance claim"
+    },
+    "status": "ready_for_registration"
+  },
+  "registration_notes": [
+    "Register this image as the revised Vessel Record use-composition golden master.",
+    "Register the exact-copy SVG alongside it; do not treat generated microtext as final packaging artwork.",
+    "All later SKU composition renders must attach the approved package raster, this composition master and the exact-copy vector render, then compare against the four observed object zones.",
+    "No cap, city, customer, personal name, date or unverified production claim may be introduced."
+  ]
+}

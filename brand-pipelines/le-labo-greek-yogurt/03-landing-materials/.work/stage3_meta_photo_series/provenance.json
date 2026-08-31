@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0.0",
+  "created_date": "2026-08-26",
+  "generator": "OpenAI built-in image_gen",
+  "orchestration": [
+    "build-landing-materials",
+    "commercial-photo-prompting Series mode",
+    "imagegen"
+  ],
+  "browser_automation_used": false,
+  "post_crop_or_resize": false,
+  "canonical_sources": [
+    {
+      "path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/outputs/extended-brand-anatomy.json",
+      "sha256": "fd2d65819855b73f3aef6d1b579be89f641719bd381ea574843ec477c458c4da"
+    },
+    {
+      "path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/.work/stage3-direction-lock.json",
+      "sha256": "f24d95499fa8a4b8ad8ee35227a6b4c1a4775b2299341666266c8b77c4766c65"
+    }
+  ],
+  "reference_images": [
+    {
+      "path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/process-world/mora-infusion-library.png",
+      "sha256": "fd53d1803f11898852d3818778ef2cfd57a9b632465e5a53cd75678b72731204",
+      "dimensions": "1536x1024",
+      "role": "process-world, stainless, ceramic, light and grade continuity"
+    },
+    {
+      "path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/process-world/mora-straining-whey.png",
+      "sha256": "2ff5fb99b246cbdbe8f273f7335aaee330486e2e150a370f96baf1e321d6871b",
+      "dimensions": "1536x1024",
+      "role": "straining apparatus, muslin, concentrate, whey and maker continuity"
+    },
+    {
+      "path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/process-world/mora-low-shear-fold.png",
+      "sha256": "443dff5b68f371de0b5dc569ca47d349110f8850156d45375c8dbfe70c803d75",
+      "dimensions": "1536x1024",
+      "role": "maker right-profile identity, charcoal wardrobe, folding action and grade continuity"
+    }
+  ],
+  "outputs": [
+    {
+      "asset_id": "ST3-INGREDIENT-SIGNATURE-ATLAS-10",
+      "prompt_id": "ST3-META-PROMPT-ATLAS-10",
+      "generated_source": "/Users/ddd/.codex/generated_images/01a0384a-4fe0-78c2-a96f-56879b8bef75/exec-4c9d956a-1538-4777-8897-26de5dfcfea6.png",
+      "path": "assets/product-renders/mora-signature-ingredient-atlas.png",
+      "absolute_path": "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/product-renders/mora-signature-ingredient-atlas.png",
+      "dimensions": "1448x1086",
+      "aspect": "4:3",
+      "sha256": "ba3fc7d39f2e4846f72126243abebef96098cc04654e6eab7121a4c26787f174"
+    },
+    {
+      "asset_id": "ST3-INFUSION-BASE-LIBRARY-11",
+      "prompt_id": "ST3-META-PROMPT-BASES-11",
+      "generated_source": "/Users/ddd/.codex/generated_images/01a0384a-4fe0-78c2-a96f-56879b8bef75/exec-894d4832-e6d5-4f29-b786-9e61bcf54ac2.png",
+      "path": "assets/product-renders/mora-infusion-base-library-front.png",
+      "absolute_path": "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/product-renders/mora-infusion-base-library-front.png",
+      "dimensions": "1536x1024",
+      "aspect": "3:2",
+      "sha256": "eaf12137da8e3e36292d78bd50148fc1e387a0bf0b0e4482eee8a0ad0ce94190"
+    },
+    {
+      "asset_id": "ST3-INTERMEDIATE-TRACE-MATRIX-12",
+      "prompt_id": "ST3-META-PROMPT-MATRIX-12",
+      "generated_source": "/Users/ddd/.codex/generated_images/01a0384a-4fe0-78c2-a96f-56879b8bef75/exec-b3df1873-b858-4ff0-b0a3-95f300f2c45e.png",
+      "path": "assets/product-renders/mora-intermediate-trace-matrix.png",
+      "absolute_path": "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/product-renders/mora-intermediate-trace-matrix.png",
+      "dimensions": "1448x1086",
+      "aspect": "4:3",
+      "sha256": "2a913a3bbeecde4b48d169cde34bea08cea3c2cff28d7ab3886369b197a6c9f7"
+    },
+    {
+      "asset_id": "ST3-PROCESS-STRAINING-13",
+      "prompt_id": "ST3-META-PROMPT-STRAIN-13",
+      "generated_source": "/Users/ddd/.codex/generated_images/01a0384a-4fe0-78c2-a96f-56879b8bef75/exec-fb21ddde-0a56-4c42-bccb-314af70631ab.png",
+      "path": "assets/product-renders/mora-process-straining-side.png",
+      "absolute_path": "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/product-renders/mora-process-straining-side.png",
+      "dimensions": "1536x1024",
+      "aspect": "3:2",
+      "sha256": "f1ac5f4c780899e2c71762c1eed2428aa48e12762205752f55dc9e8627678c5b"
+    },
+    {
+      "asset_id": "ST3-PROCESS-FOLDING-14",
+      "prompt_id": "ST3-META-PROMPT-FOLD-14",
+      "generated_source": "/Users/ddd/.codex/generated_images/01a0384a-4fe0-78c2-a96f-56879b8bef75/exec-54df3cb3-85d2-4fe2-a50c-c293ad83b190.png",
+      "path": "assets/product-renders/mora-process-folding-detail.png",
+      "absolute_path": "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/product-renders/mora-process-folding-detail.png",
+      "dimensions": "1536x1024",
+      "aspect": "3:2",
+      "sha256": "1448166100ac9a52dbe2258af8f8a9fdf1f7f2166d66e475124d9ba8bc881615"
+    }
+  ],
+  "truth_boundary": "All five outputs are generated commercial-visual directions. They do not prove a founder, employee, facility, production run, recipe, ingredient safety, food-contact status, process time, temperature, dose, yield, pH, shelf life, nutrition, origin, handmade or sustainability performance."
+}

@@ -1,0 +1,16 @@
+current_stage: SOURCE_REVIEW_REQUIRED
+gates:
+  A0_SOURCE_BRIEF_LOCKED: pass
+  A1_SOURCE_EVIDENCE_PACKAGE_COMPLETE: pass
+  A2_SOURCE_ANATOMY_COMPLETE: pass
+  A3_SOURCE_GRAMMAR_AND_SYSTEM_COMPLETE: pass
+  A4_SOURCE_ANALYSIS_DELIVERED: pass
+  A5_SOURCE_REVIEW_RECORDED: pending
+hard_stop:
+  status: active
+  next_required_action: "Review the source analysis and record adjustments or acceptance in stage-review.json."
+notes:
+  - "Rapid source research completed in 466 seconds without browser automation."
+  - "A user-authorized supplemental visual pass completed in 287 seconds without browser automation, adding 29 unique accepted visuals."
+  - "Stage 1 v1.2.0 adds three user-supplied mood references as contextual evidence with explicit provenance and rights gaps; the revised report is pending review."
+  - "Stage 1 remains source-only; the user's food-category direction is deferred to Stage 2."

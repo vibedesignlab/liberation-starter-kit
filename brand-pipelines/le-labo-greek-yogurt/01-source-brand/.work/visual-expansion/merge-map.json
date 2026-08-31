@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "supplemental_visual_merge_map",
+  "included": 29,
+  "excluded_duplicates": 0,
+  "items": [
+    {
+      "provisional_id": "EV-PP-01",
+      "evidence_id": "EV-013",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-01-santal33-50ml-neutral.jpg"
+    },
+    {
+      "provisional_id": "EV-PP-02",
+      "evidence_id": "EV-014",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-02-santal33-500ml-format.jpg"
+    },
+    {
+      "provisional_id": "EV-PP-03",
+      "evidence_id": "EV-015",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-03-santal33-15ml-sample.jpg"
+    },
+    {
+      "provisional_id": "EV-PP-04",
+      "evidence_id": "EV-016",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-04-personalized-label-hands.jpg"
+    },
+    {
+      "provisional_id": "EV-PP-05",
+      "evidence_id": "EV-017",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-05-discovery-open-box.jpg"
+    },
+    {
+      "provisional_id": "EV-PP-06",
+      "evidence_id": "EV-018",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-06-santal26-candle-neutral.jpg"
+    },
+    {
+      "provisional_id": "EV-PP-07",
+      "evidence_id": "EV-019",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-07-santal26-candle-detail.jpg"
+    },
+    {
+      "provisional_id": "EV-PP-08",
+      "evidence_id": "EV-020",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-08-hinoki-shower-gel.jpg"
+    },
+    {
+      "provisional_id": "EV-PP-09",
+      "evidence_id": "EV-021",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/product-packaging/EV-PP-09-hinoki-hand-pomade.jpg"
+    },
+    {
+      "provisional_id": "SS-01",
+      "evidence_id": "EV-022",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/space-service/SS-01-parent-brand-hero.jpg"
+    },
+    {
+      "provisional_id": "SS-02",
+      "evidence_id": "EV-023",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/space-service/SS-02-about-lab-banner.jpg"
+    },
+    {
+      "provisional_id": "SS-03",
+      "evidence_id": "EV-024",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/space-service/SS-03-refill-navigation.jpg"
+    },
+    {
+      "provisional_id": "SS-04",
+      "evidence_id": "EV-025",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/space-service/SS-04-refill-step-1.png"
+    },
+    {
+      "provisional_id": "SS-05",
+      "evidence_id": "EV-026",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/space-service/SS-05-refill-step-3.png"
+    },
+    {
+      "provisional_id": "SS-06",
+      "evidence_id": "EV-027",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/space-service/SS-06-refill-step-5.png"
+    },
+    {
+      "provisional_id": "SS-07",
+      "evidence_id": "EV-028",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/space-service/SS-07-refill-step-6.png"
+    },
+    {
+      "provisional_id": "SS-08",
+      "evidence_id": "EV-029",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/space-service/SS-08-refill-step-7.png"
+    },
+    {
+      "provisional_id": "VE-EC-001",
+      "evidence_id": "EV-030",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-001-films-hero-poster.jpg"
+    },
+    {
+      "provisional_id": "VE-EC-002",
+      "evidence_id": "EV-031",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-002-shanghai-souls-labs.jpg"
+    },
+    {
+      "provisional_id": "VE-EC-003",
+      "evidence_id": "EV-032",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-003-chicago-souls-labs.jpg"
+    },
+    {
+      "provisional_id": "VE-EC-004",
+      "evidence_id": "EV-033",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-004-mexico-city-souls-labs.jpg"
+    },
+    {
+      "provisional_id": "VE-EC-005",
+      "evidence_id": "EV-034",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-005-tokyo-souls-labs.jpg"
+    },
+    {
+      "provisional_id": "VE-EC-007",
+      "evidence_id": "EV-035",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-007-new-york-souls-labs.jpg"
+    },
+    {
+      "provisional_id": "VE-EC-008",
+      "evidence_id": "EV-036",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-008-bergamot-harvest.jpg"
+    },
+    {
+      "provisional_id": "VE-EC-009",
+      "evidence_id": "EV-037",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-009-denim-tote-craft.jpg"
+    },
+    {
+      "provisional_id": "VE-EC-010",
+      "evidence_id": "EV-038",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-010-concrete-candle-craft.jpg"
+    },
+    {
+      "provisional_id": "VE-EC-011",
+      "evidence_id": "EV-039",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-011-diffuser-craft.jpg"
+    },
+    {
+      "provisional_id": "VE-EC-014",
+      "evidence_id": "EV-040",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-014-le-journal-house-rules.png"
+    },
+    {
+      "provisional_id": "VE-EC-015",
+      "evidence_id": "EV-041",
+      "status": "included",
+      "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-015-le-journal-wish-you-wore-here.png"
+    }
+  ]
+}

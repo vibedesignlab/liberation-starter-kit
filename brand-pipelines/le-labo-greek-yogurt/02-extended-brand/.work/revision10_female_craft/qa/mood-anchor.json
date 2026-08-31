@@ -1,0 +1,53 @@
+{
+  "asset_id": "ST2-BRAND-MOOD-KEEPER-R10",
+  "path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/revision-r10/brand-mood/mora-keeper-last-measure-r10.png",
+  "dimensions": {
+    "width_px": 1536,
+    "height_px": 1024,
+    "aspect_ratio": "3:2",
+    "format": "PNG"
+  },
+  "acceptance_checks": [
+    {
+      "check": "The woman reads as the person with judgment authority, not a symbol of decorative femininity.",
+      "status": "pass",
+      "evidence": "Exactly one adult woman in practical charcoal workwear performs the record decision without camera gaze, glamour styling, domestic role cues or decorative femininity."
+    },
+    {
+      "check": "The room reads dark, accumulated and functional while all food-contact zones read safe and clean.",
+      "status": "pass",
+      "evidence": "Dark sealed-concrete and exposed-brick shell, functional covered-container archive and detailed graphite shadows surround a spotless stainless bench, bowl, paddle and clean cloth."
+    },
+    {
+      "check": "The image explains comparison and final verification without laboratory clichés.",
+      "status": "partial",
+      "evidence": "Dense strained yogurt, separated acid whey and the handwritten final check establish verification in a food context, with no coat, goggles, pipette or perfume apparatus. The maker looks primarily at the record rather than visibly alternating attention between the two states, so comparison is inferred from their placement."
+    },
+    {
+      "check": "Input/state, tool, action, intermediate output and record can each be identified.",
+      "status": "pass",
+      "evidence": "Dense strained yogurt state, stainless paddle, check-mark action, translucent acid-whey output and paper Batch Record are separately legible."
+    },
+    {
+      "check": "The left copy-safe zone remains usable for a landing-page headline.",
+      "status": "pass",
+      "evidence": "The left area is a continuous low-detail graphite wall, wider than the requested 25%, with no face, tool, signage, bright edge or strong shadow crossing it."
+    }
+  ],
+  "issues": [
+    "The comparison beat is quieter than the record beat because the maker's gaze is fixed on the paper.",
+    "The small generated form text is illustrative and must not be treated as approved batch data or legal copy.",
+    "The clear whey vessel is visually plausible in the food context but should be monitored in later use so it is not cropped into a laboratory-like standalone object."
+  ],
+  "generation_provenance": {
+    "mode": "built-in image generation",
+    "tool": "image_gen.imagegen",
+    "generation_count": 1,
+    "prompt_path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/prompts/revision-r10/ST2-BRAND-MOOD-KEEPER-R10.md",
+    "source_output_path": "/Users/ddd/.codex/generated_images/01a056d8-98f5-7cf2-adfc-cb69a080bd7e/exec-ad16608a-da5a-4172-8f72-aac07e69b9b3.png",
+    "sha256": "4dd0c1481d704a1a95f20cd07ab5befbb6fcf6000273e5ff7b3e60697c238b11",
+    "generated_at": "2026-08-31T17:18:06+09:00",
+    "inspection": "view_image at original detail"
+  },
+  "overall_status": "pass_with_one_partial_check"
+}

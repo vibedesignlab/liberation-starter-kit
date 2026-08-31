@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.1.0",
+  "artifact_type": "landing_materials_input",
+  "status": "active",
+  "extended_brand_source": {
+    "package_path": "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/02-extended-brand",
+    "json_path": "outputs/extended-brand-anatomy.json",
+    "asset_registry_path": "asset-registry.json",
+    "review_path": "stage-review.json"
+  },
+  "language": "ko-KR",
+  "landing_goal": "Revision 10 Stage 2의 여성 메이커 책임·선택·보이는 변환·마지막 확인·부분 Batch Record를 현재 랜딩의 그리드와 스크롤 구조 안에 정확히 전환하고, 각 실제 이미지 슬롯과 동일한 비율·안전영역·고해상도 납품 규격의 상업사진 에셋 패키지를 완성한다.",
+  "goal_source": "사용자의 2026-08-31 Stage 3 갱신 지시와 승인된 Stage 2 MORA Revision 10/R16–R18 Extended Brand Anatomy",
+  "selected_narrative_route": "NR-10-01 — 마지막까지 보는 사람",
+  "known_constraints": [
+    "Stage 2의 6제품 라인업을 그대로 유지한다.",
+    "개별 컵은 low-wide transparent 150 g wide-mouth jar, 60–70% 이상 edible witness area, 30–40% 이하 부분 무코팅 Batch Record, 기능적 식품 seal을 사용하며 direct-print-only 체계와 향수형 실루엣을 현행 방향에서 폐기한다.",
+    "브랜드 무드는 strict front, exact side, true aerial을 역할별로 분리하고 제품 사진은 strict frontal, 원재료 folio는 strict 90° aerial로 통일한다.",
+    "원재료·infusion base·중간 산출물·완성 trace를 인과적으로 연결하되 향수·위스키·조제소 은유를 쓰지 않는다.",
+    "실제 창립자 사실, 레시피, 식품안전, 법정 표시, 포장 성능이 확인되기 전에는 방향성·검증 대기 경계를 명시한다.",
+    "현재 MoraLandingPage의 섹션 순서, 2열 SplitEditorial, 2×2 sticky product grid, 1:2 sticky main scroll, VesselPhaseBlock과 FullBleedSection의 스크롤·레이아웃 구조를 유지한다.",
+    "FullBleed 3:2, sticky main 1:2, product·ingredient 1:1을 서로 다른 source master로 제작하고 object-fit cover가 maker action, jar, Batch Record, ingredient group, tool–output 인과를 자르지 않게 한다.",
+    "Stage 3 신규 delivery master는 3:2 3072×2048, 1:2 2048×4096, 1:1 2048×2048 이상으로 제공하며 native 생성본과 resampled 납품본을 구분해 기록한다.",
+    "브라우저 자동화와 HTML 리포트는 사용하지 않는다."
+  ],
+  "user_wording": [
+    "브랜드 스토리텔링: 핵심 가치, 창업자 스토리, 제조 방식 및 재료",
+    "시그네처 원재료, 재료 인퓨징 원액, 중간 산출물, 최종 제품, 패키징 및 고객경험을 런칭 수준으로 구체화",
+    "commercial photography skill과 이전 문서를 기준으로 정면, 측면, aerial 브랜드 무드 사진 제작",
+    "제품 사진은 100% 정면, 원재료·인퓨징·제품 메타 정보를 시각화하는 다양한 사진 제작",
+    "계획 후 no blocker 병렬 오케스트레이션으로 즉시 진행",
+    "현재 랜딩페이지의 컴포넌트와 레이아웃 구성, 특히 그리드와 스크롤 인터랙션은 최대한 유지",
+    "현재 3번 문서 이미지의 cropped 문제를 역할별 구도와 비율로 해결하고 3번부터 고해상도 이미지로 생성"
+  ]
+}

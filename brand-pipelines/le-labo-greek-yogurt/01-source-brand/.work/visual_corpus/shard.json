@@ -1,0 +1,396 @@
+{
+  "schema_version": "1.0.0",
+  "brand": "Le Labo",
+  "scope": "Current Le Labo masterbrand, official global/US owned web channels",
+  "capture_date": "2026-08-24",
+  "method": "Direct HTTP retrieval and static HTML/CSS inspection only; no screenshots or browser automation.",
+  "sources": [
+    {
+      "id": "SRC-LL-001",
+      "title": "Le Labo official homepage",
+      "url": "https://www.lelabofragrances.com/",
+      "tier": "primary",
+      "coverage": ["masterbrand wordmark", "persistent digital UI", "navigation key visuals", "product recommendations"]
+    },
+    {
+      "id": "SRC-LL-002",
+      "title": "About Us",
+      "url": "https://www.lelabofragrances.com/about-us.html",
+      "tier": "primary",
+      "coverage": ["manifesto", "labs", "craftspeople", "collections", "roots and first lab"]
+    },
+    {
+      "id": "SRC-LL-003",
+      "title": "Le Journal",
+      "url": "https://www.lelabofragrances.com/le-journal.html",
+      "tier": "primary",
+      "coverage": ["editorial platform", "broadsheet key visual", "digital content translation"]
+    },
+    {
+      "id": "SRC-LL-004",
+      "title": "Discovery Sets",
+      "url": "https://www.lelabofragrances.com/discovery-sets.html",
+      "tier": "primary",
+      "coverage": ["product lineup", "packaging", "PDP image treatment"]
+    },
+    {
+      "id": "SRC-LL-005",
+      "title": "Official core stylesheet",
+      "url": "https://www.lelabofragrances.com/css/style.css?pdk=25112",
+      "tier": "primary",
+      "coverage": ["logo asset mapping", "canvas and UI colors", "typographic role usage", "layout behavior"]
+    },
+    {
+      "id": "SRC-LL-006",
+      "title": "Official font and redesign stylesheet",
+      "url": "https://www.lelabofragrances.com/css/redesign-style.css?pdk=25112",
+      "tier": "primary",
+      "coverage": ["webfont faces", "font weights and fallbacks", "localized font references", "store UI colors"]
+    }
+  ],
+  "visuals": [
+    {
+      "id": "EV-LL-001",
+      "local_path": "evidence/visuals/EV-LL-001-masterbrand-wordmark.png",
+      "source_url": "https://www.lelabofragrances.com/css/images/logonew.png",
+      "page_url": "https://www.lelabofragrances.com/",
+      "title": "Official masterbrand wordmark used by the site header",
+      "dimensions": {"width": 295, "height": 86},
+      "sha256": "2f828e23541fd12528a99bb8a3497b50d392c663081a8f5f8f8097ee23b11063",
+      "layer": "identity-and-channel-tokens",
+      "role": "masterbrand-logo-wordmark",
+      "credit": "Le Labo / official owned site",
+      "rights": "First-party copyrighted brand asset; retained locally for research evidence only."
+    },
+    {
+      "id": "EV-LL-002",
+      "local_path": "evidence/visuals/EV-LL-002-about-navigation-key-visual.jpg",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/content/1657_ONE_SIZE_IMAGE_01_15948_-1989191555.jpg",
+      "page_url": "https://www.lelabofragrances.com/",
+      "title": "About Us navigation key visual: Le Journal on concrete",
+      "dimensions": {"width": 1500, "height": 1500},
+      "sha256": "04dd17c6bc788731316daee1f955fead768edd607b14324f18c4ad0a34eea0e0",
+      "layer": "key-visual",
+      "role": "digital-navigation-editorial-tile",
+      "credit": "Le Labo / official owned site",
+      "rights": "First-party copyrighted image; retained locally for research evidence only."
+    },
+    {
+      "id": "EV-LL-003",
+      "local_path": "evidence/visuals/EV-LL-003-city-exclusive-navigation-key-visual.jpg",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/content/1642_ONE_SIZE_IMAGE_01_15420_-1884041759.jpg",
+      "page_url": "https://www.lelabofragrances.com/",
+      "title": "City Exclusive discovery-set navigation key visual",
+      "dimensions": {"width": 1500, "height": 1500},
+      "sha256": "e0154aae97901b4faeb8d7439f47d6ca4d80ac6b568bffcaed11eb809a77ab92",
+      "layer": "key-visual",
+      "role": "digital-navigation-product-and-packaging-tile",
+      "credit": "Le Labo / official owned site",
+      "rights": "First-party copyrighted image; retained locally for research evidence only."
+    },
+    {
+      "id": "EV-LL-004",
+      "local_path": "evidence/visuals/EV-LL-004-roots-first-lab.jpg",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/cms/7_ONE_SIZE_IMAGE_02_12241_-354847209.jpg",
+      "page_url": "https://www.lelabofragrances.com/about-us.html#roots",
+      "title": "Roots: first lab at 233 Elizabeth Street",
+      "dimensions": {"width": 2000, "height": 1362},
+      "sha256": "cc74fa26b9a8e296863f263100f4e0b84eb91a2de346c1f402ec80d0a5f9f4ed",
+      "layer": "space-and-service",
+      "role": "laboratory-store-exterior-and-origin",
+      "credit": "Le Labo / official About Us page",
+      "rights": "First-party copyrighted image; retained locally for research evidence only."
+    },
+    {
+      "id": "EV-LL-005",
+      "local_path": "evidence/visuals/EV-LL-005-sandalwood-harvest-film-poster.jpg",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/cms/188_SMALL_IMAGE_01_12289_-987721857.jpg",
+      "page_url": "https://www.lelabofragrances.com/about-us.html#craftspeople",
+      "title": "Sandalwood Harvest film poster, Kimberley",
+      "dimensions": {"width": 1080, "height": 1440},
+      "sha256": "20df96e689a0eb66fd5827840d2b225383d29a9d32fc62f8b13ce0224a5c368b",
+      "layer": "photography-and-film",
+      "role": "craftsperson-environmental-portrait",
+      "credit": "Le Labo / official Craftspeople gallery",
+      "rights": "First-party film poster; retained locally for research evidence only."
+    },
+    {
+      "id": "EV-LL-006",
+      "local_path": "evidence/visuals/EV-LL-006-rose-harvest-film-poster.jpg",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/cms/186_SMALL_IMAGE_01_13228_2003511354.jpg",
+      "page_url": "https://www.lelabofragrances.com/about-us.html#craftspeople",
+      "title": "Rose Harvest film poster, Grasse",
+      "dimensions": {"width": 1080, "height": 1440},
+      "sha256": "73c357390ed832648570d83c518d09b4ae3e83c1064637fda2d50023e8d2d7ac",
+      "layer": "photography-and-film",
+      "role": "hands-at-work-and-ingredient-detail",
+      "credit": "Le Labo / official Craftspeople gallery",
+      "rights": "First-party film poster; retained locally for research evidence only."
+    },
+    {
+      "id": "EV-LL-007",
+      "local_path": "evidence/visuals/EV-LL-007-neon-sign-film-poster.jpg",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/cms/450_SMALL_IMAGE_01_12295_2116627810.jpg",
+      "page_url": "https://www.lelabofragrances.com/about-us.html#craftspeople",
+      "title": "Neon Sign film poster, New York",
+      "dimensions": {"width": 1080, "height": 1440},
+      "sha256": "2a19b9cdff668c1e6b1e970ac0d474fa22c77d1229bb5e67fe2c63d7a02d25e7",
+      "layer": "photography-and-film",
+      "role": "craft-process-hands-and-tool-detail",
+      "credit": "Le Labo / official Craftspeople gallery",
+      "rights": "First-party film poster; retained locally for research evidence only."
+    },
+    {
+      "id": "EV-LL-008",
+      "local_path": "evidence/visuals/EV-LL-008-classic-collection-tile.jpg",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/content/603_IMG_600_IMAGE_01_7824_93178760.jpg",
+      "page_url": "https://www.lelabofragrances.com/about-us.html#collections",
+      "title": "Classic Collection family with hand interaction",
+      "dimensions": {"width": 1080, "height": 1080},
+      "sha256": "fc5baf34e3c07c0f24672e1fd1f6aefac5e7128661ee9deeb5122adb56900d3e",
+      "layer": "product-representation",
+      "role": "product-family-and-selection-gesture",
+      "credit": "Le Labo / official Collections gallery",
+      "rights": "First-party copyrighted image; retained locally for research evidence only."
+    },
+    {
+      "id": "EV-LL-009",
+      "local_path": "evidence/visuals/EV-LL-009-body-hair-face-collection-tile.jpg",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/content/603_IMG_600_IMAGE_04_7827_-1954985727.jpg",
+      "page_url": "https://www.lelabofragrances.com/about-us.html#collections",
+      "title": "Body Hair Face products in use",
+      "dimensions": {"width": 1080, "height": 1080},
+      "sha256": "3e1267f97699b8a325b292edd4a791f793ca770b5180567427dd63093463cd46",
+      "layer": "product-representation",
+      "role": "product-in-use-and-packaging-label",
+      "credit": "Le Labo / official Collections gallery",
+      "rights": "First-party copyrighted image; retained locally for research evidence only."
+    },
+    {
+      "id": "EV-LL-010",
+      "local_path": "evidence/visuals/EV-LL-010-discovery-set-product.jpg",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/skus/J2B001R000__PRODUCT_08--IMG_1200--DISCOVERYSET--2781293.jpg",
+      "page_url": "https://www.lelabofragrances.com/discovery-sets.html",
+      "title": "Discovery Set shipping box and personalized label",
+      "dimensions": {"width": 1200, "height": 1200},
+      "sha256": "1b7274a5d5436fbdd93714300a004c5c4fff84e13087b92d6e9e6375fcc054f7",
+      "layer": "packaging-and-unboxing",
+      "role": "neutral-pdp-packaging-view",
+      "credit": "Le Labo / official product catalog",
+      "rights": "First-party product image; retained locally for research evidence only."
+    },
+    {
+      "id": "EV-LL-011",
+      "local_path": "evidence/visuals/EV-LL-011-le-journal-editorial.jpg",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/content/526_LARGE_IMAGE_01_12914_-519918144.jpg",
+      "page_url": "https://www.lelabofragrances.com/le-journal.html",
+      "title": "Le Journal broadsheet placed in the street",
+      "dimensions": {"width": 2000, "height": 528},
+      "sha256": "621390c1e200a4fa8e1d492a0297d90620b4ab80a514ab6ffb2c3c94477e8282",
+      "layer": "brand-mood-and-world",
+      "role": "editorial-city-environment-banner",
+      "credit": "Le Labo / official Le Journal page",
+      "rights": "First-party copyrighted image; retained locally for research evidence only."
+    },
+    {
+      "id": "EV-LL-012",
+      "local_path": "evidence/visuals/EV-LL-012-le-journal-key-visual.jpg",
+      "source_url": "https://lelabo.ips.photos/lelabo-java/images/content/527_LARGE_IMAGE_01_7609_-517523482.png",
+      "page_url": "https://www.lelabofragrances.com/le-journal.html",
+      "title": "Le Journal bundled broadsheets handled by a person",
+      "dimensions": {"width": 1568, "height": 1050},
+      "sha256": "0216daabd10b174819a4cd9b37f3cfe9cefc557334413ef8f31906d5977da4cb",
+      "layer": "key-visual",
+      "role": "editorial-format-and-service-object",
+      "credit": "Le Labo / official Le Journal page",
+      "rights": "First-party copyrighted image; upstream URL uses .png while response bytes are JPEG; retained locally for research evidence only."
+    }
+  ],
+  "visual_rules": [
+    {
+      "status": "Observed",
+      "confidence": "high",
+      "rule": "When the masterbrand anchors owned web UI, use the supplied black transparent wordmark against quiet pale or white channel surfaces so the mark remains small, direct, and unornamented.",
+      "evidence_ids": ["EV-LL-001"],
+      "scope": "Current official US website header; no public identity manual was found."
+    },
+    {
+      "status": "Observed",
+      "confidence": "high",
+      "rule": "When presenting fragrance families or packaging, keep utilitarian black-on-white label information legible and pair it with clear glass, uncoated kraft board, or restrained neutral materials because specification-like labeling carries product identity.",
+      "evidence_ids": ["EV-LL-003", "EV-LL-008", "EV-LL-010"],
+      "scope": "Official discovery and classic-product imagery."
+    },
+    {
+      "status": "Observed",
+      "confidence": "high",
+      "rule": "When showing craft, foreground a worker, hands, ingredient, or tool in the act of making and tolerate motion blur, grain, silhouette, and low light because process is represented as lived work rather than polished demonstration.",
+      "evidence_ids": ["EV-LL-005", "EV-LL-006", "EV-LL-007"],
+      "scope": "Official Craftspeople film posters; film-wide motion grammar remains unverified."
+    },
+    {
+      "status": "Observed",
+      "confidence": "high",
+      "rule": "When translating product into an editorial collection tile, isolate a short product family on tactile neutral surfaces and add one hand or use gesture so the image conveys choice or application without becoming a conventional lifestyle scene.",
+      "evidence_ids": ["EV-LL-008", "EV-LL-009"],
+      "scope": "About Us collection tiles."
+    },
+    {
+      "status": "Observed",
+      "confidence": "high",
+      "rule": "When extending the brand into editorial content, make a physical newspaper the focal object and place dense black typographic composition against concrete, metal, pavement, rope, and wood because the editorial identity depends on friction between print culture and urban material reality.",
+      "evidence_ids": ["EV-LL-002", "EV-LL-011", "EV-LL-012"],
+      "scope": "Current Le Journal surfaces."
+    },
+    {
+      "status": "Observed",
+      "confidence": "high",
+      "rule": "When representing place and service, preserve the laboratory/store as part of the existing street fabric with worn metal, glass, concrete, exposed equipment, and modest signage because the environment communicates working-lab authenticity rather than pristine boutique spectacle.",
+      "evidence_ids": ["EV-LL-004"],
+      "scope": "Official Roots image of the first lab; broader store-network consistency is unresolved."
+    },
+    {
+      "status": "Observed",
+      "confidence": "medium",
+      "rule": "When a desktop navigation category expands, lead with one square photographic key visual and an uppercase text overlay while the adjacent column carries the deeper link hierarchy, concentrating image impact without replacing the functional menu.",
+      "evidence_ids": ["EV-LL-002", "EV-LL-003"],
+      "scope": "Current official desktop navigation markup and assets; responsive rendered states were not captured."
+    }
+  ],
+  "typography": [
+    {
+      "status": "Observed",
+      "family": "Bell Gothic Std",
+      "roles": ["body default in core CSS", "navigation", "uppercase headings", "buttons and actions"],
+      "weights": [400, 700],
+      "styles": ["normal"],
+      "formats": ["EOT", "WOFF", "TTF", "SVG"],
+      "artifact_urls": [
+        "https://www.lelabofragrances.com/css/fonts/bellgothicstd-black-webfont.woff",
+        "https://www.lelabofragrances.com/css/fonts/bellgotchicstdbold-webfont.woff"
+      ],
+      "css_stack": "'Bell Gothic Std', 'Arial', 'Helvetica', sans-serif",
+      "locale_script_scope": "Latin-site roles observed; full glyph coverage not audited.",
+      "source_url": "https://www.lelabofragrances.com/css/redesign-style.css?pdk=25112",
+      "observed_at": "2026-08-24"
+    },
+    {
+      "status": "Observed",
+      "family": "Magda / Magda Pro",
+      "roles": ["supporting body copy", "forms", "metadata", "Le Journal descriptive copy"],
+      "weights": [400, 700],
+      "styles": ["normal"],
+      "formats": ["EOT", "WOFF", "TTF", "SVG"],
+      "artifact_urls": [
+        "https://www.lelabofragrances.com/css/fonts/magda-light.woff",
+        "https://www.lelabofragrances.com/css/fonts/MagdaPro_400_normal_1447935989.woff",
+        "https://www.lelabofragrances.com/css/fonts/MagdaPro.woff"
+      ],
+      "css_stack": "'Magda', sans-serif; 'Magda Pro' where explicitly assigned",
+      "locale_script_scope": "Latin-site roles observed; full glyph coverage not audited.",
+      "source_url": "https://www.lelabofragrances.com/css/redesign-style.css?pdk=25112",
+      "observed_at": "2026-08-24"
+    },
+    {
+      "status": "Observed",
+      "family": "Helvetica Neue LT Std 47 Light Condensed exposed as Helvetica",
+      "roles": ["prices", "captions", "secondary links and supporting information"],
+      "weights": [400],
+      "styles": ["normal"],
+      "formats": ["EOT", "WOFF", "TTF", "SVG"],
+      "artifact_urls": ["https://www.lelabofragrances.com/css/fonts/helveticaneueltstd-ltcn-webfont.woff"],
+      "css_stack": "'Helvetica', sans-serif",
+      "locale_script_scope": "Latin-site roles observed; full glyph coverage not audited.",
+      "source_url": "https://www.lelabofragrances.com/css/redesign-style.css?pdk=25112",
+      "observed_at": "2026-08-24"
+    },
+    {
+      "status": "Observed",
+      "family": "Sang Sang / Huiwen-mincho",
+      "roles": ["Korean location-language substitution", "localized East Asian font reference"],
+      "weights": [400],
+      "styles": ["normal"],
+      "formats": ["TTF"],
+      "artifact_urls": [
+        "https://www.lelabofragrances.com/css/fonts/SangSangClover_Regular.ttf",
+        "https://www.lelabofragrances.com/css/fonts/Huiwen-Mincho.ttf"
+      ],
+      "css_stack": "'Sang Sang', sans-serif; 'Huiwen-mincho'",
+      "locale_script_scope": "CSS explicitly assigns Sang Sang to KR location-language text; Huiwen-mincho assignment and glyph coverage not fully audited.",
+      "source_url": "https://www.lelabofragrances.com/css/redesign-style.css?pdk=25112",
+      "observed_at": "2026-08-24"
+    }
+  ],
+  "color_references": [
+    {
+      "status": "Observed",
+      "value": "#000000",
+      "layer": "identity-and-channel-token",
+      "role": "transparent wordmark pixels and default body text",
+      "channel": "official US website",
+      "source_ids": ["SRC-LL-001", "SRC-LL-005"],
+      "evidence_ids": ["EV-LL-001"],
+      "limit": "The black logo asset is direct identity evidence; the CSS text value is channel implementation evidence."
+    },
+    {
+      "status": "Observed",
+      "value": "#f6f8f6",
+      "layer": "identity-surface-candidate / owned-digital canvas",
+      "role": "desktop body and container canvas",
+      "channel": "official US website",
+      "source_ids": ["SRC-LL-005"],
+      "evidence_ids": [],
+      "limit": "Observed as persistent web canvas, not confirmed by a public identity manual as a universal masterbrand color."
+    },
+    {
+      "status": "Observed",
+      "value": "#ffffff",
+      "layer": "owned-digital surface",
+      "role": "header, navigation, form and footer surfaces",
+      "channel": "official US website",
+      "source_ids": ["SRC-LL-005", "SRC-LL-006"],
+      "evidence_ids": [],
+      "limit": "Channel surface value, not independently established as a masterbrand identity color."
+    },
+    {
+      "status": "Observed",
+      "value": "#595959",
+      "layer": "interaction",
+      "role": "primary grey button and store-locator action background",
+      "channel": "official US website",
+      "source_ids": ["SRC-LL-005", "SRC-LL-006"],
+      "evidence_ids": [],
+      "limit": "Interaction color only; must not be reported as a masterbrand identity color."
+    },
+    {
+      "status": "Observed",
+      "value": "#333333",
+      "layer": "interaction-and-content",
+      "role": "hover state and repeated dark supporting text",
+      "channel": "official US website",
+      "source_ids": ["SRC-LL-005", "SRC-LL-006"],
+      "evidence_ids": [],
+      "limit": "Owned-digital UI reference only."
+    },
+    {
+      "status": "Observed",
+      "value": "#ececec",
+      "layer": "owned-digital structure",
+      "role": "persistent header/footer and field divider lines",
+      "channel": "official US website",
+      "source_ids": ["SRC-LL-005"],
+      "evidence_ids": [],
+      "limit": "Structural UI neutral, not an identity claim."
+    }
+  ],
+  "gaps": [
+    "No current public first-party identity manual or explicit masterbrand color specification was located in the rapid window.",
+    "The official wordmark file is verified, but alternate lockups, clear-space rules, and authorized monochrome variants remain unresolved.",
+    "Webfonts are exposed by first-party CSS; licensing and redistribution permissions were not established, so no font files were copied.",
+    "Responsive menu behavior and motion were inspected only from static source; no screenshots, browser automation, or extracted video frames were used.",
+    "The Roots image establishes one first-lab environment but does not prove consistency across the global store network.",
+    "Film posters support still-image craft language; edit rhythm, sound, and full motion grammar remain unverified.",
+    "Image authorship beyond Le Labo's first-party publication was not credited in the inspected pages.",
+    "The upstream URL for EV-LL-012 ends in .png but returned JPEG bytes; the local extension was normalized to .jpg and the hash records the received bytes."
+  ]
+}

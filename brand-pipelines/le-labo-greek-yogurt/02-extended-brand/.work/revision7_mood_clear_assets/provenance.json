@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "created_date": "2026-08-26",
+  "generator": "OpenAI built-in image_gen via imagegen skill",
+  "browser_automation_used": false,
+  "operation": "non-destructive raster edits of two existing Stage 2 brand-mood images",
+  "inputs": [
+    {
+      "relative_path": "assets/brand-mood/mora-packing-table-front.png",
+      "absolute_path": "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/brand-mood/mora-packing-table-front.png",
+      "role": "front edit target",
+      "sha256": "f23d7d90580809b186755b36fb28cc766aeb3d4ca57dee5d7210375bdb20ef5f",
+      "dimensions": "1536x1024"
+    },
+    {
+      "relative_path": "assets/brand-mood/mora-packing-table-side.png",
+      "absolute_path": "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/brand-mood/mora-packing-table-side.png",
+      "role": "side edit target",
+      "sha256": "0c1b3d70b4435bd5d517c1b62aeebee4e79dd2e1684452a93a94216ad87d5e18",
+      "dimensions": "1536x1024"
+    },
+    {
+      "relative_path": "assets/product-hero/mora-thyme-honey-clear-witness-hero-v3.png",
+      "absolute_path": "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/product-hero/mora-thyme-honey-clear-witness-hero-v3.png",
+      "role": "clear-cup packaging-form reference only",
+      "dimensions": "1672x941"
+    }
+  ],
+  "generation_chain": [
+    {
+      "step": 1,
+      "name": "front precise-object edit",
+      "default_generated_path": "/Users/ddd/.codex/generated_images/01a0384a-4fe0-78c2-a96f-56879b8bef75/exec-a327f07a-91b1-45f5-aa2d-ae0e1a79cabe.png",
+      "selected": true,
+      "workspace_copy": "assets/brand-mood/mora-direct-print-inspection-front-v2.png"
+    },
+    {
+      "step": 2,
+      "name": "side precise-object edit",
+      "default_generated_path": "/Users/ddd/.codex/generated_images/01a0384a-4fe0-78c2-a96f-56879b8bef75/exec-7e38ed95-db4e-4e1d-a06a-a7634230397f.png",
+      "selected": false,
+      "reason": "Package and continuity passed, but MORA was larger than the locked recipe-first hierarchy."
+    },
+    {
+      "step": 3,
+      "name": "side typography-only correction",
+      "default_generated_path": "/Users/ddd/.codex/generated_images/01a0384a-4fe0-78c2-a96f-56879b8bef75/exec-e7c356df-a183-4d51-a34b-3c56cf8e9070.png",
+      "selected": true,
+      "workspace_copy": "assets/brand-mood/mora-direct-print-inspection-side-v2.png"
+    }
+  ],
+  "outputs": [
+    {
+      "asset_id": "ST2-R7-PRINT-CHECK-FRONT-02",
+      "relative_path": "assets/brand-mood/mora-direct-print-inspection-front-v2.png",
+      "absolute_path": "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/brand-mood/mora-direct-print-inspection-front-v2.png",
+      "sha256": "57f74183d164816b48b159043d5fe4f22215cb609d04b427d9720eb5a9af1a8b",
+      "format": "PNG RGB",
+      "dimensions": "1536x1024"
+    },
+    {
+      "asset_id": "ST2-R7-PRINT-CHECK-SIDE-03",
+      "relative_path": "assets/brand-mood/mora-direct-print-inspection-side-v2.png",
+      "absolute_path": "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/brand-mood/mora-direct-print-inspection-side-v2.png",
+      "sha256": "08086e394d5ff30a64a41276a45846dcca8be69482982b4f49d305f658caa31a",
+      "format": "PNG RGB",
+      "dimensions": "1536x1024"
+    }
+  ],
+  "rights_and_truth_boundary": "Generated directional imagery based on prior generated Stage 2 images. The depicted maker is not a founder, employee or source-evidence claim. The visuals do not validate the cup material, food contact, barrier, shelf life, foil seal, print method, ink adhesion, migration, line procedure, inspection tolerance, freshness or sustainability."
+}

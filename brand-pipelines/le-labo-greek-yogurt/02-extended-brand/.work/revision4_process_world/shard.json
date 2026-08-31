@@ -1,0 +1,420 @@
+{
+  "artifact_type": "stage2_process_world_shard",
+  "schema_version": "1.0",
+  "status": "directional_requires_food_science_and_legal_validation",
+  "working_system": {
+    "name": "MORA Small-Batch Method v0.1",
+    "world_principle": "장인정신을 어두운 실험실 분위기나 손맛의 수사로 만들지 않는다. 세척, 온도, pH, 기다림, 거름, 저전단 폴딩처럼 실제로 관찰 가능한 관리 행위와 그 사이에 생기는 중간 산출물이 프리미엄의 증거가 된다.",
+    "selected_pilot_route": "상업적으로 살균된 우유를 위생적인 소규모 배치 장비에서 열처리하고, 표준 요거트 스타터로 발효한 뒤 냉장 상태에서 천 또는 식품용 필터로 유청을 빼는 post-fermentation straining route. 재료별 preparation base는 별도 위생 공정에서 만든 뒤 농축 요거트에 계량·저전단 폴딩하고 냉간 충전한다.",
+    "scaled_route_boundary": "생산 규모가 커지면 발효 후 nozzle separator 또는 ultrafiltration으로 농축할 수 있다. 수제 냉장 거름과 산업용 separator/UF를 한 배치에서 동시에 쓴 것처럼 보여 주거나 주장하지 않는다.",
+    "craft_evidence_rule": "각 장면은 한 개의 실제 공정 목적, 그 목적에 필요한 식품용 도구, 전후가 다른 한 개의 중간 상태를 함께 보여 준다. 장식용 비커·피펫·약병·향수병은 금지한다."
+  },
+  "process_stages": [
+    {
+      "id": "PW-01",
+      "story_title": "Milk → Measure",
+      "stage": "sanitized_intake_and_batch_standardization",
+      "purpose": "일관된 배치의 출발점을 만들고 오염 위험을 낮춘다.",
+      "method_direction": "상업적으로 살균된 우유와 승인된 원료만 입고하고, 세척·소독된 작업면과 용기에서 배치 중량과 원료 로트를 기록한다. 지방·고형분 조정 여부는 확정 레시피에만 따른다.",
+      "tools": [
+        "lidded food-grade stainless receiving vessel",
+        "calibrated platform scale",
+        "food measuring jug",
+        "sanitation station and batch sheet"
+      ],
+      "observable_evidence": [
+        "빈 도구가 아닌 실제 계량 중인 우유",
+        "저울 위 용기와 한 배치 단위의 로트 카드",
+        "건조된 청결 도구와 분리된 원료·완제품 동선"
+      ],
+      "intermediate_output": "measured pasteurized milk base",
+      "claim_status": "directional; exact milk composition and supplier specifications pending"
+    },
+    {
+      "id": "PW-02",
+      "story_title": "Heat → Body",
+      "stage": "yogurt_milk_heat_treatment",
+      "purpose": "경쟁 미생물을 제어하고 단백질 네트워크가 밀도 있게 형성될 조건을 만든다.",
+      "method_direction": "산업 자료의 일반 방향은 90–95°C에서 약 5분이다. 소규모 파일럿은 장비·우유 조성·배치 크기에 맞춰 중심 온도와 유지 시간을 식품안전 전문가가 검증해야 한다.",
+      "tools": [
+        "jacketed stainless vat or food-grade double boiler",
+        "calibrated immersion probe thermometer",
+        "timer",
+        "broad stainless stirring paddle"
+      ],
+      "observable_evidence": [
+        "프로브가 실제 우유 안에 잠긴 상태",
+        "타이머와 온도 기록이 같은 배치에 연결된 모습",
+        "눌어붙지 않게 천천히 움직이는 넓은 패들"
+      ],
+      "intermediate_output": "heat-treated yogurt milk",
+      "claim_status": "evidence-based process direction; final time-temperature schedule not yet validated for MORA"
+    },
+    {
+      "id": "PW-03",
+      "story_title": "Culture → Set",
+      "stage": "cool_inoculate_and_ferment",
+      "purpose": "스타터가 유당을 젖산으로 전환하도록 해 우유를 산성화하고 단백질 젤을 형성한다.",
+      "method_direction": "열처리한 우유를 사용 스타터가 요구하는 접종 온도로 식힌 뒤 Streptococcus thermophilus와 Lactobacillus delbrueckii subsp. bulgaricus 계열의 승인된 요거트 스타터를 계량해 넣는다. 덮인 발효 용기에서 흔들지 않고 배양하며, 시간만으로 끝내지 않고 검증된 목표 pH 방향인 약 4.2–4.5와 관능·점도를 함께 확인한다.",
+      "tools": [
+        "lidded stainless incubation vessel",
+        "temperature-controlled water bath or proofing cabinet",
+        "calibrated food pH meter",
+        "sanitized sample cup and culture dosing scale"
+      ],
+      "observable_evidence": [
+        "봉인된 발효 용기와 온도 제어 장치",
+        "식품 샘플 컵에서 수행하는 pH 측정",
+        "흐르는 우유에서 움직임을 유지하는 흰 응고체로 바뀐 전후 상태"
+      ],
+      "intermediate_output": "cultured yogurt gel or coagulum",
+      "claim_status": "culture identity is category-grounded; strain, dose, inoculation temperature and release pH require supplier and pilot validation"
+    },
+    {
+      "id": "PW-04",
+      "story_title": "Set → Still",
+      "stage": "acidification_arrest_and_gentle_cooling",
+      "purpose": "목표 산도에서 추가 발효를 늦추고 취약한 젤 구조를 보존한다.",
+      "method_direction": "목표 pH에 도달한 즉시 검증된 냉각 프로그램으로 온도를 낮춘다. 응고물은 펌핑·강한 교반·반복 이송에 민감하므로 최소 동작으로 다룬다.",
+      "tools": [
+        "jacketed cooling vessel or controlled ice-water bath",
+        "calibrated probe thermometer",
+        "wide low-shear paddle",
+        "covered cold-hold vessel"
+      ],
+      "observable_evidence": [
+        "냉각 전후 온도 기록",
+        "휘젓지 않고 한 번 넓게 받치는 패들 동작",
+        "무너지지 않은 젤 표면과 소량의 자연스러운 유청"
+      ],
+      "intermediate_output": "cooled cultured gel",
+      "claim_status": "directional; exact cooling curve and hold limits pending process validation"
+    },
+    {
+      "id": "PW-05",
+      "story_title": "Set → Whey + Concentrate",
+      "stage": "refrigerated_post_fermentation_straining",
+      "purpose": "발효 젤에서 유청을 분리해 그릭요거트의 되직한 농축 베이스를 만든다.",
+      "method_direction": "소규모 배치에서는 이중 모슬린·치즈클로스 또는 검증된 식품용 필터를 천공 스테인리스 프레임에 걸고, 덮은 채 냉장 상태에서 유청을 받는다. WSU의 가정용 참고 범위는 8–24시간이지만 MORA의 실제 시간·수율·온도는 점도, pH, 미생물, 냉장 설비를 함께 검증해 정한다.",
+      "tools": [
+        "double muslin or food-grade filter cloth",
+        "perforated stainless draining frame or chinois",
+        "deep stainless whey catch pan or clear wide-neck food-safe carafe",
+        "covered refrigerated draining cabinet",
+        "calibrated scale"
+      ],
+      "observable_evidence": [
+        "프레임 위 흰 농축물과 아래로 떨어지는 옅은 황록빛 acid whey를 한 프레임에 함께 제시",
+        "거름 전후 중량과 수율을 기록하는 저울",
+        "촘촘한 천 결 위에 남는 실제 요거트 질감"
+      ],
+      "intermediate_output": "strained yogurt base plus captured acid whey",
+      "claim_status": "selected small-batch route is directional; final filtration medium, time, temperature, yield and acid-whey handling plan pending validation"
+    },
+    {
+      "id": "PW-06",
+      "story_title": "Ingredient → Preparation Base",
+      "stage": "separate_ingredient_preparation",
+      "purpose": "각 원재료를 요거트에 넣기 전, 안전하고 계량 가능하며 재료의 실제 물성을 보존하는 중간 형태로 만든다.",
+      "method_direction": "승인된 식용 원료와 식수만 사용하고, 재료별 식품용 carrier와 입자 크기를 별도 레시피로 설계한다. 직접 혼합되는 preparation은 위해분석에 따라 열처리·여과·급속 냉각·위생 충전이 필요하며, 알코올·향료용 용매 추출은 기본 공정에서 제외한다.",
+      "tools": [
+        "small jacketed stainless infusion pans",
+        "calibrated scale and food measuring jugs",
+        "fine-mesh basket, chinois or muslin filters",
+        "covered shallow cooling pans",
+        "wide-neck food-grade cups or jugs"
+      ],
+      "observable_evidence": [
+        "원재료와 그 재료에서 나온 중간 베이스를 쌍으로 제시",
+        "맑은 액체·시럽·슬러리·페이스트·오일상이 서로 다른 점도와 용기에 담긴 모습",
+        "여과망에 남은 고형분과 아래의 여과액을 실제 공정 관계로 보여 주기"
+      ],
+      "intermediate_output": "one recipe-specific food preparation base per lineup item",
+      "claim_status": "concept taxonomy only; every formula, carrier, heat treatment and shelf life must be validated per ingredient"
+    },
+    {
+      "id": "PW-07",
+      "story_title": "Base → Trace",
+      "stage": "measured_low_shear_folding",
+      "purpose": "농축 요거트의 밀도를 과도하게 무너뜨리지 않으면서 재료 베이스를 제품 안쪽까지 이어지는 흔적으로 만든다.",
+      "method_direction": "차갑게 유지한 농축 베이스와 검증된 preparation base를 중량으로 계량하고, 넓은 패들로 최소 횟수만 접는다. 최종 목표가 균질 혼합인지 한 줄 리본인지 레시피별로 고정하며 강한 휘핑·고속 블렌딩은 기본 연출에서 제외한다.",
+      "tools": [
+        "broad stainless folding paddle",
+        "shallow stainless mixing bowl or low-shear mixer",
+        "calibrated bench scale",
+        "wide-neck dosing jug"
+      ],
+      "observable_evidence": [
+        "한 번의 넓은 폴딩 동작",
+        "계량된 베이스가 요거트 안으로 이어지는 실제 리본 또는 마블링",
+        "폴딩 뒤에도 서 있는 능선과 스푼 자국"
+      ],
+      "intermediate_output": "recipe-specific folded yogurt batch",
+      "claim_status": "low-shear rationale is evidence-based; number of folds, dose and final texture require rheology and sensory trials"
+    },
+    {
+      "id": "PW-08",
+      "story_title": "Cup → Seal",
+      "stage": "cold_portion_fill_seal_and_hold",
+      "purpose": "검증된 한 컵 분량을 오염과 과도한 구조 손상 없이 포장하고 냉장 유통 상태를 유지한다.",
+      "method_direction": "완제품을 검증된 냉장 범위에서 최소 이송으로 정량 충전하고 즉시 밀봉한다. 완제품 pH, 중량, 밀봉 무결성, 미생물, 관능과 냉장 보관 데이터를 바탕으로 출고·소비기한을 정한다.",
+      "tools": [
+        "sanitized low-shear portioning tool or cup filler",
+        "calibrated check scale",
+        "food cup sealer and seal-integrity check",
+        "temperature-monitored cold storage"
+      ],
+      "observable_evidence": [
+        "정량 충전 후 저울 확인",
+        "열린 컵의 실제 내용물과 밀봉된 완제품의 연속 장면",
+        "배치와 연결된 냉장 온도 기록"
+      ],
+      "intermediate_output": "sealed refrigerated MORA cup",
+      "claim_status": "directional; package system, fill temperature, cold-chain limit and shelf life pending plant and challenge-study validation"
+    },
+    {
+      "id": "PW-09",
+      "story_title": "Cup → Finish",
+      "stage": "optional_approved_atelier_finish_for_immediate_service",
+      "purpose": "개인화를 레시피 변경이 아니라 한 컵을 먹는 마지막 형태의 선택으로 제한한다.",
+      "method_direction": "매장 즉시 섭취 컵에만 검증된 동일 레시피·동일 투입량을 사용해 Soft Fold, Single Trace, On the Side 중 한 가지 서비스 형태를 제공할 수 있다. 알레르기·건강 상태에 맞춘 즉흥 처방이나 미승인 원료 추가는 하지 않는다.",
+      "tools": [
+        "sanitized ceramic sample spoons or neutral selection tokens",
+        "fixed-dose food dispenser",
+        "service scale",
+        "single-use serving cup and utensil"
+      ],
+      "observable_evidence": [
+        "세 가지 완성 형태를 텍스트 없는 실제 음식 상태로 비교",
+        "고객 손과 메이커 손 사이에 놓인 한 컵과 한 번의 계량 동작",
+        "밀봉 소매 제품과 즉시 섭취 서비스 제품을 명확히 분리"
+      ],
+      "intermediate_output": "immediate-service cup with one controlled finish",
+      "claim_status": "optional service concept; only valid if food-safety SOP, allergen controls and operations can support it"
+    }
+  ],
+  "intermediate_output_register": [
+    {
+      "name": "Measured Pasteurized Milk Base",
+      "state": "opaque fluid",
+      "story_job": "배치가 감이 아니라 계량에서 시작됨을 증명",
+      "visual_truth": "스테인리스 용기와 저울; 우유병 소품이나 농장 낭만화 금지"
+    },
+    {
+      "name": "Cultured Gel / Coagulum",
+      "state": "fragile white protein gel",
+      "story_job": "발효가 액체를 떠먹는 몸으로 바꾸는 핵심 전환",
+      "visual_truth": "흔들림 없는 표면과 깨끗한 스푼 단면; 거품·휘핑 질감 금지"
+    },
+    {
+      "name": "Acid Whey",
+      "state": "pale yellow-green translucent liquid separated after fermentation",
+      "story_job": "거름이 농도를 만드는 실제 부산물임을 증명",
+      "visual_truth": "천 아래 받침에 실제로 고인 액체; 위스키색 보정·술병 연출 금지",
+      "claim_boundary": "재사용·업사이클·영양·제로웨이스트를 실제 운영 데이터 없이 주장하지 않는다. 폐기·재사용 방식은 식품안전 계획에 포함한다."
+    },
+    {
+      "name": "Strained Yogurt Base",
+      "state": "dense ivory semi-solid",
+      "story_job": "그릭요거트의 밀도가 토핑이나 증점제 수사가 아니라 농축 단계에서 생김을 보여 줌",
+      "visual_truth": "천 결과 넓은 패들 자국이 남는 실제 농도; 점토·크림치즈처럼 과장하지 않음"
+    },
+    {
+      "name": "Recipe Preparation Base",
+      "state": "recipe-specific clear infusion, syrup, slurry, paste or oil phase",
+      "story_job": "원재료와 완제품 사이에 있는 계량 가능한 중간 상태를 제품별로 구분",
+      "visual_truth": "동일한 호박색 액체 여섯 병으로 통일하지 않고 실제 물성 차이를 보존"
+    },
+    {
+      "name": "Folded Yogurt Batch",
+      "state": "dense yogurt with a verified internal trace",
+      "story_job": "재료가 표면 토핑이 아니라 요거트 안쪽까지 이어짐을 증명",
+      "visual_truth": "한 번의 리본·베일·입자·마블링·유화 흔적; 합성 폭발·공중 부유 금지"
+    }
+  ],
+  "infusion_form_taxonomy": {
+    "principle": "‘인퓨징’은 향수 제조의 투명 에센스 병을 복제하는 명칭이 아니라, 각 재료를 위생적이고 계량 가능한 식품 중간 형태로 준비한 뒤 요거트에 넣는 공정 관계다. 투명한 위스키 스피릿 같은 액체는 재료가 실제로 맑은 수상 추출물일 때만 가능하다.",
+    "public_naming": "Infusion Base 또는 Ingredient Preparation을 기본 용어로 사용하고, elixir, essence, formula, alchemy, spirit, tincture, maceration은 소비자 언어에서 제외한다.",
+    "forms": [
+      {
+        "id": "IF-01",
+        "form": "clear_or_pale_aqueous_infusion",
+        "suitable_for": "검증된 식용 잎·껍질·볶은 곡물의 수상 추출 방향",
+        "visual_behavior": "옅고 투명하거나 가벼운 탁도; 식품용 wide-neck jug",
+        "critical_controls": "원재료 식용 적합성, 물 품질, 시간·온도, 열처리, 여과, 냉각, pH, 미생물"
+      },
+      {
+        "id": "IF-02",
+        "form": "syrup_or_honey_led_infusion",
+        "suitable_for": "꿀 또는 검증된 당 시럽이 주 carrier인 방향",
+        "visual_behavior": "천천히 흐르는 옅은 호박색; 얕은 식품용 컵 또는 주그",
+        "critical_controls": "수분활성 변화, 균일 혼합, 허브 식용 적합성, 열처리 필요성, 결정화, 최종 당도와 보관성"
+      },
+      {
+        "id": "IF-03",
+        "form": "roasted_grain_infusion_or_fine_slurry",
+        "suitable_for": "볶은 메밀처럼 향과 미세 입자를 함께 사용할 수 있는 곡물 방향",
+        "visual_behavior": "갈색 수상 추출액 또는 고운 현탁액; 굵은 토핑 입자와 구분",
+        "critical_controls": "로스팅 규격, 입자 크기, 침전, 교차오염, 알레르겐 법규, 점도 영향"
+      },
+      {
+        "id": "IF-04",
+        "form": "seed_slurry_or_paste",
+        "suitable_for": "검은깨처럼 기름과 고형분이 함께 맛과 색을 만드는 씨앗류",
+        "visual_behavior": "불투명한 회흑색 페이스트 또는 고운 슬러리; 투명 병 금지",
+        "critical_controls": "참깨 알레르겐, 산패, 입자 크기, 오일 분리, 열처리, 미생물, 최종 질감"
+      },
+      {
+        "id": "IF-05",
+        "form": "oil_phase_or_validated_micro_emulsion",
+        "suitable_for": "올리브오일처럼 수상 추출보다 지방상이 정직한 재료",
+        "visual_behavior": "금록색 오일 리본 또는 검증된 유화; 향수 오일병과 구분되는 식품용 계량컵",
+        "critical_controls": "오일 품질, 산화, 유화 안정성, 염 농도, 상분리, 용기 적합성, 냉장 관능"
+      }
+    ],
+    "lineup": [
+      {
+        "product": "Thyme Honey",
+        "selected_form_direction": "syrup_or_honey_led_infusion",
+        "intermediate": "옅은 호박색 honey-led thyme preparation",
+        "raw_material_pairing": "승인된 꿀 + 식용·규격화된 타임",
+        "visual_truth": "점도가 있고 천천히 흐르며 필요하면 여과된 상태; 생 타임 줄기를 완제품 안에 장식하지 않음",
+        "validation_gate": "허브 종·부위·공급자 규격, 첨가량, 열처리, 수분활성·미생물, 결정화와 최종 당도"
+      },
+      {
+        "product": "Fig Leaf",
+        "selected_form_direction": "clear_or_pale_aqueous_infusion",
+        "intermediate": "매우 옅은 연두-금색의 filtered aqueous preparation",
+        "raw_material_pairing": "식용 사용이 법적·독성학적으로 확인된 정확한 무화과 잎 종·부위·공급 배치",
+        "visual_truth": "맑거나 미세하게 탁한 수상액; 원재료 확인 전 초록색 염료처럼 과장하지 않음",
+        "validation_gate": "무화과 잎의 식용 적합성, 종·부위·수확 상태, latex와 furanocoumarin 관련 위해 검토, 지역 규정, 추출 시간·온도, 잔류물·미생물. 통과하지 못하면 제품명을 교체한다."
+      },
+      {
+        "product": "Roasted Buckwheat",
+        "selected_form_direction": "roasted_grain_infusion_or_fine_slurry",
+        "intermediate": "볶은 향을 가진 갈색 수상 추출액 또는 고운 메밀 슬러리",
+        "raw_material_pairing": "규격화한 볶은 메밀",
+        "visual_truth": "제품 목표가 향 중심이면 여과액, 질감 중심이면 미세 현탁액 중 하나를 선택; 두 방법을 동시에 확정한 것처럼 제시하지 않음",
+        "validation_gate": "로스팅 프로파일, 알레르겐·교차오염 법규, 입자 크기, 침전, 열처리, 최종 점도·관능"
+      },
+      {
+        "product": "Citrus Peel",
+        "selected_form_direction": "clear_or_pale_aqueous_infusion",
+        "intermediate": "황금빛 filtered citrus-peel preparation 또는 검증된 옅은 시럽",
+        "raw_material_pairing": "식용 등급·잔류농약 규격을 충족한 특정 감귤류 껍질",
+        "visual_truth": "얇은 껍질과 금빛 수상액의 원인-결과가 보이되 에센셜오일 증류 장치로 연출하지 않음",
+        "validation_gate": "감귤 종·부위, 잔류농약, 쓴맛, 휘발 향 보존, 열처리, 광독성·오일 농도 검토, pH와 유제품 안정성"
+      },
+      {
+        "product": "Black Sesame",
+        "selected_form_direction": "seed_slurry_or_paste",
+        "intermediate": "불투명한 짙은 회흑색의 fine sesame slurry or paste",
+        "raw_material_pairing": "규격화하고 필요 공정을 거친 검은깨",
+        "visual_truth": "투명한 검정 스피릿이 아니라 얕은 볼에서 실제로 흐르는 고운 페이스트; 굵은 씨앗 토핑과 구분",
+        "validation_gate": "참깨 알레르겐 표시·교차접촉, 로스팅·살균, 산패, 오일 분리, 입자 크기, 최종 색·질감"
+      },
+      {
+        "product": "Olive Oil & Sea Salt",
+        "selected_form_direction": "oil_phase_or_validated_micro_emulsion",
+        "intermediate": "계량된 올리브오일상과 검증된 염수/미세 유화 preparation 중 하나",
+        "raw_material_pairing": "규격화한 식용 올리브오일 + 식품용 소금",
+        "visual_truth": "얇은 오일 리본 또는 안정된 유화 흔적; 실제 배합에서 소금이 녹는다면 가짜 소금 결정을 장식하지 않음",
+        "validation_gate": "오일 산화·품질, 염 농도, 상분리·유화 안정성, 냉장 점도, 미생물, 용기와 실링 적합성"
+      }
+    ]
+  },
+  "safety_rnd_and_claim_caveats": {
+    "mandatory_prelaunch_validation": [
+      "HACCP 또는 해당 지역의 동등한 식품안전 계획과 생산시설 허가",
+      "원유가 아닌 상업적 살균유 또는 별도 검증된 살균 공정 사용",
+      "세척·소독 SOP, 식수 규격, 작업자 위생, 원료와 완제품 동선 분리",
+      "우유 조성, starter strain·dose, 접종 온도, 배양 시간, 목표 pH, 냉각 곡선의 파일럿 검증",
+      "거름 천·필터의 식품 접촉 적합성, 냉장 거름 시간·온도, 수율과 acid-whey 처리 계획",
+      "각 ingredient preparation의 원료 식용 적합성, supplier specification, 열처리·여과·냉각·보관·투입 시점",
+      "완제품 pH, water activity where relevant, 점도·상분리·유청분리, 미생물 challenge 또는 shelf-life study, 관능 안정성",
+      "충전 온도, 포장 적합성, seal integrity, 냉장 유통 한계, 소비기한",
+      "우유·참깨 및 지역별 메밀 등 알레르겐 표시와 교차접촉 관리",
+      "제품명, Greek yogurt/strained yogurt 정의, 천연·수제·small-batch·live culture·단백질·무첨가·원산지 표시의 관할 법규 검토"
+    ],
+    "hard_claim_boundaries": [
+      "90–95°C 약 5분, pH 4.2–4.5, 냉장 거름 8–24시간은 공개 근거의 일반 범위이지 MORA 확정 레시피가 아니다.",
+      "제품별 원재료 비율, 정확한 제조 시간, starter strain, 유산균 수, 영양값, 보관 온도, 소비기한은 시험 완료 전 공개 카피로 확정하지 않는다.",
+      "ingredient preparation을 향수의 essence, spirit, tincture 또는 의약적 formula로 부르지 않고 건강·해독·프로바이오틱 효능을 암시하지 않는다.",
+      "Fig Leaf는 정확한 종·부위·공급원과 식용 안전성·지역 합법성이 검증되지 않으면 제조·촬영·판매하지 않고 대체 원료를 선정한다.",
+      "직접 요거트에 섞이는 재료 preparation은 열처리·무균 또는 위생적 처리 계획 없이 수제 생추출물로 연출하지 않는다.",
+      "acid whey의 재사용, 업사이클, 제로웨이스트, 영양 활용은 실제 처리 공정과 데이터가 생기기 전 주장하지 않는다.",
+      "handmade 또는 hand-crafted는 실제 수작업 비중과 배치 기록이 문서화될 때만 사용한다. 현 단계 권장 표현은 small-batch direction 또는 hand-finished at the counter다.",
+      "Finish Counter 개인화는 승인된 동일 레시피와 고정 투입량의 제공 형태만 바꾼다. 알레르기·질병·영양 목적의 즉흥 처방이나 밀봉 소매컵의 사후 커스텀은 금지한다."
+    ],
+    "visual_safety_boundaries": [
+      "비커, 피펫, 약병, 갈색 향수병, 증류기, 알코올 불꽃, 실험복을 식품 공정 도구처럼 사용하지 않는다.",
+      "모든 도구는 해당 장면에서 실제 기능을 수행해야 하며 장식용으로 늘어놓지 않는다.",
+      "원재료, 중간 베이스, 완제품의 색·점도·입자 관계를 일치시키고 여섯 베이스를 동일한 투명 호박색 액체로 통일하지 않는다.",
+      "공정 사진에 실제로 확인되지 않는 온도·pH·날짜·배치번호 텍스트를 이미지 생성으로 넣지 않는다. 수치는 편집 레이어에서 검증 후 표기한다."
+    ]
+  },
+  "source_evidence": [
+    {
+      "id": "SRC-TP-FERMENTED",
+      "title": "Tetra Pak Dairy Processing Handbook — Fermented Milk Products",
+      "url": "https://dairyprocessinghandbook.tetrapak.com/chapter/fermented-milk-products",
+      "supports": [
+        "S. thermophilus and L. delbrueckii subsp. bulgaricus as yogurt cultures",
+        "90–95°C for about 5 minutes as a common yogurt-milk heat-treatment direction",
+        "target pH about 4.2–4.5 followed by cooling",
+        "concentrated yogurt produced after fermentation by whey removal using separator or ultrafiltration",
+        "coagulum sensitivity to excessive mechanical treatment and viscosity loss",
+        "direct-added fruit/preparation requiring adequate heat treatment and hygienic handling"
+      ]
+    },
+    {
+      "id": "SRC-CDR-PRODUCTION",
+      "title": "Wisconsin Center for Dairy Research — Yogurt Monograph Series: Production",
+      "url": "https://cdr.wisc.edu/yogurt-monograph-production",
+      "supports": [
+        "lactic-acid-driven gel formation below pH 4.6",
+        "post-fermentation straining as a Greek-style concentration route",
+        "acid whey as the separated water and water-soluble phase"
+      ]
+    },
+    {
+      "id": "SRC-WSU-SMALL-BATCH",
+      "title": "Washington State University Extension — Yogurt Made Simple",
+      "url": "https://pubs.extension.wsu.edu/product/yogurt-made-simple/",
+      "supports": [
+        "clean and sanitized equipment, heat and acidity as safety barriers",
+        "small-batch heat, cool, inoculate, incubate and refrigerate sequence",
+        "strainer, double cheesecloth and catch bowl as small-batch Greek-yogurt tools",
+        "8–24 hour refrigerated straining as an extension reference range"
+      ]
+    },
+    {
+      "id": "SRC-UAF-YOGURT",
+      "title": "University of Alaska Fairbanks Cooperative Extension — Making Yogurt",
+      "url": "https://www.uaf.edu/ces/publications/database/food/making-yogurt.php",
+      "supports": [
+        "pasteurized milk, sanitized containers and workspaces",
+        "calibrated thermometer, lidded containers and controlled incubator as practical tools",
+        "heat and acidity both required for safe yogurt direction"
+      ]
+    },
+    {
+      "id": "SRC-PMC-RHEOLOGY",
+      "title": "A Review of Processing Techniques and Rheological Properties of Yogurt",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11798767/",
+      "supports": [
+        "yogurt as a shear-sensitive thixotropic gel",
+        "mixing, pumping and packing reducing apparent viscosity",
+        "post-fermentation centrifuging, membrane filtration or straining as concentration routes"
+      ]
+    },
+    {
+      "id": "SRC-CODEX-CXS-243",
+      "title": "Codex Standard for Fermented Milks CXS 243-2003",
+      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/es/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXS%2B243-2003%252FCXS_243e.pdf",
+      "supports": [
+        "international category definitions and composition/labeling reference for fermented milks"
+      ]
+    }
+  ]
+}

@@ -152,6 +152,14 @@ function assetMeta(asset) {
     ['Credit', asset.credit],
     ['Rights', asset.rights_note],
     ['Status', asset.status],
+    ['Aspect ratio', asset.aspect_ratio],
+    ['Delivery dimensions', asset.delivery_dimensions],
+    ['Reference lineage', asset.reference_lineage],
+    ['Invariants', asset.invariants],
+    ['Allowed variation', asset.allowed_variation],
+    ['Invariant check', asset.invariant_check],
+    ['Generation provenance', asset.generation_provenance],
+    ['Prompt path', asset.prompt_path],
   ];
   return fields
     .map(([label, value]) => ({ label, value: toText(value) }))

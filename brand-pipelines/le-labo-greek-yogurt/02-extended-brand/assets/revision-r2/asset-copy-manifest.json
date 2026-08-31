@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0",
+  "package": "le-labo-greek-yogurt-stage2-revision-r2",
+  "created_on": "2026-08-29",
+  "copy_policy": "Approved Stage 3 R2 finals are copied into Stage 2 staging. Source files remain unchanged and every destination must retain the listed SHA-256.",
+  "asset_count": 14,
+  "assets": [
+    {
+      "stage3_asset_id": "ST3-PRODUCT-GLASS-THYME-HONEY-59",
+      "source_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/products/mora-thyme-honey-glass-front-r2.png",
+      "destination_path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/revision-r2/product-series/mora-thyme-honey-glass-front-r2.png",
+      "sha256": "b8ee86341923412a790fc1f32cd894b6cadb6e381885b263f15e5580971833c3",
+      "intended_stage2_asset_ids": [
+        "ST2-PRODUCT-HERO-01",
+        "ST2-PRODUCT-THYME-HONEY-02"
+      ],
+      "stage2_role": "registered product anchor and Thyme Honey lineup frame"
+    },
+    {
+      "stage3_asset_id": "ST3-PRODUCT-GLASS-FIG-LEAF-60",
+      "source_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/products/mora-fig-leaf-glass-front-r2.png",
+      "destination_path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/revision-r2/product-series/mora-fig-leaf-glass-front-r2.png",
+      "sha256": "c3f4286d2da7ec6fe788ac10afd6ee9ce2781f9b27f30ac38cf9413bd1e3b53a",
+      "intended_stage2_asset_ids": [
+        "ST2-PRODUCT-FIG-LEAF-02"
+      ],
+      "stage2_role": "Fig Leaf lineup frame"
+    },
+    {
+      "stage3_asset_id": "ST3-PRODUCT-GLASS-ROASTED-BUCKWHEAT-61",
+      "source_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/products/mora-roasted-buckwheat-glass-front-r2.png",
+      "destination_path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/revision-r2/product-series/mora-roasted-buckwheat-glass-front-r2.png",
+      "sha256": "906b62325c76218b4a7085e46b5a3c3f14403c429133246ba90178cdd88a6d84",
+      "intended_stage2_asset_ids": [
+        "ST2-PRODUCT-ROASTED-BUCKWHEAT-02"
+      ],
+      "stage2_role": "Roasted Buckwheat lineup frame"
+    },
+    {
+      "stage3_asset_id": "ST3-PRODUCT-GLASS-CITRUS-PEEL-62",
+      "source_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/products/mora-citrus-peel-glass-front-r2.png",
+      "destination_path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/revision-r2/product-series/mora-citrus-peel-glass-front-r2.png",
+      "sha256": "34ef72576134d95b1d52d336baa89b2447830256a50be7d2c941d8e74dc7a54a",
+      "intended_stage2_asset_ids": [
+        "ST2-PRODUCT-CITRUS-PEEL-02"
+      ],
+      "stage2_role": "Citrus Peel lineup frame"
+    },
+    {
+      "stage3_asset_id": "ST3-PRODUCT-GLASS-BLACK-SESAME-63",
+      "source_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/products/mora-black-sesame-glass-front-r2.png",
+      "destination_path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/revision-r2/product-series/mora-black-sesame-glass-front-r2.png",
+      "sha256": "40773b96f51d81e2992d45303d0df2c14b1126c6efab7a5b47c45c4725af6e7c",
+      "intended_stage2_asset_ids": [
+        "ST2-PRODUCT-BLACK-SESAME-02"
+      ],
+      "stage2_role": "Black Sesame lineup frame"
+    },
+    {
+      "stage3_asset_id": "ST3-PRODUCT-GLASS-OLIVE-OIL-SEA-SALT-64",
+      "source_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/products/mora-olive-oil-sea-salt-glass-front-r2.png",
+      "destination_path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/revision-r2/product-series/mora-olive-oil-sea-salt-glass-front-r2.png",
+      "sha256": "749bec1555543b89a086384af7c803836f3d1681754f13ac7498f7d2d115036d",
+      "intended_stage2_asset_ids": [
+        "ST2-PRODUCT-OLIVE-OIL-SEA-SALT-02"
+      ],
+      "stage2_role": "Olive Oil & Sea Salt lineup frame"
+    },
+    {
+      "stage3_asset_id": "ST3-HERO-EMPTY-ATELIER-40",
+      "source_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/narrative/mora-hero-empty-atelier-r2.png",
+      "destination_path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/revision-r2/brand-mood/mora-empty-atelier-r2.png",
+      "sha256": "d404613f2867ea996b52ebdb8c0ad1e3ff3c6ae15fe69c91900b7aef206302bd",
+      "intended_stage2_asset_ids": [
+        "ST2-BRAND-MOOD-SIDE-03"
+      ],
+      "stage2_role": "supporting empty-atelier brand-world overview replacing the former side mood support"
+    },
+    {
+      "stage3_asset_id": "ST3-WHY-MORA-MAKER-41",
+      "source_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/narrative/mora-why-mora-maker-r2.png",
+      "destination_path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/revision-r2/brand-mood/mora-why-mora-maker-r2.png",
+      "sha256": "c16cce3337c510b554e8046ed868fa431f4fd4d6181e3a78240b73443c5b1068",
+      "intended_stage2_asset_ids": [
+        "ST2-BRAND-MOOD-01"
+      ],
+      "stage2_role": "registered brand-mood anchor showing one maker and three controlled yogurt states"
+    },
+    {
+      "stage3_asset_id": "ST3-VESSEL-GLASS-R2-56",
+      "source_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/vessel/mora-glass-vessel-master-thin-cap-r2.png",
+      "destination_path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/revision-r2/package/mora-glass-vessel-master-r2.png",
+      "sha256": "79c600aebdbb3dc08b8eba7f3530a41027db40dcc244497df095c51c6328f77d",
+      "intended_stage2_asset_ids": [
+        "ST2-PACKAGE-VESSEL-MASTER-R2-05"
+      ],
+      "stage2_role": "proposed supporting glass-vessel geometry authority"
+    },
+    {
+      "stage3_asset_id": "ST3-VESSEL-GLASS-R2-57",
+      "source_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/vessel/mora-glass-vessel-open-service-r2.png",
+      "destination_path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/revision-r2/package/mora-glass-vessel-open-service-r2.png",
+      "sha256": "c8d366c6a4bb785b92e65584328ef011e2b5fd19138c78e9f7e1b86a110fa278",
+      "intended_stage2_asset_ids": [
+        "ST2-PACKAGE-OPEN-SERVICE-R2-06"
+      ],
+      "stage2_role": "proposed supporting open-service proof"
+    },
+    {
+      "stage3_asset_id": "ST3-VESSEL-GLASS-R2-58",
+      "source_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/vessel/mora-glass-vessel-closure-proof-r2.png",
+      "destination_path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/revision-r2/package/mora-glass-vessel-closure-proof-r2.png",
+      "sha256": "f1a75274c1d6881764e37f19d99432e0c94ac466d8af7e6004bda46990a06c56",
+      "intended_stage2_asset_ids": [
+        "ST2-PACKAGE-ANATOMY-03"
+      ],
+      "stage2_role": "package-anatomy proof for thin metal cap, foil seal, glass wall and heavy base"
+    },
+    {
+      "stage3_asset_id": "ST3-ETCH-R2-45",
+      "source_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/editorial-etchings/mora-etch-r2-cloth-to-body-3x2.png",
+      "destination_path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/revision-r2/process/mora-process-cloth-to-body-etching-r2.png",
+      "sha256": "2f2b61a188cb5bbc494107df27e6377c986f113cb92d936fc520f1f81f35b8e1",
+      "intended_stage2_asset_ids": [
+        "ST2-PROCESS-STRAINING-01"
+      ],
+      "stage2_role": "physical cloth-straining and whey-separation explanation"
+    },
+    {
+      "stage3_asset_id": "ST3-METHOD-R2-54",
+      "source_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/material-method/mora-method-r2-steep-time-infusion-ladder.png",
+      "destination_path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/revision-r2/process/mora-process-infusion-ladder-r2.png",
+      "sha256": "7c005cfe34ee04e6dc003d9bc850f8ccda089b6c63009199d141682b666aacf4",
+      "intended_stage2_asset_ids": [
+        "ST2-PROCESS-INFUSION-LIBRARY-02"
+      ],
+      "stage2_role": "controlled steep-time and infusion-intermediate comparison"
+    },
+    {
+      "stage3_asset_id": "ST3-METHOD-R2-55",
+      "source_path": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r2/material-method/mora-method-r2-viscosity-fold-trace-matrix.png",
+      "destination_path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/revision-r2/process/mora-process-viscosity-fold-matrix-r2.png",
+      "sha256": "fb72d077e3b5af60f53a88bafac7184245adf12f521f0b695a057709ada5854b",
+      "intended_stage2_asset_ids": [
+        "ST2-PROCESS-FOLDING-03"
+      ],
+      "stage2_role": "viscosity and single-fold trace proof"
+    }
+  ]
+}

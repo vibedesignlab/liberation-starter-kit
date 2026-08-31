@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0.0",
+  "qa_date": "2026-08-26",
+  "method": [
+    "Original-resolution inspection with local view_image; no browser or Playwright.",
+    "File-format, dimensions and SHA-256 verification after copying into the workspace.",
+    "Pair comparison against the original frontal/side camera, identity, wardrobe, room, sealer and light invariants.",
+    "Revision 7 material and claim-gate review against .work/revision7_visual_direct_print/shard.json and .work/revision7_pack_direct_print/shard.json."
+  ],
+  "decision": "approved_for_stage2_directional_visual_use",
+  "checks": [
+    {
+      "check": "file integrity",
+      "status": "pass",
+      "evidence": "Both selected workspace assets are 1536x1024 RGB PNG files with recorded SHA-256 hashes."
+    },
+    {
+      "check": "front axis",
+      "status": "pass",
+      "evidence": "Front preserves centered maker, square table/wall relationship, direct frontal face and cup axis."
+    },
+    {
+      "check": "strict side axis",
+      "status": "pass",
+      "evidence": "Side preserves the original maker-right one-eye profile, lateral body silhouette, camera height and 3:2 composition."
+    },
+    {
+      "check": "identity and wardrobe continuity",
+      "status": "pass",
+      "evidence": "Same face, freckles, tied-back dark hair, charcoal shirt and apron, downward gaze and neutral focused production-role expression remain across the pair."
+    },
+    {
+      "check": "workspace and light continuity",
+      "status": "pass",
+      "evidence": "Same pale wall, diagonal daylight, stainless worktable, idle stainless sealer and warm-neutral grade remain; equipment changes sides consistently with the camera axis."
+    },
+    {
+      "check": "individual paper removal",
+      "status": "pass",
+      "evidence": "No collar, sleeve, label, sticker, loose paper ring, paper card or spare paper component remains on the cup or foreground table in either image."
+    },
+    {
+      "check": "transparent low-wide yogurt cup",
+      "status": "pass",
+      "evidence": "Both frames show a low-wide lightly tapered clear molded cup with visible dense ivory food, transparent rim/wall edges and stable foot; it reads as yogurt packaging rather than perfume, cosmetics or lab glass."
+    },
+    {
+      "check": "foil truth",
+      "status": "pass",
+      "evidence": "Both frames retain a thin flat full-perimeter foil already sealed to the rim with one asymmetric tab; no loose foil or reclosure state appears."
+    },
+    {
+      "check": "direct-print structure",
+      "status": "pass",
+      "evidence": "MORA and THYME HONEY are neutral black directly on the transparent wall with no opaque, white, frosted or paper-shaped backing and no recipe-color ink."
+    },
+    {
+      "check": "text accuracy and hierarchy",
+      "status": "pass",
+      "evidence": "Both selected frames spell MORA and THYME HONEY correctly; MORA is quiet/small and THYME HONEY is the larger recipe line. No generated numbers, dates, barcodes or extra copy appear."
+    },
+    {
+      "check": "action clarity",
+      "status": "pass",
+      "evidence": "Maker looks down and lightly contacts opposite cup sides/base, reading as alignment, adhesion and clarity inspection of an already printed/filled/sealed unit; no printing, labeling, sleeving, filling, sealing, coding, wiping or peeling is shown."
+    },
+    {
+      "check": "human and object contact",
+      "status": "pass",
+      "evidence": "Hands retain plausible anatomy and contact; cup foot and hands cast coherent shadows and do not float or intersect the package."
+    },
+    {
+      "check": "method and claim boundary",
+      "status": "pass",
+      "evidence": "No visible printer head, roller, pad, screen, registration gauge, scale number, test readout or claimed SOP is invented. The idle sealer remains environmental continuity only."
+    },
+    {
+      "check": "style exclusions",
+      "status": "pass",
+      "evidence": "No apothecary grid, amber bottle, perfume mimic, cosmetic jar, lab glassware, kraft, wood, twine, sepia, rustic patina or heroic artisan pose appears."
+    }
+  ],
+  "pair_continuity_note": "The images communicate the same maker and the same final-inspection action from frontal and strict side axes. They are directional editorial companions, not photogrammetric proof of one frozen instant or an approved industrial sequence.",
+  "residual_release_gates": [
+    "Replace or re-photograph from approved physical prototypes before treating cup wall, foil, print opacity or food appearance as production evidence.",
+    "Validate actual direct-print method, ink/cure, nested set-off, food contact/migration, adhesion, condensation rub, taper registration and six-fill contrast; the images do not close these gates.",
+    "Validate transparent pack light/barrier/seal/shelf-life performance and Black Sesame legibility before public pack claims.",
+    "Keep maker caption generic; never identify the generated person as founder, employee or source evidence."
+  ]
+}

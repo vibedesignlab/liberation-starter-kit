@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "stage_review",
+  "stage": "source_brand_analysis",
+  "status": "pending",
+  "pipeline_state_path": "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/pipeline-state.json",
+  "review_targets": [
+    "analysis scope and exclusions",
+    "brand grammar and key-visual interpretation",
+    "brand mood, product representation, and product-native language",
+    "global color, typography, spacing, and layout relationships"
+  ],
+  "adjustment_prompts": [
+    "분석에서 잘못 이해했거나 빠진 원본 브랜드 특징이 있습니까? 없으면 다음 단계로 진행합니다."
+  ],
+  "user_feedback": [
+    {
+      "decision": "revision_requested",
+      "message": "시각 자료를 5분 추가 조사해 원본 브랜드의 시각 근거를 확장해 달라는 요청",
+      "recorded_at": "2026-08-24T15:26:07.927188+00:00"
+    },
+    {
+      "decision": "accepted",
+      "message": "추가 시각 조사를 포함한 1단계 분석을 기반으로 프리미엄 그릭요거트 브랜드 전환을 진행해 달라는 승인",
+      "recorded_at": "2026-08-24T15:57:06.650144+00:00"
+    },
+    {
+      "decision": "revision_requested",
+      "message": "다운로드 폴더의 르라보 무드 이미지 3개를 S1 브랜드 문서에 반영해 달라는 요청",
+      "recorded_at": "2026-08-31T18:10:23+09:00"
+    }
+  ],
+  "updated_at": "2026-08-31T18:10:23+09:00"
+}

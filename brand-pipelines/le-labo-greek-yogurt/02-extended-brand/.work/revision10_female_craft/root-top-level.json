@@ -1,0 +1,175 @@
+{
+  "revision_id": "revision10_female_craft",
+  "schema_version": "1.1.0",
+  "generated_at": "2026-08-31T08:04:05Z",
+  "source_analysis": {
+    "brand": "Le Labo Fragrances",
+    "package_path": "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/01-source-brand",
+    "json_path": "outputs/source-brand-analysis.json",
+    "relationship": "Retain observable labor, functional working-space tension, information-bearing material, controlled records and one-action family rhythm; tune them into a food-native female craft stewardship system while keeping every protected Le Labo surface out of MORA.",
+    "approved_grammar_ids": [
+      "GK-01",
+      "GK-02",
+      "GK-03",
+      "GK-04",
+      "GK-05"
+    ]
+  },
+  "target": {
+    "working_name": "MORA",
+    "category": "여성 메이커가 재료의 선택과 마지막 상태까지 책임지는 프리미엄 크래프트 그릭요거트",
+    "product_mode": "physical",
+    "audience": "재료의 출처와 변환 과정을 보고 판단하며, 누군가에게 내놓는 음식의 마지막 상태까지 책임지는 미식 태도에 공감하는 성인 고객",
+    "use_contexts": [
+      "집에서 함께 먹을 한 컵을 고르고 내놓는 순간",
+      "재료와 배치 기록을 확인하며 선택하는 프리미엄 간식",
+      "플래그십에서 중간 산출물과 마지막 검수 기록을 보고 받는 한 컵"
+    ],
+    "direction_status": "directional_open_concept_revision10_pending_review"
+  },
+  "registered_anchor_assets": [
+    "ST2-PRODUCT-HERO-01",
+    "ST2-BRAND-MOOD-01"
+  ],
+  "editorial_structure": {
+    "key_insight": "MORA는 여성성을 장식하지 않고, 한 사람이 재료를 고르고 변화를 지켜보고 멈출 때를 판단하며 내놓기 전 마지막 상태를 기록하는 책임으로 보여 준다.",
+    "brand_in_one_sentence": "르라보가 작업자·재료·랩·기록·개인화로 장인성을 드러냈다면, MORA는 여성 메이커의 엄선·발효·거름·중간상태·마지막 확인을 한 컵과 Batch Record에 남긴다.",
+    "reading_order": [
+      "01 Source transfer — 무엇을 계승하고 무엇을 MORA가 새로 만드는가",
+      "02 Positioning — The Keeper of Taste / 끝까지 보는 사람",
+      "03 Product — low-wide transparent Batch Record Jar와 여섯 레시피",
+      "04 Verbal — 선택에서 마지막 확인까지의 여성 창업자 causal spine",
+      "05 Key visual — one input, one tool, one action, one intermediate state, one record",
+      "06 Brand mood — dark graphite food manufactory와 maker authority",
+      "07 Product proof — 색 정확한 음식·형태·라벨·개봉·공정 증거",
+      "08 Tokens — graphite, concrete, cultured milk, steel, paper and actual ingredient color"
+    ],
+    "concept_snapshot": {
+      "human_archetype": "The Keeper of Taste — 끝까지 보는 사람",
+      "craft_method": "Measured Transformation — 측정된 변환",
+      "brand_spirit": "The Last Measure — 마지막 확인",
+      "product_system": "MORA Batch Record Greek Yogurt — one base, six ingredient states",
+      "hero_product": "Thyme Honey",
+      "packaging": "low-wide transparent wide-mouth jar + partial uncoated food-native Batch Record + validated closure",
+      "key_visual": "Material Under Care — input, tool, action, intermediate output and record in one photographic cause chain"
+    }
+  },
+  "moodboard_inputs": {
+    "copywriting": {
+      "primary_message": "좋은 재료를 고르는 데서 끝나지 않습니다.",
+      "supporting_message": "발효하고, 거르고, 접고, 내놓기 전 마지막 결까지 봅니다.",
+      "human_archetype": "The Keeper of Taste / 끝까지 보는 사람",
+      "craft_method": "Measured Transformation / 측정된 변환",
+      "brand_spirit": "The Last Measure / 마지막 확인",
+      "claim_rule": "감각과 책임을 먼저 열고 실제 재료·배치·공정·보관 사실로 닫는다."
+    },
+    "hierarchy": [
+      "여성 메이커의 선택과 마지막 책임",
+      "어떤 재료를 고르고 무엇을 제외하는가",
+      "Culture → Separation → Preparation → Last Fold → Final Check",
+      "중간 산출물 아카이브와 Batch Record",
+      "낮고 넓은 투명 jar의 실제 음식 상태",
+      "여섯 레시피의 서로 다른 ingredient behavior",
+      "플래그십의 Ingredient Archive·Batch Wall·Personal Batch Card",
+      "검증된 제품 사실과 선택"
+    ],
+    "brand_mood_images": [
+      "Material Under Care mood anchor — one adult female maker comparing two food-safe intermediate states and writing the final decision inside a dark graphite brick-and-concrete food manufactory",
+      "The Selection — raw ingredient lots, rejected pieces, scale and handwritten comparison record",
+      "The Culture — controlled vessel, time-temperature record and fragile cultured gel",
+      "The Separation — cloth-held concentrate, captured acid whey and batch note",
+      "The Infusion Archive — aqueous infusion, syrup, grain slurry, seed paste and oil phase arranged as functional food states",
+      "The Last Fold — one broad tool, one stopped movement, visible yogurt ridge and maker check",
+      "The Final Check — wide-mouth jar, partial paper Batch Record, closure, fill level and maker initials",
+      "Dark mood photography remains separate from color-accurate product and food proof photography"
+    ],
+    "product_description": [
+      "directional 150 g low-wide transparent wide-mouth spoon jar with a stable food-native rim and validated closure candidate",
+      "at least 60–70% of the edible sidewall remains visible; no full wrap, opaque backing field or fragrance-bottle silhouette",
+      "partial uncoated paper Batch Record with standardized RECIPE, MILK LOT, CULTURED, STRAINED, FOLDED, PACKED, KEEP COLD and NET WT fields",
+      "handwritten area limited to genuine maker initials and final-check result; legal, allergen, storage, lot and serve-by data remain standardized",
+      "actual recipe color and texture live in the yogurt ribbon, fleck, thread, particle, marble or oil interface"
+    ],
+    "product_image_generation": [
+      "registered product hero — Thyme Honey open low-wide Batch Record Jar in a dark mineral work setting, complete wide mouth and food texture visible, product anchored right with continuous low-detail copy zone left",
+      "registered brand mood — one female maker choosing between intermediate states and writing a final check in the dark graphite food manufactory",
+      "six color-accurate front product portraits with locked jar, label hierarchy, baseline, food visibility and truthful ingredient behavior",
+      "sealed → label/record → opened → first spoon state proof",
+      "selection, culture, separation, infusion archive, last fold and final check process frames",
+      "macro pairs of raw ingredient, food-native preparation base and finished yogurt trace",
+      "flagship Ingredient Archive, Batch Wall and Personal Batch Card as functional service evidence"
+    ],
+    "landing_story_sequence": [
+      "The Keeper — 누가 마지막 상태를 책임지는가",
+      "The Selection — 무엇을 고르고 제외하는가",
+      "Measured Transformation — 우유와 재료가 어떤 중간상태를 거치는가",
+      "The Last Measure — 언제 멈추고 무엇을 기록하는가",
+      "The Batch Record Jar — 한 컵이 그 판단을 어떻게 드러내는가",
+      "Six Ingredient States — 여섯 레시피가 왜 다른가",
+      "The House Made Public — 플래그십에서 선택·기록·전달이 어떻게 경험이 되는가",
+      "Product truth — 검증된 사실만 공개"
+    ],
+    "stage_3_truth_gates": {
+      "founder_story": "directional until founder identity, family context, origin event, first experiment, records, quotations, team credit and rights are confirmed",
+      "female_archetype": "approved symbolic direction; never claim that domestic food responsibility is a universal gender duty",
+      "craft_story": "pilot direction only until actual SOP, HACCP, batch records and facility evidence exist",
+      "batch_record": "maker marks only after a real operational check and traceability procedure exists",
+      "packaging": "directional until food-contact, barrier, migration, seal, condensation, rub, cold-chain and shelf-life validation",
+      "product_copy": "directional until final recipe, sensory, allergen, stability and legal approval"
+    }
+  },
+  "boundaries": {
+    "source_traits_not_to_copy": [
+      "Le Labo wordmark or exact laboratory/pharmacy label construction",
+      "ingredient or scent name plus number naming architecture",
+      "perfume bottle, amber apothecary vessel, fragrance compounding tools or identifiable lab/store trade dress",
+      "We believe manifesto cadence or city/date/name personalization ritual",
+      "Le Journal broadsheet, engraving composition or direct black-and-white campaign imitation"
+    ],
+    "assumptions": [
+      "MORA and all product names are directional working names pending trademark and linguistic clearance.",
+      "The female maker is an approved symbolic brand archetype, not a verified founder biography or universal gender role.",
+      "All six recipes, 150 g format, intermediate states, process language and label fields remain directional until food R&D and legal approval.",
+      "Dark brick and concrete define a non-food-contact shell and image world; real food-contact zones require cleanable sealed surfaces and hygienic zoning.",
+      "The transparent wide-mouth jar, closure, paper label, adhesive, ink and outer carrier are unvalidated production candidates.",
+      "The new S2 revision supersedes the direct-print-only and warm mineral-ivory directions; S3 must not be synchronized before S2 acceptance."
+    ],
+    "factual_limits": [
+      "Do not invent founder name, age, profession, family status, origin place, health story, family recipe, first batch, number of experiments or direct quotation.",
+      "Do not claim handmade, small-batch, natural, organic, high-protein, low-sugar, probiotic, digestive, medical, origin, sustainability or superior-quality benefits without evidence.",
+      "Do not present generated maker, room, process, intermediate state or package imagery as proof of an actual founder, facility, SOP, batch or food-contact specification.",
+      "Do not use handwritten marks for mandatory food, allergen, storage, lot, serve-by or legal information.",
+      "Do not make brick, concrete, wear, darkness or paper imply sanitation, authenticity or environmental benefit by appearance alone.",
+      "Do not lock actual process time, temperature, pH, yield, strain duration, infusion formulation, fold count, fill, seal, storage or shelf life before validation.",
+      "Fig Leaf requires species, plant part, latex, furanocoumarin, preparation and regulatory review; Olive Oil & Sea Salt requires oxidation, emulsion, salt and sensory validation.",
+      "Dark mood imagery cannot substitute for color-accurate product, ingredient, texture, label-legibility or hygiene proof."
+    ],
+    "process_evidence_sources": [
+      {
+        "source": "Tetra Pak Dairy Processing Handbook — Fermented Milk Products",
+        "url": "https://dairyprocessinghandbook.tetrapak.com/chapter/fermented-milk-products",
+        "supports": "yogurt heat treatment direction, fermentation to target pH, cooling, concentration routes and shear sensitivity"
+      },
+      {
+        "source": "Wisconsin Center for Dairy Research — Yogurt Monograph: Production",
+        "url": "https://cdr.wisc.edu/yogurt-monograph-production",
+        "supports": "acid gel formation and Greek-yogurt concentration/straining routes"
+      },
+      {
+        "source": "Washington State University Extension — Yogurt Made Simple",
+        "url": "https://pubs.extension.wsu.edu/product/yogurt-made-simple/",
+        "supports": "sanitation, small-batch heat/cool/inoculate/incubate sequence and refrigerated cloth straining reference"
+      },
+      {
+        "source": "Codex Alimentarius CXS 243-2003 — Standard for Fermented Milks",
+        "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/es/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXS%2B243-2003%252FCXS_243e.pdf",
+        "supports": "fermented-milk category definitions and regulatory reference point"
+      },
+      {
+        "source": "PMC review — Yogurt processing and rheology",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11798767/",
+        "supports": "shear-sensitive and thixotropic behavior during mixing, pumping and packing"
+      }
+    ]
+  }
+}

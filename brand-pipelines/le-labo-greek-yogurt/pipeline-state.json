@@ -1,0 +1,834 @@
+{
+  "schema_version": "1.1.0",
+  "artifact_type": "brand_pipeline_state",
+  "auto_chain": true,
+  "created_at": "2026-08-24T14:57:03.936111+00:00",
+  "current_stage": "stage_3",
+  "status": "waiting_for_review",
+  "pending_user_action": "review_stage_3",
+  "execution": {
+    "mode": "parallel_single_brand",
+    "max_workers": 3,
+    "single_writer": true,
+    "active_wave": "stage3_revision3_complete_pending_review",
+    "serial_fallback_reason": {},
+    "jobs": [
+      {
+        "stage": "stage_1",
+        "job_id": "strategy_verbal_identity",
+        "parallel_group": "stage1_research",
+        "owner": "strategy-worker",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-24T14:57:39.466909+00:00",
+        "finished_at": "2026-08-24T15:05:37.150853+00:00",
+        "outputs": [
+          "01-source-brand/.work/strategy_verbal_identity/shard.json"
+        ],
+        "note": "First-party strategy, verbal, and identity evidence complete."
+      },
+      {
+        "stage": "stage_1",
+        "job_id": "visual_corpus",
+        "parallel_group": "stage1_research",
+        "owner": "visual-worker",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-24T14:57:39.503536+00:00",
+        "finished_at": "2026-08-24T15:05:37.186588+00:00",
+        "outputs": [
+          "01-source-brand/.work/visual_corpus/shard.json"
+        ],
+        "note": "Twelve official local visuals across seven layers complete."
+      },
+      {
+        "stage": "stage_1",
+        "job_id": "product_native_service",
+        "parallel_group": "stage1_research",
+        "owner": "product-worker",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-24T14:57:39.539554+00:00",
+        "finished_at": "2026-08-24T15:05:37.220890+00:00",
+        "outputs": [
+          "01-source-brand/.work/product_native_service/shard.json"
+        ],
+        "note": "Product-native, representation, packaging, refill, and service evidence complete."
+      },
+      {
+        "stage": "stage_1",
+        "job_id": "visual_expansion_product_packaging",
+        "parallel_group": "stage1_visual_expansion",
+        "owner": "le_labo_product",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-24T15:26:17.250553+00:00",
+        "finished_at": "2026-08-24T15:38:08.228897+00:00",
+        "outputs": [
+          "01-source-brand/.work/visual-expansion/product-packaging/shard.json"
+        ],
+        "note": "9 unique official product and packaging visuals accepted."
+      },
+      {
+        "stage": "stage_1",
+        "job_id": "visual_expansion_space_service",
+        "parallel_group": "stage1_visual_expansion",
+        "owner": "le_labo_strategy",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-24T15:26:17.287532+00:00",
+        "finished_at": "2026-08-24T15:38:08.263426+00:00",
+        "outputs": [
+          "01-source-brand/.work/visual-expansion/space-service/shard.json"
+        ],
+        "note": "8 unique official lab, formulation, and refill-sequence visuals accepted."
+      },
+      {
+        "stage": "stage_1",
+        "job_id": "visual_expansion_editorial_craft",
+        "parallel_group": "stage1_visual_expansion",
+        "owner": "le_labo_visuals",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-24T15:26:17.327924+00:00",
+        "finished_at": "2026-08-24T15:38:08.297364+00:00",
+        "outputs": [
+          "01-source-brand/.work/visual-expansion/editorial-craft/shard.json"
+        ],
+        "note": "12 unique official Films, city-lab, craft, and Le Journal visuals accepted."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "verbal_narrative",
+        "parallel_group": "stage2_direction",
+        "owner": "le_labo_strategy",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-24T16:00:53.607306+00:00",
+        "finished_at": "2026-08-24T16:14:33.128229+00:00",
+        "outputs": [
+          "02-extended-brand/.work/verbal_narrative/shard.json"
+        ],
+        "note": "Verbal hierarchy, three narrative routes, values, and five product USPs completed."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "product_lineup",
+        "parallel_group": "stage2_direction",
+        "owner": "le_labo_product",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-24T16:00:53.645525+00:00",
+        "finished_at": "2026-08-24T16:14:33.165262+00:00",
+        "outputs": [
+          "02-extended-brand/.work/product_lineup/shard.json"
+        ],
+        "note": "Five-product lineup, family architecture, form cues, and proof-image roles completed."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "visual_tokens",
+        "parallel_group": "stage2_direction",
+        "owner": "le_labo_visuals",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-24T16:00:53.680718+00:00",
+        "finished_at": "2026-08-24T16:14:33.199079+00:00",
+        "outputs": [
+          "02-extended-brand/.work/visual_tokens/shard.json"
+        ],
+        "note": "Key visual, mood, product imagery, and 35 directional tokens completed."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "product_anchor",
+        "parallel_group": "stage2_anchors",
+        "owner": "root-imagegen",
+        "status": "completed",
+        "attempts": 0,
+        "started_at": "",
+        "finished_at": "2026-08-24T16:04:55.094344+00:00",
+        "outputs": [
+          "02-extended-brand/assets/product-hero/mora-thyme-honey-hero.png"
+        ],
+        "note": "Built-in image generation; product form, food texture, exact MORA/THYME HONEY copy, and copy-safe field visually checked."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "brand_mood_anchor",
+        "parallel_group": "stage2_anchors",
+        "owner": "root-imagegen",
+        "status": "completed",
+        "attempts": 0,
+        "started_at": "",
+        "finished_at": "2026-08-24T16:04:55.137610+00:00",
+        "outputs": [
+          "02-extended-brand/assets/brand-mood/mora-infusion-process.png"
+        ],
+        "note": "Built-in image generation; one-person infusion action, modern food atelier, and physical continuity visually checked."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision2_product_extension",
+        "parallel_group": "stage2_revision2",
+        "owner": "le_labo_product",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-24T16:19:41.554199+00:00",
+        "finished_at": "2026-08-24T16:24:19.174387+00:00",
+        "outputs": [
+          "02-extended-brand/.work/revision2_product_extension/shard.json"
+        ],
+        "note": "Sixth product concept and six-product family updates delivered and JSON-validated."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision2_verbal_extension",
+        "parallel_group": "stage2_revision2",
+        "owner": "le_labo_strategy",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-24T16:19:41.590240+00:00",
+        "finished_at": "2026-08-24T16:25:13.804052+00:00",
+        "outputs": [
+          "02-extended-brand/.work/revision2_verbal_extension/shard.json"
+        ],
+        "note": "Six-product verbal hierarchy, narrative, exact replacement map and claim boundaries delivered and JSON-validated."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision2_mood_shot_system",
+        "parallel_group": "stage2_revision2",
+        "owner": "le_labo_visuals",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-24T16:19:41.622828+00:00",
+        "finished_at": "2026-08-24T16:26:13.455943+00:00",
+        "outputs": [
+          "02-extended-brand/.work/revision2_mood_shot_system/shard.json"
+        ],
+        "note": "Strict front and side mood-shot system, continuity lock, QA and Olive Oil color token delivered and JSON-validated."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision2_mood_front",
+        "parallel_group": "stage2_revision2_images",
+        "owner": "root-imagegen",
+        "status": "completed",
+        "attempts": 0,
+        "started_at": "",
+        "finished_at": "2026-08-24T16:24:19.326290+00:00",
+        "outputs": [
+          "02-extended-brand/assets/brand-mood/mora-infusion-front-v2.png"
+        ],
+        "note": "Built-in image generation; strict frontal geometry, centered infusion action, modern atelier and directional-light detail visually checked."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision2_mood_side",
+        "parallel_group": "stage2_revision2_images",
+        "owner": "root-imagegen",
+        "status": "completed",
+        "attempts": 0,
+        "started_at": "",
+        "finished_at": "2026-08-24T16:24:19.466522+00:00",
+        "outputs": [
+          "02-extended-brand/assets/brand-mood/mora-infusion-side-v2.png"
+        ],
+        "note": "Built-in image generation; strict right-side profile, readable lateral infusion action, series continuity and physical consistency visually checked."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision3_product_photo_integration",
+        "parallel_group": "stage2_revision3_product_images",
+        "owner": "root-imagegen",
+        "status": "completed",
+        "attempts": 0,
+        "started_at": "",
+        "finished_at": "2026-08-25T06:57:40.931794+00:00",
+        "outputs": [
+          "02-extended-brand/.work/merge_product_photos.py"
+        ],
+        "note": "Built-in image generation and product-series integration; frontal cup geometry, exact product name, open yogurt use, local marker and recipe-specific food trace visually checked."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision3_product_photo_thyme_honey",
+        "parallel_group": "stage2_revision3_product_images",
+        "owner": "root-imagegen",
+        "status": "completed",
+        "attempts": 0,
+        "started_at": "",
+        "finished_at": "2026-08-25T06:58:27.132047+00:00",
+        "outputs": [
+          "02-extended-brand/assets/product-series/mora-thyme-honey-frontal.png"
+        ],
+        "note": "Built-in image generation; frontal cup geometry, exact product name, open yogurt use, local marker and recipe-specific food trace visually checked."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision3_product_photo_fig_leaf",
+        "parallel_group": "stage2_revision3_product_images",
+        "owner": "root-imagegen",
+        "status": "completed",
+        "attempts": 0,
+        "started_at": "",
+        "finished_at": "2026-08-25T06:58:27.276040+00:00",
+        "outputs": [
+          "02-extended-brand/assets/product-series/mora-fig-leaf-frontal.png"
+        ],
+        "note": "Built-in image generation; frontal cup geometry, exact product name, open yogurt use, local marker and recipe-specific food trace visually checked."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision3_product_photo_roasted_buckwheat",
+        "parallel_group": "stage2_revision3_product_images",
+        "owner": "root-imagegen",
+        "status": "completed",
+        "attempts": 0,
+        "started_at": "",
+        "finished_at": "2026-08-25T06:58:27.411998+00:00",
+        "outputs": [
+          "02-extended-brand/assets/product-series/mora-roasted-buckwheat-frontal.png"
+        ],
+        "note": "Built-in image generation; frontal cup geometry, exact product name, open yogurt use, local marker and recipe-specific food trace visually checked."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision3_product_photo_citrus_peel",
+        "parallel_group": "stage2_revision3_product_images",
+        "owner": "root-imagegen",
+        "status": "completed",
+        "attempts": 0,
+        "started_at": "",
+        "finished_at": "2026-08-25T06:58:27.563615+00:00",
+        "outputs": [
+          "02-extended-brand/assets/product-series/mora-citrus-peel-frontal.png"
+        ],
+        "note": "Built-in image generation; frontal cup geometry, exact product name, open yogurt use, local marker and recipe-specific food trace visually checked."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision3_product_photo_black_sesame",
+        "parallel_group": "stage2_revision3_product_images",
+        "owner": "root-imagegen",
+        "status": "completed",
+        "attempts": 0,
+        "started_at": "",
+        "finished_at": "2026-08-25T06:58:27.711633+00:00",
+        "outputs": [
+          "02-extended-brand/assets/product-series/mora-black-sesame-frontal.png"
+        ],
+        "note": "Built-in image generation; frontal cup geometry, exact product name, open yogurt use, local marker and recipe-specific food trace visually checked."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision3_product_photo_olive_oil_sea_salt",
+        "parallel_group": "stage2_revision3_product_images",
+        "owner": "root-imagegen",
+        "status": "completed",
+        "attempts": 0,
+        "started_at": "",
+        "finished_at": "2026-08-25T06:58:27.838224+00:00",
+        "outputs": [
+          "02-extended-brand/assets/product-series/mora-olive-oil-sea-salt-frontal.png"
+        ],
+        "note": "Built-in image generation; frontal cup geometry, exact product name, open yogurt use, local marker and recipe-specific food trace visually checked."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision4_process_world",
+        "parallel_group": "revision4",
+        "owner": "le_labo_process",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-25T08:29:21.441285+00:00",
+        "finished_at": "2026-08-25T08:34:38.362199+00:00",
+        "outputs": [
+          "02-extended-brand/.work/revision4_process_world/shard.json"
+        ],
+        "note": ""
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision4_craft_world",
+        "parallel_group": "revision4",
+        "owner": "le_labo_craft",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-25T08:29:21.570715+00:00",
+        "finished_at": "2026-08-25T08:34:38.637019+00:00",
+        "outputs": [
+          "02-extended-brand/.work/revision4_craft_world/shard.json"
+        ],
+        "note": ""
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision4_process_visuals",
+        "parallel_group": "revision4",
+        "owner": "le_labo_world_visuals",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-25T08:29:21.698906+00:00",
+        "finished_at": "2026-08-25T08:34:38.890645+00:00",
+        "outputs": [
+          "02-extended-brand/.work/revision4_process_visuals/shard.json"
+        ],
+        "note": ""
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision5_founder_story",
+        "parallel_group": "revision5",
+        "owner": "mora_founder_story",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-25T09:40:01.493954+00:00",
+        "finished_at": "2026-08-25T09:52:48.170154+00:00",
+        "outputs": [
+          "02-extended-brand/.work/revision5_founder_story/shard.json"
+        ],
+        "note": ""
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision5_lineup_story",
+        "parallel_group": "revision5",
+        "owner": "mora_lineup_story",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-25T09:40:01.634004+00:00",
+        "finished_at": "2026-08-25T09:52:48.307252+00:00",
+        "outputs": [
+          "02-extended-brand/.work/revision5_lineup_story/shard.json"
+        ],
+        "note": ""
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision5_stage3_story",
+        "parallel_group": "revision5",
+        "owner": "mora_stage3_story",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-25T09:40:01.765439+00:00",
+        "finished_at": "2026-08-25T09:52:48.443827+00:00",
+        "outputs": [
+          "02-extended-brand/.work/revision5_stage3_story/shard.json"
+        ],
+        "note": ""
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision6_source_material",
+        "parallel_group": "revision6_material_reconstruction",
+        "owner": "mora_founder_story",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-25T14:40:33.748743+00:00",
+        "finished_at": "2026-08-25T14:53:05.866401+00:00",
+        "outputs": [
+          "02-extended-brand/.work/revision6_source_material/shard.json"
+        ],
+        "note": ""
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision6_packaging_system",
+        "parallel_group": "revision6_material_reconstruction",
+        "owner": "mora_lineup_story",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-25T14:40:33.898086+00:00",
+        "finished_at": "2026-08-25T14:53:06.005011+00:00",
+        "outputs": [
+          "02-extended-brand/.work/revision6_packaging_system/shard.json"
+        ],
+        "note": ""
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision6_mood_reconstruction",
+        "parallel_group": "revision6_material_reconstruction",
+        "owner": "mora_stage3_story",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-25T14:40:34.036697+00:00",
+        "finished_at": "2026-08-25T14:53:06.153638+00:00",
+        "outputs": [
+          "02-extended-brand/.work/revision6_mood_reconstruction/shard.json"
+        ],
+        "note": ""
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision7_semantic_direct_print",
+        "parallel_group": "revision7_clear_direct_print",
+        "owner": "mora_founder_story",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-25T16:46:27.281349+00:00",
+        "finished_at": "2026-08-25T16:59:47.496808+00:00",
+        "outputs": [
+          "02-extended-brand/.work/revision7_semantic_direct_print/shard.json"
+        ],
+        "note": "Le Labo causal translation and direct-print verbal/material rule jq-validated."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision7_pack_direct_print",
+        "parallel_group": "revision7_clear_direct_print",
+        "owner": "mora_lineup_story",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-25T16:46:27.314181+00:00",
+        "finished_at": "2026-08-25T16:59:47.528156+00:00",
+        "outputs": [
+          "02-extended-brand/.work/revision7_pack_direct_print/shard.json"
+        ],
+        "note": "Clear Witness Cup architecture, print zones, production candidates and release gates jq-validated."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision7_visual_direct_print",
+        "parallel_group": "revision7_clear_direct_print",
+        "owner": "mora_stage3_story",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-25T16:46:27.345182+00:00",
+        "finished_at": "2026-08-25T20:03:27.059913+00:00",
+        "outputs": [
+          "02-extended-brand/.work/revision7_visual_direct_print/shard.json"
+        ],
+        "note": "Revision 7 visual system and exact canonical replacements jq-validated."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision7_product_series_clear",
+        "parallel_group": "revision7_clear_image_generation",
+        "owner": "root-imagegen",
+        "status": "completed",
+        "attempts": 0,
+        "started_at": "",
+        "finished_at": "2026-08-25T16:52:44.089118+00:00",
+        "outputs": [
+          "02-extended-brand/assets/product-series-clear"
+        ],
+        "note": "Built-in image generation: six product portraits revised in parallel. Paper collars removed, food preserved, transparent vessel and direct black print introduced; visual QA passed for all six."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision7_hero_anatomy_images",
+        "parallel_group": "revision7_clear_image_generation",
+        "owner": "mora_lineup_story",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-25T16:53:23.033923+00:00",
+        "finished_at": "2026-08-25T16:59:28.408851+00:00",
+        "outputs": [
+          "02-extended-brand/.work/revision7_hero_anatomy_assets"
+        ],
+        "note": "Built-in edit generation complete; transparent direct-print hero and collar-free package anatomy visually QA-passed."
+      },
+      {
+        "stage": "stage_2",
+        "job_id": "revision7_mood_clear_images",
+        "parallel_group": "revision7_clear_image_generation",
+        "owner": "mora_stage3_story",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-25T16:55:48.183542+00:00",
+        "finished_at": "2026-08-25T19:20:16.256115+00:00",
+        "outputs": [
+          "02-extended-brand/.work/revision7_mood_clear_assets"
+        ],
+        "note": "Transparent direct-print final-inspection frontal and strict-side pair generated; original-resolution visual QA passed."
+      },
+      {
+        "stage": "stage_3",
+        "job_id": "stage3_launch_narrative",
+        "parallel_group": "stage3_wave_a",
+        "owner": "mora_founder_story",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-25T20:54:09.013550+00:00",
+        "finished_at": "2026-08-26T00:51:48.100392+00:00",
+        "outputs": [
+          "03-landing-materials/.work/stage3_launch_narrative/shard.json"
+        ],
+        "note": "Four brand values, public-safe origin, founder fact gates, 9-step manufacturing direction, six ingredients and aerial hero QA completed."
+      },
+      {
+        "stage": "stage_3",
+        "job_id": "stage3_lineup_pack_cx",
+        "parallel_group": "stage3_wave_a",
+        "owner": "mora_lineup_story",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-25T20:54:09.146014+00:00",
+        "finished_at": "2026-08-26T00:51:48.244684+00:00",
+        "outputs": [
+          "03-landing-materials/.work/stage3_lineup_pack_cx/shard.json"
+        ],
+        "note": "Six-product launch copy, six accepted frontal renders, package anatomy and customer open-spoon frame completed with provenance and QA."
+      },
+      {
+        "stage": "stage_3",
+        "job_id": "stage3_meta_photo_series",
+        "parallel_group": "stage3_wave_a",
+        "owner": "mora_stage3_story",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-25T20:54:09.263192+00:00",
+        "finished_at": "2026-08-26T00:51:48.404289+00:00",
+        "outputs": [
+          "03-landing-materials/.work/stage3_meta_photo_series/shard.json"
+        ],
+        "note": "Five commercial meta/process images generated; original-resolution QA and provenance completed."
+      },
+      {
+        "stage": "stage_3",
+        "job_id": "stage3_root_approved_mood",
+        "parallel_group": "stage3_wave_a",
+        "owner": "root",
+        "status": "completed",
+        "attempts": 0,
+        "started_at": "",
+        "finished_at": "2026-08-25T21:51:39.293796+00:00",
+        "outputs": [
+          "03-landing-materials/.work/stage3-root-approved-mood/shard.json"
+        ],
+        "note": "Accepted front/side Final Check pair copied into Stage 3 with locked provenance and original-resolution QA."
+      },
+      {
+        "stage": "stage_3",
+        "job_id": "revision2_glass_product_masters",
+        "parallel_group": "stage3_revision2_glass_reference",
+        "owner": "glass_product_masters",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-28T10:04:14.263077+00:00",
+        "finished_at": "2026-08-28T10:33:24.454449+00:00",
+        "outputs": [
+          "03-landing-materials/.work/revision2_glass_reference/package-masters-shard.json"
+        ],
+        "note": "Package and product-composition golden masters completed at 1536 square; plain metal closure, premium glass, wide mouth and overlay authority visually QA-passed."
+      },
+      {
+        "stage": "stage_3",
+        "job_id": "revision2_ingredient_refs_a",
+        "parallel_group": "stage3_revision2_glass_reference",
+        "owner": "ingredient_refs_a",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-28T10:04:14.296526+00:00",
+        "finished_at": "2026-08-28T10:33:48.931020+00:00",
+        "outputs": [
+          "03-landing-materials/.work/revision2_glass_reference/ingredients-a-shard.json"
+        ],
+        "note": "Three individual aerial ingredient references completed and normalized to exact 1536 square with 44% dish occupancy; visual QA and provenance passed."
+      },
+      {
+        "stage": "stage_3",
+        "job_id": "revision2_ingredient_refs_b",
+        "parallel_group": "stage3_revision2_glass_reference",
+        "owner": "ingredient_refs_b",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-28T10:04:14.329041+00:00",
+        "finished_at": "2026-08-28T10:28:14.332364+00:00",
+        "outputs": [
+          "03-landing-materials/.work/revision2_glass_reference/ingredients-b-shard.json"
+        ],
+        "note": "Three individual aerial ingredient references completed at 1536 square with normalized center and occupancy; visual QA and provenance passed."
+      },
+      {
+        "stage": "stage_3",
+        "job_id": "revision2_reference_modules",
+        "parallel_group": "stage3_revision2_glass_reference",
+        "owner": "root",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-28T10:04:14.362519+00:00",
+        "finished_at": "2026-08-28T10:33:24.486736+00:00",
+        "outputs": [
+          "03-landing-materials/prompts/modules",
+          "03-landing-materials/.work/revision2_glass_reference/prompt-module-audit.json"
+        ],
+        "note": "Cross-model prompt contract, three series modules and one-axis delta QA loop completed; independent audit passed after minimal corrections."
+      },
+      {
+        "stage": "stage_3",
+        "job_id": "revision3_wave_a_vessel_record",
+        "parallel_group": "stage3_revision3_wave_a",
+        "owner": "glass_product_masters",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-28T16:42:08.657405+00:00",
+        "finished_at": "2026-08-28T16:52:47.922840+00:00",
+        "outputs": [
+          "03-landing-materials/.work/revision3_vessel_folios/wave-a-package-shard.json",
+          "03-landing-materials/assets/reference-system/mora-glass-package-master-front.png",
+          "03-landing-materials/assets/reference-system/mora-vessel-record-print-spec.svg",
+          "03-landing-materials/prompts/ST3-REF-GLASS-PACKAGE-MASTER-17.md",
+          "03-landing-materials/prompts/ST3-PACKAGING-VESSEL-RECORD-SPEC-25.md"
+        ],
+        "note": "Vessel Record raster master and exact vector print/form specification approved; dual authority frozen."
+      },
+      {
+        "stage": "stage_3",
+        "job_id": "revision3_wave_a_etch_master",
+        "parallel_group": "stage3_revision3_wave_a",
+        "owner": "ingredient_refs_a",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-28T16:42:08.792168+00:00",
+        "finished_at": "2026-08-28T16:48:03.625835+00:00",
+        "outputs": [
+          "03-landing-materials/.work/revision3_vessel_folios/wave-a-etch-master-shard.json",
+          "03-landing-materials/assets/editorial-etchings/mora-etching-brand-trace-master.png",
+          "03-landing-materials/prompts/ST3-ETCH-BRAND-TRACE-MASTER-26.md"
+        ],
+        "note": "Material Folios style master approved at 1536x1024; QA passed with one material transition and 68% negative space."
+      },
+      {
+        "stage": "stage_3",
+        "job_id": "revision3_wave_a_prompt_modules",
+        "parallel_group": "stage3_revision3_wave_a",
+        "owner": "ingredient_refs_b",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-28T16:42:08.927510+00:00",
+        "finished_at": "2026-08-28T16:52:31.494364+00:00",
+        "outputs": [
+          "03-landing-materials/.work/revision3_vessel_folios/wave-a-prompt-shard.json",
+          "03-landing-materials/prompts/modules/MATERIAL-FOLIOS-SERIES-LOCK.md",
+          "03-landing-materials/prompts/modules/NARRATIVE-ETCHING-TEMPLATE.md",
+          "03-landing-materials/prompts/modules/MATERIAL-PLATE-TEMPLATE.md"
+        ],
+        "note": "Material Folios series lock, narrative template, material plate template and Wave B asset mapping validated."
+      },
+      {
+        "stage": "stage_3",
+        "job_id": "revision3_wave_b_composition",
+        "parallel_group": "stage3_revision3_wave_b",
+        "owner": "glass_product_masters",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-28T16:54:16.034205+00:00",
+        "finished_at": "2026-08-28T17:00:51.407401+00:00",
+        "outputs": [
+          "03-landing-materials/.work/revision3_vessel_folios/wave-b-composition-shard.json",
+          "03-landing-materials/assets/reference-system/mora-product-composition-master-front.png",
+          "03-landing-materials/prompts/ST3-REF-PRODUCT-COMPOSITION-MASTER-18.md"
+        ],
+        "note": "Revised Vessel Record composition master approved; four non-overlapping use zones and dual authority QA passed."
+      },
+      {
+        "stage": "stage_3",
+        "job_id": "revision3_wave_b_etch_a",
+        "parallel_group": "stage3_revision3_wave_b",
+        "owner": "ingredient_refs_a",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-28T16:54:16.220102+00:00",
+        "finished_at": "2026-08-28T17:14:35.321941+00:00",
+        "outputs": [
+          "03-landing-materials/.work/revision3_vessel_folios/wave-b-etch-a-shard.json",
+          "03-landing-materials/assets/editorial-etchings/mora-etch-brand-first-furrow-3x2.png",
+          "03-landing-materials/assets/editorial-etchings/mora-etch-founder-table-3x2.png",
+          "03-landing-materials/assets/editorial-etchings/mora-etch-material-thyme-honey-square.png",
+          "03-landing-materials/assets/editorial-etchings/mora-etch-material-fig-leaf-square.png",
+          "03-landing-materials/assets/editorial-etchings/mora-etch-material-roasted-buckwheat-square.png"
+        ],
+        "note": "Origin, founder and Thyme Honey, Fig Leaf, Roasted Buckwheat Folios approved; crop and tint-only deltas applied where needed."
+      },
+      {
+        "stage": "stage_3",
+        "job_id": "revision3_wave_b_etch_b",
+        "parallel_group": "stage3_revision3_wave_b",
+        "owner": "ingredient_refs_b",
+        "status": "completed",
+        "attempts": 1,
+        "started_at": "2026-08-28T16:54:16.426307+00:00",
+        "finished_at": "2026-08-28T17:07:24.128820+00:00",
+        "outputs": [
+          "03-landing-materials/.work/revision3_vessel_folios/wave-b-etch-b-shard.json",
+          "03-landing-materials/assets/editorial-etchings/mora-etch-process-cloth-to-body-3x2.png",
+          "03-landing-materials/assets/editorial-etchings/mora-etch-material-citrus-peel-square.png",
+          "03-landing-materials/assets/editorial-etchings/mora-etch-material-black-sesame-square.png",
+          "03-landing-materials/assets/editorial-etchings/mora-etch-material-olive-oil-sea-salt-square.png"
+        ],
+        "note": "Process and Citrus, Black Sesame, Olive Oil & Sea Salt Folios approved; tint-only deltas applied where needed."
+      },
+      {
+        "stage": "stage_3",
+        "job_id": "revision3_root_integration",
+        "parallel_group": "stage3_revision3_integration",
+        "owner": "root",
+        "status": "completed",
+        "attempts": 0,
+        "started_at": "",
+        "finished_at": "2026-08-28T17:23:08.238225+00:00",
+        "outputs": [
+          "03-landing-materials/outputs/landing-materials.json",
+          "03-landing-materials/asset-registry.json",
+          "03-landing-materials/landing-materials.md",
+          "03-landing-materials/registration-receipt.json"
+        ],
+        "note": "35 assets and 35 section mappings validated, finalized and automatically registered; Storybook contract checks passed without browser automation."
+      }
+    ]
+  },
+  "stages": {
+    "stage_1": {
+      "skill": "research-brand-anatomy",
+      "package_path": "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/01-source-brand",
+      "review_file": "stage-review.json",
+      "status": "accepted",
+      "started_at": "2026-08-24T14:57:03.936111+00:00",
+      "completed_at": "2026-08-24T15:57:06.946353+00:00",
+      "next_stage": "stage_2"
+    },
+    "stage_2": {
+      "skill": "build-brand-from-anatomy",
+      "package_path": "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/02-extended-brand",
+      "review_file": "stage-review.json",
+      "status": "accepted",
+      "started_at": "2026-08-24T15:57:06.946404+00:00",
+      "completed_at": "2026-08-25T20:03:34.582108+00:00",
+      "next_stage": "stage_3"
+    },
+    "stage_3": {
+      "skill": "build-landing-materials",
+      "package_path": "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/03-landing-materials",
+      "review_file": "stage-review.json",
+      "status": "waiting_for_review",
+      "started_at": "2026-08-25T20:03:34.582150+00:00",
+      "completed_at": null,
+      "next_stage": null
+    }
+  },
+  "transition_log": [
+    {
+      "from": "stage_1",
+      "to": "stage_2",
+      "decision": "accepted",
+      "at": "2026-08-24T15:57:06.946397+00:00"
+    },
+    {
+      "from": "stage_2",
+      "to": "stage_3",
+      "decision": "accepted",
+      "at": "2026-08-25T20:03:34.582144+00:00"
+    },
+    {
+      "from": "stage_3",
+      "to": null,
+      "decision": "accepted",
+      "at": "2026-08-26T00:56:53.392600+00:00"
+    }
+  ],
+  "updated_at": "2026-08-28T17:23:08.238416+00:00"
+}

@@ -1,0 +1,271 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "stage3_vessel_folios_wave_a_prompt_shard",
+  "revision": "stage3_revision3_vessel_folios",
+  "generated_at": "2026-08-28T16:48:04Z",
+  "status": "ready_for_root_acceptance",
+  "ownership": "prompt modules and Wave B prompt mapping only; no images, canonical JSON, registry, review, pipeline or Storybook/public output",
+  "direction_lock": ".work/revision3_vessel_folios/direction-lock.json",
+  "source_reference_roles": [
+    {
+      "reference": "01-source-brand/evidence/visual-expansion/editorial-craft/VE-EC-014-le-journal-house-rules.png",
+      "allowed_role": "research evidence for fine monochrome contour, hatch, stipple and tactile printed-object rendering",
+      "prohibited_use": "never attach as an image-generation reference; never copy its house, perfume bottle, travel case, dense collage or exact composition"
+    },
+    {
+      "reference": "01-source-brand/evidence/visual-expansion/editorial-craft/VE-EC-015-le-journal-wish-you-wore-here.png",
+      "allowed_role": "research evidence for sparse editorial ground and one legible surreal transformation",
+      "prohibited_use": "never attach as an image-generation reference; never copy bottle-as-door, portal, coast scene, perfume silhouette or exact composition"
+    }
+  ],
+  "modules": [
+    {
+      "path": "prompts/modules/MATERIAL-FOLIOS-SERIES-LOCK.md",
+      "role": "universal paper, ink, occupancy, transition, source-distance, QA and delta-edit contract",
+      "sha256": "54c61ab802cbb9c2cd18edb76ac21796a90206b280b7d06c6aa7a7cd1a37bd6b"
+    },
+    {
+      "path": "prompts/modules/NARRATIVE-ETCHING-TEMPLATE.md",
+      "role": "3:2 brand, origin, founder and process compiler with factual founder gate and one-beat storyboard",
+      "sha256": "bb51d2367751903672c1c9294d65fd24e868101cc787af850289e1982eb73d71"
+    },
+    {
+      "path": "prompts/modules/MATERIAL-PLATE-TEMPLATE.md",
+      "role": "1:1 ingredient identity to preparation to finished-trace compiler with one restricted 5-8% tint",
+      "sha256": "0565be46fd9349eaa8b67cdf2528ca5d582bfbb05360e126aba598096d0adc22"
+    }
+  ],
+  "common_prompt_contract": {
+    "paper": "Cultured Cream #F5F1E8",
+    "ink": "Carbon #171714",
+    "negative_space_percent": "65-70",
+    "inked_group_percent": "30-35",
+    "line": "fine copperplate contour, form-following cross-hatch, restrained stipple, retained midtones",
+    "light": "one coherent upper-left engraving light",
+    "transition": "exactly one continuous impossible material path",
+    "text": "no text or text-like artifact inside artwork",
+    "source_boundary": "system principles only; no original Le Journal composition, wording or trade dress",
+    "material_plate_tint": "one actual-ingredient tint sampled from the matching reference, 5-8% opacity, preparation and/or finished trace only"
+  },
+  "wave_b_asset_mapping": [
+    {
+      "asset_id": "ST3-ETCH-BRAND-FIRST-FURROW-27",
+      "template": "prompts/modules/NARRATIVE-ETCHING-TEMPLATE.md",
+      "asset_role": "origin",
+      "communication_job": "Show the founding question as a measurable path from one spoon furrow through straining and ingredient states, without inventing biography.",
+      "prompt_path": "prompts/ST3-ETCH-BRAND-FIRST-FURROW-27.md",
+      "output_path": "assets/editorial-etchings/mora-etch-brand-first-furrow-3x2.png",
+      "aspect": "3:2",
+      "storyboard": {
+        "primary_real_object_group": "one spoon and dense yogurt furrow joined to a bench-scale edge, food-grade filter-cloth weave and one restrained ingredient trace",
+        "start_state": "one visible spoon furrow in dense strained yogurt",
+        "end_state": "one ingredient trace retained after measured preparation and folding",
+        "impossible_transition": "the spoon furrow continues as one unbroken path whose groove briefly takes on the scale datum and filter-cloth weave before resolving as one finished ingredient trace",
+        "reading_direction": "left-to-right",
+        "negative_space_anchor": "upper",
+        "view_mode": "near-orthographic frontal",
+        "founder_fact_status": "not_applicable",
+        "founder_image_rights_status": "not_applicable"
+      },
+      "fact_evidence": [
+        "03-landing-materials/landing-materials.md Measured Transformation steps 05-07",
+        "ST3-ETCH-BRAND-TRACE-MASTER-26",
+        "ST3-REF-GLASS-PACKAGE-MASTER-17 when vessel geometry is visible"
+      ]
+    },
+    {
+      "asset_id": "ST3-ETCH-FOUNDER-TABLE-28",
+      "template": "prompts/modules/NARRATIVE-ETCHING-TEMPLATE.md",
+      "asset_role": "founder",
+      "communication_job": "Show the unanswered founding question through the table and tools that precede a product, never through an invented person.",
+      "prompt_path": "prompts/ST3-ETCH-FOUNDER-TABLE-28.md",
+      "output_path": "assets/editorial-etchings/mora-etch-founder-table-3x2.png",
+      "aspect": "3:2",
+      "storyboard": {
+        "primary_real_object_group": "an empty contemporary worktable holding one bench scale, folded food-grade filter cloth, one blank closed notebook, one non-identifying ingredient specimen and one empty MORA Vessel Record",
+        "start_state": "unmarked filter-cloth weave on the empty worktable",
+        "end_state": "the smooth clear wall of the empty MORA vessel",
+        "impossible_transition": "one edge of the filter-cloth weave continuously condenses into the clear vessel wall",
+        "reading_direction": "left-to-right",
+        "negative_space_anchor": "right",
+        "view_mode": "shallow tabletop oblique",
+        "founder_fact_status": "unverified",
+        "founder_image_rights_status": "absent",
+        "human_visibility": "none; no face, body, hand, silhouette, portrait, signature or legible handwriting",
+        "ingredient_boundary": "the specimen represents an unresolved first-ingredient question and must not be identified as the historical first recipe"
+      },
+      "fact_evidence": [
+        "03-landing-materials/landing-materials.md Origin — The founding question",
+        "direction-lock.material_folios.founder_boundary",
+        "ST3-REF-GLASS-PACKAGE-MASTER-17 for vessel identity"
+      ]
+    },
+    {
+      "asset_id": "ST3-ETCH-PROCESS-CLOTH-TO-BODY-29",
+      "template": "prompts/modules/NARRATIVE-ETCHING-TEMPLATE.md",
+      "asset_role": "process",
+      "communication_job": "Explain straining as the separation that lets whey descend while a dense yogurt body remains.",
+      "prompt_path": "prompts/ST3-ETCH-PROCESS-CLOTH-TO-BODY-29.md",
+      "output_path": "assets/editorial-etchings/mora-etch-process-cloth-to-body-3x2.png",
+      "aspect": "3:2",
+      "storyboard": {
+        "primary_real_object_group": "food-grade filter cloth over a draining frame, pale whey below and retained dense cultured-yogurt mass above",
+        "start_state": "the factual woven filter cloth and cultured gel",
+        "end_state": "separated pale whey and retained concentrated yogurt body",
+        "impossible_transition": "the filter-cloth weave rises continuously into one restrained topographic landform whose channels carry a single whey line downward while the upper mass remains",
+        "reading_direction": "upper-to-lower",
+        "negative_space_anchor": "upper-right",
+        "view_mode": "shallow tabletop oblique",
+        "founder_fact_status": "not_applicable",
+        "founder_image_rights_status": "not_applicable"
+      },
+      "fact_evidence": [
+        "03-landing-materials/landing-materials.md Measured Transformation step 05",
+        "ST3-PROCESS-STRAINING-13 factual communication job"
+      ]
+    },
+    {
+      "asset_id": "ST3-ETCH-MATERIAL-THYME-HONEY-30",
+      "template": "prompts/modules/MATERIAL-PLATE-TEMPLATE.md",
+      "asset_role": "material_plate",
+      "communication_job": "Connect recognizable thyme and honey to a honey-led preparation and its amber ribbon with fine thyme flecks.",
+      "prompt_path": "prompts/ST3-ETCH-MATERIAL-THYME-HONEY-30.md",
+      "output_path": "assets/editorial-etchings/mora-etch-material-thyme-honey-square.png",
+      "aspect": "1:1",
+      "matching_ingredient_reference_id": "ST3-REF-INGREDIENT-THYME-HONEY-19",
+      "raw_identity": "one fresh thyme sprig touching raw golden honey",
+      "preparation_action": "measured combination into a honey-led thyme preparation; do not depict an unverified exact heat or filtration SOP",
+      "preparation_form": "pale amber, slowly flowing syrup",
+      "resulting_trace": "one amber honey ribbon with fine thyme flecks in dense yogurt",
+      "continuous_transition": "the thyme stem and honey meniscus share one continuous contour that thickens into the syrup and resolves as a single amber ribbon carrying fine flecks",
+      "tint": {"source":"sample from ST3-REF-INGREDIENT-THYME-HONEY-19","opacity_percent":"5-8","scope":"preparation and resulting trace only"},
+      "fact_evidence": ["03-landing-materials/landing-materials.md Signature ingredient library — Thyme + Honey"]
+    },
+    {
+      "asset_id": "ST3-ETCH-MATERIAL-FIG-LEAF-31",
+      "template": "prompts/modules/MATERIAL-PLATE-TEMPLATE.md",
+      "asset_role": "material_plate",
+      "communication_job": "Connect a botanically legible fig leaf to a very pale filtered aqueous direction and a near-ivory green-beige vein while preserving its safety gate.",
+      "prompt_path": "prompts/ST3-ETCH-MATERIAL-FIG-LEAF-31.md",
+      "output_path": "assets/editorial-etchings/mora-etch-material-fig-leaf-square.png",
+      "aspect": "1:1",
+      "matching_ingredient_reference_id": "ST3-REF-INGREDIENT-FIG-LEAF-20",
+      "raw_identity": "one clean lobed fig leaf with visible fresh veins",
+      "preparation_action": "directional filtration into a very pale aqueous preparation; do not imply edible suitability or a validated SOP",
+      "preparation_form": "very pale green-gold filtered aqueous preparation",
+      "resulting_trace": "one near-ivory green-beige vein in dense yogurt",
+      "continuous_transition": "one leaf vein narrows into the filtered aqueous flow and continues as the single near-ivory green-beige yogurt vein",
+      "tint": {"source":"sample from ST3-REF-INGREDIENT-FIG-LEAF-20","opacity_percent":"5-8","scope":"preparation and resulting trace only"},
+      "launch_gate": "conditional direction only; exact species, part, latex, furanocoumarin, edible suitability and market regulation remain unresolved",
+      "fact_evidence": ["03-landing-materials/landing-materials.md Signature ingredient library — Fig Leaf"]
+    },
+    {
+      "asset_id": "ST3-ETCH-MATERIAL-ROASTED-BUCKWHEAT-32",
+      "template": "prompts/modules/MATERIAL-PLATE-TEMPLATE.md",
+      "asset_role": "material_plate",
+      "communication_job": "Connect discrete roasted buckwheat groats to a toasted infusion or fine slurry and particles retained at two yogurt depths.",
+      "prompt_path": "prompts/ST3-ETCH-MATERIAL-ROASTED-BUCKWHEAT-32.md",
+      "output_path": "assets/editorial-etchings/mora-etch-material-roasted-buckwheat-square.png",
+      "aspect": "1:1",
+      "matching_ingredient_reference_id": "ST3-REF-INGREDIENT-ROASTED-BUCKWHEAT-21",
+      "raw_identity": "discrete roasted triangular buckwheat groats",
+      "preparation_action": "directional conversion into a roasted-grain infusion or fine slurry without invented temperatures or particle specifications",
+      "preparation_form": "warm brown, lightly turbid toasted infusion or fine slurry with restrained sediment",
+      "resulting_trace": "fine toasted particles visible at the surface and spoon-cut depth",
+      "continuous_transition": "the triangular groat edges dissolve into one turbid particulate stream that resolves as the same fine particles at two yogurt depths",
+      "tint": {"source":"sample from ST3-REF-INGREDIENT-ROASTED-BUCKWHEAT-21","opacity_percent":"5-8","scope":"preparation and resulting trace only"},
+      "fact_evidence": ["03-landing-materials/landing-materials.md Signature ingredient library — Roasted Buckwheat"]
+    },
+    {
+      "asset_id": "ST3-ETCH-MATERIAL-CITRUS-PEEL-33",
+      "template": "prompts/modules/MATERIAL-PLATE-TEMPLATE.md",
+      "asset_role": "material_plate",
+      "communication_job": "Connect fresh citrus peel ribbons to a filtered aqueous peel preparation and the fine thread and zest points retained in yogurt.",
+      "prompt_path": "prompts/ST3-ETCH-MATERIAL-CITRUS-PEEL-33.md",
+      "output_path": "assets/editorial-etchings/mora-etch-material-citrus-peel-square.png",
+      "aspect": "1:1",
+      "matching_ingredient_reference_id": "ST3-REF-INGREDIENT-CITRUS-PEEL-22",
+      "raw_identity": "fresh citrus peel ribbons with colored zest face and pale pith edge",
+      "preparation_action": "directional aqueous peel preparation and filtration without invented heat, time or dose",
+      "preparation_form": "bright gold filtered aqueous peel preparation with restrained filtered peel matter",
+      "resulting_trace": "one fine peel thread with small zest points in dense yogurt",
+      "continuous_transition": "one peel ribbon narrows into the filtered gold flow and continues as a fine yogurt thread ending in a few zest points",
+      "tint": {"source":"sample from ST3-REF-INGREDIENT-CITRUS-PEEL-22","opacity_percent":"5-8","scope":"preparation and resulting trace only"},
+      "fact_evidence": ["03-landing-materials/landing-materials.md Signature ingredient library — Citrus Peel"]
+    },
+    {
+      "asset_id": "ST3-ETCH-MATERIAL-BLACK-SESAME-34",
+      "template": "prompts/modules/MATERIAL-PLATE-TEMPLATE.md",
+      "asset_role": "material_plate",
+      "communication_job": "Connect legible black sesame seeds to an opaque fine slurry or paste and the ivory-stone-grey marble with retained particles.",
+      "prompt_path": "prompts/ST3-ETCH-MATERIAL-BLACK-SESAME-34.md",
+      "output_path": "assets/editorial-etchings/mora-etch-material-black-sesame-square.png",
+      "aspect": "1:1",
+      "matching_ingredient_reference_id": "ST3-REF-INGREDIENT-BLACK-SESAME-23",
+      "raw_identity": "small matte black sesame seeds with natural tonal and shape variation",
+      "preparation_action": "directional milling into an opaque fine slurry or paste without invented particle size or oil-separation performance",
+      "preparation_form": "dense dark charcoal-grey fine slurry or paste",
+      "resulting_trace": "one ivory-to-stone-grey marble carrying fine sesame particles",
+      "continuous_transition": "the seed cluster compresses into one dark paste band whose edge opens continuously into an ivory-stone-grey yogurt marble carrying the same particles",
+      "tint": {"source":"sample from ST3-REF-INGREDIENT-BLACK-SESAME-23","opacity_percent":"5-8","scope":"preparation and resulting trace only"},
+      "fact_evidence": ["03-landing-materials/landing-materials.md Signature ingredient library — Black Sesame"]
+    },
+    {
+      "asset_id": "ST3-ETCH-MATERIAL-OLIVE-OIL-SEA-SALT-35",
+      "template": "prompts/modules/MATERIAL-PLATE-TEMPLATE.md",
+      "asset_role": "material_plate",
+      "communication_job": "Connect raw olive oil and coarse sea salt as one recipe pair to an oil-phase direction and a thin olive-gold ribbon with a restrained salt cue.",
+      "prompt_path": "prompts/ST3-ETCH-MATERIAL-OLIVE-OIL-SEA-SALT-35.md",
+      "output_path": "assets/editorial-etchings/mora-etch-material-olive-oil-sea-salt-square.png",
+      "aspect": "1:1",
+      "matching_ingredient_reference_id": "ST3-REF-INGREDIENT-OLIVE-OIL-SEA-SALT-24",
+      "raw_identity": "green-gold raw olive oil with distinct irregular coarse sea-salt crystals as one recipe pair",
+      "preparation_action": "directional oil-phase or validated micro-emulsion development without claiming that the interface is already validated",
+      "preparation_form": "green-gold oil phase with a conditional pearly interface",
+      "resulting_trace": "one thin olive-gold ribbon with a restrained, visibly distinct salt cue",
+      "continuous_transition": "the oil meniscus and salt-crystal edge share one contour that becomes the oil-phase interface and resolves as one thin yogurt ribbon carrying a short mineral cue",
+      "tint": {"source":"sample from ST3-REF-INGREDIENT-OLIVE-OIL-SEA-SALT-24","opacity_percent":"5-8","scope":"preparation and resulting trace only"},
+      "launch_gate": "Wave 2 direction; oxidation, phase separation, salinity, sensory behavior and use-context comprehension remain unresolved",
+      "fact_evidence": ["03-landing-materials/landing-materials.md Signature ingredient library — Olive Oil + Sea Salt"]
+    }
+  ],
+  "acceptance_gate": {
+    "wave_b_release_prerequisites": [
+      "ST3-REF-GLASS-PACKAGE-MASTER-17 revised Vessel Record master is visually approved and SHA-256 frozen",
+      "ST3-ETCH-BRAND-TRACE-MASTER-26 Material Folios style master is visually approved and SHA-256 frozen",
+      "exact vector Vessel Record print specification is approved and SHA-256 frozen",
+      "all three prompt-module paths and checksums in this shard still match"
+    ],
+    "release_rule": "Do not start any Wave B image-generation call until every prerequisite is recorded as approved. Generate one asset per distinct call and never generate 27-35 as one contact sheet.",
+    "common_asset_gates": [
+      "exact ID, prompt path, output path and aspect match this mapping",
+      "paper #F5F1E8, ink #171714, clean contemporary surface and no faux aging",
+      "65-70% negative space and 30-35% compact inked group within 8% crop safety",
+      "fine copperplate contour, form-following hatch, restrained stipple and one upper-left engraving light",
+      "exactly one continuous impossible material path and no portal, split panel, collage seam or second morph",
+      "no text or text-like artifact inside artwork",
+      "no Le Journal composition, perfume silhouette, LE LABO wording, label system or trade dress",
+      "only evidence-backed objects, preparation states and traces",
+      "model, adapter, seed/reference order, prompt version, QA result and SHA-256 recorded"
+    ],
+    "narrative_gates": [
+      "exact 3:2 landscape and one approved storyboard beat",
+      "strict monochrome; no ingredient tint or other spot color",
+      "founder asset contains no human or identity cue while facts are unverified or rights absent",
+      "generated scene is not presented as actual founder, actual facility or documented history"
+    ],
+    "material_plate_gates": [
+      "exact 1:1 square and consistent lower-left to upper-right reading direction",
+      "raw identity, preparation form and finished trace remain individually legible inside one uninterrupted morph",
+      "matching ingredient reference is the only raw-identity and tint source",
+      "one tint at 5-8% opacity appears only in preparation and/or resulting trace; raw ingredient, paper, lines, tools and vessel remain monochrome",
+      "no generic elixir, tincture, spirit or shared-liquid shortcut"
+    ],
+    "conditional_product_gates": [
+      "Fig Leaf remains a conditional visual direction and makes no edible-suitability claim",
+      "Olive Oil & Sea Salt remains a Wave 2 direction and makes no validated phase, salinity or sensory-performance claim"
+    ],
+    "single_causal_edit_rule": "Repair one named axis only. Preserve every passing axis and reference order. Two same-axis delta failures force one clean restart from frozen masters; a third same-axis failure marks the adapter incompatible for that role.",
+    "root_integration_gate": "Only root may integrate accepted assets into canonical JSON, asset registry, stage review, pipeline state, public registration or generated Storybook output."
+  }
+}

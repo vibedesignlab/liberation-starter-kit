@@ -1,0 +1,484 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "extended_brand_anatomy_revision_shard",
+  "revision_id": "revision2_mood_shot_system",
+  "status": "directional_no_asset_generation",
+  "target_brand": "MORA",
+  "scope": "Two-frame dramatic brand-mood series, proposed asset records, brand-mood and visual-direction text updates, and one Olive Oil & Sea Salt identifier color.",
+  "source_inputs": [
+    {
+      "type": "transfer_input",
+      "path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/transfer-input.json",
+      "status": "read"
+    },
+    {
+      "type": "current_canonical_stage_2",
+      "path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/outputs/extended-brand-anatomy.json",
+      "status": "read"
+    },
+    {
+      "type": "current_asset_registry",
+      "path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/asset-registry.json",
+      "status": "read"
+    },
+    {
+      "type": "current_brand_mood_anchor",
+      "path": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/assets/brand-mood/mora-infusion-process.png",
+      "dimensions_px": {
+        "width": 1536,
+        "height": 1024
+      },
+      "sha256": "dfdb34c30431a8d242f1127cb32f7c5936d04ad498c1c8ea5c05b9e493fd8199",
+      "status": "visually_inspected"
+    }
+  ],
+  "current_anchor_audit": {
+    "asset_id": "ST2-BRAND-MOOD-01",
+    "strengths_to_retain": [
+      "한 명의 제작자와 한 번의 타임 허니 붓기 동작이 즉시 읽힌다.",
+      "차콜 앞치마, 백자 볼, 투명 유리 피처, 스테인리스 작업대가 현대 식품 제작 세계를 만든다.",
+      "요거트 밀도, 꿀의 점도, 타임 잎, 손과 그릇의 접촉이 물리적으로 설득력 있다.",
+      "약국, 향수, 실험실 소품 없이 food-native process proof를 제공한다."
+    ],
+    "revision_failures": [
+      "카메라가 제작자의 정면축과 측면축 사이에 있는 가까운 3/4 시점이라 요청된 두 프레임 중 어느 쪽도 충족하지 않는다.",
+      "제작자가 화면 오른쪽에 치우치고 얼굴과 어깨가 비대칭으로 보여 strict frontal symmetry가 없다.",
+      "작업대와 배경 선에 깊이 방향의 사선이 있어 센서가 후면 벽과 평행한 정면 프레임이 아니다.",
+      "밝고 자연스러운 창광은 좋지만 명확한 명암 구조와 실루엣 분리가 부족해 요청된 dramatic register가 약하다."
+    ],
+    "disposition": "supersede_after_two_frame_series_is_generated_and_passes_physical_QA",
+    "do_not_delete_before_replacement_acceptance": true
+  },
+  "mood_shot_series": {
+    "series_name": "The Infusion, Two Axes",
+    "series_premise": "같은 제작자가 같은 차콜 앞치마를 입고 같은 현대 식품 아틀리에에서 같은 타임 허니를 같은 백자 볼의 요거트에 붓는 한 순간을, 정확히 정면과 정확히 측면 두 축으로만 기록한다.",
+    "brand_function": "MORA의 프리미엄을 어두운 장식이나 장인 신화가 아니라 통제된 조명, 한 동작의 정확성, 실제 음식의 밀도와 재료 물성으로 증명한다.",
+    "sequence_read": "Frame A가 사람·공간·행동을 하나의 정면 문장으로 선언하고, Frame B가 붓기 궤적·손·볼·점도의 물리 관계를 측면 증거로 해설한다.",
+    "communication_jobs": {
+      "series": "동일한 실제 식품 동작을 두 개의 검증 가능한 직교 시점으로 반복해 차분한 정확성과 보이는 재료성을 MORA의 브랜드 태도로 만든다.",
+      "frame_a_frontal": "제작자, 볼, 피처, 붓기 동작, 현대 식품 공간을 정면 대칭 안에 묶어 MORA의 통제된 집중과 대표 브랜드 무드를 한 장에 선언한다.",
+      "frame_b_side": "같은 동작을 엄격한 측면에서 보여 주어 피처 기울기, 연속된 꿀 줄기, 요거트 접점, 손의 지지 관계가 실제로 가능한지 증명한다."
+    },
+    "series_lock": {
+      "maker": "동일 인물, 동일 머리 모양과 자연스러운 피부 표현, 로고 없는 차콜 반소매 상의와 차콜 캔버스 앞치마. 프레임 사이 메이크업, 헤어, 소매, 앞치마 끈과 주름을 바꾸지 않는다.",
+      "action": "동일한 오른손이 동일한 투명 유리 피처를 약 35–45도로 기울여 타임 허니를 한 줄기로 붓고, 동일한 왼손이 볼의 림을 가볍게 지지한다. 두 프레임 모두 줄기가 요거트에 닿기 직전부터 닿은 직후 사이의 같은 동작 위상이어야 한다.",
+      "food": "같은 배치의 진한 흰색 스트레인드 요거트, 같은 양과 색의 타임 허니, 같은 크기의 실제 타임 잎. 요거트 표면의 능선과 첫 접점 위치를 연속 촬영처럼 맞춘다.",
+      "props": "동일한 넓고 얕은 웜화이트 스톤웨어 볼, 손잡이 달린 투명 유리 피처, 브러시드 스테인리스 작업대, 접힌 워시드 오트 린넨, 타임 한 묶음. 추가 병, 비커, 계량 실린더, 라벨, 패키지는 금지한다.",
+      "atelier": "동일한 현대 식품 아틀리에. 웜그레이 미장 벽, 간결한 애시 우드 선반, 소수의 무광 세라믹, 브러시드 스테인리스 작업대만 사용한다. 노후화, 녹, 크라프트, 앰버 유리, 산업 실험실 설비는 없다.",
+      "palette": [
+        {
+          "role": "cultured cream and wall light",
+          "value": "#F5F1E8"
+        },
+        {
+          "role": "yogurt highlight",
+          "value": "#FFFDF7"
+        },
+        {
+          "role": "apron and deepest neutral",
+          "value": "#20231F"
+        },
+        {
+          "role": "honed stone and wall midtone",
+          "value": "#B8B0A2"
+        },
+        {
+          "role": "brushed stainless neutral",
+          "value": "#969A96"
+        },
+        {
+          "role": "thyme-honey food color only",
+          "value": "#B9832F"
+        },
+        {
+          "role": "natural thyme leaf only",
+          "value": "#68705A"
+        }
+      ],
+      "material_behavior": "무광 벽과 앞치마가 빛을 흡수하고, 브러시드 스테인리스는 넓고 부드러운 반사를 만들며, 유리는 실제 굴절과 두께를 보이고, 꿀은 가늘지만 끊기지 않는 점성 줄기, 요거트는 무너지지 않는 밀도와 미세한 표면 수분을 보여야 한다.",
+      "continuity_rule": "가능하면 동일 세트에서 두 대의 직교 카메라를 동시에 사용한다. 순차 촬영이라면 작업대·볼·피처·손·타임 위치를 기준점으로 계측하고, 새 요거트 볼을 동일 높이와 표면 패턴으로 준비해 붓기 위상을 다시 맞춘다.",
+      "fixed_across_frames": [
+        "maker identity, wardrobe, hair and apron folds",
+        "bowl, pitcher, thyme-honey amount and thyme bundle",
+        "maker foot mark, workbench and bowl center marks",
+        "action hand assignment and stream contact point",
+        "light source position, white balance, exposure family and palette",
+        "wall, shelf, linen and restrained ceramic set dressing"
+      ],
+      "allowed_to_change": [
+        "camera position changes by exactly 90 degrees around the fixed action center",
+        "framing width changes only enough to preserve the required occupancy and crop safety",
+        "a small flag or bounce may move only to maintain equivalent shadow detail without changing the apparent key-light source"
+      ]
+    },
+    "set_coordinate_system": {
+      "origin": "백자 볼 중심의 작업대 표면",
+      "north": "후면 웜그레이 벽",
+      "south": "작업대 전면과 Frame A 카메라",
+      "east_west": "작업대의 긴 수평축",
+      "maker_position": "볼 북쪽에 서서 남쪽을 향하며, 발·골반·흉곽·어깨가 south 축에 정렬된다.",
+      "frame_a_camera": "origin 남쪽에서 north를 향한다.",
+      "frame_b_camera": "origin 동쪽에서 west를 향해 maker의 왼쪽 측면을 본다.",
+      "axis_tolerance": "카메라 yaw는 의도 축에서 최대 ±1도, roll은 최대 ±0.25도. 그 이상은 strict view 실패다."
+    },
+    "frame_a_frontal": {
+      "proposed_asset_id": "ST2-BRAND-MOOD-01",
+      "view_requirement": "strict_100_percent_frontal",
+      "viewpoint": {
+        "camera_position": "볼 중심에서 정확히 south 축으로 2.8–3.4 m, 카메라 중심 높이 약 1.25–1.35 m",
+        "lens": "50 mm full-frame equivalent; rectilinear lens; perspective correction is limited to removing residual keystone, not reshaping the maker",
+        "sensor_and_axis": "센서 평면은 후면 벽과 작업대 전면 수직면에 평행하고 렌즈 축은 두 면에 직각이다. 카메라는 level이며 yaw와 roll이 0도다.",
+        "maker_pose": "제작자의 코·흉골·앞치마 중심·볼 중심이 하나의 수직선에 놓인다. 양어깨와 골반은 센서에 평행하고 몸통을 비틀지 않는다. 고개는 붓기 접점을 보기 위해 아래로만 기울이며 좌우 회전하지 않는다.",
+        "set_geometry_cues": "후면 선반과 작업대 전면선은 완전한 수평, 벽의 수직선은 완전한 수직이다. 좌우 깊이로 달리는 사선, 보이는 측벽, 작업대 측면, 한쪽으로 좁아지는 선반은 없어야 한다.",
+        "forbidden_three_quarter_cues": [
+          "한쪽 귀나 턱 측면이 다른 쪽보다 현저히 더 보이는 얼굴",
+          "한쪽 어깨가 카메라에 더 가까운 몸통 회전",
+          "볼의 좌우 림이 서로 다른 깊이로 보이는 비대칭 중심 배치",
+          "작업대 전면 또는 후면 선반이 한쪽 소실점으로 달리는 사선",
+          "피처를 들기 위해 전신이 한쪽으로 틀어진 포즈"
+        ]
+      },
+      "composition_and_occupancy": {
+        "master_aspect_ratio": "3:2 landscape",
+        "maker_center_x": "50% ±1%",
+        "maker_occupancy": "프레임 너비 34–38%, 프레임 높이 82–88%; 정수리 위 여백 6–8%",
+        "head_and_torso": "머리 중심 x=50%, 눈 또는 내려다보는 시선선 y=19–24%, 앞치마 상단과 흉곽이 중앙 수직축을 강조한다.",
+        "bowl": "중심 x=50% ±1%, 림 y=68–74%, 너비 30–34%, 하단은 프레임 y=88% 이전에 끝나 전체 형태가 보인다.",
+        "pitcher_and_stream": "피처는 x=40–46%, y=43–58%; 줄기는 x=48–51%에서 거의 수직으로 떨어져 요거트의 중앙보다 약간 왼쪽에 닿는다.",
+        "supporting_hand": "왼손은 x=58–64%에서 볼 림을 잡아 피처와 시각적 균형을 만든다.",
+        "negative_space": "제작자 좌우 각각 최소 17%; 상단과 측면에 UI나 짧은 카피를 위한 깨끗한 벽 영역을 보존하되 사람 위에 텍스트를 전제하지 않는다.",
+        "frame_edge_rule": "손, 피처 손잡이, 팔꿈치, 볼, 앞치마 하단을 우발적으로 자르지 않는다. 작업대는 하단 18–24%를 형성한다."
+      },
+      "moment": "타임 허니 줄기가 이미 요거트에 닿아 작은 금빛 접점과 첫 곡선을 만들었지만 큰 웅덩이나 스플래시가 생기기 전의 순간",
+      "landing_use": "브랜드 무드 대표 앵커, 공정 섹션 오프너, 넓은 데스크톱 이미지와 4:5 인물 중심 크롭"
+    },
+    "frame_b_side": {
+      "proposed_asset_id": "ST2-BRAND-MOOD-02",
+      "view_requirement": "strict_90_degree_side_profile",
+      "viewpoint": {
+        "camera_position": "볼 중심에서 정확히 east 축으로 2.8–3.4 m, Frame A와 동일한 카메라 중심 높이",
+        "lens": "50 mm full-frame equivalent, Frame A와 동일한 렌즈 계열과 카메라 높이",
+        "sensor_and_axis": "렌즈 축은 maker의 north-south sagittal plane에 정확히 수직이고 east에서 west로 향한다. 몸은 계속 south를 향하며 카메라 쪽으로 돌지 않는다.",
+        "maker_pose": "코끝·입술·턱이 하나의 깨끗한 측면 윤곽을 만들고 두 눈 중 카메라 반대편 눈은 보이지 않는다. 양어깨 중심과 양쪽 골반점은 투영상 거의 겹치며 흉곽·골반·발이 단일 측면 평면에 남는다.",
+        "action_plane": "피처, 꿀 줄기, 접점, 볼 중심을 가능한 한 maker의 sagittal action plane에 정렬한다. 가까운 왼손은 볼을 지지하지만 줄기를 가리지 않는다.",
+        "forbidden_frontal_cues": [
+          "두 눈이 보이거나 반대편 볼·콧구멍이 보이는 얼굴 회전",
+          "양어깨가 가로로 벌어져 보이는 3/4 몸통",
+          "카메라를 향해 열린 흉곽이나 앞치마 전면",
+          "손과 피처를 보이게 하려고 팔을 카메라 쪽으로 빼는 포즈",
+          "정면과 측면 사이의 60–80도 타협 시점"
+        ]
+      },
+      "composition_and_occupancy": {
+        "master_aspect_ratio": "3:2 landscape",
+        "maker_position": "머리와 흉곽 중심 x=57–61%; 전체 인물 높이 82–88%; 시선은 꿀 접점으로 향한다.",
+        "maker_occupancy": "프레임 너비 30–35% 안에서 깨끗한 단일 측면 실루엣을 만든다.",
+        "bowl": "중심 x=47–51%, 림 y=69–74%, 너비 31–35%; 측면에서 볼 높이와 요거트 표면이 함께 읽힌다.",
+        "pitcher_and_stream": "피처 중심 x=42–47%, y=44–58%; 줄기는 x=47–50%에서 끊기지 않고 내려오며 손·피처·볼 림과 겹쳐 사라지지 않는다.",
+        "profile_clearance": "코와 이마 앞쪽에 프레임 너비 12–16%의 깨끗한 음영 벽을 남겨 얼굴 윤곽과 시선 방향을 분리한다.",
+        "negative_space": "행동 앞쪽, 즉 프레임 왼쪽 20–26%는 카피 또는 다음 시퀀스로 이어지는 시선 여백이다.",
+        "frame_edge_rule": "뒤통수, 등, 팔꿈치, 피처 손잡이, 볼과 줄기를 자르지 않는다. 작업대 하단선은 Frame A와 같은 상대 높이를 유지한다."
+      },
+      "moment": "Frame A와 같은 접점 위상. 측면에서는 피처 주둥이에서 요거트까지 이어지는 줄기의 두께 변화와 접점의 작은 눌림이 보여야 한다.",
+      "landing_use": "브랜드 무드 시리즈의 두 번째 프레임, 공정 물성 증거, 16:9 시퀀스와 4:5 측면 인물 크롭"
+    },
+    "dramatic_motivated_light": {
+      "motivation": "세트 south-west 바깥의 높은 세로형 아틀리에 창에서 들어오는 늦은 오전 자연광. 창 자체를 향수 광고식 역광 장치로 보이지 않고 실제 작업광의 출처로 이해시킨다.",
+      "key": "4300–4800 K의 큰 직사각 확산광을 maker 기준 south-west 45도, 눈높이보다 35–45도 위에 둔다. 얼굴, 피처, 꿀 줄기, 요거트 능선을 한 방향으로 조각한다.",
+      "negative_fill": "maker의 north-east 쪽에 검정 플래그를 두어 차콜 앞치마와 얼굴의 암부를 깊게 하되, 피부와 천의 질감이 사라지지 않게 한다.",
+      "shadow_detail": "key:fill 노출 차는 약 2.5–3.5 stops. 가장 어두운 앞치마에도 직조와 겹침이 보이고, 얼굴 암부는 색정보를 유지하며, 검정으로 뭉개지는 픽셀 덩어리가 없어야 한다.",
+      "food_protection": "작은 front-low white bounce로 볼 안쪽을 약 0.5–1 stop 들어 올린다. 요거트 하이라이트는 RGB clipping 없이 표면 능선을 보존하고 꿀은 투명한 앰버와 굴절을 유지한다.",
+      "background": "후면 벽은 key 방향에서 완만한 명도 변화가 생기되 인공 스포트라이트 원, 컬러 젤, 비네팅 플러그인은 사용하지 않는다.",
+      "frame_continuity": "두 카메라의 white balance, shutter, aperture, ISO, tone curve를 고정한다. 시점 전환 때문에 같은 물체의 색과 광택이 바뀌지 않도록 편광 사용 여부도 동일하게 기록한다.",
+      "exposure_qa": [
+        "요거트의 가장 밝은 영역에도 미세한 능선과 수분 광택이 남는다.",
+        "차콜 앞치마 암부에 포켓선·주름·직조가 남는다.",
+        "피부가 회색이나 주황으로 치우치지 않는다.",
+        "꿀 줄기가 배경·앞치마·볼 어디에서도 끊겨 보이지 않는다.",
+        "dramatic contrast가 실험실의 차가운 청색광이나 빈티지 세피아로 변하지 않는다."
+      ]
+    },
+    "crop_system": {
+      "master": "3:2 landscape, minimum 3000×2000 px per frame after final crop",
+      "pair_rule": "두 프레임을 나란히 쓸 때 horizon/workbench line, bowl rim height, maker head height, white balance and perceived scale을 맞춘다.",
+      "sixteen_by_nine": "머리·피처·줄기·접점·볼 전체를 보존하고 위아래만 줄인다. Frame A의 maker center와 Frame B의 profile/action axis는 유지한다.",
+      "four_by_five": "Frame A는 중앙 대칭 크롭, Frame B는 profile 앞 여백을 우선해 maker와 bowl을 함께 유지한다. 손, 피처 주둥이, 줄기 접점이 하나라도 잘리면 실패다.",
+      "one_by_one": "인물 상반신·피처·줄기·볼을 동시에 담을 수 있을 때만 사용한다. 불가능하면 강제 크롭 대신 별도 네이티브 촬영을 요청한다.",
+      "copy_safe_rule": "카피는 기본적으로 이미지 밖의 별도 레이아웃 영역에 둔다. 이미지 내 카피가 필요한 파생물은 벽의 단일 톤 여백만 사용하고 얼굴, 손, 음식, 줄기 위에는 올리지 않는다.",
+      "prohibited_crop": "행동을 더 극적으로 보이게 하려고 피처·손·볼을 크게 잘라 추상적인 화장품 텍스처 이미지로 만들지 않는다."
+    },
+    "physical_and_visual_QA": {
+      "view_geometry": [
+        "Frame A에서 후면 선반과 작업대 전면선이 수평이며 maker의 양어깨가 센서에 평행하다.",
+        "Frame A에서 좌우 소실점이나 보이는 측벽이 없고 maker·볼 중심이 수직축에 놓인다.",
+        "Frame B에서 반대편 눈이 보이지 않고 양어깨·골반이 투영상 겹친다.",
+        "Frame B의 렌즈 축과 maker sagittal plane이 90도 ±1도다.",
+        "두 프레임의 카메라 높이, 렌즈 계열, action phase, bowl scale이 일치한다."
+      ],
+      "body_and_hand_anatomy": [
+        "한 명의 동일 maker, 두 손, 각 손 다섯 손가락이며 손가락이 피처·볼을 실제 접촉한다.",
+        "피처 무게를 지지하는 손목·팔꿈치·어깨의 각도가 자연스럽고 관절이 겹치거나 녹지 않는다.",
+        "Frame B의 가까운 팔과 먼 팔이 합쳐지지 않고, 앞치마 끈이 신체를 관통하지 않는다.",
+        "시선은 카메라가 아니라 꿀 접점으로 일관된다."
+      ],
+      "food_physics": [
+        "꿀 줄기가 피처 주둥이에서 시작해 중력 방향으로 연속되며 요거트 접점에서 끝난다.",
+        "유리 피처의 손잡이, 림, 벽 두께, 굴절이 한 구조로 연결된다.",
+        "요거트는 볼 안에 실제 부피를 가지며 접점에서 작은 눌림과 흐름만 만들고 폭발하거나 공중에 뜨지 않는다.",
+        "타임 잎은 꿀 속 또는 작업대 묶음에만 실제 크기로 존재하고 무작위 공중 입자가 없다.",
+        "두 프레임에서 볼·피처·줄기·재료량과 접점 위치가 연속 촬영으로 믿을 만큼 일치한다."
+      ],
+      "anti_CGI_and_retouch": [
+        "피부 모공, 잔머리, 앞치마 직조, 스테인리스 브러시 결, 세라믹 미세 편차를 보존한다.",
+        "요거트 능선과 수분 광택을 균일한 플라스틱 스월로 매끈하게 만들지 않는다.",
+        "유리 가장자리에 일관된 굴절·반사·두께가 있고 손가락을 투과하거나 복제하지 않는다.",
+        "꿀 줄기는 완벽한 벡터 곡선이 아니라 중력과 점성에 따른 작은 자연 편차를 가진다.",
+        "가짜 필름 그레인, 과도한 bloom, HDR halo, 생성형 반복 패턴, 배경 물체 융합을 허용하지 않는다.",
+        "리터칭은 센서 먼지와 우발적 얼룩 정리까지만 허용하고 음식 표면·손·재료의 증거를 합성으로 발명하지 않는다."
+      ],
+      "food_native_and_source_distance": [
+        "첫 1초 안에 향수·화장품이 아니라 먹는 요거트와 실제 붓기 동작으로 읽힌다.",
+        "백의, 고글, 장갑, 피펫, 비커, 메스실린더, 시험관, 처방전, 검정 약병이 없다.",
+        "Le Labo 워드마크, 압축 스텐실, 원료명+숫자, 약국 격자 라벨, 개인 이름·날짜 기입란이 없다.",
+        "신문, 판화, 흑백 향수 광고, 세피아 공방, 크라프트·녹슨 금속·앰버 유리의 조제소 분위기가 없다.",
+        "패키지 식별색이나 Olive 색을 광원·벽·소품 장식에 번지게 하지 않는다."
+      ],
+      "release_gate": "모든 view geometry 항목과 food physics 항목이 pass이고 anti-CGI 또는 source-distance 항목에 중대 실패가 없을 때만 asset registry 교체를 제안한다."
+    },
+    "explicit_avoid": [
+      "정면이라고 부르는 약한 3/4 시점과 측면이라고 부르는 70–80도 시점",
+      "인물을 dramatic하게 보이게 하려고 얼굴을 검게 뭉개거나 요거트를 날리는 조명",
+      "어두운 향수 광고, 관능적 응시, 제품을 들고 포즈하는 캠페인 인물",
+      "실험실, 조제소, 약방, 퍼퓨머, 셰프 유니폼, 농장 체험 서사",
+      "비커·피펫 같은 가짜 공정 증거와 과도한 도구 배열",
+      "완벽한 CGI 흰 스월, 꿀 스플래시, 떠다니는 타임, 비현실적 손·유리·줄기",
+      "장식적 재료색 조명, 컬러 젤, 임의 포인트 컬러, 여섯 제품색 동시 노출"
+    ]
+  },
+  "proposed_asset_records": [
+    {
+      "asset_id": "ST2-BRAND-MOOD-01",
+      "registry_action": "replace_registered_brand_mood_anchor_after_generation_and_QA",
+      "role": "brand_mood",
+      "series_role": "frontal_declaration",
+      "communication_job": "동일 maker와 타임 허니 붓기 동작을 100% 정면 대칭으로 보여 주어 MORA의 차분한 정확성, 식품 물성, 현대적 프리미엄을 대표한다.",
+      "proposed_file_path": "assets/brand-mood/mora-infusion-process-frontal.png",
+      "proposed_prompt_path": "prompts/ST2-BRAND-MOOD-01-REV2.md",
+      "subject": "Same food maker in charcoal apron, strictly frontal, pouring thyme-honey infusion into dense strained yogurt in a modern food atelier",
+      "aspect_ratio": "3:2 landscape",
+      "minimum_dimensions_px": {
+        "width": 3000,
+        "height": 2000
+      },
+      "reference_lineage": [
+        "GK-02",
+        "GK-03",
+        "transfer-input.visual_priority",
+        "transfer-input.understood_direction[5]",
+        "target value: 보이는 재료성",
+        "target value: 차분한 정확성"
+      ],
+      "invariants": [
+        "same maker, charcoal apron, bowl, glass pitcher, thyme honey and modern food atelier as ST2-BRAND-MOOD-02",
+        "strict 100% frontal sensor and body geometry",
+        "maker and bowl centered on one vertical axis",
+        "one plausible continuous pour with visible contact point",
+        "dramatic motivated light with preserved skin, apron and yogurt shadow detail",
+        "no laboratory, apothecary, fragrance, newspaper or Le Labo identity cues"
+      ],
+      "allowed_variation": [
+        "3:2, 16:9 and 4:5 crops that preserve head, pitcher, stream, contact point and bowl",
+        "minor natural variation in yogurt ridges and thyme placement",
+        "small flag or bounce adjustment that does not change apparent light motivation"
+      ],
+      "generation_provenance": "pending; no image was generated by this revision shard",
+      "invariant_check": "pending_generation_and_QA",
+      "status": "proposed"
+    },
+    {
+      "asset_id": "ST2-BRAND-MOOD-02",
+      "registry_action": "add_supporting_brand_mood_series_asset_after_generation_and_QA",
+      "role": "supporting_brand_mood_series",
+      "series_role": "side_physics_proof",
+      "communication_job": "동일 maker와 같은 붓기 위상을 엄격한 90도 측면으로 보여 피처, 줄기, 요거트 접점, 손의 지지 관계를 물리적 증거로 설명한다.",
+      "proposed_file_path": "assets/brand-mood/mora-infusion-process-side.png",
+      "proposed_prompt_path": "prompts/ST2-BRAND-MOOD-02.md",
+      "subject": "Same food maker in charcoal apron, strict left-side profile, performing the identical thyme-honey pour into dense strained yogurt in the same modern food atelier",
+      "aspect_ratio": "3:2 landscape",
+      "minimum_dimensions_px": {
+        "width": 3000,
+        "height": 2000
+      },
+      "reference_lineage": [
+        "GK-02",
+        "GK-03",
+        "transfer-input.visual_priority",
+        "transfer-input.understood_direction[5]",
+        "ST2-BRAND-MOOD-01-REV2 series lock"
+      ],
+      "invariants": [
+        "same maker, charcoal apron, bowl, glass pitcher, thyme honey and atelier as the frontal anchor",
+        "strict 90-degree side profile with no frontal face or three-quarter torso",
+        "pitcher, continuous stream, contact point and bowl visible in one lateral action plane",
+        "same action phase, lens family, camera height, white balance and motivated light as the frontal anchor",
+        "no laboratory, apothecary, fragrance, newspaper or Le Labo identity cues"
+      ],
+      "allowed_variation": [
+        "3:2, 16:9 and 4:5 crops that preserve profile clearance and the complete action chain",
+        "minor natural variation in yogurt ridges and thyme placement",
+        "small flag or bounce adjustment that does not change apparent light motivation"
+      ],
+      "generation_provenance": "pending; no image was generated by this revision shard",
+      "invariant_check": "pending_generation_and_QA",
+      "status": "proposed"
+    }
+  ],
+  "proposed_canonical_updates": {
+    "visual_branding_and_key_visual": {
+      "key_insight": "MORA의 제품 대표 이미지는 열린 한 컵과 한 번의 스푼 자국을 반복하고, 브랜드 무드 이미지는 같은 인퓨전 동작을 정면과 측면 두 축으로 반복해 제품의 결론과 만드는 태도를 분리해 보여 준다.",
+      "communication_job": "제품 key visual은 한 컵의 농도·섭취 방식·레시피 차이를 설명하고, 직교 brand-mood pair는 실제 재료가 요거트에 들어가는 행동의 집중과 물리성을 증명한다.",
+      "visual_direction_text": "One Cup, One Trace는 열린 컵의 고정 구조 안에서 제품별 실제 재료 흔적만 바꾸는 제품 시리즈다. The Infusion, Two Axes는 동일 maker·차콜 앞치마·현대 식품 아틀리에·타임 허니 붓기 동작을 고정하고 카메라만 100% 정면과 엄격한 90도 측면으로 이동하는 브랜드 무드 시리즈다. 두 시스템 모두 반복 구조를 한 번의 실제 음식 행동으로 깨우지만, 약국 라벨·향수 광고·실험실 공정의 표면은 사용하지 않는다.",
+      "type_image_product_ui_relationship_delta": [
+        "직교 무드 두 장은 한 섹션에서 같은 높이와 명도 계열로 짝지어 보여 주고, 장면 위에는 카피를 올리지 않는다.",
+        "Frame A 옆에는 브랜드 가치 한 문장, Frame B 옆에는 붓기·점도·접점에 관한 검증 가능한 공정 설명만 둔다.",
+        "Thyme Honey의 실제 음식색은 사진 속 재료에서 나오며, 패키지 식별색은 캡션의 좁은 마커에만 연결한다.",
+        "Olive Oil & Sea Salt 식별색을 포함한 제품색은 무드 사진의 광원, 벽, 앞치마, 소품에 사용하지 않는다."
+      ],
+      "surface_translation_delta": {
+        "brand_mood_opener": "Frame A를 단독 대표 앵커로 사용해 사람·공간·동작의 정확성을 선언한다.",
+        "process_pair": "Frame A와 Frame B를 같은 높이의 두 패널로 연결해 정면 선언에서 측면 물성 증거로 읽히게 한다.",
+        "responsive": "모바일에서는 Frame A 다음 Frame B 순서로 쌓고 두 프레임의 bowl rim과 maker scale을 최대한 일치시킨다."
+      },
+      "status": "directional_revision"
+    },
+    "brand_mood_and_brand_imagery": {
+      "key_insight": "MORA의 드라마는 어두운 복고 분위기가 아니라, 현대 식품 아틀리에에서 같은 제작 행동을 정확한 정면과 측면 두 축으로 기록할 때 생기는 실루엣·명암·물성의 집중이다.",
+      "communication_job": "한 maker의 타임 허니 붓기를 직교한 두 프레임으로 보여 주어 차분한 정확성, 실제 음식의 점도, 재료가 요거트에 닿는 순간을 브랜드 신뢰의 시각적 근거로 만든다.",
+      "emotional_and_cultural_register": [
+        "차분하지만 긴장감 있는 집중",
+        "장인의 신비보다 보이는 손동작과 음식 물성",
+        "어두운 럭셔리가 아니라 통제된 방향광과 보존된 디테일이 만드는 현대적 프리미엄",
+        "완벽한 CGI 표면보다 피부, 직물, 세라믹, 유리, 꿀, 요거트의 실제 편차"
+      ],
+      "world_setting_people": [
+        "동일한 25–44세 maker 한 명이 로고 없는 차콜 상의와 차콜 앞치마를 입고 동일한 현대 식품 아틀리에에 선다.",
+        "Frame A에서는 몸과 세트를 100% 정면으로 정렬하고 Frame B에서는 동일 동작을 strict 90-degree side profile로 기록한다.",
+        "인물은 카메라를 응시하거나 제품을 과시하지 않고, 꿀 줄기와 요거트 접점을 보며 실제 작업을 수행한다.",
+        "전문 셰프, 흰 가운 연구원, 퍼퓨머, 농장 체험 인물, 빈티지 공방 주인은 등장하지 않는다."
+      ],
+      "materials_and_sensory_cues": [
+        "진한 스트레인드 요거트의 무광 능선과 작은 수분 광택",
+        "타임이 보이는 실제 허니 인퓨전의 얇고 연속적인 점성 줄기",
+        "넓고 얕은 웜화이트 스톤웨어 볼과 두께·굴절이 실제인 투명 유리 피처",
+        "브러시드 스테인리스 작업대, 웜그레이 미장 벽, 애시 우드, 워시드 오트 린넨",
+        "로고, 라벨, 앰버 병, 실험 도구 없이 음식과 손이 주역인 절제된 세트"
+      ],
+      "camera_light_color": [
+        "Frame A는 50 mm 환산, 센서가 후면 벽과 평행하고 렌즈 축이 벽에 수직인 strict frontal view다.",
+        "Frame B는 동일 50 mm와 카메라 높이에서 렌즈 축이 maker sagittal plane에 수직인 strict 90-degree side profile이다.",
+        "south-west의 높은 아틀리에 창을 동기로 한 4300–4800 K 확산 key와 반대편 negative fill로 2.5–3.5 stop의 명암 차를 만든다.",
+        "front-low white bounce로 흰 요거트와 얼굴 암부의 질감을 보존하고 하이라이트 clipping과 검정 crush를 금지한다.",
+        "사진색은 음식·피부·차콜 직물·웜그레이 공간에서 나오며 제품 식별색을 세트 조명으로 사용하지 않는다."
+      ],
+      "image_series_roles": [
+        {
+          "role": "frontal-declaration",
+          "communication_job": "브랜드 태도와 제작 집중을 선언",
+          "required_content": "동일 maker, centered frontal symmetry, charcoal apron, white bowl, glass pitcher, thyme-honey contact point, modern food atelier"
+        },
+        {
+          "role": "side-physics-proof",
+          "communication_job": "붓기와 접점의 실제 물리 관계를 설명",
+          "required_content": "same maker and action phase, strict side profile, unobstructed pitcher-to-stream-to-yogurt chain"
+        },
+        {
+          "role": "quiet-use-extension",
+          "communication_job": "브랜드 세계를 아침·책상 간식·식후의 실제 섭취 순간으로 확장",
+          "required_content": "열기, 떠먹기, 컵 놓기 중 한 동작과 생활 흔적; 직교 maker pair와 혼동하지 않는 더 부드러운 관찰 톤"
+        }
+      ],
+      "series_rule": "동일 maker·옷·세트·볼·피처·타임 허니·붓기 위상·조명을 고정한다. 카메라만 action center를 중심으로 정확히 90도 이동해 Frame A의 100% 정면과 Frame B의 90도 측면을 만든다. 두 장의 horizon, bowl rim, maker scale, white balance를 맞추고 다른 3/4 보조 시점은 이 대표 시리즈에 추가하지 않는다.",
+      "avoid": [
+        "정면과 측면 사이의 3/4 타협 시점",
+        "어두운 향수 광고, 세피아 공방, 차가운 실험실 광원",
+        "백의, 장갑, 고글, 비커, 피펫, 앰버 병, 약국 라벨",
+        "신문·판화·원료명+숫자·개인 이름과 날짜·Le Labo 워드마크",
+        "완벽한 CGI 요거트, 끊어진 꿀 줄기, 비현실적 유리·손·관절, 스플래시",
+        "식재료와 무관한 임의 포인트 컬러와 제품 식별색의 세트 장식 사용"
+      ],
+      "anchor_asset": "ST2-BRAND-MOOD-01",
+      "supporting_asset": "ST2-BRAND-MOOD-02",
+      "asset_status": "proposed_pending_generation_and_QA",
+      "status": "directional_revision"
+    },
+    "moodboard_inputs_delta": {
+      "brand_mood_images": [
+        "The Infusion, Two Axes — 동일 maker와 타임 허니 붓기의 strict frontal declaration",
+        "The Infusion, Two Axes — 동일 maker와 같은 붓기 위상의 strict side physics proof",
+        "두 장 모두 차콜 앞치마, 웜그레이 현대 식품 아틀리에, 백자 볼, 투명 피처, 브러시드 스테인리스, dramatic motivated daylight와 보존된 shadow detail"
+      ],
+      "hierarchy_note": "Frame A를 대표 브랜드 무드로 먼저, Frame B를 물리 증거로 두 번째에 배치한다. 이미지 위 카피 대신 인접 텍스트 영역을 사용한다."
+    },
+    "design_token_direction_delta": {
+      "color": [
+        {
+          "token": "color.ingredient.olive-oil-sea-salt",
+          "name": "Olive Oil & Sea Salt",
+          "role": "Olive Oil & Sea Salt 제품 식별과 세이보리 내용물 예고",
+          "value": "#7A7040",
+          "on_color": "#FFFDF7",
+          "contrast_pair": "#FFFDF7 on #7A7040",
+          "contrast_ratio": "4.98:1",
+          "usage_ratio": "local surface 5–8% maximum; never CTA, global accent, lighting, wall, prop or section background",
+          "relationship": "new",
+          "source_basis": "transfer-input의 여섯 번째 레시피와 재료색 기능 제한; existing MORA ingredient-marker system",
+          "target_direction": "올리브 과육과 오일의 황록-토질감을 압축한 muted olive ochre. Olive Oil & Sea Salt의 패키지 좁은 마커, 카드 탭, 재료 미리보기 캡션에만 최대 8% 사용한다. Fig Leaf의 cool grey-green #68765F, Thyme Honey의 amber #B9832F와 분리되며 음식 자체를 인위적으로 이 색으로 보정하지 않는다.",
+          "landing_use": "Olive Oil & Sea Salt 제품 카드 마커, 패키지 좁은 밴드, 원재료·제품 미리보기 캡션",
+          "prohibited_use": "CTA, 링크, focus state, 전역 브랜드 액센트, 섹션 배경, 무드 사진 조명, 벽·앞치마·소품 장식, 비해당 제품 카드",
+          "status": "directional"
+        }
+      ]
+    }
+  },
+  "source_and_category_boundaries": [
+    "GK-02의 scene-to-facts 순서와 GK-03의 observable making action이라는 semantic job만 유지한다.",
+    "Le Labo의 워드마크, 라벨, name-plus-number, perfumery, laboratory, apothecary, newspaper, personal-label ritual과 trade dress는 전환하지 않는다.",
+    "dramatic은 향수 광고식 암흑·관능·미스터리가 아니라 직교 구도, 방향광, 음식의 점도와 shadow detail로 정의한다.",
+    "maker는 장인 신화를 연기하지 않고 실제 음식 동작을 수행하며, 공정·원산지·건강 효능은 시각만으로 주장하지 않는다.",
+    "제품 식별색은 해당 레시피의 identifier/content-preview 역할만 가지며 임의의 브랜드 액센트가 아니다."
+  ],
+  "gaps": [
+    {
+      "gap": "두 revision-2 이미지는 아직 생성되지 않았다.",
+      "required_resolution": "동일 maker와 세트를 유지할 수 있는 촬영 또는 일관성 제어가 가능한 생성 워크플로로 두 프레임을 제작하고 모든 geometry·food-physics·anti-CGI QA를 통과시킨다."
+    },
+    {
+      "gap": "strict frontal과 strict side의 정확한 축은 최종 이미지의 생성 메타데이터만으로 보증할 수 없다.",
+      "required_resolution": "후면 수평선, 어깨·골반 정렬, 얼굴 프로필, lens-axis 허용 오차를 사람이 원본 해상도로 검사한다."
+    },
+    {
+      "gap": "동시 직교 촬영인지 순차 재현인지 제작 방식이 정해지지 않았다.",
+      "required_resolution": "가능하면 두 카메라 동시 촬영을 선택하고, 순차 촬영이면 위치 마킹과 action-phase continuity checklist를 제작 문서에 포함한다."
+    },
+    {
+      "gap": "타임 허니 인퓨전의 실제 레시피, 점도, 타임 분포와 식품 표시 표현은 R&D 검증 전이다.",
+      "required_resolution": "승인된 food styling sample을 촬영 기준으로 삼고 이미지가 미검증 제조법이나 기능성을 암시하지 않게 검토한다."
+    },
+    {
+      "gap": "현재 ST2-BRAND-MOOD-01 파일과 registry 기록은 revision-2가 승인되기 전까지 유효하다.",
+      "required_resolution": "새 frontal 이미지가 생성·QA·승인된 뒤에만 기존 anchor binary/path/record를 교체하고 side record를 추가한다."
+    },
+    {
+      "gap": "Olive Oil & Sea Salt #7A7040은 화면 대비 계산만 된 방향값이다.",
+      "required_resolution": "실제 인쇄 잉크, 컵 소재 백색도, olive oil 식품 사진과의 구분, 색각 다양성, Fig Leaf·Thyme Honey 인접 비교를 검증한다."
+    },
+    {
+      "gap": "4:5와 1:1 파생 크롭에서 strict geometry와 전체 action chain이 동시에 유지되는지 미검증이다.",
+      "required_resolution": "최종 master를 기준으로 crop templates를 검사하고 1:1이 불가능하면 별도 native square capture를 제작한다."
+    },
+    {
+      "gap": "maker 초상 사용권, wardrobe continuity, location/property release가 정해지지 않았다.",
+      "required_resolution": "제작 전에 상업적 초상·공간·소품 사용권과 파생 크롭 범위를 계약한다."
+    }
+  ]
+}

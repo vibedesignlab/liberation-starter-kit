@@ -1,0 +1,30 @@
+{
+  "asset_id": "ST2-AMBIENT-STRAINED-FIELD-09",
+  "concept": "Strained Field",
+  "file_path": "assets/ambient-system/mora-ambient-strained-field-r9.png",
+  "prompt_path": "prompts/ST2-AMBIENT-STRAINED-FIELD-09.md",
+  "generation_mode": "built-in image generation",
+  "generation_strategy": "initial generation followed by one targeted built-in refinement",
+  "generated_source": "/Users/ddd/.codex/generated_images/01a056b4-2fb7-7e23-8710-67356013e788/exec-c8bcf709-274f-4d7f-8550-098f9fbf7377.png",
+  "dimensions": "1536x1024",
+  "aspect_ratio": "3:2",
+  "sha256": "71ffb10d36f001b2f2b6ebd265205e882858e584e6d5b296d318babde6be7398",
+  "qa": {
+    "background_is_material": "pass",
+    "cloth_fiber_microtexture_emerges_inside_field": "pass_with_note",
+    "thin_translucent_whey_separation": "pass",
+    "downward_drainage_cue": "pass",
+    "retained_field_reads_denser": "pass",
+    "broad_negative_space": "pass",
+    "no_bounded_photo": "pass",
+    "no_people_product_text_logo": "pass",
+    "no_drips_splash_or_smoke": "pass",
+    "physical_food_and_fiber_texture": "pass",
+    "series_palette": "pass",
+    "note": "The targeted refinement removed literal hanging drips and the hard cloth/liquid object boundary. The weave is edge-free and embedded across the continuous field, though its high local legibility can still read as macro cloth before it reads as yogurt-integrated fiber."
+  },
+  "unresolved_risks": [
+    "At first glance, the upper weave may be interpreted as a continuous cloth surface rather than fibers submerged within yogurt; use at a scale where the lower-third density transition remains visible."
+  ],
+  "status": "generated_and_qa_passed_with_note"
+}

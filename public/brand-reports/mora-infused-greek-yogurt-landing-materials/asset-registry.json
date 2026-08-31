@@ -1,0 +1,929 @@
+{
+  "schema_version": "1.1.0",
+  "artifact_type": "landing_product_asset_registry",
+  "stage": "landing_materials",
+  "generated_at": "2026-08-31T12:40:00Z",
+  "active_revision": "R5-layout-aware",
+  "assets": [
+    {
+      "asset_id": "ST3-R5-HERO-SELECTION-76",
+      "product_name": "MORA Brand World",
+      "role": "layout_aware_landing_hero_selection",
+      "communication_job": "첫 화면에서 여성 메이커가 원재료를 승인·제외하는 한 판단을 보여 주고 좌측 중앙 카피를 보존한다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-01-hero-selection-left-safe-3x2-497d1ecd4032fe2e4436263456323707d311ac69294a4bf8104827df09b4d590.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/ST3-R5-HERO-SELECTION-01.md",
+      "subject": "Female maker selecting and rejecting raw materials in the lived-in MORA workshop",
+      "aspect_ratio": "3:2 landscape",
+      "delivery_dimensions": "3072 × 2048",
+      "generation_provenance": "OpenAI built-in image generation; untouched native preserved; high-resolution delivery master is an explicitly recorded resample, not newly generated optical detail. Delivery SHA-256 497d1ecd4032fe2e4436263456323707d311ac69294a4bf8104827df09b4d590.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 10 strategy",
+        "Stage 2 Revision 16 analog editorial maker/workshop family",
+        "Stage 3 R5 layout slot contract"
+      ],
+      "invariants": [
+        "exact source ratio matches the rendered landing slot",
+        "critical evidence remains inside the declared safe area under object-fit cover",
+        "believable lived-in urban food workshop with hygienic stainless contact zones",
+        "restrained visible analog magazine grain without fake distress",
+        "female maker authority is shown by one observable decision or action, never a gender stereotype",
+        "left 42% remains uninterrupted low-frequency copy space"
+      ],
+      "allowed_variation": [
+        "minor responsive edge trim inside the declared sacrificial zone only"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-WHY-MORA-SELECTION-77",
+      "product_name": "MORA Brand World",
+      "role": "layout_aware_why_mora_selection",
+      "communication_job": "Why MORA split에서 한 명의 메이커가 accepted와 rejected 재료 상태를 직접 비교한다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-02-why-mora-selection-3x2-e09ba351ddf9901cdbdd2ec02312111a1e95c3da30d89d309b4f1336f8c60fa6.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/editorial/st3-r5-02-why-mora-selection-3x2.md",
+      "subject": "Strict-front maker comparison of accepted and rejected ingredient states",
+      "aspect_ratio": "3:2 landscape",
+      "delivery_dimensions": "3072 × 2048",
+      "generation_provenance": "OpenAI built-in image generation; untouched native preserved; high-resolution delivery master is an explicitly recorded resample, not newly generated optical detail. Delivery SHA-256 e09ba351ddf9901cdbdd2ec02312111a1e95c3da30d89d309b4f1336f8c60fa6.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 10 strategy",
+        "Stage 2 Revision 16 analog editorial maker/workshop family",
+        "Stage 3 R5 layout slot contract"
+      ],
+      "invariants": [
+        "exact source ratio matches the rendered landing slot",
+        "critical evidence remains inside the declared safe area under object-fit cover",
+        "believable lived-in urban food workshop with hygienic stainless contact zones",
+        "restrained visible analog magazine grain without fake distress",
+        "female maker authority is shown by one observable decision or action, never a gender stereotype"
+      ],
+      "allowed_variation": [
+        "minor responsive edge trim inside the declared sacrificial zone only"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-CORE-STICKY-78",
+      "product_name": "MORA Brand World",
+      "role": "layout_aware_core_sticky_story",
+      "communication_job": "Core 2×2 제품 그리드의 긴 스크롤 동안 한 번의 last-fold와 final-check 행동을 1:2 세로 서사로 유지한다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-03-core-sticky-story-1x2-db5c7fc06917dfe253e0778da03fa5b56da22e741dc295db595c3a83948e28a2.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/editorial/st3-r5-03-core-sticky-story-1x2.md",
+      "subject": "Vertical Core Collection last-fold and final-check story",
+      "aspect_ratio": "1:2 portrait",
+      "delivery_dimensions": "2048 × 4096",
+      "generation_provenance": "OpenAI built-in exact 1:2 portrait generation; untouched native preserved; delivery is a high-quality resample only, not a crop and not newly generated optical detail. Delivery SHA-256 db5c7fc06917dfe253e0778da03fa5b56da22e741dc295db595c3a83948e28a2.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 10 strategy",
+        "Stage 2 Revision 16 analog editorial maker/workshop family",
+        "Stage 3 R5 layout slot contract"
+      ],
+      "invariants": [
+        "exact source ratio matches the rendered landing slot",
+        "critical evidence remains inside the declared safe area under object-fit cover",
+        "believable lived-in urban food workshop with hygienic stainless contact zones",
+        "restrained visible analog magazine grain without fake distress",
+        "female maker authority is shown by one observable decision or action, never a gender stereotype",
+        "all maker, hand, tool, bowl, jar and record evidence survives the native exact 1:2 frame"
+      ],
+      "allowed_variation": [
+        "minor responsive edge trim inside the declared sacrificial zone only"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-TRIAL-STICKY-79",
+      "product_name": "MORA Brand World",
+      "role": "layout_aware_trial_sticky_story",
+      "communication_job": "Studio Trials 스크롤에서 Fig Leaf와 Olive Oil & Sea Salt를 승인 제품과 분리된 조건부 중간 상태로 점검한다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-04-trial-sticky-story-1x2-d0adbc679ddafadc770a85b064d52305858b8ce0a8d7bf6d8fbbc0a3e3e5aad1.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/editorial/st3-r5-04-trial-sticky-story-1x2.md",
+      "subject": "Vertical Studio Trials conditional intermediate-state check",
+      "aspect_ratio": "1:2 portrait",
+      "delivery_dimensions": "2048 × 4096",
+      "generation_provenance": "OpenAI built-in portrait generation; untouched native preserved; delivery is a declared exact 1:2 center crop followed by high-quality resampling, not newly generated optical detail. Delivery SHA-256 d0adbc679ddafadc770a85b064d52305858b8ce0a8d7bf6d8fbbc0a3e3e5aad1.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 10 strategy",
+        "Stage 2 Revision 16 analog editorial maker/workshop family",
+        "Stage 3 R5 layout slot contract"
+      ],
+      "invariants": [
+        "exact source ratio matches the rendered landing slot",
+        "critical evidence remains inside the declared safe area under object-fit cover",
+        "believable lived-in urban food workshop with hygienic stainless contact zones",
+        "restrained visible analog magazine grain without fake distress",
+        "female maker authority is shown by one observable decision or action, never a gender stereotype",
+        "all maker, trial vessels and conditional record evidence survives the exact 1:2 center crop"
+      ],
+      "allowed_variation": [
+        "minor responsive edge trim inside the declared sacrificial zone only"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-METHOD-LEFT-SAFE-80",
+      "product_name": "MORA Brand World",
+      "role": "layout_aware_material_method",
+      "communication_job": "여섯 재료의 서로 다른 중간 상태와 넓은 도구의 한 번의 폴딩을 우측에 두고 좌측 중앙 카피를 보존한다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-05-material-method-left-safe-3x2-ec12bd1c9cf14ab8b3c65451c00a0c32c3335fb86d934bb85eedbbecce7ba978.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/editorial/st3-r5-05-material-method-left-safe-3x2.md",
+      "subject": "Six factual intermediate states and one low-shear fold on the right side of frame",
+      "aspect_ratio": "3:2 landscape",
+      "delivery_dimensions": "3072 × 2048",
+      "generation_provenance": "OpenAI built-in image generation; untouched native preserved; high-resolution delivery master is an explicitly recorded resample, not newly generated optical detail. Delivery SHA-256 ec12bd1c9cf14ab8b3c65451c00a0c32c3335fb86d934bb85eedbbecce7ba978.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 10 strategy",
+        "Stage 2 Revision 16 analog editorial maker/workshop family",
+        "Stage 3 R5 layout slot contract"
+      ],
+      "invariants": [
+        "exact source ratio matches the rendered landing slot",
+        "critical evidence remains inside the declared safe area under object-fit cover",
+        "believable lived-in urban food workshop with hygienic stainless contact zones",
+        "restrained visible analog magazine grain without fake distress",
+        "female maker authority is shown by one observable decision or action, never a gender stereotype",
+        "left 42% remains uninterrupted low-frequency copy space",
+        "intermediate vessels remain culinary scale"
+      ],
+      "allowed_variation": [
+        "minor responsive edge trim inside the declared sacrificial zone only"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-TRANSITION-CENTER-SAFE-81",
+      "product_name": "MORA Brand World",
+      "role": "layout_aware_center_copy_straining_transition",
+      "communication_job": "거름 천·농축된 몸·유청의 분리를 주변부에 남기고 중앙 카피 영역을 비운다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-06-transition-straining-center-safe-3x2-8bc97b3a026b000e1855fc6c950985576e0d53cb3a8644688a824b7c330cc69e.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/editorial/ST3-R5-TRANSITION-STRAINING-06.md",
+      "subject": "True-aerial straining evidence around a centered copy field",
+      "aspect_ratio": "3:2 landscape",
+      "delivery_dimensions": "3072 × 2048",
+      "generation_provenance": "OpenAI built-in image generation; untouched native preserved; high-resolution delivery master is an explicitly recorded resample, not newly generated optical detail. Delivery SHA-256 8bc97b3a026b000e1855fc6c950985576e0d53cb3a8644688a824b7c330cc69e.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 10 strategy",
+        "Stage 2 Revision 16 analog editorial maker/workshop family",
+        "Stage 3 R5 layout slot contract"
+      ],
+      "invariants": [
+        "exact source ratio matches the rendered landing slot",
+        "critical evidence remains inside the declared safe area under object-fit cover",
+        "believable lived-in urban food workshop with hygienic stainless contact zones",
+        "restrained visible analog magazine grain without fake distress",
+        "female maker authority is shown by one observable decision or action, never a gender stereotype",
+        "central 44% width by 42% height remains low-frequency copy space"
+      ],
+      "allowed_variation": [
+        "minor responsive edge trim inside the declared sacrificial zone only"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-VESSEL-SEE-82",
+      "product_name": "MORA Brand World",
+      "role": "vessel_see_fullbleed",
+      "communication_job": "transparent jar, food visibility and partial Batch Record를 한 실루엣으로 본다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-07-vessel-see-bottom-left-3x2-152d09840ca13ccdea5eab6f64467b01f744448f5d7aa64ca5862a20aded4d9e.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/vessel/st3-r5-07-vessel-see-bottom-left-3x2.md",
+      "subject": "Complete sealed MORA jar and edible witness area",
+      "aspect_ratio": "3:2 landscape",
+      "delivery_dimensions": "3072 × 2048",
+      "generation_provenance": "OpenAI built-in image generation; untouched native preserved; high-resolution delivery master is an explicitly recorded resample, not newly generated optical detail. Delivery SHA-256 152d09840ca13ccdea5eab6f64467b01f744448f5d7aa64ca5862a20aded4d9e.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 10 strategy",
+        "Stage 2 Revision 16 analog editorial maker/workshop family",
+        "Stage 3 R5 layout slot contract",
+        "Stage 2 Revision 18 plain Thyme Honey product master"
+      ],
+      "invariants": [
+        "exact source ratio matches the rendered landing slot",
+        "critical evidence remains inside the declared safe area under object-fit cover",
+        "believable lived-in urban food workshop with hygienic stainless contact zones",
+        "restrained visible analog magazine grain without fake distress",
+        "female maker authority is shown by one observable decision or action, never a gender stereotype",
+        "bottom-left 40% by 30% remains calm and clear for the sticky copy",
+        "current partial paper Batch Record replaces the archived direct-print-only glass system"
+      ],
+      "allowed_variation": [
+        "minor responsive edge trim inside the declared sacrificial zone only"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-VESSEL-READ-83",
+      "product_name": "MORA Brand World",
+      "role": "vessel_read_fullbleed",
+      "communication_job": "고정 Batch Record 필드와 제한된 실제 maker-check 영역의 정보 위계를 읽는다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-08-vessel-read-bottom-left-3x2-30880ab90211bab56adb2b79ad0b33c26de0ef39a08262ab6b71077eb86ffc9b.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/vessel/st3-r5-08-vessel-read-bottom-left-3x2.md",
+      "subject": "Partial Batch Record hierarchy on a low-wide jar",
+      "aspect_ratio": "3:2 landscape",
+      "delivery_dimensions": "3072 × 2048",
+      "generation_provenance": "OpenAI built-in image generation; untouched native preserved; high-resolution delivery master is an explicitly recorded resample, not newly generated optical detail. Delivery SHA-256 30880ab90211bab56adb2b79ad0b33c26de0ef39a08262ab6b71077eb86ffc9b.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 10 strategy",
+        "Stage 2 Revision 16 analog editorial maker/workshop family",
+        "Stage 3 R5 layout slot contract",
+        "Stage 2 Revision 18 plain Thyme Honey product master"
+      ],
+      "invariants": [
+        "exact source ratio matches the rendered landing slot",
+        "critical evidence remains inside the declared safe area under object-fit cover",
+        "believable lived-in urban food workshop with hygienic stainless contact zones",
+        "restrained visible analog magazine grain without fake distress",
+        "female maker authority is shown by one observable decision or action, never a gender stereotype",
+        "bottom-left 40% by 30% remains calm and clear for the sticky copy",
+        "current partial paper Batch Record replaces the archived direct-print-only glass system"
+      ],
+      "allowed_variation": [
+        "minor responsive edge trim inside the declared sacrificial zone only"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-VESSEL-OPEN-84",
+      "product_name": "MORA Brand World",
+      "role": "vessel_open_fullbleed",
+      "communication_job": "한 손이 기능적 식품 seal을 열고 wide mouth와 깨끗한 rim을 드러낸다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-09-vessel-open-bottom-left-3x2-a6db33619b02b20cb495848a68e61e99c9ed3a8c1d5dd04b6da242011956b46e.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/vessel/st3-r5-09-vessel-open-bottom-left-3x2.md",
+      "subject": "One physically plausible food-seal opening action",
+      "aspect_ratio": "3:2 landscape",
+      "delivery_dimensions": "3072 × 2048",
+      "generation_provenance": "OpenAI built-in image generation; untouched native preserved; high-resolution delivery master is an explicitly recorded resample, not newly generated optical detail. Delivery SHA-256 a6db33619b02b20cb495848a68e61e99c9ed3a8c1d5dd04b6da242011956b46e.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 10 strategy",
+        "Stage 2 Revision 16 analog editorial maker/workshop family",
+        "Stage 3 R5 layout slot contract",
+        "Stage 2 Revision 18 plain Thyme Honey product master"
+      ],
+      "invariants": [
+        "exact source ratio matches the rendered landing slot",
+        "critical evidence remains inside the declared safe area under object-fit cover",
+        "believable lived-in urban food workshop with hygienic stainless contact zones",
+        "restrained visible analog magazine grain without fake distress",
+        "female maker authority is shown by one observable decision or action, never a gender stereotype",
+        "bottom-left 40% by 30% remains calm and clear for the sticky copy",
+        "current partial paper Batch Record replaces the archived direct-print-only glass system"
+      ],
+      "allowed_variation": [
+        "minor responsive edge trim inside the declared sacrificial zone only"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-VESSEL-TASTE-85",
+      "product_name": "MORA Brand World",
+      "role": "vessel_taste_fullbleed",
+      "communication_job": "첫 스푼의 단면에서 밀도와 Thyme Honey의 실제 내부 trace를 확인한다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-10-vessel-taste-bottom-left-3x2-43194c49a1d7a39d0dd6323c3fba533f69416b688eb6cd8ded6321beba4ad636.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/vessel/st3-r5-10-vessel-taste-bottom-left-3x2.md",
+      "subject": "First spoon exposing yogurt density and internal trace",
+      "aspect_ratio": "3:2 landscape",
+      "delivery_dimensions": "3072 × 2048",
+      "generation_provenance": "OpenAI built-in image generation; untouched native preserved; high-resolution delivery master is an explicitly recorded resample, not newly generated optical detail. Delivery SHA-256 43194c49a1d7a39d0dd6323c3fba533f69416b688eb6cd8ded6321beba4ad636.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 10 strategy",
+        "Stage 2 Revision 16 analog editorial maker/workshop family",
+        "Stage 3 R5 layout slot contract",
+        "Stage 2 Revision 18 plain Thyme Honey product master"
+      ],
+      "invariants": [
+        "exact source ratio matches the rendered landing slot",
+        "critical evidence remains inside the declared safe area under object-fit cover",
+        "believable lived-in urban food workshop with hygienic stainless contact zones",
+        "restrained visible analog magazine grain without fake distress",
+        "female maker authority is shown by one observable decision or action, never a gender stereotype",
+        "bottom-left 40% by 30% remains calm and clear for the sticky copy",
+        "current partial paper Batch Record replaces the archived direct-print-only glass system"
+      ],
+      "allowed_variation": [
+        "minor responsive edge trim inside the declared sacrificial zone only"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-EVENING-USE-86",
+      "product_name": "MORA Brand World",
+      "role": "evening_use_fullbleed",
+      "communication_job": "한 컵이 놓인 절제된 저녁 사용 맥락을 보여 주되 Studio Trial 또는 효능 주장으로 확대하지 않는다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-11-evening-use-bottom-left-3x2-3c807155c37b2ec28b768761e19eb03619299ad6a2658a5d75d9101480c58c55.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/vessel/st3-r5-11-evening-use-bottom-left-3x2.md",
+      "subject": "Restrained evening use with one jar and one spoon",
+      "aspect_ratio": "3:2 landscape",
+      "delivery_dimensions": "3072 × 2048",
+      "generation_provenance": "OpenAI built-in image generation; untouched native preserved; high-resolution delivery master is an explicitly recorded resample, not newly generated optical detail. Delivery SHA-256 3c807155c37b2ec28b768761e19eb03619299ad6a2658a5d75d9101480c58c55.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 10 strategy",
+        "Stage 2 Revision 16 analog editorial maker/workshop family",
+        "Stage 3 R5 layout slot contract",
+        "Stage 2 Revision 18 plain Thyme Honey product master"
+      ],
+      "invariants": [
+        "exact source ratio matches the rendered landing slot",
+        "critical evidence remains inside the declared safe area under object-fit cover",
+        "believable lived-in urban food workshop with hygienic stainless contact zones",
+        "restrained visible analog magazine grain without fake distress",
+        "female maker authority is shown by one observable decision or action, never a gender stereotype",
+        "bottom-left 40% by 30% remains calm and clear for the sticky copy",
+        "current partial paper Batch Record replaces the archived direct-print-only glass system"
+      ],
+      "allowed_variation": [
+        "minor responsive edge trim inside the declared sacrificial zone only"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-PRODUCT-THYME-HONEY-87",
+      "product_name": "Thyme Honey",
+      "role": "layout_aware_product_card_strict_front",
+      "communication_job": "Thyme Honey을 다른 SKU와 동일한 strict-front 좌표·크기·배경에서 비교하고 음식 차이만 보여 준다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-product-thyme-honey-b62b8575d48cb3833b1b30fb8c8e035adbf99a012a335583bc937ca9853a39d5.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/products/ST3-R5-PRODUCT-THYME-HONEY-01.md",
+      "subject": "Strict-front Thyme Honey low-wide jar on Cultured Cream UI field",
+      "aspect_ratio": "1:1 square",
+      "delivery_dimensions": "2048 × 2048",
+      "generation_provenance": "OpenAI built-in reference-based image generation; untouched 1254 × 1254 native preserved; delivery is a high-quality 2048 × 2048 resample, not newly generated optical detail. Delivery SHA-256 b62b8575d48cb3833b1b30fb8c8e035adbf99a012a335583bc937ca9853a39d5.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 10 package system",
+        "ST2-R18-UI-PRODUCT-01 strict-front Thyme Honey master",
+        "Runtime theme.palette.background.default #F5F1E8"
+      ],
+      "invariants": [
+        "exact 1:1 source matches ProductCard",
+        "strict-front low-wide transparent wide-mouth jar with complete silhouette and generous margins",
+        "uniform flat #F5F1E8 UI field with no physical floor, wall, horizon, gradient or prop",
+        "partial Batch Record covers no more than 30–40% of the visible sidewall and edible witness remains dominant",
+        "recipe-specific food trace is factual and not a garnish or cosmetic color treatment"
+      ],
+      "allowed_variation": [
+        "food trace visibility may reduce after real R&D validation; jar, label, scale, axis and UI field stay locked"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-PRODUCT-FIG-LEAF-88",
+      "product_name": "Fig Leaf",
+      "role": "layout_aware_product_card_strict_front",
+      "communication_job": "Fig Leaf을 다른 SKU와 동일한 strict-front 좌표·크기·배경에서 비교하고 음식 차이만 보여 준다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-product-fig-leaf-c0f1943e25ec6abed989e707281cd8d43ec3b564b28925a8be05645ed762a119.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/products/ST3-R5-PRODUCT-FIG-LEAF-SQUARE.md",
+      "subject": "Strict-front Fig Leaf low-wide jar on Cultured Cream UI field",
+      "aspect_ratio": "1:1 square",
+      "delivery_dimensions": "2048 × 2048",
+      "generation_provenance": "OpenAI built-in reference-based image generation; untouched 1254 × 1254 native preserved; delivery is a high-quality 2048 × 2048 resample, not newly generated optical detail. Delivery SHA-256 c0f1943e25ec6abed989e707281cd8d43ec3b564b28925a8be05645ed762a119.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 10 package system",
+        "ST2-R18-UI-PRODUCT-01 strict-front Thyme Honey master",
+        "Runtime theme.palette.background.default #F5F1E8"
+      ],
+      "invariants": [
+        "exact 1:1 source matches ProductCard",
+        "strict-front low-wide transparent wide-mouth jar with complete silhouette and generous margins",
+        "uniform flat #F5F1E8 UI field with no physical floor, wall, horizon, gradient or prop",
+        "partial Batch Record covers no more than 30–40% of the visible sidewall and edible witness remains dominant",
+        "recipe-specific food trace is factual and not a garnish or cosmetic color treatment"
+      ],
+      "allowed_variation": [
+        "food trace visibility may reduce after real R&D validation; jar, label, scale, axis and UI field stay locked"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-PRODUCT-ROASTED-BUCKWHEAT-89",
+      "product_name": "Roasted Buckwheat",
+      "role": "layout_aware_product_card_strict_front",
+      "communication_job": "Roasted Buckwheat을 다른 SKU와 동일한 strict-front 좌표·크기·배경에서 비교하고 음식 차이만 보여 준다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-product-roasted-buckwheat-e212bd866e0cc6766c8c51bb2a68c2ddf39b3478e68403bb9e529dc0ad6f0bdb.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/products/ST3-R5-PRODUCT-ROASTED-BUCKWHEAT-SQUARE.md",
+      "subject": "Strict-front Roasted Buckwheat low-wide jar on Cultured Cream UI field",
+      "aspect_ratio": "1:1 square",
+      "delivery_dimensions": "2048 × 2048",
+      "generation_provenance": "OpenAI built-in reference-based image generation; untouched 1254 × 1254 native preserved; delivery is a high-quality 2048 × 2048 resample, not newly generated optical detail. Delivery SHA-256 e212bd866e0cc6766c8c51bb2a68c2ddf39b3478e68403bb9e529dc0ad6f0bdb.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 10 package system",
+        "ST2-R18-UI-PRODUCT-01 strict-front Thyme Honey master",
+        "Runtime theme.palette.background.default #F5F1E8"
+      ],
+      "invariants": [
+        "exact 1:1 source matches ProductCard",
+        "strict-front low-wide transparent wide-mouth jar with complete silhouette and generous margins",
+        "uniform flat #F5F1E8 UI field with no physical floor, wall, horizon, gradient or prop",
+        "partial Batch Record covers no more than 30–40% of the visible sidewall and edible witness remains dominant",
+        "recipe-specific food trace is factual and not a garnish or cosmetic color treatment"
+      ],
+      "allowed_variation": [
+        "food trace visibility may reduce after real R&D validation; jar, label, scale, axis and UI field stay locked"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-PRODUCT-CITRUS-PEEL-90",
+      "product_name": "Citrus Peel",
+      "role": "layout_aware_product_card_strict_front",
+      "communication_job": "Citrus Peel을 다른 SKU와 동일한 strict-front 좌표·크기·배경에서 비교하고 음식 차이만 보여 준다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-product-citrus-peel-89ed6d6d8cdb5bce6c6c694e94037128137162bbccd00cf1d1d3d1a057fd5750.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/products/ST3-R5-PRODUCT-CITRUS-PEEL-SQUARE.md",
+      "subject": "Strict-front Citrus Peel low-wide jar on Cultured Cream UI field",
+      "aspect_ratio": "1:1 square",
+      "delivery_dimensions": "2048 × 2048",
+      "generation_provenance": "OpenAI built-in reference-based image generation; untouched 1254 × 1254 native preserved; delivery is a high-quality 2048 × 2048 resample, not newly generated optical detail. Delivery SHA-256 89ed6d6d8cdb5bce6c6c694e94037128137162bbccd00cf1d1d3d1a057fd5750.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 10 package system",
+        "ST2-R18-UI-PRODUCT-01 strict-front Thyme Honey master",
+        "Runtime theme.palette.background.default #F5F1E8"
+      ],
+      "invariants": [
+        "exact 1:1 source matches ProductCard",
+        "strict-front low-wide transparent wide-mouth jar with complete silhouette and generous margins",
+        "uniform flat #F5F1E8 UI field with no physical floor, wall, horizon, gradient or prop",
+        "partial Batch Record covers no more than 30–40% of the visible sidewall and edible witness remains dominant",
+        "recipe-specific food trace is factual and not a garnish or cosmetic color treatment"
+      ],
+      "allowed_variation": [
+        "food trace visibility may reduce after real R&D validation; jar, label, scale, axis and UI field stay locked"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-PRODUCT-BLACK-SESAME-91",
+      "product_name": "Black Sesame",
+      "role": "layout_aware_product_card_strict_front",
+      "communication_job": "Black Sesame을 다른 SKU와 동일한 strict-front 좌표·크기·배경에서 비교하고 음식 차이만 보여 준다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-product-black-sesame-5ed7e9e4b35142502e8a4c29817c92f8fdb7198136632f498e4d45a94ba84c46.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/products/ST3-R5-PRODUCT-BLACK-SESAME-SQUARE.md",
+      "subject": "Strict-front Black Sesame low-wide jar on Cultured Cream UI field",
+      "aspect_ratio": "1:1 square",
+      "delivery_dimensions": "2048 × 2048",
+      "generation_provenance": "OpenAI built-in reference-based image generation; untouched 1254 × 1254 native preserved; delivery is a high-quality 2048 × 2048 resample, not newly generated optical detail. Delivery SHA-256 5ed7e9e4b35142502e8a4c29817c92f8fdb7198136632f498e4d45a94ba84c46.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 10 package system",
+        "ST2-R18-UI-PRODUCT-01 strict-front Thyme Honey master",
+        "Runtime theme.palette.background.default #F5F1E8"
+      ],
+      "invariants": [
+        "exact 1:1 source matches ProductCard",
+        "strict-front low-wide transparent wide-mouth jar with complete silhouette and generous margins",
+        "uniform flat #F5F1E8 UI field with no physical floor, wall, horizon, gradient or prop",
+        "partial Batch Record covers no more than 30–40% of the visible sidewall and edible witness remains dominant",
+        "recipe-specific food trace is factual and not a garnish or cosmetic color treatment"
+      ],
+      "allowed_variation": [
+        "food trace visibility may reduce after real R&D validation; jar, label, scale, axis and UI field stay locked"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-PRODUCT-OLIVE-OIL-SEA-SALT-92",
+      "product_name": "Olive Oil & Sea Salt",
+      "role": "layout_aware_product_card_strict_front",
+      "communication_job": "Olive Oil & Sea Salt을 다른 SKU와 동일한 strict-front 좌표·크기·배경에서 비교하고 음식 차이만 보여 준다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-product-olive-oil-sea-salt-f3e21299281bf3a155055dcf64797eaee3f4117f388fc61a8ce3d309e1512791.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/products/ST3-R5-PRODUCT-OLIVE-OIL-SEA-SALT-SQUARE.md",
+      "subject": "Strict-front Olive Oil & Sea Salt low-wide jar on Cultured Cream UI field",
+      "aspect_ratio": "1:1 square",
+      "delivery_dimensions": "2048 × 2048",
+      "generation_provenance": "OpenAI built-in reference-based image generation; untouched 1254 × 1254 native preserved; delivery is a high-quality 2048 × 2048 resample, not newly generated optical detail. Delivery SHA-256 f3e21299281bf3a155055dcf64797eaee3f4117f388fc61a8ce3d309e1512791.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 10 package system",
+        "ST2-R18-UI-PRODUCT-01 strict-front Thyme Honey master",
+        "Runtime theme.palette.background.default #F5F1E8"
+      ],
+      "invariants": [
+        "exact 1:1 source matches ProductCard",
+        "strict-front low-wide transparent wide-mouth jar with complete silhouette and generous margins",
+        "uniform flat #F5F1E8 UI field with no physical floor, wall, horizon, gradient or prop",
+        "partial Batch Record covers no more than 30–40% of the visible sidewall and edible witness remains dominant",
+        "recipe-specific food trace is factual and not a garnish or cosmetic color treatment"
+      ],
+      "allowed_variation": [
+        "food trace visibility may reduce after real R&D validation; jar, label, scale, axis and UI field stay locked"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-INGREDIENT-THYME-HONEY-93",
+      "product_name": "Thyme Honey",
+      "role": "layout_aware_raw_ingredient_aerial",
+      "communication_job": "Thyme Honey의 raw input을 제품·요거트·중간 preparation과 분리해 true-aerial 사실 이미지로 보여 준다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-ingredient-aerial-thyme-honey-01c48a52a17a857284c20c468d912a01864f501b29e6a882c1f608fe1988c182.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/ingredients/ST3-R5-INGREDIENT-AERIAL-SERIES.md",
+      "subject": "True-aerial raw ingredient evidence for Thyme Honey",
+      "aspect_ratio": "1:1 square",
+      "delivery_dimensions": "2048 × 2048",
+      "generation_provenance": "Accepted Stage 2 Revision 18 built-in image generation; 1254 × 1254 native preserved byte-for-byte in Stage 3; delivery is a high-quality 2048 × 2048 resample, not newly generated optical detail. Delivery SHA-256 01c48a52a17a857284c20c468d912a01864f501b29e6a882c1f608fe1988c182.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 18 raw ingredient aerial series",
+        "Stage 3 R5 square folio slot contract"
+      ],
+      "invariants": [
+        "exact 1:1 source matches the ingredient folio slot",
+        "strict 90-degree aerial with complete vessel silhouettes",
+        "actual culinary scale and factual ingredient color",
+        "stainless-only food-contact field with no product, yogurt, label, hand, prop or text"
+      ],
+      "allowed_variation": [
+        "minor edge trim may affect stainless field only"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-INGREDIENT-FIG-LEAF-94",
+      "product_name": "Fig Leaf",
+      "role": "layout_aware_raw_ingredient_aerial",
+      "communication_job": "Fig Leaf의 raw input을 제품·요거트·중간 preparation과 분리해 true-aerial 사실 이미지로 보여 준다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-ingredient-aerial-fig-leaf-14de68fc7af35fbf97c0fad4e631ec8df2214a2ab568b98f9d682ecd83200ff7.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/ingredients/ST3-R5-INGREDIENT-AERIAL-SERIES.md",
+      "subject": "True-aerial raw ingredient evidence for Fig Leaf",
+      "aspect_ratio": "1:1 square",
+      "delivery_dimensions": "2048 × 2048",
+      "generation_provenance": "Accepted Stage 2 Revision 18 built-in image generation; 1254 × 1254 native preserved byte-for-byte in Stage 3; delivery is a high-quality 2048 × 2048 resample, not newly generated optical detail. Delivery SHA-256 14de68fc7af35fbf97c0fad4e631ec8df2214a2ab568b98f9d682ecd83200ff7.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 18 raw ingredient aerial series",
+        "Stage 3 R5 square folio slot contract"
+      ],
+      "invariants": [
+        "exact 1:1 source matches the ingredient folio slot",
+        "strict 90-degree aerial with complete vessel silhouettes",
+        "actual culinary scale and factual ingredient color",
+        "stainless-only food-contact field with no product, yogurt, label, hand, prop or text"
+      ],
+      "allowed_variation": [
+        "recorded 10–11% horizontal margin is accepted for this layout-matched square because no ratio crop occurs"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-INGREDIENT-ROASTED-BUCKWHEAT-95",
+      "product_name": "Roasted Buckwheat",
+      "role": "layout_aware_raw_ingredient_aerial",
+      "communication_job": "Roasted Buckwheat의 raw input을 제품·요거트·중간 preparation과 분리해 true-aerial 사실 이미지로 보여 준다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-ingredient-aerial-roasted-buckwheat-8e3c41f0789c920f670da3c5800eca26c2ad411f5ad94c5ee72f254170c5041e.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/ingredients/ST3-R5-INGREDIENT-AERIAL-SERIES.md",
+      "subject": "True-aerial raw ingredient evidence for Roasted Buckwheat",
+      "aspect_ratio": "1:1 square",
+      "delivery_dimensions": "2048 × 2048",
+      "generation_provenance": "Accepted Stage 2 Revision 18 built-in image generation; 1254 × 1254 native preserved byte-for-byte in Stage 3; delivery is a high-quality 2048 × 2048 resample, not newly generated optical detail. Delivery SHA-256 8e3c41f0789c920f670da3c5800eca26c2ad411f5ad94c5ee72f254170c5041e.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 18 raw ingredient aerial series",
+        "Stage 3 R5 square folio slot contract"
+      ],
+      "invariants": [
+        "exact 1:1 source matches the ingredient folio slot",
+        "strict 90-degree aerial with complete vessel silhouettes",
+        "actual culinary scale and factual ingredient color",
+        "stainless-only food-contact field with no product, yogurt, label, hand, prop or text"
+      ],
+      "allowed_variation": [
+        "minor edge trim may affect stainless field only"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-INGREDIENT-CITRUS-PEEL-96",
+      "product_name": "Citrus Peel",
+      "role": "layout_aware_raw_ingredient_aerial",
+      "communication_job": "Citrus Peel의 raw input을 제품·요거트·중간 preparation과 분리해 true-aerial 사실 이미지로 보여 준다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-ingredient-aerial-citrus-peel-7467b55dfa59f0619bb3a1bd47ba0eebb70f9a01aa0f6de497a976334a8cca63.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/ingredients/ST3-R5-INGREDIENT-AERIAL-SERIES.md",
+      "subject": "True-aerial raw ingredient evidence for Citrus Peel",
+      "aspect_ratio": "1:1 square",
+      "delivery_dimensions": "2048 × 2048",
+      "generation_provenance": "Accepted Stage 2 Revision 18 built-in image generation; 1254 × 1254 native preserved byte-for-byte in Stage 3; delivery is a high-quality 2048 × 2048 resample, not newly generated optical detail. Delivery SHA-256 7467b55dfa59f0619bb3a1bd47ba0eebb70f9a01aa0f6de497a976334a8cca63.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 18 raw ingredient aerial series",
+        "Stage 3 R5 square folio slot contract"
+      ],
+      "invariants": [
+        "exact 1:1 source matches the ingredient folio slot",
+        "strict 90-degree aerial with complete vessel silhouettes",
+        "actual culinary scale and factual ingredient color",
+        "stainless-only food-contact field with no product, yogurt, label, hand, prop or text"
+      ],
+      "allowed_variation": [
+        "minor edge trim may affect stainless field only"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-INGREDIENT-BLACK-SESAME-97",
+      "product_name": "Black Sesame",
+      "role": "layout_aware_raw_ingredient_aerial",
+      "communication_job": "Black Sesame의 raw input을 제품·요거트·중간 preparation과 분리해 true-aerial 사실 이미지로 보여 준다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-ingredient-aerial-black-sesame-3ee21130bc4a9efdc7263e3c5319b21bc1d6d02fa05c039e090b0fd794c1a40f.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/ingredients/ST3-R5-INGREDIENT-AERIAL-SERIES.md",
+      "subject": "True-aerial raw ingredient evidence for Black Sesame",
+      "aspect_ratio": "1:1 square",
+      "delivery_dimensions": "2048 × 2048",
+      "generation_provenance": "Accepted Stage 2 Revision 18 built-in image generation; 1254 × 1254 native preserved byte-for-byte in Stage 3; delivery is a high-quality 2048 × 2048 resample, not newly generated optical detail. Delivery SHA-256 3ee21130bc4a9efdc7263e3c5319b21bc1d6d02fa05c039e090b0fd794c1a40f.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 18 raw ingredient aerial series",
+        "Stage 3 R5 square folio slot contract"
+      ],
+      "invariants": [
+        "exact 1:1 source matches the ingredient folio slot",
+        "strict 90-degree aerial with complete vessel silhouettes",
+        "actual culinary scale and factual ingredient color",
+        "stainless-only food-contact field with no product, yogurt, label, hand, prop or text"
+      ],
+      "allowed_variation": [
+        "minor edge trim may affect stainless field only"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R5-INGREDIENT-OLIVE-OIL-SEA-SALT-98",
+      "product_name": "Olive Oil & Sea Salt",
+      "role": "layout_aware_raw_ingredient_aerial",
+      "communication_job": "Olive Oil & Sea Salt의 raw input을 제품·요거트·중간 preparation과 분리해 true-aerial 사실 이미지로 보여 준다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-ingredient-aerial-olive-oil-sea-salt-b5b75532308cd0442086dbc21921d7522dc96d53f270188f248c21adf077bda5.png",
+      "prompt_path": "prompts/revision-r5-layout-aware/ingredients/ST3-R5-INGREDIENT-AERIAL-SERIES.md",
+      "subject": "True-aerial raw ingredient evidence for Olive Oil & Sea Salt",
+      "aspect_ratio": "1:1 square",
+      "delivery_dimensions": "2048 × 2048",
+      "generation_provenance": "Accepted Stage 2 Revision 18 built-in image generation; 1254 × 1254 native preserved byte-for-byte in Stage 3; delivery is a high-quality 2048 × 2048 resample, not newly generated optical detail. Delivery SHA-256 b5b75532308cd0442086dbc21921d7522dc96d53f270188f248c21adf077bda5.",
+      "reference_lineage": [
+        "Accepted Stage 2 Revision 18 raw ingredient aerial series",
+        "Stage 3 R5 square folio slot contract"
+      ],
+      "invariants": [
+        "exact 1:1 source matches the ingredient folio slot",
+        "strict 90-degree aerial with complete vessel silhouettes",
+        "actual culinary scale and factual ingredient color",
+        "stainless-only food-contact field with no product, yogurt, label, hand, prop or text"
+      ],
+      "allowed_variation": [
+        "minor edge trim may affect stainless field only"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-ETCH-R2-42",
+      "product_name": "MORA Brand World",
+      "role": "physical_process_etching",
+      "communication_job": "원재료가 실제 도구와 중간 산출물을 거쳐 요거트 흔적으로 남는 명제를 설명한다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-etch-brand-trace-3x2-3023c3ab5dde60b22854199a2f0868e01f6acd705d497e5b7286e1982f1a0840.png",
+      "prompt_path": "prompts/revision-r2/etchings/ST3-ETCH-R2-42-brand-trace.md",
+      "subject": "Physical brand-trace process",
+      "aspect_ratio": "3:2 landscape",
+      "generation_provenance": "OpenAI image generation; generated and QA-locked 2026-08-29 under MORA Revision R2. R5 preserves the artwork and resamples it to the layout delivery master; no new drawn detail is claimed. Delivery SHA-256 3023c3ab5dde60b22854199a2f0868e01f6acd705d497e5b7286e1982f1a0840.",
+      "reference_lineage": [
+        "MORA Revision R2 lock",
+        "accepted Stage 2 anatomy",
+        "Stage 3 R5 layout-preservation decision"
+      ],
+      "invariants": [
+        "fine #171714 physical-process linework on uniform #F5F1E8 field",
+        "complete artwork survives its exact-ratio landing slot",
+        "no artwork text, founder identity claim, facility claim or production-proof caption"
+      ],
+      "allowed_variation": [
+        "responsive display scale only; do not crop the physical causal sequence"
+      ],
+      "invariant_check": "pass",
+      "status": "registered",
+      "delivery_dimensions": "3072 × 2048"
+    },
+    {
+      "asset_id": "ST3-ETCH-R2-43",
+      "product_name": "MORA Brand World",
+      "role": "physical_process_etching",
+      "communication_job": "토핑·혼합·한 번 접기의 차이를 실제 스푼 경로로 설명한다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-etch-first-furrow-3x2-c3f2ee7eabf00fb10c8fb8e5648821069b60620372b90bd14e0d5850d30bae96.png",
+      "prompt_path": "prompts/revision-r2/etchings/ST3-ETCH-R2-43-first-furrow-why.md",
+      "subject": "Physical first-furrow comparison",
+      "aspect_ratio": "3:2 landscape",
+      "generation_provenance": "OpenAI image generation; generated and QA-locked 2026-08-29 under MORA Revision R2. R5 preserves the artwork and resamples it to the layout delivery master; no new drawn detail is claimed. Delivery SHA-256 c3f2ee7eabf00fb10c8fb8e5648821069b60620372b90bd14e0d5850d30bae96.",
+      "reference_lineage": [
+        "MORA Revision R2 lock",
+        "accepted Stage 2 anatomy",
+        "Stage 3 R5 layout-preservation decision"
+      ],
+      "invariants": [
+        "fine #171714 physical-process linework on uniform #F5F1E8 field",
+        "complete artwork survives its exact-ratio landing slot",
+        "no artwork text, founder identity claim, facility claim or production-proof caption"
+      ],
+      "allowed_variation": [
+        "responsive display scale only; do not crop the physical causal sequence"
+      ],
+      "invariant_check": "pass",
+      "status": "registered",
+      "delivery_dimensions": "3072 × 2048"
+    },
+    {
+      "asset_id": "ST3-ETCH-R2-45",
+      "product_name": "MORA Brand World",
+      "role": "straining_process_etching",
+      "communication_job": "응유가 천에 남고 유청이 아래로 분리되는 거름의 물리적 인과를 설명한다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-etch-cloth-to-body-3x2-da45f515c8fc2b9adf52ac6c400e77d8bcfa00076343322f76bf1d71de47b6c5.png",
+      "prompt_path": "prompts/revision-r2/etchings/ST3-ETCH-R2-45-cloth-to-body.md",
+      "subject": "Cloth, whey and concentrated yogurt process",
+      "aspect_ratio": "3:2 landscape",
+      "generation_provenance": "OpenAI image generation; generated and QA-locked 2026-08-29 under MORA Revision R2. R5 preserves the artwork and resamples it to the layout delivery master; no new drawn detail is claimed. Delivery SHA-256 da45f515c8fc2b9adf52ac6c400e77d8bcfa00076343322f76bf1d71de47b6c5.",
+      "reference_lineage": [
+        "MORA Revision R2 lock",
+        "accepted Stage 2 anatomy",
+        "Stage 3 R5 layout-preservation decision"
+      ],
+      "invariants": [
+        "fine #171714 physical-process linework on uniform #F5F1E8 field",
+        "complete artwork survives its exact-ratio landing slot",
+        "no artwork text, founder identity claim, facility claim or production-proof caption"
+      ],
+      "allowed_variation": [
+        "responsive display scale only; do not crop the physical causal sequence"
+      ],
+      "invariant_check": "pass",
+      "status": "registered",
+      "delivery_dimensions": "3072 × 2048"
+    },
+    {
+      "asset_id": "ST3-ETCH-R2-46",
+      "product_name": "Thyme Honey",
+      "role": "ingredient_process_etching",
+      "communication_job": "타임과 꿀이 시럽과 호박색 리본으로 남는 경로를 설명한다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-etch-thyme-honey-square-4129d745d65cc3ace9884a714228cc9b06ebe880c8d4d46db0ca2952e1bcb2e4.png",
+      "prompt_path": "prompts/revision-r2/etchings/ST3-ETCH-R2-46-thyme-honey.md",
+      "subject": "Thyme and honey process",
+      "aspect_ratio": "1:1 square",
+      "generation_provenance": "OpenAI image generation; generated and QA-locked 2026-08-29 under MORA Revision R2. R5 preserves the artwork and resamples it to the layout delivery master; no new drawn detail is claimed. Delivery SHA-256 4129d745d65cc3ace9884a714228cc9b06ebe880c8d4d46db0ca2952e1bcb2e4.",
+      "reference_lineage": [
+        "MORA Revision R2 lock",
+        "accepted Stage 2 anatomy",
+        "Stage 3 R5 layout-preservation decision"
+      ],
+      "invariants": [
+        "fine #171714 physical-process linework on uniform #F5F1E8 field",
+        "complete artwork survives its exact-ratio landing slot",
+        "no artwork text, founder identity claim, facility claim or production-proof caption"
+      ],
+      "allowed_variation": [
+        "responsive display scale only; do not crop the physical causal sequence"
+      ],
+      "invariant_check": "pass",
+      "status": "registered",
+      "delivery_dimensions": "2048 × 2048"
+    },
+    {
+      "asset_id": "ST3-ETCH-R2-47",
+      "product_name": "Fig Leaf",
+      "role": "ingredient_process_etching",
+      "communication_job": "무화과잎이 조건부 준비액과 옅은 결로 남는 경로를 설명한다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-etch-fig-leaf-square-c3270b858cb0c4d5f8a8d2211dd7db8370d5ed689ee04d01930a1e8a9c909839.png",
+      "prompt_path": "prompts/revision-r2/etchings/ST3-ETCH-R2-47-fig-leaf.md",
+      "subject": "Fig leaf process",
+      "aspect_ratio": "1:1 square",
+      "generation_provenance": "OpenAI image generation; generated and QA-locked 2026-08-29 under MORA Revision R2. R5 preserves the artwork and resamples it to the layout delivery master; no new drawn detail is claimed. Delivery SHA-256 c3270b858cb0c4d5f8a8d2211dd7db8370d5ed689ee04d01930a1e8a9c909839.",
+      "reference_lineage": [
+        "MORA Revision R2 lock",
+        "accepted Stage 2 anatomy",
+        "Stage 3 R5 layout-preservation decision"
+      ],
+      "invariants": [
+        "fine #171714 physical-process linework on uniform #F5F1E8 field",
+        "complete artwork survives its exact-ratio landing slot",
+        "no artwork text, founder identity claim, facility claim or production-proof caption",
+        "Fig Leaf remains a directional conditional folio and is not release or safety proof"
+      ],
+      "allowed_variation": [
+        "responsive display scale only; do not crop the physical causal sequence"
+      ],
+      "invariant_check": "pass",
+      "status": "registered",
+      "delivery_dimensions": "2048 × 2048"
+    },
+    {
+      "asset_id": "ST3-ETCH-R2-48",
+      "product_name": "Roasted Buckwheat",
+      "role": "ingredient_process_etching",
+      "communication_job": "볶은 메밀이 우림과 고운 입자를 거쳐 두 깊이의 흔적으로 남는 과정을 설명한다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-etch-roasted-buckwheat-square-cbf38107b1cca5db3c11771d4fdd65f875ea87eb9517127fc2e05eab12b38e45.png",
+      "prompt_path": "prompts/revision-r2/etchings/ST3-ETCH-R2-48-roasted-buckwheat.md",
+      "subject": "Roasted buckwheat process",
+      "aspect_ratio": "1:1 square",
+      "generation_provenance": "OpenAI image generation; generated and QA-locked 2026-08-29 under MORA Revision R2. R5 preserves the artwork and resamples it to the layout delivery master; no new drawn detail is claimed. Delivery SHA-256 cbf38107b1cca5db3c11771d4fdd65f875ea87eb9517127fc2e05eab12b38e45.",
+      "reference_lineage": [
+        "MORA Revision R2 lock",
+        "accepted Stage 2 anatomy",
+        "Stage 3 R5 layout-preservation decision"
+      ],
+      "invariants": [
+        "fine #171714 physical-process linework on uniform #F5F1E8 field",
+        "complete artwork survives its exact-ratio landing slot",
+        "no artwork text, founder identity claim, facility claim or production-proof caption"
+      ],
+      "allowed_variation": [
+        "responsive display scale only; do not crop the physical causal sequence"
+      ],
+      "invariant_check": "pass",
+      "status": "registered",
+      "delivery_dimensions": "2048 × 2048"
+    },
+    {
+      "asset_id": "ST3-ETCH-R2-49",
+      "product_name": "Citrus Peel",
+      "role": "ingredient_process_etching",
+      "communication_job": "감귤 껍질이 여과액과 가는 필을 거쳐 밝은 흔적으로 남는 과정을 설명한다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-etch-citrus-peel-square-6d5dd0e9047fefc61e1a432c51a5731385b571d6beb3e6c236979f08961831b6.png",
+      "prompt_path": "prompts/revision-r2/etchings/ST3-ETCH-R2-49-citrus-peel.md",
+      "subject": "Citrus peel process",
+      "aspect_ratio": "1:1 square",
+      "generation_provenance": "OpenAI image generation; generated and QA-locked 2026-08-29 under MORA Revision R2. R5 preserves the artwork and resamples it to the layout delivery master; no new drawn detail is claimed. Delivery SHA-256 6d5dd0e9047fefc61e1a432c51a5731385b571d6beb3e6c236979f08961831b6.",
+      "reference_lineage": [
+        "MORA Revision R2 lock",
+        "accepted Stage 2 anatomy",
+        "Stage 3 R5 layout-preservation decision"
+      ],
+      "invariants": [
+        "fine #171714 physical-process linework on uniform #F5F1E8 field",
+        "complete artwork survives its exact-ratio landing slot",
+        "no artwork text, founder identity claim, facility claim or production-proof caption"
+      ],
+      "allowed_variation": [
+        "responsive display scale only; do not crop the physical causal sequence"
+      ],
+      "invariant_check": "pass",
+      "status": "registered",
+      "delivery_dimensions": "2048 × 2048"
+    },
+    {
+      "asset_id": "ST3-ETCH-R2-50",
+      "product_name": "Black Sesame",
+      "role": "ingredient_process_etching",
+      "communication_job": "검은깨가 페이스트를 거쳐 밝은 요거트의 회색 마블로 남는 과정을 설명한다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-etch-black-sesame-square-4d3ea69300d467ef6b8612ca2c2bebbbeb11c998c3f9f59de530fe340a03caf2.png",
+      "prompt_path": "prompts/revision-r2/etchings/ST3-ETCH-R2-50-black-sesame.md",
+      "subject": "Black sesame process",
+      "aspect_ratio": "1:1 square",
+      "generation_provenance": "OpenAI image generation; generated and QA-locked 2026-08-29 under MORA Revision R2. R5 preserves the artwork and resamples it to the layout delivery master; no new drawn detail is claimed. Delivery SHA-256 4d3ea69300d467ef6b8612ca2c2bebbbeb11c998c3f9f59de530fe340a03caf2.",
+      "reference_lineage": [
+        "MORA Revision R2 lock",
+        "accepted Stage 2 anatomy",
+        "Stage 3 R5 layout-preservation decision"
+      ],
+      "invariants": [
+        "fine #171714 physical-process linework on uniform #F5F1E8 field",
+        "complete artwork survives its exact-ratio landing slot",
+        "no artwork text, founder identity claim, facility claim or production-proof caption"
+      ],
+      "allowed_variation": [
+        "responsive display scale only; do not crop the physical causal sequence"
+      ],
+      "invariant_check": "pass",
+      "status": "registered",
+      "delivery_dimensions": "2048 × 2048"
+    },
+    {
+      "asset_id": "ST3-ETCH-R2-51",
+      "product_name": "Olive Oil & Sea Salt",
+      "role": "ingredient_process_etching",
+      "communication_job": "오일과 소금이 얇은 세이보리 흔적으로 남는 조건부 경로를 설명한다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-etch-olive-oil-sea-salt-square-5ef11a98a485120c793419f55c7b6f80d7ecfc83cb954a83cf1141eeb78839c9.png",
+      "prompt_path": "prompts/revision-r2/etchings/ST3-ETCH-R2-51-olive-oil-sea-salt.md",
+      "subject": "Olive oil and sea salt process",
+      "aspect_ratio": "1:1 square",
+      "generation_provenance": "OpenAI image generation; generated and QA-locked 2026-08-29 under MORA Revision R2. R5 preserves the artwork and resamples it to the layout delivery master; no new drawn detail is claimed. Delivery SHA-256 5ef11a98a485120c793419f55c7b6f80d7ecfc83cb954a83cf1141eeb78839c9.",
+      "reference_lineage": [
+        "MORA Revision R2 lock",
+        "accepted Stage 2 anatomy",
+        "Stage 3 R5 layout-preservation decision"
+      ],
+      "invariants": [
+        "fine #171714 physical-process linework on uniform #F5F1E8 field",
+        "complete artwork survives its exact-ratio landing slot",
+        "no artwork text, founder identity claim, facility claim or production-proof caption"
+      ],
+      "allowed_variation": [
+        "responsive display scale only; do not crop the physical causal sequence"
+      ],
+      "invariant_check": "pass",
+      "status": "registered",
+      "delivery_dimensions": "2048 × 2048"
+    }
+  ]
+}

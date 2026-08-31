@@ -1,0 +1,8 @@
+# ST2-PRODUCT-THYME-HONEY-MATERIAL-03
+
+Image 1 is the edit target and authoritative source for exact 1:1 frontal composition, cup scale, spoon position, yogurt texture and exact product text. Image 2 is the authoritative reference for the revised MORA package materials. Change only the package architecture and the removed closure; preserve the product's food identity, ingredient trace, camera, background, crop, lighting family and exact text.
+
+Replace the all-over warm-ivory paper cup with a low-wide warm smoke-clear or softly translucent unprinted food-contact candidate vessel with a credible thin rim. Wrap only the lower third in a separate pale mineral-gray dry pressed-fiber collar with crisp edges, one real locking seam and one narrow square-cut aperture revealing the actual amber thyme-honey food trace. The collar carries only exact black text “MORA” and “THYME HONEY”. Replace any upright paper lid with one fully removed thin matte aluminum peel foil lying flat on the same dry plane, its pull tab visible. Preserve dense white yogurt, one deep spoon furrow, thin honey ribbon, sparse thyme flecks and one spoonful. Strict 0-degree frontal azimuth with 15–18-degree downward elevation, centered square product portrait, complete cup silhouette and coherent contact shadow.
+
+Avoid paper food-contact wall, paper lid, beige monochrome, decorative color swatch, pharmacy label, perfume/cosmetics, amber bottle, rustic kraft, deckle, twine, wax, vintage props, extra text, watermark or material intersections. The translucent vessel is a directional disclosure candidate, not a validated production claim.
+

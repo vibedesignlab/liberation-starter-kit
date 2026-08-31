@@ -1,0 +1,61 @@
+{
+  "asset_id": "ST2-AMBIENT-SINGLE-FOLD-09",
+  "concept": "The Single Fold",
+  "revision": "revision_9_ambient_material_field",
+  "series_name": "The Background Is the Batch",
+  "status": "pass",
+  "generation": {
+    "mode": "built-in image_gen",
+    "intent": "generate",
+    "use_case": "ads-marketing",
+    "attempts": 1,
+    "selected_attempt": 1,
+    "retry_required": false,
+    "source_output": "/Users/ddd/.codex/generated_images/01a056b4-6fca-76a2-8f6a-22f37daa331a/exec-c709a1cd-240e-4924-9aaf-740429ac7a97.png"
+  },
+  "artifacts": {
+    "image": "assets/ambient-system/mora-ambient-single-fold-r9.png",
+    "prompt": "prompts/ST2-AMBIENT-SINGLE-FOLD-09.md",
+    "width_px": 1536,
+    "height_px": 1024,
+    "aspect_ratio": "3:2",
+    "format": "PNG",
+    "color_type": "8-bit RGB",
+    "sha256": "c146b1b253fe46badf869c910bb813489740b743804d31cccc15d2398bf74b74"
+  },
+  "visual_qa": {
+    "inspection_method": "view_image at original detail",
+    "observable_result": "One broad shallow-diagonal fold crosses a dense mineral-ivory yogurt field and pulls a narrow interrupted honey-amber trace with sparse thyme-green micro-fibers; the ingredients remain only partially incorporated.",
+    "series_lock_checks": {
+      "warm_mineral_ivory_base_field": "pass",
+      "real_microtexture_integrated_into_matte_field": "pass",
+      "broad_quiet_negative_space": "pass",
+      "single_soft_directional_light": "pass",
+      "restricted_ivory_amber_thyme_palette": "pass",
+      "yogurt_density_honey_viscosity_thyme_fibers_legible": "pass",
+      "textures_emerge_without_cutout_edge": "pass",
+      "natural_asymmetry_and_thickness_variation": "pass",
+      "no_text_logo_label_or_watermark": "pass"
+    },
+    "concept_checks": {
+      "exactly_one_broad_fold": "pass",
+      "limited_ingredient_ribbon": "pass",
+      "partial_incorporation_without_homogenization": "pass",
+      "minimal_folding_operation_is_legible": "pass"
+    },
+    "avoid_checks": {
+      "no_swirl_or_marbling": "pass",
+      "no_multiple_folds_or_decorative_waves": "pass",
+      "no_floating_whole_ingredients_or_particles": "pass",
+      "no_splash_smoke_gradient_mesh_or_jelly_blob": "pass",
+      "no_people_product_spoon_equipment_or_tabletop": "pass",
+      "no_bounded_photo_rectangle": "pass",
+      "no_rustic_or_high_gloss_cgi_styling": "pass"
+    }
+  },
+  "evidence_boundary": "Directional ambient concept visual only. It explains minimal folding and persistent ingredient trace; it is not evidence of a production recipe, SOP, sensory panel or finished food appearance.",
+  "unresolved_risks": [
+    "The realistic macro texture may read as a close food photograph before it reads as a hybrid material field when shown without surrounding brand-document context.",
+    "The thyme-green micro-fibers are intentionally sparse and may be subtle at small thumbnail sizes."
+  ]
+}

@@ -24,6 +24,7 @@ function compactBlocks(blocks) {
 
 function productLineupTable(products) {
   return tableBlock('Product-lineup copy matrix', [
+    { key: 'lineup_group', label: 'Group' },
     { key: 'product_name', label: 'Product' },
     { key: 'product_usp', label: 'USP' },
     { key: 'headline', label: 'Headline' },
@@ -57,18 +58,52 @@ function uniqueAssets(items) {
   return result;
 }
 
+function assetId(item) {
+  if (isRecord(item)) {
+    return firstText(item.asset_id, item.evidence_id, item.id);
+  }
+  return toText(item);
+}
+
+function landingCompositionBlocks(items, { assetIndex, publicBasePath } = {}) {
+  return asArray(items).filter(isRecord).flatMap((item, index) => {
+    const order = firstText(item.order, String(index + 1).padStart(2, '0'));
+    const section = firstText(item.section, `Landing section ${order}`);
+    const label = `${order}. ${section}`;
+    const copyBlock = cardGridBlock(`${label} — Copy`, [{
+      eyebrow: item.eyebrow,
+      headline: item.headline,
+      description: item.body,
+      image_sequence: item.asset_layout,
+      cta: item.cta,
+    }], { idPrefix: `landing-composition-${order}` });
+    const imageBlock = evidenceGridBlock(`${label} — Images`, item.asset_ids, {
+      assetIndex,
+      publicBasePath,
+    });
+    return compactBlocks([copyBlock, imageBlock]);
+  });
+}
+
 export function adaptLandingMaterials(input, context = {}) {
   const model = asRecord(input);
   const narrative = asRecord(model.landing_narrative);
   const values = asRecord(model.brand_value);
   const story = asRecord(model.brand_story);
   const family = asRecord(model.product_introduction);
+  const heroSeries = asRecord(model.hero_craft_space_series);
+  const referenceSystem = asRecord(model.reference_system);
+  const vesselSystem = asRecord(model.vessel_record_system);
+  const layoutImageSystem = asRecord(model.layout_aware_image_system);
   const products = asArray(model.product_lineup_copy).filter(isRecord);
   const sectionMap = asArray(model.section_map).filter(isRecord);
   const assetRegistry = asRecord(context.assetRegistry);
   const assetIndex = createAssetIndex(assetRegistry);
   const registered = asArray(model.registered_product_assets).map((asset) => resolveAsset(asset, assetIndex));
   const assets = uniqueAssets([...asArray(assetRegistry.assets), ...registered]);
+  const landingComposition = asArray(model.landing_page_composition).filter(isRecord);
+  const productionAppendix = asRecord(model.production_reference_appendix);
+  const previousVersionArchive = asRecord(model.previous_version_archive);
   const source = asRecord(model.extended_brand_source);
   const review = normalizeReview(context.review);
 
@@ -97,35 +132,116 @@ export function adaptLandingMaterials(input, context = {}) {
   const storyBlocks = compactBlocks([
     proseBlock(story.headline, [story.body]),
     proseBlock('Product connection', [story.product_connection]),
+    keyValueTable('Visual storytelling system', story.visual_storytelling),
+    listBlock('Founder story release gate', story.founder_release_gate),
+    proseBlock('Hero craft-space series', [heroSeries.key_insight]),
+    keyValueTable('Hero series lock', heroSeries.series_lock),
+    keyValueTable('Selected hero version', heroSeries.selected_version),
   ]);
 
   const familyBlocks = compactBlocks([
     proseBlock(family.headline, [family.description]),
+    cardGridBlock('Lineup groups', family.lineup_groups, { idPrefix: 'lineup-group' }),
     keyValueTable('Product-family introduction', {
       family_name: family.family_name,
       shared_promise: family.shared_promise,
       family_usp: family.family_usp,
+      packaging_architecture: family.packaging_architecture,
     }),
+    listBlock('Customer experience', family.customer_experience, { ordered: true }),
+    cardGridBlock('Use moments', family.use_moments, { idPrefix: 'use-moment' }),
+    keyValueTable('Partial Batch Record system', {
+      name: vesselSystem.name,
+      design_intent: vesselSystem.design_intent,
+      print_rule: vesselSystem.print_rule,
+      opening_sequence: vesselSystem.opening_sequence,
+      variable_data_rule: vesselSystem.variable_data_rule,
+      production_gate: vesselSystem.production_gate,
+    }),
+    listBlock('Vessel physical architecture', vesselSystem.physical_architecture),
   ]);
 
+  const individualProducts = products.filter((product) => product.lineup_group === 'individual_product');
+  const workspaceTemplates = products.filter((product) => product.lineup_group === 'workspace_template_module');
+  const ungroupedProducts = products.filter((product) => !product.lineup_group);
   const lineupBlocks = compactBlocks([
-    cardGridBlock('Product lineup', products, { idPrefix: 'product' }),
+    cardGridBlock('Individual products', individualProducts, { idPrefix: 'individual-product' }),
+    cardGridBlock('Workspace template modules', workspaceTemplates, { idPrefix: 'workspace-template' }),
+    cardGridBlock('Product lineup', ungroupedProducts, { idPrefix: 'product' }),
     productLineupTable(products),
   ]);
 
-  const mappingBlocks = compactBlocks([
-    evidenceGridBlock('Product-image renders', assets, {
-      assetIndex,
-      publicBasePath: context.publicBasePath,
-    }),
-    sectionMapTable(sectionMap),
-    cardGridBlock('Landing-section roles', sectionMap, { idPrefix: 'landing-section' }),
-  ]);
+  const composedAssetIds = new Set([
+    ...landingComposition.flatMap((item) => asArray(item.asset_ids).map(assetId)),
+    ...asArray(productionAppendix.asset_ids).map(assetId),
+  ].filter(Boolean));
+  const unplacedAssets = assets.filter((asset) => !composedAssetIds.has(assetId(asset)));
+  const mappingBlocks = landingComposition.length
+    ? compactBlocks([
+      ...landingCompositionBlocks(landingComposition, {
+        assetIndex,
+        publicBasePath: context.publicBasePath,
+      }),
+      proseBlock('Production Reference — moved behind the landing composition', [
+        productionAppendix.key_insight,
+        productionAppendix.description,
+        productionAppendix.archived_registry_path,
+      ]),
+      listBlock('Current production contracts', productionAppendix.current_contracts),
+      cardGridBlock('Production Reference index', productionAppendix.items, {
+        idPrefix: 'production-reference',
+      }),
+      evidenceGridBlock('Production Reference assets — not public', productionAppendix.asset_ids, {
+        assetIndex,
+        publicBasePath: context.publicBasePath,
+      }),
+      evidenceGridBlock('Unplaced registered assets — audit', unplacedAssets, {
+        assetIndex,
+        publicBasePath: context.publicBasePath,
+      }),
+      sectionMapTable(sectionMap),
+      cardGridBlock('Complete asset-role map', sectionMap, { idPrefix: 'landing-section' }),
+    ])
+    : compactBlocks([
+      evidenceGridBlock('Product-image renders', assets, {
+        assetIndex,
+        publicBasePath: context.publicBasePath,
+      }),
+      sectionMapTable(sectionMap),
+      cardGridBlock('Landing-section roles', sectionMap, { idPrefix: 'landing-section' }),
+    ]);
 
   mappingBlocks.push(...compactBlocks([
+    proseBlock('Reference system', [
+      referenceSystem.key_insight,
+      referenceSystem.status,
+      referenceSystem.dual_authority,
+    ]),
+    keyValueTable('Reference series lock', referenceSystem.series_lock),
+    listBlock('Reference QA loop', referenceSystem.qa_loop, { ordered: true }),
+    listBlock('Reference prompt modules', referenceSystem.prompt_modules),
+    proseBlock('Layout-aware image system', [
+      layoutImageSystem.key_insight,
+      layoutImageSystem.high_resolution_truth,
+      layoutImageSystem.no_reuse_rule,
+    ]),
+    listBlock('Preserved landing implementation', layoutImageSystem.preserved_implementation),
+    cardGridBlock('Exact-ratio delivery families', layoutImageSystem.slot_families, {
+      idPrefix: 'layout-image-slot',
+    }),
     listBlock('Unverified claims', asRecord(model.boundaries).unverified_claims),
     listBlock('Protected brand and product invariants', asRecord(model.boundaries).protected_brand_and_product_invariants),
     listBlock('Out of scope', asRecord(model.boundaries).out_of_scope),
+  ]));
+
+  mappingBlocks.push(...compactBlocks([
+    proseBlock('Previous versions — archive', [
+      previousVersionArchive.key_insight,
+      previousVersionArchive.retention_rule,
+    ]),
+    cardGridBlock('Archived alternatives', previousVersionArchive.items, {
+      idPrefix: 'previous-version',
+    }),
   ]));
 
   const firstValue = asRecord(asArray(values.values)[0]);

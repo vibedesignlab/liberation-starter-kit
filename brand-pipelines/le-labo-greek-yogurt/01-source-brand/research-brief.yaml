@@ -1,0 +1,55 @@
+case_title: "Le Labo current masterbrand source anatomy"
+research_depth: "rapid"
+expanded_depth_rationale: ""
+reference_brand:
+  name: "Le Labo Fragrances"
+  entity_scope: "Current global masterbrand and owned US English expression; fine fragrance, home fragrance, body-hair-face, discovery and refill service"
+  product_mode: "physical" # physical | digital | hybrid | mixed
+  portfolio_or_product_lines: ["Classic Collection", "City Exclusives", "Home", "Body—Hair—Face", "Discovery", "Refill"]
+  markets: ["Global", "United States"]
+  languages: ["English"]
+  channels: ["official website", "product and packaging", "store and lab service", "official editorial and photography"]
+  era_start: "2024"
+  era_end: "2026-08-24"
+research_priorities:
+  - "strategy and portfolio"
+  - "verbal system"
+  - "identity and channel tokens"
+  - "key visual and brand mood"
+  - "photography and film"
+  - "product representation"
+  - "product-native visual and cognitive language"
+  - "product, interface, and service behavior"
+exclusions: ["target Greek-yogurt brand design", "social/community reception", "historical campaign completeness", "regional storefront comparison", "unverified typography or color claims"]
+inapplicable_visual_layers: []
+inapplicable_visual_layer_rationale: ""
+deliverable:
+  language: "ko"
+  depth: "concise"
+  image_bearing_storybook: true
+report_identity:
+  hero_background_color: "#F6F8F6"
+  hero_foreground_color: "#333333"
+  hero_color_layer: "identity"
+  hero_logo_evidence_id: "EV-005"
+  hero_logo_local_path: "evidence/visuals/EV-LL-001-masterbrand-wordmark.png"
+  hero_logo_source_url: "https://www.lelabofragrances.com/css/images/logonew.png"
+  hero_logo_credit: "Le Labo official owned website"
+  hero_logo_rights_note: "First-party copyrighted brand asset retained locally for research evidence only."
+  hero_logo_variant: "Current black transparent header wordmark"
+  hero_logo_render_treatment: "none" # none | invert(1) | brightness(0)
+  hero_identity_scope: "Current official US owned-digital masterbrand header; the cool off-white field is a persistent channel canvas rather than a published universal standard."
+evidence_thresholds:
+  structural_sources: 4
+  primary_structural_sources: 3
+  visual_candidates: 24
+  unique_local_visuals: 24
+  visual_layers: 7
+  core_claims: 8
+  grammar_rules: 4
+research_constraints:
+  browser_automation_allowed: false
+  rapid_timebox_minutes: 10
+  research_stop_minute: 8
+  notes: "Current Le Labo source-only analysis. The original rapid run was followed by a user-authorized 287-second supplemental visual pass; this is not claimed as expanded-depth research. User's natural-ingredient premium Greek-yogurt direction is stored for Stage 2 and must not shape Stage 1 claims. No browser automation."
+original_user_priority: "Research Le Labo as the reference brand, then later transform its structural principles into a premium Greek yogurt brand infused with diverse natural ingredients."

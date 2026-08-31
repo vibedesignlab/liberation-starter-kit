@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "brand_report_registration_receipt",
+  "stage": "landing_materials",
+  "report_id": "mora-infused-greek-yogurt-landing-materials",
+  "package_sha256": "73cb7faea6992c09fd31ba1bce4aff4ffbef4e604ccfb7b0eb942fa469cc0c8e",
+  "review_status": "pending",
+  "finalized_at": "2026-08-31T12:17:00.458Z"
+}

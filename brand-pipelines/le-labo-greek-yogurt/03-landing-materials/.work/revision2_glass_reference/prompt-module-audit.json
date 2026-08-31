@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "stage3_prompt_module_audit",
+  "audited_at": "2026-08-28T10:30:54Z",
+  "audit_basis": [
+    ".work/revision2_glass_reference/direction-lock.json",
+    ".agents/skills/commercial-photo-prompting/SKILL.md",
+    ".agents/skills/commercial-photo-prompting/references/web-editorial-composition.md",
+    ".agents/skills/commercial-photo-prompting/references/codex-image-profile.md"
+  ],
+  "overall_status": "pass_after_minimal_corrections",
+  "modules": [
+    {
+      "path": "prompts/modules/GLASS-PACKAGE-SERIES-LOCK.md",
+      "sha256": "d05d506b061e2d50f3e5203686609507da238354e780dc614927c9eb4d792a9f",
+      "status": "pass",
+      "issues": [],
+      "recommendation": "Keep immutable. It correctly preserves package-master first precedence, food-use translation, glass physics, direct print, numeric capture lock and source-brand distance boundaries."
+    },
+    {
+      "path": "prompts/modules/PRODUCT-COMPOSITION-TEMPLATE.md",
+      "sha256": "3d5549ada07fd452fe8aac97b637937b7125a647d3b4cc950ef678ee9e727eef",
+      "status": "pass_after_correction",
+      "issues": [
+        {
+          "severity": "error",
+          "exact_issue": "Ingredient-cue size tolerance was ±4%, but direction-lock.series_lock defines a shared product-series scale tolerance of ±3%. The ±4% value belongs only to ingredient_reference_lock.",
+          "correction": "Changed the product ingredient-cue size tolerance from ±4% to ±3%.",
+          "recommendation": "Use ±3% for every object inside the product-composition series; reserve ±4% only for the complete subject/dish grouping in individual ingredient-reference frames."
+        }
+      ]
+    },
+    {
+      "path": "prompts/modules/INGREDIENT-INDIVIDUAL-TEMPLATE.md",
+      "sha256": "a50e59c8868bffa76d8aa0b362c78d93343a51e65abb4fc4a7a98c1d2b62305f",
+      "status": "pass_after_correction",
+      "issues": [
+        {
+          "severity": "error",
+          "exact_issue": "The phrase 'remains inside x 28–72%, y 28–72%' allowed undersized subjects and did not state the direction-lock center ±2-point or scale ±4% tolerances.",
+          "correction": "Changed the requirement to match the 28–72% outer bounding box within ±4% scale, center x/y 50% within ±2 points, and added the locked down-right contact-shadow direction.",
+          "recommendation": "Judge the outer glass rim and ingredient together against the numeric box; do not accept a smaller centered dish merely because it is inside the box."
+        }
+      ]
+    },
+    {
+      "path": "prompts/modules/CROSS-MODEL-VARIATION-QA-LOOP.md",
+      "sha256": "c6f8f4fbd882c2a37282047edcfae8b7792dc72de68923ce4d641f2dcd3dc4b9",
+      "status": "pass_after_corrections",
+      "issues": [
+        {
+          "severity": "error",
+          "exact_issue": "The universal semantic-order row omitted the atmosphere layer even though PRODUCT-COMPOSITION-TEMPLATE and prompt-contract.json both include it.",
+          "correction": "Aligned the row to subject → role → camera → composition → lighting → surface/background → atmosphere → color grade → texture → output → continuity → negatives.",
+          "recommendation": "Adapters may translate syntax only; preserve this full ordered meaning layer."
+        },
+        {
+          "severity": "error",
+          "exact_issue": "The loop reused ±4% for product ingredient-cue scale, mixing the individual-reference tolerance with the product-series tolerance.",
+          "correction": "Separated product ingredient cue at ±3% from individual ingredient-reference subject/dish grouping at ±4%.",
+          "recommendation": "Report these as two different measurements in QA logs."
+        },
+        {
+          "severity": "error",
+          "exact_issue": "Migration allowed plain backgrounds only 'where the communication job permits isolation', creating an unauthorized non-mood environmental exception.",
+          "correction": "Made every non-mood role use the plain Cultured Cream background and prohibited additional environmental exceptions.",
+          "recommendation": "Brand mood is the only exception. If a non-mood communication job needs context, redesign it as a plain-background object/action study rather than opening a new exception."
+        },
+        {
+          "severity": "warning",
+          "exact_issue": "The stop-condition wording did not make clear whether the fresh master regeneration was the third counted model-level failure.",
+          "correction": "Specified two same-axis delta failures, one fresh master-based regeneration, then adapter incompatibility if that same axis fails again.",
+          "recommendation": "Do not make a fourth model edit on the incompatible adapter; route to a compatible model or deterministic post-production method."
+        },
+        {
+          "severity": "warning",
+          "exact_issue": "Gate D referred to a copy-safe field even though these centered PDP/collection images do not reserve a copy-safe region.",
+          "correction": "Replaced it with the unobstructed background field.",
+          "recommendation": "Measure only empty background pixels outside contact shadows and glass reflections."
+        }
+      ]
+    },
+    {
+      "path": "prompts/modules/prompt-contract.json",
+      "sha256": "f7068e0848135a86e3c6d222e42fd21e03768a452a0b505f8640ba2085ef4d90",
+      "status": "pass_after_corrections",
+      "issues": [
+        {
+          "severity": "error",
+          "exact_issue": "The single ingredient_scale_percent value of 4 was ambiguous and contradicted the product-series ±3% scale lock.",
+          "correction": "Split it into product_ingredient_cue_scale_percent 3 and individual_ingredient_reference_scale_percent 4.",
+          "recommendation": "Consumers must read the tolerance for the active asset role, not one shared ingredient value."
+        },
+        {
+          "severity": "error",
+          "exact_issue": "plain_background_scope named only three existing mood angles and could be read as excluding future explicitly approved brand-mood variants while leaving other environmental ambiguity.",
+          "correction": "Reworded the scope: explicitly designated brand-mood images are the sole exception; every other role uses plain #F5F1E8.",
+          "recommendation": "Require an explicit brand-mood designation before allowing any environmental background."
+        },
+        {
+          "severity": "error",
+          "exact_issue": "The machine-readable contract had no stop conditions even though the Markdown loop did.",
+          "correction": "Added the exact two-delta-failure reset and third-failure adapter-incompatibility conditions.",
+          "recommendation": "Automation should terminate the adapter branch when third_same_axis_model_failure is reached."
+        },
+        {
+          "severity": "warning",
+          "exact_issue": "Coordinate arrays had no declared ordering and could be interpreted differently by adapters.",
+          "correction": "Replaced arrays with labeled left/top/right/bottom and x/y objects matching direction-lock.json.",
+          "recommendation": "Keep all future coordinates labeled rather than positional."
+        }
+      ]
+    }
+  ],
+  "cross_module_checks": [
+    {
+      "criterion": "common_semantic_hierarchy",
+      "status": "pass",
+      "evidence": "Product template, QA loop and JSON contract now share the same twelve-layer prompt order including atmosphere."
+    },
+    {
+      "criterion": "reference_precedence",
+      "status": "pass",
+      "evidence": "Package master controls geometry/material, composition master controls camera/layout, and exactly one matching ingredient reference controls recipe identity; generated SKUs never become masters."
+    },
+    {
+      "criterion": "numeric_coordinates_and_tolerances",
+      "status": "pass",
+      "evidence": "Product center/bbox/object coordinates match direction lock; product scale is ±3%; individual ingredient reference center is ±2 points and its 28–72% grouping scale is ±4%."
+    },
+    {
+      "criterion": "plain_background_exception",
+      "status": "pass",
+      "evidence": "Explicit brand-mood designation is the only exception; all other roles require plain seamless matte Cultured Cream #F5F1E8."
+    },
+    {
+      "criterion": "one_axis_delta_loop",
+      "status": "pass",
+      "evidence": "Each repair names one causal axis, preserves every passing axis and prohibits moving compensating objects or full-scene restyling."
+    },
+    {
+      "criterion": "stop_condition",
+      "status": "pass",
+      "evidence": "Two failed same-axis deltas force a clean master reset; failure of the fresh regeneration on that axis is the third failure and terminates the adapter branch."
+    }
+  ],
+  "remaining_blockers": [],
+  "final_recommendation": "Freeze these corrected module checksums with the eight approved reference-image checksums before generating the first SKU."
+}

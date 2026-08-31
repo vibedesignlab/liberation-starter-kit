@@ -1,0 +1,486 @@
+{
+  "artifact_type": "stage2_clear_witness_direct_print_packaging_shard",
+  "schema_version": "1.0.0",
+  "status": "directional_requires_food_contact_barrier_print_seal_cold_chain_and_legal_validation",
+  "scope": "Concrete MORA Clear Witness Cup architecture replacing the revision 6 unit-level fiber collar with transparent primary packaging and minimal black direct print.",
+  "source_basis": [
+    "outputs/extended-brand-anatomy.json",
+    "extended-brand-anatomy.md",
+    "transfer-input.json",
+    ".work/revision4_process_world/shard.json",
+    ".work/revision5_lineup_story/shard.json",
+    ".work/revision6_packaging_system/shard.json"
+  ],
+  "system_name": "MORA Clear Witness Cup",
+  "key_decision": "단일 컵에서 paper, fiber collar, adhesive label과 printed flavor color를 제거한다. 투명한 validated food-contact vessel을 통해 실제 요거트 색과 내부 trace가 SKU 차이를 맡고, 필요한 정보는 컵 외면의 최소 검정 direct print와 one-time foil에만 남긴다. Paper/fiber는 여러 sealed cups를 지지하는 외부 multipack에만 허용한다.",
+  "clear_witness_rule": {
+    "definition": "Transparency earns its place only when the actual food remains safe, stable and visually truthful through the validated shelf life. The cup reveals product evidence; it never substitutes visibility for barrier, hygiene or legibility.",
+    "rules": [
+      "Actual food color, particle, ribbon, veil, thread, marble or oil interface is the only SKU color system on the single cup.",
+      "Black print names and explains the product but does not paint, frame or simulate the edible trace.",
+      "The clear wall must remain clear enough after filling, chilling, condensation and handling to show the food without retouching or artificial saturation.",
+      "If light, oxygen, moisture, aroma, recipe stability or shelf-life requirements cannot be met by a transparent validated structure, stop or materially revise the Clear Witness Cup rather than hide the risk with a paper collar.",
+      "If mandatory black copy cannot remain legible against all six actual foods, first revise zone, type scale and geometry; use a narrow integrated non-paper information alternative only after direct-print tests fail.",
+      "No sustainability, recyclability, freshness, tamper, easy-peel, food-safety or cold-retention benefit follows from transparency itself."
+    ],
+    "visual_test": "With all printed recipe names covered, each approved SKU must still be distinguishable by its actual food state; with the food digitally desaturated, front, back, bottom and foil functions must remain understandable without a label or color marker."
+  },
+  "layer_architecture": [
+    {
+      "layer_id": "L0",
+      "name": "Actual food",
+      "job": "공통 yogurt density와 recipe-specific internal trace가 제품 정체성, 감각 방향과 fill truth를 직접 보여 준다.",
+      "locked_direction": "Only approved R&D food samples may define color, opacity, particle, ribbon, veil, thread, marble and oil-interface appearance.",
+      "visible_evidence": [
+        "컵 측면을 통해 보이는 실제 food body와 분포",
+        "foil을 제거한 뒤 넓은 상부에서 보이는 untouched surface",
+        "first spoon 뒤에도 서 있는 ridge와 내부까지 이어지는 trace"
+      ],
+      "validation_gates": [
+        "actual recipe and common-density specification",
+        "recipe stability, syneresis, sediment, oil separation and color change through intended shelf life",
+        "consumer acceptance of seeing natural batch variation and any harmless visible separation",
+        "food-styling and photography locked to approved production-tolerant samples"
+      ]
+    },
+    {
+      "layer_id": "L1",
+      "name": "Transparent validated food-contact vessel",
+      "job": "요거트와 직접 접촉하고 fill, seal, refrigerated storage, transport, grip and spoon use를 견디면서 실제 food state를 가리지 않는다.",
+      "form_lock": [
+        "directional low-wide 150 g single-serve cup; approximate diameter-to-height ratio 1.55:1 remains subject to line and pack tests",
+        "lightly tapered transparent sidewall with no molded paper texture, amber tint, green tint or cosmetic glass simulation",
+        "wide opening and rounded internal floor-wall transition reachable by a spoon",
+        "flat continuous flange matched to the selected peelable foil",
+        "stable foot with a protected bottom-code zone and no decorative pedestal",
+        "no rigid overcap, paper skin, fiber grip, adhesive paper label or sidewall window because the vessel itself is the view"
+      ],
+      "material_direction": "Clear food-contact polymer or validated equivalent selected from actual recipe, fill-seal, barrier, migration and recovery-system evidence. No resin family, barrier layer, recycled content or mono-material claim is locked by this concept.",
+      "optical_direction": "Neutral clear, low-haze and low-color-cast only after actual wall thickness, forming and cold-condensation tests. Optical clarity is a production metric, not a premium claim.",
+      "validation_gates": [
+        "complete component structure and applicable-market food-contact documentation",
+        "overall and specific migration under actual dairy fat, acid, salt, oil, time and temperature conditions",
+        "light, oxygen, moisture and aroma barrier needed by each recipe or justified worst case",
+        "transparent-wall light exposure and photo-oxidation risk through actual retail lighting and shelf life",
+        "fill temperature, seal compatibility, wall compression, top load, nesting, denesting, drop and vibration",
+        "odor and taste neutrality, extractables, pigments or additives if present",
+        "haze, clarity, stress whitening, scratch, scuff and color cast after forming and cold-chain handling",
+        "condensation behavior, hand grip and barcode/copy visibility",
+        "actual component mass and local sort/recovery route before any recycling statement"
+      ],
+      "kill_gate": "If a transparent structure cannot meet validated product protection and shelf life without misleadingly hiding the food, the clear-vessel direction does not release."
+    },
+    {
+      "layer_id": "L2",
+      "name": "Minimal black direct print",
+      "job": "투명 용기를 가리지 않고 brand, recipe identity, mandatory facts and variable traceability를 검정 한 색으로 지속적으로 전달한다.",
+      "print_lock": [
+        "black exterior print only on the single cup; no ingredient-color ink, white flood, beige field, metallic ink or transparent varnish used as decoration",
+        "no opaque front panel, border, ruled grid, wraparound wallpaper or simulated paper texture",
+        "no ink, coating or registration mark on the food-contact interior, rim or foil seal land",
+        "consumer artwork uses one modern sans hierarchy and open spacing; manufacturing registration targets remain outside the consumer artwork or in controlled trim/test areas",
+        "fixed and variable information occupy separate zones and remain readable without a removable label"
+      ],
+      "print_character": "Crisp neutral black with actual production tolerances visible at close range; premium value comes from accurate registration and durable legibility, not dense ink coverage.",
+      "validation_gates": [
+        "ink, primer, coating and cure compatibility with the selected clear vessel",
+        "migration, set-off and odor/taint assessment including exterior-to-interior contact during nested-cup storage",
+        "adhesion, cure, scratch, cold rub, condensation rub, grease transfer and dishwasher or reuse claims excluded unless separately tested",
+        "front-back-bottom registration on the tapered formed cup",
+        "type, barcode and variable-code legibility across curvature, food backgrounds and condensation",
+        "Black Sesame black-on-dark contrast and Fig Leaf near-ivory low-edge contrast under retail and home light",
+        "print line speed, cup indexing, nesting/denesting damage and defect inspection",
+        "effect of direct print on actual local sorting and recovery before any environmental claim"
+      ]
+    },
+    {
+      "layer_id": "L3",
+      "name": "Full-perimeter peelable foil",
+      "job": "primary flange를 전 둘레 밀봉하고 최초 개봉 상태와 한 번의 peel action을 명확하게 만든다.",
+      "construction_lock": [
+        "flat full-perimeter seal matched to the selected vessel, not a decorative paper disc",
+        "one large asymmetric pull tab that can be grasped without covering front or back copy",
+        "one-time complete removal; no hinge, propped lid, rigid reclosure or cosmetic overcap",
+        "matte or low-glare foil appearance defined by the actual validated laminate, not luxury foil stamping",
+        "black-only essential identity or open cue if printing is required; no recipe-color locator"
+      ],
+      "visible_evidence": [
+        "sealed flat plane and continuous rim contact",
+        "clean peel edge after opening",
+        "removed foil lying flat beside the cup in opened-state imagery"
+      ],
+      "validation_gates": [
+        "actual foil, sealant, lacquer, primer, ink and vessel compatibility",
+        "seal temperature-pressure-dwell operating window and production line speed",
+        "rim contamination control and defined integrity inspection/reject method",
+        "peel force across shelf life and cold/wet-hand usability",
+        "seal integrity, leak, burst or appropriate test, drop and distribution vibration",
+        "light, oxygen, moisture and aroma barrier contribution required by the transparent vessel",
+        "migration, set-off, delamination and foil-tear behavior",
+        "component separation and local recovery evidence before foil or pack recycling claims"
+      ]
+    },
+    {
+      "layer_id": "L4",
+      "name": "Outer paper or fiber multipack only",
+      "job": "여러 sealed clear cups를 냉장 유통 중 지지하고 outer logistics, recipe list and barcode information을 제공한다. Paper/fiber is not attached to the single cup.",
+      "construction_direction": [
+        "open-sided tested board tray, carrier or restraint that keeps clear sidewalls and direct print visible",
+        "directional 2x2 core-four and 2x3 full-six arrangements pending cup and distribution tests",
+        "die-cut wells or dividers that do not press foil tabs, hide date codes or imply insulation",
+        "black print only preferred so actual cups remain the lineup color system",
+        "no transparent plastic window, laminated luxury box, magnetic closure or paper sleeve transferred onto individual cups"
+      ],
+      "validation_gates": [
+        "full-load drop, vibration, compression, carry and refrigerated humidity",
+        "condensation, board strength, ink rub and barcode scan",
+        "cup restraint, airflow, case and pallet fit, cold-room handling",
+        "board, coating, adhesive and print BOM",
+        "local collection, sorting and reprocessing evidence before paper, recyclable, responsible or low-impact claims"
+      ],
+      "cold_chain_boundary": "The outer multipack restrains cups but does not refrigerate or insulate them. Validated refrigeration operation controls product temperature."
+    }
+  ],
+  "information_zones": {
+    "front": {
+      "communication_job": "한눈에 brand, recipe, food category direction and unit size를 읽히게 하면서 실제 음식이 가장 큰 색 면으로 남게 한다.",
+      "fixed_family_print": [
+        "MORA",
+        "legally approved product-category wording placeholder",
+        "net-quantity position"
+      ],
+      "fixed_sku_print": [
+        "working recipe name",
+        "approved main-ingredient naming if required"
+      ],
+      "layout": "One unframed vertical or centered black hierarchy occupying the minimum readable area. MORA is compact, recipe name is primary, category and quantity sit below; no white backer, flavor color, border, grid or batch theater.",
+      "visibility_gate": "Validate on the filled and condensed cup from straight front, 30-degree turn and normal hand distance. If Black Sesame or another real food removes contrast, revise zone and type before considering an integrated fallback."
+    },
+    "back": {
+      "communication_job": "제품 선택 이후 필요한 mandatory facts and factual traceability를 한 개의 읽기 열로 제공한다.",
+      "fixed_family_structure": [
+        "ingredients and allergen block position",
+        "nutrition and required category facts position",
+        "storage and handling position",
+        "producer/contact and market-required statements position",
+        "barcode quiet zone and scan orientation"
+      ],
+      "fixed_sku_content": [
+        "approved ingredient list",
+        "allergen declaration",
+        "validated nutrition values where required",
+        "recipe-specific mandatory statements"
+      ],
+      "variable_content": [
+        "lot or batch identifier",
+        "validated date marking",
+        "line or plant code if required"
+      ],
+      "layout": "Single black information column with distance-based grouping, not an apothecary grid. Keep the densest copy away from maximum curvature and normal grip pressure; barcode orientation follows verified scanner performance.",
+      "visibility_gate": "Legal-copy area, type size, line length, print distortion, actual food background, condensation and barcode grade must pass on every SKU."
+    },
+    "bottom": {
+      "communication_job": "production identification and material facts that do not need the front view, while remaining accessible before opening.",
+      "fixed_molded_or_printed": [
+        "cavity or mold identifier for quality control",
+        "verified component material identification only when accurate and required",
+        "small orientation datum for print registration if invisible in normal use"
+      ],
+      "variable_code": [
+        "lot or batch",
+        "validated date marking",
+        "line and time code where required"
+      ],
+      "prohibited": [
+        "marketing manifesto",
+        "customer name, city, maker signature or decorative batch number",
+        "unverified recycling, resin, reusable or environmental symbol"
+      ],
+      "visibility_gate": "Code remains machine and human readable after cold storage, condensation, base scuff and multipack contact; market review decides whether date information may live only on the bottom or must be duplicated on the back."
+    },
+    "foil": {
+      "communication_job": "sealed-unit identity and opening cue without becoming a fourth marketing face.",
+      "fixed_print": [
+        "MORA or recipe name only if required for sealed-unit identification",
+        "one verified peel/open cue"
+      ],
+      "variable_print": [
+        "lot/date only if line architecture and market rules require it"
+      ],
+      "layout": "Black only, broad empty foil plane, no ingredient color, numbered formula, ruled label or faux handwritten date."
+    }
+  },
+  "fixed_vs_variable_print": {
+    "universal_fixed": [
+      "MORA wordmark direction",
+      "front and back hierarchy",
+      "approved category and net-quantity positions",
+      "mandatory-fact headings and barcode zone",
+      "foil open cue"
+    ],
+    "sku_fixed_after_recipe_lock": [
+      "recipe name",
+      "approved ingredient naming and list",
+      "allergen declaration",
+      "nutrition and recipe-specific required facts",
+      "any validated one-sentence sensory description"
+    ],
+    "variable_after_fill_or_seal": [
+      "lot or batch identifier",
+      "validated date marking",
+      "line, plant or time code if required"
+    ],
+    "separation_rule": "Variable coding uses a reserved bottom or lower-back zone and cannot overwrite fixed legal copy, barcode quiet space or transparent product-view area. No variable customer name, city or performative maker date is allowed.",
+    "plate_change_rule": "A flavor change requires the correct SKU-fixed artwork and verified recipe; black ink does not permit one generic cup to be relabeled by an ingredient-colored sticker."
+  },
+  "six_sku_differentiation": {
+    "family_rule": "All six cups share transparent vessel geometry, black print, foil geometry and information order. The visible food, recipe name and validated sensory copy are the only SKU differences on the unit pack.",
+    "skus": [
+      {
+        "product": "Thyme Honey",
+        "actual_food_witness": "ivory dense yogurt with a validated pale amber ribbon and fine thyme trace visible through sidewall and spoon cut",
+        "not_printed": "No amber band, green herb marker, honey gradient or botanical illustration.",
+        "release_gate": "Actual ribbon and herb trace remain safe, stable and legible without artificial color or garnish."
+      },
+      {
+        "product": "Fig Leaf",
+        "actual_food_witness": "near-ivory yogurt with a validated restrained green-beige internal vein",
+        "not_printed": "No sage panel, leaf silhouette or green-tinted vessel.",
+        "release_gate": "Ingredient safety and legality pass first; the food trace remains distinct from plain yogurt and Olive Oil without saturation."
+      },
+      {
+        "product": "Roasted Buckwheat",
+        "actual_food_witness": "warm cream-beige yogurt with validated fine roasted-grain flecks at multiple depths",
+        "not_printed": "No brown band, kraft effect, grain pattern or rustic speckle printed on the cup.",
+        "release_gate": "Flecks remain suspended and visually distinct from Black Sesame while common density and shelf stability hold."
+      },
+      {
+        "product": "Citrus Peel",
+        "actual_food_witness": "cool ivory yogurt with validated yellow-orange peel threads or zest points continuing below the surface",
+        "not_printed": "No orange panel, fruit photo, peel graphic or neon freshness cue.",
+        "release_gate": "Actual peel species, safety, size, bitterness and stability pass; threads do not become a topping or jam layer."
+      },
+      {
+        "product": "Black Sesame",
+        "actual_food_witness": "ivory and stone-grey yogurt marble with validated fine sesame particles and visible density",
+        "not_printed": "No charcoal pack, black luxury field or sesame-dot pattern.",
+        "release_gate": "Direct black copy remains readable on the darkest production-tolerant sample; otherwise zone/type or the narrow integrated fallback must solve legibility before release."
+      },
+      {
+        "product": "Olive Oil & Sea Salt",
+        "actual_food_witness": "ivory yogurt with a validated translucent olive-gold oil ribbon and truthful interface; visible salt only if the recipe actually retains it",
+        "not_printed": "No olive-green band, metallic gold, oil-grade cue, salt crystals or origin graphic.",
+        "release_gate": "Oil oxidation, phase behavior, salt state, cold-chain stability and meal-adjacent comprehension pass without retouching pooling or separation."
+      }
+    ],
+    "comparison_gate": "Photograph sealed, sidewall, opened and first-spoon states under fixed light and cup fill. If actual food differences disappear without color grading or decorative garnish, the relevant recipe or Clear Witness role must be revised."
+  },
+  "production_candidates": {
+    "preferred_direct_print": [
+      {
+        "candidate": "one-color dry-offset direct-to-container print",
+        "why_consider": "Potentially efficient for repeated tapered-cup artwork and black-only production",
+        "not_locked_until": "cup geometry, ink/cure, line speed, front-back registration, nesting and cold-rub trials pass"
+      },
+      {
+        "candidate": "one-color rotary screen direct print",
+        "why_consider": "Potentially useful where higher black opacity or durable exterior coverage is required",
+        "not_locked_until": "type detail, taper distortion, ink build, cure, migration/set-off and throughput trials pass"
+      },
+      {
+        "candidate": "digital direct-to-container print",
+        "why_consider": "Prototype, pilot or short-run artwork and variable test production",
+        "not_locked_until": "production speed, cure, adhesion, migration, barcode and unit economics pass; do not depict a specific industrial mechanism before selection"
+      }
+    ],
+    "inspection_action_for_visuals": "Show a generic validated tapered-container registration fixture: cup indexed, black front/back zones inspected for placement, adhesion and clarity. Do not invent a printer head, roller, pad or industrial process before production selection.",
+    "integrated_non_paper_fallback_only_if_needed": {
+      "candidate": "narrow resin-compatible in-mold information rail or equivalent integrated non-paper construction with a minimal neutral opacity backer",
+      "allowed_reason": "Only if direct black print cannot meet mandatory legibility, barcode, migration, durability or line-economics gates across the six real food backgrounds.",
+      "boundaries": [
+        "not a paper label, fiber collar, shrink sleeve, pressure-sensitive sticker or full wrap",
+        "minimum width and opacity needed for facts, leaving the actual food as the dominant visible surface",
+        "black-only consumer artwork; no ingredient-color field",
+        "resin and label structure, migration, forming, adhesion, sorting and recovery impacts must be revalidated",
+        "fallback cannot be called mono-material or recyclable without actual system evidence"
+      ]
+    },
+    "rejected_candidates": [
+      "paper or fiber collar on the individual cup",
+      "adhesive paper label",
+      "full-body shrink sleeve",
+      "opaque flavor-colored in-mold label",
+      "white painted cup with transparent window",
+      "black printed sticker used to cover contrast failure",
+      "rigid cosmetic overcap"
+    ]
+  },
+  "assembly_and_consumer_sequence": {
+    "production": [
+      "1. Form or source the validated transparent food-contact cup and inspect flange, wall clarity, stress, dimensions and bottom-code zone.",
+      "2. Apply the correct fixed black front/back direct print to the exterior, fully cure it, inspect registration and control nesting/set-off before food contact use.",
+      "3. Denest without scuffing print or clear wall; inspect the interior and keep rim and seal land clean.",
+      "4. Fill the approved recipe at validated dose and temperature with minimum structure damage.",
+      "5. Apply the matched full-perimeter foil under the validated seal window.",
+      "6. Perform weight, seal-integrity, print, clarity and required product checks; add variable lot/date/line code in the reserved zone and reject unreadable or incomplete units.",
+      "7. Chill and hold within the validated process; test condensation, rub and code after cooling rather than only on dry empty cups.",
+      "8. Place sealed units directly into the tested outer multipack with no individual paper assembly step, then move through monitored refrigerated storage and distribution."
+    ],
+    "consumer": [
+      "1. Through the clear wall, the consumer sees actual food color and trace; black front copy confirms the recipe without a flavor-color marker.",
+      "2. The consumer checks the flat intact foil and any required date/storage information before opening.",
+      "3. One hand grips a clear non-printed or validated print-safe area while the other lifts the asymmetric tab.",
+      "4. The foil peels off completely and is set flat beside the cup; no paper collar or lid is removed.",
+      "5. The untouched top surface and sidewall food state align, then one spoon exposes density and the internal trace.",
+      "6. After use, foil, clear vessel and outer multipack are handled according to only the locally verified sorting instruction; absence of a collar does not itself prove recyclability."
+    ],
+    "use_failures_to_test": [
+      "wet hand slips on the clear cup",
+      "black print rubs or transfers under condensation",
+      "consumer covers mandatory copy while gripping",
+      "foil tab is hard to find against the clear rim",
+      "food looks separated, discolored or visually inconsistent before the validated shelf-life end",
+      "bottom date code is inaccessible or illegible in retail use"
+    ]
+  },
+  "validation_program": {
+    "barrier_and_light": [
+      "Map recipe-specific sensitivity to light, oxygen, moisture and aroma loss.",
+      "Test the transparent vessel plus foil under actual retail illumination, distribution and intended shelf life.",
+      "Use worst-case or every-SKU justification; Black Sesame oil and Olive Oil oxidation, Citrus aroma and light-sensitive changes require explicit review.",
+      "Do not solve failed protection by color grading, an outer paper collar or untested sustainability copy."
+    ],
+    "food_contact_and_migration": [
+      "Lock complete cup, barrier layer if any, direct ink, primer, coating, foil, sealant and multipack BOM.",
+      "Run applicable overall/specific migration and taint assessment for actual dairy fat, acid, salt, oil, time and temperature.",
+      "Include nested-empty-cup set-off because exterior direct print may contact another cup interior before filling.",
+      "Revalidate the integrated non-paper fallback as a new structure if introduced."
+    ],
+    "condensation_rub_and_optics": [
+      "Measure print adhesion, cold rub, wet rub, scratch, scuff, haze and stress whitening after chill and distribution.",
+      "Check hand grip and copy legibility with realistic condensation, not dry studio-only cups.",
+      "Reject any ink transfer to hands, multipack or adjacent cups and any optical distortion that falsifies food color."
+    ],
+    "print_registration_and_legibility": [
+      "Test front, back, bottom and foil registration across taper, forming tolerances and line speed.",
+      "Verify legal type, barcode, variable code and product name against all six real food backgrounds.",
+      "Set inspection limits for missing print, double image, distortion, cure, code contrast and artwork-SKU mismatch."
+    ],
+    "seal_and_cold_chain": [
+      "Validate matched flange and foil seal window, rim contamination control, integrity method and reject criteria.",
+      "Test peel force, clean peel, leak, drop, vibration and top load through the stated shelf life.",
+      "Validate fill temperature, cooling curve, storage, transport, retail display and consumer shelf-life conditions with monitored product data.",
+      "The clear cup and board multipack do not create refrigeration or prove freshness."
+    ],
+    "sorting_and_recycling_claims": [
+      "Identify actual cup and foil structures, ink coverage, coatings, barriers and integrated fallback if any.",
+      "Evaluate consumer separation, local collection, sorting detection and real reprocessing routes for each market.",
+      "Assess whether black direct ink, barrier layers or in-mold alternatives change sortability.",
+      "Do not use recyclable, mono-material, widely recyclable, reduced plastic, plastic-free, low impact, circular or sustainable packaging without component- and market-specific evidence."
+    ]
+  },
+  "exact_removals_from_revision6": [
+    {
+      "remove": "Revision 6 L3 Dry secondary fiber band or sleeve",
+      "replacement": "No material layer on the unit cup between direct print and foil; paper/fiber moves to L4 outer multipack only."
+    },
+    {
+      "remove": "Opaque mineral-white primary vessel production baseline",
+      "replacement": "Transparent validated food-contact vessel is the revision 7 target, with a hard barrier/light/shelf-life kill gate."
+    },
+    {
+      "remove": "Fiber sleeve as brand, recipe, fact-panel and grip carrier",
+      "replacement": "Front/back/bottom black direct-print zones on the transparent vessel; consumer grips the validated clear cup."
+    },
+    {
+      "remove": "Sleeve tongue-and-slot, friction seam, separation notch and post-seal sleeve fitting",
+      "replacement": "Direct print is applied and cured before fill; there is no unit-level paper assembly or separation action."
+    },
+    {
+      "remove": "Dry-down step whose purpose was later sleeve assembly",
+      "replacement": "Cold exterior condition remains a condensation/rub inspection point, not an assembly prerequisite."
+    },
+    {
+      "remove": "Ingredient-color locator on foil tab, sleeve seam and multipack index",
+      "replacement": "Actual visible food state plus black recipe name; no flavor-color ink on unit pack, and multipack remains black-led/open-sided."
+    },
+    {
+      "remove": "Revision 6 screen-direction hex values as packaging print directions",
+      "replacement": "The six food samples supply color. Hex values may remain digital brand references but do not print on the Clear Witness Cup."
+    },
+    {
+      "remove": "Pale-mineral fiber surface as the source of tactile premium",
+      "replacement": "Premium is expressed by truthful food visibility, accurate black registration, clear molded geometry and clean foil peel."
+    },
+    {
+      "remove": "Unit-level paper, FSC, paper-sleeve, fiber-recovery and sleeve recyclability validation tracks",
+      "replacement": "These tracks apply only to the outer multipack; the unit cup instead validates clear vessel, direct ink and foil structures."
+    },
+    {
+      "remove": "Sleeve-to-foil-to-multipack recipe-color continuity",
+      "replacement": "Food-to-name continuity: visible food on the unit cup aligns with black recipe name and the open multipack recipe list."
+    },
+    {
+      "remove": "Fiber curl, delamination, sleeve slip and accidental sleeve detachment as unit-pack failure modes",
+      "replacement": "Clear-wall scuff, haze, wet-hand grip, black-print rub, background contrast and optical truth become unit-pack failure modes."
+    },
+    {
+      "remove": "Any image showing a paper collar, seam, sleeve removal or paper-like food-contact wall",
+      "replacement": "Sealed clear cup, black direct print, flat foil peel, actual sidewall food and paper only as a separate outer carrier."
+    }
+  ],
+  "copy_and_claim_boundaries": {
+    "le_labo_boundary": [
+      "No apothecary ruled label, ingredient-plus-number name, formula, compound, essence, elixir, tincture or blend-for-you language.",
+      "No customer name, city, maker signature, handwritten date or personalized label ritual.",
+      "No compressed wordmark, amber-vessel reference, pharmacy microtype or manifesto imitation.",
+      "Lot and date are factual production information only and never front-of-pack theater."
+    ],
+    "claims_held_for_validation": [
+      "Greek Yogurt or equivalent category name",
+      "Infused or infusion process wording",
+      "150 g net quantity",
+      "storage temperature and date marking",
+      "sealed for freshness, tamper-evident, easy peel, leak resistant or preserves flavor",
+      "clear, high barrier, low migration, food safe or light protective as consumer claims",
+      "recyclable, mono-material, reduced plastic, plastic-free, low impact, circular or sustainable",
+      "paper, certified fiber, recyclable or insulating multipack",
+      "handmade, artisan, small-batch, slow-infused, origin, nutrition, probiotic or health benefit"
+    ],
+    "claim_rule": "Print only mandatory facts and claims supported by the approved recipe, component specification, line record, shelf-life/cold-chain study and applicable-market review. Visual transparency is not substantiation."
+  },
+  "release_gates": [
+    "Approved real food samples make six SKU states visible without artificial tint, garnish or image retouching.",
+    "Transparent vessel plus foil passes recipe-specific or justified worst-case light, barrier, migration, shelf-life and sensory studies.",
+    "Black direct print passes nested set-off, cure, migration, cold/wet rub, registration, legal copy, barcode and six-background contrast.",
+    "Black Sesame and every dark production-tolerant sample remain readable; any integrated non-paper fallback is minimized and fully revalidated.",
+    "Full-perimeter foil passes seal window, integrity, contamination control, peel, leak, drop and cold-chain distribution tests.",
+    "Consumer sequence passes wet-hand grip, foil-tab discovery, full removal, date-code finding and first-spoon comprehension.",
+    "Outer multipack passes restraint, humidity, drop, compression, airflow, barcode and refrigerated handling tests without being framed as insulation.",
+    "All mandatory label, category, allergen, quantity, date, storage, environmental and trademark reviews pass in the intended market.",
+    "Approved physical prototypes are photographed at sealed, sidewall, peeled, opened, first-spoon and sorted states; generated visuals do not close a gate."
+  ],
+  "global_boundaries": [
+    "Transparent vessel, black direct print, foil structure, dimensions, 150 g format, copy zones and production methods remain directional until validation.",
+    "No individual paper or fiber label, collar, sleeve, adhesive sticker or ingredient-color print is part of the Clear Witness Cup.",
+    "Paper or fiber is limited to an outer multipack and does not contact food or provide the primary barrier.",
+    "Transparency does not prove food safety, freshness, quality, shelf life, light protection or sustainability.",
+    "The foil is a one-time seal, not a reclosure, and the board multipack does not refrigerate the product.",
+    "MORA and all recipe names are working names pending trademark, linguistic and food-label review.",
+    "No legal, recycling, environmental, origin, nutrition, health, probiotic or functional claim is introduced by this shard."
+  ],
+  "merge_intent": {
+    "primary_targets": [
+      "sections.landing_product_concept.product_family",
+      "sections.product_visual_traits_and_product_imagery.product_visual_traits",
+      "sections.design_token_direction.shape"
+    ],
+    "supporting_targets": [
+      "sections.visual_branding_and_key_visual",
+      "sections.verbal_branding_and_copy_hierarchy",
+      "boundaries.assumptions",
+      "boundaries.factual_limits"
+    ],
+    "note": "This revision supersedes revision 6 only for unit-pack architecture and packaging graphics. Keep revision 6 food-safety, seal, cold-chain and no-unsupported-claims discipline where not explicitly removed."
+  }
+}

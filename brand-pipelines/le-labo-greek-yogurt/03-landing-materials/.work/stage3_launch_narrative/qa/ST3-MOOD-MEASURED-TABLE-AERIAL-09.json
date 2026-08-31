@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "asset_id": "ST3-MOOD-MEASURED-TABLE-AERIAL-09",
+  "inspected_at": "2026-08-26T06:13:31+09:00",
+  "inspection_method": "local original-resolution file inspection; no browser automation",
+  "file_path": "assets/product-renders/mora-measured-table-aerial.png",
+  "result": "pass_with_documented_generation_boundary",
+  "checks": [
+    {
+      "check": "true_90_degree_overhead",
+      "result": "pass",
+      "evidence": "all six dishes, cup rim, foil and spoon share one top-down axis; no cup sidewall or horizon remains"
+    },
+    {
+      "check": "landscape_16_9_delivery_fit",
+      "result": "pass",
+      "evidence": "1672 × 941 px, aspect 1.776833; generation-tool output is within 0.06% of 16:9"
+    },
+    {
+      "check": "large_copy_safe_negative_space",
+      "result": "pass",
+      "evidence": "left approximately 42% is a continuous pale-mineral low-detail field without object, strong shadow, reflection or seam"
+    },
+    {
+      "check": "six_distinct_preparation_forms",
+      "result": "pass",
+      "evidence": "amber syrup/flecks, pale aqueous preparation, warm grain slurry, pale-gold peel preparation, black sesame paste/slurry and oil-phase/emulsion are visually distinct"
+    },
+    {
+      "check": "required_package_objects",
+      "result": "pass",
+      "evidence": "one clear low-wide cup, one fully removed asymmetric-tab foil and one stainless spoon are present once each"
+    },
+    {
+      "check": "direct_print_boundary",
+      "result": "pass",
+      "evidence": "only a small MORA mark follows the overhead rim; no fake front label, number, legal copy or label-shaped opaque backing"
+    },
+    {
+      "check": "single_light_and_contact_physics",
+      "result": "pass",
+      "evidence": "soft-edged shadows share a lower-right direction; dishes, cup, foil and spoon have contact and coherent stainless reflections"
+    },
+    {
+      "check": "person_and_founder_boundary",
+      "result": "pass",
+      "evidence": "no person, face, hands or founder representation"
+    },
+    {
+      "check": "paper_unit_label_boundary",
+      "result": "pass",
+      "evidence": "no paper label, sticker, sleeve, collar, hangtag or opaque unit backing"
+    },
+    {
+      "check": "source_distance",
+      "result": "pass",
+      "evidence": "no perfume/spirit bottle, apothecary object, amber glass, beaker, pipette, pharmaceutical grid, black-steel lab or vintage workshop cue"
+    },
+    {
+      "check": "invented_numeric_text",
+      "result": "pass",
+      "evidence": "no readable number, scale readout, batch, date, temperature, duration, pH, dose, barcode or technical annotation"
+    },
+    {
+      "check": "claim_safety",
+      "result": "pass",
+      "evidence": "image contains no health, nutrition, origin, handmade, small-batch, sustainability, freshness, food-safety or performance statement"
+    }
+  ],
+  "known_limits": [
+    "The six visible preparations are directional visual distinctions, not approved formulas or proof of edible suitability.",
+    "Fig Leaf remains blocked pending exact species/part, supplier, toxicology and applicable-market review.",
+    "The cup, direct print, foil and table are generated prototypes, not proof of food-contact, barrier, seal, cold-chain or print performance.",
+    "The image cannot substantiate an actual facility, SOP, manufacturing run, ingredient dose or inspection result."
+  ],
+  "alt_text_ko": "연한 미네랄 작업면과 스테인리스 테이블 위에 서로 다른 여섯 재료 준비 형태, 투명 요거트 컵, 벗긴 은색 포일과 스푼이 정수직으로 놓여 있고 왼쪽은 넓게 비어 있다.",
+  "release_recommendation": "merge_candidate_for_stage3_canonical_and_registry_by_owner"
+}
+

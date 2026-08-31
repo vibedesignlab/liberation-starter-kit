@@ -1,0 +1,537 @@
+{
+  "artifact_type": "stage2_source_material_semantics_shard",
+  "schema_version": "1.0",
+  "brand": "MORA",
+  "source_brand": "Le Labo Fragrances",
+  "status": "directional_source_translation",
+  "scope": "Local Stage 1 canonical JSON, contact sheets and local evidence only; source material semantics and MORA translation, not a target production specification.",
+  "evidence_scope": {
+    "canonical_json": "brand-pipelines/le-labo-greek-yogurt/01-source-brand/outputs/source-brand-analysis.json",
+    "contact_sheets": [
+      "brand-pipelines/le-labo-greek-yogurt/01-source-brand/contact-sheets/identity-key-visual.jpg",
+      "brand-pipelines/le-labo-greek-yogurt/01-source-brand/contact-sheets/product-format-and-package.jpg",
+      "brand-pipelines/le-labo-greek-yogurt/01-source-brand/contact-sheets/editorial-and-craft.jpg",
+      "brand-pipelines/le-labo-greek-yogurt/01-source-brand/contact-sheets/lab-and-service.jpg",
+      "brand-pipelines/le-labo-greek-yogurt/01-source-brand/contact-sheets/overview.jpg",
+      "brand-pipelines/le-labo-greek-yogurt/01-source-brand/contact-sheets/photography-film.jpg",
+      "brand-pipelines/le-labo-greek-yogurt/01-source-brand/contact-sheets/product-system.jpg",
+      "brand-pipelines/le-labo-greek-yogurt/01-source-brand/contact-sheets/visual-expansion-overview.jpg"
+    ],
+    "primary_evidence_ids": [
+      "EV-001",
+      "EV-003",
+      "EV-006",
+      "EV-007",
+      "EV-008",
+      "EV-009",
+      "EV-011",
+      "EV-012",
+      "EV-013",
+      "EV-016",
+      "EV-018",
+      "EV-020",
+      "EV-021",
+      "EV-022",
+      "EV-023",
+      "EV-025",
+      "EV-026",
+      "EV-027",
+      "EV-028",
+      "EV-029",
+      "EV-036",
+      "EV-037",
+      "EV-038",
+      "EV-039"
+    ],
+    "limits": [
+      "No public formal identity or material specification manual was available in Stage 1.",
+      "Observed glass, paper, ink, metal and color behaviors are source-channel relationships, not universal proprietary material standards.",
+      "Film motion, edit rhythm and sound were not captured; still images support material, framing and action analysis only.",
+      "Current evidence does not establish manufacturing substrates, print vendors, coatings, recycled content or sustainability performance."
+    ]
+  },
+  "key_insight": "Le Labo의 소재성은 유리·종이·금속의 빈티지 조합 자체가 아니라, 말로 선언한 느린 제작과 개별 준비의 철학을 물체가 드러내고, 도구와 손의 한 동작이 그 물체를 바꾸며, 남은 자국이 작업을 증명하는 인과 체계다.",
+  "causal_chain_model": {
+    "chain": [
+      "verbal premise",
+      "philosophy",
+      "object and material",
+      "tool and action",
+      "craft trace",
+      "consumer meaning"
+    ],
+    "rule": "각 소재는 분위기를 내기 전에 정보를 드러내거나, 상태를 보존하거나, 행동을 가능하게 하는 실제 기능을 가져야 한다. craft trace는 그 기능적 행동의 물리적 결과여야 한다.",
+    "source_chains": [
+      {
+        "chain_id": "SRC-CHAIN-01",
+        "name": "개별 준비를 보이는 기록",
+        "verbal_premise": "`labs`, `craftspeople`, `slow perfumery`, `freshly formulated`처럼 사람과 작업을 가리키는 언어",
+        "philosophy": "익명적 완제품보다 누가 준비했고 어떤 상태인지 설명할 수 있을 때 가치가 생긴다.",
+        "object_and_material": "내용물과 충전 높이를 드러내는 투명 유리, 변경 가능한 정보를 받는 별도 종이 라벨, 고대비 검정 잉크",
+        "tool_and_action": "손으로 새 라벨을 정렬·부착하고, 계량 도구 옆에서 같은 용기에 내용물을 옮긴다.",
+        "craft_trace": "붙은 라벨의 가장자리, 인쇄된 준비·개체 정보, 용기 안의 실제 액면",
+        "consumer_meaning": "제품이 이미 존재하는 익명 상품이 아니라 준비되고 기록된 개체처럼 읽힌다.",
+        "evidence_ids": [
+          "EV-001",
+          "EV-003",
+          "EV-013",
+          "EV-016"
+        ],
+        "confidence": "high"
+      },
+      {
+        "chain_id": "SRC-CHAIN-02",
+        "name": "재료와 노동을 고급감의 근거로 전환",
+        "verbal_premise": "`creations`, `souls`, `craftspeople`와 느린 제작의 언어",
+        "philosophy": "고급감은 장식보다 원료와 표면이 사람의 실제 노동을 통과한 흔적에서 나온다.",
+        "object_and_material": "수확 전 식물, 직물 섬유, 콘크리트 기공, 나무 결, 금속 펀치와 작업대",
+        "tool_and_action": "수확하고, 인쇄하고, 잡고, 두드리고, 조립하는 한 개의 근접 동작",
+        "craft_trace": "꽃과 잎의 불규칙성, 직물 위 잉크 흡수, 콘크리트의 기공과 얼룩, 나무의 타격·가공 흔적",
+        "consumer_meaning": "완성품의 매끈함보다 재료가 실제로 다뤄졌다는 관찰 가능한 근거가 남는다.",
+        "evidence_ids": [
+          "EV-008",
+          "EV-009",
+          "EV-036",
+          "EV-037",
+          "EV-038",
+          "EV-039"
+        ],
+        "confidence": "high"
+      },
+      {
+        "chain_id": "SRC-CHAIN-03",
+        "name": "서비스를 물리 상태의 연속으로 만들기",
+        "verbal_premise": "동일한 병·향·크기와 자격·절차를 반복해 오류를 줄이는 리필 언어",
+        "philosophy": "브랜드 약속은 감정적 의식만이 아니라 물체, 기록, 포장, 인계가 끊기지 않는 운영으로 증명된다.",
+        "object_and_material": "기존 유리병, 종이 송장, 골판 보호재, 인쇄된 새 상태 기록",
+        "tool_and_action": "병을 닫고, 보호재에 넣고, 문서를 확인·동봉하고, 운송 단계로 넘긴다.",
+        "craft_trace": "기존 용기의 지속, 동봉된 기록, 새로 갱신된 상태 정보",
+        "consumer_meaning": "서비스가 추상적 약속이 아니라 확인 가능한 물체 이동과 기록 갱신으로 읽힌다.",
+        "evidence_ids": [
+          "EV-003",
+          "EV-025",
+          "EV-026",
+          "EV-027",
+          "EV-028",
+          "EV-029"
+        ],
+        "confidence": "high"
+      }
+    ]
+  },
+  "material_semantics": [
+    {
+      "material_id": "MAT-GLASS",
+      "material": "glass",
+      "source_observation": "투명 유리는 향수·캔들에서 내용물, 액면, 용기 두께와 사용 가능한 동일 용기를 함께 드러낸다. 반사와 긴 그림자를 완전히 지우지 않아 유리가 실제 질량을 가진 보관 물체로 남는다.",
+      "semantic_job": "내용물과 상태를 감추지 않고, 제품 개체와 서비스 연속성을 한 물체에 묶는다.",
+      "causal_position": "object/material disclosure layer",
+      "source_evidence": [
+        {
+          "evidence_id": "EV-013",
+          "local_path": "evidence/visual-expansion/product-packaging/EV-PP-01-santal33-50ml-neutral.jpg",
+          "supports": "clear heavy-bottomed vessel, visible pale liquid, paper label and retained reflection"
+        },
+        {
+          "evidence_id": "EV-018",
+          "local_path": "evidence/visual-expansion/product-packaging/EV-PP-06-santal26-candle-neutral.jpg",
+          "supports": "transparent vessel exposes wax, wick and fill state across a different category"
+        },
+        {
+          "evidence_id": "EV-011",
+          "local_path": "evidence/visuals/EV-LL-008-classic-collection-tile.jpg",
+          "supports": "repeated clear vessels make liquid differences and selection legible"
+        }
+      ],
+      "portable_principle": "retain the job of state disclosure, replace the perfume-vessel mechanism",
+      "mora_translation": "MORA는 투명 향수병을 차용하지 않는다. 열린 컵, 벗겨진 리드, 스푼 단면, 실제 충전 높이처럼 그릭요거트 고유 상태를 드러내는 방식으로 투명성의 역할을 옮긴다. 보조 preparation vessel에 유리를 쓰더라도 식품용 광구 용기와 실제 점도·상 분리를 보여 줄 때만 사용한다.",
+      "mora_craft_trace": "열린 컵의 능선, 스푼 홈, 재료가 내부까지 이어지는 실제 흔적, 리드가 벗겨진 개봉 상태",
+      "identifiable_mimics_to_avoid": [
+        "두꺼운 투명 원통 향수병과 둥근 어깨",
+        "검정 또는 차콜 원통 캡",
+        "ground-glass stopper 또는 decanter/apothecary silhouette",
+        "동일 병을 늘어놓고 액체색만 바꾸는 가족 표현",
+        "향수 리필처럼 비커의 맑은 액체를 작은 병에 붓는 장면"
+      ],
+      "relationship": "tune",
+      "confidence": "high"
+    },
+    {
+      "material_id": "MAT-PAPER",
+      "material": "paper",
+      "source_observation": "종이는 유리·왁스·박스와 분리된 정보 표면으로 존재하며, 라벨 가장자리와 종이결이 보인다. 손으로 부착되거나 송장·보호 포장과 함께 서비스 상태를 이동시키고, Le Journal에서는 인쇄물 자체가 편집 오브젝트가 된다.",
+      "semantic_job": "변경 가능한 개체 정보와 절차를 물체에 결속하고, 디지털 문장을 만질 수 있는 기록으로 바꾼다.",
+      "causal_position": "information carrier and state-binding layer",
+      "source_evidence": [
+        {
+          "evidence_id": "EV-016",
+          "local_path": "evidence/visual-expansion/product-packaging/EV-PP-04-personalized-label-hands.jpg",
+          "supports": "paper label exists as a separate object and its alignment is physical labor"
+        },
+        {
+          "evidence_id": "EV-012",
+          "local_path": "evidence/visuals/EV-LL-010-discovery-set-product.jpg",
+          "supports": "uncoated board and adhesive label organize selection and package facts"
+        },
+        {
+          "evidence_id": "EV-006",
+          "local_path": "evidence/visuals/EV-LL-002-about-navigation-key-visual.jpg",
+          "supports": "broadsheet becomes a physical navigation object"
+        }
+      ],
+      "portable_principle": "retain paper's job as a factual state carrier; replace the label and newspaper identities",
+      "mora_translation": "필요한 경우 무코팅 또는 저광택 식품 포장용 종이를 리드 실, 제품 설명 카드, 검증된 배치 정보 카드처럼 실제 기능을 가진 작은 표면에 사용한다. 종이의 값은 크라프트 분위기가 아니라 이름·제품 형식·중량·필수 식품 사실을 컵과 연결하는 데서 생긴다.",
+      "mora_craft_trace": "정렬된 리드 실의 가장자리, 실제 접힘과 개봉선, 승인된 정보가 인쇄된 카드의 사용 흔적",
+      "identifiable_mimics_to_avoid": [
+        "병 전체를 감싸는 웜오프화이트 약국형 라벨",
+        "가로 규칙선과 도시·날짜·고객 이름 필드",
+        "크라프트 박스 중앙의 흰 라벨과 검정 폼 배열",
+        "Le Journal 제호·신문 판형·브로드시트 번들",
+        "빈티지 종이와 찢김을 목적 없이 더한 조제소 연출"
+      ],
+      "relationship": "tune",
+      "confidence": "high"
+    },
+    {
+      "material_id": "MAT-INK",
+      "material": "ink and applied type",
+      "source_observation": "검정 잉크와 압축된 정보 글자는 종이, 직접 인쇄 플라스틱, 튜브, 콘크리트, 직물처럼 다른 표면을 분류 가능한 가족으로 묶는다. 잉크는 장식색보다 이름·형식·용량·상태를 고정하는 정보 행동이다.",
+      "semantic_job": "소재가 바뀌어도 읽기 순서와 사실 역할을 고정하고, 인쇄가 표면에 닿았다는 물리적 접촉을 남긴다.",
+      "causal_position": "verbal-to-object binding layer",
+      "source_evidence": [
+        {
+          "evidence_id": "EV-020",
+          "local_path": "evidence/visual-expansion/product-packaging/EV-PP-08-hinoki-shower-gel.jpg",
+          "supports": "direct black type adapts to a translucent task-native bottle"
+        },
+        {
+          "evidence_id": "EV-021",
+          "local_path": "evidence/visual-expansion/product-packaging/EV-PP-09-hinoki-hand-pomade.jpg",
+          "supports": "same information role persists on a different tube silhouette and reading direction"
+        },
+        {
+          "evidence_id": "EV-037",
+          "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-009-denim-tote-craft.jpg",
+          "supports": "imperfect ink deposit records contact with woven fibers"
+        }
+      ],
+      "portable_principle": "retain information hierarchy and substrate response, replace proprietary typography and administrative styling",
+      "mora_translation": "검정 또는 짙은 중립 잉크는 국문 중심으로 제품명 → 재료 조합 → 그릭요거트 형식 → 중량 → 검증된 식품 정보 순서를 만든다. 잉크는 재료색과 경쟁하지 않으며, 인쇄 흡수·엣지는 실제 선택한 포장 소재에서 자연스럽게 생길 때만 남긴다.",
+      "mora_craft_trace": "실제 소재 위의 선명한 활자 가장자리와 제한된 흡수 차이; 검증된 정보의 읽기 순서",
+      "identifiable_mimics_to_avoid": [
+        "Bell Gothic 또는 Magda를 닮은 압축 약국형 조판",
+        "타자기·모노스페이스·스텐실을 이용한 실험실 인상",
+        "향명+숫자 네이밍과 전면 대문자 남용",
+        "Le Labo식 가로·세로 규칙선 그리드",
+        "도시·조제일·고객 이름의 개인화 필드",
+        "LE LABO INC. 같은 유틸리티 스탬프 모사"
+      ],
+      "relationship": "tune",
+      "confidence": "high"
+    },
+    {
+      "material_id": "MAT-METAL",
+      "material": "metal",
+      "source_observation": "금속은 캡, 저울, 태스크 램프, 프레스형 장비, 펀치와 작업대처럼 닫기·계량·검사·타격을 수행한다. 반짝이는 럭셔리 장식보다 손과 대상 사이의 접촉점으로 나타난다.",
+      "semantic_job": "정확성, 힘의 전달, 반복 가능한 작업과 기능적 내구성을 눈에 보이게 한다.",
+      "causal_position": "tool/action layer",
+      "source_evidence": [
+        {
+          "evidence_id": "EV-023",
+          "local_path": "evidence/visual-expansion/space-service/SS-02-about-lab-banner.jpg",
+          "supports": "task lamp and press-like device read as inspection and manual operation"
+        },
+        {
+          "evidence_id": "EV-039",
+          "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-011-diffuser-craft.jpg",
+          "supports": "hammer and metal punch physically connect hand, force and wood"
+        },
+        {
+          "evidence_id": "EV-016",
+          "local_path": "evidence/visual-expansion/product-packaging/EV-PP-04-personalized-label-hands.jpg",
+          "supports": "machine/tool remains subordinate to the label application action"
+        }
+      ],
+      "portable_principle": "retain functional precision and contact; replace lab apparatus and industrial trade dress",
+      "mora_translation": "브러시드 식품용 스테인리스는 계량 저울, 충전·실링 장비, 패들, 트레이 또는 집게처럼 실제 위생·계량·포장 동작을 수행할 때만 등장한다. 금속 표면은 컵과 손의 접촉, 하중, 반사를 읽게 하되 장식용 장비 벽을 만들지 않는다.",
+      "mora_craft_trace": "실링 압력선, 저울 위 컵의 하중, 트레이의 사용 가능한 미세 접촉 흔적, 도구가 만든 실제 한 동작",
+      "identifiable_mimics_to_avoid": [
+        "검정 철제 유리 파티션과 약방 재고벽",
+        "노후한 프레스·태스크 램프·저울을 기능 없이 늘어놓기",
+        "향수병의 무광 차콜 금속 캡",
+        "비커·피펫·드로퍼·메스실린더와 조합한 실험실 문법",
+        "녹·오염·과도한 스크래치를 수제 증거로 조작"
+      ],
+      "relationship": "tune",
+      "confidence": "high"
+    },
+    {
+      "material_id": "MAT-RAW-COLOR",
+      "material": "raw ingredient color",
+      "source_observation": "마스터브랜드 구조는 차콜과 오프화이트에 가깝지만 원료·현장 사진은 장미의 핑크와 녹색, 베르가못의 황록색, 목재·흙·피부의 색을 보존한다. 선명색은 정체성 토큰이 아니라 원료와 장소가 실제로 존재한다는 국소 증거다.",
+      "semantic_job": "중립 분류 구조 안에 재료 고유의 감각과 출처 세계를 제한적으로 유입한다.",
+      "causal_position": "material evidence and sensory differentiation layer",
+      "source_evidence": [
+        {
+          "evidence_id": "EV-009",
+          "local_path": "evidence/visuals/EV-LL-006-rose-harvest-film-poster.jpg",
+          "supports": "plant and skin colors remain local to harvest and hand action"
+        },
+        {
+          "evidence_id": "EV-036",
+          "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-008-bergamot-harvest.jpg",
+          "supports": "fruit and leaf colors make raw material tactile without becoming masterbrand color"
+        },
+        {
+          "evidence_id": "EV-011",
+          "local_path": "evidence/visuals/EV-LL-008-classic-collection-tile.jpg",
+          "supports": "liquid variation sits inside a repeated neutral family system"
+        }
+      ],
+      "portable_principle": "keep real material color local; never confuse photographic or product color with identity accent",
+      "mora_translation": "타임·꿀·무화과 잎·볶은 메밀·감귤 껍질·검은깨·올리브오일 등 실제 음식색은 열린 내용물, 원재료, 검증된 중간 상태와 작은 레시피 locator 안에서만 사용한다. 브랜드 배경과 CTA를 물들이지 않고, 재료별 투명도·탁도·입자·오일 굴절 차이를 함께 보존한다.",
+      "mora_craft_trace": "실제 요거트 안의 리본·베일·입자·필·마블·오일 접면과 대응하는 좁은 식별색",
+      "identifiable_mimics_to_avoid": [
+        "모든 preparation base를 동일한 투명 앰버색으로 통일",
+        "원료색을 전역 브랜드 포인트나 CTA 색으로 확대",
+        "재료를 더 고급스럽게 보이게 하는 과포화·인공 색보정",
+        "그린·브라운 필터로 전체 공간을 빈티지 약방처럼 처리",
+        "실제 완제품과 연결되지 않는 장식용 원재료색"
+      ],
+      "relationship": "keep",
+      "confidence": "high"
+    },
+    {
+      "material_id": "MAT-CRAFT-TRACE",
+      "material": "craft trace",
+      "source_observation": "종이결, 직물의 짜임과 잉크 흡수, 콘크리트 기공, 나무 끝결과 타격, 마모된 작업면, 손이 라벨을 정렬하는 접점이 보존된다. 흔적은 랜덤 노이즈가 아니라 특정 재료와 행동이 만난 결과다.",
+      "semantic_job": "추상적인 장인성 문구를 원인과 결과가 연결된 표면 증거로 바꾼다.",
+      "causal_position": "result and proof layer",
+      "source_evidence": [
+        {
+          "evidence_id": "EV-037",
+          "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-009-denim-tote-craft.jpg",
+          "supports": "woven fiber and uneven print deposit remain visible"
+        },
+        {
+          "evidence_id": "EV-038",
+          "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-010-concrete-candle-craft.jpg",
+          "supports": "porosity, mass and imperfect surface remain tied to the vessel"
+        },
+        {
+          "evidence_id": "EV-039",
+          "local_path": "evidence/visual-expansion/editorial-craft/VE-EC-011-diffuser-craft.jpg",
+          "supports": "tool, hand, force and material trace share one frame"
+        }
+      ],
+      "portable_principle": "preserve only causally legible process residue",
+      "mora_translation": "MORA의 craft trace는 요거트 능선과 스푼 홈, 재료의 내부 흔적, 실링 압력선, 정렬된 카드·리드 가장자리처럼 실제 제조·포장·섭취 행동 뒤에 남는 것으로 제한한다. 손과 도구, 접점, 결과 중 최소 두 요소가 같은 프레임에 있어야 한다.",
+      "mora_craft_trace": "trace 자체가 번역 대상이며, 검증된 행동과 직접 연결될 때만 공개 proof가 된다.",
+      "identifiable_mimics_to_avoid": [
+        "오염·먼지·녹·찢김·가짜 스크래치를 고급감으로 사용",
+        "손글씨 날짜·서명·고객 이름을 만든 흔적으로 연출",
+        "실제 원인 없이 스탬프·잉크 번짐·라벨 비뚤어짐을 합성",
+        "낡은 목재와 세피아 조명을 장인성의 지름길로 사용",
+        "작업자 초상을 보여 주기만 하고 무엇이 바뀌었는지 제시하지 않음"
+      ],
+      "relationship": "keep",
+      "confidence": "high"
+    }
+  ],
+  "portable_principles": [
+    {
+      "principle_id": "PP-01",
+      "principle": "소재명보다 semantic job을 먼저 옮긴다.",
+      "source_job": "glass reveals, paper records, ink classifies, metal acts, raw color identifies, trace proves",
+      "mora_rule": "각 target 소재는 내용물 공개·정보 기록·계량·식별·결과 증명 중 하나의 명확한 일을 가져야 한다.",
+      "evidence_ids": [
+        "EV-011",
+        "EV-012",
+        "EV-016",
+        "EV-039"
+      ]
+    },
+    {
+      "principle_id": "PP-02",
+      "principle": "말은 철학을 만들고, 물체는 그 철학의 상태를 보여 준다.",
+      "source_job": "craft vocabulary gains credibility through object, hand, tool and material state",
+      "mora_rule": "`재료가 머문 결` 같은 감각 문장 뒤에는 열린 컵, 중간 상태, 계량 또는 실링처럼 직접 관찰 가능한 food-native state를 둔다.",
+      "evidence_ids": [
+        "EV-001",
+        "EV-008",
+        "EV-009",
+        "EV-016"
+      ]
+    },
+    {
+      "principle_id": "PP-03",
+      "principle": "정보와 감각은 역할을 나누되 한 장면에서 연결한다.",
+      "source_job": "type classifies while image and material show physical behavior",
+      "mora_rule": "종이·잉크는 제품명과 사실을, 열린 요거트와 원재료색은 식감과 재료 행동을 맡는다. 카피를 음식 위에 장식처럼 올리지 않는다.",
+      "evidence_ids": [
+        "EV-006",
+        "EV-013",
+        "EV-020",
+        "EV-021"
+      ]
+    },
+    {
+      "principle_id": "PP-04",
+      "principle": "중립 구조는 재료 차이를 지우지 않고 비교 가능하게 한다.",
+      "source_job": "repeated information hierarchy holds different containers and local colors together",
+      "mora_rule": "컵 비례·정보 순서·촬영 상태는 고정하고 실제 음식색·입자·흔적만 제품별로 바꾼다.",
+      "evidence_ids": [
+        "EV-011",
+        "EV-013",
+        "EV-018",
+        "EV-020",
+        "EV-021"
+      ]
+    },
+    {
+      "principle_id": "PP-05",
+      "principle": "도구는 장식이 아니라 변화의 원인으로 보여야 한다.",
+      "source_job": "scale, press, hammer and hand explain what operation is occurring",
+      "mora_rule": "저울·실러·패들·트레이는 컵의 하중, 밀봉, 폴딩 또는 이동과 물리적으로 접촉해야 한다.",
+      "evidence_ids": [
+        "EV-016",
+        "EV-023",
+        "EV-039"
+      ]
+    },
+    {
+      "principle_id": "PP-06",
+      "principle": "한 프레임에는 한 개의 중심 행동과 한 개의 바뀐 상태를 둔다.",
+      "source_job": "one selection, label application, harvest or assembly action activates the system",
+      "mora_rule": "열기, 계량하기, 실링하기, 정렬하기, 떠내기 중 하나만 선택하고 전후 상태가 동시에 읽히게 한다.",
+      "evidence_ids": [
+        "EV-009",
+        "EV-011",
+        "EV-016",
+        "EV-039"
+      ]
+    },
+    {
+      "principle_id": "PP-07",
+      "principle": "불완전함은 원인이 보일 때만 신뢰가 된다.",
+      "source_job": "fiber, pores, wear and print deposit remain materially specific",
+      "mora_rule": "식품·포장·도구의 실제 표면 차이는 보존하되 faux distress와 빈티지 노이즈는 추가하지 않는다.",
+      "evidence_ids": [
+        "EV-037",
+        "EV-038",
+        "EV-039"
+      ]
+    },
+    {
+      "principle_id": "PP-08",
+      "principle": "제품 사실 프레임과 공정 분위기 프레임을 혼동하지 않는다.",
+      "source_job": "PDP shows complete object and label; editorial process shows hands, tools and environment",
+      "mora_rule": "packaging hero는 컵·리드·정보·내용물 상태를 완전하게 보여 주고, Packing Table은 손·도구·작업 접점을 보여 준다. 한 프레임이 두 역할을 모두 과장해 맡지 않는다.",
+      "evidence_ids": [
+        "EV-013",
+        "EV-016",
+        "EV-022",
+        "EV-039"
+      ]
+    }
+  ],
+  "mora_causal_translation": {
+    "material_position": "food-native evidence system",
+    "master_chain": {
+      "verbal": "한 컵 안에, 재료가 머문 결.",
+      "philosophy": "재료의 차이는 더 많은 토핑이나 장식이 아니라, 요거트 안에서 보이는 상태와 검증된 사실로 설명한다.",
+      "object_and_material": "낮고 넓은 식품 컵, 실제 요거트 표면, 기능적 리드·실, 작은 사실 카드, 식품용 스테인리스 도구",
+      "tool_and_action": "계량한 컵을 놓고, 리드를 정렬·실링하며, 한 번 열고 떠낸다.",
+      "craft_trace": "정확한 실링선, 정렬된 정보 표면, 열린 리드, 무너지지 않는 스푼 홈과 제품별 내부 흔적",
+      "consumer_meaning": "포장과 공정이 장식이 아니라 한 컵의 상태·재료·취급 기준을 이해시키는 증거가 된다."
+    },
+    "packaging_hero_invariants": [
+      "식품 고유의 낮고 넓은 컵 실루엣과 개봉 구조가 먼저 읽힌다.",
+      "닫힌 포장만 보여 주지 않고 열린 내용물 또는 스푼 단면을 함께 보여 투명성의 역할을 food-native하게 수행한다.",
+      "종이·잉크 정보 표면은 제품명·재료 조합·제품 형식·중량을 분류하며 약국형 라벨을 모사하지 않는다.",
+      "재료색은 실제 음식과 작은 recipe locator 안에만 머문다.",
+      "표면 흔적은 식품·개봉·인쇄·실링의 실제 원인과 연결된다.",
+      "제품 사실 프레임은 전체 컵, 리드, 정보, 내용물과 그림자를 잘라내지 않는다."
+    ],
+    "packing_table_pair": {
+      "communication_job": "완성 컵이 계량·정보 확인·실링이라는 포장 행동을 통과하며 판매 가능한 한 개의 식품 상태가 되는 과정을 두 축으로 증명한다.",
+      "frame_a": {
+        "role": "frontal state and classification proof",
+        "view": "strict frontal",
+        "must_show": [
+          "완성된 낮고 넓은 컵",
+          "컵과 실제 접촉한 저울 또는 실링면",
+          "리드·실·사실 카드의 정렬 관계",
+          "검정 정보 잉크와 국소 재료색",
+          "한 개의 중심 포장 상태"
+        ]
+      },
+      "frame_b": {
+        "role": "side physics and action proof",
+        "view": "strict 90-degree side",
+        "must_show": [
+          "같은 컵·사람·배치 순간",
+          "손이 리드 또는 실을 실제로 정렬·압착하는 접점",
+          "금속 도구가 하중이나 밀봉을 수행하는 물리 관계",
+          "행동 뒤 남는 정렬선 또는 압력 흔적",
+          "불필요한 장식 도구 없는 한 동작"
+        ]
+      },
+      "continuity_invariants": [
+        "같은 maker, 컵, recipe, 작업대, 광원과 action phase",
+        "paper edge, ink, metal tool and edible state each have one distinct job",
+        "source의 라벨 부착 장면을 재연하지 않고 food packing action으로 교체",
+        "maker는 영웅 초상이 아니라 컵을 바꾸는 실제 행동 주체",
+        "이미지 생성 텍스트나 가짜 batch/date/inspection data를 넣지 않음"
+      ]
+    }
+  },
+  "identifiable_mimics": {
+    "hard_prohibitions": [
+      "Le Labo 워드마크, 압축 워드마크 비례와 GRASSE — NEW YORK 부기",
+      "향명 또는 원료명+숫자 네이밍",
+      "웜오프화이트 약국형 wrap label과 동일한 가로·세로 규칙선",
+      "city, date of preparation, recipient name을 조제 증거로 쓰는 개인화",
+      "투명 원통 향수병, 두꺼운 유리 바닥, 둥근 어깨, 차콜 원통 캡",
+      "앰버 병, 디캔터, 비커, 피펫, 드로퍼, 시험관과 맑은 스피릿 액체",
+      "검정 철제 유리 파티션, 반복 병 선반, 크라프트 서랍의 identifiable lab/store trade dress",
+      "Le Journal 신문판형, 제호, 판화 콜라주와 초현실 향수병 은유",
+      "크라프트 discovery box, 검정 폼, 흰 중앙 라벨의 동일 배열",
+      "Bell Gothic/Magda 계열을 닮은 라틴 중심 압축 행정 조판",
+      "`We believe`, `same bottle, same scent, same perfume`와 source 고유 카피 리듬",
+      "향수 라벨을 손으로 정렬하는 동일 구도·손 포즈·박스 배치"
+    ],
+    "false_generalizations_to_avoid": [
+      "Le Labo의 모든 사진이 어둡거나 빈티지하다고 일반화하지 않는다.",
+      "kraft, concrete, glass, black를 그대로 쓰면 portable source principle을 충족한다고 보지 않는다.",
+      "현장 사진의 녹색·앰버·네온을 masterbrand identity color로 승격하지 않는다.",
+      "작업자가 등장하면 곧바로 craftsmanship proof가 된다고 보지 않는다.",
+      "마모와 불완전 표면을 실제 생산·위생 기준보다 우선하지 않는다.",
+      "source의 리필·개인화 서비스 구조를 밀봉 냉장 식품에 사실 검증 없이 적용하지 않는다."
+    ]
+  },
+  "stage2_merge_recommendation": {
+    "source_grammar_application": [
+      "causal_chain_model",
+      "portable_principles",
+      "identifiable_mimics"
+    ],
+    "visual_branding_and_key_visual": [
+      "material_semantics",
+      "mora_causal_translation.master_chain",
+      "mora_causal_translation.packaging_hero_invariants"
+    ],
+    "brand_mood_and_brand_imagery": [
+      "mora_causal_translation.packing_table_pair"
+    ],
+    "product_visual_traits_and_product_imagery": [
+      "material_semantics",
+      "mora_causal_translation.packaging_hero_invariants"
+    ],
+    "design_token_direction": [
+      "MAT-INK",
+      "MAT-RAW-COLOR"
+    ],
+    "boundary": "Material names and visible traces may be merged as directions. No observed source substrate, print method, fabrication claim or MORA process claim becomes factual without target production validation."
+  }
+}

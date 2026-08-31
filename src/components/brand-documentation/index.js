@@ -2,6 +2,7 @@ export { BrandBlockFrame } from './BrandBlockFrame.jsx';
 export { BrandBlockRenderer } from './BrandBlockRenderer.jsx';
 export { BrandCardGrid } from './BrandCardGrid.jsx';
 export { BrandCodeBlock } from './BrandCodeBlock.jsx';
+export { BrandColorTokens } from './BrandColorTokens.jsx';
 export { BrandDocument } from './BrandDocument.jsx';
 export { BrandDocumentHeader } from './BrandDocumentHeader.jsx';
 export { BrandDocumentReview } from './BrandDocumentReview.jsx';

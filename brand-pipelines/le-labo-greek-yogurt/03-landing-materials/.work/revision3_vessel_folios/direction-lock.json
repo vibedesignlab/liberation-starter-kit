@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "stage3_vessel_record_material_folios_direction_lock",
+  "revision": "stage3_revision3_vessel_folios",
+  "status": "integrated_pending_review",
+  "source_evidence": {
+    "package_geometry": [
+      "01-source-brand/evidence/visual-expansion/product-packaging/EV-PP-01-santal33-50ml-neutral.jpg",
+      "01-source-brand/evidence/visual-expansion/product-packaging/EV-PP-02-santal33-500ml-format.jpg",
+      "01-source-brand/evidence/visual-expansion/product-packaging/EV-PP-06-santal26-candle-neutral.jpg"
+    ],
+    "making_ritual": "01-source-brand/evidence/visual-expansion/product-packaging/EV-PP-04-personalized-label-hands.jpg",
+    "editorial_engraving": [
+      "01-source-brand/evidence/visual-expansion/editorial-craft/VE-EC-014-le-journal-house-rules.png",
+      "01-source-brand/evidence/visual-expansion/editorial-craft/VE-EC-015-le-journal-wish-you-wore-here.png"
+    ],
+    "boundary": "Extract system logic only. Never reproduce LE LABO wording, label grid, scent-number naming, city/name/date personalization, bottle-as-door composition, house/travel collage or exact trade dress."
+  },
+  "vessel_record": {
+    "system_name": "MORA Vessel Record",
+    "design_intent": "A batch-recorded cultured-food vessel, not a logo-bearing pantry jar and not a perfume replica.",
+    "form": {
+      "directional_body_diameter_mm": "68–72",
+      "directional_total_height_mm": "105–115",
+      "height_to_body_diameter_ratio": "1.50–1.65",
+      "wide_mouth_diameter_percent_of_body": "75–82",
+      "cap_diameter_percent_of_body": "78–84",
+      "visible_shoulder_height_percent": "12–15",
+      "visible_heavy_base_height_percent": "8–10",
+      "closure": "plain low graphite anodized-aluminum overcap over a removable full-perimeter seal; no decorative motif and no exposed perfume hardware"
+    },
+    "material": "premium optically clear heavy glass food-vessel candidate with plausible refraction; no plastic cues and no food-contact performance claim",
+    "print": {
+      "method": "one neutral-black direct print on clear glass, no individual paper label or opaque backing",
+      "front_hierarchy": ["MORA", "THYME HONEY / 01", "INFUSED GREEK YOGURT", "PREP / HONEY–THYME SYRUP", "TRACE / AMBER RIBBON", "150 g", "BATCH / [REAL LOT CODE]"],
+      "composition": "left-aligned narrow record column; product name leads, brand is smaller; one 0.5-point vertical rule and restrained baselines, not a pharmacy grid",
+      "variable_data_rule": "Only verified regulatory and actual batch data may populate the variable zone. No fake city, customer, compounded-on or prepared-for fields.",
+      "reverse_mark": "one 15–18 mm recipe-specific Material Plate micro-mark at lower rear; full editorial engraving stays off the primary front"
+    },
+    "photo_lock": {
+      "canvas": "1536 × 1536, 1:1",
+      "background": "plain Cultured Cream #F5F1E8",
+      "camera": "straight-on authoritative front, 10-degree downward elevation, 85 mm equivalent, centered",
+      "package_bbox_percent": {"left": 34, "top": 18, "right": 66, "bottom": 82},
+      "lighting": "soft upper-left key, restrained frontal fill, two black flags for glass edges, grounded down-right contact shadow"
+    }
+  },
+  "material_folios": {
+    "system_name": "MORA Material Folios",
+    "style": "fine monochrome copperplate etching and stipple with modern editorial collage logic",
+    "palette": {"ink":"#171714","paper":"#F5F1E8","spot_color_rule":"brand/founder/process are monochrome; ingredient plates may use one translucent 5–8% actual-ingredient tint only in preparation or finished trace"},
+    "composition": "65–70% negative space, one dominant real MORA object or tool group, exactly one impossible material transition, no text inside artwork",
+    "surface": "clean contemporary paper field without deckled edge, foxing, stains, sepia or faux aging",
+    "line_behavior": "fine cross-hatching, restrained stipple, coherent single engraving light, crisp contours with midtone detail",
+    "prohibited": ["Victorian border", "crest", "apothecary frame", "botanical-label layout", "woodcut black mass", "rustic craft nostalgia", "house plus bottle plus suitcase collage", "bottle as doorway", "LE LABO product silhouette or wording"],
+    "narrative_assets": [
+      {"asset_id":"ST3-ETCH-BRAND-TRACE-MASTER-26","name":"The Trace That Remains","job":"style golden master and brand manifesto; a spoon furrow becomes a material contour inside a MORA glass vessel"},
+      {"asset_id":"ST3-ETCH-BRAND-FIRST-FURROW-27","name":"The First Furrow","job":"brand origin; one spoon furrow becomes a path through scale, filter cloth and ingredient states"},
+      {"asset_id":"ST3-ETCH-FOUNDER-TABLE-28","name":"The Table Before the Product","job":"founder factual-gate image; an empty worktable with scale, filter, notebook, one first ingredient and one vessel, no invented portrait"},
+      {"asset_id":"ST3-ETCH-PROCESS-CLOTH-TO-BODY-29","name":"From Cloth to Body","job":"manufacturing story; filter cloth becomes topography, whey a descending river and concentrate a retained landform"}
+    ],
+    "ingredient_plate_ids": [
+      "ST3-ETCH-MATERIAL-THYME-HONEY-30",
+      "ST3-ETCH-MATERIAL-FIG-LEAF-31",
+      "ST3-ETCH-MATERIAL-ROASTED-BUCKWHEAT-32",
+      "ST3-ETCH-MATERIAL-CITRUS-PEEL-33",
+      "ST3-ETCH-MATERIAL-BLACK-SESAME-34",
+      "ST3-ETCH-MATERIAL-OLIVE-OIL-SEA-SALT-35"
+    ],
+    "founder_boundary": "Until verified founder facts and image rights exist, show the question, tools, archive and worktable only. Never caption a generated person or invented scene as the founder."
+  },
+  "orchestration": {
+    "wave_a": ["ST3-REF-GLASS-PACKAGE-MASTER-17 revised Vessel Record master", "ST3-ETCH-BRAND-TRACE-MASTER-26 Material Folios style master", "exact vector Vessel Record print specification"],
+    "wave_a_approvals": {
+      "vessel_record_photo": {"status":"approved","sha256":"91da87546aa2670fe147dc868e773b0275acffcd2fea99804e5868636ee37d8e"},
+      "vessel_record_vector": {"status":"approved","sha256":"231ff1a99b0b09029540ea1dfc59f3118d27c4cc355bc76bca728678bc56f94b"},
+      "material_folios_style_master": {"status":"approved","sha256":"93506744d8ddef7e2933bf5fb3c97add2803984ff887eb85142cc9dc3f79b45b"},
+      "prompt_modules": {"status":"approved","shard":".work/revision3_vessel_folios/wave-a-prompt-shard.json"},
+      "approval_method": "local original-detail image inspection, deterministic SVG render inspection, static file/schema checks; no browser automation"
+    },
+    "wave_b_gate": "Freeze and visually approve the Wave A masters internally before all dependent generations.",
+    "wave_b": ["ST3-REF-PRODUCT-COMPOSITION-MASTER-18 revised from Vessel Record master", "ST3-ETCH-BRAND-FIRST-FURROW-27", "ST3-ETCH-FOUNDER-TABLE-28", "ST3-ETCH-PROCESS-CLOTH-TO-BODY-29", "six individual ingredient Material Plates 30–35"],
+    "single_writer": "root integrates canonical JSON, registry, review, pipeline, public registration and generated story only after all shards pass."
+  }
+}

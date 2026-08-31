@@ -1,0 +1,627 @@
+{
+  "shard_id": "revision2_verbal_extension",
+  "artifact_scope": "Stage 2 revision shard; canonical files remain untouched",
+  "working_brand": "MORA",
+  "revision_objective": "Integrate Olive Oil & Sea Salt as the sixth product and define the strict-front/strict-side dramatic brand-mood series without unsupported claims or borrowed perfume/laboratory language.",
+  "source_inputs": {
+    "transfer_input": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/transfer-input.json",
+    "current_canonical_json": "brand-pipelines/le-labo-greek-yogurt/02-extended-brand/outputs/extended-brand-anatomy.json"
+  },
+  "count_wording_decision": {
+    "decision": "hybrid",
+    "rule": "Use 'six/여섯/6' for current-lineup facts, comparison UI, proof-image roles, constraints and metadata. Use category-neutral wording for durable brand message, family USP, scalable grammar rules and moodboard headline copy.",
+    "why": [
+      "Olive Oil & Sea Salt must be visible as a real sixth member wherever the present assortment is counted.",
+      "Brand-level language should not become obsolete when the assortment changes.",
+      "Category-neutral family language keeps MORA centered on ingredient behavior rather than SKU count."
+    ],
+    "approved_durable_family_copy": "같은 한 컵 구조에서, 재료마다 다른 향과 질감, 여운을 비교하는 인퓨전 그릭요거트 패밀리.",
+    "approved_short_family_copy": "한 컵의 구조, 재료마다 다른 결.",
+    "approved_current_lineup_copy": "향의 첫인상, 요거트와 만나는 질감, 마지막 여운으로 여섯 컵을 비교합니다."
+  },
+  "positioning_revision": {
+    "positioning_statement": "For urban adults who want a dense snack, a small dessert or a savory accompaniment with a clear ingredient point of view, MORA is a six-recipe Greek-yogurt family designed to reveal each ingredient through aroma, texture and finish. Unlike topping-led desserts or benefit-first yogurt, it makes the yogurt body and ingredient trace the basis of choice, with claims limited to what each finished recipe can prove.",
+    "promise": "A legible comparison among six ingredient directions in a consistent single-serving format, now spanning herbal, green, toasted, bright, deep and savory roles.",
+    "range_effect": "Olive Oil & Sea Salt expands MORA beyond sweet and dessert-adjacent expectations without repositioning the product as a meal replacement.",
+    "proof_boundary": "Savory, oil texture and salt contrast are directional sensory intentions until the finished recipe, oil behavior, emulsion stability and sensory panel are validated."
+  },
+  "family_usp_revision": {
+    "primary": "같은 한 컵 구조에서, 재료마다 다른 향과 질감, 여운을 비교하는 인퓨전 그릭요거트 패밀리.",
+    "short_form": "한 컵의 구조, 재료마다 다른 결.",
+    "current_lineup_support": "허브·그린·토스티드·브라이트·딥·세이보리, 여섯 방향을 같은 순서로 비교합니다.",
+    "status": "open_concept",
+    "validation_note": "The terms '인퓨전', the sensory coordinates and any shared-density claim require recipe and process validation."
+  },
+  "new_product": {
+    "product_name": "Olive Oil & Sea Salt",
+    "working_korean_name": "올리브 오일 & 씨 솔트",
+    "product_type": "150 g olive-oil-and-sea-salt Greek yogurt; directional savory recipe concept",
+    "lineup_role": "Savory boundary-expander — gives the family a clearly non-dessert-led direction and broadens when and how a cup can be chosen.",
+    "use_case": "A chilled savory afternoon cup, optionally served beside plain crackers or cut vegetables; it is not positioned or described as a meal replacement.",
+    "differentiator": "A directional contrast between the rounded texture associated with olive oil and a short sea-salt finish, subject to recipe and sensory validation.",
+    "product_usp": "올리브 오일의 둥근 질감과 바다소금의 짧은 대비로, 단맛 중심이 아닌 세이보리 선택지를 여는 한 컵.",
+    "landing_message": "올리브 오일의 둥근 결, 바다소금의 짧은 끝.",
+    "sensory_coordinate": "savory",
+    "use_moment_label": "세이보리 오후",
+    "preferred_vocabulary": [
+      "올리브 오일",
+      "바다소금",
+      "둥근 결",
+      "짧은 끝",
+      "세이보리",
+      "곁들임",
+      "차갑게"
+    ],
+    "copy_avoids": [
+      "extra virgin",
+      "first press",
+      "single origin",
+      "Mediterranean",
+      "mineral-rich",
+      "electrolyte",
+      "heart healthy",
+      "healthy fat",
+      "high protein",
+      "low sodium",
+      "perfectly salted",
+      "balanced salt level",
+      "meal replacement",
+      "complete meal"
+    ],
+    "proof_image_roles": [
+      {
+        "role": "savory-open-cup",
+        "brief": "Show the same open-cup angle and spoon cut as the family; depict a pale olive-gold ribbon or sheen only if the prototype shows it naturally."
+      },
+      {
+        "role": "oil-texture-macro",
+        "brief": "Show the actual interface between yogurt and oil at spoon-cut scale; do not exaggerate gloss or imply cosmetic cream."
+      },
+      {
+        "role": "savory-pairing-context",
+        "brief": "Place one cup beside one plain cracker or a small amount of cut vegetable as an optional pairing; avoid a full meal spread."
+      },
+      {
+        "role": "six-cup-comparison",
+        "brief": "Keep cup, exposure, camera height and spoon state identical; distinguish the savory product through verified food texture, not decorative olive-green styling."
+      }
+    ],
+    "factual_boundaries": [
+      "Do not identify the oil grade, cultivar, harvest, origin or production method without supplier documentation.",
+      "Do not state sodium, salt level, mineral content, nutrition, health or satiety benefits without approved data.",
+      "Do not imply the product replaces a meal.",
+      "Do not show visible oil ribbon, crystals or emulsion behavior unless a finished prototype supports the depiction.",
+      "Olive and salt ingredient declarations, allergens, serving instructions, storage and shelf life remain pending."
+    ],
+    "status": "directional_open_concept_requires_recipe_sensory_and_regulatory_validation"
+  },
+  "message_hierarchy_revision": [
+    {
+      "level": 1,
+      "name": "Brand premise",
+      "message": "한 컵 안에, 재료가 머문 결.",
+      "job": "State the ingredient-and-texture premise without tying the brand to a fixed product count.",
+      "change": "unchanged"
+    },
+    {
+      "level": 2,
+      "name": "Current family choice logic",
+      "message": "향의 첫인상, 요거트와 만나는 질감, 마지막 여운으로 여섯 컵을 비교합니다.",
+      "job": "Teach the same comparison sequence across the current six-product assortment.",
+      "change": "five_to_six"
+    },
+    {
+      "level": 3,
+      "name": "Range coordinates",
+      "message": "허브·그린·토스티드·브라이트·딥·세이보리, 여섯 방향.",
+      "job": "Make Olive Oil & Sea Salt a distinct savory branch rather than a sixth arbitrary flavor.",
+      "change": "expanded"
+    },
+    {
+      "level": 4,
+      "name": "Product role and use moment",
+      "message": "각 제품은 하나의 감각 역할과 하나의 사용 순간을 가집니다.",
+      "job": "Give each product a practical reason to choose; Olive Oil & Sea Salt owns the savory afternoon/pairing moment.",
+      "change": "count_neutral"
+    },
+    {
+      "level": 5,
+      "name": "Sensory sequence",
+      "message": "첫 향 → 요거트 안의 질감 → 마지막 여운.",
+      "job": "Keep the same tasting structure for sweet-adjacent and savory products, pending sensory validation.",
+      "change": "unchanged"
+    },
+    {
+      "level": 6,
+      "name": "Product truth",
+      "message": "검증된 레시피, 재료, 150 g 상태, 질감, 보관과 알레르기 정보.",
+      "job": "Keep consumer facts literal and separate from directional sensory prose.",
+      "change": "clarified"
+    }
+  ],
+  "selected_narrative_revision": {
+    "route_id": "NR-01",
+    "name": "재료가 머문 결",
+    "selection_status": "retained",
+    "opening_copy": "한 컵 안에, 재료가 머문 결.",
+    "revised_summary": "Begin with the visible mark each ingredient leaves in yogurt, reveal aroma, texture and finish, then use Olive Oil & Sea Salt to show that the same family grammar can extend into a savory direction.",
+    "revised_sequence": [
+      "Open cup and spoon cut",
+      "ingredient trace",
+      "three-part sensory note",
+      "verified recipe facts",
+      "six-cup comparison",
+      "savory range expansion",
+      "use-moment and purchase choice"
+    ],
+    "landing_arc_copy": [
+      "Hero — 한 컵 안에, 재료가 머문 결.",
+      "Family — 한 컵의 구조, 재료마다 다른 결.",
+      "Comparison — 향과 질감, 여운으로 여섯 컵을 비교합니다.",
+      "Range turn — 달콤한 방향에서 세이보리한 한 컵까지.",
+      "Savory product — 올리브 오일의 둥근 결, 바다소금의 짧은 끝.",
+      "Proof — 확인된 재료와 실제 질감을 같은 순서로 보여 줍니다.",
+      "Facts — 레시피·성분·알레르기·보관 정보는 검증된 내용만 말합니다."
+    ],
+    "risk": "'머문' and any oil/salt sensory language can imply unverified process or performance.",
+    "mitigation": "Keep all process and sensory specifics marked directional until prototype and legal review."
+  },
+  "message_to_visual_map_revision": {
+    "brand_message_to_key_visual": "열린 대표 컵 하나, 요거트 능선, 검증된 재료 흔적, 한 번의 스푼 자국을 별도 카피 여백과 함께 보여 준다. 브랜드 메시지는 제품 수를 말하지 않는다.",
+    "family_usp_to_lineup": "같은 컵·각도·노출·정보 순서로 여섯 제품을 비교하고, 허브·그린·토스티드·브라이트·딥·세이보리의 역할만 바꾼다.",
+    "olive_oil_sea_salt_to_product_imagery": "Olive Oil & Sea Salt는 실제 샘플에서 확인된 오일 리본 또는 표면 광, 요거트 단면, 절제된 곁들임 한 가지로 세이보리 역할을 설명한다. 장식용 올리브 그린, 과장된 소금 결정, 식사 한 상은 사용하지 않는다.",
+    "product_usp_series": [
+      "Thyme Honey → pale honey trace and restrained herb fleck; slow morning",
+      "Fig Leaf → verified green aromatic trace; quiet late morning",
+      "Roasted Buckwheat → toasted particle depth; desk-side afternoon",
+      "Citrus Peel → fine peel thread; post-meal bright finish",
+      "Black Sesame → dark fine particulate or marbling; small evening dessert",
+      "Olive Oil & Sea Salt → verified oil/yogurt interface and restrained savory pairing; savory afternoon"
+    ],
+    "proof_rule": "Every product image must show only finished-product behavior confirmed by the corresponding prototype.",
+    "brand_mood_to_message": "The paired mood frames support 차분한 정확성 by proving that a dramatic change can come from camera direction and composition while the person, action and food remain constant."
+  },
+  "strict_axis_brand_mood_series": {
+    "series_name": "한 동작, 두 축",
+    "english_working_name": "One Action, Two Axes",
+    "verbal_premise": "같은 사람이 같은 재료를 같은 순간에 다룹니다. 정면에서는 동작의 구조를, 측면에서는 힘의 방향을 봅니다.",
+    "communication_job": "Create dramatic brand authorship through controlled viewpoint change while preserving the truth of one food-making action.",
+    "front_frame": {
+      "label": "STRICT FRONT",
+      "headline": "정면에서, 동작의 구조가 드러납니다.",
+      "caption": "사람과 그릇, 손과 재료가 한 축 위에 놓입니다.",
+      "composition_job": "Use frontal symmetry, direct gaze of the body axis and a clear vertical/horizontal arrangement to make the action feel deliberate."
+    },
+    "side_frame": {
+      "label": "STRICT SIDE",
+      "headline": "측면에서, 같은 동작의 방향이 선명해집니다.",
+      "caption": "흐름과 손의 거리, 그릇으로 이어지는 힘을 옆에서 봅니다.",
+      "composition_job": "Use exact profile, directional negative space and the action vector to reveal motion and force."
+    },
+    "pair_caption": "같은 제작자, 같은 재료, 같은 동작. 카메라 축만 바뀝니다.",
+    "fixed_invariants": [
+      "Same maker identity, wardrobe and body scale",
+      "Same food action at the same phase",
+      "Same ingredient, vessel, utensil, work surface and background",
+      "Same lighting direction, exposure family, color treatment and retouching",
+      "Same crop family and subject scale",
+      "Same factual caption about the action"
+    ],
+    "only_controlled_change": "Camera axis changes from true 0-degree front to exact 90-degree side; framing compensates only enough to preserve subject scale and the action phase.",
+    "drama_sources": [
+      "A strong but food-legible directional key light",
+      "Front-frame symmetry versus side-frame vector",
+      "Large, intentional negative space",
+      "Clear silhouette separation of hands, vessel and ingredient",
+      "Tight control of horizon, verticals and crop",
+      "Preserved yogurt texture and ingredient detail"
+    ],
+    "sentence_behavior": [
+      "Use parallel sentence construction across the pair.",
+      "Name viewpoint and visible action, not atmosphere or mystique.",
+      "Keep each headline to one clause and each caption to one observable relationship.",
+      "Use the same verified action noun in both captions so the camera-axis change is the only narrative variable."
+    ],
+    "vocabulary_to_use": [
+      "정면",
+      "측면",
+      "축",
+      "방향",
+      "구조",
+      "거리",
+      "흐름",
+      "손",
+      "그릇",
+      "재료",
+      "동작"
+    ],
+    "vocabulary_to_avoid": [
+      "perfume",
+      "scent trail",
+      "notes",
+      "elixir",
+      "alchemy",
+      "maceration",
+      "compounded",
+      "formulation",
+      "lab",
+      "technician",
+      "apothecary",
+      "atelier",
+      "noir",
+      "mysterious",
+      "ritual of creation"
+    ],
+    "rejection_tests": [
+      "Maker, action phase, prop set, lighting or styling changes between frames, making the pair read as two shoots.",
+      "The front frame is three-quarter rather than strict front, or the side frame is not exact profile.",
+      "Drama comes from dark perfume-advertising color, haze, grain, amber glass or laboratory props.",
+      "Headlines romanticize craft instead of describing viewpoint and action.",
+      "Directional light destroys the white-yogurt texture or makes food color inaccurate."
+    ],
+    "status": "directional"
+  },
+  "exact_replacement_map": [
+    {
+      "json_path": "sections.source_grammar_application.summary",
+      "old": "다섯 레시피는 같은 한 컵 구조와 정보 순서를 공유하고, 실제 재료 흔적·한 가지 사용 동작·검증된 사실만 통제해 바꾼다.",
+      "new": "각 레시피는 같은 한 컵 구조와 정보 순서를 공유하고, 실제 재료 흔적·한 가지 사용 동작·검증된 사실만 통제해 바꾼다.",
+      "count_policy": "category_neutral"
+    },
+    {
+      "json_path": "sections.source_grammar_application.decisions[0].semantic_job",
+      "old": "Make a five-product family easy to compare without flattening ingredient character.",
+      "new": "Make a product family easy to compare without flattening ingredient character.",
+      "count_policy": "category_neutral"
+    },
+    {
+      "json_path": "sections.source_grammar_application.decisions[4].semantic_job",
+      "old": "Show use and appetite while keeping all five products comparable.",
+      "new": "Show use and appetite while keeping the full product family comparable.",
+      "count_policy": "category_neutral"
+    },
+    {
+      "json_path": "sections.brand_positioning.positioning_statement",
+      "old": "For urban adults who want a dense, restrained snack or small dessert with a clear ingredient point of view, MORA is a five-recipe Greek-yogurt family designed to reveal each ingredient through aroma, texture and finish. Unlike topping-led desserts or benefit-first yogurt, it makes the yogurt body and the ingredient trace the basis of choice, with claims limited to what the finished recipe can prove.",
+      "new": "For urban adults who want a dense snack, a small dessert or a savory accompaniment with a clear ingredient point of view, MORA is a six-recipe Greek-yogurt family designed to reveal each ingredient through aroma, texture and finish. Unlike topping-led desserts or benefit-first yogurt, it makes the yogurt body and ingredient trace the basis of choice, with claims limited to what each finished recipe can prove.",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.brand_positioning.promise",
+      "old": "A legible comparison among five ingredient directions in a consistent single-serving format. A short pause in which one ingredient unfolds in a clear sequence rather than arriving as undifferentiated sweetness.",
+      "new": "A legible comparison among six ingredient directions in a consistent single-serving format, spanning herbal, green, toasted, bright, deep and savory roles. A short pause in which one ingredient unfolds in a clear sequence rather than arriving as an undifferentiated flavor.",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.brand_positioning.proof[3]",
+      "old": "A fixed family structure lets customers compare the five recipes directly.",
+      "new": "A fixed family structure lets customers compare the six recipes directly.",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.landing_product_concept.one_line_definition",
+      "old": "천연 재료의 향·색·입자·여운을 되직한 그릭요거트 한 컵 안에 겹쳐 보여 주는 150 g 인퓨전 요거트 다섯 종.",
+      "new": "천연 재료의 향·색·입자·여운을 되직한 그릭요거트 한 컵 안에 겹쳐 보여 주는 150 g 인퓨전 요거트 여섯 종.",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.landing_product_concept.landing_features[2].name",
+      "old": "다섯 가지 감각 좌표",
+      "new": "여섯 가지 감각 좌표",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.landing_product_concept.landing_features[2].message",
+      "old": "herbal, green, toasted, bright, deep의 서로 다른 선택 이유를 동일한 정보 순서로 비교한다.",
+      "new": "herbal, green, toasted, bright, deep, savory의 서로 다른 선택 이유를 동일한 정보 순서로 비교한다.",
+      "count_policy": "six_and_savory"
+    },
+    {
+      "json_path": "sections.landing_product_concept.landing_features[2].proof",
+      "old": "같은 각도·같은 양·같은 스푼 동작으로 촬영한 5종 비교",
+      "new": "같은 각도·같은 양·같은 스푼 동작으로 촬영한 6종 비교",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.landing_product_concept.product_family.cognitive_invariants[2]",
+      "old": "다섯 제품은 같은 순서와 같은 촬영 상태로 비교되어 차이가 용기 장식이 아니라 재료 흔적에서 발생함을 보여 준다.",
+      "new": "여섯 제품은 같은 순서와 같은 촬영 상태로 비교되어 차이가 용기 장식이 아니라 재료 흔적에서 발생함을 보여 준다.",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.landing_product_concept.product_family.differentiation_logic.decision_rule",
+      "old": "색은 포장 장식이 아니라 실제 내용물 예고에만 쓰며, 각 제품은 다른 표면 패턴을 가져 5종을 흑백으로 보아도 입자·리본·마블링 차이로 구분되어야 한다.",
+      "new": "색은 포장 장식이 아니라 실제 내용물 예고에만 쓰며, 각 제품은 다른 표면 패턴을 가져 6종을 흑백으로 보아도 입자·리본·마블링·검증된 오일 흔적의 차이로 구분되어야 한다.",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.landing_product_concept.product_family.differentiation_logic.hero_logic",
+      "old": "Thyme Honey가 '익숙한 단맛 + 낯선 허브 흔적'으로 가족의 개념을 가장 빠르게 설명하고, 나머지 네 제품은 green, toasted, bright, deep 방향으로 선택 폭을 확장한다.",
+      "new": "Thyme Honey가 '익숙한 단맛 + 낯선 허브 흔적'으로 가족의 개념을 가장 빠르게 설명하고, 나머지 다섯 제품은 green, toasted, bright, deep, savory 방향으로 선택 폭을 확장한다.",
+      "count_policy": "six_and_savory"
+    },
+    {
+      "json_path": "sections.landing_product_concept.product_lineup[2].product_usp",
+      "old": "고소한 볶음 결을 미세한 입자와 따뜻한 색으로 끝까지 읽게 하는, 다섯 컵 중 가장 촉각적인 선택.",
+      "new": "고소한 볶음 결을 미세한 입자와 따뜻한 색으로 끝까지 읽게 하는, 라인업에서 가장 촉각적인 선택.",
+      "count_policy": "category_neutral"
+    },
+    {
+      "json_path": "sections.landing_product_concept.product_lineup[3].image_roles[3].role",
+      "old": "five-cup-comparison",
+      "new": "six-cup-comparison",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.landing_product_concept.proof_image_roles[1].role",
+      "old": "five-product-closed-pack-lineup",
+      "new": "six-product-closed-pack-lineup",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.landing_product_concept.proof_image_roles[2].role",
+      "old": "five-product-open-cup-matrix",
+      "new": "six-product-open-cup-matrix",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.verbal_branding_and_copy_hierarchy.key_insight",
+      "old": "‘재료가 머문 결’이라는 한 문장으로 감각을 열고, 다섯 제품을 향의 첫인상·요거트와 만나는 질감·마지막 여운의 같은 순서로 비교한다.",
+      "new": "‘재료가 머문 결’이라는 한 문장으로 감각을 열고, 여섯 제품을 향의 첫인상·요거트와 만나는 질감·마지막 여운의 같은 순서로 비교한다.",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.verbal_branding_and_copy_hierarchy.brand_message_support",
+      "old": "밀도 높은 그릭요거트에서 다섯 재료의 향과 질감, 여운을 차례로 발견합니다.",
+      "new": "밀도 높은 그릭요거트에서 재료마다 다른 향과 질감, 여운을 차례로 발견합니다.",
+      "count_policy": "category_neutral"
+    },
+    {
+      "json_path": "sections.verbal_branding_and_copy_hierarchy.family_usp",
+      "old": "같은 한 컵 구조 안에서 다섯 재료를 향의 첫인상, 요거트와 만나는 질감, 마지막 여운의 순서로 비교하게 하는 인퓨전 그릭요거트 패밀리.",
+      "new": "같은 한 컵 구조에서, 재료마다 다른 향과 질감, 여운을 비교하는 인퓨전 그릭요거트 패밀리.",
+      "count_policy": "category_neutral"
+    },
+    {
+      "json_path": "sections.verbal_branding_and_copy_hierarchy.message_hierarchy[1].message",
+      "old": "향의 첫인상, 요거트와 만나는 질감, 마지막 여운으로 다섯 컵을 비교합니다.",
+      "new": "향의 첫인상, 요거트와 만나는 질감, 마지막 여운으로 여섯 컵을 비교합니다.",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.verbal_branding_and_copy_hierarchy.message_hierarchy[2].job",
+      "old": "Prevent the lineup from reading as five arbitrary flavors.",
+      "new": "Prevent the lineup from reading as six arbitrary flavors; make the savory branch explicit.",
+      "count_policy": "six_and_savory"
+    },
+    {
+      "json_path": "sections.verbal_branding_and_copy_hierarchy.headline_direction[1]",
+      "old": "같은 밀도, 다섯 가지 재료의 결.",
+      "new": "한 컵의 구조, 재료마다 다른 결.",
+      "count_policy": "category_neutral"
+    },
+    {
+      "json_path": "sections.verbal_branding_and_copy_hierarchy.cta_direction[0]",
+      "old": "다섯 컵 비교하기",
+      "new": "여섯 컵 비교하기",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.verbal_branding_and_copy_hierarchy.narrative_routes[0].sequence[4]",
+      "old": "five-cup comparison",
+      "new": "six-cup comparison",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.verbal_branding_and_copy_hierarchy.narrative_routes[1].name",
+      "old": "하루의 다섯 순간",
+      "new": "하루의 여러 순간",
+      "count_policy": "category_neutral"
+    },
+    {
+      "json_path": "sections.verbal_branding_and_copy_hierarchy.narrative_routes[1].strength",
+      "old": "Immediately practical and makes the five use cases easy to scan.",
+      "new": "Immediately practical and makes the full set of use cases easy to scan.",
+      "count_policy": "category_neutral"
+    },
+    {
+      "json_path": "sections.verbal_branding_and_copy_hierarchy.narrative_routes[2].summary",
+      "old": "Lead with a consistent Greek-yogurt base and compare how five ingredients change the ending.",
+      "new": "Lead with a consistent cup architecture and compare how each ingredient changes the ending.",
+      "count_policy": "category_neutral"
+    },
+    {
+      "json_path": "sections.verbal_branding_and_copy_hierarchy.narrative_routes[2].opening_copy",
+      "old": "같은 밀도에서 시작해, 다섯 가지 여운으로.",
+      "new": "같은 한 컵 구조에서 시작해, 재료마다 다른 여운으로.",
+      "count_policy": "category_neutral"
+    },
+    {
+      "json_path": "sections.verbal_branding_and_copy_hierarchy.message_visual_map.family_and_product_usp_to_product_imagery[0]",
+      "old": "같은 컵·각도·노출로 다섯 제품을 비교한다.",
+      "new": "같은 컵·각도·노출로 여섯 제품을 비교한다.",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.visual_branding_and_key_visual.key_insight",
+      "old": "MORA의 대표 이미지는 열린 한 컵과 한 번의 스푼 자국을 고정하고, 실제 재료의 흔적만 바꾸어 다섯 레시피를 하나의 식품 시리즈로 만든다.",
+      "new": "MORA의 대표 이미지는 열린 한 컵과 한 번의 스푼 자국을 고정하고, 실제 재료의 흔적만 바꾸어 각 레시피를 하나의 식품 시리즈로 만든다.",
+      "count_policy": "category_neutral"
+    },
+    {
+      "json_path": "sections.visual_branding_and_key_visual.series_rule_spec.name",
+      "old": "One Cup, One Trace",
+      "new": "One Cup, One Trace — Six Recipes",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.visual_branding_and_key_visual.series_rule_spec.when",
+      "old": "다섯 레시피를 개별 대표 이미지나 비교 카드로 제시할 때",
+      "new": "각 레시피를 개별 대표 이미지나 비교 카드로 제시할 때",
+      "count_policy": "category_neutral"
+    },
+    {
+      "json_path": "sections.visual_branding_and_key_visual.series_rule_spec.acceptance_test",
+      "old": "제품명을 가려도 요거트 한 컵과 농도가 먼저 읽히고, 제품명을 보이면 다섯 레시피의 차이가 3초 안에 비교된다.",
+      "new": "제품명을 가려도 요거트 한 컵과 농도가 먼저 읽히고, 제품명을 보이면 여섯 레시피의 차이가 3초 안에 비교된다.",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.visual_branding_and_key_visual.surface_translation.lineup_grid",
+      "old": "다섯 컵을 같은 크기와 각도로 반복하고 식별 마커, 재료명, 예상 질감 설명만 바꾼다.",
+      "new": "여섯 컵을 같은 크기와 각도로 반복하고 식별 마커, 재료명, 예상 질감 설명만 바꾼다.",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.visual_branding_and_key_visual.repeatable_variables[0]",
+      "old": "다섯 재료 조합",
+      "new": "레시피별 재료 조합",
+      "count_policy": "category_neutral"
+    },
+    {
+      "json_path": "sections.visual_branding_and_key_visual.avoid[3]",
+      "old": "식재료와 무관한 임의 포인트 컬러, 다섯 재료색의 무지개식 동시 사용",
+      "new": "식재료와 무관한 임의 포인트 컬러, 모든 재료색의 무지개식 동시 사용",
+      "count_policy": "category_neutral"
+    },
+    {
+      "json_path": "sections.product_visual_traits_and_product_imagery.communication_job",
+      "old": "제품이 떠먹는 150 g 그릭요거트임을 즉시 밝히고, 다섯 레시피의 실제 질감 차이와 한 컵 사용성을 비교·검증한다.",
+      "new": "제품이 떠먹는 150 g 그릭요거트임을 즉시 밝히고, 여섯 레시피의 실제 질감 차이와 한 컵 사용성을 비교·검증한다.",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.product_visual_traits_and_product_imagery.product_image_direction.state_proof[1]",
+      "old": "다섯 컵 비교는 같은 노출·크기·카메라 높이로 촬영해 식별색보다 실제 질감 차이를 우선한다.",
+      "new": "여섯 컵 비교는 같은 노출·크기·카메라 높이로 촬영해 식별색보다 실제 질감 차이를 우선한다.",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.design_token_direction.typography[2].sample",
+      "old": "같은 밀도, 다섯 가지 재료의 결",
+      "new": "한 컵의 구조, 재료마다 다른 결",
+      "count_policy": "category_neutral"
+    },
+    {
+      "json_path": "sections.design_token_direction.typography[5].sample",
+      "old": "150 g · 05 recipes",
+      "new": "150 g · 06 recipes",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "sections.design_token_direction.layout[3].role",
+      "old": "다섯 레시피를 공정하게 비교",
+      "new": "전체 레시피를 공정하게 비교",
+      "count_policy": "category_neutral"
+    },
+    {
+      "json_path": "sections.design_token_direction.layout[4].target_direction",
+      "old": "order: opened-cup texture, one-sentence promise, recipe and 150 g fact, ingredient-source preview, verified process action, five-product comparison, use moments and purchase action · rule: 건강·기능성 근거가 없으면 해당 단계 생략",
+      "new": "order: opened-cup texture, one-sentence promise, recipe and 150 g fact, ingredient-source preview, verified process action, six-product comparison, use moments and purchase action · rule: 건강·기능성 근거가 없으면 해당 단계 생략",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "moodboard_inputs.copywriting.family_usp",
+      "old": "한 가지 밀도, 다섯 가지 재료의 결.",
+      "new": "한 컵의 구조, 재료마다 다른 결.",
+      "count_policy": "category_neutral"
+    },
+    {
+      "json_path": "moodboard_inputs.product_image_generation[1]",
+      "old": "five-product closed-pack lineup",
+      "new": "six-product closed-pack lineup",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "moodboard_inputs.product_image_generation[2]",
+      "old": "five-product open-cup texture matrix",
+      "new": "six-product open-cup texture matrix",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "boundaries.factual_limits[5]",
+      "old": "No finished recipe, process map or sensory panel exists for the five products.",
+      "new": "No finished recipe, process map or sensory panel exists for the six products.",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "boundaries.factual_limits[11]",
+      "old": "다섯 레시피의 실제 요거트 색, 점도, 입자 크기, 재료 분포는 R&D 샘플 촬영 전이므로 이미지 생성에서 사실로 확정할 수 없다.",
+      "new": "여섯 레시피의 실제 요거트 색, 점도, 입자 크기, 재료 분포는 R&D 샘플 촬영 전이므로 이미지 생성에서 사실로 확정할 수 없다.",
+      "count_policy": "six"
+    },
+    {
+      "json_path": "boundaries.factual_limits[18]",
+      "old": "모바일 실기기에서 5제품 비교 순서, 긴 국문 레시피명, 4:5·1:1·16:9 크롭 안전성은 구현 단계 검증이 필요하다.",
+      "new": "모바일 실기기에서 6제품 비교 순서, 긴 국문 레시피명, 4:5·1:1·16:9 크롭 안전성은 구현 단계 검증이 필요하다.",
+      "count_policy": "six"
+    }
+  ],
+  "canonical_additions": [
+    {
+      "operation": "append",
+      "json_path": "sections.landing_product_concept.product_lineup",
+      "value_ref": "new_product"
+    },
+    {
+      "operation": "append",
+      "json_path": "sections.verbal_branding_and_copy_hierarchy.product_usps",
+      "value": {
+        "product_name": "Olive Oil & Sea Salt",
+        "usp": "올리브 오일의 둥근 질감과 바다소금의 짧은 대비로, 단맛 중심이 아닌 세이보리 선택지를 여는 한 컵."
+      }
+    },
+    {
+      "operation": "append",
+      "json_path": "sections.verbal_branding_and_copy_hierarchy.cta_direction",
+      "value": "Olive Oil & Sea Salt 보기"
+    },
+    {
+      "operation": "add_or_replace",
+      "json_path": "sections.brand_mood_and_brand_imagery.strict_axis_series",
+      "value_ref": "strict_axis_brand_mood_series"
+    },
+    {
+      "operation": "append",
+      "json_path": "moodboard_inputs.brand_mood_images",
+      "value": "동일 제작자·재료·동작을 100% 정면과 엄격한 90도 측면으로 반복한 드라마틱한 한 쌍"
+    },
+    {
+      "operation": "append",
+      "json_path": "moodboard_inputs.product_image_generation",
+      "value": "Olive Oil & Sea Salt open-cup savory proof, oil/yogurt interface macro and restrained pairing frame"
+    },
+    {
+      "operation": "append",
+      "json_path": "boundaries.factual_limits",
+      "value": "Olive Oil & Sea Salt is a savory open concept; oil grade/origin, salt amount, nutrition, health, emulsion behavior, serving suggestion and all meal-role implications remain unverified."
+    }
+  ],
+  "unresolved_gaps": [
+    {
+      "gap": "No Olive Oil & Sea Salt prototype or sensory panel exists.",
+      "impact": "The USP, landing message, oil/yogurt interface and salt finish remain directional.",
+      "resolution": "Validate recipe, emulsion behavior, aroma, texture, salt perception and visual appearance before consumer-copy or image lock."
+    },
+    {
+      "gap": "Oil grade, supplier, cultivar and origin are unknown.",
+      "impact": "No extra-virgin, harvest, geographic or quality-tier wording is allowed.",
+      "resolution": "Use the generic product name only until supplier documentation and legal review are complete."
+    },
+    {
+      "gap": "Sodium, nutrition, allergen, storage and shelf-life data are unknown for the sixth recipe.",
+      "impact": "Do not publish salt-level, health, satiety or meal-role statements.",
+      "resolution": "Add approved product facts after food R&D and regulatory review."
+    },
+    {
+      "gap": "The exact making action for the strict-axis brand-mood pair is not selected.",
+      "impact": "The paired captions and image brief cannot name a process verb truthfully.",
+      "resolution": "Choose one verified food action and repeat the same action phase for both camera axes."
+    },
+    {
+      "gap": "Strict-front and strict-side matching tolerance is not defined.",
+      "impact": "The pair may drift in body scale, action timing, crop or lighting and lose its system logic.",
+      "resolution": "Lock a shot continuity sheet for maker, action phase, lens height, subject scale, light position, crop and color before production."
+    }
+  ]
+}

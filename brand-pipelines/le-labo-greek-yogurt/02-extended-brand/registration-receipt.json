@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "brand_report_registration_receipt",
+  "stage": "extended_brand_anatomy",
+  "report_id": "mora-extended-anatomy",
+  "package_sha256": "8c37070285b00201db38b45f194a8e3f65fc8ba694c8d2a6a10ea73c805165f1",
+  "review_status": "accepted",
+  "finalized_at": "2026-08-31T11:55:58.847Z"
+}
