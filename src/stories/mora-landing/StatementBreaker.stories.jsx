@@ -10,7 +10,7 @@ export default {
   },
   args: {
     image: assets.methodProcessTable,
-    statement: 'Not what to add, but what to leave behind.',
+    statement: '재료마다 다르게 준비하고, 한 번 접습니다.',
   },
 };
 

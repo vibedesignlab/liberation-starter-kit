@@ -15,10 +15,10 @@ export default {
   },
   args: {
     mainImage: assets.momentMorning,
-    mainAlt: 'Morning — Thyme Honey',
+    mainAlt: 'Core Collection last fold and final check',
     title: 'Vol. 1 — Four Directions',
-    body: 'The first Core Collection.',
-    cta: 'See Core Collection',
+    body: '한 번의 마지막 판단으로 이어지는 네 가지 방향.',
+    cta: 'Core Collection 보기',
     ctaHref: '#',
     reverse: false,
   },
@@ -35,15 +35,15 @@ export const Playground = {
 export const Reversed = {
   args: {
     mainImage: assets.momentAfternoon,
-    mainAlt: 'Afternoon — Roasted Buckwheat',
+    mainAlt: 'Studio Trials conditional state check',
     title: 'Studio Trials',
-    body: 'When verified, they join the next volume.',
-    cta: 'See development criteria',
+    body: '확인되기 전에는 출시하지 않는 두 가지 조건부 방향.',
+    cta: '검증 기준 보기',
     reverse: true,
   },
   render: (args) => (
     <Box sx={{ my: '128px' }}>
-      <StickyProductGrid {...args} products={trialProducts.concat(coreProducts.slice(0, 2))} />
+      <StickyProductGrid {...args} products={trialProducts} />
     </Box>
   ),
 };

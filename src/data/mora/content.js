@@ -1,38 +1,33 @@
-/**
- * MORA Landing — Content Data (English)
- */
+/** MORA Landing — Stage 3 R5 content data. */
 
 import assets from './assets';
 
 export const brand = {
-  headline: 'A cup where ingredients leave their trace.',
-  support: 'We show the process before the product.',
-  primaryCta: 'See six directions',
-  secondaryCta: 'See the method',
+  headline: '좋은 재료를 고르는 데서 끝나지 않습니다.',
+  support: 'MORA의 메이커는 재료를 고르고, 변환의 중간을 살피고, 내놓기 전 마지막 한 컵까지 확인합니다.',
+  primaryCta: '여섯 레시피 비교하기',
+  secondaryCta: '마지막 확인 보기',
 };
 
 export const statements = [
-  { id: 'sb1', statement: 'Not what to add, but what to leave behind.', image: assets.clothTransition },
-  { id: 'sb2', statement: 'Same density, six ingredient directions.', image: assets.methodProcessTable },
-  { id: 'sb3', statement: 'Instead of a label, a record on glass.', image: assets.vesselMaster },
+  { id: 'sb1', statement: '한 컵의 중간을 숨기지 않습니다.', image: assets.clothTransition },
+  { id: 'sb2', statement: '재료마다 다르게 준비하고, 한 번 접습니다.', image: assets.methodProcessTable },
+  { id: 'sb3', statement: '음식은 보이게, 확인한 사실은 부분 Batch Record에.', image: assets.vesselMaster },
 ];
 
 export const values = [
-  { name: 'Visible materiality', copy: 'Ribbons, particles, peels, marbles and oil interfaces — real traces you eat.' },
-  { name: 'Measured transformation', copy: 'Measurement is not the goal; it protects the trace from being destroyed.' },
-  { name: 'Quiet precision', copy: 'Sense is vivid, facts are understated. Unverified numbers stay blank.' },
-  { name: 'Brief presence', copy: 'A precise trace is experienced briefly and clearly in one opening and one spoon.' },
+  { name: '엄선하는 책임', copy: '좋은 재료를 모으는 것만큼 기준 밖의 것을 제외하고 선택의 이유를 남깁니다.' },
+  { name: '보이는 변환', copy: '완제품만 보여 주지 않고 배양, 분리, 재료별 중간 상태와 마지막 fold의 인과를 드러냅니다.' },
+  { name: '마지막까지 보는 정확성', copy: '한 컵을 내놓기 전 실제 상태를 확인하고, 확인한 사람과 결과만 제한적으로 기록합니다.' },
 ];
 
 export const processSteps = [
-  { step: 1, label: 'Milk → Measure', desc: 'Weigh and log approved pasteurized milk.' },
-  { step: 2, label: 'Heat → Body', desc: 'Heat-treat to build dense protein structure.' },
-  { step: 3, label: 'Culture → Set', desc: 'Inoculate with measured starter and incubate.' },
-  { step: 4, label: 'Set → Still', desc: 'Cool to slow further acidification.' },
-  { step: 5, label: 'Set → Whey', desc: 'Strain through food-grade cloth to separate whey.', image: assets.etchClothToBody },
-  { step: 6, label: 'Ingredient → Prep', desc: 'Prepare each ingredient by its own honest method.', image: assets.methodInfusionLadder },
-  { step: 7, label: 'Base → Trace', desc: 'Fold minimally with a broad paddle to leave the trace.', image: assets.methodFoldTrace },
-  { step: 8, label: 'Glass Vessel → Seal', desc: 'Cold-fill and foil-seal immediately.', image: assets.vesselClosureProof },
+  { step: 1, label: 'Selection', desc: '승인 기준 안과 밖의 원재료를 비교하고 분리합니다.' },
+  { step: 2, label: 'Culturing', desc: '배양 조건과 멈춤 지점은 실제 R&D 기록으로 검증합니다.' },
+  { step: 3, label: 'Separation', desc: '천에 남은 농축된 몸과 분리된 유청을 함께 확인합니다.', image: assets.etchClothToBody },
+  { step: 4, label: 'Ingredient Preparation', desc: '각 재료를 서로 다른 사실적인 중간 상태로 준비합니다.', image: assets.methodInfusionLadder },
+  { step: 5, label: 'Last Fold', desc: '넓은 도구의 한 번의 fold로 재료의 흔적을 남깁니다.', image: assets.methodFoldTrace },
+  { step: 6, label: 'Packaging / Final Check', desc: '실제 음식과 부분 Batch Record를 함께 확인합니다.', image: assets.vesselClosureProof },
 ];
 
 export const products = [
@@ -75,22 +70,22 @@ export const coreProducts = products.filter((p) => p.role === 'core');
 export const trialProducts = products.filter((p) => p.role === 'trial');
 
 export const vesselPhases = [
-  { phase: 'SEE', label: 'See', desc: 'Through clear glass, the actual food is visible.', image: assets.vesselMaster },
-  { phase: 'READ', label: 'Read', desc: 'Ingredient, method, trace — printed directly on glass.', image: assets.inspectionFront },
-  { phase: 'OPEN', label: 'Open', desc: 'Remove the thin cap and full-perimeter seal.', image: assets.vesselOpenService },
-  { phase: 'TASTE', label: 'Taste', desc: 'Confirm the density and internal trace with the first spoon.', image: assets.firstSpoonMacro },
+  { phase: 'SEE', label: 'See', desc: '실제 음식과 fill level, 부분 Batch Record를 함께 봅니다.', image: assets.vesselMaster },
+  { phase: 'READ', label: 'Read', desc: '고정 식품 사실과 실제 maker-check 영역을 나눠 읽습니다.', image: assets.inspectionFront },
+  { phase: 'OPEN', label: 'Open', desc: 'food seal을 제거하고 넓고 깨끗한 rim을 확인합니다.', image: assets.vesselOpenService },
+  { phase: 'TASTE', label: 'Taste', desc: '첫 스푼의 단면에서 density와 internal trace를 확인합니다.', image: assets.firstSpoonMacro },
 ];
 
 export const facts = [
-  { label: 'Refrigerated', verified: true },
-  { label: '150 g', verified: true },
-  { label: 'Glass vessel', verified: true },
-  { label: 'Direct print', verified: true },
+  { label: 'Refrigerated direction', verified: false },
+  { label: '150 g candidate', verified: false },
+  { label: 'Wide-mouth vessel', verified: false },
+  { label: 'Partial Batch Record', verified: false },
 ];
 
 export const navLinks = [
-  { label: 'Collection', href: '#collection' },
-  { label: 'Method', href: '#transformation' },
-  { label: 'Vessel', href: '#vessel' },
-  { label: 'Truth', href: '#truth' },
+  { label: '제품', href: '#collection' },
+  { label: '제조', href: '#transformation' },
+  { label: '용기', href: '#vessel' },
+  { label: '확인된 사실', href: '#truth' },
 ];

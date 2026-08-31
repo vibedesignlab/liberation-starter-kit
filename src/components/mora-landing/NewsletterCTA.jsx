@@ -8,16 +8,16 @@ export default function NewsletterCTA() {
   return (
     <Box sx={{ py: '128px', px: '10px', width: '100%' }}>
       <Typography variant="h1" sx={{ mb: 2, position: 'relative', zIndex: 1 }}>
-        Stay close
+        확인한 것만 기록합니다.
       </Typography>
       <Typography sx={{ fontSize: '16px', color: 'text.secondary', mb: 3, position: 'relative', zIndex: 1 }}>
-        Launch news and brand stories.
+        실제 검증을 통과한 출시 정보와 기록만 전합니다.
       </Typography>
       <Box sx={{ display: 'flex', gap: '2px' }}>
         <Box
           component="input"
           type="email"
-          placeholder="Email"
+          placeholder="이메일"
           sx={{
             flex: 1,
             border: 1,
@@ -46,7 +46,7 @@ export default function NewsletterCTA() {
             '&:hover': { textDecoration: 'underline', textUnderlineOffset: '3px' },
           }}
         >
-          Sign up
+          출시 소식 받기
         </Typography>
       </Box>
     </Box>

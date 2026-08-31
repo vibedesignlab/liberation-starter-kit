@@ -10,26 +10,10 @@ export default {
     productName: { control: 'text' },
   },
   args: {
-    image: assets.momentMorning,
-    label: 'Morning',
-    productName: 'Thyme Honey',
+    image: assets.momentEvening,
+    label: '한 컵이 놓이는 식탁',
+    productName: 'MORA Craft Greek Yogurt',
   },
 };
 
 export const Playground = {};
-
-export const Afternoon = {
-  args: {
-    image: assets.momentAfternoon,
-    label: 'Afternoon',
-    productName: 'Roasted Buckwheat',
-  },
-};
-
-export const Evening = {
-  args: {
-    image: assets.momentEvening,
-    label: 'Evening (Studio Trial)',
-    productName: 'Olive Oil & Sea Salt',
-  },
-};

@@ -53,7 +53,7 @@ export default function MoraLandingPage() {
       <MoraNav />
 
       {/* Hero — left center */}
-      <FullBleedSection image={assets.heroAtelier} alt="MORA atelier" textPosition="left-center">
+      <FullBleedSection image={assets.heroAtelier} alt="원재료를 선별하는 MORA 메이커" textPosition="left-center">
         <Typography variant="h1">
           {brand.headline}
         </Typography>
@@ -74,7 +74,7 @@ export default function MoraLandingPage() {
       </FullBleedSection>
 
       {/* Brand Trace etching */}
-      <Box sx={{ py: '100px', display: 'flex', justifyContent: 'center' }}>
+      <Box id="transformation" sx={{ py: '100px', display: 'flex', justifyContent: 'center' }}>
         <Box
           component="img"
           src={assets.etchBrandTrace}
@@ -85,14 +85,14 @@ export default function MoraLandingPage() {
 
       {/* Feature — center */}
       <FullBleedSection image={assets.clothTransition} alt="Straining cloth" textPosition="center">
-        <Typography variant="h1">
-          Not what to add,<br />but what to leave behind.
+        <Typography variant="h1" sx={{ color: 'background.default' }}>
+          한 컵의 중간을<br />숨기지 않습니다.
         </Typography>
         <Typography
           component="a"
-          href="#transformation"
+          href="#vessel"
           sx={{
-            display: 'inline-block', fontSize: '16px', color: 'text.primary',
+            display: 'inline-block', fontSize: '16px', color: 'background.default',
             textDecoration: 'none', mt: 2,
             '&:hover': { textDecoration: 'underline', textUnderlineOffset: '3px' },
           }}
@@ -108,7 +108,7 @@ export default function MoraLandingPage() {
             <Box
               component="img"
               src={assets.whyMoraMaker}
-              alt="Maker comparing three yogurt states"
+              alt="승인할 재료와 제외할 재료를 비교하는 MORA 메이커"
               loading="lazy"
               sx={{ width: '100%', aspectRatio: '3 / 2', objectFit: 'cover', display: 'block', borderRadius: 0 }}
             />
@@ -129,11 +129,11 @@ export default function MoraLandingPage() {
       <Box id="collection" sx={{ my: '128px' }}>
         <StickyProductGrid
           mainImage={assets.momentMorning}
-          mainAlt="Morning — Thyme Honey"
+          mainAlt="Core Collection의 마지막 fold와 final check"
           products={coreProducts}
           title="Vol. 1 — Four Directions"
-          body="The first Core Collection."
-          cta="See Core Collection"
+          body="한 번의 마지막 판단으로 이어지는 네 가지 방향."
+          cta="Core Collection 보기"
           ctaHref="#collection"
         />
       </Box>
@@ -149,11 +149,11 @@ export default function MoraLandingPage() {
       <Box sx={{ my: '128px' }}>
         <StickyProductGrid
           mainImage={assets.momentAfternoon}
-          mainAlt="Afternoon — Roasted Buckwheat"
-          products={trialProducts.concat(coreProducts.slice(0, 2))}
+          mainAlt="Studio Trials의 조건부 중간 상태 확인"
+          products={trialProducts}
           title="Studio Trials"
-          body="When verified, they join the next volume."
-          cta="See development criteria"
+          body="확인되기 전에는 출시하지 않는 두 가지 조건부 방향."
+          cta="검증 기준 보기"
           ctaHref="#truth"
           reverse
         />
@@ -176,19 +176,19 @@ export default function MoraLandingPage() {
 
       {/* Collection Statement — left center */}
       <FullBleedSection image={assets.methodProcessTable} alt="Material method" textPosition="left-center">
-        <Typography variant="h1">
-          Same density,<br />six ingredient<br />directions.
+        <Typography variant="h1" sx={{ color: 'background.default' }}>
+          재료마다 다르게 준비하고,<br />한 번 접습니다.
         </Typography>
         <Typography
           component="a"
           href="#vessel"
           sx={{
-            display: 'inline-block', fontSize: '16px', color: 'text.primary',
+            display: 'inline-block', fontSize: '16px', color: 'background.default',
             textDecoration: 'none', mt: 2,
             '&:hover': { textDecoration: 'underline', textUnderlineOffset: '3px' },
           }}
         >
-          See Vessel Record
+          Batch Record 보기
         </Typography>
       </FullBleedSection>
 
@@ -207,11 +207,11 @@ export default function MoraLandingPage() {
 
       {/* Use Moment */}
       <FullBleedSection image={assets.momentEvening} alt="Evening table" textPosition="bottom-left">
-        <Typography variant="h2">
-          The table where a cup is placed.
+        <Typography variant="h2" sx={{ color: 'background.default' }}>
+          한 컵이 놓이는 식탁.
         </Typography>
-        <Typography sx={{ fontSize: '16px', color: 'text.secondary', mt: 1 }}>
-          Same density, different moment.
+        <Typography sx={{ fontSize: '16px', color: 'background.default', opacity: 0.8, mt: 1 }}>
+          한 jar와 한 spoon만으로 남긴 절제된 사용 맥락.
         </Typography>
       </FullBleedSection>
 
@@ -231,7 +231,7 @@ export default function MoraLandingPage() {
           &copy; 2026 MORA. All images are commercial photography direction visualizations.
         </Typography>
         <Typography sx={{ fontSize: '11px', color: 'text.secondary' }}>
-          Refrigerated &middot; 150 g &middot; Glass vessel &middot; Direct print
+          Refrigerated direction &middot; 150 g candidate &middot; Wide-mouth vessel &middot; Partial Batch Record
         </Typography>
       </Box>
     </Box>
