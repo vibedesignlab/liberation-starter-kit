@@ -15,5 +15,7 @@ Hard requirements:
 - produce exactly six fixed React sections and registered renders covering the lineup;
 - canonical output is `outputs/landing-materials.json`, `asset-registry.json`, and `stage-review.json`;
 - final delivery runs `pnpm finalize-brand-report -- <package>`;
+- the finalizer is the only validation command; do not run a standalone validator or post-pass audit;
+- in a routed pipeline, use the fixed copy/render worker specs and keep external render calls serial until image parallelism is enabled;
 - no HTML report or coded landing page is created;
 - stop for final user review.

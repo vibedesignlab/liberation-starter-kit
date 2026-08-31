@@ -13,6 +13,9 @@ Hard requirements:
 
 - run only one Stage at a time;
 - require `pnpm finalize-brand-report -- <package>` before every checkpoint;
+- treat the finalizer as the sole validation entrypoint and do not add preflight or post-pass validation;
 - re-finalize the accepted review record before advancing;
+- use the Codex router's fixed Stage job plan in routed parallel mode; only the root updates pipeline state or canonical files;
+- keep external image calls serial while pipeline image parallelism is `pilot_pending`;
 - never create, validate, route, or preserve an HTML report;
 - deterministic validation does not equal user approval.

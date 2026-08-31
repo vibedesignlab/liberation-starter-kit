@@ -1,11 +1,13 @@
 import { BrandCardGrid } from './BrandCardGrid.jsx';
 import { BrandColorTokens } from './BrandColorTokens.jsx';
 import { BrandCodeBlock } from './BrandCodeBlock.jsx';
+import { BrandColorTokenGuide } from './BrandColorTokenGuide.jsx';
 import { BrandEvidenceGrid } from './BrandEvidenceGrid.jsx';
 import { BrandListBlock } from './BrandListBlock.jsx';
 import { BrandProseBlock } from './BrandProseBlock.jsx';
 import { BrandTableBlock } from './BrandTableBlock.jsx';
 import { BrandTypographySpecimens } from './BrandTypographySpecimens.jsx';
+import { BrandVerbalHierarchy } from './BrandVerbalHierarchy.jsx';
 
 /**
  * Select the pure-presentational component for a normalized report block.
@@ -33,9 +35,14 @@ export function BrandBlockRenderer({ block }) {
       return <BrandCardGrid block={ block } />;
     case 'color-tokens':
       return <BrandColorTokens block={ block } />;
+    case 'color-token-guide':
+      return <BrandColorTokenGuide block={ block } />;
     case 'typography':
     case 'typography-specimens':
       return <BrandTypographySpecimens block={ block } />;
+    case 'verbal-brand-hierarchy':
+    case 'verbal-hierarchy':
+      return <BrandVerbalHierarchy block={ block } />;
     case 'code':
     case 'json':
       return <BrandCodeBlock block={ block } />;

@@ -1,11 +1,14 @@
 import {
   cardGridBlock,
+  colorTokenGuideBlock,
   evidenceGridBlock,
   keyValueTable,
   listBlock,
   proseBlock,
   recordToBlocks,
   tableBlock,
+  typographySpecimensBlock,
+  verbalHierarchyBlock,
 } from './blocks.js';
 import {
   asArray,
@@ -408,7 +411,96 @@ export function adaptExtendedBrandAnatomy(input, context = {}) {
   const sections = EXTENDED_SECTION_ORDER.map(([sectionKey, title], offset) => {
     const index = offset + 1;
     const section = asRecord(sourceSections[sectionKey]);
-    const blocks = sectionBlocks[sectionKey] || recordToBlocks(section);
+    let blocks;
+    if (sectionKey === 'verbal_branding_and_copy_hierarchy') {
+      const positioning = asRecord(sourceSections.brand_positioning);
+      const genericVerbalFields = Object.fromEntries(
+        Object.entries(section).filter(([key]) => ![
+          'key_insight',
+          'brand_purpose',
+          'brand_essence',
+          'brand_message',
+          'brand_values',
+          'voice',
+          'vocabulary',
+          'sentence_behavior',
+          'message_hierarchy',
+          'selected_narrative_route',
+          'family_usp',
+          'product_usps',
+          'headline_direction',
+          'supporting_copy_direction',
+          'cta_direction',
+        ].includes(key)),
+      );
+      blocks = [
+        verbalHierarchyBlock(
+          'Verbal brand hierarchy',
+          {
+            ...section,
+            positioning: positioning.positioning_statement,
+            brand_promise: positioning.promise,
+            proof: positioning.proof,
+          },
+          {
+            status: 'directional',
+            description: 'The target verbal platform is ordered from brand foundation to landing-page activation.',
+          },
+        ),
+        ...recordToBlocks(genericVerbalFields),
+      ].filter(Boolean);
+    } else if (sectionKey === 'design_token_direction') {
+      const genericTokenFields = Object.fromEntries(
+        Object.entries(section).filter(([key]) => ![
+          'color',
+          'typography',
+          'typography_sources',
+          'typography_specimens',
+          'documentation_only',
+          'webfont_gap',
+        ].includes(key)),
+      );
+      blocks = [
+        colorTokenGuideBlock(
+          'Color token direction',
+          section.color,
+          { description: 'Target color direction shown with keep, tune, or new lineage. Documentation only.' },
+        ),
+        typographySpecimensBlock(
+          'Typography hierarchy direction',
+          {
+            typography: section.typography_specimens ?? section.typography,
+            typography_sources: section.typography_sources,
+            webfont_gap: section.webfont_gap,
+          },
+          {
+            explicitValueStatus: 'directional',
+            description: 'Target typography direction shown as a standard web hierarchy with linked document fonts. It is not applied to the project theme.',
+          },
+        ),
+        ...recordToBlocks(genericTokenFields),
+      ].filter(Boolean);
+    } else {
+      blocks = recordToBlocks(section);
+    }
+    if (sectionKey === 'source_grammar_application') {
+      blocks.unshift(
+        ...recordToBlocks(model.source_analysis, { overviewTitle: 'Source analysis' }),
+        ...recordToBlocks(model.boundaries, { overviewTitle: 'Protected boundaries' }),
+      );
+    }
+    if (sectionKey === 'brand_positioning') {
+      blocks.unshift(...recordToBlocks(target, { overviewTitle: 'Target scope' }));
+    }
+    if (sectionKey === 'brand_mood_and_brand_imagery') {
+      blocks.push(...recordToBlocks(model.moodboard_inputs, { overviewTitle: 'Moodboard inputs' }));
+    }
+    const evidence = evidenceGridBlock(
+      'Registered anchor assets',
+      assetsForSection(sectionKey, assets),
+      { assetIndex, publicBasePath: context.publicBasePath },
+    );
+    if (evidence) blocks.push(evidence);
 
     return makeSection({
       id: sectionKey,

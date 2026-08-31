@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "artifact_type": "brand_pipeline_state",
   "auto_chain": true,
   "created_at": "",
@@ -10,7 +10,13 @@
     "mode": "parallel_single_brand",
     "max_workers": 3,
     "single_writer": true,
+    "job_plan_version": "",
     "active_wave": "",
+    "image_parallelism": {
+      "mode": "pilot_pending",
+      "max_workers": 2
+    },
+    "stage_plans": {},
     "serial_fallback_reason": {},
     "jobs": []
   },

@@ -8,7 +8,7 @@ Category frame, audience identity and situation, tension/enemy, functional/emoti
 
 ## 2. Verbal anatomy
 
-Lexicon, syntax, rhetoric, cadence, viewpoint, pronouns, certainty, emotional temperature, message order, naming, CTA, onboarding, transactional/support/error language, humor/metaphor/taboo, and channel modulation.
+Lexicon, syntax, rhetoric, cadence, viewpoint, pronouns, certainty, emotional temperature, message order, naming, CTA, onboarding, transactional/support/error language, humor/metaphor/taboo, and channel modulation. End the section with one compact hierarchy synthesized from existing evidence: brand purpose, brand essence, positioning, promise, core values, brand message, voice principles, and activation/proof. Mark every level `observed`, `inferred`, or `gap` and retain evidence scope. Purpose and essence are internal strategic ideas; brand message is the repeatable audience-facing articulation. Do not promote a tagline, campaign headline, product USP, or CTA into the brand message without masterbrand evidence.
 
 ## 3. Identity and channel-token anatomy
 
@@ -63,7 +63,7 @@ Translate the approved source anatomy and grammar into design-system-independent
 - spacing strategy;
 - layout strategy.
 
-For each area record its role, relationship to other elements, invariants, variables, channel and locale scope, exceptions, and evidence IDs. Color must be split into identity, interaction/status, product/campaign, and photographic layers. For color and typography, include directly observed reference values with layer, channel, market, date, and evidence IDs when first-party evidence exposes them; otherwise state the gap. For web typography, include an actual-font specimen source or an explicit `webfont gap`. Relate color and layout to key visuals, photography, product representation, and product-native language without merging those layers.
+For each area record its role, relationship to other elements, invariants, variables, channel and locale scope, exceptions, and evidence IDs. Color must be split into identity, interaction/status, product/campaign, and photographic layers. `brand_color_scheme.color_tokens` records renderable observed `value`, `color_layer`, `role`, scope, and evidence, or `color_value_gap` states why no value is available. Typography sets `documentation_only: true`; `documentation_webfonts` records family and an http(s) `source_url`, while `specimens` records observed role and family plus any verified size, weight, line height, letter spacing, script, and sample. If access or licensing blocks the font, use an explicit `webfont_gap`. The reader alone may fill missing hierarchy levels with `documentation-preview` values. Linked fonts are report-only provenance and never modify starter-kit theme tokens. Relate color and layout to key visuals, photography, product representation, and product-native language without merging those layers.
 
 Do not prescribe implementation token names, JSON, CSS variables, framework syntax, fixed scales, or universal pixel, rem, breakpoint, and hex values. Exact observed color and typography values are permitted only as explicitly dated and scoped source references, never as the global rule. Do not call a link, button, action, focus, or status value a brand color unless direct first-party identity guidance assigns it to the masterbrand identity.
 

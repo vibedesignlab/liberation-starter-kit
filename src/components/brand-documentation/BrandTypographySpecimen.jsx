@@ -1,4 +1,5 @@
 import Box from '@mui/material/Box';
+import Chip from '@mui/material/Chip';
 import Typography from '@mui/material/Typography';
 
 import { BrandDocumentValue } from './BrandDocumentValue.jsx';
@@ -9,7 +10,7 @@ import { BrandDocumentValue } from './BrandDocumentValue.jsx';
  * @param {Object} props - Component props.
  * @param {Object} props.item - Specimen record with sample and typography properties.
  */
-export function BrandTypographySpecimen({ item }) {
+export function BrandTypographySpecimen({ item, fontLoadStatus }) {
   const fontSize = item.fontSize ?? item.size ?? 'clamp(1.75rem, 4vw, 3.5rem)';
   const meta = item.meta ?? [
     item.token,
@@ -23,11 +24,30 @@ export function BrandTypographySpecimen({ item }) {
   const details = Array.isArray(item.details) ? item.details : [];
 
   return (
-    <Box sx={ { display: 'grid', gap: 2, p: { xs: 2, md: 3 }, border: '1px solid', borderColor: 'divider' } }>
+    <Box sx={ { display: 'grid', gap: 2.5, p: { xs: 2, md: 3 }, border: '1px solid', borderColor: 'divider' } }>
       <Box sx={ { display: 'flex', justifyContent: 'space-between', gap: 2, flexWrap: 'wrap' } }>
-        <Typography variant="subtitle2" sx={ { fontWeight: 700, overflowWrap: 'anywhere' } }>
-          { item.label ?? item.title ?? 'Typography specimen' }
-        </Typography>
+        <Box sx={ { display: 'flex', alignItems: 'center', gap: 1, flexWrap: 'wrap' } }>
+          <Typography variant="subtitle2" sx={ { fontWeight: 750, overflowWrap: 'anywhere' } }>
+            { item.label ?? item.title ?? 'Typography specimen' }
+          </Typography>
+          { item.valueStatus && (
+            <Chip
+              size="small"
+              variant="outlined"
+              label={ item.valueStatus }
+              sx={ { height: 24, borderRadius: 0, fontFamily: 'monospace', fontSize: 11 } }
+            />
+          ) }
+          { fontLoadStatus && (
+            <Chip
+              size="small"
+              variant="outlined"
+              label={ `font ${ fontLoadStatus }` }
+              color={ fontLoadStatus === 'error' ? 'error' : 'default' }
+              sx={ { height: 24, borderRadius: 0, fontFamily: 'monospace', fontSize: 11 } }
+            />
+          ) }
+        </Box>
         { meta && (
           <Typography
             variant="caption"
@@ -55,9 +75,10 @@ export function BrandTypographySpecimen({ item }) {
           letterSpacing: item.letterSpacing,
           color: item.color ?? 'text.primary',
           textTransform: item.textTransform,
-          textWrap: 'balance',
+          textWrap: item.role === 'body' ? 'pretty' : 'balance',
           wordBreak: 'keep-all',
           overflowWrap: 'anywhere',
+          maxWidth: item.role === 'body' ? '68ch' : 'none',
         } }
       >
         { item.sample ?? item.text ?? 'Aa 가나 0123' }

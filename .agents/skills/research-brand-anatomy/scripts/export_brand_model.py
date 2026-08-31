@@ -140,6 +140,86 @@ def structured_layer(title: str, markdown: str) -> dict[str, object]:
     }
 
 
+def row_value(row: dict[str, object], *candidates: str) -> str:
+    lowered = {str(key).strip().lower(): str(value).strip() for key, value in row.items()}
+    return next(
+        (lowered.get(candidate.lower(), "") for candidate in candidates if lowered.get(candidate.lower(), "")),
+        "",
+    )
+
+
+def verbal_branding(layers: dict[str, dict[str, object]]) -> dict[str, object]:
+    verbal_layer = layers.get("verbal_system", {})
+    topics = verbal_layer.get("topics", []) if isinstance(verbal_layer.get("topics"), list) else []
+    hierarchy_topic = next(
+        (
+            topic for topic in topics
+            if isinstance(topic, dict) and "verbal brand hierarchy" in str(topic.get("title", "")).lower()
+        ),
+        {},
+    )
+    tables = hierarchy_topic.get("tables", []) if isinstance(hierarchy_topic.get("tables"), list) else []
+    rows = [
+        row
+        for table in tables
+        if isinstance(table, dict)
+        for row in table.get("rows", [])
+        if isinstance(row, dict)
+    ]
+    result: dict[str, object] = {
+        "brand_purpose": {},
+        "brand_essence": {},
+        "positioning": {},
+        "brand_promise": {},
+        "core_values": [],
+        "brand_message": {},
+        "voice_principles": {},
+        "activation_principles": {},
+    }
+    field_map = {
+        "brand purpose": "brand_purpose",
+        "purpose": "brand_purpose",
+        "brand essence": "brand_essence",
+        "essence": "brand_essence",
+        "positioning": "positioning",
+        "brand promise": "brand_promise",
+        "promise": "brand_promise",
+        "core brand value": "core_values",
+        "core value": "core_values",
+        "brand value": "core_values",
+        "brand message": "brand_message",
+        "voice principles": "voice_principles",
+        "voice": "voice_principles",
+        "activation principles": "activation_principles",
+        "proof and activation": "activation_principles",
+    }
+    for row in rows:
+        element = re.sub(r"\s+", " ", row_value(row, "element").lower()).strip()
+        key = field_map.get(element)
+        if not key:
+            continue
+        statement = row_value(row, "statement", "observed or inferred statement")
+        status = row_value(row, "epistemic status", "status").lower()
+        evidence_and_scope = row_value(row, "evidence and scope", "evidence / scope")
+        name = row_value(row, "name", "value name")
+        if not any((statement, status, evidence_and_scope, name)):
+            continue
+        record = {
+            "statement": statement,
+            "epistemic_status": status,
+            "evidence_and_scope": evidence_and_scope,
+            "evidence_ids": sorted(set(EV_RE.findall(evidence_and_scope))),
+        }
+        if key == "core_values":
+            result[key].append({
+                "name": name,
+                **record,
+            })
+        else:
+            result[key] = record
+    return result
+
+
 def core_claims(markdown: str) -> list[dict[str, object]]:
     claims: list[dict[str, object]] = []
     for line in markdown.splitlines():
@@ -293,6 +373,78 @@ def design_system(layer: dict[str, object]) -> dict[str, object]:
                     "source_notes": topic.get("notes", []),
                     "source_tables": tables,
                 }
+                if key == "brand_color_scheme":
+                    color_tokens = []
+                    for index, row in enumerate(rows, start=1):
+                        observed_value = row_value(row, "observed value", "color value", "value", "hex")
+                        color_layer = row_value(row, "color layer", "layer")
+                        if not observed_value or not color_layer:
+                            continue
+                        role = row_value(row, "source role", "role", "observed role")
+                        color_tokens.append({
+                            "id": f"observed-color-{index}",
+                            "name": role or f"Observed color {index}",
+                            "value": observed_value,
+                            "color_layer": color_layer,
+                            "role": role,
+                            "channel_market_date": row_value(row, "channel / market / date"),
+                            "evidence_and_scope": row_value(row, "evidence and scope", "evidence and limits"),
+                            "value_status": "observed",
+                        })
+                    result[key]["color_tokens"] = color_tokens
+                    if not color_tokens:
+                        result[key]["color_value_gap"] = next(
+                            (str(note).strip() for note in topic.get("notes", []) if "gap" in str(note).lower()),
+                            "No renderable first-party color value was recorded.",
+                        )
+                if key == "typography_hierarchy":
+                    webfonts = []
+                    specimens = []
+                    for index, row in enumerate(rows, start=1):
+                        family = row_value(row, "family", "font family")
+                        source_url = row_value(row, "first-party source url", "source url", "stylesheet url", "font url")
+                        role = row_value(row, "information role", "source role", "role")
+                        if family and source_url:
+                            source_id = re.sub(r"[^a-z0-9]+", "-", family.lower()).strip("-") or f"font-source-{index}"
+                            webfonts.append({
+                                "id": source_id,
+                                "family": family,
+                                "weight": row_value(row, "weight / style", "weight", "font weight"),
+                                "style": row_value(row, "style", "font style") or "normal",
+                                "format": row_value(row, "format"),
+                                "source_url": source_url,
+                                "source_type": row_value(row, "source type") or (
+                                    "font-file" if re.search(r"\.(?:woff2?|ttf|otf)(?:[?#].*)?$", source_url, re.IGNORECASE)
+                                    else "stylesheet"
+                                ),
+                                "channel_locale_date": row_value(row, "channel / locale / date", "channel / market / date"),
+                                "license_note": row_value(row, "fallback and license boundary", "license note"),
+                                "status": "verified",
+                            })
+                        if role and family:
+                            specimens.append({
+                                "id": f"typography-{index}",
+                                "role": role,
+                                "family": family,
+                                "font_source_id": re.sub(r"[^a-z0-9]+", "-", family.lower()).strip("-"),
+                                "size": row_value(row, "size", "font size"),
+                                "weight": row_value(row, "weight", "font weight", "weight / style"),
+                                "line_height": row_value(row, "line height", "leading"),
+                                "letter_spacing": row_value(row, "letter spacing", "tracking"),
+                                "script": row_value(row, "script", "locale", "language"),
+                                "specimen": row_value(row, "specimen", "sample", "text"),
+                                "evidence_and_scope": row_value(row, "evidence and scope", "evidence and limits"),
+                                "value_status": "observed",
+                            })
+                    unique_webfonts = {f"{item['family']}|{item['source_url']}": item for item in webfonts}
+                    result[key]["documentation_only"] = True
+                    result[key]["documentation_webfonts"] = list(unique_webfonts.values())
+                    result[key]["specimens"] = specimens
+                    if not webfonts:
+                        result[key]["webfont_gap"] = next(
+                            (str(note).strip() for note in topic.get("notes", []) if "webfont" in str(note).lower() and "gap" in str(note).lower()),
+                            "Verified webfont access or licensing was not recorded.",
+                        )
                 break
     for key in mapping.values():
         result.setdefault(key, {
@@ -307,6 +459,14 @@ def design_system(layer: dict[str, object]) -> dict[str, object]:
             "source_notes": [],
             "source_tables": [],
         })
+    result["brand_color_scheme"].setdefault("color_tokens", [])
+    if not result["brand_color_scheme"]["color_tokens"]:
+        result["brand_color_scheme"].setdefault("color_value_gap", "No renderable first-party color value was recorded.")
+    result["typography_hierarchy"].setdefault("documentation_only", True)
+    result["typography_hierarchy"].setdefault("documentation_webfonts", [])
+    result["typography_hierarchy"].setdefault("specimens", [])
+    if not result["typography_hierarchy"]["documentation_webfonts"]:
+        result["typography_hierarchy"].setdefault("webfont_gap", "Verified webfont access or licensing was not recorded.")
     result["implementation_boundary"] = "Source observations and portable relationships only; not target-ready tokens, JSON variables, breakpoints, or component code."
     return result
 
@@ -378,6 +538,7 @@ def main() -> int:
         },
         "decision_index": dict(grouped),
         "analysis_layers": layers,
+        "verbal_branding": verbal_branding(layers),
         "design_system": design_system(global_layer),
         "grammar_rules": rules,
         "evidence_index": evidence_index(case),
@@ -386,6 +547,7 @@ def main() -> int:
             "transfer_plan_requires": [
                 "new user target direction",
                 "decision_index",
+                "verbal_branding",
                 "design_system",
                 "grammar_rules",
                 "protected_surface_families",

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { access } from 'node:fs/promises';
+import { access, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -26,6 +26,30 @@ const sourceLayers = Object.fromEntries([
   'global_brand_system',
 ].map((key) => [key, { title: key, key_insight: `${key} insight.`, topics: [] }]));
 
+const typographySources = [{
+  id: 'contract-font',
+  family: 'Contract Sans',
+  source_type: 'stylesheet',
+  url: 'https://fonts.example.invalid/contract.css',
+  license_note: 'Contract fixture only.',
+}];
+const typographyRoles = ['display', 'h1', 'h2', 'h3', 'body', 'label', 'caption'];
+const typographyDirection = typographyRoles.map((role, index) => ({
+  role,
+  font_family: 'Contract Sans',
+  font_source_id: 'contract-font',
+  font_size: `${72 - index * 9}px`,
+  font_weight: index < 4 ? 700 : 400,
+  line_height: index < 4 ? 1 : 1.5,
+  letter_spacing: '0',
+  specimen: `${role} specimen`,
+  relationship: 'tune',
+  source_basis: 'Contract fixture hierarchy',
+  target_direction: `${role} direction`,
+  landing_use: `${role} use`,
+  status: 'directional',
+}));
+
 const fixtures = {
   source_brand_analysis: {
     artifact_type: 'source_brand_analysis',
@@ -33,8 +57,35 @@ const fixtures = {
     brand: { name: 'Source', entity_scope: 'Masterbrand', product_mode: 'physical' },
     handoff: { status: 'pending', package_version: '1.0.0', unresolved_gaps: [] },
     analysis_layers: sourceLayers,
+    verbal_branding: {
+      brand_purpose: { statement: 'Source purpose.', epistemic_status: 'observed', evidence_and_scope: 'EV-001' },
+      brand_essence: { statement: 'Source essence.', epistemic_status: 'inferred', evidence_and_scope: 'EV-001 · EV-002' },
+      positioning: { statement: 'Source position.', epistemic_status: 'observed', evidence_and_scope: 'EV-001' },
+      brand_promise: { statement: 'Source promise.', epistemic_status: 'observed', evidence_and_scope: 'EV-001' },
+      core_values: [{ name: 'Clarity', statement: 'Value statement.', epistemic_status: 'observed', evidence_and_scope: 'EV-001' }],
+      brand_message: { statement: 'Source brand message.', epistemic_status: 'observed', evidence_and_scope: 'EV-001' },
+      voice_principles: { statement: 'Direct voice.', epistemic_status: 'observed', evidence_and_scope: 'EV-001' },
+      activation_principles: { statement: 'Promise then proof.', epistemic_status: 'inferred', evidence_and_scope: 'EV-001 · EV-002' },
+    },
     decision_index: { strategy: [{ claim: 'Source claim.' }] },
-    design_system: {},
+    design_system: {
+      brand_color_scheme: {
+        color_tokens: [{ name: 'Canvas', value: '#F2EFE8', color_layer: 'identity', role: 'surface' }],
+      },
+      typography_hierarchy: {
+        documentation_only: true,
+        documentation_webfonts: typographySources.map((source) => ({ ...source, source_url: source.url })),
+        specimens: typographyDirection.map((item) => ({
+          role: item.role,
+          family: item.font_family,
+          font_source_id: item.font_source_id,
+          size: item.font_size,
+          weight: item.font_weight,
+          line_height: item.line_height,
+          specimen: item.specimen,
+        })),
+      },
+    },
     grammar_rules: [{ intended_effect: 'Grammar effect.' }],
     evidence_index: [],
     downstream_contract: { target_direction: null },
@@ -52,7 +103,26 @@ const fixtures = {
       'brand_mood_and_brand_imagery',
       'product_visual_traits_and_product_imagery',
       'design_token_direction',
-    ].map((key) => [key, { key_insight: `${key} insight.` }])),
+    ].map((key) => [key, key === 'brand_positioning' ? {
+      key_insight: `${key} insight.`,
+      positioning_statement: 'Target position.',
+      promise: 'Target promise.',
+      proof: ['Target proof.'],
+    } : key === 'verbal_branding_and_copy_hierarchy' ? {
+      key_insight: `${key} insight.`,
+      brand_purpose: 'Target purpose.',
+      brand_essence: 'Target essence.',
+      brand_message: 'Target brand message.',
+      brand_values: [{ value: 'Clarity', statement: 'Target value statement.' }],
+      voice: ['Direct'],
+      family_usp: 'Target family USP.',
+    } : key === 'design_token_direction' ? {
+      key_insight: `${key} insight.`,
+      documentation_only: true,
+      color: [{ name: 'Ink', value: '#17212B', color_layer: 'identity', role: 'text' }],
+      typography_sources: typographySources,
+      typography: typographyDirection,
+    } : { key_insight: `${key} insight.` }])),
     registered_anchor_assets: [],
   },
   landing_materials: {
@@ -132,22 +202,44 @@ for (const [artifactType, fixture] of Object.entries(fixtures)) {
   if (JSON.stringify(expectedIds) !== JSON.stringify(actualIds)) {
     throw new Error(`${artifactType} section contract drifted.`);
   }
-  if (artifactType === 'extended_brand_anatomy') {
-    const tokenSection = report.sections.find(({ id }) => id === 'design-token-direction');
-    const tokenBlockTypes = tokenSection?.blocks.map(({ type }) => type) ?? [];
-    if (!tokenBlockTypes.includes('color-tokens')) {
-      throw new Error('Extended report must render directional colors as swatches.');
+
+  if (artifactType === 'source_brand_analysis' || artifactType === 'extended_brand_anatomy') {
+    const verbalSectionId = artifactType === 'source_brand_analysis'
+      ? 'verbal'
+      : 'verbal-branding-and-copy-hierarchy';
+    const verbalSection = report.sections.find(({ id }) => id === verbalSectionId);
+    const verbalHierarchy = verbalSection?.blocks.find(({ type }) => type === 'verbal-brand-hierarchy');
+    const verbalTierIds = verbalHierarchy?.tiers.map(({ id }) => id);
+    if (JSON.stringify(verbalTierIds) !== JSON.stringify([
+      'foundation',
+      'strategy',
+      'core-verbal-platform',
+      'expression',
+      'activation',
+    ])) {
+      throw new Error(`${artifactType} no longer normalizes the fixed verbal-brand hierarchy.`);
     }
-    if (!tokenBlockTypes.includes('typography-specimens')) {
-      throw new Error('Extended report must render directional typography as live specimens.');
+    const messageItem = verbalHierarchy.tiers
+      .flatMap(({ items }) => items)
+      .find(({ id }) => id === 'brand-message');
+    if (messageItem?.emphasis !== 'brand-message') {
+      throw new Error(`${artifactType} no longer emphasizes the canonical brand message.`);
     }
-    const conceptSection = report.sections.find(({ id }) => id === 'source-grammar-application');
-    const ambientEvidence = conceptSection?.blocks.find((block) => (
-      block.type === 'evidence-grid'
-      && block.items?.some(({ id }) => id === 'ST2-AMBIENT-CONTRACT-01')
-    ));
-    if (!ambientEvidence) {
-      throw new Error('Extended report must lead with ambient key visuals as image evidence.');
+
+    const tokenSectionId = artifactType === 'source_brand_analysis'
+      ? 'global-brand-system-framework'
+      : 'design-token-direction';
+    const tokenSection = report.sections.find(({ id }) => id === tokenSectionId);
+    const colorGuide = tokenSection?.blocks.find(({ type }) => type === 'color-token-guide');
+    const typographyGuide = tokenSection?.blocks.find(({ type }) => type === 'typography-specimens');
+    if (!colorGuide?.documentOnly || !colorGuide.items?.[0]?.value) {
+      throw new Error(`${artifactType} no longer normalizes a document-only color token guide.`);
+    }
+    if (!typographyGuide?.documentOnly || typographyGuide.items?.length !== typographyRoles.length) {
+      throw new Error(`${artifactType} no longer normalizes the fixed typography hierarchy.`);
+    }
+    if (!typographyGuide.fontSources?.[0]?.url) {
+      throw new Error(`${artifactType} no longer preserves typography source provenance.`);
     }
   }
 }
@@ -170,4 +262,46 @@ for (const relativePath of forbiddenLegacyFiles) {
   }
 }
 
-process.stdout.write('PASS fixed Stage 1–3 React report contracts and no legacy renderers.\n');
+const parallelPlanPath = path.join(
+  PROJECT_ROOT,
+  '.agents/skills/reconstruct-brand-system/assets/parallel-job-plan.json',
+);
+const parallelPlan = JSON.parse(await readFile(parallelPlanPath, 'utf8'));
+if (
+  parallelPlan?.artifact_type !== 'brand_parallel_job_plan'
+  || parallelPlan?.schema_version !== '1.0.0'
+) {
+  throw new Error('Parallel job plan identity drifted.');
+}
+const expectedParallelJobs = {
+  stage_1: ['strategy_verbal_identity', 'visual_corpus', 'product_native_language'],
+  stage_2: [
+    'verbal_narrative',
+    'product_lineup',
+    'visual_tokens',
+    'product_hero_anchor',
+    'brand_mood_anchor',
+  ],
+  stage_3: ['landing_copy_map', 'product_render_lane_a', 'product_render_lane_b'],
+};
+for (const [stageId, expectedJobIds] of Object.entries(expectedParallelJobs)) {
+  const stage = parallelPlan.stages?.[stageId];
+  const actualJobIds = stage?.waves?.flatMap(({ jobs }) => jobs.map(({ job_id: jobId }) => jobId));
+  if (JSON.stringify(actualJobIds) !== JSON.stringify(expectedJobIds)) {
+    throw new Error(`${stageId} fixed parallel job plan drifted.`);
+  }
+}
+
+for (const helper of [
+  'plan_stage_jobs.py',
+  'update_job.py',
+  'summarize_parallel_run.py',
+]) {
+  await access(path.join(
+    PROJECT_ROOT,
+    '.agents/skills/reconstruct-brand-system/scripts',
+    helper,
+  ));
+}
+
+process.stdout.write('PASS fixed Stage 1–3 React report and bounded parallel job contracts.\n');

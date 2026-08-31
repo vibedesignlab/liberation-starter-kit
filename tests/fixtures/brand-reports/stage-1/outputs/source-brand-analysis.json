@@ -42,9 +42,46 @@
     "system_synthesis": {"title": "System synthesis", "key_insight": "Calm hierarchy and concrete proof form one grammar."},
     "global_brand_system": {"title": "Global brand-system framework", "key_insight": "Four token areas preserve a single decision hierarchy."}
   },
+  "verbal_branding": {
+    "brand_purpose": {"statement": "Make work state easier to understand.", "epistemic_status": "inferred", "evidence_and_scope": "EV-001 and EV-108 · synthetic fixture only"},
+    "brand_essence": {"statement": "Calm clarity.", "epistemic_status": "inferred", "evidence_and_scope": "EV-001 and EV-002 · synthetic fixture only"},
+    "positioning": {"statement": "A restrained system for making work state visible.", "epistemic_status": "inferred", "evidence_and_scope": "EV-001 and EV-104 · synthetic fixture only"},
+    "brand_promise": {"statement": "Clarity without visual noise.", "epistemic_status": "observed", "evidence_and_scope": "EV-001 · synthetic fixture only"},
+    "core_values": [
+      {"name": "Clarity", "statement": "Information appears before decoration.", "epistemic_status": "observed", "evidence_and_scope": "EV-001 and EV-002 · synthetic fixture only"},
+      {"name": "Calm", "statement": "Proof remains legible without demanding attention.", "epistemic_status": "inferred", "evidence_and_scope": "EV-103 and EV-107 · synthetic fixture only"}
+    ],
+    "brand_message": {"statement": "Make the state clear.", "epistemic_status": "inferred", "evidence_and_scope": "EV-001 and EV-002 · synthetic fixture only"},
+    "voice_principles": {"statement": "Short, direct, and concrete.", "epistemic_status": "observed", "evidence_and_scope": "EV-002 · synthetic fixture only"},
+    "activation_principles": {"statement": "State the promise, then show one concrete proof and a low-pressure action.", "epistemic_status": "inferred", "evidence_and_scope": "EV-002 and EV-104 · synthetic fixture only"}
+  },
   "design_system": {
-    "brand_color_scheme": {"title": "Brand color scheme", "roles": ["identity field", "status accent"]},
-    "typography_hierarchy": {"title": "Typography hierarchy", "roles": ["headline", "support", "body"]},
+    "brand_color_scheme": {
+      "title": "Brand color scheme",
+      "roles": ["identity field", "status accent"],
+      "color_tokens": [
+        {"id": "fixture-canvas", "name": "Identity canvas", "value": "#F2EFE8", "color_layer": "identity", "role": "persistent canvas", "evidence_ids": ["EV-101"], "scope": "Synthetic owned-web fixture", "value_status": "observed"},
+        {"id": "fixture-ink", "name": "Identity ink", "value": "#17212B", "color_layer": "identity", "role": "wordmark and primary text", "evidence_ids": ["EV-101"], "scope": "Synthetic owned-web fixture", "value_status": "observed"},
+        {"id": "fixture-status", "name": "Status accent", "value": "#2F7D57", "color_layer": "interaction / status", "role": "confirmed state only", "evidence_ids": ["EV-108"], "scope": "Not a masterbrand identity color", "value_status": "observed"}
+      ]
+    },
+    "typography_hierarchy": {
+      "title": "Typography hierarchy",
+      "roles": ["display", "h1", "h2", "h3", "body", "label", "caption"],
+      "documentation_only": true,
+      "documentation_webfonts": [
+        {"id": "ibm-plex-sans", "family": "IBM Plex Sans", "source_type": "stylesheet", "source_url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap", "weights": [400, 600, 700], "style": "normal", "license_note": "SIL Open Font License; remote documentation preview only.", "status": "verified"}
+      ],
+      "specimens": [
+        {"id": "fixture-display", "role": "display", "family": "IBM Plex Sans", "font_source_id": "ibm-plex-sans", "size": "96px", "weight": 700, "line_height": 0.94, "letter_spacing": "-0.05em", "script": "Latin / Korean fallback", "specimen": "Focus becomes visible. 집중이 보입니다. 0123", "value_status": "observed"},
+        {"id": "fixture-h1", "role": "h1", "family": "IBM Plex Sans", "font_source_id": "ibm-plex-sans", "size": "64px", "weight": 700, "line_height": 1, "letter_spacing": "-0.04em", "script": "Latin / Korean fallback", "specimen": "One clear promise", "value_status": "observed"},
+        {"id": "fixture-h2", "role": "h2", "family": "IBM Plex Sans", "font_source_id": "ibm-plex-sans", "size": "44px", "weight": 600, "line_height": 1.08, "letter_spacing": "-0.03em", "script": "Latin / Korean fallback", "specimen": "Proof follows the promise", "value_status": "observed"},
+        {"id": "fixture-h3", "role": "h3", "family": "IBM Plex Sans", "font_source_id": "ibm-plex-sans", "size": "30px", "weight": 600, "line_height": 1.15, "letter_spacing": "-0.02em", "script": "Latin / Korean fallback", "specimen": "A restrained supporting title", "value_status": "observed"},
+        {"id": "fixture-body", "role": "body", "family": "IBM Plex Sans", "font_source_id": "ibm-plex-sans", "size": "17px", "weight": 400, "line_height": 1.6, "letter_spacing": "0", "script": "Latin / Korean fallback", "specimen": "Long-form copy keeps a readable measure and makes evidence easy to scan.", "value_status": "observed"},
+        {"id": "fixture-label", "role": "label", "family": "IBM Plex Sans", "font_source_id": "ibm-plex-sans", "size": "14px", "weight": 600, "line_height": 1.4, "letter_spacing": "0.02em", "script": "Latin / Korean fallback", "specimen": "START A FOCUS BLOCK", "value_status": "observed"},
+        {"id": "fixture-caption", "role": "caption", "family": "IBM Plex Sans", "font_source_id": "ibm-plex-sans", "size": "12px", "weight": 400, "line_height": 1.5, "letter_spacing": "0.02em", "script": "Latin / Korean fallback", "specimen": "Evidence EV-101 · Owned web · 2026", "value_status": "observed"}
+      ]
+    },
     "spacing_strategy": {"title": "Spacing strategy", "roles": ["four repeatable intervals"]},
     "layout_strategy": {"title": "Layout strategy", "roles": ["asymmetric editorial grid", "isolated proof frame"]},
     "implementation_boundary": "This fixture describes relationships, not production tokens."

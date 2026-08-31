@@ -73,6 +73,8 @@
       "proof_image_roles": ["hero form", "feature detail", "use context", "state proof"]
     },
     "verbal_branding_and_copy_hierarchy": {
+      "brand_purpose": "Help people coordinate focused work without adding pressure.",
+      "brand_essence": "Quietly visible focus.",
       "voice": ["calm", "direct", "concrete"],
       "vocabulary": ["focus state", "quiet signal", "work ritual"],
       "message_hierarchy": ["brand promise", "family value", "product USP", "proof"],
@@ -134,8 +136,24 @@
       }
     },
     "design_token_direction": {
-      "color": [{"role": "identity field", "relationship": "tune", "source_basis": "calm contrast", "target_direction": "warm gray with deep green text", "landing_use": "hero and navigation", "status": "directional"}],
-      "typography": [{"role": "message hierarchy", "relationship": "keep", "source_basis": "short declarative hierarchy", "target_direction": "compact grotesk with readable body", "landing_use": "headlines and proof copy", "status": "directional"}],
+      "documentation_only": true,
+      "color": [
+        {"name": "Target canvas", "value": "#EDE9E1", "color_layer": "identity", "role": "identity canvas", "relationship": "tune", "source_basis": "Fixture Source cream identity field", "target_direction": "warmer neutral canvas with equivalent calm contrast", "landing_use": "hero and section surfaces", "status": "directional"},
+        {"name": "Target ink", "value": "#17372E", "color_layer": "identity", "role": "identity ink", "relationship": "tune", "source_basis": "Fixture Source navy identity ink", "target_direction": "deep green ink preserving dark-on-light hierarchy", "landing_use": "headlines, navigation, and key rules", "status": "directional"},
+        {"name": "Confirmed state", "value": "#4E8B72", "color_layer": "interaction / status", "role": "positive state", "relationship": "new", "source_basis": "Separate state behavior from the identity field", "target_direction": "reserved confirmation signal", "landing_use": "product state proof only", "status": "directional"}
+      ],
+      "typography_sources": [
+        {"id": "space-grotesk", "family": "Space Grotesk", "source_type": "stylesheet", "url": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap", "weights": [400, 500, 600, 700], "style": "normal", "license_note": "SIL Open Font License; remote documentation preview only.", "status": "verified"}
+      ],
+      "typography": [
+        {"role": "display", "font_family": "Space Grotesk", "font_source_id": "space-grotesk", "font_size": "clamp(4.5rem, 10vw, 9rem)", "font_weight": 700, "line_height": 0.9, "letter_spacing": "-0.055em", "specimen": "Make focus visible. 집중을 보이게.", "relationship": "tune", "source_basis": "short declarative source hierarchy", "target_direction": "compressed high-impact landing statement", "landing_use": "hero display", "status": "directional", "value_status": "documentation-preview"},
+        {"role": "h1", "font_family": "Space Grotesk", "font_source_id": "space-grotesk", "font_size": "clamp(3.25rem, 6vw, 6rem)", "font_weight": 700, "line_height": 0.98, "letter_spacing": "-0.045em", "specimen": "A calmer way to begin", "relationship": "tune", "source_basis": "promise-before-proof grammar", "target_direction": "primary page promise", "landing_use": "page title", "status": "directional", "value_status": "documentation-preview"},
+        {"role": "h2", "font_family": "Space Grotesk", "font_source_id": "space-grotesk", "font_size": "clamp(2.4rem, 4.5vw, 4.25rem)", "font_weight": 600, "line_height": 1.04, "letter_spacing": "-0.035em", "specimen": "Proof follows the promise", "relationship": "keep", "source_basis": "separated message and proof roles", "target_direction": "section-level proof claim", "landing_use": "feature sections", "status": "directional", "value_status": "documentation-preview"},
+        {"role": "h3", "font_family": "Space Grotesk", "font_source_id": "space-grotesk", "font_size": "clamp(1.8rem, 3vw, 2.8rem)", "font_weight": 600, "line_height": 1.12, "letter_spacing": "-0.025em", "specimen": "One state, clearly shown", "relationship": "keep", "source_basis": "visible-state grammar", "target_direction": "compact supporting claim", "landing_use": "feature and product cards", "status": "directional", "value_status": "documentation-preview"},
+        {"role": "body", "font_family": "Space Grotesk", "font_source_id": "space-grotesk", "font_size": "1.0625rem", "font_weight": 400, "line_height": 1.62, "letter_spacing": "0", "specimen": "The body measure stays readable while concrete product evidence explains how each focus block works.", "relationship": "keep", "source_basis": "readable support copy", "target_direction": "plain-language explanation with a restrained measure", "landing_use": "body and proof copy", "status": "directional", "value_status": "documentation-preview"},
+        {"role": "label", "font_family": "Space Grotesk", "font_source_id": "space-grotesk", "font_size": "0.875rem", "font_weight": 600, "line_height": 1.4, "letter_spacing": "0.025em", "specimen": "START A FOCUS BLOCK", "relationship": "tune", "source_basis": "short declarative actions", "target_direction": "compact action label", "landing_use": "buttons and navigation", "status": "directional", "value_status": "documentation-preview"},
+        {"role": "caption", "font_family": "Space Grotesk", "font_source_id": "space-grotesk", "font_size": "0.75rem", "font_weight": 400, "line_height": 1.5, "letter_spacing": "0.025em", "specimen": "Focus One · 25 minute block · Ready", "relationship": "new", "source_basis": "explicit product-state metadata", "target_direction": "quiet but legible metadata", "landing_use": "captions, prices, and states", "status": "directional", "value_status": "documentation-preview"}
+      ],
       "spacing": [{"role": "content rhythm", "relationship": "keep", "source_basis": "four repeatable intervals", "target_direction": "8/16/32/64 rhythm", "landing_use": "section and module spacing", "status": "directional"}],
       "layout": [{"role": "proof composition", "relationship": "tune", "source_basis": "asymmetric modules", "target_direction": "alternating message and product proof columns", "landing_use": "feature and lineup sections", "status": "directional"}]
     }

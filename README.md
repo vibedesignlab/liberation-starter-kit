@@ -61,6 +61,8 @@ Storybook의 기본 분류는 다음과 같습니다.
 6. Stage별 섹션 ID·순서·개수는 고정됩니다. 브랜드마다 별도 JSX 리포트 템플릿을 만들지 않습니다.
 7. 등록은 전달 절차의 일부입니다. 검증만 통과하고 Storybook에 등록되지 않은 패키지는 완료로 보지 않습니다.
 8. 검증과 사용자 승인은 다릅니다. 등록 직후 리뷰 상태는 `pending`입니다.
+9. Stage 1·2의 색상은 레이어별 스와치, 타이포그래피는 Display–Caption 웹 계층으로 고정 표시합니다. 링크한 웹폰트와 미리보기 값은 문서 전용이며 기본 테마 토큰에는 적용하지 않습니다.
+10. Stage 1·2의 버벌 브랜딩은 브랜드 목적·본질, 포지셔닝·약속, 핵심 가치·브랜드 메시지, 보이스, USP·증거·CTA의 5단계 공통 위계로 표시합니다.
 
 세부 규격은 [Brand Research Pipeline Specification](docs/brand-research-pipeline-spec.md)을 기준으로 합니다.
 
@@ -100,6 +102,32 @@ Stage 1은 유료 API를 필수로 요구하지 않습니다. 공개 공식 페�
 
 브라우저 자동화 역시 기본 절차가 아닙니다. Playwright, Chrome MCP, 스크린샷 기반 검사는 사용자가 명시적으로 요청한 경우에만 수행합니다.
 
+### 경량 병렬 실행
+
+전체 라우터의 `parallel_single_brand` 모드는 Stage를 건너뛰지 않고 현재 Stage 안의 독립 작업만 병렬화합니다. 소스·방향·shot plan을 먼저 고정한 뒤 루트 코디네이터가 고정 작업 계획을 생성합니다.
+
+```bash
+python3 .agents/skills/reconstruct-brand-system/scripts/plan_stage_jobs.py \
+  <pipeline-directory-or-state> --stage stage_1
+```
+
+- worker는 생성된 `job-spec.json`과 자기 `.work/<job-id>/`만 사용합니다.
+- worker는 pipeline state, 정본 JSON, review, registry를 수정하거나 라우터·검증 명령을 실행하지 않습니다.
+- 루트만 `update_job.py`로 상태를 기록하고 결과를 병합해 정본을 한 번 작성합니다.
+- 완료된 `result.json`의 Stage·Job identity, lineage, gap, 소유 파일 경계가 맞지 않으면 승인 barrier를 통과할 수 없습니다.
+- Stage 1은 세 조사 lane이 같은 10분 deadline을 공유합니다.
+- Stage 2 방향 질문은 한 번의 통합 direction lock을 기본으로 하며, 답변이 충돌할 때만 한 번 더 묻습니다.
+- 외부 이미지 병렬 실행은 기본값이 `pilot_pending`입니다. 공급자 동시 처리·비용·rate limit·시각 일관성을 확인한 뒤에만 최대 두 worker로 활성화합니다.
+
+측정은 검증을 추가로 돌리지 않고 read-only 요약 명령으로 확인합니다.
+
+```bash
+python3 .agents/skills/reconstruct-brand-system/scripts/summarize_parallel_run.py \
+  <pipeline-directory-or-state> --stage stage_1
+```
+
+첫 운영 기준은 직렬 기준 대비 Stage 시작→리뷰 대기 시간이 20% 이상 줄고, Job 유실과 첫 finalization·revision 악화가 없는 것입니다. 병렬화는 대기시간을 줄이지만 총 worker compute는 늘어날 수 있습니다.
+
 ### 검증과 승인
 
 전체 Stage 상태는 다음처럼 움직입니다.
@@ -111,13 +139,16 @@ active
   → accepted → next Stage
 ```
 
-- 최초 작성이나 정본 수정 후에는 해당 Stage validator를 한 번 실행합니다.
+- 최초 작성이나 정본 수정 후에는 finalizer 내부에서 해당 Stage validator를 한 번 실행합니다.
 - finalizer는 같은 실행에서 정규화, 등록, drift 검사를 완료하고 `registration-receipt.json`을 남깁니다.
+- finalizer가 유일한 검증 진입점입니다. 별도 validator 사전 실행, 통과 후 수동 재검토·근거 재계수·다이제스트 재확인은 하지 않습니다.
 - 사용자 승인 시에는 기존 receipt와 등록 상태를 확인한 뒤 리뷰 데이터만 같은 report ID로 갱신합니다.
 - 승인 과정에서 현재 Stage나 상위 Stage validator를 다시 실행하지 않습니다.
 - 정본 JSON, provenance, 이미지가 바뀐 경우에만 전체 finalization을 다시 수행합니다.
 
 이 구조는 중복 재검증을 제거하면서도 등록 누락과 stale Storybook 데이터를 막습니다.
+
+성공한 내부 명령의 상세 로그는 숨기고 `FINALIZED` 한 줄에 Stage, report ID, 검증·등록·drift 검사·전체 소요시간을 표시합니다. 실패한 경우에만 해당 validator나 등록 명령의 진단을 노출합니다. 사용자 전달에서도 내부 검증 항목을 다시 열거하지 않고 finalization 통과와 리뷰 대기 상태만 요약합니다.
 
 ## Storybook 리포트 등록
 
@@ -173,7 +204,7 @@ pnpm lint
 ```
 
 - `check-brand-report-contracts` — HTML 금지, 고정 섹션, 어댑터와 등록 계약 검사
-- `test-brand-report-pipeline` — 임시 프로젝트에서 Stage 1–3 fixture 전체 경로 검사
+- `test-brand-report-pipeline` — 임시 프로젝트에서 고정 Job 계획, fake-worker 병렬 wave, barrier와 Stage 1–3 전체 경로 검사
 - `lint` — React, Storybook, 스크립트 정적 검사
 
 fixture 테스트는 격리된 임시 프로젝트만 사용하므로 실제 저장소 registry에 예시 브랜드를 남기지 않습니다. Storybook 정적 빌드나 브라우저 기반 시각 검사는 사용자가 별도로 요청한 경우에 수행합니다.
@@ -226,6 +257,8 @@ pnpm generate-rules
 | `pnpm unregister-brand-report -- <id>` | 등록된 Storybook 리포트 제거 |
 | `pnpm check-brand-report-contracts` | 고정 리포트 계약 검사 |
 | `pnpm test-brand-report-pipeline` | 격리된 3단계 fixture 테스트 |
+| `python3 .agents/skills/reconstruct-brand-system/scripts/plan_stage_jobs.py <pipeline> --stage <stage>` | 현재 Stage 고정 Job 계획 생성 |
+| `python3 .agents/skills/reconstruct-brand-system/scripts/summarize_parallel_run.py <pipeline> --stage <stage>` | 병렬 Job·wave 실측 요약 |
 | `pnpm lint` | ESLint 실행 |
 | `pnpm generate-rules` | Rules·Skills 관계 데이터 갱신 |
 | `pnpm aside:check` | 프로젝트 로컬 Aside 환경 진단 |

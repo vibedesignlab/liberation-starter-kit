@@ -27,6 +27,10 @@ MOODBOARD_KEYS = (
 )
 TOKEN_RELATIONSHIPS = {"keep", "tune", "new"}
 TOKEN_FIELDS = ("role", "relationship", "source_basis", "target_direction", "landing_use", "status")
+TYPOGRAPHY_ROLES = {"display", "h1", "h2", "h3", "body", "label", "caption"}
+TYPOGRAPHY_FIELDS = (
+    "font_family", "font_source_id", "font_size", "font_weight", "line_height", "letter_spacing", "specimen",
+)
 DISALLOWED_KEYS = {
     "approval_questions",
     "component_system",
@@ -123,6 +127,8 @@ def source_errors(case: Path) -> list[str]:
     for key in ("analysis_layers", "design_system", "grammar_rules", "handoff", "downstream_contract"):
         if not nonempty(source_model.get(key)):
             errors.append(f"source JSON lacks core {key}")
+    if str(source_model.get("schema_version", "")).startswith("1.2") and not nonempty(source_model.get("verbal_branding")):
+        errors.append("source JSON schema 1.2 lacks core verbal_branding")
     if nested(source_model, "handoff", "target_direction") is not None:
         errors.append("source JSON already contains a target direction")
     return errors
@@ -304,7 +310,7 @@ def direction_errors(case: Path) -> list[str]:
         if not nonempty(verbal.get(key)):
             errors.append(f"verbal branding has blank {key}")
     if is_v11(model):
-        for key in ("brand_message", "brand_values", "family_usp", "product_usps", "selected_narrative_route", "message_visual_map"):
+        for key in ("brand_purpose", "brand_essence", "brand_message", "brand_values", "family_usp", "product_usps", "selected_narrative_route", "message_visual_map"):
             if not nonempty(verbal.get(key)):
                 errors.append(f"Stage 2 schema 1.1 verbal branding has blank {key}")
         values = verbal.get("brand_values") if isinstance(verbal.get("brand_values"), list) else []
@@ -367,6 +373,8 @@ def direction_errors(case: Path) -> list[str]:
         errors.append("product-image direction needs at least four usable image-role or production groups")
 
     token_model = sections.get("design_token_direction") if isinstance(sections.get("design_token_direction"), dict) else {}
+    if token_model.get("documentation_only") is not True:
+        errors.append("design-token direction must set documentation_only true")
     for area in ("color", "typography", "spacing", "layout"):
         records = token_model.get(area) if isinstance(token_model.get(area), list) else []
         if not records:
@@ -381,6 +389,51 @@ def direction_errors(case: Path) -> list[str]:
                     errors.append(f"design-token {area} record {index} has blank {field}")
             if str(record.get("relationship", "")).lower() not in TOKEN_RELATIONSHIPS:
                 errors.append(f"design-token {area} record {index} has invalid relationship")
+
+    color_records = token_model.get("color") if isinstance(token_model.get("color"), list) else []
+    for index, record in enumerate(color_records, start=1):
+        if not isinstance(record, dict):
+            continue
+        if not nonempty(record.get("color_layer")):
+            errors.append(f"design-token color record {index} has blank color_layer")
+        value = str(record.get("value", "")).strip()
+        if not re.match(r"^(?:#[0-9a-f]{3,8}|rgba?\(|hsla?\(|(?:ok)?lch\(|lab\(|color\()", value, re.IGNORECASE):
+            errors.append(f"design-token color record {index} has no renderable value")
+
+    typography_sources = token_model.get("typography_sources") if isinstance(token_model.get("typography_sources"), list) else []
+    if not typography_sources and not nonempty(token_model.get("webfont_gap")):
+        errors.append("design-token typography needs typography_sources or an explicit webfont_gap")
+    source_ids: set[str] = set()
+    for index, source in enumerate(typography_sources, start=1):
+        if not isinstance(source, dict):
+            errors.append(f"typography source {index} is not an object")
+            continue
+        source_id = str(source.get("id") or source.get("source_id") or "").strip()
+        if not source_id or not nonempty(source.get("family")):
+            errors.append(f"typography source {index} needs id and family")
+        else:
+            source_ids.add(source_id)
+        source_url = str(source.get("url") or source.get("source_url") or "").strip()
+        if not re.match(r"^https?://", source_url, re.IGNORECASE):
+            errors.append(f"typography source {index} has no http(s) URL")
+
+    typography_records = token_model.get("typography") if isinstance(token_model.get("typography"), list) else []
+    found_roles: set[str] = set()
+    for index, record in enumerate(typography_records, start=1):
+        if not isinstance(record, dict):
+            continue
+        role = str(record.get("role", "")).strip().lower()
+        if role in TYPOGRAPHY_ROLES:
+            found_roles.add(role)
+        for field in TYPOGRAPHY_FIELDS:
+            if not nonempty(record.get(field)):
+                errors.append(f"design-token typography record {index} has blank {field}")
+        font_source_id = str(record.get("font_source_id", "")).strip()
+        if source_ids and font_source_id not in source_ids:
+            errors.append(f"design-token typography record {index} references unknown font_source_id")
+    missing_roles = sorted(TYPOGRAPHY_ROLES - found_roles)
+    if missing_roles:
+        errors.append(f"design-token typography hierarchy is missing roles {missing_roles}")
 
     moodboard = model.get("moodboard_inputs") if isinstance(model.get("moodboard_inputs"), dict) else {}
     for key in MOODBOARD_KEYS:

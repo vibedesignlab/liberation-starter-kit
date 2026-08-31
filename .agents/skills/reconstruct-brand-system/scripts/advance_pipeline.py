@@ -15,6 +15,7 @@ EXPECTED_REVIEW_STAGE = {
     "stage_2": "extended_brand_anatomy",
     "stage_3": "landing_materials",
 }
+PARALLEL_JOB_PLAN = Path(__file__).resolve().parent.parent / "assets" / "parallel-job-plan.json"
 
 
 def now() -> str:
@@ -77,24 +78,108 @@ def append_feedback(review: dict, decision: str, feedback: str) -> None:
     review["user_feedback"] = entries
 
 
-def parallel_barrier_errors(state: dict, stage_id: str) -> list[str]:
+def path_within(path: Path, root: Path) -> bool:
+    try:
+        path.relative_to(root)
+        return True
+    except ValueError:
+        return False
+
+
+def parallel_barrier_errors(state: dict, stage_id: str, package: Path) -> list[str]:
     execution = state.get("execution")
     if not isinstance(execution, dict) or execution.get("mode") != "parallel_single_brand":
         return []
+    if execution.get("job_plan_version") != "1.0.0":
+        return [f"{stage_id} has no fixed parallel job plan"]
     jobs = execution.get("jobs") if isinstance(execution.get("jobs"), list) else []
     stage_jobs = [item for item in jobs if isinstance(item, dict) and item.get("stage") == stage_id]
     reasons = execution.get("serial_fallback_reason")
     fallback = str(reasons.get(stage_id, "")).strip() if isinstance(reasons, dict) else ""
     if not stage_jobs and not fallback:
         return [f"{stage_id} has no parallel job record or serial fallback reason"]
+    errors = []
+    job_ids = [str(item.get("job_id", "")).strip() for item in stage_jobs]
+    if not all(job_ids) or len(job_ids) != len(set(job_ids)):
+        errors.append(f"{stage_id} parallel job ids are missing or duplicated")
+    if fallback:
+        if job_ids != ["serial_fallback"]:
+            errors.append(f"{stage_id} serial fallback does not use the fixed fallback job")
+    else:
+        try:
+            job_plan = load_json(PARALLEL_JOB_PLAN)
+            expected_ids = [
+                str(job.get("job_id", ""))
+                for wave in job_plan.get("stages", {}).get(stage_id, {}).get("waves", [])
+                for job in wave.get("jobs", [])
+            ]
+            if job_ids != expected_ids:
+                errors.append(f"{stage_id} jobs do not match the fixed parallel manifest")
+        except ValueError:
+            errors.append("fixed parallel job manifest is unreadable")
     unfinished = [
         str(item.get("job_id", "?"))
         for item in stage_jobs
         if item.get("status") not in {"completed", "skipped"}
     ]
     if unfinished:
-        return [f"{stage_id} parallel jobs are not at the merge barrier: {', '.join(unfinished)}"]
-    return []
+        errors.append(f"{stage_id} parallel jobs are not at the merge barrier: {', '.join(unfinished)}")
+    if stage_jobs and all(item.get("status") == "skipped" for item in stage_jobs) and not fallback:
+        errors.append(f"{stage_id} skipped every parallel job without a serial fallback reason")
+
+    seen_outputs = set()
+    for item in stage_jobs:
+        job_id = str(item.get("job_id", "")).strip()
+        if item.get("status") == "skipped":
+            if not str(item.get("note", "")).strip():
+                errors.append(f"{stage_id}/{job_id} skipped without a reason")
+            continue
+        if item.get("status") != "completed":
+            continue
+        work_root = (package / ".work" / job_id).resolve()
+        expected_raw = str(item.get("expected_output", "")).strip()
+        expected = Path(expected_raw).expanduser().resolve() if expected_raw else None
+        if expected is None or not path_within(expected, work_root) or not expected.is_file():
+            errors.append(f"{stage_id}/{job_id} required result is missing or outside its work directory")
+            continue
+        expected_key = str(expected)
+        if expected_key in seen_outputs:
+            errors.append(f"{stage_id} parallel jobs share an output: {expected}")
+        seen_outputs.add(expected_key)
+        try:
+            result = load_json(expected)
+        except ValueError:
+            errors.append(f"{stage_id}/{job_id} result is not valid JSON")
+            continue
+        if (
+            result.get("artifact_type") != "brand_pipeline_job_result"
+            or result.get("stage") != stage_id
+            or result.get("job_id") != job_id
+            or result.get("status") != "completed"
+        ):
+            errors.append(f"{stage_id}/{job_id} result identity is invalid")
+            continue
+        for field in ("lineage", "unresolved_gaps", "files"):
+            if not isinstance(result.get(field), list):
+                errors.append(f"{stage_id}/{job_id} result {field} is not an array")
+        recorded_outputs = item.get("outputs") if isinstance(item.get("outputs"), list) else []
+        recorded_resolved = {
+            str(Path(raw).expanduser().resolve())
+            for raw in recorded_outputs
+            if isinstance(raw, str) and raw.strip()
+        }
+        if expected_key not in recorded_resolved:
+            errors.append(f"{stage_id}/{job_id} expected result was not recorded by the root")
+        declared_files = result.get("files") if isinstance(result.get("files"), list) else []
+        for raw in declared_files:
+            if not isinstance(raw, str) or not raw.strip():
+                errors.append(f"{stage_id}/{job_id} declares an invalid worker file")
+                continue
+            candidate = Path(raw).expanduser()
+            created = (candidate if candidate.is_absolute() else work_root / candidate).resolve()
+            if not path_within(created, work_root) or not created.is_file():
+                errors.append(f"{stage_id}/{job_id} worker file is missing or outside its work directory")
+    return errors
 
 
 def wire_next_input(stage_id: str, source_package: Path, next_package: Path) -> None:
@@ -195,7 +280,7 @@ def main() -> int:
         print(f"ERROR: unsupported review status: {decision}")
         return 1
 
-    barrier_errors = parallel_barrier_errors(state, stage_id)
+    barrier_errors = parallel_barrier_errors(state, stage_id, package)
     if barrier_errors:
         for error in barrier_errors:
             print(f"ERROR: {error}")

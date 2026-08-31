@@ -1,5 +1,6 @@
 import {
   cardGridBlock,
+  colorTokenGuideBlock,
   codeBlock,
   evidenceGridBlock,
   keyValueTable,
@@ -7,6 +8,7 @@ import {
   proseBlock,
   tableBlock,
   typographySpecimensBlock,
+  verbalHierarchyBlock,
 } from './blocks.js';
 import {
   asArray,
@@ -94,12 +96,36 @@ function areaBlocks(area) {
   return blocks;
 }
 
-function typographyRows(area) {
-  const source = asRecord(area);
-  return [
-    ...asArray(source.observed_references),
-    ...asArray(source.source_tables).flatMap((table) => asArray(asRecord(table).rows)),
-  ].filter(isRecord);
+function topicNotes(layer, titlePattern) {
+  const topic = asArray(asRecord(layer).topics)
+    .map(asRecord)
+    .find((item) => titlePattern.test(firstText(item.title)));
+  return firstText(asArray(topic?.notes));
+}
+
+function sourceVerbalBranding(model, layers) {
+  if (hasContent(model.verbal_branding)) return model.verbal_branding;
+
+  const synthesis = asRecord(layers.source_synthesis);
+  const strategy = asRecord(layers.strategy);
+  const verbal = asRecord(layers.verbal_system);
+  return {
+    brand_purpose: { status: 'gap', statement: 'Brand purpose was not explicitly synthesized in this source package.' },
+    brand_essence: topicNotes(synthesis, /core causal model|contrasting qualities/iu),
+    positioning: topicNotes(synthesis, /source positioning/iu),
+    brand_promise: topicNotes(strategy, /promise/iu),
+    core_values: { status: 'gap', statement: 'Core brand values were not explicitly synthesized in this source package.' },
+    brand_message: { status: 'gap', statement: 'A single source brand message was not explicitly synthesized in this package.' },
+    voice_principles: [
+      topicNotes(verbal, /lexicon|semantic territories/iu),
+      topicNotes(verbal, /syntax|rhetoric|cadence|emotional temperature/iu),
+    ].filter(Boolean),
+    activation_principles: [
+      topicNotes(verbal, /message hierarchy/iu),
+      topicNotes(verbal, /naming behavior/iu),
+      topicNotes(verbal, /campaign|product|ui|transactional|support|error/iu),
+    ].filter(Boolean),
+  };
 }
 
 function sectionEvidence(layer, evidence, layerKey) {
@@ -232,11 +258,21 @@ export function adaptSourceBrandAnalysis(input, context = {}) {
   MATERIAL_LAYER_SECTIONS.forEach(([id, layerKey, fallbackTitle]) => {
     const layer = asRecord(layers[layerKey]);
     const claimDomain = CLAIM_DOMAIN_BY_LAYER[layerKey];
+    const verbalBlock = layerKey === 'verbal_system'
+      ? verbalHierarchyBlock(
+        'Verbal brand hierarchy',
+        sourceVerbalBranding(model, layers),
+        {
+          description: 'Source-observed and bounded inferred decisions are synthesized from foundation through activation. Explicit gaps remain visible.',
+        },
+      )
+      : null;
     addSection({
       id,
       title: firstText(layer.title, fallbackTitle),
       insight: layerInsight(layer, decisionIndex, layerKey),
       blocks: [
+        verbalBlock,
         ...asArray(layer.topics).flatMap(topicBlocks),
         claimDomain
           ? cardGridBlock('Material claims', decisionIndex[claimDomain], { idPrefix: 'claim' })
@@ -266,10 +302,24 @@ export function adaptSourceBrandAnalysis(input, context = {}) {
 
   const globalLayer = asRecord(layers.global_brand_system);
   const globalBlocks = asArray(globalLayer.topics).flatMap(topicBlocks);
+  globalBlocks.push(
+    colorTokenGuideBlock(
+      'Color token guide',
+      designSystem.brand_color_scheme,
+      { description: 'Source-observed color values shown by identity, status, and UI layer. Documentation only.' },
+    ),
+    typographySpecimensBlock(
+      'Typography hierarchy',
+      designSystem.typography_hierarchy,
+      {
+        explicitValueStatus: 'observed',
+        description: 'Source-observed typography and verified webfonts rendered as a standard web hierarchy. Documentation only.',
+      },
+    ),
+  );
   ['brand_color_scheme', 'typography_hierarchy', 'spacing_strategy', 'layout_strategy']
     .forEach((key) => globalBlocks.push(...areaBlocks(designSystem[key])));
   globalBlocks.push(
-    typographySpecimensBlock('Typography specimens', typographyRows(designSystem.typography_hierarchy)),
     proseBlock('Implementation boundary', [designSystem.implementation_boundary]),
   );
   addSection({
