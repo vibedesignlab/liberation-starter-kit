@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
@@ -10,10 +11,13 @@ import {
   NewsletterCTA,
 } from '../components/mora-landing';
 
-import { motion, useTransform } from 'framer-motion';
+// eslint-disable-next-line no-unused-vars
+import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
 import { HorizontalScrollContainer, useHorizontalScrollProgress } from '../components/content-transition';
+import { VideoScrubbing } from '../components/scroll';
 
 import landingContent from '../data/mora/content';
+import transitionVideo from '../assets/video/mora-transition-r7.mp4';
 
 const {
   navigation,
@@ -152,6 +156,23 @@ function RecipeSlideCard({ slide, index, total }) {
 }
 
 export default function MoraLandingPage() {
+  const transitionRef = useRef(null);
+  const reduceMotion = useReducedMotion();
+  const { scrollYProgress: transitionScrollProgress } = useScroll({
+    target: transitionRef,
+    offset: ['start start', 'end end'],
+  });
+  const transitionCopyY = useTransform(
+    transitionScrollProgress,
+    [0, 0.12, 0.42],
+    ['0vh', '0vh', '-58vh']
+  );
+  const transitionCopyOpacity = useTransform(
+    transitionScrollProgress,
+    [0, 0.28, 0.42],
+    [1, 1, 0]
+  );
+
   return (
     <Box sx={{ bgcolor: 'background.default', color: 'text.primary' }}>
 
@@ -175,16 +196,84 @@ export default function MoraLandingPage() {
         </Typography>
       </FullBleedSection>
 
-      {/* Feature — center */}
-      <FullBleedSection image={sections.transition.image} alt={sections.transition.imageAlt} textPosition="center">
-        <Typography variant="h1" sx={{ color: 'background.default', whiteSpace: 'pre-line' }}>
-          {sections.transition.headline}
-        </Typography>
-      </FullBleedSection>
+      {/* Feature — scroll-scrubbed process transition */}
+      <Box
+        ref={transitionRef}
+        component="section"
+        aria-label={sections.transition.imageAlt}
+        sx={{
+          position: 'relative',
+          height: { xs: '260vh', md: '320vh' },
+          bgcolor: 'background.default',
+        }}
+      >
+        <Box
+          sx={{
+            position: 'sticky',
+            top: 0,
+            width: '100%',
+            height: '100vh',
+            overflow: 'hidden',
+            bgcolor: 'background.default',
+          }}
+        >
+          <VideoScrubbing
+            src={transitionVideo}
+            containerRef={transitionRef}
+            aria-hidden="true"
+            sx={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+            }}
+          />
+          <Box
+            sx={{
+              position: 'absolute',
+              inset: 0,
+              zIndex: 1,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              px: '24px',
+              pointerEvents: 'none',
+            }}
+          >
+            <motion.div
+              style={{
+                y: reduceMotion ? 0 : transitionCopyY,
+                opacity: reduceMotion ? 1 : transitionCopyOpacity,
+                width: '100%',
+              }}
+            >
+              <Typography
+                variant="h1"
+                sx={{
+                  color: 'background.default',
+                  fontSize: 'clamp(3.5rem, 8vw, 8.5rem)',
+                  lineHeight: 0.94,
+                  letterSpacing: '-0.035em',
+                  whiteSpace: 'pre-line',
+                  textAlign: 'center',
+                  maxWidth: 1200,
+                  mx: 'auto',
+                }}
+              >
+                {sections.transition.headline}
+              </Typography>
+            </motion.div>
+          </Box>
+        </Box>
+      </Box>
 
       {/* Recipe Scroll — Core 4 etchings with descriptions */}
       <Box id="transformation">
-        <HorizontalScrollContainer gap="32px" padding="40px">
+        <HorizontalScrollContainer
+          gap="32px"
+          padding="40px"
+          backgroundColor="background.default"
+          seamlessEntry
+        >
           {recipeSlides.map((slide, i) => (
             <HorizontalScrollContainer.Slide key={slide.id}>
               <RecipeSlideCard slide={slide} index={i} total={recipeSlides.length} />

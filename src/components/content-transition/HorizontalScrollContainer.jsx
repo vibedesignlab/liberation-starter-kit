@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect, createContext, useContext } from 'react';
+import React, { useRef, useState, useLayoutEffect, createContext, useContext } from 'react';
 import Box from '@mui/material/Box';
 // eslint-disable-next-line no-unused-vars
 import { motion, useScroll, useTransform, useMotionValueEvent } from 'framer-motion';
@@ -10,6 +10,7 @@ const ScrollProgressContext = createContext(null);
  *
  * @returns {import('framer-motion').MotionValue<number>|null} scrollYProgress (0-1)
  */
+// eslint-disable-next-line react-refresh/only-export-components
 export function useHorizontalScrollProgress() {
   return useContext(ScrollProgressContext);
 }
@@ -26,6 +27,7 @@ export function useHorizontalScrollProgress() {
  * @param {string} gap - 슬라이드 간 간격 (CSS 단위) [Optional, 기본값: '0px']
  * @param {string} padding - 좌우 패딩 (CSS 단위) [Optional, 기본값: '0px']
  * @param {string} backgroundColor - 배경색 [Optional, 기본값: 'transparent']
+ * @param {boolean} seamlessEntry - 앞 sticky 섹션의 마지막 화면과 한 viewport 겹쳐 즉시 인계 [Optional]
  * @param {function} onScrollProgress - 스크롤 진행도 콜백 (0-1) [Optional]
  *
  * Example usage:
@@ -39,24 +41,34 @@ function HorizontalScrollContainer({
   gap = '0px',
   padding = '0px',
   backgroundColor = 'transparent',
+  seamlessEntry = false,
   onScrollProgress,
 }) {
   const containerRef = useRef(null);
   const trackRef = useRef(null);
   const [scrollDistance, setScrollDistance] = useState(0);
+  const [entryOverlap, setEntryOverlap] = useState(0);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const measure = () => {
       if (!trackRef.current) return;
       const trackWidth = trackRef.current.scrollWidth;
       const viewportWidth = window.innerWidth;
       setScrollDistance(Math.max(0, trackWidth - viewportWidth));
+
+      const nextOverlap = seamlessEntry ? window.innerHeight : 0;
+      setEntryOverlap(nextOverlap);
     };
 
     measure();
+    const resizeObserver = new ResizeObserver(measure);
+    resizeObserver.observe(trackRef.current);
     window.addEventListener('resize', measure);
-    return () => window.removeEventListener('resize', measure);
-  }, [children, gap, padding]);
+    return () => {
+      resizeObserver.disconnect();
+      window.removeEventListener('resize', measure);
+    };
+  }, [children, gap, padding, seamlessEntry]);
 
   const containerHeight = window.innerHeight + scrollDistance;
 
@@ -83,6 +95,8 @@ function HorizontalScrollContainer({
         sx={ {
           height: containerHeight,
           position: 'relative',
+          mt: seamlessEntry ? `${-entryOverlap}px` : 0,
+          zIndex: seamlessEntry ? 1 : 'auto',
         } }
       >
         <Box

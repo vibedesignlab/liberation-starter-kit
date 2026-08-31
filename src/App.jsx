@@ -1,8 +1,10 @@
+import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import Lenis from 'lenis';
 
 import { defaultTheme as theme } from './styles/themes';
 import MoraLandingPage from './pages/MoraLandingPage';
@@ -28,6 +30,22 @@ function HomePage() {
 }
 
 function App() {
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    return () => lenis.destroy();
+  }, []);
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />

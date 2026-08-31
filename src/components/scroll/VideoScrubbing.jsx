@@ -1,5 +1,8 @@
 import { useRef, useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
+import useMediaQuery from '@mui/material/useMediaQuery';
+
+const DEFAULT_SCROLL_RANGE = Object.freeze({ start: 0, end: 1 });
 
 /**
  * VideoScrubbing Component
@@ -20,12 +23,13 @@ const VideoScrubbing = ({
   src,
   containerRef = null,
   sx = {},
-  scrollRange = { start: 0, end: 1 },
+  scrollRange = DEFAULT_SCROLL_RANGE,
   onProgressChange,
   ...props
 }) => {
   const videoRef = useRef(null);
   const [isInView, setIsInView] = useState(false);
+  const reduceMotion = useMediaQuery('(prefers-reduced-motion: reduce)');
 
   useEffect(() => {
     const video = videoRef.current;
@@ -44,7 +48,7 @@ const VideoScrubbing = ({
     return () => {
       video.removeEventListener('loadeddata', handleLoadedData);
     };
-  }, []);
+  }, [src]);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -66,37 +70,33 @@ const VideoScrubbing = ({
     const video = videoRef.current;
     if (!video || !isInView) return;
 
+    if (reduceMotion) {
+      video.currentTime = 0;
+      onProgressChange?.(0);
+      return;
+    }
+
     let animationFrameId = null;
-    let lastScrollTime = 0;
-    const throttleDelay = 16;
 
     const updateVideoTime = () => {
-      const now = Date.now();
-      if (now - lastScrollTime < throttleDelay) {
-        animationFrameId = requestAnimationFrame(updateVideoTime);
-        return;
-      }
-      lastScrollTime = now;
+      animationFrameId = null;
 
       let progress = 0;
 
       if (containerRef && containerRef.current) {
         const container = containerRef.current;
-        const containerHeight = container.offsetHeight;
-        const containerOffsetTop = container.offsetTop;
-        const scrollY = window.scrollY || window.pageYOffset;
-
-        progress = (scrollY - containerOffsetTop) / containerHeight;
+        const rect = container.getBoundingClientRect();
+        const scrollableDistance = Math.max(1, container.offsetHeight - window.innerHeight);
+        progress = -rect.top / scrollableDistance;
       } else {
-        const videoHeight = video.offsetHeight;
-        const videoOffsetTop = video.offsetTop;
-        const scrollY = window.scrollY || window.pageYOffset;
-
-        progress = (scrollY - videoOffsetTop) / videoHeight;
+        const rect = video.getBoundingClientRect();
+        const travelDistance = Math.max(1, window.innerHeight + rect.height);
+        progress = (window.innerHeight - rect.top) / travelDistance;
       }
 
       const { start, end } = scrollRange;
-      progress = (progress - start) / (end - start);
+      const range = Math.max(0.0001, end - start);
+      progress = (progress - start) / range;
       progress = Math.max(0, Math.min(1, progress));
 
       if (onProgressChange) {
@@ -110,26 +110,26 @@ const VideoScrubbing = ({
         }
       }
 
-      animationFrameId = requestAnimationFrame(updateVideoTime);
     };
 
-    animationFrameId = requestAnimationFrame(updateVideoTime);
-
-    const handleScroll = () => {
+    const requestUpdate = () => {
       if (!animationFrameId) {
         animationFrameId = requestAnimationFrame(updateVideoTime);
       }
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    requestUpdate();
+    window.addEventListener('scroll', requestUpdate, { passive: true });
+    window.addEventListener('resize', requestUpdate);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', requestUpdate);
+      window.removeEventListener('resize', requestUpdate);
       if (animationFrameId) {
         cancelAnimationFrame(animationFrameId);
       }
     };
-  }, [isInView, containerRef, scrollRange, onProgressChange]);
+  }, [isInView, containerRef, scrollRange, onProgressChange, reduceMotion]);
 
   return (
     <Box

@@ -25,6 +25,10 @@ export default {
       control: 'color',
       description: '배경색',
     },
+    seamlessEntry: {
+      control: 'boolean',
+      description: '앞 sticky 섹션과 한 viewport를 겹쳐 마지막 화면 직후 가로 섹션이 전체 화면을 인계합니다.',
+    },
     onScrollProgress: {
       action: 'scrollProgress',
       description: '스크롤 진행도 콜백 (0-1)',
@@ -93,6 +97,7 @@ export const Default = {
   args: {
     gap: '24px',
     padding: '40px',
+    seamlessEntry: false,
   },
   render: (args) => (
     <Box>
