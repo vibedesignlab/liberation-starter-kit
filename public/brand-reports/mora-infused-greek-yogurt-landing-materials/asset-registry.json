@@ -2,32 +2,34 @@
   "schema_version": "1.1.0",
   "artifact_type": "landing_product_asset_registry",
   "stage": "landing_materials",
-  "generated_at": "2026-08-31T12:40:00Z",
-  "active_revision": "R5-layout-aware",
+  "generated_at": "2026-08-31T13:40:29.000Z",
+  "active_revision": "R7-transition-video",
   "assets": [
     {
-      "asset_id": "ST3-R5-HERO-SELECTION-76",
+      "asset_id": "ST3-R6-HERO-SELECTION-WHEY-99",
       "product_name": "MORA Brand World",
-      "role": "layout_aware_landing_hero_selection",
-      "communication_job": "첫 화면에서 여성 메이커가 원재료를 승인·제외하는 한 판단을 보여 주고 좌측 중앙 카피를 보존한다.",
-      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-01-hero-selection-left-safe-3x2-497d1ecd4032fe2e4436263456323707d311ac69294a4bf8104827df09b4d590.png",
-      "prompt_path": "prompts/revision-r5-layout-aware/ST3-R5-HERO-SELECTION-01.md",
-      "subject": "Female maker selecting and rejecting raw materials in the lived-in MORA workshop",
+      "role": "layout_aware_landing_hero_selection_whey",
+      "communication_job": "첫 화면에서 여성 메이커의 원재료 승인·제외 판단과 농축 요거트·유청의 물리적 분리를 함께 보여 주며 좌측 중앙 카피를 보존한다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r6-01-hero-selection-whey-left-safe-3x2-600a98469e0d372751dfb0f59b58e6cc5fe93abd0bbc2ded24e60ed59033799f.png",
+      "prompt_path": "prompts/revision-r6-feedback/hero/ST3-R6-HERO-WHEY-01.md",
+      "subject": "Female maker selecting raw materials beside retained Greek-yogurt body and gravity-collected whey",
       "aspect_ratio": "3:2 landscape",
-      "delivery_dimensions": "3072 × 2048",
-      "generation_provenance": "OpenAI built-in image generation; untouched native preserved; high-resolution delivery master is an explicitly recorded resample, not newly generated optical detail. Delivery SHA-256 497d1ecd4032fe2e4436263456323707d311ac69294a4bf8104827df09b4d590.",
+      "delivery_dimensions": "6144 × 4096",
+      "generation_provenance": "OpenAI built-in image generation using the accepted R5 hero as composition and world reference; untouched R6 native preserved. The 6144 × 4096 delivery master is a documented high-quality resample when native output is smaller and does not claim resampling created new optical detail. Delivery SHA-256 600a98469e0d372751dfb0f59b58e6cc5fe93abd0bbc2ded24e60ed59033799f.",
       "reference_lineage": [
         "Accepted Stage 2 Revision 10 strategy",
         "Stage 2 Revision 16 analog editorial maker/workshop family",
-        "Stage 3 R5 layout slot contract"
+        "Stage 3 R5 layout-aware hero composition",
+        "Stage 3 R6 user feedback: higher-detail hero with visible yogurt-body and whey separation"
       ],
       "invariants": [
-        "exact source ratio matches the rendered landing slot",
-        "critical evidence remains inside the declared safe area under object-fit cover",
+        "exact 3:2 source matches the FullBleedSection landing slot",
+        "left 42% remains uninterrupted low-frequency copy space",
+        "maker, selection decision, retained yogurt body and whey collector remain inside the inner 82% safe area",
+        "retained body sits above cloth and pale translucent whey collects directly below under gravity",
         "believable lived-in urban food workshop with hygienic stainless contact zones",
-        "restrained visible analog magazine grain without fake distress",
-        "female maker authority is shown by one observable decision or action, never a gender stereotype",
-        "left 42% remains uninterrupted low-frequency copy space"
+        "strict-front 45–55 mm environmental editorial camera with restrained visible analog magazine grain",
+        "female maker authority is shown by an observable decision, never a gender stereotype"
       ],
       "allowed_variation": [
         "minor responsive edge trim inside the declared sacrificial zone only"
@@ -763,167 +765,311 @@
       "delivery_dimensions": "3072 × 2048"
     },
     {
-      "asset_id": "ST3-ETCH-R2-46",
+      "asset_id": "ST3-R6-ETCH-THYME-HONEY-100",
       "product_name": "Thyme Honey",
-      "role": "ingredient_process_etching",
+      "role": "ingredient_process_etching_breathing_room",
       "communication_job": "타임과 꿀이 시럽과 호박색 리본으로 남는 경로를 설명한다.",
-      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-etch-thyme-honey-square-4129d745d65cc3ace9884a714228cc9b06ebe880c8d4d46db0ca2952e1bcb2e4.png",
-      "prompt_path": "prompts/revision-r2/etchings/ST3-ETCH-R2-46-thyme-honey.md",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r6-etch-thyme-honey-square-9e559cc3bd2ebd9dd8d37e333204376b51342dea8ebd13c939f0046f531062f5.png",
+      "prompt_path": "prompts/revision-r6-feedback/etchings/core/st3-r6-etch-thyme-honey-square.md",
       "subject": "Thyme and honey process",
       "aspect_ratio": "1:1 square",
-      "generation_provenance": "OpenAI image generation; generated and QA-locked 2026-08-29 under MORA Revision R2. R5 preserves the artwork and resamples it to the layout delivery master; no new drawn detail is claimed. Delivery SHA-256 4129d745d65cc3ace9884a714228cc9b06ebe880c8d4d46db0ca2952e1bcb2e4.",
+      "generation_provenance": "OpenAI built-in image edit using the accepted R5 material folio as the direct edit target; untouched R6 native preserved. The 3072 × 3072 delivery master is a documented high-quality resample when native output is smaller and does not claim resampling created new drawn detail. Delivery SHA-256 9e559cc3bd2ebd9dd8d37e333204376b51342dea8ebd13c939f0046f531062f5.",
       "reference_lineage": [
-        "MORA Revision R2 lock",
-        "accepted Stage 2 anatomy",
-        "Stage 3 R5 layout-preservation decision"
+        "MORA Revision R2 physical-process illustration lock",
+        "Stage 3 R5 exact-square material folio",
+        "Stage 3 R6 user feedback: smaller object group and increased background/inter-object breathing room"
       ],
       "invariants": [
-        "fine #171714 physical-process linework on uniform #F5F1E8 field",
-        "complete artwork survives its exact-ratio landing slot",
-        "no artwork text, founder identity claim, facility claim or production-proof caption"
+        "fine #171714 physical-process linework on a uniform flat #F5F1E8 field",
+        "complete causal process identity and tool sequence remain legible",
+        "object group stays within the R6 occupancy contract and every contour clears the outer edge",
+        "no artwork text, pseudo-text, arrow, label, founder identity claim or production-proof caption"
       ],
       "allowed_variation": [
-        "responsive display scale only; do not crop the physical causal sequence"
+        "responsive display scale only; do not crop or enlarge the physical causal sequence"
       ],
       "invariant_check": "pass",
       "status": "registered",
-      "delivery_dimensions": "2048 × 2048"
+      "delivery_dimensions": "3072 × 3072"
     },
     {
-      "asset_id": "ST3-ETCH-R2-47",
+      "asset_id": "ST3-R6-ETCH-FIG-LEAF-101",
       "product_name": "Fig Leaf",
-      "role": "ingredient_process_etching",
+      "role": "ingredient_process_etching_breathing_room",
       "communication_job": "무화과잎이 조건부 준비액과 옅은 결로 남는 경로를 설명한다.",
-      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-etch-fig-leaf-square-c3270b858cb0c4d5f8a8d2211dd7db8370d5ed689ee04d01930a1e8a9c909839.png",
-      "prompt_path": "prompts/revision-r2/etchings/ST3-ETCH-R2-47-fig-leaf.md",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r6-etch-fig-leaf-square-25d0e56360b631095c6caceb6431ae5f8732c53d4087a7bde941c8dec3a2e41f.png",
+      "prompt_path": "prompts/revision-r6-feedback/etchings/trials/st3-r6-etch-fig-leaf-square.md",
       "subject": "Fig leaf process",
       "aspect_ratio": "1:1 square",
-      "generation_provenance": "OpenAI image generation; generated and QA-locked 2026-08-29 under MORA Revision R2. R5 preserves the artwork and resamples it to the layout delivery master; no new drawn detail is claimed. Delivery SHA-256 c3270b858cb0c4d5f8a8d2211dd7db8370d5ed689ee04d01930a1e8a9c909839.",
+      "generation_provenance": "OpenAI built-in image edit using the accepted R5 material folio as the direct edit target; untouched R6 native preserved. The 3072 × 3072 delivery master is a documented high-quality resample when native output is smaller and does not claim resampling created new drawn detail. Dominant generated background measures near Cultured Cream at RGB 248/244/236 rather than exact #F5F1E8. Delivery SHA-256 25d0e56360b631095c6caceb6431ae5f8732c53d4087a7bde941c8dec3a2e41f.",
       "reference_lineage": [
-        "MORA Revision R2 lock",
-        "accepted Stage 2 anatomy",
-        "Stage 3 R5 layout-preservation decision"
+        "MORA Revision R2 physical-process illustration lock",
+        "Stage 3 R5 exact-square material folio",
+        "Stage 3 R6 user feedback: smaller object group and increased background/inter-object breathing room"
       ],
       "invariants": [
-        "fine #171714 physical-process linework on uniform #F5F1E8 field",
-        "complete artwork survives its exact-ratio landing slot",
-        "no artwork text, founder identity claim, facility claim or production-proof caption",
-        "Fig Leaf remains a directional conditional folio and is not release or safety proof"
+        "fine near-Carbon physical-process linework on a visually flat near-Cultured-Cream field; exact palette drift is recorded in provenance",
+        "complete causal process identity and tool sequence remain legible",
+        "object group stays within the R6 occupancy contract and every contour clears the outer edge",
+        "no artwork text, pseudo-text, arrow, label, founder identity claim or production-proof caption"
       ],
       "allowed_variation": [
-        "responsive display scale only; do not crop the physical causal sequence"
+        "responsive display scale only; do not crop or enlarge the physical causal sequence"
       ],
       "invariant_check": "pass",
       "status": "registered",
-      "delivery_dimensions": "2048 × 2048"
+      "delivery_dimensions": "3072 × 3072"
     },
     {
-      "asset_id": "ST3-ETCH-R2-48",
+      "asset_id": "ST3-R6-ETCH-ROASTED-BUCKWHEAT-102",
       "product_name": "Roasted Buckwheat",
-      "role": "ingredient_process_etching",
+      "role": "ingredient_process_etching_breathing_room",
       "communication_job": "볶은 메밀이 우림과 고운 입자를 거쳐 두 깊이의 흔적으로 남는 과정을 설명한다.",
-      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-etch-roasted-buckwheat-square-cbf38107b1cca5db3c11771d4fdd65f875ea87eb9517127fc2e05eab12b38e45.png",
-      "prompt_path": "prompts/revision-r2/etchings/ST3-ETCH-R2-48-roasted-buckwheat.md",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r6-etch-roasted-buckwheat-square-21d7de7f1786d5f9f6db6772a111029a3344d466d06e056612a334bb6d7b372a.png",
+      "prompt_path": "prompts/revision-r6-feedback/etchings/core/st3-r6-etch-roasted-buckwheat-square.md",
       "subject": "Roasted buckwheat process",
       "aspect_ratio": "1:1 square",
-      "generation_provenance": "OpenAI image generation; generated and QA-locked 2026-08-29 under MORA Revision R2. R5 preserves the artwork and resamples it to the layout delivery master; no new drawn detail is claimed. Delivery SHA-256 cbf38107b1cca5db3c11771d4fdd65f875ea87eb9517127fc2e05eab12b38e45.",
+      "generation_provenance": "OpenAI built-in image edit using the accepted R5 material folio as the direct edit target; untouched R6 native preserved. The 3072 × 3072 delivery master is a documented high-quality resample when native output is smaller and does not claim resampling created new drawn detail. Delivery SHA-256 21d7de7f1786d5f9f6db6772a111029a3344d466d06e056612a334bb6d7b372a.",
       "reference_lineage": [
-        "MORA Revision R2 lock",
-        "accepted Stage 2 anatomy",
-        "Stage 3 R5 layout-preservation decision"
+        "MORA Revision R2 physical-process illustration lock",
+        "Stage 3 R5 exact-square material folio",
+        "Stage 3 R6 user feedback: smaller object group and increased background/inter-object breathing room"
       ],
       "invariants": [
-        "fine #171714 physical-process linework on uniform #F5F1E8 field",
-        "complete artwork survives its exact-ratio landing slot",
-        "no artwork text, founder identity claim, facility claim or production-proof caption"
+        "fine #171714 physical-process linework on a uniform flat #F5F1E8 field",
+        "complete causal process identity and tool sequence remain legible",
+        "object group stays within the R6 occupancy contract and every contour clears the outer edge",
+        "no artwork text, pseudo-text, arrow, label, founder identity claim or production-proof caption"
       ],
       "allowed_variation": [
-        "responsive display scale only; do not crop the physical causal sequence"
+        "responsive display scale only; do not crop or enlarge the physical causal sequence"
       ],
       "invariant_check": "pass",
       "status": "registered",
-      "delivery_dimensions": "2048 × 2048"
+      "delivery_dimensions": "3072 × 3072"
     },
     {
-      "asset_id": "ST3-ETCH-R2-49",
+      "asset_id": "ST3-R6-ETCH-CITRUS-PEEL-103",
       "product_name": "Citrus Peel",
-      "role": "ingredient_process_etching",
+      "role": "ingredient_process_etching_breathing_room",
       "communication_job": "감귤 껍질이 여과액과 가는 필을 거쳐 밝은 흔적으로 남는 과정을 설명한다.",
-      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-etch-citrus-peel-square-6d5dd0e9047fefc61e1a432c51a5731385b571d6beb3e6c236979f08961831b6.png",
-      "prompt_path": "prompts/revision-r2/etchings/ST3-ETCH-R2-49-citrus-peel.md",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r6-etch-citrus-peel-square-a877a811fa8ebcaa9ef6278cce477e579296f2e8f3a916d4297976a876a234ad.png",
+      "prompt_path": "prompts/revision-r6-feedback/etchings/core/st3-r6-etch-citrus-peel-square.md",
       "subject": "Citrus peel process",
       "aspect_ratio": "1:1 square",
-      "generation_provenance": "OpenAI image generation; generated and QA-locked 2026-08-29 under MORA Revision R2. R5 preserves the artwork and resamples it to the layout delivery master; no new drawn detail is claimed. Delivery SHA-256 6d5dd0e9047fefc61e1a432c51a5731385b571d6beb3e6c236979f08961831b6.",
+      "generation_provenance": "OpenAI built-in image edit using the accepted R5 material folio as the direct edit target; untouched R6 native preserved. The 3072 × 3072 delivery master is a documented high-quality resample when native output is smaller and does not claim resampling created new drawn detail. Delivery SHA-256 a877a811fa8ebcaa9ef6278cce477e579296f2e8f3a916d4297976a876a234ad.",
       "reference_lineage": [
-        "MORA Revision R2 lock",
-        "accepted Stage 2 anatomy",
-        "Stage 3 R5 layout-preservation decision"
+        "MORA Revision R2 physical-process illustration lock",
+        "Stage 3 R5 exact-square material folio",
+        "Stage 3 R6 user feedback: smaller object group and increased background/inter-object breathing room"
       ],
       "invariants": [
-        "fine #171714 physical-process linework on uniform #F5F1E8 field",
-        "complete artwork survives its exact-ratio landing slot",
-        "no artwork text, founder identity claim, facility claim or production-proof caption"
+        "fine #171714 physical-process linework on a uniform flat #F5F1E8 field",
+        "complete causal process identity and tool sequence remain legible",
+        "object group stays within the R6 occupancy contract and every contour clears the outer edge",
+        "no artwork text, pseudo-text, arrow, label, founder identity claim or production-proof caption"
       ],
       "allowed_variation": [
-        "responsive display scale only; do not crop the physical causal sequence"
+        "responsive display scale only; do not crop or enlarge the physical causal sequence"
       ],
       "invariant_check": "pass",
       "status": "registered",
-      "delivery_dimensions": "2048 × 2048"
+      "delivery_dimensions": "3072 × 3072"
     },
     {
-      "asset_id": "ST3-ETCH-R2-50",
+      "asset_id": "ST3-R6-ETCH-BLACK-SESAME-104",
       "product_name": "Black Sesame",
-      "role": "ingredient_process_etching",
+      "role": "ingredient_process_etching_breathing_room",
       "communication_job": "검은깨가 페이스트를 거쳐 밝은 요거트의 회색 마블로 남는 과정을 설명한다.",
-      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-etch-black-sesame-square-4d3ea69300d467ef6b8612ca2c2bebbbeb11c998c3f9f59de530fe340a03caf2.png",
-      "prompt_path": "prompts/revision-r2/etchings/ST3-ETCH-R2-50-black-sesame.md",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r6-etch-black-sesame-square-83fb5b67508b8b27feaf35d40d3fe7b967672ec422f414f5cc14faa5598ce80b.png",
+      "prompt_path": "prompts/revision-r6-feedback/etchings/core/st3-r6-etch-black-sesame-square.md",
       "subject": "Black sesame process",
       "aspect_ratio": "1:1 square",
-      "generation_provenance": "OpenAI image generation; generated and QA-locked 2026-08-29 under MORA Revision R2. R5 preserves the artwork and resamples it to the layout delivery master; no new drawn detail is claimed. Delivery SHA-256 4d3ea69300d467ef6b8612ca2c2bebbbeb11c998c3f9f59de530fe340a03caf2.",
+      "generation_provenance": "OpenAI built-in image edit using the accepted R5 material folio as the direct edit target; untouched R6 native preserved. The 3072 × 3072 delivery master is a documented high-quality resample when native output is smaller and does not claim resampling created new drawn detail. Delivery SHA-256 83fb5b67508b8b27feaf35d40d3fe7b967672ec422f414f5cc14faa5598ce80b.",
       "reference_lineage": [
-        "MORA Revision R2 lock",
-        "accepted Stage 2 anatomy",
-        "Stage 3 R5 layout-preservation decision"
+        "MORA Revision R2 physical-process illustration lock",
+        "Stage 3 R5 exact-square material folio",
+        "Stage 3 R6 user feedback: smaller object group and increased background/inter-object breathing room"
       ],
       "invariants": [
-        "fine #171714 physical-process linework on uniform #F5F1E8 field",
-        "complete artwork survives its exact-ratio landing slot",
-        "no artwork text, founder identity claim, facility claim or production-proof caption"
+        "fine #171714 physical-process linework on a uniform flat #F5F1E8 field",
+        "complete causal process identity and tool sequence remain legible",
+        "object group stays within the R6 occupancy contract and every contour clears the outer edge",
+        "no artwork text, pseudo-text, arrow, label, founder identity claim or production-proof caption"
       ],
       "allowed_variation": [
-        "responsive display scale only; do not crop the physical causal sequence"
+        "responsive display scale only; do not crop or enlarge the physical causal sequence"
       ],
       "invariant_check": "pass",
       "status": "registered",
-      "delivery_dimensions": "2048 × 2048"
+      "delivery_dimensions": "3072 × 3072"
     },
     {
-      "asset_id": "ST3-ETCH-R2-51",
+      "asset_id": "ST3-R6-ETCH-OLIVE-OIL-SEA-SALT-105",
       "product_name": "Olive Oil & Sea Salt",
-      "role": "ingredient_process_etching",
+      "role": "ingredient_process_etching_breathing_room",
       "communication_job": "오일과 소금이 얇은 세이보리 흔적으로 남는 조건부 경로를 설명한다.",
-      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r5-etch-olive-oil-sea-salt-square-5ef11a98a485120c793419f55c7b6f80d7ecfc83cb954a83cf1141eeb78839c9.png",
-      "prompt_path": "prompts/revision-r2/etchings/ST3-ETCH-R2-51-olive-oil-sea-salt.md",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r6-etch-olive-oil-sea-salt-square-3e5a48bd77e30be4eb13d2c391eec4342b170d0970e696704f27d6382f43e3dc.png",
+      "prompt_path": "prompts/revision-r6-feedback/etchings/trials/st3-r6-etch-olive-oil-sea-salt-square.md",
       "subject": "Olive oil and sea salt process",
       "aspect_ratio": "1:1 square",
-      "generation_provenance": "OpenAI image generation; generated and QA-locked 2026-08-29 under MORA Revision R2. R5 preserves the artwork and resamples it to the layout delivery master; no new drawn detail is claimed. Delivery SHA-256 5ef11a98a485120c793419f55c7b6f80d7ecfc83cb954a83cf1141eeb78839c9.",
+      "generation_provenance": "OpenAI built-in image edit using the accepted R5 material folio as the direct edit target; untouched R6 native preserved. The 3072 × 3072 delivery master is a documented high-quality resample when native output is smaller and does not claim resampling created new drawn detail. Dominant generated background measures near Cultured Cream at RGB 249/245/237 rather than exact #F5F1E8. Delivery SHA-256 3e5a48bd77e30be4eb13d2c391eec4342b170d0970e696704f27d6382f43e3dc.",
       "reference_lineage": [
-        "MORA Revision R2 lock",
-        "accepted Stage 2 anatomy",
-        "Stage 3 R5 layout-preservation decision"
+        "MORA Revision R2 physical-process illustration lock",
+        "Stage 3 R5 exact-square material folio",
+        "Stage 3 R6 user feedback: smaller object group and increased background/inter-object breathing room"
       ],
       "invariants": [
-        "fine #171714 physical-process linework on uniform #F5F1E8 field",
-        "complete artwork survives its exact-ratio landing slot",
-        "no artwork text, founder identity claim, facility claim or production-proof caption"
+        "fine near-Carbon physical-process linework on a visually flat near-Cultured-Cream field; exact palette drift is recorded in provenance",
+        "complete causal process identity and tool sequence remain legible",
+        "object group stays within the R6 occupancy contract and every contour clears the outer edge",
+        "no artwork text, pseudo-text, arrow, label, founder identity claim or production-proof caption"
       ],
       "allowed_variation": [
-        "responsive display scale only; do not crop the physical causal sequence"
+        "responsive display scale only; do not crop or enlarge the physical causal sequence"
       ],
       "invariant_check": "pass",
       "status": "registered",
-      "delivery_dimensions": "2048 × 2048"
+      "delivery_dimensions": "3072 × 3072"
+    },
+    {
+      "asset_id": "ST3-R7-TRANSITION-KF01-CENTER-PUSH-106",
+      "product_name": "MORA Brand World",
+      "role": "transition_keyframe_center_push",
+      "communication_job": "기존 true-aerial 제조 장면에서 왼쪽 두 번째 스트레이너를 중앙으로 이동시키되 주변 용기와 소품의 공간 연속성을 유지한다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r7-transition-kf01-center-push-3x2-c53689cbff8dff39b472dfcc18b53241eb192513258a52f3df8c3a0d00edf6c4.png",
+      "prompt_path": "prompts/revision-r7-transition-video/ST3-R7-TRANSITION-VIDEO-KEYFRAMES.md",
+      "subject": "Centered small cloth-lined yogurt strainer with the complete surrounding scene still continuous",
+      "aspect_ratio": "3:2 landscape",
+      "delivery_dimensions": "3072 × 2048",
+      "generation_provenance": "OpenAI built-in image edit using ST3-R5-TRANSITION-CENTER-SAFE-81 as the direct edit target. Native 1536 × 1024 output is preserved in Codex generation storage; the 3072 × 2048 Stage 3 delivery is a documented high-quality resample and does not claim new optical detail. Delivery SHA-256 c53689cbff8dff39b472dfcc18b53241eb192513258a52f3df8c3a0d00edf6c4.",
+      "reference_lineage": [
+        "ST3-R5-TRANSITION-CENTER-SAFE-81 wide source and scene authority",
+        "Stage 3 R7 user motion brief: second yogurt from left moves to center without discontinuous disappearance",
+        "Stage 3 R7 strict-aerial continuity contract"
+      ],
+      "invariants": [
+        "the second yogurt vessel from the left remains the same cloth-lined perforated stainless strainer",
+        "left and right yogurt vessels and surrounding props remain present and leave only through progressive edge crop",
+        "strict 90-degree aerial camera, upper-right motivated light, stainless reflections and analog grain remain coherent",
+        "no new object, removed object, text, logo, watermark, split screen or montage"
+      ],
+      "allowed_variation": [
+        "frame interpolation and minor responsive edge trim only; do not alter object identity or relative scene geometry"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R7-TRANSITION-KF02-SEPARATION-107",
+      "product_name": "MORA Brand World",
+      "role": "transition_keyframe_separation_emerge",
+      "communication_job": "중앙 스트레이너로 확대되는 동안 주변 용기가 가장자리에서 연속적으로 남고 미세 기포와 얕은 유청 포켓이 처음 드러난다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r7-transition-kf02-separation-emerge-3x2-81f445058d4c4405f8c3da3847f3d8ea980be52e2a37beff95f9e2094e17547a.png",
+      "prompt_path": "prompts/revision-r7-transition-video/ST3-R7-TRANSITION-VIDEO-KEYFRAMES.md",
+      "subject": "Medium aerial push into the centered strainer with restrained early yogurt and whey separation",
+      "aspect_ratio": "3:2 landscape",
+      "delivery_dimensions": "3072 × 2048",
+      "generation_provenance": "OpenAI built-in image edit using the immediately preceding R7 KF01 as the direct edit target. Native 1536 × 1024 output is preserved in Codex generation storage; the 3072 × 2048 Stage 3 delivery is a documented high-quality resample and does not claim new optical detail. Delivery SHA-256 81f445058d4c4405f8c3da3847f3d8ea980be52e2a37beff95f9e2094e17547a.",
+      "reference_lineage": [
+        "ST3-R7-TRANSITION-KF01-CENTER-PUSH-106 immediate-frame authority",
+        "ST3-R5-TRANSITION-CENTER-SAFE-81 scene identity",
+        "Stage 3 R7 food-native separation brief"
+      ],
+      "invariants": [
+        "target strainer identity, cloth folds, metal geometry and yogurt landmarks remain continuous",
+        "neighboring vessels remain recognizable edge continuations and are never independently deleted",
+        "bubbles and acid whey stay sparse, shallow and food-native; no boiling, soap, splash or decorative foam",
+        "strict aerial camera, light, grade, physical contact and analog grain remain coherent"
+      ],
+      "allowed_variation": [
+        "frame interpolation and progressive camera scale only; material activity may not exceed the recorded restrained state"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R7-TRANSITION-KF03-MATERIAL-ZOOM-108",
+      "product_name": "MORA Brand World",
+      "role": "transition_keyframe_material_zoom",
+      "communication_job": "천·스테인리스 림·농축 요거트의 연결을 유지한 채 유청 막과 미세 기포를 제조 과정의 물성 증거로 확대한다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r7-transition-kf03-material-zoom-3x2-8760573592b40cbc6423b2f8e90f309519bcdde5cda9c49b9600eb4729ab63ba.png",
+      "prompt_path": "prompts/revision-r7-transition-video/ST3-R7-TRANSITION-VIDEO-KEYFRAMES.md",
+      "subject": "Close aerial material evidence inside the same cloth-lined strainer",
+      "aspect_ratio": "3:2 landscape",
+      "delivery_dimensions": "3072 × 2048",
+      "generation_provenance": "OpenAI built-in image edit using the immediately preceding R7 KF02 as the direct edit target. Native 1536 × 1024 output is preserved in Codex generation storage; the 3072 × 2048 Stage 3 delivery is a documented high-quality resample and does not claim new optical detail. Delivery SHA-256 8760573592b40cbc6423b2f8e90f309519bcdde5cda9c49b9600eb4729ab63ba.",
+      "reference_lineage": [
+        "ST3-R7-TRANSITION-KF02-SEPARATION-107 immediate-frame authority",
+        "ST3-R5-TRANSITION-CENTER-SAFE-81 scene identity",
+        "Stage 3 R7 material-evidence zoom brief"
+      ],
+      "invariants": [
+        "same yogurt surface landmarks, cloth family and perforated rim remain identifiable",
+        "neighboring vessel fragments leave only by progressive camera crop",
+        "acid whey has a shallow translucent membrane and plausible meniscus over dense gravity-set curd",
+        "no CGI gloss, uniform bubble grid, boiling, text, logo, watermark or montage"
+      ],
+      "allowed_variation": [
+        "frame interpolation and progressive magnification only; do not replace the cultured material event"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R7-TRANSITION-KF04-CREAM-BRIDGE-109",
+      "product_name": "MORA Brand World",
+      "role": "transition_keyframe_cream_blend_bridge",
+      "communication_job": "동일 요거트와 유청 표면 안으로 들어가 환경의 단단한 경계를 제거하고 사이트 Cultured Cream 배경으로 이어질 저대비 재질 필드를 만든다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r7-transition-kf04-cream-blend-bridge-3x2-f9c1930a78a8d7c50ee6e71c15fb74d096d9f961b093629e73636660f0a803f0.png",
+      "prompt_path": "prompts/revision-r7-transition-video/ST3-R7-TRANSITION-VIDEO-KEYFRAMES.md",
+      "subject": "Extreme close warm-cream yogurt and whey material field for the final background blend",
+      "aspect_ratio": "3:2 landscape",
+      "delivery_dimensions": "3072 × 2048",
+      "generation_provenance": "OpenAI built-in image edit using the immediately preceding R7 KF03 as the direct edit target. Native 1536 × 1024 output is preserved in Codex generation storage; the 3072 × 2048 Stage 3 delivery is a documented high-quality resample and does not claim new optical detail. Delivery SHA-256 f9c1930a78a8d7c50ee6e71c15fb74d096d9f961b093629e73636660f0a803f0.",
+      "reference_lineage": [
+        "ST3-R7-TRANSITION-KF03-MATERIAL-ZOOM-108 immediate-frame authority",
+        "Stage 3 R7 material-to-background blend brief",
+        "MORA Cultured Cream runtime token #F5F1E8"
+      ],
+      "invariants": [
+        "material fills the frame only because the same camera push passes cloth and metal beyond the crop",
+        "faint cultured-food and whey structure remains legible beneath restrained analog grain",
+        "outer field stays warm cream and low contrast for a clean crossfade",
+        "no hard dark edge, prop, vessel, text, logo, watermark or abstract CGI replacement"
+      ],
+      "allowed_variation": [
+        "short crossfade into the exact Cultured Cream matte only; do not use as a standalone product-detail claim"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
+    },
+    {
+      "asset_id": "ST3-R7-TRANSITION-KF05-CREAM-MATTE-110",
+      "product_name": "MORA Brand World",
+      "role": "transition_background_handoff_matte",
+      "communication_job": "영상의 마지막 프레임을 사이트 background.default와 픽셀 단위로 일치시켜 다음 horizontal section으로 경계 없이 넘긴다.",
+      "file_path": "/brand-reports/mora-infused-greek-yogurt-landing-materials/assets/st3-r7-transition-kf05-cultured-cream-matte-3x2-bd3e6a55cd616c16566873691b4bda347e1e4edac6c1ebb4ee0186be8d6baf40.png",
+      "prompt_path": "prompts/revision-r7-transition-video/ST3-R7-TRANSITION-VIDEO-KEYFRAMES.md",
+      "subject": "Exact flat Cultured Cream transition handoff matte",
+      "aspect_ratio": "3:2 landscape",
+      "delivery_dimensions": "3072 × 2048",
+      "generation_provenance": "Deterministic RGB raster generated locally from the runtime design token rather than color-guessed by an image model. Every sampled pixel is RGB 245, 241, 232 (#F5F1E8). Delivery SHA-256 bd3e6a55cd616c16566873691b4bda347e1e4edac6c1ebb4ee0186be8d6baf40.",
+      "reference_lineage": [
+        "src/styles/themes/default.js theme.palette.background.default #F5F1E8",
+        "ST3-R7-TRANSITION-KF04-CREAM-BRIDGE-109 photographic bridge",
+        "Stage 3 R7 exact background handoff requirement"
+      ],
+      "invariants": [
+        "all pixels remain exact RGB 245, 241, 232",
+        "no texture, gradient, artifact, alpha variation, text, logo, watermark or border",
+        "the matte is a transition handoff utility and never represented as photographic evidence"
+      ],
+      "allowed_variation": [
+        "display scaling and video encoding only when the final rendered frame still resolves to the runtime background token"
+      ],
+      "invariant_check": "pass",
+      "status": "registered"
     }
   ]
 }

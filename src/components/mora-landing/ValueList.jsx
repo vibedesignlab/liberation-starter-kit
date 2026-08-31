@@ -6,7 +6,7 @@ export default function ValueList({ values = [] }) {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
       {values.map((v) => (
-        <Typography key={v.name} sx={{ fontSize: '16px', color: 'text.primary' }}>
+        <Typography key={v.name} variant="body2" sx={{ color: 'text.primary' }}>
           {v.name}
         </Typography>
       ))}

@@ -1,0 +1,36 @@
+{
+  "model": "fal-ai/kling-video/v3/pro/image-to-video",
+  "submissions": [
+    {
+      "id": "mora-r7-kf03-kf04",
+      "model": "fal-ai/kling-video/v3/pro/image-to-video",
+      "request_id": "01a0581c-5f5b-7b03-b03e-e10cc44ba14f",
+      "status": "COMPLETED",
+      "output": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/.work/revision-r7-transition-video/clips/kf03-kf04.mp4",
+      "downloaded": true,
+      "video_url": "https://v3b.fal.media/files/b/0aa88daa/OZIkd2RsgWLghXJxLDhZq_output.mp4",
+      "start": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r7-transition-video/st3-r7-transition-kf03-material-zoom-3x2.png",
+      "end": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r7-transition-video/st3-r7-transition-kf04-cream-blend-bridge-3x2.png",
+      "start_image_url": "https://v3b.fal.media/files/b/0aa88da0/KWDElM70d0R3ls21J7pth_st3-r7-transition-kf03-material-zoom-3x2.png",
+      "end_image_url": "https://v3b.fal.media/files/b/0aa88da0/txwXkshz3sQ99Utv_dhqT_st3-r7-transition-kf04-cream-blend-bridge-3x2.png",
+      "profile": "kling",
+      "input": {
+        "prompt": "Continue the same aerial camera push into one pale whey-rich region of the identical yogurt surface. Cloth and steel leave only by passing beyond the crop. Dense cultured curd beneath a shallow translucent whey veil becomes the full frame. Focus softens very gently while preserving low-contrast organic dairy structure, motivated light and fine analog magazine grain.",
+        "duration": "3",
+        "start_image_url": "https://v3b.fal.media/files/b/0aa88da0/KWDElM70d0R3ls21J7pth_st3-r7-transition-kf03-material-zoom-3x2.png",
+        "end_image_url": "https://v3b.fal.media/files/b/0aa88da0/txwXkshz3sQ99Utv_dhqT_st3-r7-transition-kf04-cream-blend-bridge-3x2.png",
+        "negative_prompt": "cut, jump cut, disappearing object, newly appearing object, morphing vessel, camera tilt, perspective change, boiling, soap foam, splash, text, logo, watermark, CGI gloss",
+        "generate_audio": false
+      },
+      "result_data": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0aa88daa/OZIkd2RsgWLghXJxLDhZq_output.mp4",
+          "content_type": "video/mp4",
+          "file_name": "output.mp4",
+          "file_size": 6383353
+        }
+      },
+      "submitted_at": "2026-08-31T13:59:18.690Z"
+    }
+  ]
+}

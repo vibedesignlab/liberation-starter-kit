@@ -137,6 +137,33 @@ const copy = {
     { phase: 'TASTE', label: 'Taste', desc: 'Confirm density and internal trace in the first spoon section.', imageAlt: 'First spoon showing yogurt density and ingredient trace' },
   ],
 
+  recipeSlides: [
+    {
+      id: 'thyme-honey',
+      number: '01',
+      name: 'Thyme Honey',
+      headline: 'Honey folded with thyme, not poured on top.',
+    },
+    {
+      id: 'roasted-buckwheat',
+      number: '02',
+      name: 'Roasted Buckwheat',
+      headline: 'Toasted grain traced inside, not scattered on the surface.',
+    },
+    {
+      id: 'citrus-peel',
+      number: '03',
+      name: 'Citrus Peel',
+      headline: 'Peel threaded through, not tinted across.',
+    },
+    {
+      id: 'black-sesame',
+      number: '04',
+      name: 'Black Sesame',
+      headline: 'Sesame depth meeting yogurt brightness in one fold.',
+    },
+  ],
+
   facts: [
     { label: 'Refrigerated direction', verified: false },
     { label: '150 g candidate', verified: false },

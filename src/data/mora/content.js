@@ -135,6 +135,11 @@ export const sections = {
   },
 };
 
+export const recipeSlides = copy.recipeSlides.map((slide) => ({
+  ...slide,
+  etching: productMedia[slide.id]?.etching,
+}));
+
 export const brand = {
   headline: sections.hero.headline,
   support: sections.hero.support,
@@ -154,6 +159,7 @@ const landingContent = {
   coreProducts,
   trialProducts,
   vesselPhases,
+  recipeSlides,
   facts,
 };
 

@@ -56,7 +56,7 @@ export default function StickyProductGrid({
             </Typography>
           )}
           {body && (
-            <Typography sx={{ fontSize: '16px', color: 'text.secondary' }}>
+            <Typography variant="body1" sx={{ color: 'text.secondary' }}>
               {body}
             </Typography>
           )}
@@ -86,7 +86,6 @@ export default function StickyProductGrid({
             component="a"
             href={ctaHref}
             sx={{
-              fontSize: '16px',
               color: 'text.primary',
               textDecoration: 'none',
               '&:hover': { textDecoration: 'underline', textUnderlineOffset: '3px' },

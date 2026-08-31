@@ -1,0 +1,18 @@
+{
+  "profile": "kling",
+  "duration": "3",
+  "generate_audio": false,
+  "negative_prompt": "cut, jump cut, dark edge, new object, camera tilt, color flash, boiling, foam, splash, text, logo, watermark, CGI pattern",
+  "poll_interval_ms": 5000,
+  "timeout_ms": 1800000,
+  "out": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/.work/revision-r7-transition-video/manifests/kf04-kf05.json",
+  "clips": [
+    {
+      "id": "mora-r7-kf04-kf05",
+      "start": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r7-transition-video/st3-r7-transition-kf04-cream-blend-bridge-3x2.png",
+      "end": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r7-transition-video/st3-r7-transition-kf05-cultured-cream-matte-3x2.png",
+      "prompt": "A seamless final transition from the extreme close yogurt-and-whey material field into the exact uniform Cultured Cream background. Gently soften focus and reduce local contrast while the warm cream tone becomes perfectly even. No cut, flash, edge, new texture or object. End on a completely flat #F5F1E8 frame suitable for an invisible website background handoff.",
+      "output": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/.work/revision-r7-transition-video/clips/kf04-kf05.mp4"
+    }
+  ]
+}

@@ -103,8 +103,15 @@ const palette = {
 // ============================================================
 // 2. Typography Tokens (타이포그래피 토큰)
 // ============================================================
-const workhorseFontFamily = [
-  '"Geist Sans"',
+const headlineFontFamily = [
+  '"Zodiak"',
+  'Georgia',
+  '"Times New Roman"',
+  'serif',
+].join(',');
+
+const bodyFontFamily = [
+  '"General Sans"',
   '-apple-system',
   'BlinkMacSystemFont',
   'system-ui',
@@ -114,9 +121,8 @@ const workhorseFontFamily = [
 ].join(',');
 
 const typography = {
-  // S2 workhorse grotesk direction — one family for English narrative and records.
-  fontFamily: workhorseFontFamily,
-  headingFontFamily: workhorseFontFamily,
+  fontFamily: bodyFontFamily,
+  headingFontFamily: headlineFontFamily,
 
   // 폰트 크기 기준
   fontSize: 14,
@@ -128,61 +134,61 @@ const typography = {
   fontWeightMedium: 500,
   fontWeightBold: 600,
 
-  // 헤딩 스타일
+  // 헤딩 스타일 — Zodiak (editorial serif)
   h1: {
-    fontFamily: workhorseFontFamily,
-    fontWeight: 600,
-    fontSize: 'clamp(2.5rem, 5vw, 4rem)', // S2: mobile 40px → desktop 64px
-    lineHeight: 1.0625,                   // 44px / 68px
+    fontFamily: headlineFontFamily,
+    fontWeight: 700,
+    fontSize: 'clamp(2.5rem, 5vw, 4rem)',   // 40→64px
+    lineHeight: 1.1,                         // Zodiak multi-line 호흡
     letterSpacing: '-0.02em',
     textWrap: 'balance',
   },
   h2: {
-    fontFamily: workhorseFontFamily,
-    fontWeight: 600,
-    fontSize: 'clamp(2.25rem, 4vw, 3rem)',
-    lineHeight: 1.0833,
-    letterSpacing: '-0.02em',
+    fontFamily: headlineFontFamily,
+    fontWeight: 500,
+    fontSize: 'clamp(2.25rem, 4vw, 3rem)',  // 36→48px
+    lineHeight: 1.15,                        // h1보다 여유, 위계 구분
+    letterSpacing: '-0.015em',               // h1보다 살짝 open
     textWrap: 'balance',
   },
   h3: {
-    fontFamily: workhorseFontFamily,
+    fontFamily: bodyFontFamily,
     fontWeight: 600,
-    fontSize: '1.125rem',    // 18px — 제품명
+    fontSize: '1.125rem',    // 18px — 제품명·섹션 소제목
     lineHeight: 1.3,
     letterSpacing: '-0.01em',
   },
   h4: {
-    fontFamily: workhorseFontFamily,
+    fontFamily: bodyFontFamily,
     fontWeight: 600,
-    fontSize: '1.125rem',    // 18px
-    lineHeight: 1.3,
-    letterSpacing: '-0.01em',
-  },
-  h5: {
-    fontFamily: workhorseFontFamily,
-    fontWeight: 600,
-    fontSize: '1rem',        // 16px
-    lineHeight: 1.4,
+    fontSize: '1rem',        // 16px — h3과 위계 분리
+    lineHeight: 1.35,
     letterSpacing: '0',
   },
-  h6: {
-    fontFamily: workhorseFontFamily,
+  h5: {
+    fontFamily: bodyFontFamily,
     fontWeight: 600,
     fontSize: '0.875rem',    // 14px
     lineHeight: 1.4,
     letterSpacing: '0',
   },
+  h6: {
+    fontFamily: bodyFontFamily,
+    fontWeight: 600,
+    fontSize: '0.75rem',     // 12px — 최소 레이블급
+    lineHeight: 1.4,
+    letterSpacing: '0.01em',
+  },
 
-  // 본문 스타일
+  // 본문 스타일 — General Sans
   body1: {
-    fontSize: 'clamp(1rem, calc(0.95rem + 0.2vw), 1.0625rem)', // S2: 16px → 17px
-    lineHeight: 1.7,         // 27.2px → 28.9px
+    fontSize: 'clamp(1rem, calc(0.95rem + 0.2vw), 1.0625rem)', // 16→17px
+    lineHeight: 1.6,         // General Sans x-height에 맞춘 에디토리얼 행간
     letterSpacing: '0',
   },
   body2: {
-    fontSize: '1rem',
-    lineHeight: 1.6875,      // S2 mobile/body compact: 27px
+    fontSize: '1rem',        // 16px
+    lineHeight: 1.45,        // compact variant — body1과 명확히 구분
     letterSpacing: '0',
   },
 

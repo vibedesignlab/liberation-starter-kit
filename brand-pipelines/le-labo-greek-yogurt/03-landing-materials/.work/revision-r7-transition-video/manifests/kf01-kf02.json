@@ -1,0 +1,36 @@
+{
+  "model": "fal-ai/kling-video/v3/pro/image-to-video",
+  "submissions": [
+    {
+      "id": "mora-r7-kf01-kf02",
+      "model": "fal-ai/kling-video/v3/pro/image-to-video",
+      "request_id": "01a0581c-5ece-75a0-ab9b-39abe714ebca",
+      "status": "COMPLETED",
+      "output": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/.work/revision-r7-transition-video/clips/kf01-kf02.mp4",
+      "downloaded": true,
+      "video_url": "https://v3b.fal.media/files/b/0aa88da9/-wiSSYyBOb6ZGgZ_Q5LGR_output.mp4",
+      "start": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r7-transition-video/st3-r7-transition-kf01-center-push-3x2.png",
+      "end": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r7-transition-video/st3-r7-transition-kf02-separation-emerge-3x2.png",
+      "start_image_url": "https://v3b.fal.media/files/b/0aa88da0/xOMhQNQgeMuzXZWUYrZr0_st3-r7-transition-kf01-center-push-3x2.png",
+      "end_image_url": "https://v3b.fal.media/files/b/0aa88db6/yk_9iQCdCN72xLIyb9qsi_st3-r7-transition-kf02-separation-emerge-3x2.png",
+      "profile": "kling",
+      "input": {
+        "prompt": "Continue the exact same strict aerial camera push into the centered cloth-lined yogurt strainer. The left and right vessels remain continuous partial objects and leave only through progressive edge cropping. Preserve cloth folds, perforated steel, yogurt landmarks, light, shadows and grain. Let only a few restrained food-native microbubbles and shallow acid-whey pockets begin to appear; no boiling or foam.",
+        "duration": "3",
+        "start_image_url": "https://v3b.fal.media/files/b/0aa88da0/xOMhQNQgeMuzXZWUYrZr0_st3-r7-transition-kf01-center-push-3x2.png",
+        "end_image_url": "https://v3b.fal.media/files/b/0aa88db6/yk_9iQCdCN72xLIyb9qsi_st3-r7-transition-kf02-separation-emerge-3x2.png",
+        "negative_prompt": "cut, jump cut, disappearing object, newly appearing object, morphing vessel, camera tilt, perspective change, boiling, soap foam, splash, text, logo, watermark, CGI gloss",
+        "generate_audio": false
+      },
+      "result_data": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0aa88da9/-wiSSYyBOb6ZGgZ_Q5LGR_output.mp4",
+          "content_type": "video/mp4",
+          "file_name": "output.mp4",
+          "file_size": 6451300
+        }
+      },
+      "submitted_at": "2026-08-31T13:58:56.874Z"
+    }
+  ]
+}

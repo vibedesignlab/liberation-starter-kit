@@ -10,7 +10,7 @@ export default function UseMomentCard({ image, label, productName }) {
       <Typography variant="h2" sx={{ color: 'background.default' }}>
         {label}
       </Typography>
-      <Typography sx={{ fontSize: '16px', color: 'background.default', opacity: 0.8 }}>
+      <Typography variant="body1" sx={{ color: 'background.default', opacity: 0.85 }}>
         {productName}
       </Typography>
     </FullBleedSection>

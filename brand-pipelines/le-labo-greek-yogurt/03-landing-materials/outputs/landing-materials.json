@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
   "artifact_type": "landing_materials",
-  "generated_at": "2026-08-31T12:40:00Z",
+  "generated_at": "2026-08-31T13:40:29.000Z",
   "extended_brand_source": {
     "package_path": "/Users/ddd/Desktop/brand-experiment/brand-pipelines/le-labo-greek-yogurt/02-extended-brand",
     "json_path": "outputs/extended-brand-anatomy.json",
@@ -24,7 +24,7 @@
   },
   "selected_narrative_route": "NR-10-01 — 마지막까지 보는 사람",
   "message_visual_map": {
-    "brand_message_to_key_visual": "‘좋은 재료를 고르는 데서 끝나지 않습니다’는 left-safe Hero에서 한 여성 메이커가 원재료를 승인·제외하는 행동으로 시작하고, true-aerial 분리, 1:2 last-fold 스크롤, partial Batch Record의 SEE–READ–OPEN–TASTE로 이어진다.",
+    "brand_message_to_key_visual": "‘좋은 재료를 고르는 데서 끝나지 않습니다’는 left-safe Hero에서 한 여성 메이커의 원재료 승인·제외 판단과 농축 body–cloth–whey의 수직 분리 증거로 시작하고, true-aerial 재료, 1:2 last-fold 스크롤, partial Batch Record의 SEE–READ–OPEN–TASTE로 이어진다.",
     "brand_values_to_brand_mood": [
       "엄선하는 책임 → strict-front maker selection과 accepted / rejected material의 물리적 분리",
       "보이는 변환 → true-aerial cloth–concentrate–whey, 여섯 intermediate state, one broad-paddle fold",
@@ -61,8 +61,8 @@
     "secondary_cta": "마지막 확인 보기"
   },
   "hero_craft_space_series": {
-    "key_insight": "첫 화면의 권위는 빈 제조실이 아니라 한 사람이 무엇을 승인하고 제외하는지에서 시작한다.",
-    "status": "final_selected_revision_r5_layout_aware",
+    "key_insight": "첫 화면은 한 사람의 승인·제외 판단을 유지하면서 농축된 몸과 그 아래 모인 유청까지 한 제조 인과로 보여 준다.",
+    "status": "final_selected_revision_r6_feedback",
     "series_lock": {
       "web_role": "exact 3:2 FullBleedSection landing hero",
       "composition": "left 42% low-frequency copy-safe; maker and selection action in right 48%; all evidence inside inner 82%",
@@ -71,12 +71,12 @@
       "capture": "strict-front 45–55 mm environmental editorial with restrained visible 35 mm grain"
     },
     "selected_version": {
-      "version": "R5",
-      "name": "Selection Before Claim",
-      "asset_id": "ST3-R5-HERO-SELECTION-76",
-      "action": "accepted and rejected raw materials are physically separated by one maker",
-      "selection_reason": "Stage 2 NR-10-01과 현재 left-center Hero 구도를 동시에 만족하고 기존 16:9 crop을 제거한다.",
-      "use": "final layout-aware landing hero"
+      "version": "R6",
+      "name": "Selection with Separation Evidence",
+      "asset_id": "ST3-R6-HERO-SELECTION-WHEY-99",
+      "action": "one maker separates accepted and rejected raw materials beside a gravity-aligned yogurt-body and whey witness",
+      "selection_reason": "R5의 left-center Hero 구도와 여성 메이커 권위를 유지하면서 요거트 제조 증거와 더 큰 delivery master를 추가한다.",
+      "use": "final R6 layout-aware landing hero"
     }
   },
   "brand_value": {
@@ -128,7 +128,7 @@
     "visual_storytelling": {
       "system_name": "What She Checked / Material Under Care",
       "principle": "한 프레임에 한 판단만 두고 input–tool–action–output–record의 인과를 남긴다.",
-      "hero": "원재료 승인과 제외",
+      "hero": "원재료 승인·제외와 농축 body–cloth–whey의 수직 분리 증거",
       "process": "true-aerial separation과 six intermediate states",
       "last_measure": "1:2 last-fold / final-check scroll story",
       "record": "partial Batch Record and SEE–READ–OPEN–TASTE sequence",
@@ -194,7 +194,7 @@
     "key_insight": "Stage 2 R16은 maker·workshop·film response를, R18은 true-aerial raw input과 plain UI product를 고정하며 R5는 이 정체성을 실제 landing slot 비율로 새로 조립한다.",
     "status": "Revision 10 strategy / Revision 16 mood / Revision 18 product and ingredient references / Revision 5 layout-aware landing delivery",
     "golden_masters": [
-      "ST3-R5-HERO-SELECTION-76",
+      "ST3-R6-HERO-SELECTION-WHEY-99",
       "ST3-R5-CORE-STICKY-78",
       "ST3-R5-TRIAL-STICKY-79",
       "ST3-R5-PRODUCT-THYME-HONEY-87",
@@ -249,7 +249,7 @@
   },
   "material_folios_system": {
     "name": "MORA Physical Process Etchings",
-    "style_lock": "uniform #F5F1E8 field, fine #171714 line, 65–80% negative space, identical background, no text inside artwork.",
+    "style_lock": "uniform flat #F5F1E8 field, fine #171714 line, object group within 60–64% width and 52–58% height, minimum 16–18% outer clearance, no text inside artwork.",
     "story_rule": "원재료 → 실제 도구와 처리 → 관찰 가능한 중간 산출물 → 최종 요거트 흔적의 인과가 물리적으로 설명되어야 한다. 추상 변형은 금지한다.",
     "narrative_assets": [
       "ST3-ETCH-R2-42",
@@ -258,15 +258,16 @@
       "ST3-ETCH-R2-45"
     ],
     "material_plate_assets": [
-      "ST3-ETCH-R2-46",
-      "ST3-ETCH-R2-47",
-      "ST3-ETCH-R2-48",
-      "ST3-ETCH-R2-49",
-      "ST3-ETCH-R2-50",
-      "ST3-ETCH-R2-51"
+      "ST3-R6-ETCH-THYME-HONEY-100",
+      "ST3-R6-ETCH-FIG-LEAF-101",
+      "ST3-R6-ETCH-ROASTED-BUCKWHEAT-102",
+      "ST3-R6-ETCH-CITRUS-PEEL-103",
+      "ST3-R6-ETCH-BLACK-SESAME-104",
+      "ST3-R6-ETCH-OLIVE-OIL-SEA-SALT-105"
     ],
     "material_plate_rule": "각 재료의 실제 식품 준비 형태와 요거트 흔적을 분리된 단계로 그린다.",
-    "source_distance": "Le Labo Journal의 세밀한 선, 큰 여백, 제조 기록 태도만 번역한다."
+    "source_distance": "Le Labo Journal의 세밀한 선, 큰 여백, 제조 기록 태도만 번역한다.",
+    "key_insight": "1행 일러스트는 제조 인과를 유지하되 오브젝트를 축소하고 배경과 각 단계 사이의 호흡을 늘려 4열 그리드에서 읽히게 한다."
   },
   "product_lineup_key_insight": "각 제품은 하나의 사용 순간, 시그네처 원재료, 준비 방식, 눈에 보이는 흔적과 출시 상태가 한 문장 안에서 이어져야 독립적인 선택 이유를 가진다.",
   "product_lineup_copy": [
@@ -351,7 +352,7 @@
       "body": "MORA의 메이커는 재료를 고르고, 변환의 중간을 살피고, 내놓기 전 마지막 한 컵까지 확인합니다.",
       "asset_layout": "FullBleedSection exact 3:2 / left-center / left 42% clear",
       "asset_ids": [
-        "ST3-R5-HERO-SELECTION-76"
+        "ST3-R6-HERO-SELECTION-WHEY-99"
       ],
       "cta": "여섯 레시피 비교하기"
     },
@@ -370,10 +371,15 @@
       "order": "03",
       "section": "Straining Transition",
       "headline": "한 컵의 중간을 숨기지 않습니다.",
-      "body": "천에 남은 농축된 몸과 분리된 유청을 중앙 카피 주변의 실제 물성으로 보여 줍니다.",
-      "asset_layout": "FullBleedSection exact 3:2 / center / central 44%×42% clear",
+      "body": "두 번째 스트레이너가 중앙으로 이동하고, 주변 용기는 연속적으로 프레임 밖으로 밀리며, 기포와 유청 분리의 확대가 Cultured Cream 배경으로 이어집니다.",
+      "asset_layout": "3:2 scroll-scrub sequence / KF00–KF05 / exact #F5F1E8 handoff",
       "asset_ids": [
-        "ST3-R5-TRANSITION-CENTER-SAFE-81"
+        "ST3-R5-TRANSITION-CENTER-SAFE-81",
+        "ST3-R7-TRANSITION-KF01-CENTER-PUSH-106",
+        "ST3-R7-TRANSITION-KF02-SEPARATION-107",
+        "ST3-R7-TRANSITION-KF03-MATERIAL-ZOOM-108",
+        "ST3-R7-TRANSITION-KF04-CREAM-BRIDGE-109",
+        "ST3-R7-TRANSITION-KF05-CREAM-MATTE-110"
       ],
       "cta": "변환 보기"
     },
@@ -409,16 +415,16 @@
       "section": "Core Ingredient Folios",
       "headline": "재료와 변환을 한 쌍으로.",
       "body": "각 원재료 aerial과 Material Folio를 같은 1:1 규격으로 이어 봅니다.",
-      "asset_layout": "four SplitEditorial 1:1 aerial / 1:1 etching pairs",
+      "asset_layout": "full-width 4×2 square grid / row 1 process folios / row 2 true-aerial ingredients",
       "asset_ids": [
+        "ST3-R6-ETCH-THYME-HONEY-100",
+        "ST3-R6-ETCH-ROASTED-BUCKWHEAT-102",
+        "ST3-R6-ETCH-CITRUS-PEEL-103",
+        "ST3-R6-ETCH-BLACK-SESAME-104",
         "ST3-R5-INGREDIENT-THYME-HONEY-93",
-        "ST3-ETCH-R2-46",
         "ST3-R5-INGREDIENT-ROASTED-BUCKWHEAT-95",
-        "ST3-ETCH-R2-48",
         "ST3-R5-INGREDIENT-CITRUS-PEEL-96",
-        "ST3-ETCH-R2-49",
-        "ST3-R5-INGREDIENT-BLACK-SESAME-97",
-        "ST3-ETCH-R2-50"
+        "ST3-R5-INGREDIENT-BLACK-SESAME-97"
       ],
       "cta": "Core 재료 보기"
     },
@@ -440,12 +446,12 @@
       "section": "Trial Ingredient Folios",
       "headline": "조건부 재료도 같은 사실 규격으로.",
       "body": "raw input과 방향성 process folio를 release proof와 분리합니다.",
-      "asset_layout": "two SplitEditorial 1:1 aerial / 1:1 etching pairs",
+      "asset_layout": "full-width 2×2 square grid / row 1 process folios / row 2 true-aerial ingredients",
       "asset_ids": [
+        "ST3-R6-ETCH-FIG-LEAF-101",
+        "ST3-R6-ETCH-OLIVE-OIL-SEA-SALT-105",
         "ST3-R5-INGREDIENT-FIG-LEAF-94",
-        "ST3-ETCH-R2-47",
-        "ST3-R5-INGREDIENT-OLIVE-OIL-SEA-SALT-98",
-        "ST3-ETCH-R2-51"
+        "ST3-R5-INGREDIENT-OLIVE-OIL-SEA-SALT-98"
       ],
       "cta": "Trial 재료 보기"
     },
@@ -537,7 +543,7 @@
     }
   ],
   "production_reference_appendix": {
-    "key_insight": "R1–R4 자산은 삭제하지 않지만 R5 active registry와 공개 landing composition에서는 제외한다.",
+    "key_insight": "R1–R5 자산은 삭제하지 않지만 R6 active registry와 공개 landing composition에서는 교체된 역할을 제외한다.",
     "archived_registry_path": "asset-registry.json prior to R5 migration is recoverable from version control or working history",
     "current_contracts": [
       ".work/revision-r5-layout-aware/stage3-image-production-contract.md",
@@ -549,10 +555,10 @@
   "section_map": [
     {
       "section": "Hero",
-      "communication_job": "원재료를 승인·제외하는 여성 메이커의 권위와 브랜드 메시지를 첫 화면에서 연결한다.",
+      "communication_job": "원재료를 승인·제외하는 여성 메이커의 권위와 농축 요거트·유청 분리의 제조 증거를 첫 화면에서 연결한다.",
       "copy": "MORA의 메이커는 재료를 고르고, 변환의 중간을 살피고, 내놓기 전 마지막 한 컵까지 확인합니다.",
-      "proof_of": "selection and responsibility",
-      "asset_id": "ST3-R5-HERO-SELECTION-76",
+      "proof_of": "selection, separation and responsibility",
+      "asset_id": "ST3-R6-HERO-SELECTION-WHEY-99",
       "cta": "여섯 레시피 비교하기"
     },
     {
@@ -570,6 +576,46 @@
       "proof_of": "visible separation",
       "asset_id": "ST3-R5-TRANSITION-CENTER-SAFE-81",
       "cta": "변환 보기"
+    },
+    {
+      "section": "Straining Transition KF01",
+      "communication_job": "왼쪽 두 번째 스트레이너를 중앙으로 이동시키면서 주변 제조 장면의 연속성을 유지한다.",
+      "copy": "We do not hide what happens in between.",
+      "proof_of": "continuous recentering",
+      "asset_id": "ST3-R7-TRANSITION-KF01-CENTER-PUSH-106",
+      "cta": "변환 보기"
+    },
+    {
+      "section": "Straining Transition KF02",
+      "communication_job": "주변 용기를 가장자리에 남긴 채 확대하고 초기 기포와 유청 포켓을 보여 준다.",
+      "copy": "We do not hide what happens in between.",
+      "proof_of": "early separation",
+      "asset_id": "ST3-R7-TRANSITION-KF02-SEPARATION-107",
+      "cta": "변환 보기"
+    },
+    {
+      "section": "Straining Transition KF03",
+      "communication_job": "같은 스트레이너의 천·림·요거트 표면을 유지한 채 분리 물성을 확대한다.",
+      "copy": "We do not hide what happens in between.",
+      "proof_of": "material separation detail",
+      "asset_id": "ST3-R7-TRANSITION-KF03-MATERIAL-ZOOM-108",
+      "cta": "변환 보기"
+    },
+    {
+      "section": "Straining Transition KF04",
+      "communication_job": "요거트와 유청의 저대비 재질 필드로 확대해 사이트 배경으로 이어지는 브리지를 만든다.",
+      "copy": "We do not hide what happens in between.",
+      "proof_of": "material-to-background bridge",
+      "asset_id": "ST3-R7-TRANSITION-KF04-CREAM-BRIDGE-109",
+      "cta": "변환 보기"
+    },
+    {
+      "section": "Straining Transition KF05",
+      "communication_job": "정확한 Cultured Cream 배경색으로 다음 horizontal section에 경계 없이 연결한다.",
+      "copy": "We do not hide what happens in between.",
+      "proof_of": "exact background handoff",
+      "asset_id": "ST3-R7-TRANSITION-KF05-CREAM-MATTE-110",
+      "cta": "다음 섹션"
     },
     {
       "section": "Why MORA",
@@ -640,7 +686,7 @@
       "communication_job": "Thyme Honey preparation과 finished trace의 방향성 인과를 주석으로 보여 준다.",
       "copy": "Thyme Honey",
       "proof_of": "directional physical process",
-      "asset_id": "ST3-ETCH-R2-46",
+      "asset_id": "ST3-R6-ETCH-THYME-HONEY-100",
       "cta": "변환 보기"
     },
     {
@@ -656,7 +702,7 @@
       "communication_job": "Roasted Buckwheat preparation과 finished trace의 방향성 인과를 주석으로 보여 준다.",
       "copy": "Roasted Buckwheat",
       "proof_of": "directional physical process",
-      "asset_id": "ST3-ETCH-R2-48",
+      "asset_id": "ST3-R6-ETCH-ROASTED-BUCKWHEAT-102",
       "cta": "변환 보기"
     },
     {
@@ -672,7 +718,7 @@
       "communication_job": "Citrus Peel preparation과 finished trace의 방향성 인과를 주석으로 보여 준다.",
       "copy": "Citrus Peel",
       "proof_of": "directional physical process",
-      "asset_id": "ST3-ETCH-R2-49",
+      "asset_id": "ST3-R6-ETCH-CITRUS-PEEL-103",
       "cta": "변환 보기"
     },
     {
@@ -688,7 +734,7 @@
       "communication_job": "Black Sesame preparation과 finished trace의 방향성 인과를 주석으로 보여 준다.",
       "copy": "Black Sesame",
       "proof_of": "directional physical process",
-      "asset_id": "ST3-ETCH-R2-50",
+      "asset_id": "ST3-R6-ETCH-BLACK-SESAME-104",
       "cta": "변환 보기"
     },
     {
@@ -728,7 +774,7 @@
       "communication_job": "Fig Leaf process folio를 안전·출시 증명과 분리된 방향성 주석으로 보여 준다.",
       "copy": "Fig Leaf",
       "proof_of": "conditional physical process",
-      "asset_id": "ST3-ETCH-R2-47",
+      "asset_id": "ST3-R6-ETCH-FIG-LEAF-101",
       "cta": "검증 기준 보기"
     },
     {
@@ -744,7 +790,7 @@
       "communication_job": "Olive Oil & Sea Salt process folio를 안전·출시 증명과 분리된 방향성 주석으로 보여 준다.",
       "copy": "Olive Oil & Sea Salt",
       "proof_of": "conditional physical process",
-      "asset_id": "ST3-ETCH-R2-51",
+      "asset_id": "ST3-R6-ETCH-OLIVE-OIL-SEA-SALT-105",
       "cta": "검증 기준 보기"
     },
     {
@@ -805,7 +851,7 @@
     }
   ],
   "registered_product_assets": [
-    "ST3-R5-HERO-SELECTION-76",
+    "ST3-R6-HERO-SELECTION-WHEY-99",
     "ST3-R5-WHY-MORA-SELECTION-77",
     "ST3-R5-CORE-STICKY-78",
     "ST3-R5-TRIAL-STICKY-79",
@@ -831,15 +877,20 @@
     "ST3-ETCH-R2-42",
     "ST3-ETCH-R2-43",
     "ST3-ETCH-R2-45",
-    "ST3-ETCH-R2-46",
-    "ST3-ETCH-R2-47",
-    "ST3-ETCH-R2-48",
-    "ST3-ETCH-R2-49",
-    "ST3-ETCH-R2-50",
-    "ST3-ETCH-R2-51"
+    "ST3-R6-ETCH-THYME-HONEY-100",
+    "ST3-R6-ETCH-FIG-LEAF-101",
+    "ST3-R6-ETCH-ROASTED-BUCKWHEAT-102",
+    "ST3-R6-ETCH-CITRUS-PEEL-103",
+    "ST3-R6-ETCH-BLACK-SESAME-104",
+    "ST3-R6-ETCH-OLIVE-OIL-SEA-SALT-105",
+    "ST3-R7-TRANSITION-KF01-CENTER-PUSH-106",
+    "ST3-R7-TRANSITION-KF02-SEPARATION-107",
+    "ST3-R7-TRANSITION-KF03-MATERIAL-ZOOM-108",
+    "ST3-R7-TRANSITION-KF04-CREAM-BRIDGE-109",
+    "ST3-R7-TRANSITION-KF05-CREAM-MATTE-110"
   ],
   "previous_version_archive": {
-    "key_insight": "R5는 현재 landing DOM에 실제로 쓰이는 32 unique raster 역할만 active로 남긴다.",
+    "key_insight": "R6는 현재 landing DOM의 32 unique raster 역할을 유지하고 교체된 R5 Hero와 material folios를 lineage로만 보존한다.",
     "status": "archive_only_not_registered",
     "items": [
       {
@@ -861,6 +912,11 @@
         "version": "Unused current assets",
         "name": "six dormant raster keys",
         "reason_archived": "not mounted by MoraLandingPage"
+      },
+      {
+        "version": "R5 hero and material folios",
+        "name": "selection-only hero and denser square process groups",
+        "reason_archived": "R6 adds explicit yogurt-body/whey evidence and more breathing room without changing the landing layout"
       }
     ],
     "retention_rule": "Old files and prompts remain in their revision folders for lineage. They do not appear in active registry, section map, product lineup or landing composition."
@@ -897,7 +953,7 @@
     ]
   },
   "layout_aware_image_system": {
-    "key_insight": "해상도보다 먼저 source master ratio를 실제 CSS slot ratio와 일치시켜야 crop이 사라진다.",
+    "key_insight": "R6는 기존 CSS slot ratio를 유지하면서 Hero delivery와 1행 illustration의 내부 여백만 역할별로 강화한다.",
     "preserved_implementation": [
       "MoraLandingPage section order",
       "FullBleedSection 3:2",
@@ -909,7 +965,7 @@
       {
         "role": "FullBleed",
         "ratio": "3:2",
-        "delivery": "3072×2048 minimum",
+        "delivery": "3072×2048 minimum; active R6 Hero 6144×4096",
         "safe_area": "inner 82% plus overlay-specific left-center / center / bottom-left field"
       },
       {
@@ -921,11 +977,11 @@
       {
         "role": "Product and ingredient",
         "ratio": "1:1",
-        "delivery": "2048×2048 minimum",
+        "delivery": "2048×2048 minimum; active R6 material folios 3072×3072",
         "safe_area": "complete subject with minimum 12% edge clearance; Fig Leaf aerial exception recorded"
       }
     ],
-    "high_resolution_truth": "Built-in native generations are preserved. Delivery masters are resampled to the required pixel dimensions when native output is smaller; the package does not claim that resampling created new optical detail.",
+    "high_resolution_truth": "The R6 hero delivers at 6144×4096 and the six R6 material folios at 3072×3072. Built-in native generations remain preserved; any larger delivery resample is disclosed and is not claimed as new optical detail.",
     "no_reuse_rule": "A 3:2 environment is never reused for 1:2 sticky or 1:1 evidence. Only an identical product master may repeat in more than one ProductCard occurrence."
   }
 }

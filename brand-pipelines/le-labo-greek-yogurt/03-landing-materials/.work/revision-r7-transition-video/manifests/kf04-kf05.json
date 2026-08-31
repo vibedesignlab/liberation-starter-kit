@@ -1,0 +1,36 @@
+{
+  "model": "fal-ai/kling-video/v3/pro/image-to-video",
+  "submissions": [
+    {
+      "id": "mora-r7-kf04-kf05",
+      "model": "fal-ai/kling-video/v3/pro/image-to-video",
+      "request_id": "01a0581c-5dd6-7e33-b124-69779afce84b",
+      "status": "COMPLETED",
+      "output": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/.work/revision-r7-transition-video/clips/kf04-kf05.mp4",
+      "downloaded": true,
+      "video_url": "https://v3b.fal.media/files/b/0aa88db7/XUk-v5YH9_N3LUZ1bw5UN_output.mp4",
+      "start": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r7-transition-video/st3-r7-transition-kf04-cream-blend-bridge-3x2.png",
+      "end": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r7-transition-video/st3-r7-transition-kf05-cultured-cream-matte-3x2.png",
+      "start_image_url": "https://v3b.fal.media/files/b/0aa88da0/uaX3H5HpeAB7uyCO_wpmy_st3-r7-transition-kf04-cream-blend-bridge-3x2.png",
+      "end_image_url": "https://v3b.fal.media/files/b/0aa88da0/RaPYl9n5kYgySHDGj3YZN_st3-r7-transition-kf05-cultured-cream-matte-3x2.png",
+      "profile": "kling",
+      "input": {
+        "prompt": "A seamless final transition from the extreme close yogurt-and-whey material field into the exact uniform Cultured Cream background. Gently soften focus and reduce local contrast while the warm cream tone becomes perfectly even. No cut, flash, edge, new texture or object. End on a completely flat #F5F1E8 frame suitable for an invisible website background handoff.",
+        "duration": "3",
+        "start_image_url": "https://v3b.fal.media/files/b/0aa88da0/uaX3H5HpeAB7uyCO_wpmy_st3-r7-transition-kf04-cream-blend-bridge-3x2.png",
+        "end_image_url": "https://v3b.fal.media/files/b/0aa88da0/RaPYl9n5kYgySHDGj3YZN_st3-r7-transition-kf05-cultured-cream-matte-3x2.png",
+        "negative_prompt": "cut, jump cut, dark edge, new object, camera tilt, color flash, boiling, foam, splash, text, logo, watermark, CGI pattern",
+        "generate_audio": false
+      },
+      "result_data": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0aa88db7/XUk-v5YH9_N3LUZ1bw5UN_output.mp4",
+          "content_type": "video/mp4",
+          "file_name": "output.mp4",
+          "file_size": 7611601
+        }
+      },
+      "submitted_at": "2026-08-31T14:01:26.104Z"
+    }
+  ]
+}

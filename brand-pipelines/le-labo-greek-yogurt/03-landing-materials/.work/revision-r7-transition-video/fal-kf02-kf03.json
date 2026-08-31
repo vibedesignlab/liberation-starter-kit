@@ -1,0 +1,18 @@
+{
+  "profile": "kling",
+  "duration": "3",
+  "generate_audio": false,
+  "negative_prompt": "cut, jump cut, disappearing object, newly appearing object, morphing vessel, camera tilt, perspective change, boiling, soap foam, splash, text, logo, watermark, CGI gloss",
+  "poll_interval_ms": 5000,
+  "timeout_ms": 1800000,
+  "out": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/.work/revision-r7-transition-video/manifests/kf02-kf03.json",
+  "clips": [
+    {
+      "id": "mora-r7-kf02-kf03",
+      "start": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r7-transition-video/st3-r7-transition-kf02-separation-emerge-3x2.png",
+      "end": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r7-transition-video/st3-r7-transition-kf03-material-zoom-3x2.png",
+      "prompt": "Continue one slow strict aerial zoom into the same centered yogurt surface. Preserve the exact cloth, rim and cultured-food identity. Neighboring vessel fragments pass beyond the crop continuously. Small irregular air cells open slowly and a thin translucent pale acid-whey membrane gathers along existing curd seams with a real shallow meniscus. Natural documentary food process, restrained motion and analog grain.",
+      "output": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/.work/revision-r7-transition-video/clips/kf02-kf03.mp4"
+    }
+  ]
+}

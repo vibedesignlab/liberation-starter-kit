@@ -16,7 +16,7 @@ export default function NewsletterCTA({
       <Typography variant="h1" sx={{ mb: 2, position: 'relative', zIndex: 1 }}>
         {headline}
       </Typography>
-      <Typography sx={{ fontSize: '16px', color: 'text.secondary', mb: 3, position: 'relative', zIndex: 1 }}>
+      <Typography variant="body1" sx={{ color: 'text.secondary', mb: 3, position: 'relative', zIndex: 1 }}>
         {body}
       </Typography>
       <Box sx={{ display: 'flex', gap: '2px' }}>

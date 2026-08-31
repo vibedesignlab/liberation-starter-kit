@@ -10,6 +10,9 @@ import {
   NewsletterCTA,
 } from '../components/mora-landing';
 
+import { motion, useTransform } from 'framer-motion';
+import { HorizontalScrollContainer, useHorizontalScrollProgress } from '../components/content-transition';
+
 import landingContent from '../data/mora/content';
 
 const {
@@ -20,11 +23,12 @@ const {
   coreProducts,
   trialProducts,
   vesselPhases,
+  recipeSlides,
 } = landingContent;
 
-/** Full-width material grid: illustrations first, raw ingredients second. */
-function IngredientFolioGrid({ products }) {
-  const visibleProducts = products.filter((product) => product.ingredient && product.etching);
+/** Full-width material grid: raw ingredient images only. */
+function IngredientGrid({ products }) {
+  const visibleProducts = products.filter((product) => product.ingredient);
   if (!visibleProducts.length) return null;
 
   return (
@@ -41,16 +45,6 @@ function IngredientFolioGrid({ products }) {
     >
       {visibleProducts.map((product) => (
         <Box
-          key={`${product.id}-folio`}
-          component="img"
-          src={product.etching}
-          alt={product.etchingAlt}
-          loading="lazy"
-          sx={{ width: '100%', aspectRatio: '1 / 1', objectFit: 'cover', display: 'block', borderRadius: 0 }}
-        />
-      ))}
-      {visibleProducts.map((product) => (
-        <Box
           key={`${product.id}-ingredient`}
           component="img"
           src={product.ingredient}
@@ -63,6 +57,100 @@ function IngredientFolioGrid({ products }) {
   );
 }
 
+/**
+ * RecipeSlideCard - 레시피 가로 스크롤 슬라이드 (Horizontal Parallax)
+ *
+ * 세로 패럴랙스 원리를 가로에 적용:
+ * - 이미지: 빠른 속도로 진입 (translateX 배율 1.3x), 퇴장은 트랙과 동일 속도
+ * - 텍스트: 이미지보다 더 빠르게 진입 (배율 1.5x), 퇴장은 트랙과 동일 속도
+ * - opacity 없음, 순수 위치 차이만으로 깊이감 생성
+ *
+ * Props:
+ * @param {Object} slide - recipeSlides 데이터 항목 [Required]
+ * @param {number} index - 슬라이드 인덱스 [Required]
+ * @param {number} total - 전체 슬라이드 수 [Required]
+ */
+function RecipeSlideCard({ slide, index, total }) {
+  const scrollYProgress = useHorizontalScrollProgress();
+
+  const segmentSize = 1 / total;
+  const slideCenter = (index + 0.5) * segmentSize;
+
+  const imgXRaw = useTransform(
+    scrollYProgress,
+    [slideCenter - segmentSize, slideCenter, slideCenter + segmentSize],
+    [120, 0, -30]
+  );
+  const imgX = useTransform(imgXRaw, (v) => {
+    if (v > 0) return v * v / 120;
+    return -(Math.abs(v) ** 0.6);
+  });
+
+  const textXRaw = useTransform(
+    scrollYProgress,
+    [slideCenter - segmentSize, slideCenter, slideCenter + segmentSize],
+    [200, 0, -50]
+  );
+  const textX = useTransform(textXRaw, (v) => {
+    if (v > 0) return v * v / 200;
+    return -(Math.abs(v) ** 0.6);
+  });
+
+  return (
+    <Box
+      sx={{
+        width: { xs: '85vw', sm: '60vw', md: '50vw' },
+        flexShrink: 0,
+        position: 'relative',
+        overflow: 'hidden',
+      }}
+    >
+      <motion.div style={{ x: imgX }}>
+        <Box
+          component="img"
+          src={slide.etching}
+          alt={`${slide.name} material folio`}
+          loading="lazy"
+          sx={{
+            width: '100%',
+            aspectRatio: '1 / 1',
+            objectFit: 'cover',
+            display: 'block',
+            borderRadius: 0,
+          }}
+        />
+      </motion.div>
+      <motion.div
+        style={{
+          x: textX,
+          position: 'absolute',
+          top: 0,
+          left: 0,
+        }}
+      >
+        <Box sx={{ pt: { xs: '24px', md: '40px' }, pl: { xs: '20px', md: '32px' }, maxWidth: '80%' }}>
+          <Typography
+            variant="h1"
+            sx={{ fontSize: 'clamp(2rem, calc(1.5rem + 2.5vw), 4rem)' }}
+          >
+            {slide.number} {slide.name}
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: 'clamp(1.125rem, calc(1rem + 0.75vw), 1.75rem)',
+              color: 'text.primary',
+              mt: 2,
+              lineHeight: 1.5,
+            }}
+          >
+            {slide.headline}
+          </Typography>
+        </Box>
+      </motion.div>
+    </Box>
+  );
+}
+
 export default function MoraLandingPage() {
   return (
     <Box sx={{ bgcolor: 'background.default', color: 'text.primary' }}>
@@ -71,52 +159,39 @@ export default function MoraLandingPage() {
 
       {/* Hero — left center */}
       <FullBleedSection image={sections.hero.image} alt={sections.hero.imageAlt} textPosition="left-center">
-        <Typography variant="h1">
+        <Typography variant="h1" sx={{ color: 'primary.contrastText' }}>
           {sections.hero.headline}
         </Typography>
-        <Typography sx={{ fontSize: '16px', color: 'text.secondary', mt: 2 }}>
-          {sections.hero.support}
-        </Typography>
         <Typography
-          component="a"
-          href={sections.hero.ctaHref}
+          variant="body1"
           sx={{
-            display: 'inline-block', fontSize: '16px', color: 'text.primary',
-            textDecoration: 'none', mt: 2,
-            '&:hover': { textDecoration: 'underline', textUnderlineOffset: '3px' },
+            fontSize: 'clamp(1.125rem, calc(1rem + 0.5vw), 1.375rem)',
+            lineHeight: 1.5,
+            color: 'rgba(245, 241, 232, 0.85)',
+            mt: 3,
           }}
         >
-          {sections.hero.ctaLabel}
+          {sections.hero.support}
         </Typography>
       </FullBleedSection>
-
-      {/* Brand Trace etching */}
-      <Box id="transformation" sx={{ display: 'flex', justifyContent: 'center' }}>
-        <Box
-          component="img"
-          src={sections.brandTrace.image}
-          alt={sections.brandTrace.imageAlt}
-          sx={{ width: '100%', maxWidth: '55%', display: 'block' }}
-        />
-      </Box>
 
       {/* Feature — center */}
       <FullBleedSection image={sections.transition.image} alt={sections.transition.imageAlt} textPosition="center">
         <Typography variant="h1" sx={{ color: 'background.default', whiteSpace: 'pre-line' }}>
           {sections.transition.headline}
         </Typography>
-        <Typography
-          component="a"
-          href={sections.transition.ctaHref}
-          sx={{
-            display: 'inline-block', fontSize: '16px', color: 'background.default',
-            textDecoration: 'none', mt: 2,
-            '&:hover': { textDecoration: 'underline', textUnderlineOffset: '3px' },
-          }}
-        >
-          {sections.transition.ctaLabel}
-        </Typography>
       </FullBleedSection>
+
+      {/* Recipe Scroll — Core 4 etchings with descriptions */}
+      <Box id="transformation">
+        <HorizontalScrollContainer gap="32px" padding="40px">
+          {recipeSlides.map((slide, i) => (
+            <HorizontalScrollContainer.Slide key={slide.id}>
+              <RecipeSlideCard slide={slide} index={i} total={recipeSlides.length} />
+            </HorizontalScrollContainer.Slide>
+          ))}
+        </HorizontalScrollContainer>
+      </Box>
 
       {/* Why MORA: Maker + First Furrow */}
       <Box>
@@ -150,13 +225,11 @@ export default function MoraLandingPage() {
           products={coreProducts}
           title={sections.coreCollection.title}
           body={sections.coreCollection.body}
-          cta={sections.coreCollection.ctaLabel}
-          ctaHref={sections.coreCollection.ctaHref}
         />
       </Box>
 
-      {/* Core ingredient + etching pairs */}
-      <IngredientFolioGrid products={coreProducts} />
+      {/* Core ingredient grid (aerial only) */}
+      <IngredientGrid products={coreProducts} />
 
       {/* Studio Trials — reversed */}
       <Box>
@@ -166,14 +239,12 @@ export default function MoraLandingPage() {
           products={trialProducts}
           title={sections.studioTrials.title}
           body={sections.studioTrials.body}
-          cta={sections.studioTrials.ctaLabel}
-          ctaHref={sections.studioTrials.ctaHref}
           reverse
         />
       </Box>
 
-      {/* Trial ingredient + etching pairs */}
-      <IngredientFolioGrid products={trialProducts} />
+      {/* Trial ingredient grid (aerial only) */}
+      <IngredientGrid products={trialProducts} />
 
       {/* Cloth to Body etching */}
       <Box sx={{ display: 'flex', justifyContent: 'center' }}>
@@ -189,17 +260,6 @@ export default function MoraLandingPage() {
       <FullBleedSection image={sections.materialMethod.image} alt={sections.materialMethod.imageAlt} textPosition="left-center">
         <Typography variant="h1" sx={{ color: 'background.default', whiteSpace: 'pre-line' }}>
           {sections.materialMethod.headline}
-        </Typography>
-        <Typography
-          component="a"
-          href={sections.materialMethod.ctaHref}
-          sx={{
-            display: 'inline-block', fontSize: '16px', color: 'background.default',
-            textDecoration: 'none', mt: 2,
-            '&:hover': { textDecoration: 'underline', textUnderlineOffset: '3px' },
-          }}
-        >
-          {sections.materialMethod.ctaLabel}
         </Typography>
       </FullBleedSection>
 
@@ -222,7 +282,15 @@ export default function MoraLandingPage() {
         <Typography variant="h2" sx={{ color: 'background.default' }}>
           {sections.evening.headline}
         </Typography>
-        <Typography sx={{ fontSize: '16px', color: 'background.default', opacity: 0.8, mt: 1 }}>
+        <Typography
+          variant="body1"
+          sx={{
+            fontSize: 'clamp(1.0625rem, calc(1rem + 0.3vw), 1.25rem)',
+            color: 'background.default',
+            opacity: 0.85,
+            mt: 2,
+          }}
+        >
           {sections.evening.body}
         </Typography>
       </FullBleedSection>
@@ -239,10 +307,10 @@ export default function MoraLandingPage() {
           borderTop: 1, borderColor: 'divider',
         }}
       >
-        <Typography sx={{ fontSize: '11px', color: 'text.secondary' }}>
+        <Typography variant="caption" sx={{ color: 'text.secondary' }}>
           {footer.legal}
         </Typography>
-        <Typography sx={{ fontSize: '11px', color: 'text.secondary' }}>
+        <Typography variant="caption" sx={{ color: 'text.secondary' }}>
           {footer.facts}
         </Typography>
       </Box>

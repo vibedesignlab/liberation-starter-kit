@@ -1,0 +1,18 @@
+{
+  "profile": "kling",
+  "duration": "3",
+  "generate_audio": false,
+  "negative_prompt": "cut, jump cut, disappearing object, newly appearing object, morphing vessel, camera tilt, perspective change, boiling, soap foam, splash, text, logo, watermark, CGI gloss",
+  "poll_interval_ms": 5000,
+  "timeout_ms": 1800000,
+  "out": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/.work/revision-r7-transition-video/manifests/kf00-kf01.json",
+  "clips": [
+    {
+      "id": "mora-r7-kf00-kf01",
+      "start": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r7-transition-video/st3-r7-transition-kf00-wide-source-3x2.png",
+      "end": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r7-transition-video/st3-r7-transition-kf01-center-push-3x2.png",
+      "prompt": "One continuous strict 90-degree aerial camera push toward the second yogurt strainer from the left. It moves smoothly to the center only through camera reframing. Preserve every vessel, cloth, tool and prop; surrounding objects move continuously toward the frame edges and never vanish or morph. Preserve the real stainless worktop, upper-right task light, shadows, food texture and analog magazine grain.",
+      "output": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/.work/revision-r7-transition-video/clips/kf00-kf01.mp4"
+    }
+  ]
+}

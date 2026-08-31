@@ -1,0 +1,36 @@
+{
+  "model": "fal-ai/kling-video/v3/pro/image-to-video",
+  "submissions": [
+    {
+      "id": "mora-r7-kf00-kf01",
+      "model": "fal-ai/kling-video/v3/pro/image-to-video",
+      "request_id": "01a0581c-5ffd-7e50-a045-0bcaff7896c0",
+      "status": "COMPLETED",
+      "output": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/.work/revision-r7-transition-video/clips/kf00-kf01.mp4",
+      "downloaded": true,
+      "video_url": "https://v3b.fal.media/files/b/0aa88dc1/O8qt8BOvnyINrnnLmykT0_output.mp4",
+      "start": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r7-transition-video/st3-r7-transition-kf00-wide-source-3x2.png",
+      "end": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r7-transition-video/st3-r7-transition-kf01-center-push-3x2.png",
+      "start_image_url": "https://v3b.fal.media/files/b/0aa88da0/tMmu4H5F7CT3MIeE6JlCS_st3-r7-transition-kf00-wide-source-3x2.png",
+      "end_image_url": "https://v3b.fal.media/files/b/0aa88da0/lfviEa8W-clT6zM9c4M0O_st3-r7-transition-kf01-center-push-3x2.png",
+      "profile": "kling",
+      "input": {
+        "prompt": "One continuous strict 90-degree aerial camera push toward the second yogurt strainer from the left. It moves smoothly to the center only through camera reframing. Preserve every vessel, cloth, tool and prop; surrounding objects move continuously toward the frame edges and never vanish or morph. Preserve the real stainless worktop, upper-right task light, shadows, food texture and analog magazine grain.",
+        "duration": "3",
+        "start_image_url": "https://v3b.fal.media/files/b/0aa88da0/tMmu4H5F7CT3MIeE6JlCS_st3-r7-transition-kf00-wide-source-3x2.png",
+        "end_image_url": "https://v3b.fal.media/files/b/0aa88da0/lfviEa8W-clT6zM9c4M0O_st3-r7-transition-kf01-center-push-3x2.png",
+        "negative_prompt": "cut, jump cut, disappearing object, newly appearing object, morphing vessel, camera tilt, perspective change, boiling, soap foam, splash, text, logo, watermark, CGI gloss",
+        "generate_audio": false
+      },
+      "result_data": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0aa88dc1/O8qt8BOvnyINrnnLmykT0_output.mp4",
+          "content_type": "video/mp4",
+          "file_name": "output.mp4",
+          "file_size": 8098018
+        }
+      },
+      "submitted_at": "2026-08-31T13:59:23.854Z"
+    }
+  ]
+}

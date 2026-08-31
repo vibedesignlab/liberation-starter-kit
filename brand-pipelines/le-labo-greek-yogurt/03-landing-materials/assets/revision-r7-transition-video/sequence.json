@@ -1,0 +1,39 @@
+{
+  "id": "st3-r7-what-happens-in-between-transition",
+  "aspect_ratio": "3:2",
+  "delivery_size": [3072, 2048],
+  "background_token": "#F5F1E8",
+  "interpolation_rule": "continuous camera push toward the second yogurt vessel from the left; surrounding objects exit only through edge cropping",
+  "frames": [
+    {
+      "progress": 0,
+      "file": "st3-r7-transition-kf00-wide-source-3x2.png",
+      "role": "existing wide source"
+    },
+    {
+      "progress": 0.22,
+      "file": "st3-r7-transition-kf01-center-push-3x2.png",
+      "role": "target recenters while the complete scene remains continuous"
+    },
+    {
+      "progress": 0.46,
+      "file": "st3-r7-transition-kf02-separation-emerge-3x2.png",
+      "role": "medium push with restrained bubble and whey onset"
+    },
+    {
+      "progress": 0.7,
+      "file": "st3-r7-transition-kf03-material-zoom-3x2.png",
+      "role": "close material evidence with cloth and rim continuity"
+    },
+    {
+      "progress": 0.88,
+      "file": "st3-r7-transition-kf04-cream-blend-bridge-3x2.png",
+      "role": "low-contrast photographic bridge"
+    },
+    {
+      "progress": 1,
+      "file": "st3-r7-transition-kf05-cultured-cream-matte-3x2.png",
+      "role": "exact background-color handoff"
+    }
+  ]
+}

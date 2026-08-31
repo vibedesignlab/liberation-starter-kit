@@ -7,7 +7,7 @@ const A = '/brand-reports/mora-infused-greek-yogurt-landing-materials/assets';
 
 const assets = {
   // Hero
-  heroAtelier: `${A}/st3-r5-01-hero-selection-left-safe-3x2-497d1ecd4032fe2e4436263456323707d311ac69294a4bf8104827df09b4d590.png`,
+  heroAtelier: `${A}/st3-r6-01-hero-selection-whey-left-safe-3x2-600a98469e0d372751dfb0f59b58e6cc5fe93abd0bbc2ded24e60ed59033799f.png`,
 
   // Why MORA
   whyMoraMaker: `${A}/st3-r5-02-why-mora-selection-3x2-e09ba351ddf9901cdbdd2ec02312111a1e95c3da30d89d309b4f1336f8c60fa6.png`,
@@ -18,12 +18,12 @@ const assets = {
   etchClothToBody: `${A}/st3-r5-etch-cloth-to-body-3x2-da45f515c8fc2b9adf52ac6c400e77d8bcfa00076343322f76bf1d71de47b6c5.png`,
 
   // Etchings — material plates
-  etchThymeHoney: `${A}/st3-r5-etch-thyme-honey-square-4129d745d65cc3ace9884a714228cc9b06ebe880c8d4d46db0ca2952e1bcb2e4.png`,
-  etchFigLeaf: `${A}/st3-r5-etch-fig-leaf-square-c3270b858cb0c4d5f8a8d2211dd7db8370d5ed689ee04d01930a1e8a9c909839.png`,
-  etchBuckwheat: `${A}/st3-r5-etch-roasted-buckwheat-square-cbf38107b1cca5db3c11771d4fdd65f875ea87eb9517127fc2e05eab12b38e45.png`,
-  etchCitrusPeel: `${A}/st3-r5-etch-citrus-peel-square-6d5dd0e9047fefc61e1a432c51a5731385b571d6beb3e6c236979f08961831b6.png`,
-  etchBlackSesame: `${A}/st3-r5-etch-black-sesame-square-4d3ea69300d467ef6b8612ca2c2bebbbeb11c998c3f9f59de530fe340a03caf2.png`,
-  etchOliveOil: `${A}/st3-r5-etch-olive-oil-sea-salt-square-5ef11a98a485120c793419f55c7b6f80d7ecfc83cb954a83cf1141eeb78839c9.png`,
+  etchThymeHoney: `${A}/st3-r6-etch-thyme-honey-square-9e559cc3bd2ebd9dd8d37e333204376b51342dea8ebd13c939f0046f531062f5.png`,
+  etchFigLeaf: `${A}/st3-r6-etch-fig-leaf-square-25d0e56360b631095c6caceb6431ae5f8732c53d4087a7bde941c8dec3a2e41f.png`,
+  etchBuckwheat: `${A}/st3-r6-etch-roasted-buckwheat-square-21d7de7f1786d5f9f6db6772a111029a3344d466d06e056612a334bb6d7b372a.png`,
+  etchCitrusPeel: `${A}/st3-r6-etch-citrus-peel-square-a877a811fa8ebcaa9ef6278cce477e579296f2e8f3a916d4297976a876a234ad.png`,
+  etchBlackSesame: `${A}/st3-r6-etch-black-sesame-square-83fb5b67508b8b27feaf35d40d3fe7b967672ec422f414f5cc14faa5598ce80b.png`,
+  etchOliveOil: `${A}/st3-r6-etch-olive-oil-sea-salt-square-3e5a48bd77e30be4eb13d2c391eec4342b170d0970e696704f27d6382f43e3dc.png`,
 
   // Material Method
   methodProcessTable: `${A}/st3-r5-05-material-method-left-safe-3x2-ec12bd1c9cf14ab8b3c65451c00a0c32c3335fb86d934bb85eedbbecce7ba978.png`,

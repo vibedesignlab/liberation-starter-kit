@@ -1,4 +1,4 @@
-# MORA Stage 3 — Landing Materials R5
+# MORA Stage 3 — Landing Materials R6
 
 ## 1. Landing narrative and hierarchy
 
@@ -6,7 +6,7 @@
 
 MORA의 메이커는 재료를 고르고, 변환의 중간을 살피고, 내놓기 전 마지막 한 컵까지 확인합니다.
 
-R5는 현재 랜딩 컴포넌트와 스크롤 구조를 유지하고 Selection → Visible Transformation → Last Measure → Product / Ingredient Proof → SEE–READ–OPEN–TASTE 순서로 이미지를 교체한다.
+R6는 현재 랜딩 컴포넌트와 스크롤 구조를 유지하고 Selection → Visible Transformation → Last Measure → Product / Ingredient Proof → SEE–READ–OPEN–TASTE 순서를 보존한다. Hero에는 농축된 요거트 body와 그 아래 모인 유청을 추가하고, 1행 Material Folios는 오브젝트 크기와 오브젝트 사이 간격을 줄여 배경의 호흡을 키운다.
 
 ## 2. Brand value copy
 
@@ -80,9 +80,9 @@ Studio Trial. oil stability, emulsion, salt dissolution, sensory balance와 shel
 
 ## 6. Layout-aware image renders and section mapping
 
-- FullBleed: exact 3:2, 3072×2048 delivery, overlay-specific safe field.
+- FullBleed: exact 3:2, 3072×2048 minimum; active R6 Hero 6144×4096, overlay-specific safe field.
 - Sticky main: exact 1:2, 2048×4096 delivery, dedicated portrait composition.
-- Product / ingredient: exact 1:1, 2048×2048 delivery, complete subject.
+- Product / ingredient: exact 1:1, 2048×2048 minimum; active R6 Material Folios 3072×3072 with larger outer and inter-object breathing room.
 - Active registry: 32 unique raster masters, matching the current landing DOM.
 - Existing component grid and scroll interactions are preserved.
 - Native generation, crop and resample provenance are recorded separately; resampling is not claimed as new optical detail.

@@ -16,7 +16,7 @@ export default function ProcessScroll({ steps = [] }) {
       {withoutImage.length > 0 && (
         <Box sx={{ my: '128px', px: '10px', maxWidth: 600 }}>
           {withoutImage.map((s) => (
-            <Typography key={s.step} sx={{ fontSize: '16px', color: 'text.secondary', mb: 1 }}>
+            <Typography key={s.step} variant="body2" sx={{ color: 'text.secondary', mb: 1 }}>
               {s.label}
             </Typography>
           ))}
@@ -27,7 +27,7 @@ export default function ProcessScroll({ steps = [] }) {
       {withImage.map((s) => (
         <FullBleedSection key={s.step} image={s.image} alt={s.label}>
           <Typography variant="h1">{s.label}</Typography>
-          <Typography sx={{ fontSize: '16px', color: 'background.default', mt: 0.5 }}>
+          <Typography variant="body1" sx={{ color: 'background.default', opacity: 0.85, mt: 0.5 }}>
             {s.desc}
           </Typography>
         </FullBleedSection>

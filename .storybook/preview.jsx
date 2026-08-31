@@ -4,14 +4,11 @@ import { createElement } from 'react';
 
 import { defaultTheme } from '../src/styles/themes';
 
-// Google Fonts 로드 (Material Symbols + 기본 폰트)
+// Google Fonts 로드 (Material Symbols)
 const googleFonts = [
-  // Material Symbols
   'Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200',
   'Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200',
   'Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200',
-  // Default Theme Font
-  'Outfit:wght@300;400;500;600;700;800;900',
 ];
 
 googleFonts.forEach((font) => {
@@ -20,6 +17,12 @@ googleFonts.forEach((font) => {
   link.href = `https://fonts.googleapis.com/css2?family=${font}&display=swap`;
   document.head.appendChild(link);
 });
+
+// Fontshare — Zodiak (headline) + General Sans (body)
+const fontshareLink = document.createElement('link');
+fontshareLink.rel = 'stylesheet';
+fontshareLink.href = 'https://api.fontshare.com/v2/css?f[]=zodiak@300,400,500,600,700&f[]=general-sans@300,400,500,600,700&display=swap';
+document.head.appendChild(fontshareLink);
 
 /** @type { import('@storybook/react-vite').Preview } */
 const preview = {

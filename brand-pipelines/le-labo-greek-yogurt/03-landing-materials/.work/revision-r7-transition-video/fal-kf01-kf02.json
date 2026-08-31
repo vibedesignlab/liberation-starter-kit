@@ -1,0 +1,18 @@
+{
+  "profile": "kling",
+  "duration": "3",
+  "generate_audio": false,
+  "negative_prompt": "cut, jump cut, disappearing object, newly appearing object, morphing vessel, camera tilt, perspective change, boiling, soap foam, splash, text, logo, watermark, CGI gloss",
+  "poll_interval_ms": 5000,
+  "timeout_ms": 1800000,
+  "out": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/.work/revision-r7-transition-video/manifests/kf01-kf02.json",
+  "clips": [
+    {
+      "id": "mora-r7-kf01-kf02",
+      "start": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r7-transition-video/st3-r7-transition-kf01-center-push-3x2.png",
+      "end": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/assets/revision-r7-transition-video/st3-r7-transition-kf02-separation-emerge-3x2.png",
+      "prompt": "Continue the exact same strict aerial camera push into the centered cloth-lined yogurt strainer. The left and right vessels remain continuous partial objects and leave only through progressive edge cropping. Preserve cloth folds, perforated steel, yogurt landmarks, light, shadows and grain. Let only a few restrained food-native microbubbles and shallow acid-whey pockets begin to appear; no boiling or foam.",
+      "output": "brand-pipelines/le-labo-greek-yogurt/03-landing-materials/.work/revision-r7-transition-video/clips/kf01-kf02.mp4"
+    }
+  ]
+}
