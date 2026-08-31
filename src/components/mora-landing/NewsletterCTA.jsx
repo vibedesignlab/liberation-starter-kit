@@ -4,20 +4,26 @@ import Typography from '@mui/material/Typography';
 /**
  * Niksen "Join the family".
  */
-export default function NewsletterCTA() {
+export default function NewsletterCTA({
+  headline = '',
+  body = '',
+  emailPlaceholder = '',
+  ctaLabel = '',
+  ctaHref = '#',
+}) {
   return (
     <Box sx={{ py: '128px', px: '10px', width: '100%' }}>
       <Typography variant="h1" sx={{ mb: 2, position: 'relative', zIndex: 1 }}>
-        확인한 것만 기록합니다.
+        {headline}
       </Typography>
       <Typography sx={{ fontSize: '16px', color: 'text.secondary', mb: 3, position: 'relative', zIndex: 1 }}>
-        실제 검증을 통과한 출시 정보와 기록만 전합니다.
+        {body}
       </Typography>
       <Box sx={{ display: 'flex', gap: '2px' }}>
         <Box
           component="input"
           type="email"
-          placeholder="이메일"
+          placeholder={emailPlaceholder}
           sx={{
             flex: 1,
             border: 1,
@@ -35,7 +41,7 @@ export default function NewsletterCTA() {
         />
         <Typography
           component="a"
-          href="#"
+          href={ctaHref}
           sx={{
             fontSize: '14px',
             color: 'text.primary',
@@ -46,7 +52,7 @@ export default function NewsletterCTA() {
             '&:hover': { textDecoration: 'underline', textUnderlineOffset: '3px' },
           }}
         >
-          출시 소식 받기
+          {ctaLabel}
         </Typography>
       </Box>
     </Box>

@@ -1,13 +1,12 @@
 import { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import { navLinks } from '../../data/mora/content';
 
 /**
  * 34px sticky nav. MORA left, plain text links right.
  * Transparent → cream on scroll. No buttons.
  */
-export default function MoraNav() {
+export default function MoraNav({ brandLabel = '', brandHref = '#', links = [] }) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -34,7 +33,7 @@ export default function MoraNav() {
     >
       <Typography
         component="a"
-        href="#"
+        href={brandHref}
         sx={{
           fontSize: '11px',
           fontWeight: 500,
@@ -43,10 +42,10 @@ export default function MoraNav() {
           letterSpacing: '0.06em',
         }}
       >
-        MORA
+        {brandLabel}
       </Typography>
       <Box sx={{ display: 'flex', gap: '20px' }}>
-        {navLinks.map((link) => (
+        {links.map((link) => (
           <Typography
             key={link.label}
             component="a"

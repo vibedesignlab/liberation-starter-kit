@@ -10,7 +10,7 @@ export default function ConditionalCard({ product }) {
       <Box
         component="img"
         src={product.product}
-        alt={product.name}
+        alt={product.productAlt || product.name}
         loading="lazy"
         sx={{
           display: 'block',

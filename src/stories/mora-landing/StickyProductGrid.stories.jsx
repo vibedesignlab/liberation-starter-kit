@@ -1,7 +1,6 @@
 import Box from '@mui/material/Box';
 import StickyProductGrid from '../../components/mora-landing/StickyProductGrid';
-import assets from '../../data/mora/assets';
-import { coreProducts, trialProducts } from '../../data/mora/content';
+import { coreProducts, sections, trialProducts } from '../../data/mora/content';
 
 export default {
   title: 'Components/MORA Landing/StickyProductGrid',
@@ -14,19 +13,19 @@ export default {
     cta: { control: 'text' },
   },
   args: {
-    mainImage: assets.momentMorning,
-    mainAlt: 'Core Collection last fold and final check',
-    title: 'Vol. 1 — Four Directions',
-    body: '한 번의 마지막 판단으로 이어지는 네 가지 방향.',
-    cta: 'Core Collection 보기',
-    ctaHref: '#',
+    mainImage: sections.coreCollection.mainImage,
+    mainAlt: sections.coreCollection.mainImageAlt,
+    title: sections.coreCollection.title,
+    body: sections.coreCollection.body,
+    cta: sections.coreCollection.ctaLabel,
+    ctaHref: sections.coreCollection.ctaHref,
     reverse: false,
   },
 };
 
 export const Playground = {
   render: (args) => (
-    <Box sx={{ my: '128px' }}>
+    <Box>
       <StickyProductGrid {...args} products={coreProducts} />
     </Box>
   ),
@@ -34,15 +33,16 @@ export const Playground = {
 
 export const Reversed = {
   args: {
-    mainImage: assets.momentAfternoon,
-    mainAlt: 'Studio Trials conditional state check',
-    title: 'Studio Trials',
-    body: '확인되기 전에는 출시하지 않는 두 가지 조건부 방향.',
-    cta: '검증 기준 보기',
+    mainImage: sections.studioTrials.mainImage,
+    mainAlt: sections.studioTrials.mainImageAlt,
+    title: sections.studioTrials.title,
+    body: sections.studioTrials.body,
+    cta: sections.studioTrials.ctaLabel,
+    ctaHref: sections.studioTrials.ctaHref,
     reverse: true,
   },
   render: (args) => (
-    <Box sx={{ my: '128px' }}>
+    <Box>
       <StickyProductGrid {...args} products={trialProducts} />
     </Box>
   ),

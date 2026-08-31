@@ -1,5 +1,5 @@
 import UseMomentCard from '../../components/mora-landing/UseMomentCard';
-import assets from '../../data/mora/assets';
+import { sections } from '../../data/mora/content';
 
 export default {
   title: 'Components/MORA Landing/UseMomentCard',
@@ -10,9 +10,9 @@ export default {
     productName: { control: 'text' },
   },
   args: {
-    image: assets.momentEvening,
-    label: '한 컵이 놓이는 식탁',
-    productName: 'MORA Craft Greek Yogurt',
+    image: sections.evening.image,
+    label: sections.evening.headline,
+    productName: sections.evening.productName,
   },
 };
 

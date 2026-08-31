@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box';
 import SplitEditorial from '../../components/mora-landing/SplitEditorial';
-import assets from '../../data/mora/assets';
+import { coreProducts, sections } from '../../data/mora/content';
 
 export default {
   title: 'Components/MORA Landing/SplitEditorial',
@@ -21,16 +21,16 @@ export const Playground = {
       left={
         <Box
           component="img"
-          src={assets.whyMoraMaker}
-          alt="Maker"
+          src={sections.whyMora.makerImage}
+          alt={sections.whyMora.makerAlt}
           sx={{ width: '100%', aspectRatio: '3 / 2', objectFit: 'cover', display: 'block' }}
         />
       }
       right={
         <Box
           component="img"
-          src={assets.etchFirstFurrow}
-          alt="First Furrow etching"
+          src={sections.whyMora.etchingImage}
+          alt={sections.whyMora.etchingAlt}
           sx={{ width: '100%', aspectRatio: '3 / 2', objectFit: 'cover', display: 'block' }}
         />
       }
@@ -46,16 +46,16 @@ export const Reversed = {
       left={
         <Box
           component="img"
-          src={assets.ingredientThymeHoney}
-          alt="Thyme Honey ingredient"
+          src={coreProducts[0].ingredient}
+          alt={coreProducts[0].ingredientAlt}
           sx={{ width: '100%', aspectRatio: '1 / 1', objectFit: 'cover', display: 'block' }}
         />
       }
       right={
         <Box
           component="img"
-          src={assets.etchThymeHoney}
-          alt="Thyme Honey material folio"
+          src={coreProducts[0].etching}
+          alt={coreProducts[0].etchingAlt}
           sx={{ width: '100%', aspectRatio: '1 / 1', objectFit: 'cover', display: 'block' }}
         />
       }

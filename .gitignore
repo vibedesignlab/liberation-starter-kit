@@ -27,3 +27,5 @@ CLAUDE.local.md
 *.sln
 *.sw?
 storybook-static
+__pycache__/
+*.py[cod]

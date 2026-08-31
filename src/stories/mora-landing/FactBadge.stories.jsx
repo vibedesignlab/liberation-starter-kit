@@ -10,7 +10,7 @@ export default {
     label: { control: 'text' },
   },
   args: {
-    label: 'Refrigerated',
+    label: facts[0].label,
   },
 };
 

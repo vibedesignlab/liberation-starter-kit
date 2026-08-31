@@ -1,5 +1,5 @@
 import StatementBreaker from '../../components/mora-landing/StatementBreaker';
-import assets from '../../data/mora/assets';
+import { sections } from '../../data/mora/content';
 
 export default {
   title: 'Components/MORA Landing/StatementBreaker',
@@ -9,8 +9,8 @@ export default {
     statement: { control: 'text' },
   },
   args: {
-    image: assets.methodProcessTable,
-    statement: '재료마다 다르게 준비하고, 한 번 접습니다.',
+    image: sections.materialMethod.image,
+    statement: sections.materialMethod.headline.replace('\n', ' '),
   },
 };
 

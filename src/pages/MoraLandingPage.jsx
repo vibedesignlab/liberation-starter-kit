@@ -4,45 +4,62 @@ import Typography from '@mui/material/Typography';
 import {
   MoraNav,
   FullBleedSection,
-  Spacer,
   SplitEditorial,
   StickyProductGrid,
   VesselPhaseBlock,
   NewsletterCTA,
 } from '../components/mora-landing';
 
-import assets from '../data/mora/assets';
-import {
-  brand,
+import landingContent from '../data/mora/content';
+
+const {
+  navigation,
+  sections,
+  newsletter,
+  footer,
   coreProducts,
   trialProducts,
   vesselPhases,
-} from '../data/mora/content';
+} = landingContent;
 
-/** Ingredient + etching pair for one product. SplitEditorial: aerial left, etching right. */
-function IngredientFolioPair({ product }) {
-  if (!product.ingredient || !product.etching) return null;
+/** Full-width material grid: illustrations first, raw ingredients second. */
+function IngredientFolioGrid({ products }) {
+  const visibleProducts = products.filter((product) => product.ingredient && product.etching);
+  if (!visibleProducts.length) return null;
+
   return (
-    <SplitEditorial
-      left={
+    <Box
+      sx={{
+        display: 'grid',
+        gridTemplateColumns: {
+          xs: 'repeat(2, minmax(0, 1fr))',
+          md: `repeat(${visibleProducts.length}, minmax(0, 1fr))`,
+        },
+        gap: '2px',
+        width: '100%',
+      }}
+    >
+      {visibleProducts.map((product) => (
         <Box
-          component="img"
-          src={product.ingredient}
-          alt={`${product.name} ingredient`}
-          loading="lazy"
-          sx={{ width: '100%', aspectRatio: '1 / 1', objectFit: 'cover', display: 'block', borderRadius: 0 }}
-        />
-      }
-      right={
-        <Box
+          key={`${product.id}-folio`}
           component="img"
           src={product.etching}
-          alt={`${product.name} material folio`}
+          alt={product.etchingAlt}
           loading="lazy"
           sx={{ width: '100%', aspectRatio: '1 / 1', objectFit: 'cover', display: 'block', borderRadius: 0 }}
         />
-      }
-    />
+      ))}
+      {visibleProducts.map((product) => (
+        <Box
+          key={`${product.id}-ingredient`}
+          component="img"
+          src={product.ingredient}
+          alt={product.ingredientAlt}
+          loading="lazy"
+          sx={{ width: '100%', aspectRatio: '1 / 1', objectFit: 'cover', display: 'block', borderRadius: 0 }}
+        />
+      ))}
+    </Box>
   );
 }
 
@@ -50,65 +67,65 @@ export default function MoraLandingPage() {
   return (
     <Box sx={{ bgcolor: 'background.default', color: 'text.primary' }}>
 
-      <MoraNav />
+      <MoraNav {...navigation} />
 
       {/* Hero — left center */}
-      <FullBleedSection image={assets.heroAtelier} alt="원재료를 선별하는 MORA 메이커" textPosition="left-center">
+      <FullBleedSection image={sections.hero.image} alt={sections.hero.imageAlt} textPosition="left-center">
         <Typography variant="h1">
-          {brand.headline}
+          {sections.hero.headline}
         </Typography>
         <Typography sx={{ fontSize: '16px', color: 'text.secondary', mt: 2 }}>
-          {brand.support}
+          {sections.hero.support}
         </Typography>
         <Typography
           component="a"
-          href="#collection"
+          href={sections.hero.ctaHref}
           sx={{
             display: 'inline-block', fontSize: '16px', color: 'text.primary',
             textDecoration: 'none', mt: 2,
             '&:hover': { textDecoration: 'underline', textUnderlineOffset: '3px' },
           }}
         >
-          {brand.primaryCta}
+          {sections.hero.ctaLabel}
         </Typography>
       </FullBleedSection>
 
       {/* Brand Trace etching */}
-      <Box id="transformation" sx={{ py: '100px', display: 'flex', justifyContent: 'center' }}>
+      <Box id="transformation" sx={{ display: 'flex', justifyContent: 'center' }}>
         <Box
           component="img"
-          src={assets.etchBrandTrace}
-          alt="The Trace That Remains"
+          src={sections.brandTrace.image}
+          alt={sections.brandTrace.imageAlt}
           sx={{ width: '100%', maxWidth: '55%', display: 'block' }}
         />
       </Box>
 
       {/* Feature — center */}
-      <FullBleedSection image={assets.clothTransition} alt="Straining cloth" textPosition="center">
-        <Typography variant="h1" sx={{ color: 'background.default' }}>
-          한 컵의 중간을<br />숨기지 않습니다.
+      <FullBleedSection image={sections.transition.image} alt={sections.transition.imageAlt} textPosition="center">
+        <Typography variant="h1" sx={{ color: 'background.default', whiteSpace: 'pre-line' }}>
+          {sections.transition.headline}
         </Typography>
         <Typography
           component="a"
-          href="#vessel"
+          href={sections.transition.ctaHref}
           sx={{
             display: 'inline-block', fontSize: '16px', color: 'background.default',
             textDecoration: 'none', mt: 2,
             '&:hover': { textDecoration: 'underline', textUnderlineOffset: '3px' },
           }}
         >
-          {brand.secondaryCta}
+          {sections.transition.ctaLabel}
         </Typography>
       </FullBleedSection>
 
       {/* Why MORA: Maker + First Furrow */}
-      <Box sx={{ my: '128px' }}>
+      <Box>
         <SplitEditorial
           left={
             <Box
               component="img"
-              src={assets.whyMoraMaker}
-              alt="승인할 재료와 제외할 재료를 비교하는 MORA 메이커"
+              src={sections.whyMora.makerImage}
+              alt={sections.whyMora.makerAlt}
               loading="lazy"
               sx={{ width: '100%', aspectRatio: '3 / 2', objectFit: 'cover', display: 'block', borderRadius: 0 }}
             />
@@ -116,8 +133,8 @@ export default function MoraLandingPage() {
           right={
             <Box
               component="img"
-              src={assets.etchFirstFurrow}
-              alt="The First Furrow"
+              src={sections.whyMora.etchingImage}
+              alt={sections.whyMora.etchingAlt}
               loading="lazy"
               sx={{ width: '100%', aspectRatio: '3 / 2', objectFit: 'cover', display: 'block', borderRadius: 0 }}
             />
@@ -126,69 +143,63 @@ export default function MoraLandingPage() {
       </Box>
 
       {/* Core Collection */}
-      <Box id="collection" sx={{ my: '128px' }}>
+      <Box id="collection">
         <StickyProductGrid
-          mainImage={assets.momentMorning}
-          mainAlt="Core Collection의 마지막 fold와 final check"
+          mainImage={sections.coreCollection.mainImage}
+          mainAlt={sections.coreCollection.mainImageAlt}
           products={coreProducts}
-          title="Vol. 1 — Four Directions"
-          body="한 번의 마지막 판단으로 이어지는 네 가지 방향."
-          cta="Core Collection 보기"
-          ctaHref="#collection"
+          title={sections.coreCollection.title}
+          body={sections.coreCollection.body}
+          cta={sections.coreCollection.ctaLabel}
+          ctaHref={sections.coreCollection.ctaHref}
         />
       </Box>
 
       {/* Core ingredient + etching pairs */}
-      {coreProducts.map((p) => (
-        <IngredientFolioPair key={p.id} product={p} />
-      ))}
-
-      <Spacer />
+      <IngredientFolioGrid products={coreProducts} />
 
       {/* Studio Trials — reversed */}
-      <Box sx={{ my: '128px' }}>
+      <Box>
         <StickyProductGrid
-          mainImage={assets.momentAfternoon}
-          mainAlt="Studio Trials의 조건부 중간 상태 확인"
+          mainImage={sections.studioTrials.mainImage}
+          mainAlt={sections.studioTrials.mainImageAlt}
           products={trialProducts}
-          title="Studio Trials"
-          body="확인되기 전에는 출시하지 않는 두 가지 조건부 방향."
-          cta="검증 기준 보기"
-          ctaHref="#truth"
+          title={sections.studioTrials.title}
+          body={sections.studioTrials.body}
+          cta={sections.studioTrials.ctaLabel}
+          ctaHref={sections.studioTrials.ctaHref}
           reverse
         />
       </Box>
 
       {/* Trial ingredient + etching pairs */}
-      {trialProducts.map((p) => (
-        <IngredientFolioPair key={p.id} product={p} />
-      ))}
+      <IngredientFolioGrid products={trialProducts} />
 
       {/* Cloth to Body etching */}
-      <Box sx={{ py: '100px', display: 'flex', justifyContent: 'center' }}>
+      <Box sx={{ display: 'flex', justifyContent: 'center' }}>
         <Box
           component="img"
-          src={assets.etchClothToBody}
-          alt="From Cloth to Body"
+          src={sections.clothToBody.image}
+          alt={sections.clothToBody.imageAlt}
           sx={{ width: '100%', maxWidth: '60%', display: 'block' }}
         />
       </Box>
 
       {/* Collection Statement — left center */}
-      <FullBleedSection image={assets.methodProcessTable} alt="Material method" textPosition="left-center">
-        <Typography variant="h1" sx={{ color: 'background.default' }}>
-          재료마다 다르게 준비하고,<br />한 번 접습니다.
+      <FullBleedSection image={sections.materialMethod.image} alt={sections.materialMethod.imageAlt} textPosition="left-center">
+        <Typography variant="h1" sx={{ color: 'background.default', whiteSpace: 'pre-line' }}>
+          {sections.materialMethod.headline}
         </Typography>
         <Typography
           component="a"
-          href="#vessel"
+          href={sections.materialMethod.ctaHref}
           sx={{
             display: 'inline-block', fontSize: '16px', color: 'background.default',
             textDecoration: 'none', mt: 2,
             '&:hover': { textDecoration: 'underline', textUnderlineOffset: '3px' },
           }}
         >
-          Batch Record 보기
+          {sections.materialMethod.ctaLabel}
         </Typography>
       </FullBleedSection>
 
@@ -201,21 +212,22 @@ export default function MoraLandingPage() {
             label={vp.label}
             desc={vp.desc}
             image={vp.image}
+            alt={vp.alt}
           />
         ))}
       </Box>
 
       {/* Use Moment */}
-      <FullBleedSection image={assets.momentEvening} alt="Evening table" textPosition="bottom-left">
+      <FullBleedSection image={sections.evening.image} alt={sections.evening.imageAlt} textPosition="bottom-left">
         <Typography variant="h2" sx={{ color: 'background.default' }}>
-          한 컵이 놓이는 식탁.
+          {sections.evening.headline}
         </Typography>
         <Typography sx={{ fontSize: '16px', color: 'background.default', opacity: 0.8, mt: 1 }}>
-          한 jar와 한 spoon만으로 남긴 절제된 사용 맥락.
+          {sections.evening.body}
         </Typography>
       </FullBleedSection>
 
-      <NewsletterCTA />
+      <NewsletterCTA {...newsletter} />
 
       {/* Footer */}
       <Box
@@ -228,10 +240,10 @@ export default function MoraLandingPage() {
         }}
       >
         <Typography sx={{ fontSize: '11px', color: 'text.secondary' }}>
-          &copy; 2026 MORA. All images are commercial photography direction visualizations.
+          {footer.legal}
         </Typography>
         <Typography sx={{ fontSize: '11px', color: 'text.secondary' }}>
-          Refrigerated direction &middot; 150 g candidate &middot; Wide-mouth vessel &middot; Partial Batch Record
+          {footer.facts}
         </Typography>
       </Box>
     </Box>

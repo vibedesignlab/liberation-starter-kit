@@ -103,28 +103,20 @@ const palette = {
 // ============================================================
 // 2. Typography Tokens (타이포그래피 토큰)
 // ============================================================
-const typography = {
-  // 기본 폰트 패밀리
-  fontFamily: [
-    '"Pretendard Variable"',
-    'Pretendard',
-    '-apple-system',
-    'BlinkMacSystemFont',
-    'system-ui',
-    'Roboto',
-    '"Helvetica Neue"',
-    '"Segoe UI"',
-    '"Apple SD Gothic Neo"',
-    '"Noto Sans KR"',
-    '"Malgun Gothic"',
-    '"Apple Color Emoji"',
-    '"Segoe UI Emoji"',
-    '"Segoe UI Symbol"',
-    'sans-serif',
-  ].join(','),
+const workhorseFontFamily = [
+  '"Geist Sans"',
+  '-apple-system',
+  'BlinkMacSystemFont',
+  'system-ui',
+  '"Helvetica Neue"',
+  '"Segoe UI"',
+  'sans-serif',
+].join(',');
 
-  // 헤딩 폰트 패밀리 — Geist Sans (Suisse Intl 대안, Swiss neo-grotesk)
-  headingFontFamily: '"Geist Sans", "Pretendard Variable", Pretendard, sans-serif',
+const typography = {
+  // S2 workhorse grotesk direction — one family for English narrative and records.
+  fontFamily: workhorseFontFamily,
+  headingFontFamily: workhorseFontFamily,
 
   // 폰트 크기 기준
   fontSize: 14,
@@ -134,47 +126,49 @@ const typography = {
   fontWeightLight: 300,
   fontWeightRegular: 400,
   fontWeightMedium: 500,
-  fontWeightBold: 700,
+  fontWeightBold: 600,
 
   // 헤딩 스타일
   h1: {
-    fontFamily: '"Geist Sans", "Pretendard Variable", Pretendard, sans-serif',
-    fontWeight: 400,
-    fontSize: '4.5rem',      // 72px — brutal editorial
-    lineHeight: 0.95,
-    letterSpacing: '-0.04em',
+    fontFamily: workhorseFontFamily,
+    fontWeight: 600,
+    fontSize: 'clamp(2.5rem, 5vw, 4rem)', // S2: mobile 40px → desktop 64px
+    lineHeight: 1.0625,                   // 44px / 68px
+    letterSpacing: '-0.02em',
+    textWrap: 'balance',
   },
   h2: {
-    fontFamily: '"Geist Sans", "Pretendard Variable", Pretendard, sans-serif',
-    fontWeight: 400,
-    fontSize: '3rem',        // 48px — section heads
-    lineHeight: 1.0,
-    letterSpacing: '-0.03em',
+    fontFamily: workhorseFontFamily,
+    fontWeight: 600,
+    fontSize: 'clamp(2.25rem, 4vw, 3rem)',
+    lineHeight: 1.0833,
+    letterSpacing: '-0.02em',
+    textWrap: 'balance',
   },
   h3: {
-    fontFamily: '"Geist Sans", "Pretendard Variable", Pretendard, sans-serif',
-    fontWeight: 400,
+    fontFamily: workhorseFontFamily,
+    fontWeight: 600,
     fontSize: '1.125rem',    // 18px — 제품명
     lineHeight: 1.3,
     letterSpacing: '-0.01em',
   },
   h4: {
-    fontFamily: '"Geist Sans", "Pretendard Variable", Pretendard, sans-serif',
-    fontWeight: 400,
+    fontFamily: workhorseFontFamily,
+    fontWeight: 600,
     fontSize: '1.125rem',    // 18px
     lineHeight: 1.3,
     letterSpacing: '-0.01em',
   },
   h5: {
-    fontFamily: '"Geist Sans", "Pretendard Variable", Pretendard, sans-serif',
-    fontWeight: 400,
+    fontFamily: workhorseFontFamily,
+    fontWeight: 600,
     fontSize: '1rem',        // 16px
     lineHeight: 1.4,
     letterSpacing: '0',
   },
   h6: {
-    fontFamily: '"Geist Sans", "Pretendard Variable", Pretendard, sans-serif',
-    fontWeight: 500,
+    fontFamily: workhorseFontFamily,
+    fontWeight: 600,
     fontSize: '0.875rem',    // 14px
     lineHeight: 1.4,
     letterSpacing: '0',
@@ -182,13 +176,13 @@ const typography = {
 
   // 본문 스타일
   body1: {
-    fontSize: '1rem',        // 16px — Niksen 실측
-    lineHeight: 1.6,
+    fontSize: 'clamp(1rem, calc(0.95rem + 0.2vw), 1.0625rem)', // S2: 16px → 17px
+    lineHeight: 1.7,         // 27.2px → 28.9px
     letterSpacing: '0',
   },
   body2: {
-    fontSize: '0.875rem',    // 14px
-    lineHeight: 1.6,
+    fontSize: '1rem',
+    lineHeight: 1.6875,      // S2 mobile/body compact: 27px
     letterSpacing: '0',
   },
 

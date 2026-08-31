@@ -4,9 +4,9 @@ import FullBleedSection from './FullBleedSection';
 /**
  * Vessel Record phase: full-bleed image + sticky bottom phase label.
  */
-export default function VesselPhaseBlock({ phase, label, desc, image }) {
+export default function VesselPhaseBlock({ phase, label, desc, image, alt = '' }) {
   return (
-    <FullBleedSection image={image} alt={`${phase} — ${label}`}>
+    <FullBleedSection image={image} alt={alt || [phase, label].filter(Boolean).join(' — ')}>
       <Typography variant="h1" sx={{ color: 'background.default' }}>
         {phase}
       </Typography>

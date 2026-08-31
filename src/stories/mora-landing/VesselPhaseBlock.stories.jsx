@@ -10,6 +10,7 @@ export default {
     phase: { control: 'text' },
     label: { control: 'text' },
     desc: { control: 'text' },
+    alt: { control: 'text' },
   },
   args: {
     ...vesselPhases[0],
